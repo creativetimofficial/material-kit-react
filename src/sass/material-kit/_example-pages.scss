@@ -1,0 +1,236 @@
+.wrapper > .header{
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover;
+}
+.main{
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3;
+
+}
+.main-raised{
+    margin: -60px 30px 0px;
+    border-radius: $border-radius-base * 2;
+    @include shadow-16dp();
+}
+
+.title{
+    font-weight: $font-weight-bold;
+    color: $black-color;
+}
+h2.title{
+    margin-bottom: $margin-base * 2;
+}
+.description{
+    color: $gray-light;
+}
+
+// general style for example pages
+.header-filter{
+    position: relative;
+
+    &:after{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        left: 0;
+        top: 0;
+        content: "";
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .container{
+        z-index: 2;
+        position: relative;
+    }
+}
+.gallery{
+    .image{
+        img{
+            width: 100%;
+        }
+    }
+}
+.features{
+    padding: 80px 0 0;
+}
+
+.team{
+    margin-top: 80px;
+
+    .team-player{
+        .title{
+            margin: $margin-base * 2 auto;
+        }
+        img{
+            max-width: 170px;
+        }
+    }
+}
+.nav-align-center{
+    text-align: center;
+
+    .nav-pills{
+        display: inline-block;
+    }
+}
+.navbar-absolute{
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1031;
+}
+
+.index-page{
+    .wrapper > .header{
+        height: 90vh;
+    }
+    .brand{
+        margin-top: 30vh;
+        color: #FFFFFF;
+        text-align: center;
+
+        h1{
+            font-size: 4.8em;
+            font-weight: 600;
+        }
+        h3{
+            font-size: 1.5em;
+            text-transform: uppercase;
+            max-width: 400px;
+            margin: 10px auto 0;
+        }
+    }
+    .section-basic{
+        padding-top: 15px;
+    }
+    .header-filter:after{
+        background: rgba(101, 47, 142, 0.64);
+        background: linear-gradient(45deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+        background: -moz-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+        background: -webkit-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+
+    }
+}
+
+// style for the landing page
+.landing-page{
+
+    .header{
+        height: 100vh;
+
+        .container{
+            padding-top: 26vh;
+            color: #FFFFFF;
+        }
+
+        .share{
+            margin-top: 150px;
+        }
+        h1{
+            font-weight: 600;
+        }
+        .title{
+            color: $white-color;
+        }
+    }
+
+    .wrapper{
+        background: #CCCCCC;
+    }
+}
+
+// style for the profile page
+
+.profile-page{
+    .header{
+        height: 380px;
+        background-position: top center;
+    }
+    .profile{
+        text-align: center;
+
+        img{
+            max-width: 160px;
+            margin: -80px auto 0;
+        }
+    }
+    .description{
+        margin: $margin-base * 2 auto 0;
+        max-width: 600px;
+    }
+    .profile-tabs{
+        margin-top: $margin-base * 4;
+    }
+    .gallery{
+        margin-top: $margin-base * 3;
+        padding-bottom: 50px;
+
+        img{
+            width: 100%;
+            margin-bottom: $margin-base * 2;
+        }
+    }
+}
+
+.signup-page{
+    .wrapper{
+        > .header{
+            min-height: 100vh;
+        }
+        .card-signup{
+            margin: 160px 0 40px;
+        }
+    }
+    .footer{
+        .copyright,
+        a{
+            color: #FFFFFF;
+        }
+    }
+}
+.landing-page,
+.profile-page,
+.signup-page,
+.index-page{
+    .navbar-transparent{
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 991px){
+    .landing-page .header{
+        height: auto;
+        min-height: 100vh;
+
+        .container{
+            padding-bottom: 70px
+        }
+    }
+}
+@media (max-width: 768px){
+    .footer{
+        .copyright{
+            display: inline-block;
+            text-align: center;
+            padding: 10px 0;
+            float: none !important;
+            width: 100%;
+
+        }
+    }
+
+    .navbar.navbar-transparent{
+        background-color: rgba(0,0,0,.4);
+        padding-top: 10px;
+        border-radius: 0;
+    }
+
+    .main-raised{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
