@@ -7,11 +7,43 @@ import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 
 import Button from 'elements/CustomButton/CustomButton';
 import Input from 'elements/CustomInput/CustomInput';
+import Checkbox from 'elements/CustomCheckbox/CustomCheckbox';
+import Radio from 'elements/CustomRadio/CustomRadio';
+import ToggleButton from 'elements/ToggleButton/ToggleButton';
+import Slider from 'elements/CustomSlider/CustomSlider';
 import 'css/demo.css';
 
 addStyle(Navbar, 'info', 'primary', 'success', 'transparent', 'danger', 'warning');
 
 class Home extends Component {
+	constructor(props) {
+    super(props);
+    this.state = {
+      option1: false,
+      option2: true,
+      option3: false,
+      option4: true,
+			option5: 'value2',
+			option6: 'value2',
+			option7: true,
+			option8: false,
+    };
+	}
+
+	handleCheckbox = (event) => {
+		const target = event.target;
+    this.setState({
+      [target.name]: target.checked,
+    });
+  }
+
+	handleRadio = (event) => {
+		const target = event.target;
+	  this.setState({
+	    [target.name]: target.value,
+	  });
+	}
+
 	render() {
 		return (
 			<div className="index-page">
@@ -156,6 +188,125 @@ class Home extends Component {
 									</Col>
 								</Row>
 							</div>
+
+							<div className="space-70"></div>
+
+							<div id="checkRadios">
+								<Row>
+									<Col sm={3}>
+										<div className="title">
+											<h3>Checkboxes</h3>
+										</div>
+
+										<Checkbox
+											name="option1"
+											checked={this.state.option1}
+											onChange={this.handleCheckbox}
+										>
+								      Unchecked
+								    </Checkbox>
+										<Checkbox
+											name="option2"
+											checked={this.state.option2}
+											onChange={this.handleCheckbox}
+										>
+								      Checked
+								    </Checkbox>
+										<Checkbox
+											name="option3"
+											disabled
+											checked={this.state.option3}
+										>
+								      Disabled Unchecked
+								    </Checkbox>
+										<Checkbox
+											name="option4"
+											disabled
+											checked={this.state.option4}
+										>
+								      Disabled Checked
+								    </Checkbox>
+									</Col>
+
+									<Col sm={3}>
+										<div className="title">
+											<h3>Radio Buttons</h3>
+										</div>
+
+										<Radio
+											name="option5"
+											value="value1"
+											checked={this.state.option5 === 'value1'}
+											onChange={this.handleRadio}
+										>
+											Radio is off
+										</Radio>
+										<Radio
+											name="option5"
+											value="value2"
+											checked={this.state.option5 === 'value2'}
+											onChange={this.handleRadio}
+										>
+											Radio is on
+										</Radio>
+										<Radio
+											name="option6"
+											disabled
+											checked={this.state.option6 === 'value1'}
+										>
+											Disabled Radio is off
+										</Radio>
+										<Radio
+											name="option6"
+											disabled
+											checked={this.state.option6 === 'value2'}
+										>
+											Disabled Radio is on
+										</Radio>
+									</Col>
+
+									<Col sm={3}>
+										<div className="title">
+											<h3>Toggle Buttons</h3>
+										</div>
+
+										<ToggleButton
+											name="option7"
+											checked={this.state.option7}
+											onChange={this.handleCheckbox}
+										>
+											Toggle is on
+										</ToggleButton>
+										<ToggleButton
+											name="option8"
+											checked={this.state.option8}
+											onChange={this.handleCheckbox}
+										>
+											Toggle is off
+										</ToggleButton>
+									</Col>
+
+									<Col sm={3}>
+										<div className="title">
+											<h3>Sliders</h3>
+										</div>
+
+										<Slider
+											range={{min: 0, max: 100}}
+									    start={[20, 60]}
+											connect={[false, true, false]}
+											brand="primary"
+										/>
+										<Slider
+											range={{min: 0, max: 100}}
+									    start={[40]}
+											connect={[true, false]}
+											brand="warning"
+										/>
+									</Col>
+								</Row>
+							</div>
+
 
 	          </Grid>
 	        </div>

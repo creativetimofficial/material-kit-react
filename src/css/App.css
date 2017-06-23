@@ -2887,8 +2887,13 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .slider {
   background: #c8c8c8; }
 
-.slider.noUi-connect {
-  background-color: #9c27b0; }
+.slider .noUi-connect {
+  background-color: #9c27b0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0; }
 
 .slider .noUi-handle {
   border-color: #9c27b0; }

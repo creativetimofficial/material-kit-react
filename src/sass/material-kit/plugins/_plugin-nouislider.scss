@@ -109,8 +109,13 @@
 
 .slider {
 
-    &.noUi-connect{
+    & .noUi-connect{
         background-color: $brand-primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
     }
 
     .noUi-handle{
