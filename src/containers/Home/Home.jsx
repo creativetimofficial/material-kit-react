@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 import {
 	Grid, Row, Col,
 	Navbar, Nav, NavItem, NavDropdown, MenuItem,
-	Tab
+	Tab,
+	ProgressBar,
+	Pagination,
+	Label,
+	Alert,
 } from 'react-bootstrap';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 
@@ -15,6 +19,7 @@ import Slider from 'elements/CustomSlider/CustomSlider';
 import 'css/demo.css';
 
 addStyle(Navbar, 'info', 'primary', 'success', 'transparent', 'danger', 'warning');
+addStyle(Pagination, 'info', 'primary', 'success', 'danger', 'warning');
 
 class Home extends Component {
 	constructor(props) {
@@ -28,6 +33,7 @@ class Home extends Component {
 			option6: 'value2',
 			option7: true,
 			option8: false,
+			activePill: 2,
     };
 	}
 
@@ -43,6 +49,14 @@ class Home extends Component {
 	  this.setState({
 	    [target.name]: target.value,
 	  });
+	}
+
+	handlePill = (key) => {
+		this.setState(() => {
+		  return {
+				activePill: key,
+			};
+		});
 	}
 
 	render() {
@@ -585,6 +599,162 @@ class Home extends Component {
 
 							</Row>
 						</Grid>
+					</div>
+
+					<div className="section section-pagination">
+						<Grid>
+							<Row>
+								<Col md={6}>
+									<div className="title">
+										<h3>Progress Bars</h3>
+									</div>
+
+									<ProgressBar now={30} className="progress-line-primary" />
+
+									<ProgressBar bsStyle="info" now={60} className="progress-line-info" />
+
+									<ProgressBar className="progress-line-danger">
+								    <ProgressBar bsStyle="success" now={35} key={1} />
+								    <ProgressBar bsStyle="warning" now={20} key={2} />
+								    <ProgressBar active bsStyle="danger" now={10} key={3} />
+								  </ProgressBar>
+
+
+
+									<br />
+									<div className="title">
+										<h3>Navigation Pills</h3>
+									</div>
+
+									<Nav
+										bsStyle="pills"
+										className="nav-pills-primary"
+										activeKey={this.state.activePill}
+										onSelect={this.handlePill}
+									>
+								    <NavItem eventKey={1}>
+											<i className="material-icons">dashboard</i>
+											Dashboard
+										</NavItem>
+								    <NavItem eventKey={2} title="Item">
+											<i className="material-icons">schedule</i>
+											Schedule
+										</NavItem>
+								    <NavItem eventKey={3}>
+											<i className="material-icons">list</i>
+											Tasks
+										</NavItem>
+								    <NavItem eventKey={4}>
+											<i className="material-icons">attach_money</i>
+											Payments
+										</NavItem>
+								  </Nav>
+								</Col>
+
+								<Col md={6}>
+									<div className="title">
+										<h3>Pagination</h3>
+									</div>
+
+									<Pagination
+						        ellipsis
+						        boundaryLinks
+						        items={12}
+						        maxButtons={5}
+						        activePage={7}
+									/>
+
+									<Pagination
+						        items={5}
+										next={<span>Next &#10095;</span>}
+										prev={<span>&#10094; Prev</span>}
+						        activePage={3}
+										bsStyle="info"
+									/>
+
+
+
+									<div className="title">
+										<h3>Labels </h3>
+									</div>
+
+									<Label bsStyle="default">Default</Label>&nbsp;
+							    <Label bsStyle="primary">Primary</Label>&nbsp;
+							    <Label bsStyle="success">Success</Label>&nbsp;
+							    <Label bsStyle="info">Info</Label>&nbsp;
+							    <Label bsStyle="warning">Warning</Label>&nbsp;
+							    <Label bsStyle="danger">Danger</Label>
+								</Col>
+							</Row>
+
+							<div className="space"></div>
+
+							<div className="title">
+								<h3>Notifications</h3>
+							</div>
+						</Grid>
+					</div>
+
+					<div className="section section-notifications" id="notifications">
+
+						<Alert
+							bsStyle="info"
+							onDismiss={() => {}}
+						>
+							<Grid fluid>
+								<div className="alert-icon">
+									<i className="material-icons">info_outline</i>
+								</div>
+								<strong>Info alert:</strong> You've got some friends nearby, stop looking at your phone and find them...
+							</Grid>
+		        </Alert>
+
+						<div class="alert alert-info">
+							<div class="container-fluid">
+								<div class="alert-icon">
+									<i class="material-icons">info_outline</i>
+								</div>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+
+								<b>Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
+							</div>
+						</div>
+						<div class="alert alert-success">
+							<div class="container-fluid">
+								<div class="alert-icon">
+									<i class="material-icons">check</i>
+								</div>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+								<b>Success Alert:</b> Yuhuuu! You've got your $11.99 album from The Weeknd
+							</div>
+						</div>
+						<div class="alert alert-warning">
+							<div class="container-fluid">
+								<div class="alert-icon">
+									<i class="material-icons">warning</i>
+								</div>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+								<b>Warning Alert:</b> Hey, it looks like you still have the "copyright &copy; 2015" in your footer. Please update it!
+							</div>
+						</div>
+						<div class="alert alert-danger">
+							<div class="container-fluid">
+								<div class="alert-icon">
+									<i class="material-icons">error_outline</i>
+								</div>
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true"><i class="material-icons">clear</i></span>
+							</button>
+								<b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+							</div>
+						</div>
+						<div class="clearfix"></div>
 					</div>
 
 	      </div>{/* main */}

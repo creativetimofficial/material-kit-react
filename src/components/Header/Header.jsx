@@ -20,8 +20,8 @@ class Header extends Component {
 	   window.removeEventListener('scroll', this.handleScroll);
 	}
 
-	handleScroll = (event) => {
-    const scrollTop = event.srcElement.body.scrollTop;
+	handleScroll = () => {
+    const scrollTop = window.pageYOffset;
 		this.setState(() => {
 		  return {
 				navbarTransparent: scrollTop < 260,

@@ -19,8 +19,8 @@
     "react-scripts": "1.0.7"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./src/sass. --include-path ./node_modules src/sass/ -o src/css",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/ --watch --recursive",
+    "build-css": "node-sass-chokidar --source-map true --include-path ./src/sass. --include-path ./node_modules src/sass/ -o src/css",
+    "watch-css": "npm run build-css && node-sass-chokidar --source-map true --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
