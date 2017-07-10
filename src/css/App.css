@@ -2689,7 +2689,8 @@ h2.title {
   margin-top: 100px; }
 
 .modal .modal-header .close {
-  color: #555555; }
+  color: #555555;
+  font-size: 1.6em; }
   .modal .modal-header .close:hover, .modal .modal-header .close:focus {
     opacity: 1;
     color: #555555; }
