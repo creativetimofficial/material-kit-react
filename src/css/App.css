@@ -2305,6 +2305,10 @@ legend {
       top: 5px;
       position: relative; }
 
+.alert-dismissable .close {
+  right: 0;
+  font-size: 1.6em; }
+
 .progress {
   height: 4px;
   border-radius: 0;

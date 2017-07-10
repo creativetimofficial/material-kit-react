@@ -16,7 +16,7 @@
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.0.2",
     "react-bootstrap": "^0.31.0",
-    "react-scripts": "1.0.7"
+    "react-scripts": "1.0.10"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --source-map true --include-path ./src/sass. --include-path ./node_modules src/sass/ -o src/css",

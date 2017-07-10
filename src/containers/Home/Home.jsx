@@ -16,7 +16,6 @@ import Checkbox from 'elements/CustomCheckbox/CustomCheckbox';
 import Radio from 'elements/CustomRadio/CustomRadio';
 import ToggleButton from 'elements/ToggleButton/ToggleButton';
 import Slider from 'elements/CustomSlider/CustomSlider';
-import 'css/demo.css';
 
 addStyle(Navbar, 'info', 'primary', 'success', 'transparent', 'danger', 'warning');
 addStyle(Pagination, 'info', 'primary', 'success', 'danger', 'warning');
@@ -696,7 +695,6 @@ class Home extends Component {
 					</div>
 
 					<div className="section section-notifications" id="notifications">
-
 						<Alert
 							bsStyle="info"
 							onDismiss={() => {}}
@@ -709,52 +707,41 @@ class Home extends Component {
 							</Grid>
 		        </Alert>
 
-						<div class="alert alert-info">
-							<div class="container-fluid">
-								<div class="alert-icon">
-									<i class="material-icons">info_outline</i>
+						<Alert
+							bsStyle="success"
+							onDismiss={() => {}}
+						>
+							<Grid fluid>
+								<div className="alert-icon">
+									<i className="material-icons">check</i>
 								</div>
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true"><i class="material-icons">clear</i></span>
-							</button>
+								<strong>Success Alert:</strong> Yuhuuu! You've got your $11.99 album from The Weeknd
+							</Grid>
+		        </Alert>
 
-								<b>Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
-							</div>
-						</div>
-						<div class="alert alert-success">
-							<div class="container-fluid">
-								<div class="alert-icon">
-									<i class="material-icons">check</i>
+						<Alert
+							bsStyle="warning"
+							onDismiss={() => {}}
+						>
+							<Grid fluid>
+								<div className="alert-icon">
+									<i className="material-icons">warning</i>
 								</div>
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true"><i class="material-icons">clear</i></span>
-							</button>
-								<b>Success Alert:</b> Yuhuuu! You've got your $11.99 album from The Weeknd
-							</div>
-						</div>
-						<div class="alert alert-warning">
-							<div class="container-fluid">
-								<div class="alert-icon">
-									<i class="material-icons">warning</i>
+								<strong>Warning Alert:</strong> Hey, it looks like you still have the "copyright &copy; 2015" in your footer. Please update it!
+							</Grid>
+		        </Alert>
+
+						<Alert
+							bsStyle="danger"
+							onDismiss={() => {}}
+						>
+							<Grid fluid>
+								<div className="alert-icon">
+									<i className="material-icons">error_outline</i>
 								</div>
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true"><i class="material-icons">clear</i></span>
-							</button>
-								<b>Warning Alert:</b> Hey, it looks like you still have the "copyright &copy; 2015" in your footer. Please update it!
-							</div>
-						</div>
-						<div class="alert alert-danger">
-							<div class="container-fluid">
-								<div class="alert-icon">
-									<i class="material-icons">error_outline</i>
-								</div>
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true"><i class="material-icons">clear</i></span>
-							</button>
-								<b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
-							</div>
-						</div>
-						<div class="clearfix"></div>
+								<strong>Error Alert:</strong> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
+							</Grid>
+		        </Alert>
 					</div>
 
 	      </div>{/* main */}

@@ -15,6 +15,7 @@ import Footer from 'components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
 // import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'css/App.css';
+import 'css/demo.css';
 
 import WebFont from 'webfontloader';
 
