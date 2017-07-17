@@ -2939,132 +2939,16 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   pointer-events: none;
   color: #757575; }
 
-/*!
- * Datepicker for Bootstrap
- *
- * Copyright 2012 Stefan Petre
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- */
-/*
- *
- *   SCSS by Creative Tim
- *   http://www.creative-tim.com
- *
- */
+/* DayPicker styles */
+.datepicker-container {
+  position: relative; }
+
 .datepicker {
-  top: 0;
-  left: 0;
+  position: absolute;
   padding: 4px;
   margin-top: 1px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
-  .datepicker > div {
-    display: none; }
-  .datepicker table {
-    width: 100%;
-    margin: 0; }
-  .datepicker td,
-  .datepicker th {
-    text-align: center;
-    width: 20px;
-    height: 20px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px; }
-  .datepicker td {
-    text-align: center; }
-    .datepicker td p {
-      font-size: 1em;
-      font-weight: 400;
-      border-radius: 50%;
-      height: 29px;
-      line-height: 29px;
-      margin: 3px 0 8px;
-      width: 29px; }
-    .datepicker td :hover {
-      cursor: pointer; }
-  .datepicker th {
-    font-weight: 500; }
-    .datepicker th.switch-datepicker {
-      font-size: 1em; }
-  .datepicker .prev p,
-  .datepicker .next p {
-    font-size: 1.825em; }
-  .datepicker p:hover {
-    background: #eeeeee; }
-  .datepicker .day.disabled {
-    color: #eeeeee; }
-  .datepicker td.old,
-  .datepicker td.new {
-    color: #999999;
-    border-top: 0; }
-  .datepicker td.active p,
-  .datepicker td.active:hover p {
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-    color: #ffffff;
-    background-color: #9c27b0; }
-  .datepicker td.primary p,
-  .datepicker td.primary:hover p {
-    background-color: #9c27b0; }
-  .datepicker td.info p,
-  .datepicker td.info:hover p {
-    background-color: #03a9f4; }
-  .datepicker td.success p,
-  .datepicker td.success:hover p {
-    background-color: #4caf50; }
-  .datepicker td.warning p,
-  .datepicker td.warning:hover p {
-    background-color: #fbc02d; }
-  .datepicker td.danger p,
-  .datepicker td.danger:hover p {
-    background-color: #f44336; }
-  .datepicker span {
-    display: block;
-    width: 55px;
-    height: 54px;
-    line-height: 54px;
-    float: left;
-    margin: 2px;
-    cursor: pointer;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px; }
-    .datepicker span.old {
-      color: #999999; }
-  .datepicker span.active, .datepicker span.active:focus, .datepicker span.active:hover, .datepicker span.active:active {
-    background-color: #9c27b0;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
-  .datepicker span.active {
-    color: #FFFFFF; }
-  .datepicker span:hover {
-    background-color: #EEEEEE; }
-  .datepicker span.primary,
-  .datepicker span.primary:hover {
-    background-color: #9c27b0; }
-  .datepicker span.info,
-  .datepicker span.info:hover {
-    background-color: #03a9f4; }
-  .datepicker span.success,
-  .datepicker span.success:hover {
-    background-color: #4caf50; }
-  .datepicker span.warning,
-  .datepicker span.warning:hover {
-    background-color: #fbc02d; }
-  .datepicker span.danger,
-  .datepicker span.danger:hover {
-    background-color: #f44336; }
-  .datepicker th.switch-datepicker {
-    width: 145px; }
-  .datepicker th.next,
-  .datepicker th.prev {
-    font-size: 21px; }
-  .datepicker thead tr:first-child th {
-    cursor: pointer; }
-  .datepicker thead tr:first-child th:hover {
-    background: #eeeeee; }
+  border-radius: 4px;
+  display: block; }
   .datepicker.dropdown-menu {
     border-radius: 3px;
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -3073,28 +2957,167 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     -o-transition: all 150ms linear;
     -ms-transition: all 150ms linear;
     transition: all 150ms linear;
-    margin-top: -20px;
+    margin-top: -26px;
     opacity: 0;
     visibility: hidden; }
   .datepicker.dropdown-menu.open {
     opacity: 1;
     visibility: visible;
-    margin-top: 1px; }
-  .datepicker .table-condensed > tbody > tr > td {
-    padding: 2px; }
-  .datepicker .table-condensed > thead > tr > th {
-    padding: 0; }
+    margin-top: -10px; }
 
-.input-append.date .add-on i,
-.input-prepend.date .add-on i {
-  display: block;
+.DayPicker {
+  display: inline-block; }
+
+.DayPicker-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  flex-direction: row;
+  padding: 1rem 0; }
+
+.DayPicker-Month {
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  user-select: none;
+  margin: 0 1rem; }
+
+.DayPicker-NavBar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0 .5rem;
+  top: 1rem; }
+
+.DayPicker-NavButton {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer; }
+
+.DayPicker-NavButton--prev {
+  left: 1rem;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI2cHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDI2IDUwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy4zLjIgKDEyMDQzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5wcmV2PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9InByZXYiIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzLjM5MzE5MywgMjUuMDAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC0xMy4zOTMxOTMsIC0yNS4wMDAwMDApIHRyYW5zbGF0ZSgwLjg5MzE5MywgMC4wMDAwMDApIiBmaWxsPSIjNTY1QTVDIj4KICAgICAgICAgICAgPHBhdGggZD0iTTAsNDkuMTIzNzMzMSBMMCw0NS4zNjc0MzQ1IEwyMC4xMzE4NDU5LDI0LjcyMzA2MTIgTDAsNC4yMzEzODMxNCBMMCwwLjQ3NTA4NDQ1OSBMMjUsMjQuNzIzMDYxMiBMMCw0OS4xMjM3MzMxIEwwLDQ5LjEyMzczMzEgWiIgaWQ9InJpZ2h0IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"); }
+
+.DayPicker-NavButton--next {
+  right: 1rem;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjI2cHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDI2IDUwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy4zLjIgKDEyMDQzKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5uZXh0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9Im5leHQiIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuOTUxNDUxLCAwLjAwMDAwMCkiIGZpbGw9IiM1NjVBNUMiPgogICAgICAgICAgICA8cGF0aCBkPSJNMCw0OS4xMjM3MzMxIEwwLDQ1LjM2NzQzNDUgTDIwLjEzMTg0NTksMjQuNzIzMDYxMiBMMCw0LjIzMTM4MzE0IEwwLDAuNDc1MDg0NDU5IEwyNSwyNC43MjMwNjEyIEwwLDQ5LjEyMzczMzEgTDAsNDkuMTIzNzMzMSBaIiBpZD0icmlnaHQiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo="); }
+
+.DayPicker-NavButton--interactionDisabled {
+  display: none; }
+
+.DayPicker-Caption {
+  display: table-caption;
+  height: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.8rem; }
+
+.DayPicker-Weekdays {
+  display: table-header-group; }
+
+.DayPicker-WeekdaysRow {
+  display: table-row; }
+
+.DayPicker-Weekday {
+  display: table-cell;
+  padding: .5rem;
+  font-size: .875em;
+  text-align: center;
+  font-weight: 700; }
+  .DayPicker-Weekday abbr {
+    cursor: pointer;
+    text-decoration: none;
+    border: none; }
+
+.DayPicker-Body {
+  display: table-row-group; }
+
+.DayPicker-Week {
+  display: table-row; }
+
+.DayPicker-Day {
+  display: table-cell;
+  width: 30px;
+  height: 30px;
+  padding: .5rem;
+  border-radius: 50em;
+  text-align: center;
   cursor: pointer;
-  width: 16px;
-  height: 16px; }
+  vertical-align: middle; }
+  .DayPicker-Day:hover {
+    background-color: #eeeeee; }
 
-.datepicker-months thead {
-  padding: 0 0 3px;
-  display: block; }
+.DayPicker-WeekNumber {
+  display: table-cell;
+  padding: .5rem;
+  text-align: right;
+  vertical-align: middle;
+  min-width: 1rem;
+  font-size: 0.75em;
+  cursor: pointer;
+  color: #8b9898; }
+
+.DayPicker--interactionDisabled .DayPicker-Day {
+  cursor: default; }
+
+.DayPicker-Footer {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: .5rem; }
+
+.DayPicker-TodayButton {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  color: #4A90E2;
+  font-size: 0.875em; }
+
+/* Default modifiers */
+.DayPicker-Day--today {
+  color: #9c27b0;
+  font-weight: 700; }
+
+.DayPicker-Day--disabled {
+  color: #dce0e0;
+  cursor: default;
+  background-color: #eff1f1; }
+
+.DayPicker-Day--outside {
+  color: #999999; }
+
+/* Example modifiers */
+.DayPicker-Day--sunday {
+  background-color: #f7f8f8; }
+
+.DayPicker-Day--sunday:not(.DayPicker-Day--today) {
+  color: #dce0e0; }
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  background-color: #9c27b0; }
+
+/* DayPickerInput */
+.DayPickerInput {
+  display: inline-block; }
+
+.DayPickerInput-OverlayWrapper {
+  position: relative; }
+
+.DayPickerInput-Overlay {
+  left: 0;
+  position: absolute;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 .withripple {
   position: relative; }

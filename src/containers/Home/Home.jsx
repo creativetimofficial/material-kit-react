@@ -14,7 +14,7 @@ import {
 } from 'react-bootstrap';
 import { addStyle } from 'react-bootstrap/lib/utils/bootstrapUtils';
 
-import DatePicker from 'react-bootstrap-date-picker';
+import DatePicker from 'elements/DatePicker/DatePicker';
 import Button from 'elements/CustomButton/CustomButton';
 import Input from 'elements/CustomInput/CustomInput';
 import Checkbox from 'elements/CustomCheckbox/CustomCheckbox';
@@ -943,16 +943,16 @@ class Home extends Component {
 										<h3>Datepicker</h3>
 									</div>
 
-									<DatePicker id="example-datepicker" value={this.state.value} onChange={this.handleChange} />
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group label-static">
-												<label class="control-label">Datepicker</label>
-												<input type="text" class="datepicker form-control" value="03/12/2016" />
-											</div>
+									<Row>
+										<Col md={6}>
+											<DatePicker
+												label="Datepicker"
+												selectedDay="07/19/2017"
+												placeholder="Choose a date"
+											/>
+										</Col>
+									</Row>
 
-										</div>
-									</div>
 								</Col>
 
 								<Col md={6}>

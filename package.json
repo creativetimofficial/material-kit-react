@@ -4,9 +4,10 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "moment": "^2.18.1",
     "nouislider": "^10.0.0",
     "react": "^15.6.1",
-    "react-bootstrap-date-picker": "^5.0.1",
+    "react-day-picker": "^6.1.0",
     "react-dom": "^15.6.1",
     "react-icons": "^2.2.5",
     "react-router-dom": "^4.1.1",
