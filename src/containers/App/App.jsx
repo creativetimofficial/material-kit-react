@@ -5,6 +5,8 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import 'helpers/BootstrapStyles';
+
 import Home from 'containers/Home/Home';
 import Components from 'containers/Components/Components';
 import NotFound from 'containers/NotFound/NotFound';
@@ -13,7 +15,6 @@ import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/css/bootstrap-theme.css';
 import 'css/App.css';
 import 'css/demo.css';
 

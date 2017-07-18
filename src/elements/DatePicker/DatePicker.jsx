@@ -14,7 +14,7 @@ class Datepicker extends Component {
       isEmpty: !props.value,
       isFocused: false,
       isOpen: false,
-      selectedDay: props.selectedDay ? moment(props.selectedDay).format(DAY_FORMAT) : null,
+      selectedDay: props.selectedDay ? moment(props.selectedDay, DAY_FORMAT) : null,
     }
   }
 
@@ -47,6 +47,7 @@ class Datepicker extends Component {
         placeholder={placeholder ? placeholder : "Pick a date"}
         onFocus={this.handleFocus}
         onBlur={this.handleBlur}
+        onChange={()=>{}}
       />
     );
   }
