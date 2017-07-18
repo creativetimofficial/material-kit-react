@@ -11,7 +11,7 @@ class Datepicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isEmpty: props.value ? false : true,
+      isEmpty: !props.value,
       isFocused: false,
       isOpen: false,
       selectedDay: props.selectedDay ? moment(props.selectedDay).format(DAY_FORMAT) : null,
@@ -24,11 +24,13 @@ class Datepicker extends Component {
       isOpen: true,
     });
   }
+
   handleBlur = () => {
     this.setState({
       isFocused: false,
     });
   }
+
   handleDayClick = (day, { selected }) => {
     this.setState({
       selectedDay: selected ? undefined : day,

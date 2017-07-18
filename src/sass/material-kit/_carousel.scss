@@ -8,15 +8,16 @@
         }
 
         .material-icons,
-        .fa{
+        .fa,
+        .glyphicon{
             display: none;
         }
     }
     .left{
-        //cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important;
+        cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important;
     }
     .right{
-        //cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important;
+        cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important;
     }
 
     .carousel-indicators{
