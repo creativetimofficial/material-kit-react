@@ -59,7 +59,7 @@ class Header extends Component {
 				</Navbar.Header>
 				<Navbar.Collapse>
 					<Nav pullRight>
-						<NavItem eventKey={1} href="#"><i className="material-icons">dashboard</i> Components</NavItem>
+						<NavItem eventKey={1} href="/components"><i className="material-icons">dashboard</i> Components</NavItem>
 						<NavItem eventKey={1} href="#"><i className="material-icons">cloud_download</i> Download</NavItem>
 						<NavItem eventKey={2} href="#"><i className="fa fa-twitter"></i></NavItem>
 						<NavItem eventKey={1} href="#"><i className="fa fa-facebook-square"></i></NavItem>

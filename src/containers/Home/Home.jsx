@@ -8,6 +8,7 @@ import HomeNotifications from 'components/HomeNotifications/HomeNotifications';
 import HomeTypo from 'components/HomeTypo/HomeTypo';
 import HomeJsComponents from 'components/HomeJsComponents/HomeJsComponents';
 import HomeCarousel from 'components/HomeCarousel/HomeCarousel';
+import HomeExample from 'components/HomeExample/HomeExample';
 
 class Home extends Component {
 	render() {
@@ -36,6 +37,7 @@ class Home extends Component {
 					<HomeTypo />
 					<HomeJsComponents />
 					<HomeCarousel />
+					<HomeExample />
 	      </div>
 			</div>
 		);
