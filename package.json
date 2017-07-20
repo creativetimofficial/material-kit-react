@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2",
     "moment": "^2.18.1",
     "nouislider": "^10.0.0",
+    "prettier": "^1.5.3",
     "react": "^15.6.1",
     "react-day-picker": "^6.1.0",
     "react-dom": "^15.6.1",
@@ -20,7 +23,14 @@
     "react-bootstrap": "^0.31.0",
     "react-scripts": "1.0.10"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
   "scripts": {
+    "precommit": "lint-staged",
     "build-css": "node-sass-chokidar --source-map true --include-path ./src/sass. --include-path ./node_modules src/sass/ -o src/css",
     "watch-css": "npm run build-css && node-sass-chokidar --source-map true --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/ --watch --recursive",
     "start-js": "react-scripts start",
