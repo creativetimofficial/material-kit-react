@@ -4,7 +4,7 @@ import {Grid, Row, Col, Image} from 'react-bootstrap';
 
 import avatar from 'img/avatar.jpg';
 
-class HomeCarousel extends Component {
+class SectionTypo extends Component {
 	render() {
 		return (
 			<div className="section">
@@ -139,4 +139,4 @@ class HomeCarousel extends Component {
 	}
 }
 
-export default HomeCarousel;
+export default SectionTypo;

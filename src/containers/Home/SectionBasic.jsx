@@ -11,7 +11,7 @@ import Radio from 'elements/CustomRadio/CustomRadio';
 import ToggleButton from 'elements/ToggleButton/ToggleButton';
 import Slider from 'elements/CustomSlider/CustomSlider';
 
-class HomeBasic extends Component {
+class SectionBasic extends Component {
 	constructor(props) {
     super(props);
     this.state = {
@@ -294,4 +294,4 @@ class HomeBasic extends Component {
 	}
 }
 
-export default HomeBasic;
+export default SectionBasic;

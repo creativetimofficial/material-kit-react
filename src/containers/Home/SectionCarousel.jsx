@@ -9,7 +9,7 @@ import slide1 from 'img/bg2.jpeg';
 import slide2 from 'img/bg3.jpeg';
 import slide3 from 'img/bg4.jpeg';
 
-class HomeCarousel extends Component {
+class SectionCarousel extends Component {
 	render() {
 		return (
 			<div className="section" id="carousel">
@@ -46,4 +46,4 @@ class HomeCarousel extends Component {
 	}
 }
 
-export default HomeCarousel;
+export default SectionCarousel;

@@ -11,7 +11,7 @@ import {
 import DatePicker from 'elements/DatePicker/DatePicker';
 import Button from 'elements/CustomButton/CustomButton';
 
-class HomeJsComponents extends Component {
+class SectionJsComponents extends Component {
 	constructor(props) {
     super(props);
     this.state = {
@@ -141,4 +141,4 @@ class HomeJsComponents extends Component {
 	}
 }
 
-export default HomeJsComponents;
+export default SectionJsComponents;

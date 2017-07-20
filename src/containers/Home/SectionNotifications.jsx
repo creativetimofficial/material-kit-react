@@ -5,7 +5,7 @@ import {
 	Alert,
 } from 'react-bootstrap';
 
-class HomeNotifications extends Component {
+class SectionNotifications extends Component {
 	render() {
 		return (
 			<div className="section section-notifications" id="notifications">
@@ -61,4 +61,4 @@ class HomeNotifications extends Component {
 	}
 }
 
-export default HomeNotifications;
+export default SectionNotifications;

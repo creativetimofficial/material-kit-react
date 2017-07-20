@@ -3,7 +3,7 @@ import _debounce from 'lodash/debounce';
 import { Grid, Row, Col } from 'react-bootstrap';
 import bgHeader from 'img/bg2.jpeg';
 
-class Header extends Component {
+class ImageHeader extends Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
@@ -29,7 +29,6 @@ class Header extends Component {
 	}
 
 	render() {
-		console.log(this.state.bgTop);
 		const styleHeader = {
 			backgroundImage: `url(${bgHeader})`,
 			height: '90vh',
@@ -53,4 +52,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default ImageHeader;

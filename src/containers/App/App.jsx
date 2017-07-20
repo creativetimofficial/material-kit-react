@@ -9,10 +9,8 @@ import 'helpers/BootstrapStyles';
 
 import Home from 'containers/Home/Home';
 import Components from 'containers/Components/Components';
+import Signup from 'containers/Signup/Signup';
 import NotFound from 'containers/NotFound/NotFound';
-
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'css/App.css';
@@ -30,16 +28,13 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="wrapper">
-          <Header />
-
+        <div className="appWrapper">
           <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/components" component={Components}/>
+            <Route exact path="/" component={Home} />
+            <Route path="/components" component={Components} />
+            <Route path="/signup" component={Signup} />
             <Route component={NotFound} />
           </Switch>
-
-          <Footer />
         </div>
       </Router>
     );

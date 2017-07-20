@@ -18,7 +18,7 @@ const styleSignup = {
 	minHeight: '700px',
 };
 
-class HomeExample extends Component {
+class SectionExample extends Component {
 	render() {
 		return (
 			<div>
@@ -109,4 +109,4 @@ class HomeExample extends Component {
 	}
 }
 
-export default HomeExample;
+export default SectionExample;

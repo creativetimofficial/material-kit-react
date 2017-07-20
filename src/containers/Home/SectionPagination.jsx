@@ -9,7 +9,7 @@ import {
 } from 'react-bootstrap';
 
 
-class HomePagination extends Component {
+class SectionPagination extends Component {
 	constructor(props) {
     super(props);
     this.state = {
@@ -125,4 +125,4 @@ class HomePagination extends Component {
 	}
 }
 
-export default HomePagination;
+export default SectionPagination;

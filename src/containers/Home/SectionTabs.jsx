@@ -6,7 +6,7 @@ import {
 	Tab,
 } from 'react-bootstrap';
 
-class HomeCarousel extends Component {
+class SectionTabs extends Component {
 	render() {
 		return (
 			<div className="section section-tabs">
@@ -110,4 +110,4 @@ class HomeCarousel extends Component {
 	}
 }
 
-export default HomeCarousel;
+export default SectionTabs;

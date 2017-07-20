@@ -5,7 +5,7 @@ import {
 	Navbar, Nav, NavItem, NavDropdown, MenuItem,
 } from 'react-bootstrap';
 
-class HomeNavbars extends Component {
+class SectionNavbars extends Component {
 
 	render() {
 		return (
@@ -189,4 +189,4 @@ class HomeNavbars extends Component {
 	}
 }
 
-export default HomeNavbars;
+export default SectionNavbars;

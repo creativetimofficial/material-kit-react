@@ -279,7 +279,8 @@
   color: #333333; }
 
 .sharing-area {
-  margin-top: 80px; }
+  margin-top: 80px;
+  text-align: center; }
 
 .sharing-area .btn {
   margin: 15px 4px 0;
