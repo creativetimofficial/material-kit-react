@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Nav, NavItem, Tab } from 'react-bootstrap';
+import { Grid, Row, Col, Nav, NavItem, Tab, Image } from 'react-bootstrap';
 
-import { Header, Footer } from 'components';
+import { Header, HeaderSection, Footer, Profile } from 'components';
 
 import bg from 'img/examples/city.jpg';
 import christian from 'img/christian.jpg';
@@ -14,10 +14,8 @@ import chris7 from 'img/examples/chris7.jpg';
 import chris9 from 'img/examples/chris9.jpg';
 import chris6 from 'img/examples/chris6.jpg';
 import chris8 from 'img/examples/chris8.jpg';
-// import bg from 'img/city2.jpg';
-// import bg from 'img/city2.jpg';
 
-class Profile extends Component {
+export default class ProfileContainer extends Component {
   state = { activePill: 'studio' };
 
   handlePill = key => {
@@ -35,42 +33,21 @@ class Profile extends Component {
         <Header />
 
         <div className="wrapper">
-          <div
-            className="header header-filter"
-            style={{
-              backgroundImage: `url(${bg})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'top center'
-            }}
-          />
+          <HeaderSection backgroundImage={bg} />
 
           <div className="main main-raised">
             <div className="profile-content">
               <Grid>
-                <Row>
-                  <div className="profile">
-                    <div className="avatar">
-                      <img
-                        src={christian}
-                        alt="Circle"
-                        className="img-circle img-responsive img-raised"
-                      />
-                    </div>
-                    <div className="name">
-                      <h3 className="title">Christian Louboutin</h3>
-                      <h6>Designer</h6>
-                    </div>
-                  </div>
-                </Row>
-                <div className="description text-center">
-                  <p>
-                    An artist of considerable range, Chet Faker — the name taken
-                    by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                    performs and records all of his own music, giving it a warm,
-                    intimate feel with a solid groove structure.{' '}
-                  </p>
-                </div>
-
+                <Profile
+                  avatar={christian}
+                  name="Christian Louboutin"
+                  office="Designer"
+                >
+                  An artist of considerable range, Chet Faker — the name taken
+                  by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
+                  performs and records all of his own music, giving it a warm,
+                  intimate feel with a solid groove structure.{' '}
+                </Profile>
                 <Row>
                   <Col md={6} mdOffset={3}>
                     <Tab.Container id="tabs" defaultActiveKey={activePill}>
@@ -99,26 +76,30 @@ class Profile extends Component {
                             <Tab.Pane eventKey="studio">
                               <Row>
                                 <Col md={6}>
-                                  <img
+                                  <Image
                                     src={chris1}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris0}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
                                 </Col>
                                 <Col md={6}>
-                                  <img
+                                  <Image
                                     src={chris3}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris4}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
                                 </Col>
@@ -127,31 +108,36 @@ class Profile extends Component {
                             <Tab.Pane eventKey="work">
                               <Row>
                                 <Col md={6}>
-                                  <img
+                                  <Image
                                     src={chris5}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris7}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris9}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
                                 </Col>
                                 <Col md={6}>
-                                  <img
+                                  <Image
                                     src={chris6}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris8}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
                                 </Col>
@@ -160,31 +146,36 @@ class Profile extends Component {
                             <Tab.Pane eventKey="shows">
                               <Row>
                                 <Col md={6}>
-                                  <img
+                                  <Image
                                     src={chris4}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris6}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
                                 </Col>
                                 <Col md={6}>
-                                  <img
+                                  <Image
                                     src={chris7}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris5}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
-                                  <img
+                                  <Image
                                     src={chris9}
-                                    className="img-rounded"
+                                    rounded
+                                    responsive
                                     alt="Christian"
                                   />
                                 </Col>
@@ -205,5 +196,3 @@ class Profile extends Component {
     );
   }
 }
-
-export default Profile;

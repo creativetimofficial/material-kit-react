@@ -3,7 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import 'helpers/BootstrapStyles';
 
-import { Home, Components, Signup, NotFound, Profile } from 'containers';
+import {
+  Home,
+  Components,
+  Signup,
+  NotFound,
+  ProfileContainer
+} from 'containers';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'css/App.css';
@@ -26,7 +32,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/components" component={Components} />
             <Route path="/signup" component={Signup} />
-            <Route path="/profile" component={Profile} />
+            <Route path="/profile" component={ProfileContainer} />
             <Route component={NotFound} />
           </Switch>
         </div>
