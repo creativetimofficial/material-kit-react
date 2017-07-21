@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import 'helpers/BootstrapStyles';
 
-import Home from 'containers/Home/Home';
-import Components from 'containers/Components/Components';
-import Signup from 'containers/Signup/Signup';
-import Landing from 'containers/Landing/Landing';
-import NotFound from 'containers/NotFound/NotFound';
+import {
+  Home,
+  Components,
+  Signup,
+  NotFound,
+  Landing,
+  ProfileContainer
+} from 'containers';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'css/App.css';
@@ -34,6 +33,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/components" component={Components} />
             <Route path="/signup" component={Signup} />
+            <Route path="/profile" component={ProfileContainer} />
             <Route path="/landing" component={Landing} />
             <Route component={NotFound} />
           </Switch>
