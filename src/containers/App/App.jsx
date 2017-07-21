@@ -8,6 +8,7 @@ import {
   Components,
   Signup,
   NotFound,
+  Landing,
   ProfileContainer
 } from 'containers';
 
@@ -33,6 +34,7 @@ class App extends Component {
             <Route path="/components" component={Components} />
             <Route path="/signup" component={Signup} />
             <Route path="/profile" component={ProfileContainer} />
+            <Route path="/landing" component={Landing} />
             <Route component={NotFound} />
           </Switch>
         </div>
