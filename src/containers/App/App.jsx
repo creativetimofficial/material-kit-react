@@ -10,6 +10,7 @@ import 'helpers/BootstrapStyles';
 import Home from 'containers/Home/Home';
 import Components from 'containers/Components/Components';
 import Signup from 'containers/Signup/Signup';
+import Landing from 'containers/Landing/Landing';
 import NotFound from 'containers/NotFound/NotFound';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -33,6 +34,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/components" component={Components} />
             <Route path="/signup" component={Signup} />
+            <Route path="/landing" component={Landing} />
             <Route component={NotFound} />
           </Switch>
         </div>
