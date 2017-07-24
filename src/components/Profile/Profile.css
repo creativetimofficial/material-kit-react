@@ -1,0 +1,11 @@
+.profile .title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.profile .avatar {
+  margin: 0 auto;
+}
+
+.profile .name {
+  margin-bottom: 30px;
+}

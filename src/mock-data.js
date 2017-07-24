@@ -7,29 +7,30 @@ export const popover = [
     id: 1,
     placement: 'left',
     title: 'Popover on left',
-    content: 'Here will be some very useful information about his popover.<br> Here will be some very useful information about his popover.',
-    btnLabel: 'On left',
+    content:
+      'Here will be some very useful information about his popover.<br> Here will be some very useful information about his popover.',
+    btnLabel: 'On left'
   },
   {
     id: 2,
     placement: 'top',
     title: 'Popover on top',
     content: 'Here will be some very useful information about his popover.',
-    btnLabel: 'On top',
+    btnLabel: 'On top'
   },
   {
     id: 3,
     placement: 'bottom',
     title: 'Popover on bottom',
     content: 'Here will be some very useful information about his popover.',
-    btnLabel: 'On bottom',
+    btnLabel: 'On bottom'
   },
   {
     id: 4,
     placement: 'right',
     title: 'Popover on right',
     content: 'Here will be some very useful information about his popover.',
-    btnLabel: 'On right',
+    btnLabel: 'On right'
   }
 ];
 export const tooltip = [
@@ -37,25 +38,25 @@ export const tooltip = [
     id: 1,
     placement: 'left',
     title: 'Tooltip on left',
-    btnLabel: 'On left',
+    btnLabel: 'On left'
   },
   {
     id: 2,
     placement: 'top',
     title: 'Tooltip on top',
-    btnLabel: 'On top',
+    btnLabel: 'On top'
   },
   {
     id: 3,
     placement: 'bottom',
     title: 'Tooltip on bottom',
-    btnLabel: 'On bottom',
+    btnLabel: 'On bottom'
   },
   {
     id: 4,
     placement: 'right',
     title: 'Tooltip on right',
-    btnLabel: 'On right',
+    btnLabel: 'On right'
   }
 ];
 
@@ -65,34 +66,37 @@ export const team = [
     img: team1,
     name: 'Gigi Hadid',
     role: 'Model',
-    description: 'You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.',
+    description:
+      'You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.',
     links: {
-      twitter: '#',
-      instagram: '#',
-      facebook: '#',
-    },
+      twitter: '#twitter',
+      instagram: '#instagram',
+      facebook: '#facebook'
+    }
   },
   {
     id: 2,
     img: team2,
     name: 'Christian Louboutin',
     role: 'Designer',
-    description: 'You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.',
+    description:
+      'You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.',
     links: {
-      twitter: '#',
-      linkedin: '#',
-    },
+      twitter: '#twitter',
+      linkedin: '#linkedin'
+    }
   },
   {
     id: 3,
     img: team3,
     name: 'Kendall Jenner',
     role: 'Model',
-    description: 'You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.',
+    description:
+      'You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.',
     links: {
-      googleplus: '#',
-      youtube: '#',
-      twitter: '#',
-    },
-  },
+      googleplus: '#googleplus',
+      youtube: '#youtube',
+      twitter: '#twitter'
+    }
+  }
 ];

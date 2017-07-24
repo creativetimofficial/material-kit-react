@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Grid, Row, Col, Nav, NavItem, Tab, Image } from 'react-bootstrap';
 
 import { Header, HeaderSection, Footer, Profile } from 'components';
+import { team } from 'mock-data';
 
 import bg from 'img/examples/city.jpg';
-import christian from 'img/christian.jpg';
 import chris1 from 'img/examples/chris1.jpg';
 import chris0 from 'img/examples/chris0.jpg';
 import chris3 from 'img/examples/chris3.jpg';
@@ -28,6 +28,8 @@ export default class ProfileContainer extends Component {
 
   render() {
     const { activePill } = this.state;
+    const activeProfile = team[1];
+
     return (
       <div className="profile-page">
         <Header />
@@ -39,15 +41,11 @@ export default class ProfileContainer extends Component {
             <div className="profile-content">
               <Grid>
                 <Profile
-                  avatar={christian}
-                  name="Christian Louboutin"
-                  office="Designer"
-                >
-                  An artist of considerable range, Chet Faker — the name taken
-                  by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                  performs and records all of his own music, giving it a warm,
-                  intimate feel with a solid groove structure.{' '}
-                </Profile>
+                  img={activeProfile.img}
+                  description={activeProfile.description}
+                  name={activeProfile.name}
+                  role={activeProfile.role}
+                />
                 <Row>
                   <Col md={6} mdOffset={3}>
                     <Tab.Container id="tabs" defaultActiveKey={activePill}>

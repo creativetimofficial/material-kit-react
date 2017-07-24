@@ -151,12 +151,8 @@ h2.title{
         background-position: top center;
     }
     .profile{
-        text-align: center;
-
-        img{
-            max-width: 160px;
-            margin: -80px auto 0;
-        }
+      text-align: center;
+      margin-top: -80px;
     }
     .description{
         margin: $margin-base * 2 auto 0;
