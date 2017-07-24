@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-
+import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
+import { MdFavorite } from 'react-icons/lib/md';
 
 class Footer extends Component {
-	render() {
-		return (
+  render() {
+    return (
       <footer className="footer">
         <Grid>
           <nav className="pull-left">
@@ -24,12 +24,13 @@ class Footer extends Component {
             </ul>
           </nav>
           <div className="copyright pull-right">
-            &copy; 2016, made with <i className="material-icons">favorite</i> by Creative Tim for a better web.
+            &copy; 2016, made with <MdFavorite size={18} /> by Creative Tim for
+            a better web.
           </div>
         </Grid>
       </footer>
-		);
-	}
+    );
+  }
 }
 
 export default Footer;

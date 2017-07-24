@@ -1158,6 +1158,11 @@ fieldset[disabled]
   margin-right: 3px;
 }
 
+.navbar .navbar-nav > li > a:not(.btn) svg {
+  margin-top: -3px;
+  margin-right: 3px;
+}
+
 .navbar .navbar-nav > li > .profile-photo {
   margin: 5px 2px;
 }
@@ -2495,6 +2500,10 @@ footer ul li a:hover {
 }
 footer .copyright {
   padding: 15px 0;
+}
+footer .copyright svg {
+  position: relative;
+  top: -2px;
 }
 footer .copyright .material-icons {
   font-size: 18px;

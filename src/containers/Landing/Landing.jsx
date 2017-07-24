@@ -6,6 +6,8 @@ import Footer from 'components/Footer/Footer';
 import Button from 'elements/CustomButton/CustomButton';
 import Input from 'elements/CustomInput/CustomInput';
 
+import FaPlay from 'react-icons/lib/fa/play';
+
 import Profile from 'components/Profile/Profile';
 import { team } from 'mock-data.js';
 
@@ -38,7 +40,7 @@ class Landing extends Component {
                     bsSize="lg"
                     href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   >
-                    <i className="fa fa-play" /> Watch video
+                    <FaPlay size={18} /> Watch video
                   </Button>
                 </Col>
               </Row>

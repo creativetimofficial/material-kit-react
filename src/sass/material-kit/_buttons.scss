@@ -179,7 +179,13 @@
             position: relative;
             margin-right: 3px;
         }
+
+      svg {
+        margin-top: -3px;
+        margin-right: 3px;
+      }
     }
+
     .profile-photo{
         margin: 5px 2px;
     }

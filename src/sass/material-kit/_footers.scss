@@ -29,6 +29,10 @@ footer{
 
     .copyright{
         padding: 15px 0;
+        svg {
+          position: relative;
+          top: -2px;
+        }
         .material-icons{
             font-size: 18px;
             position: relative;
