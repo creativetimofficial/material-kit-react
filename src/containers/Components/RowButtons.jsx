@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Table } from 'react-bootstrap';
 import Button from 'elements/CustomButton/CustomButton';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokaiSublime } from 'react-syntax-highlighter/dist/styles';
@@ -34,7 +35,13 @@ class RowButtons extends Component {
     return (
       <div className="tim-row" id="buttons-row">
         <h2>Buttons</h2>
-        <legend />
+        <p>
+          To use the custom buttons you need to import the custom made
+          component:
+        </p>
+        <SyntaxHighlighter language="javascript" style={monokaiSublime}>
+          {`import Button from 'elements/CustomButton/CustomButton';`}
+        </SyntaxHighlighter>
         <h4>Colors</h4>
         <p>
           We worked over the original Bootstrap classes, choosing a different,
@@ -50,9 +57,6 @@ class RowButtons extends Component {
           <Button bsStyle="danger">Danger</Button>
           <Button bsStyle="white">White</Button>
         </p>
-        <SyntaxHighlighter language="javascript" style={monokaiSublime}>
-          {`import Button from 'elements/CustomButton/CustomButton';`}
-        </SyntaxHighlighter>
 
         <SyntaxHighlighter language="html" style={monokaiSublime}>
           {codeColors}
@@ -91,7 +95,7 @@ class RowButtons extends Component {
           <Button bsStyle="primary" round>
             <i className="material-icons">favorite</i> With Icon
           </Button>
-          <Button bsStyle="primary" round floating>
+          <Button bsStyle="primary" round justIcon>
             <i className="material-icons">favorite</i>
           </Button>
           <Button bsStyle="primary" justIcon>
@@ -110,7 +114,7 @@ class RowButtons extends Component {
           Button groups and disabled state all work like they are supposed to.
           We used the Font Awesome icons that can be found{' '}
           <a
-            href="http://fortawesome.github.io/Font-Awesome/icons/"
+            href="http://fontawesome.github.io/Font-Awesome/icons/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -123,6 +127,65 @@ class RowButtons extends Component {
             rel="noopener noreferrer"
           >
             here
+          </a>.
+        </p>
+
+        <h4>Props</h4>
+        <Table striped bordered condensed hover>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Default</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <code>round</code>
+              </td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>Use this flag to create rounded buttons.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>link</code>
+              </td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>Use this flag to create simple buttons.</td>
+            </tr>
+            <tr>
+              <td>
+                <code>href</code>
+              </td>
+              <td>string</td>
+              <td>null</td>
+              <td>
+                Use this to create an <code>anchor</code> instead of{' '}
+                <code>button</code>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>justIcon</code>
+              </td>
+              <td>boolean</td>
+              <td>false</td>
+              <td>Use this to create icon buttons</td>
+            </tr>
+          </tbody>
+        </Table>
+        <p>
+          Beside these props you can also reffer to{' '}
+          <a
+            href="https://react-bootstrap.github.io/components.html#buttons-props"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            react-bootstrap documentation
           </a>.
         </p>
       </div>

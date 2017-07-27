@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
+import Submenu from './Submenu';
 
 import RowButtons from './RowButtons';
+import RowCheckbox from './RowCheckbox';
+import RowRadio from './RowRadio';
 
 class Components extends Component {
   render() {
@@ -34,62 +37,13 @@ class Components extends Component {
               <Grid>
                 <Row>
                   <Col md={2}>
-                    <div className="fixed-section">
-                      <ul>
-                        <li>
-                          <a href="#buttons-row">Buttons</a>
-                        </li>
-                        <li>
-                          <a href="#checkbox-row">Checkbox/Radio/Toggle</a>
-                        </li>
-                        <li>
-                          <a href="#dropdown-row">Dropdown</a>
-                        </li>
-                        <li>
-                          <a href="#inputs-row">Inputs</a>
-                        </li>
-                        <li>
-                          <a href="#textarea-row">Textarea</a>
-                        </li>
-                        <li>
-                          <a href="#navbar-row">Navigation</a>
-                        </li>
-                        <li>
-                          <a href="#pagination-row">Pagination</a>
-                        </li>
-                        <li>
-                          <a href="#progressbar-row">Progress Bars</a>
-                        </li>
-                        <li>
-                          <a href="#sliders-row">Sliders</a>
-                        </li>
-                        <li>
-                          <a href="#labels-row">Labels</a>
-                        </li>
-                        <li>
-                          <a href="#tables-row">Tables</a>
-                        </li>
-                        <li>
-                          <a href="#datepicker-row">Datepicker</a>
-                        </li>
-                        <li>
-                          <a href="#modal-row">Modals</a>
-                        </li>
-                        <li>
-                          <a href="#tooltip-row">Tooltips/Popovers</a>
-                        </li>
-                        <li>
-                          <a href="#icons-row">Material Icons</a>
-                        </li>
-                        <li>
-                          <a href="#notification-row">Notifications</a>
-                        </li>
-                      </ul>
-                    </div>
+                    <Submenu />
                   </Col>
                   <Col md={8} mdOffset={1}>
                     <div className="tim-container">
                       <RowButtons />
+                      <RowCheckbox />
+                      <RowRadio />
                     </div>
                   </Col>
                 </Row>
