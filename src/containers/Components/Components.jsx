@@ -9,6 +9,8 @@ import RowCheckbox from './RowCheckbox';
 import RowRadio from './RowRadio';
 import RowSwitch from './RowSwitch';
 import RowDropdown from './RowDropdown';
+import RowInputs from './RowInputs';
+import RowNavbar from './RowNavbar';
 
 class Components extends Component {
   render() {
@@ -48,6 +50,8 @@ class Components extends Component {
                       <RowRadio />
                       <RowSwitch />
                       <RowDropdown />
+                      <RowInputs />
+                      <RowNavbar />
                     </div>
                   </Col>
                 </Row>

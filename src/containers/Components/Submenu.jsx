@@ -48,9 +48,6 @@ class Submenu extends Component {
             <a href="#inputs-row">Inputs</a>
           </li>
           <li>
-            <a href="#textarea-row">Textarea</a>
-          </li>
-          <li>
             <a href="#navbar-row">Navigation</a>
           </li>
           <li>
