@@ -7,6 +7,8 @@ import Submenu from './Submenu';
 import RowButtons from './RowButtons';
 import RowCheckbox from './RowCheckbox';
 import RowRadio from './RowRadio';
+import RowSwitch from './RowSwitch';
+import RowDropdown from './RowDropdown';
 
 class Components extends Component {
   render() {
@@ -44,6 +46,8 @@ class Components extends Component {
                       <RowButtons />
                       <RowCheckbox />
                       <RowRadio />
+                      <RowSwitch />
+                      <RowDropdown />
                     </div>
                   </Col>
                 </Row>
