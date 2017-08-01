@@ -11,6 +11,11 @@ import RowSwitch from './RowSwitch';
 import RowDropdown from './RowDropdown';
 import RowInputs from './RowInputs';
 import RowNavbar from './RowNavbar';
+import RowNavpills from './RowNavpills';
+import RowPagination from './RowPagination';
+import RowProgressbar from './RowProgressbar';
+import RowSliders from './RowSliders';
+import RowLabels from './RowLabels';
 
 class Components extends Component {
   render() {
@@ -52,6 +57,11 @@ class Components extends Component {
                       <RowDropdown />
                       <RowInputs />
                       <RowNavbar />
+                      <RowNavpills />
+                      <RowPagination />
+                      <RowProgressbar />
+                      <RowSliders />
+                      <RowLabels />
                     </div>
                   </Col>
                 </Row>
