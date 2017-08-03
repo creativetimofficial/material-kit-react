@@ -16,6 +16,13 @@ import RowPagination from './RowPagination';
 import RowProgressbar from './RowProgressbar';
 import RowSliders from './RowSliders';
 import RowLabels from './RowLabels';
+import RowTables from './RowTables';
+import RowDatepicker from './RowDatepicker';
+import RowModal from './RowModal';
+import RowTooltip from './RowTooltip';
+import RowPopover from './RowPopover';
+import RowIcons from './RowIcons';
+import RowNotification from './RowNotification';
 
 class Components extends Component {
   render() {
@@ -62,6 +69,13 @@ class Components extends Component {
                       <RowProgressbar />
                       <RowSliders />
                       <RowLabels />
+                      <RowTables />
+                      <RowDatepicker />
+                      <RowModal />
+                      <RowTooltip />
+                      <RowPopover />
+                      <RowIcons />
+                      <RowNotification />
                     </div>
                   </Col>
                 </Row>

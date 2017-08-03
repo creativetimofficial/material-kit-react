@@ -1,11 +1,31 @@
 import React, { Component } from 'react';
-
 import { Grid, Alert } from 'react-bootstrap';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { monokaiSublime } from 'react-syntax-highlighter/dist/styles';
 
-class SectionNotifications extends Component {
+const codeSnippet = `<Alert
+  bsStyle="info"
+  onDismiss={() => {}}
+>
+  <Grid fluid>
+    <div className="alert-icon">
+      <i className="material-icons">info_outline</i>
+    </div>
+    <strong>Info alert:</strong> You've got some friends nearby, stop looking at your phone and find them...
+  </Grid>
+</Alert>`;
+
+class RowNotification extends Component {
   render() {
     return (
-      <div className="section section-notifications" id="notifications">
+      <div className="tim-row" id="notification-row">
+        <h2> Notifications </h2>
+        <legend />
+        <p>
+          The new notifications are looking fresh and clean. They go great with
+          the navbar.
+        </p>
+
         <Alert bsStyle="info" onDismiss={() => {}}>
           <Grid fluid>
             <div className="alert-icon">
@@ -45,9 +65,25 @@ class SectionNotifications extends Component {
             this time. You should find a good excuse for your Boss...
           </Grid>
         </Alert>
+
+        <SyntaxHighlighter language="html" style={monokaiSublime}>
+          {codeSnippet}
+        </SyntaxHighlighter>
+
+        <h4>Props</h4>
+        <p>
+          Please reffer to{' '}
+          <a
+            href="https://react-bootstrap.github.io/components.html#alert-props"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            react-bootstrap documentation
+          </a>.
+        </p>
       </div>
     );
   }
 }
 
-export default SectionNotifications;
+export default RowNotification;
