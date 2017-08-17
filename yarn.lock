@@ -1141,6 +1141,10 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
+btoa@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/btoa/-/btoa-1.1.2.tgz#3e40b81663f81d2dd6596a4cb714a8dc16cfabe0"
+
 buffer-indexof@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/buffer-indexof/-/buffer-indexof-1.1.0.tgz#f54f647c4f4e25228baa656a2e57e43d5f270982"
@@ -1494,7 +1498,7 @@ content-type@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.2.tgz#b7d113aee7a8dd27bd21133c4dc2529df1721eed"
 
-convert-source-map@^1.1.0, convert-source-map@^1.4.0:
+convert-source-map@^1.1.0, convert-source-map@^1.1.1, convert-source-map@^1.4.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.5.0.tgz#9acd70851c6d5dfdd93d9282e5edf94a03ff46b5"
 
@@ -1901,6 +1905,10 @@ dns-txt@^2.0.2:
   resolved "https://registry.yarnpkg.com/dns-txt/-/dns-txt-2.0.2.tgz#b91d806f5d27188e4ab3e7d107d881a1cc4642b6"
   dependencies:
     buffer-indexof "^1.0.0"
+
+docopt@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/docopt/-/docopt-0.6.2.tgz#b28e9e2220da5ec49f7ea5bb24a47787405eeb11"
 
 doctrine@1.5.0:
   version "1.5.0"
@@ -2530,6 +2538,12 @@ file-loader@0.11.2:
   dependencies:
     loader-utils "^1.0.2"
 
+file-url@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/file-url/-/file-url-1.1.0.tgz#a0f9cf3eb6904c9b1d3a6790b83a976fc40217bb"
+  dependencies:
+    meow "^3.7.0"
+
 filename-regex@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.1.tgz#c1c4b9bee3e09725ddb106b75c1e301fe2f18b26"
@@ -2753,7 +2767,7 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@~7.1.1:
+glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@~7.1.1:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -4584,6 +4598,10 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+open@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/open/-/open-0.0.5.tgz#42c3e18ec95466b6bf0dc42f3a2945c3f0cad8fc"
+
 opn@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/opn/-/opn-4.0.2.tgz#7abc22e644dff63b0a96d5ab7f2790c0f01abc95"
@@ -5754,6 +5772,10 @@ rimraf@2, rimraf@^2.2.8, rimraf@^2.5.1, rimraf@^2.6.1:
   dependencies:
     glob "^7.0.5"
 
+rimraf@~2.2.6:
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
+
 ripemd160@^2.0.0, ripemd160@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ripemd160/-/ripemd160-2.0.1.tgz#0f4584295c53a3628af7e6d79aca21ce57d1c6e7"
@@ -6028,13 +6050,27 @@ source-list-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.0.tgz#aaa47403f7b245a92fbc97ea08f250d6087ed085"
 
+source-map-explorer@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/source-map-explorer/-/source-map-explorer-1.4.0.tgz#58b503045d0d6907d9d9a7bb4e2131b5686f7a69"
+  dependencies:
+    btoa "^1.1.2"
+    convert-source-map "^1.1.1"
+    docopt "^0.6.2"
+    file-url "^1.0.1"
+    glob "^7.1.2"
+    open "0.0.5"
+    source-map "^0.5.1"
+    temp "^0.8.3"
+    underscore "^1.8.3"
+
 source-map-support@^0.4.2:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.15.tgz#03202df65c06d2bd8c7ec2362a193056fef8d3b1"
   dependencies:
     source-map "^0.5.6"
 
-source-map@0.5.6, source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
+source-map@0.5.6, source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
@@ -6336,6 +6372,13 @@ tar@^2.0.0, tar@^2.2.1:
     fstream "^1.0.2"
     inherits "2"
 
+temp@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/temp/-/temp-0.8.3.tgz#e0c6bc4d26b903124410e4fed81103014dfc1f59"
+  dependencies:
+    os-tmpdir "^1.0.0"
+    rimraf "~2.2.6"
+
 test-exclude@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-4.1.1.tgz#4d84964b0966b0087ecc334a2ce002d3d9341e26"
@@ -6480,6 +6523,10 @@ uncontrollable@^4.1.0:
   resolved "https://registry.yarnpkg.com/uncontrollable/-/uncontrollable-4.1.0.tgz#e0358291252e1865222d90939b19f2f49f81c1a9"
   dependencies:
     invariant "^2.1.0"
+
+underscore@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
 uniq@^1.0.1:
   version "1.0.1"

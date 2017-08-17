@@ -15,6 +15,7 @@
     "react-icons": "^2.2.5",
     "react-router-dom": "^4.1.1",
     "react-syntax-highlighter": "^5.6.2",
+    "source-map-explorer": "^1.4.0",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
     ]
   },
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
     "precommit": "lint-staged",
     "build-css": "node-sass-chokidar --source-map true --include-path ./src/sass. --include-path ./node_modules src/sass/ -o src/css",
     "watch-css": "npm run build-css && node-sass-chokidar --source-map true --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/ --watch --recursive",
