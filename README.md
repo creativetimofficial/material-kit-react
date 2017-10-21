@@ -56,5 +56,5 @@ Your app is ready to be deployed!
 
 
 ## Links
-* [Live Preview](https://http://demos.creative-tim.com/material-kit/index.html)
+* [Live Preview](http://demos.creative-tim.com/material-kit/index.html)
 * [Documentation](http://demos.creative-tim.com/material-kit/components-documentation.html)
