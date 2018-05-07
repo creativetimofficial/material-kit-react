@@ -1,41 +1,26 @@
 {
   "name": "material-kit-react",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "classnames": "^2.2.5",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.0.2",
-    "moment": "^2.18.1",
-    "nouislider": "^10.0.0",
-    "prettier": "^1.5.3",
-    "react": "^15.6.1",
-    "react-day-picker": "^6.1.0",
-    "react-dom": "^15.6.1",
-    "react-icons": "^2.2.5",
-    "react-router-dom": "^4.1.1",
-    "react-syntax-highlighter": "^5.6.2",
-    "source-map-explorer": "^1.4.0",
-    "webfontloader": "^1.6.28"
-  },
-  "devDependencies": {
-    "bootstrap": "3",
-    "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.0.2",
-    "react-bootstrap": "^0.31.0",
-    "react-scripts": "1.0.10"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    "@material-ui/icons": "1.0.0-beta.43",
+    "history": "4.7.2",
+    "material-ui": "1.0.0-beta.45",
+    "moment": "2.22.1",
+    "node-sass-chokidar": "1.2.2",
+    "npm-run-all": "4.1.2",
+    "react": "16.3.1",
+    "react-datetime": "2.14.0",
+    "react-dom": "16.3.1",
+    "react-nouislider": "2.0.1",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.1.4",
+    "react-slick": "0.23.1",
+    "react-swipeable-views": "0.12.13"
   },
   "scripts": {
-    "analyze": "source-map-explorer build/static/js/main.*",
-    "precommit": "lint-staged",
-    "build-css": "node-sass-chokidar --source-map true --include-path ./src/sass. --include-path ./node_modules src/sass/ -o src/css",
-    "watch-css": "npm run build-css && node-sass-chokidar --source-map true --include-path ./src/sass/ --include-path ./node_modules src/sass/ -o src/css/ --watch --recursive",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",

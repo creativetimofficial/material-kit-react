@@ -1,36 +1,74 @@
-import React, { Component } from 'react';
-import { Grid } from 'react-bootstrap';
-import { MdFavorite } from 'react-icons/lib/md';
+import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+import { List, ListItem, withStyles } from "material-ui";
 
-class Footer extends Component {
-  render() {
-    return (
-      <footer className="footer">
-        <Grid>
-          <nav className="pull-left">
-            <ul>
-              <li>
-                <a href="http://www.creative-tim.com">Creative Tim</a>
-              </li>
-              <li>
-                <a href="http://presentation.creative-tim.com">About Us</a>
-              </li>
-              <li>
-                <a href="http://blog.creative-tim.com">Blog</a>
-              </li>
-              <li>
-                <a href="http://www.creative-tim.com/license">Licenses</a>
-              </li>
-            </ul>
-          </nav>
-          <div className="copyright pull-right">
-            &copy; 2016, made with <MdFavorite size={18} /> by Creative Tim for
-            a better web.
-          </div>
-        </Grid>
-      </footer>
-    );
-  }
+// @material-ui/icons
+import Favorite from "@material-ui/icons/Favorite";
+
+import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
+
+function Footer({ ...props }) {
+  const { classes, whiteFont } = props;
+  const footerClasses = classNames({
+    [classes.footer]: true,
+    [classes.footerWhiteFont]: whiteFont
+  });
+  const aClasses = classNames({
+    [classes.a]: true,
+    [classes.footerWhiteFont]: whiteFont
+  });
+  return (
+    <footer className={footerClasses}>
+      <div className={classes.container}>
+        <div className={classes.left}>
+          <List className={classes.list}>
+            <ListItem className={classes.inlineBlock}>
+              <a href="https://www.creative-tim.com/" className={classes.block}>
+                Creative Tim
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="http://presentation.creative-tim.com/"
+                className={classes.block}
+              >
+                About us
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a href="http://blog.creative-tim.com/" className={classes.block}>
+                Blog
+              </a>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="https://www.creative-tim.com/license"
+                className={classes.block}
+              >
+                Licenses
+              </a>
+            </ListItem>
+          </List>
+        </div>
+        <div className={classes.right}>
+          &copy; {1900 + new Date().getYear()} , made with{" "}
+          <Favorite className={classes.icon} /> by{" "}
+          <a href="http://www.creative-tim.com" className={aClasses}>
+            Creative Tim
+          </a>{" "}
+          for a better web.
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer;
+Footer.propTypes = {
+  classes: PropTypes.object.isRequired,
+  whiteFont: PropTypes.bool
+};
+
+export default withStyles(footerStyle)(Footer);

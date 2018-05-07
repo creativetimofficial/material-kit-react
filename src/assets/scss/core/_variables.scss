@@ -1,0 +1,17 @@
+@import "variables/colors";
+@import "variables/shadow";
+
+@import "variables/bootstrap-material-design-base";
+
+// Customized BS variables
+@import "variables/brand";
+
+// import their vars after customization for use below
+$enable-flex: true; // fully adopt flexbox layouts
+$enable-shadows: true; // enable shadows, set to false to turn off shadows
+
+// // Core Bootstrap Variables
+@import "variables/functions";
+@import "variables/variables";
+
+@import "variables/bootstrap-material-design";

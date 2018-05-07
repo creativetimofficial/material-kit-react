@@ -1,60 +1,181 @@
-# Material Kit React
+# [Material Kit React - Free Material-UI Kit](http://timcreative.github.io/material-kit-react)
 
-![alt text](http://s3.amazonaws.com/creativetim_bucket/products/38/original/opt_mk_thumbnail.jpg "Material Kit Free")
+![alt text](https://s3.amazonaws.com/creativetim_bucket/products/82/original/opt_mk_thumbnail.jpg "Material Kit Free")
 
-This project is the react version of [Material Kit](https://www.creative-tim.com/product/material-kit) from [Creative Tim](https://www.creative-tim.com/).<br />
-The project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and [React-Bootstrap](https://react-bootstrap.github.io).
+Material Kit React is a Free Material-UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Material-UI elements, you will find three fully-coded example pages, to help you design your next project.
 
-## Install
+Material Kit React makes use of light, surface and movement. It uses a deliberate color choice, edge-to-edge imagery and large scale typography. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left and the actions on the right.
 
-To install run the following commands in your terminal:
+This new design has elements that have been the result of research regarding ink and paper and the way objects and materials interact in real life. The result is a beautiful and consistent set of elements that can get you started with your next project. Material Kit React is a great tool if you are looking to create a web presence for your Android application and need to be consistent, leaving the impression of visually similar elements. It is also a great resource in its own right, looking gorgeous and helping you build your web pages.
+
+Material Kit React uses a framework built by our friends from [mui-org](https://github.com/mui-org/material-ui), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
+
+## Links:
+
++ [Live Preview](http://timcreative.github.io/material-kit-react)
++ [Material Dashboard Free React](https://creativetimofficial.github.io/material-dashboard-react/#/dashboard)
++ [Material Dashboard PRO React](https://timcreative.github.io/material-dashboard-pro-react/#/dashboard) (from $59)
++ [Material Kit Free HTML](https://demos.creative-tim.com/material-kit/index.html)
++ [Material Kit PRO HTML](http://demos.creative-tim.com/material-kit-pro/presentation.html) (from $79)
+
+
+## Quick start
+
+Quick start options:
+
+- [Download from Github](https://github.com/creativetimofficial/material-kit-react.git).
+- [Download from Creative Tim](http://www.creative-tim.com/product/material-kit-react).
+- Clone the repo: `git clone https://github.com/creativetimofficial/material-kit-react.git`.
+
+
+### What's included
+
+Within the download you'll find the following directories and files:
+
 ```
-git clone git@github.com:creativetimofficial/material-kit-react.git
-cd material-kit-react
-yarn install
+├── CHANGELOG.md
+├── LICENSE.md
+├── README.md
+├── package.json
+├── Documentation
+│   ├── assets
+│   │   ├── css
+│   │   ├── img
+│   │   │   └── faces
+│   │   └── js
+│   └── tutorial-components.html
+├── public
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── index.js
+    ├── logo.svg
+    ├── routes
+    │   └── index.jsx
+    ├── assets
+    │   ├── img
+    │   │   └── kit
+    │   │       ├── faces
+    │   │       └── free
+    │   │           └── examples
+    │   ├── jss
+    │   │   ├── material-kit-react
+    │   │   │   ├── components
+    │   │   │   └── views
+    │   │   │       ├── componentsSections
+    │   │   │       └── landingPageSections
+    │   │   └── material-kit-react.jsx
+    │   └── scss
+    │       ├── core
+    │       │   ├── mixins
+    │       │   └── variables
+    │       ├── plugins
+    │       └── material-kit-react.scss
+    ├── components
+    │   ├── Badge
+    │   │   └── Badge.jsx
+    │   ├── Card
+    │   │   ├── Card.jsx
+    │   │   ├── CardBody.jsx
+    │   │   ├── CardFooter.jsx
+    │   │   └── CardHeader.jsx
+    │   ├── Clearfix
+    │   │   └── Clearfix.jsx
+    │   ├── CustomButtons
+    │   │   ├── Button.jsx
+    │   │   └── IconButton.jsx
+    │   ├── CustomDropdown
+    │   │   └── CustomDropdown.jsx
+    │   ├── CustomInput
+    │   │   └── CustomInput.jsx
+    │   ├── CustomLinearProgress
+    │   │   └── CustomLinearProgress.jsx
+    │   ├── CustomTabs
+    │   │   └── CustomTabs.jsx
+    │   ├── Footer
+    │   │   └── Footer.jsx
+    │   ├── Grid
+    │   │   ├── GridContainer.jsx
+    │   │   └── ItemGrid.jsx
+    │   ├── Header
+    │   │   ├── Header.jsx
+    │   │   └── HeaderLinks.jsx
+    │   ├── InfoArea
+    │   │   └── InfoArea.jsx
+    │   ├── NavPills
+    │   │   └── NavPills.jsx
+    │   ├── Pagination
+    │   │   └── Pagination.jsx
+    │   ├── Snackbar
+    │   │   └── SnackbarContent.jsx
+    │   └── Typography
+    │       ├── Danger.jsx
+    │       ├── Info.jsx
+    │       ├── Muted.jsx
+    │       ├── Primary.jsx
+    │       ├── Quote.jsx
+    │       ├── Small.jsx
+    │       ├── Success.jsx
+    │       └── Warning.jsx
+    └── views
+        ├── Components
+        │   ├── Components.jsx
+        │   └── Sections
+        │       ├── SectionBasics.jsx
+        │       ├── SectionCarousel.jsx
+        │       ├── SectionCompletedExamples.jsx
+        │       ├── SectionDownload.jsx
+        │       ├── SectionExamples.jsx
+        │       ├── SectionJavascript.jsx
+        │       ├── SectionNavbars.jsx
+        │       ├── SectionNotifications.jsx
+        │       ├── SectionPills.jsx
+        │       ├── SectionSignup.jsx
+        │       ├── SectionTabs.jsx
+        │       └── SectionTypography.jsx
+        ├── LandingPage
+        │   ├── LandingPage.jsx
+        │   └── Sections
+        │       ├── ProductSection.jsx
+        │       ├── TeamSection.jsx
+        │       └── WorkSection.jsx
+        ├── ProfilePage
+        │   └── ProfilePage.jsx
+        └── SignupPage
+            └── SignupPage.jsx
 ```
 
-In the project directory, you can run:
+### Version logs
 
-### `yarn start`
+## [1.0.0] 2018-04-30
+### Original Release
+- Added Material-UI as base framework
+- Added design from Material Kit by Creative Tim
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### License
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `yarn run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Folder Structure
-
-    .
-    ├── build                   # Production version (for deploy)
-    ├── public                  # Template files
-    ├── src                     # Development version
-    │   ├── components          # React components
-    │   ├── containers          # React pages
-    │   ├── css                 # Compiled CSS files
-    │   ├── elements            # React elements
-    │   ├── helpers             # React helpers
-    │   ├── img                 # Static images
-    │   ├── sass                # Source SCSS files
-    │   │   ├── material-kit    # Material Kit Components styles
-    │   │   ├── App.scss        # Main SCSS to load partials
-    │   │   └── demo.scss       # Style for demo purpose
-    │   ├── index.js            # Entry point of the app
-    │   └── mock-data.js        # Mockup data
-    ├── .env                    # node.js settings file
-    ├── package.json
-    └── README.md
+- Copyright 2018 Creative Tim (http://www.creative-tim.com)
+- Licensed under MIT (https://github.com/timcreative/material-kit-react/blob/master/LICENSE.md)
 
 
-## Links
-* [Live Preview](https://http://demos.creative-tim.com/material-kit/index.html)
-* [Documentation](http://demos.creative-tim.com/material-kit/components-documentation.html)
+## Useful Links
+
+More products from Creative Tim: <http://www.creative-tim.com/products>
+
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+
+Freebies: <http://www.creative-tim.com/products>
+
+Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+
+Social Media:
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
