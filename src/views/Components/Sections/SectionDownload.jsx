@@ -1,6 +1,12 @@
 /* eslint-disable */
 import React from "react";
 
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  GooglePlusShareButton
+} from "react-share";
+
 // material-ui components
 import withStyles from "material-ui/styles/withStyles";
 // @material-ui/icons
@@ -99,17 +105,38 @@ class SectionDownload extends React.Component {
             <GridContainer justify="center">
               <h3>Thank you for supporting us!</h3>
             </GridContainer>
-            <Button color="twitter">
-              <i className={classes.socials + " fab fa-twitter"} /> Tweet
-            </Button>
-            <Button color="facebook">
-              <i className={classes.socials + " fab fa-facebook-square"} />{" "}
-              Share
-            </Button>
-            <Button color="google">
-              <i className={classes.socials + " fab fa-google-plus-g"} />Share
-            </Button>
-            <Button color="github">
+            <TwitterShareButton
+              url="https://timcreative.github.io/material-kit-react/"
+              title="Material Kit React - Free Material-UI Kit Template"
+              hashtags={[
+                "react",
+                "materialdesign",
+                "material-ui",
+                "creativetim",
+                "creative-tim"
+              ]}
+              via="creativetim"
+            >
+              <Button color="twitter">
+                <i className={classes.socials + " fab fa-twitter"} /> Tweet
+              </Button>
+            </TwitterShareButton>
+            <FacebookShareButton url="https://timcreative.github.io/material-kit-react/">
+              <Button color="facebook">
+                <i className={classes.socials + " fab fa-facebook-square"} />{" "}
+                Share
+              </Button>
+            </FacebookShareButton>
+            <GooglePlusShareButton url="https://timcreative.github.io/material-kit-react/">
+              <Button color="google">
+                <i className={classes.socials + " fab fa-google-plus-g"} />Share
+              </Button>
+            </GooglePlusShareButton>
+            <Button
+              color="github"
+              href="https://github.com/creativetimofficial/material-kit-react"
+              target="_blank"
+            >
               <i className={classes.socials + " fab fa-github"} /> Star
             </Button>
           </div>

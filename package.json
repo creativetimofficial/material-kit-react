@@ -2,8 +2,10 @@
   "name": "material-kit-react",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://timcreative.github.io/material-kit-react",
   "dependencies": {
     "@material-ui/icons": "1.0.0-beta.43",
+    "gh-pages": "1.1.0",
     "history": "4.7.2",
     "material-ui": "1.0.0-beta.45",
     "moment": "2.22.1",
@@ -12,11 +14,16 @@
     "react": "16.3.1",
     "react-datetime": "2.14.0",
     "react-dom": "16.3.1",
+    "react-facebook-pixel": "^0.1.1",
+    "react-ga": "^2.5.0",
+    "react-github-button": "^0.1.11",
     "react-nouislider": "2.0.1",
     "react-router-dom": "4.2.2",
     "react-scripts": "1.1.4",
+    "react-share": "^2.1.1",
     "react-slick": "0.23.1",
-    "react-swipeable-views": "0.12.13"
+    "react-swipeable-views": "0.12.13",
+    "react-syntax-highlighter": "^7.0.2"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
@@ -25,6 +32,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }

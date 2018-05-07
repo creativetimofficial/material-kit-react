@@ -3,6 +3,8 @@ import React from "react";
 import classNames from "classnames";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
+// react library for nice github buttons
+import GitHubButton from "react-github-button";
 // material-ui components
 import withStyles from "material-ui/styles/withStyles";
 // @material-ui/icons
@@ -55,6 +57,33 @@ class Components extends React.Component {
                   <h3 className={classes.subtitle}>
                     A Badass Material-UI Kit based on Material Design.
                   </h3>
+                  <iframe
+                    src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2FCreativeTim&width=74&layout=button_count&action=like&size=small&show_faces=true&share=false&height=21&appId"
+                    width="74"
+                    height="21"
+                    style={{
+                      border: "none",
+                      overflow: "hidden",
+                      height: "20px"
+                    }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allow-transparency="true"
+                    title="Follow us on Facebook"
+                  />{" "}
+                  <a
+                    href="https://twitter.com/creativetim?ref_src=twsrc%5Etfw"
+                    className="twitter-follow-button"
+                    data-show-screen-name="false"
+                    data-show-count="true"
+                  >
+                    Follow @creativetim
+                  </a>{" "}
+                  <GitHubButton
+                    type="stargazers"
+                    namespace="creativetimofficial"
+                    repo="material-kit"
+                  />
                 </div>
               </GridItem>
             </GridContainer>
