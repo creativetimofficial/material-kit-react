@@ -37,7 +37,7 @@ function HeaderLinks({ ...props }) {
             </Link>,
             // eslint-disable-next-line
             <a
-              href="http://timcreative.github.io/material-kit-react/#/documentation"
+              href="http://creativetimofficial.github.io/material-kit-react/#/documentation"
               target="_blank"
               className={classes.dropdownLink}
             >
