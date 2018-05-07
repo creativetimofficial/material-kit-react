@@ -1,4 +1,4 @@
-# [Material Kit React - Free Material-UI Kit](http://timcreative.github.io/material-kit-react)
+# [Material Kit React - Free Material-UI Kit](http://creativetimofficial.github.io/material-kit-react/#/)
 
 ![alt text](https://s3.amazonaws.com/creativetim_bucket/products/82/original/opt_mk_thumbnail.jpg "Material Kit Free")
 
@@ -12,7 +12,7 @@ Material Kit React uses a framework built by our friends from [mui-org](https://
 
 ## Links:
 
-+ [Live Preview](http://timcreative.github.io/material-kit-react)
++ [Live Preview](http://creativetimofficial.github.io/material-kit-react/#/)
 + [Material Dashboard Free React](https://creativetimofficial.github.io/material-dashboard-react/#/dashboard)
 + [Material Dashboard PRO React](https://timcreative.github.io/material-dashboard-pro-react/#/dashboard) (from $59)
 + [Material Kit Free HTML](https://demos.creative-tim.com/material-kit/index.html)
@@ -147,7 +147,7 @@ Within the download you'll find the following directories and files:
 
 ### Version logs
 
-## [1.0.0] 2018-04-30
+## [1.0.0] 2018-05-07
 ### Original Release
 - Added Material-UI as base framework
 - Added design from Material Kit by Creative Tim
@@ -155,7 +155,7 @@ Within the download you'll find the following directories and files:
 ### License
 
 - Copyright 2018 Creative Tim (http://www.creative-tim.com)
-- Licensed under MIT (https://github.com/timcreative/material-kit-react/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
 
 
 ## Useful Links
