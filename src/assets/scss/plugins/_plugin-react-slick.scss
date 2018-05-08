@@ -173,7 +173,7 @@ button.slick-arrow.slick-next {
 .slick-prev {
   left: 0;
   &::before {
-    content: "\f104";
+    content: "\f053";
     font-weight: 600;
     font-family: Font Awesome\ 5 Free;
     -moz-osx-font-smoothing: grayscale;
@@ -184,14 +184,14 @@ button.slick-arrow.slick-next {
     text-rendering: auto;
     line-height: 1;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     width: 100%;
   }
 }
 .slick-next {
   right: 0;
   &::before {
-    content: "\f105";
+    content: "\f054";
     font-weight: 600;
     font-family: Font Awesome\ 5 Free;
     -moz-osx-font-smoothing: grayscale;
@@ -202,7 +202,7 @@ button.slick-arrow.slick-next {
     text-rendering: auto;
     line-height: 1;
     color: #FFF;
-    font-size: 50px;
+    font-size: 30px;
     width: 100%;
   }
 }

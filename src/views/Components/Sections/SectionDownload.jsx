@@ -24,16 +24,7 @@ class SectionDownload extends React.Component {
               }
               <h4>
                 Cause if you do, it can be yours for FREE. Hit the buttons below
-                to navigate to our website where you can find the kit. Our
-                friends from{" "}
-                <a
-                  href="https://themeisle.com/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website"
-                  target="_blank"
-                >
-                  ThemeIsle{" "}
-                </a>{" "}
-                created a Wordpress Theme which can be also downloaded for free.
-                Start a new project or give an old Bootstrap project a new look!
+                to navigate to our website where you can find the kit. We also have the Bootstrap 4 version on plain HTML. Start a new project or give an old Bootstrap project a new look!
               </h4>
             </GridItem>
             <GridItem xs={12} sm={8} md={6}>
@@ -48,10 +39,10 @@ class SectionDownload extends React.Component {
               <Button
                 color="primary"
                 size="lg"
-                href="https://themeisle.com/themes/hestia/?utm_campaign=mkfree-hestia&amp;utm_source=creativetim&amp;utm_medium=website"
+                href="http://www.creative-tim.com/product/material-kit"
                 target="_blank"
               >
-                Wordpress Theme
+                Free HTML Downoad
               </Button>
             </GridItem>
           </GridContainer>

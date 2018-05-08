@@ -14,12 +14,12 @@ import {
 
 const iconButtonStyle = {
   button: {
-    height: "40px",
-    minWidth: "40px",
-    width: "40px",
+    height: "41px",
+    minWidth: "41px",
+    width: "41px",
     borderRadius: "50%",
     fontSize: "24px",
-    margin: "auto",
+    margin: "5px",
     padding: "0",
     boxShadow:
       "0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12)",
