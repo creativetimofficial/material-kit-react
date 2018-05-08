@@ -26,7 +26,7 @@ import SectionTypography from "./Sections/SectionTypography.jsx";
 import SectionJavascript from "./Sections/SectionJavascript.jsx";
 import SectionCarousel from "./Sections/SectionCarousel.jsx";
 import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx";
-import SectionSignup from "./Sections/SectionSignup.jsx";
+import SectionLogin from "./Sections/SectionLogin.jsx";
 import SectionExamples from "./Sections/SectionExamples.jsx";
 import SectionDownload from "./Sections/SectionDownload.jsx";
 
@@ -100,11 +100,11 @@ class Components extends React.Component {
           <SectionJavascript />
           <SectionCarousel />
           <SectionCompletedExamples />
-          <SectionSignup />
+          <SectionLogin />
           <GridItem md={12} className={classes.textCenter}>
-            <Link to={"/signup-page"} className={classes.link}>
+            <Link to={"/login-page"} className={classes.link}>
               <Button color="primary" size="lg" simple>
-                View Signup Page
+                View Login Page
               </Button>
             </Link>
           </GridItem>

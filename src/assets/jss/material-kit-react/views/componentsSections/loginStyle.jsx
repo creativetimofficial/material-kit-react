@@ -1,8 +1,8 @@
 import { container } from "assets/jss/material-kit-react.jsx";
 
-import image from "assets/img/city.jpg";
+import image from "assets/img/bg7.jpg";
 
-const signupStyle = {
+const loginStyle = {
   section: {
     height: "90vh",
     overflow: "hidden",
@@ -47,4 +47,4 @@ const signupStyle = {
   }
 };
 
-export default signupStyle;
+export default loginStyle;

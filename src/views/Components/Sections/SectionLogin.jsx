@@ -17,9 +17,9 @@ import IconButton from "components/CustomButtons/IconButton.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 
-import signupStyle from "assets/jss/material-kit-react/views/componentsSections/signupStyle.jsx";
+import loginStyle from "assets/jss/material-kit-react/views/componentsSections/loginStyle.jsx";
 
-class SectionSignup extends React.Component {
+class SectionLogin extends React.Component {
   render() {
     const { classes } = this.props;
     return (
@@ -30,7 +30,7 @@ class SectionSignup extends React.Component {
               <Card>
                 <form className={classes.form}>
                   <CardHeader color="primary" className={classes.cardHeader}>
-                    <h4>Sign Up</h4>
+                    <h4>Login</h4>
                     <p>
                       <IconButton
                         href="#pablo"
@@ -129,4 +129,4 @@ class SectionSignup extends React.Component {
   }
 }
 
-export default withStyles(signupStyle)(SectionSignup);
+export default withStyles(loginStyle)(SectionLogin);
