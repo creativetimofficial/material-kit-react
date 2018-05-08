@@ -1,6 +1,6 @@
 # [Material Kit React - Free Material-UI Kit](http://creativetimofficial.github.io/material-kit-react/#/)
 
-![alt text](https://s3.amazonaws.com/creativetim_bucket/products/82/original/opt_mk_thumbnail.jpg "Material Kit Free")
+![alt text](https://s3.amazonaws.com/creativetim_bucket/products/83/original/opt_mk_thumbnail.jpg "Material Kit Free")
 
 Material Kit React is a Free Material-UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Material-UI elements, you will find three fully-coded example pages, to help you design your next project.
 
