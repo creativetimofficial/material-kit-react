@@ -4,10 +4,10 @@ import image from "assets/img/sign.jpg";
 
 const loginStyle = {
   section: {
-    height: "90vh",
+    minHeight: "110vh",
     overflow: "hidden",
     padding: "70px 0",
-    backgroundPosition: "center center",
+    backgroundPosition: "top center",
     backgroundSize: "cover",
     margin: "0",
     border: "0",
