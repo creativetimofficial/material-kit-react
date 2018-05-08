@@ -31,7 +31,7 @@ class SectionLogin extends React.Component {
                 <form className={classes.form}>
                   <CardHeader color="primary" className={classes.cardHeader}>
                     <h4>Login</h4>
-                    <p>
+                    <div className={classes.socialLine}>
                       <IconButton
                         href="#pablo"
                         target="_blank"
@@ -64,7 +64,7 @@ class SectionLogin extends React.Component {
                           }
                         />
                       </IconButton>
-                    </p>
+                    </div>
                   </CardHeader>
                   <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
@@ -78,7 +78,7 @@ class SectionLogin extends React.Component {
                         type: "text",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <People />
+                            <People className={classes.inputIconsColor}/>
                           </InputAdornment>
                         )
                       }}
@@ -93,7 +93,7 @@ class SectionLogin extends React.Component {
                         type: "email",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <Email />
+                            <Email className={classes.inputIconsColor}/>
                           </InputAdornment>
                         )
                       }}
@@ -108,7 +108,7 @@ class SectionLogin extends React.Component {
                         type: "password",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <LockOutline />
+                            <LockOutline className={classes.inputIconsColor}/>
                           </InputAdornment>
                         )
                       }}

@@ -40,7 +40,12 @@ const signupPageStyle = {
   },
   cardHeader: {
     width: "auto",
-    textAlign: "center"
+    textAlign: "center",
+    marginLeft: "20px",
+    marginRight: "20px",
+    marginTop: "-40px",
+    padding: "20px 0",
+    marginBottom: "15px",
   },
   socialIcons: {
     maxWidth: "24px",
@@ -63,6 +68,14 @@ const signupPageStyle = {
     border: "0",
     borderRadius: "6px",
     justifyContent: "center !important"
+  },
+  socialLine: {
+    marginTop: "1rem",
+    textAlign: "center",
+    padding: "0",
+  },
+  inputIconsColor: {
+    color: "#495057",
   }
 };
 

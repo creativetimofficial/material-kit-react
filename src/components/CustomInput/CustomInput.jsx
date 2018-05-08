@@ -40,10 +40,15 @@ function CustomInput({ ...props }) {
     [classes.input]: true,
     [classes.whiteInput]: white
   });
+  const formControlClasses = classNames({
+    [classes.formControl]: true,
+    [classes.formControlLabel]: labelText !== undefined,
+    [formControlProps.className]: formControlProps.className !== undefined
+  });
   return (
     <FormControl
       {...formControlProps}
-      className={formControlProps.className + " " + classes.formControl}
+      className={formControlClasses}
     >
       {labelText !== undefined ? (
         <InputLabel
