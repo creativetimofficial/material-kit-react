@@ -18,7 +18,8 @@ const cardStyle = {
     flexDirection: "column",
     minWidth: "0",
     wordWrap: "break-word",
-    fontSize: ".875rem"
+    fontSize: ".875rem",
+    transition: "all 300ms linear",
   },
   cardPlain: {
     background: "transparent",

@@ -1,6 +1,4 @@
-import { container, cardTitle } from "assets/jss/material-kit-react.jsx";
-
-import customCheckboxRadioSwitchStyle from "assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx";
+import { container } from "assets/jss/material-kit-react.jsx";
 
 const signupPageStyle = {
   container: {
@@ -9,6 +7,10 @@ const signupPageStyle = {
     position: "relative",
     paddingTop: "20vh",
     color: "#FFFFFF"
+  },
+  cardHidden: {
+    opacity: "0",
+    transform: "translate3d(0, -60px, 0)"
   },
   pageHeader: {
     minHeight: "100vh",
@@ -33,23 +35,16 @@ const signupPageStyle = {
       content: '""'
     }
   },
-  cardSignup: {
-    borderRadius: "6px",
-    boxShadow:
-      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);",
-    marginBottom: "100px",
-    padding: "40px 0px"
+  form: {
+    margin: "0"
   },
-  cardTitle: {
-    ...cardTitle,
-    textDecoration: "none",
-    textAlign: "center !important",
-    marginBottom: "0.75rem"
+  cardHeader: {
+    width: "auto",
+    textAlign: "center"
   },
-  ...customCheckboxRadioSwitchStyle,
-  socials: {
+  socialIcons: {
+    maxWidth: "24px",
     marginTop: "0",
-    position: "absolute",
     width: "100%",
     transform: "none",
     left: "0",
@@ -58,18 +53,16 @@ const signupPageStyle = {
     lineHeight: "41px",
     fontSize: "20px"
   },
-  textCenter: {
+  divider: {
+    marginTop: "30px",
+    marginBottom: "0px",
     textAlign: "center"
   },
-  inputAdornment: {
-    marginRight: "18px",
-    position: "relative"
-  },
-  inputAdornmentIcon: {
-    color: "#495057"
-  },
-  form: {
-    margin: "0"
+  cardFooter: {
+    paddingTop: "0rem",
+    border: "0",
+    borderRadius: "6px",
+    justifyContent: "center !important"
   }
 };
 
