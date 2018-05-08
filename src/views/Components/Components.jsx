@@ -34,7 +34,7 @@ import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
 class Components extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
     return (
       <div>
         <Header
@@ -46,7 +46,6 @@ class Components extends React.Component {
             height: 400,
             color: "white"
           }}
-          {...rest}
         />
         <Parallax image={require("assets/img/bg4.jpg")}>
           <div className={classes.container}>
