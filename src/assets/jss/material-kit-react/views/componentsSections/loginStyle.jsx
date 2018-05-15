@@ -5,6 +5,7 @@ import image from "assets/img/sign.jpg";
 const loginStyle = {
   section: {
     minHeight: "110vh",
+    maxHeight: "1000px",
     overflow: "hidden",
     padding: "70px 0",
     backgroundPosition: "top center",

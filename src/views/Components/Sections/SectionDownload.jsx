@@ -37,7 +37,7 @@ class SectionDownload extends React.Component {
               <Button
                 color="primary"
                 size="lg"
-                href="http://www.creative-tim.com/product/material-kit-react"
+                href="https://www.creative-tim.com/product/material-kit-react"
                 target="_blank"
               >
                 Free React Download
@@ -45,7 +45,7 @@ class SectionDownload extends React.Component {
               <Button
                 color="primary"
                 size="lg"
-                href="http://www.creative-tim.com/product/material-kit"
+                href="https://www.creative-tim.com/product/material-kit"
                 target="_blank"
               >
                 Free HTML Downoad
@@ -77,7 +77,7 @@ class SectionDownload extends React.Component {
                 color="rose"
                 size="lg"
                 disabled
-                href="http://www.creative-tim.com/product/material-kit-pro-react"
+                href="https://www.creative-tim.com/product/material-kit-pro-react"
                 target="_blank"
               >
                 Material Kit PRO
@@ -97,7 +97,7 @@ class SectionDownload extends React.Component {
               <h3>Thank you for supporting us!</h3>
             </GridContainer>
             <TwitterShareButton
-              url="https://timcreative.github.io/material-kit-react/"
+              url="https://www.creative-tim.com/live/material-kit-react"
               title="Material Kit React - Free Material-UI Kit Template"
               hashtags={[
                 "react",
@@ -112,13 +112,13 @@ class SectionDownload extends React.Component {
                 <i className={classes.socials + " fab fa-twitter"} /> Tweet
               </Button>
             </TwitterShareButton>
-            <FacebookShareButton url="https://timcreative.github.io/material-kit-react/">
+            <FacebookShareButton url="https://www.creative-tim.com/live/material-kit-react">
               <Button color="facebook">
                 <i className={classes.socials + " fab fa-facebook-square"} />{" "}
                 Share
               </Button>
             </FacebookShareButton>
-            <GooglePlusShareButton url="https://timcreative.github.io/material-kit-react/">
+            <GooglePlusShareButton url="https://www.creative-tim.com/live/material-kit-react">
               <Button color="google">
                 <i className={classes.socials + " fab fa-google-plus-g"} />Share
               </Button>

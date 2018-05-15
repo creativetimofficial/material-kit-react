@@ -68,7 +68,7 @@ class Styles extends React.Component {
         <p>
           A useful link about JSS is{" "}
           <a
-            href="http://cssinjs.org/"
+            href="https://github.com/cssinjs"
             target="_blank"
             rel="noopener noreferrer"
           >

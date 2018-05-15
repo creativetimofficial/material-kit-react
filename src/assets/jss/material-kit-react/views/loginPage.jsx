@@ -14,6 +14,7 @@ const signupPageStyle = {
   },
   pageHeader: {
     minHeight: "100vh",
+    maxHeight: "1000px",
     height: "auto",
     display: "inherit",
     position: "relative",

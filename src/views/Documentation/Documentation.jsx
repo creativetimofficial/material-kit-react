@@ -34,7 +34,8 @@ class Documentation extends React.Component {
             style={{
               marginTop: "75px",
               marginBottom: "75px",
-              minHeight: "calc(100vh - 75px)"
+              minHeight: "calc(100vh - 75px)",
+              maxHeight: "2000px"
             }}
           >
             <Switch>
