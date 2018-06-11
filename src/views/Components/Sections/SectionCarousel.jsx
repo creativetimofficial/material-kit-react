@@ -1,8 +1,8 @@
 import React from "react";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import LocationOn from "@material-ui/icons/LocationOn";
 // core components

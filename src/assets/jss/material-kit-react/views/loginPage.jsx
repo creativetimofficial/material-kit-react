@@ -14,6 +14,7 @@ const signupPageStyle = {
   },
   pageHeader: {
     minHeight: "100vh",
+    maxHeight: "1200px",
     height: "auto",
     display: "inherit",
     position: "relative",
@@ -45,7 +46,7 @@ const signupPageStyle = {
     marginRight: "20px",
     marginTop: "-40px",
     padding: "20px 0",
-    marginBottom: "15px",
+    marginBottom: "15px"
   },
   socialIcons: {
     maxWidth: "24px",
@@ -72,10 +73,10 @@ const signupPageStyle = {
   socialLine: {
     marginTop: "1rem",
     textAlign: "center",
-    padding: "0",
+    padding: "0"
   },
   inputIconsColor: {
-    color: "#495057",
+    color: "#495057"
   }
 };
 

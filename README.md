@@ -1,4 +1,5 @@
-# [Material Kit React - Free Material-UI Kit](http://creativetimofficial.github.io/material-kit-react/#/)
+# [Material Kit React - Free Material-UI Kit](https://creativetimofficial.github.io/material-kit-react/#/)
+[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
 ![alt text](https://s3.amazonaws.com/creativetim_bucket/products/83/original/opt_mk_react_thumbnail.jpg "Material Kit Free")
 
@@ -12,11 +13,11 @@ Material Kit React uses a framework built by our friends from [mui-org](https://
 
 ## Links:
 
-+ [Live Preview](http://creativetimofficial.github.io/material-kit-react/#/)
++ [Live Preview](https://creativetimofficial.github.io/material-kit-react/#/)
 + [Material Dashboard Free React](https://creativetimofficial.github.io/material-dashboard-react/#/dashboard)
 + [Material Dashboard PRO React](https://timcreative.github.io/material-dashboard-pro-react/#/dashboard) (from $59)
 + [Material Kit Free HTML](https://demos.creative-tim.com/material-kit/index.html)
-+ [Material Kit PRO HTML](http://demos.creative-tim.com/material-kit-pro/presentation.html) (from $79)
++ [Material Kit PRO HTML](https://demos.creative-tim.com/material-kit-pro/presentation.html) (from $79)
 
 
 ## Quick start
@@ -24,7 +25,7 @@ Material Kit React uses a framework built by our friends from [mui-org](https://
 Quick start options:
 
 - [Download from Github](https://github.com/creativetimofficial/material-kit-react.git).
-- [Download from Creative Tim](http://www.creative-tim.com/product/material-kit-react).
+- [Download from Creative Tim](https://www.creative-tim.com/product/material-kit-react).
 - Clone the repo: `git clone https://github.com/creativetimofficial/material-kit-react.git`.
 
 
@@ -154,19 +155,19 @@ Within the download you'll find the following directories and files:
 
 ### License
 
-- Copyright 2018 Creative Tim (http://www.creative-tim.com)
+- Copyright 2018 Creative Tim (https://www.creative-tim.com)
 - Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
 
 
 ## Useful Links
 
-More products from Creative Tim: <http://www.creative-tim.com/products>
+More products from Creative Tim: <https://www.creative-tim.com/products>
 
 Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
-Freebies: <http://www.creative-tim.com/products>
+Freebies: <https://www.creative-tim.com/products>
 
-Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
 
 Social Media:
 
@@ -179,3 +180,8 @@ Dribbble: <https://dribbble.com/creativetim>
 Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://instagram.com/creativetimofficial>
+
+[LICENSE]: ./LICENSE.md
+[CHANGELOG]: ./CHANGELOG.md
+[version-badge]: https://img.shields.io/badge/version-1.1.0-blue.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg

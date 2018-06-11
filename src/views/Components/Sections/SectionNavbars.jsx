@@ -1,9 +1,9 @@
 import React from "react";
 
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import List from "material-ui/List";
-import ListItem from "material-ui/List/ListItem";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
 import Search from "@material-ui/icons/Search";
 import Email from "@material-ui/icons/Email";
@@ -16,7 +16,6 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Header from "components/Header/Header.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
-import IconButton from "components/CustomButtons/IconButton.jsx";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
@@ -180,9 +179,9 @@ class SectionNavbars extends React.Component {
                       }
                     }}
                   />
-                  <IconButton color="white">
+                  <Button justIcon round color="white">
                     <Search className={classes.searchIcon} />
-                  </IconButton>
+                  </Button>
                 </div>
               }
             />
@@ -288,14 +287,15 @@ class SectionNavbars extends React.Component {
                     </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
-                    <IconButton
+                    <Button
+                      justIcon
                       href="#pablo"
                       className={classes.notificationNavLink}
                       onClick={e => e.preventDefault()}
                       color="rose"
                     >
                       <Email className={classes.icons} />
-                    </IconButton>
+                    </Button>
                   </ListItem>
                   <ListItem className={classes.listItem}>
                     <CustomDropdown
@@ -357,7 +357,7 @@ class SectionNavbars extends React.Component {
                       color="rose"
                       round
                     >
-                      Regiter
+                      Register
                     </Button>
                   </ListItem>
                 </List>

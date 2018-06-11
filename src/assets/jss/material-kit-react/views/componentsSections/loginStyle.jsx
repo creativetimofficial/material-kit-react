@@ -5,6 +5,7 @@ import image from "assets/img/sign.jpg";
 const loginStyle = {
   section: {
     minHeight: "110vh",
+    maxHeight: "1600px",
     overflow: "hidden",
     padding: "70px 0",
     backgroundPosition: "top center",
@@ -26,7 +27,7 @@ const loginStyle = {
     marginRight: "20px",
     marginTop: "-40px",
     padding: "20px 0",
-    marginBottom: "15px",
+    marginBottom: "15px"
   },
   socialIcons: {
     maxWidth: "24px",
@@ -53,10 +54,10 @@ const loginStyle = {
   socialLine: {
     marginTop: "1rem",
     textAlign: "center",
-    padding: "0",
+    padding: "0"
   },
   inputIconsColor: {
-    color: "#495057",
+    color: "#495057"
   }
 };
 

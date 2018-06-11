@@ -4,13 +4,10 @@ import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
-// import Card from "material-ui/Card";
-// import CardContent from "material-ui/Card/CardContent";
-// import CardHeader from "material-ui/Card/CardHeader";
-import Tabs from "material-ui/Tabs";
-import Tab from "material-ui/Tabs/Tab";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
 
 // core components
 import Card from "components/Card/Card.jsx";

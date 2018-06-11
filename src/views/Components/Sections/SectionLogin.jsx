@@ -1,7 +1,7 @@
 import React from "react";
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import InputAdornment from "material-ui/Input/InputAdornment";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import People from "@material-ui/icons/People";
 import LockOutline from "@material-ui/icons/LockOutline";
@@ -13,7 +13,6 @@ import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
-import IconButton from "components/CustomButtons/IconButton.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 
@@ -32,7 +31,8 @@ class SectionLogin extends React.Component {
                   <CardHeader color="primary" className={classes.cardHeader}>
                     <h4>Login</h4>
                     <div className={classes.socialLine}>
-                      <IconButton
+                      <Button
+                        justIcon
                         href="#pablo"
                         target="_blank"
                         color="transparent"
@@ -41,8 +41,9 @@ class SectionLogin extends React.Component {
                         <i
                           className={classes.socialIcons + " fab fa-twitter"}
                         />
-                      </IconButton>
-                      <IconButton
+                      </Button>
+                      <Button
+                        justIcon
                         href="#pablo"
                         target="_blank"
                         color="transparent"
@@ -51,8 +52,9 @@ class SectionLogin extends React.Component {
                         <i
                           className={classes.socialIcons + " fab fa-facebook"}
                         />
-                      </IconButton>
-                      <IconButton
+                      </Button>
+                      <Button
+                        justIcon
                         href="#pablo"
                         target="_blank"
                         color="transparent"
@@ -63,7 +65,7 @@ class SectionLogin extends React.Component {
                             classes.socialIcons + " fab fa-google-plus-g"
                           }
                         />
-                      </IconButton>
+                      </Button>
                     </div>
                   </CardHeader>
                   <p className={classes.divider}>Or Be Classical</p>
@@ -78,7 +80,7 @@ class SectionLogin extends React.Component {
                         type: "text",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <People className={classes.inputIconsColor}/>
+                            <People className={classes.inputIconsColor} />
                           </InputAdornment>
                         )
                       }}
@@ -93,7 +95,7 @@ class SectionLogin extends React.Component {
                         type: "email",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <Email className={classes.inputIconsColor}/>
+                            <Email className={classes.inputIconsColor} />
                           </InputAdornment>
                         )
                       }}
@@ -108,7 +110,7 @@ class SectionLogin extends React.Component {
                         type: "password",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <LockOutline className={classes.inputIconsColor}/>
+                            <LockOutline className={classes.inputIconsColor} />
                           </InputAdornment>
                         )
                       }}

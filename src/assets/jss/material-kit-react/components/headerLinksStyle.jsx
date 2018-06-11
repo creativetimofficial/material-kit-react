@@ -104,12 +104,6 @@ const headerLinksStyle = theme => ({
     fontSize: "1.25rem",
     maxWidth: "24px"
   },
-  socialIconsButton: {
-    top: "4px",
-    [theme.breakpoints.down("sm")]: {
-      top: "0"
-    }
-  },
   dropdownLink: {
     "&,&:hover,&:focus": {
       color: "inherit",

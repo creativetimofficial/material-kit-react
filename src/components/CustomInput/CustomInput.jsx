@@ -1,11 +1,18 @@
 import React from "react";
-import { withStyles, FormControl, InputLabel, Input } from "material-ui";
-import { Clear, Check } from "@material-ui/icons";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import FormControl from "@material-ui/core/FormControl";
+import InputLabel from "@material-ui/core/InputLabel";
+import Input from "@material-ui/core/Input";
+// @material-ui/icons
+import Clear from "@material-ui/icons/Clear";
+import Check from "@material-ui/icons/Check";
+// core components
 import customInputStyle from "assets/jss/material-kit-react/components/customInputStyle.jsx";
 
 function CustomInput({ ...props }) {
@@ -46,10 +53,7 @@ function CustomInput({ ...props }) {
     [formControlProps.className]: formControlProps.className !== undefined
   });
   return (
-    <FormControl
-      {...formControlProps}
-      className={formControlClasses}
-    >
+    <FormControl {...formControlProps} className={formControlClasses}>
       {labelText !== undefined ? (
         <InputLabel
           className={classes.labelRoot + " " + labelClasses}

@@ -1,7 +1,7 @@
 import React from "react";
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import InputAdornment from "material-ui/Input/InputAdornment";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import LockOutline from "@material-ui/icons/LockOutline";
@@ -13,7 +13,6 @@ import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import IconButton from "components/CustomButtons/IconButton.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
@@ -68,38 +67,33 @@ class LoginPage extends React.Component {
                     <CardHeader color="primary" className={classes.cardHeader}>
                       <h4>Login</h4>
                       <div className={classes.socialLine}>
-                        <IconButton
+                        <Button
+                          justIcon
                           href="#pablo"
                           target="_blank"
                           color="transparent"
                           onClick={e => e.preventDefault()}
                         >
-                          <i
-                            className={classes.socialIcons + " fab fa-twitter"}
-                          />
-                        </IconButton>
-                        <IconButton
+                          <i className={"fab fa-twitter"} />
+                        </Button>
+                        <Button
+                          justIcon
                           href="#pablo"
                           target="_blank"
                           color="transparent"
                           onClick={e => e.preventDefault()}
                         >
-                          <i
-                            className={classes.socialIcons + " fab fa-facebook"}
-                          />
-                        </IconButton>
-                        <IconButton
+                          <i className={"fab fa-facebook"} />
+                        </Button>
+                        <Button
+                          justIcon
                           href="#pablo"
                           target="_blank"
                           color="transparent"
                           onClick={e => e.preventDefault()}
                         >
-                          <i
-                            className={
-                              classes.socialIcons + " fab fa-google-plus-g"
-                            }
-                          />
-                        </IconButton>
+                          <i className={"fab fa-google-plus-g"} />
+                        </Button>
                       </div>
                     </CardHeader>
                     <p className={classes.divider}>Or Be Classical</p>
@@ -114,7 +108,7 @@ class LoginPage extends React.Component {
                           type: "text",
                           endAdornment: (
                             <InputAdornment position="end">
-                              <People className={classes.inputIconsColor}/>
+                              <People className={classes.inputIconsColor} />
                             </InputAdornment>
                           )
                         }}
@@ -129,7 +123,7 @@ class LoginPage extends React.Component {
                           type: "email",
                           endAdornment: (
                             <InputAdornment position="end">
-                              <Email className={classes.inputIconsColor}/>
+                              <Email className={classes.inputIconsColor} />
                             </InputAdornment>
                           )
                         }}
@@ -144,7 +138,9 @@ class LoginPage extends React.Component {
                           type: "password",
                           endAdornment: (
                             <InputAdornment position="end">
-                              <LockOutline className={classes.inputIconsColor}/>
+                              <LockOutline
+                                className={classes.inputIconsColor}
+                              />
                             </InputAdornment>
                           )
                         }}

@@ -1,13 +1,13 @@
 import React from "react";
 // react plugin that creates slider
 import Nouislider from "react-nouislider";
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import InputAdornment from "material-ui/Input/InputAdornment";
-import FormControlLabel from "material-ui/Form/FormControlLabel";
-import Checkbox from "material-ui/Checkbox";
-import Radio from "material-ui/Radio";
-import Switch from "material-ui/Switch";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox";
+import Radio from "@material-ui/core/Radio";
+import Switch from "@material-ui/core/Switch";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import People from "@material-ui/icons/People";
@@ -17,7 +17,6 @@ import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import IconButton from "components/CustomButtons/IconButton.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
 import Paginations from "components/Pagination/Pagination.jsx";
@@ -82,9 +81,9 @@ class SectionBasics extends React.Component {
                 <Button color="primary" round>
                   <Favorite className={classes.icons} /> with icon
                 </Button>
-                <IconButton color="primary">
+                <Button justIcon round color="primary">
                   <Favorite className={classes.icons} />
-                </IconButton>
+                </Button>
                 <Button color="primary" simple>
                   simple
                 </Button>
