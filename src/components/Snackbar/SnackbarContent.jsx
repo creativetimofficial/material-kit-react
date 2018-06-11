@@ -45,7 +45,6 @@ class SnackbarContent extends React.Component {
             root: classes.root + " " + classes[color],
             message: classes.message + " " + classes.container
           }}
-          // action={action}
         />
       )
     };

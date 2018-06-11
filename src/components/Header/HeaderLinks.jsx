@@ -1,4 +1,4 @@
-/* eslint-disable */
+/*eslint-disable*/
 import React from "react";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
