@@ -1,7 +1,3 @@
-// ##############################
-// // // CustomLinearProgress component styles
-// #############################
-
 import {
   primaryColor,
   warningColor,

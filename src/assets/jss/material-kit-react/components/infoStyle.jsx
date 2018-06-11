@@ -1,7 +1,3 @@
-// ##############################
-// // // Info component styles
-// #############################
-
 import {
   primaryColor,
   warningColor,

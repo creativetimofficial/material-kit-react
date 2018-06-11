@@ -47,7 +47,8 @@ class CustomDropdown extends React.Component {
       caret,
       hoverColor,
       left,
-      rtlActive
+      rtlActive,
+      noLiPadding
     } = this.props;
     const caretClasses = classNames({
       [classes.caret]: true,
@@ -57,6 +58,7 @@ class CustomDropdown extends React.Component {
     const dropdownItem = classNames({
       [classes.dropdownItem]: true,
       [classes[hoverColor + "Hover"]]: true,
+      [classes.noLiPadding]: noLiPadding,
       [classes.dropdownItemRTL]: rtlActive
     });
     return (
@@ -154,7 +156,8 @@ CustomDropdown.propTypes = {
   dropdownHeader: PropTypes.node,
   rtlActive: PropTypes.bool,
   caret: PropTypes.bool,
-  left: PropTypes.bool
+  left: PropTypes.bool,
+  noLiPadding: PropTypes.bool,
 };
 
 export default withStyles(customDropdownStyle)(CustomDropdown);

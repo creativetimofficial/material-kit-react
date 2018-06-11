@@ -1,6 +1,9 @@
 ## [1.1.0] 2018-06-13
 ### Major styling changes
 - `src/assets/jss/material-kit-react/components/buttonStyle.jsx`, due to the fact that we've droped `src/components/CustomButtons/IconButton.jsx`
+- `src/assets/jss/material-kit-react/components/customInputStyle.jsx`
+- `src/assets/jss/material-kit-react/components/customTabsStyle.jsx`
+- `src/assets/jss/material-kit-react/components/headerLinksStyle.jsx`
 ### Dropped components
 - `src/components/CustomButtons/IconButton.jsx` instead use `src/components/CustomButtons/Button.jsx` (with the prop `justIcon` on them)
 ### Deleted dependencies
@@ -18,7 +21,8 @@
 - `react-router-dom@4.2.2` to `react-router-dom@4.3.1`
 ### Bug fixing
 - Added `maxHeight` in styling sheets for those components that had `height`  set in `vh` (these changes were made because on an iframe the product would scroll forever)
-- Changed the imports from Material-UI (now they are with `material-ui/core` instead of `material-ui`)
+- Changed the imports from Material-UI (now they are with `@material-ui/core` instead of `material-ui`)
+- Dropped some styling on some pages/section of pages due to the change of the buttons styling
 
 ## [1.0.0] 2018-05-08
 ### Original Release

@@ -1,7 +1,3 @@
-// ##############################
-// // // CustomDropdown component styles
-// #############################
-
 import {
   defaultFont,
   primaryColor,
@@ -31,7 +27,7 @@ const customDropdownStyle = theme => ({
     padding: "0"
   },
   pooperResponsive: {
-    zIndex: "2",
+    zIndex: "1200",
     [theme.breakpoints.down("sm")]: {
       zIndex: "1640",
       position: "static",
@@ -117,6 +113,9 @@ const customDropdownStyle = theme => ({
       backgroundColor: "transparent",
       cursor: "auto"
     }
+  },
+  noLiPadding: {
+    padding: "0"
   }
 });
 

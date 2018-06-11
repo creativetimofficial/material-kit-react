@@ -1,7 +1,3 @@
-// ##############################
-// // // Button styles
-// #############################
-
 import {
   grayColor,
   roseColor,
@@ -48,8 +44,6 @@ const buttonStyle = {
       position: "relative",
       display: "inline-block",
       top: "0",
-      marginTop: "-1em",
-      marginBottom: "-1em",
       fontSize: "1.1rem",
       marginRight: "4px",
       verticalAlign: "middle"
@@ -65,7 +59,7 @@ const buttonStyle = {
     },
     "&$justIcon": {
       "& .fab,& .fas,& .far,& .fal": {
-        marginTop: "0px",
+        marginRight: "0px",
         position: "absolute",
         width: "100%",
         transform: "none",

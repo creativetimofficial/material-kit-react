@@ -1,67 +1,60 @@
-import { defaultFont } from "assets/jss/material-kit-react.jsx";
-
-const customTabsStyle = theme => ({
+const customTabsStyle = {
   cardTitle: {
-    ...defaultFont,
     float: "left",
-    padding: "10px 10px 10px 0",
-    lineHeight: "24px",
-    fontSize: "14px",
-    color: "#FFFFFF"
+    padding: "10px 10px 10px 0px",
+    lineHeight: "24px"
   },
   cardTitleRTL: {
     float: "right",
     padding: "10px 0px 10px 10px !important"
   },
   displayNone: {
-    display: "none"
+    display: "none !important"
   },
-  tabsContainer: {
-    color: "#FFFFFF",
-    display: "flex",
-    flexWrap: "wrap"
+  tabsRoot: {
+    minHeight: "unset !important"
   },
-  tabsContainerRTL: {
-    float: "right"
-  },
-  tabIcon: {
-    width: "24px",
-    height: "24px",
-    marginRight: "4px"
-  },
-  customTabsRoot: {
-    height: "auto",
-    minHeight: "auto"
-  },
-  customTabSelected: {
-    backgroundColor: "rgba(255, 255, 255, 0.2)",
-    transition: "background-color .4s"
-  },
-  customTabRoot: {
-    width: "auto",
-    minWidth: "70px",
-    borderRadius: "3px",
-    opacity: "1",
-    height: "auto",
+  tabRootButton: {
+    minHeight: "unset !important",
+    minWidth: "unset !important",
+    width: "unset !important",
+    height: "unset !important",
+    maxWidth: "unset !important",
+    maxHeight: "unset !important",
     padding: "10px 15px",
-    display: "block"
+    borderRadius: "3px",
+    lineHeight: "24px",
+    border: "0 !important",
+    color: "#fff !important",
+    marginLeft: "4px",
+    "&:last-child": {
+      marginLeft: "0px"
+    }
   },
-  customTabLabelContainer: {
-    color: "inherit",
-    padding: "1px!important"
+  tabLabelContainer: {
+    padding: "0px"
   },
-  customTabWrapper: {
-    width: "auto",
-    display: "inline-flex",
-    alignItems: "inherit",
-    flexDirection: "row",
-    justifyContent: "center"
-  },
-  customTabLabel: {
+  tabLabel: {
     fontWeight: "500",
-    fontSize: "12px",
-    lineHeight: "24px"
+    fontSize: "12px"
+  },
+  tabSelected: {
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
+    transition: "0.2s background-color 0.1s"
+  },
+  tabWrapper: {
+    display: "inline-block",
+    minHeight: "unset !important",
+    minWidth: "unset !important",
+    width: "unset !important",
+    height: "unset !important",
+    maxWidth: "unset !important",
+    maxHeight: "unset !important",
+    "& > svg": {
+      verticalAlign: "middle",
+      margin: "-1px 5px 0 0"
+    }
   }
-});
+};
 
 export default customTabsStyle;

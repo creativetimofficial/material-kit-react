@@ -1,7 +1,3 @@
-// ##############################
-// // // Header styles
-// #############################
-
 import {
   container,
   defaultFont,
@@ -32,13 +28,15 @@ const headerStyle = {
     alignItems: "center",
     flexFlow: "row nowrap",
     justifyContent: "flex-start",
-    position: "relative"
+    position: "relative",
+    zIndex: "unset"
   },
   absolute: {
     position: "absolute"
   },
   fixed: {
-    position: "fixed"
+    position: "fixed",
+    zIndex: "1100"
   },
   container: {
     ...container,
@@ -66,7 +64,6 @@ const headerStyle = {
   },
   appResponsive: {
     margin: "20px 10px"
-    // width: drawerWidth,
   },
   primary: {
     backgroundColor: primaryColor,
@@ -147,19 +144,6 @@ const headerStyle = {
     paddingRight: "0px",
     paddingLeft: "0",
     ...transition
-    // "&:before,&:after": {
-    //   position: "absolute",
-    //   zIndex: "3",
-    //   width: "100%",
-    //   height: "100%",
-    //   content: '""',
-    //   display: "block",
-    //   top: "0"
-    // },
-    // "&:after": {
-    //   background: "#000",
-    //   opacity: ".8"
-    // }
   }
 };
 

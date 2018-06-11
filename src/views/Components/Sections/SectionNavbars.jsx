@@ -289,6 +289,7 @@ class SectionNavbars extends React.Component {
                   <ListItem className={classes.listItem}>
                     <Button
                       justIcon
+                      round
                       href="#pablo"
                       className={classes.notificationNavLink}
                       onClick={e => e.preventDefault()}

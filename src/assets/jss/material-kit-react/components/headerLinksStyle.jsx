@@ -1,7 +1,3 @@
-// ##############################
-// // // HeaderLinks styles
-// #############################
-
 import { defaultFont } from "assets/jss/material-kit-react.jsx";
 
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx";
@@ -101,13 +97,15 @@ const headerLinksStyle = theme => ({
   },
   socialIcons: {
     position: "relative",
-    fontSize: "1.25rem",
-    maxWidth: "24px"
+    fontSize: "20px !important",
+    marginRight: "4px"
   },
   dropdownLink: {
     "&,&:hover,&:focus": {
       color: "inherit",
-      textDecoration: "none"
+      textDecoration: "none",
+      display: "block",
+      padding: "10px 20px",
     }
   },
   ...tooltip,

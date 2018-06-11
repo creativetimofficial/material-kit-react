@@ -1,7 +1,3 @@
-// ##############################
-// // // Checkbox, Radio and Switch styles
-// #############################
-
 import {
   primaryColor,
   dangerColor,
@@ -90,15 +86,15 @@ const customCheckboxRadioSwitch = {
     color: primaryColor + "!important"
   },
   radioChecked: {
-    width: "20px",
-    height: "20px",
+    width: "16px",
+    height: "16px",
     border: "1px solid " + primaryColor,
     borderRadius: "50%"
   },
   radioUnchecked: {
     width: "0px",
     height: "0px",
-    padding: "9px",
+    padding: "7px",
     border: "1px solid rgba(0, 0, 0, .54)",
     borderRadius: "50%"
   },

@@ -1,7 +1,3 @@
-// import {
-//
-// } from "assets/jss/material-kit-react.jsx";
-
 const cardStyle = {
   card: {
     border: "0",

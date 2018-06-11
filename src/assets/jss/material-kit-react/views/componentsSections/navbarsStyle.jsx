@@ -30,7 +30,7 @@ const navbarsStyle = theme => ({
   },
   formControl: {
     margin: "0 !important",
-    paddingBottom: "0"
+    paddingTop: "0"
   },
   inputRootCustomClasses: {
     margin: "0!important"
