@@ -105,6 +105,7 @@ class SectionNavbars extends React.Component {
                     <ListItem className={classes.listItem}>
                       <CustomDropdown
                         left
+                        hoverColor="info"
                         dropdownHeader="Dropdown Header"
                         buttonIcon={Settings}
                         buttonProps={{

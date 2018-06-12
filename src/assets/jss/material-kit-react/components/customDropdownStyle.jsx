@@ -1,7 +1,17 @@
 import {
   defaultFont,
   primaryColor,
-  primaryBoxShadow
+  primaryBoxShadow,
+  infoColor,
+  infoBoxShadow,
+  successColor,
+  successBoxShadow,
+  warningColor,
+  warningBoxShadow,
+  dangerColor,
+  dangerBoxShadow,
+  roseColor,
+  roseBoxShadow,
 } from "assets/jss/material-kit-react.jsx";
 
 const customDropdownStyle = theme => ({
@@ -68,6 +78,41 @@ const customDropdownStyle = theme => ({
       backgroundColor: primaryColor,
       color: "#FFFFFF",
       ...primaryBoxShadow
+    }
+  },
+  infoHover: {
+    "&:hover": {
+      backgroundColor: infoColor,
+      color: "#FFFFFF",
+      ...infoBoxShadow
+    }
+  },
+  successHover: {
+    "&:hover": {
+      backgroundColor: successColor,
+      color: "#FFFFFF",
+      ...successBoxShadow
+    }
+  },
+  warningHover: {
+    "&:hover": {
+      backgroundColor: warningColor,
+      color: "#FFFFFF",
+      ...warningBoxShadow
+    }
+  },
+  dangerHover: {
+    "&:hover": {
+      backgroundColor: dangerColor,
+      color: "#FFFFFF",
+      ...dangerBoxShadow
+    }
+  },
+  roseHover: {
+    "&:hover": {
+      backgroundColor: roseColor,
+      color: "#FFFFFF",
+      ...roseBoxShadow
     }
   },
   dropdownItemRTL: {
