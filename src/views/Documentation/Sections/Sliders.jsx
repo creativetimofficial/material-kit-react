@@ -117,7 +117,7 @@ function Sliders({ ...props }) {
         {codeExample}
       </SyntaxHighlighter>
       <p>
-        If you want to add color to your slider you need to wrapp the{" "}
+        If you want to add color to your slider you need to wrap the{" "}
         <code>Nouislider</code> in a <code>div</code> with the{" "}
         <code>className</code> and <code>"slider slider-$color"</code>, where{" "}
         <code>$color</code> can be one of <code>primary</code>,{" "}

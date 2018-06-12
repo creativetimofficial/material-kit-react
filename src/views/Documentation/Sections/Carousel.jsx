@@ -183,7 +183,7 @@ class SectionCarousel extends React.Component {
         </SyntaxHighlighter>
         <h2>Props</h2>
         <p>
-          We've added some extra clases to the default ones from{" "}
+          We've added some extra classes to the default ones from{" "}
           <a
             href="https://react-slick.neostack.com/"
             target="_blank"

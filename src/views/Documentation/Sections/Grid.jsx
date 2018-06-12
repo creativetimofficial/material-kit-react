@@ -45,7 +45,7 @@ function Grid({ ...props }) {
           // eslint-disable-next-line
         }
         <a href="https://material-ui-next.com/layout/grid/" target="_blank">
-          Mayterial-UI
+          Material-UI
         </a>.
       </p>
       <p>We've done this so we could add some personal styles to them.</p>

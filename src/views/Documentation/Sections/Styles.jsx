@@ -96,7 +96,7 @@ class Styles extends React.Component {
           If you go to any of our components you will see that somewhere at the
           beginning of the file we import <code>withStyles</code> from{" "}
           <code>material-ui</code>, then we import from{" "}
-          <code>scr/assets/jss/material-kit-react.jsx</code> the correspondig
+          <code>src/assets/jss/material-kit-react.jsx</code> the corresponding
           style for that component and at the end of the file, we export that
           component's class with the <code>withStyles</code> function so that
           the imported style overrides the <code>material-ui</code> style.

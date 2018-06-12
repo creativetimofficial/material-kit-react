@@ -68,7 +68,7 @@ function InfoArea({ ...props }) {
       <h1>InfoArea</h1>
       <p>
         This component was made by us to make it a bit more easier for you to
-        render some informations.
+        render some information.
       </p>
       <h2>Styles</h2>
       <p>

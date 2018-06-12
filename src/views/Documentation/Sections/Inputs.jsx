@@ -237,7 +237,7 @@ class Inputs extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            material-ui form controll documentation
+            material-ui form control documentation
           </a>.
         </p>
       </div>
