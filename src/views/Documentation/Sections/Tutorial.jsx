@@ -227,7 +227,7 @@ class Tutorial extends React.Component {
               <SyntaxHighlighter
                 language="jsx"
                 style={prism}
-              >{`npm install --g corss-env`}</SyntaxHighlighter>
+              >{`npm install --g cross-env`}</SyntaxHighlighter>
               and then try again starting the app.
             </div>
             <div>

@@ -4,7 +4,7 @@ import { prism } from "react-syntax-highlighter/styles/prism";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import LocationOn from "@material-ui/icons/LocationOn";
 // core components

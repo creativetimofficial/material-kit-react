@@ -1,7 +1,7 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // import { * } from '@material-ui/icons';
 
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
@@ -82,7 +82,6 @@ const codeProps = `CustomDropdown.defaultProps = {
 };
 
 CustomDropdown.propTypes = {
-  classes: PropTypes.object.isRequired,
   hoverColor: PropTypes.oneOf(["primary", "black"]),
   buttonText: PropTypes.node,
   buttonIcon: PropTypes.func,
@@ -92,7 +91,8 @@ CustomDropdown.propTypes = {
   dropdownHeader: PropTypes.node,
   rtlActive: PropTypes.bool,
   caret: PropTypes.bool,
-  left: PropTypes.bool
+  left: PropTypes.bool,
+  noLiPadding: PropTypes.bool,
 };`;
 
 function Dropdown({ ...props }) {

@@ -1,7 +1,9 @@
 import React from "react";
-import { withStyles, AppBar, Toolbar, Hidden } from "material-ui";
+import { withStyles, AppBar, Toolbar, Hidden } from "@material-ui/core";
 import { List, BugReport } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
+
+import Button from "components/CustomButtons/Button.jsx";
 
 const style = theme => ({
   appBar: {
@@ -67,6 +69,10 @@ const style = theme => ({
     [theme.breakpoints.down("md")]: {
       display: "block"
     }
+  },
+  buttonClasses: {
+    padding: "12px",
+    marginLeft: "12px"
   }
 });
 
@@ -81,6 +87,9 @@ class DocHeader extends React.Component {
               Material Kit React
             </NavLink>
             <Hidden mdDown>
+              <Button color="transparent" className={classes.buttonClasses}>
+                v1.1.0
+              </Button>
               <a
                 href="https://github.com/creativetimofficial/material-kit-react"
                 className={classes.iconLink}

@@ -1,8 +1,12 @@
 import React from "react";
-import { withStyles, SnackbarContent as Snack, IconButton } from "material-ui";
-import { Close } from "@material-ui/icons";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import Snack from "@material-ui/core/SnackbarContent";
+import IconButton from "@material-ui/core/IconButton";
+// @material-ui/icons
+import Close from "@material-ui/icons/Close";
 
 import snackbarContentStyle from "assets/jss/material-kit-react/components/snackbarContentStyle.jsx";
 
@@ -41,7 +45,6 @@ class SnackbarContent extends React.Component {
             root: classes.root + " " + classes[color],
             message: classes.message + " " + classes.container
           }}
-          // action={action}
         />
       )
     };

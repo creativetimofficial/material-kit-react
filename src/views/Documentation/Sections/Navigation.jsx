@@ -2,7 +2,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 
-const headerProp = `Header.defaultProp = {
+const headerProp = `Header.defaultProps = {
   color: "white"
 };
 

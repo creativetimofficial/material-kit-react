@@ -1,7 +1,3 @@
-// ##############################
-// // // Button styles
-// #############################
-
 import {
   grayColor,
   roseColor,
@@ -24,7 +20,7 @@ const buttonStyle = {
     borderRadius: "3px",
     position: "relative",
     padding: "12px 30px",
-    margin: "10px 1px",
+    margin: ".3125rem 1px",
     fontSize: "12px",
     fontWeight: "400",
     textTransform: "uppercase",
@@ -43,6 +39,36 @@ const buttonStyle = {
       backgroundColor: grayColor,
       boxShadow:
         "0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2)"
+    },
+    "& .fab,& .fas,& .far,& .fal": {
+      position: "relative",
+      display: "inline-block",
+      top: "0",
+      fontSize: "1.1rem",
+      marginRight: "4px",
+      verticalAlign: "middle"
+    },
+    "& svg": {
+      position: "relative",
+      display: "inline-block",
+      top: "0",
+      width: "18px",
+      height: "18px",
+      marginRight: "4px",
+      verticalAlign: "middle"
+    },
+    "&$justIcon": {
+      "& .fab,& .fas,& .far,& .fal": {
+        marginRight: "0px",
+        position: "absolute",
+        width: "100%",
+        transform: "none",
+        left: "0px",
+        top: "0px",
+        height: "100%",
+        lineHeight: "41px",
+        fontSize: "20px"
+      }
     }
   },
   fullWidth: {
@@ -109,9 +135,21 @@ const buttonStyle = {
     }
   },
   white: {
-    "&,&:focus,&:hover": {
+    "&,&:focus,&:hover,&:visited": {
       backgroundColor: "#FFFFFF",
       color: grayColor
+    }
+  },
+  twitter: {
+    backgroundColor: "#55acee",
+    color: "#fff",
+    boxShadow:
+      "0 2px 2px 0 rgba(85, 172, 238, 0.14), 0 3px 1px -2px rgba(85, 172, 238, 0.2), 0 1px 5px 0 rgba(85, 172, 238, 0.12)",
+    "&:hover,&:focus,&:visited": {
+      backgroundColor: "#55acee",
+      color: "#fff",
+      boxShadow:
+        "0 14px 26px -12px rgba(85, 172, 238, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(85, 172, 238, 0.2)"
     }
   },
   facebook: {
@@ -124,18 +162,6 @@ const buttonStyle = {
       color: "#fff",
       boxShadow:
         "0 14px 26px -12px rgba(59, 89, 152, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(59, 89, 152, 0.2)"
-    }
-  },
-  twitter: {
-    backgroundColor: "#55acee",
-    color: "#fff",
-    boxShadow:
-      "0 2px 2px 0 rgba(85, 172, 238, 0.14), 0 3px 1px -2px rgba(85, 172, 238, 0.2), 0 1px 5px 0 rgba(85, 172, 238, 0.12)",
-    "&:hover,&:focus": {
-      backgroundColor: "#55acee",
-      color: "#fff",
-      boxShadow:
-        "0 14px 26px -12px rgba(85, 172, 238, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(85, 172, 238, 0.2)"
     }
   },
   google: {
@@ -163,71 +189,68 @@ const buttonStyle = {
     }
   },
   simple: {
-    "&,&:focus,&:hover": {
+    "&,&:focus,&:hover,&:visited": {
       color: "#FFFFFF",
       background: "transparent",
       boxShadow: "none"
     },
     "&$primary": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: primaryColor
       }
     },
     "&$info": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: infoColor
       }
     },
     "&$success": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: successColor
       }
     },
     "&$warning": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: warningColor
       }
     },
     "&$rose": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: roseColor
       }
     },
     "&$danger": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: dangerColor
       }
     },
-    "&$facebook": {
-      "&,&:focus,&:hover": {
-        color: "#3b5998"
-      }
-    },
     "&$twitter": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: "#55acee"
       }
     },
+    "&$facebook": {
+      "&,&:focus,&:hover,&:visited": {
+        color: "#3b5998"
+      }
+    },
     "&$google": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: "#dd4b39"
       }
     },
     "&$github": {
-      "&,&:focus,&:hover": {
+      "&,&:focus,&:hover,&:visited": {
         color: "#333333"
       }
-    }
+    },
   },
   transparent: {
-    "&,&:focus,&:hover": {
+    "&,&:focus,&:hover,&:visited": {
       color: "inherit",
       background: "transparent",
       boxShadow: "none"
     }
-  },
-  round: {
-    borderRadius: "30px"
   },
   disabled: {
     opacity: "0.65",
@@ -245,6 +268,9 @@ const buttonStyle = {
     lineHeight: "1.5",
     borderRadius: "0.2rem"
   },
+  round: {
+    borderRadius: "30px"
+  },
   block: {
     width: "100% !important"
   },
@@ -256,10 +282,42 @@ const buttonStyle = {
     }
   },
   justIcon: {
-    minWidth: "10px",
     paddingLeft: "12px",
     paddingRight: "12px",
-    fontSize: "20px"
+    fontSize: "20px",
+    height: "41px",
+    minWidth: "41px",
+    width: "41px",
+    "& .fab,& .fas,& .far,& .fal,& svg": {
+      marginRight: "0px"
+    },
+    "&$lg": {
+      height: "57px",
+      minWidth: "57px",
+      width: "57px",
+      lineHeight: "56px",
+      "& .fab,& .fas,& .far,& .fal": {
+        fontSize: "32px",
+        lineHeight: "56px"
+      },
+      "& svg": {
+        width: "32px",
+        height: "32px"
+      }
+    },
+    "&$sm": {
+      height: "30px",
+      minWidth: "30px",
+      width: "30px",
+      "& .fab,& .fas,& .far,& .fal": {
+        fontSize: "17px",
+        lineHeight: "29px"
+      },
+      "& svg": {
+        width: "17px",
+        height: "17px"
+      }
+    }
   }
 };
 

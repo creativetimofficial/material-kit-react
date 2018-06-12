@@ -1,6 +1,6 @@
 import React from "react";
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
 

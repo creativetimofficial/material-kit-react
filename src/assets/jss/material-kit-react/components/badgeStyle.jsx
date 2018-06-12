@@ -1,7 +1,3 @@
-// ##############################
-// // // Badge component styles
-// #############################
-
 import {
   primaryColor,
   warningColor,

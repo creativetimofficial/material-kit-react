@@ -2,12 +2,11 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
-import IconButton from "components/CustomButtons/IconButton.jsx";
 
 const styles = {
   socialButtonsIcons: {
@@ -41,13 +40,12 @@ const examples = `<Button type="button">Default</Button>
 <Button type="button" color="rose">Rose</Button>`;
 
 const importStyle = `import Favorite from '@material-ui/icons/Favorite';
-import Button from 'components/CustomButtons/Button.jsx';
-import IconButton from 'components/CustomButtons/IconButton.jsx';`;
+import Button from 'components/CustomButtons/Button.jsx';`;
 
 const style = `<Button color="primary">Default</Button>
 <Button color="primary" round>Round</Button>
 <Button color="primary" round><Favorite /> With Icon</Button>
-<IconButton color="primary"><Favorite style={{color: "#FFFFFF"}}/></IconButton>
+<Button justIcon round color="primary"><Favorite style={{color: "#FFFFFF"}}/></Button>
 <Button color="primary" simple>Simple</Button>`;
 
 const disabled = `<Button color="primary" disabled>Default</Button>
@@ -55,11 +53,10 @@ const disabled = `<Button color="primary" disabled>Default</Button>
 
 const socials = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 // core components
 import Button from 'components/CustomButtons/Button.jsx';
-import IconButton from 'components/CustomButtons/IconButton.jsx';
 
 class Socials extends React.Component{
   render(){
@@ -68,172 +65,104 @@ class Socials extends React.Component{
       <div>
         <Button color="twitter">
           <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-twitter"
-            }
+            className={"fab fa-twitter"}
           />{" "}
           Connect with Twitter
         </Button>
         <Button color="twitter" justIcon>
-          <i className={classes.socialButtonsIcons + " fab fa-twitter"} />
+          <i className={ " fab fa-twitter"} />
         </Button>
-        <IconButton color="twitter">
+        <Button justIcon round color="twitter">
           <i
-            className={
-              classes.socialButtonsIcons + " fab fa-twitter"
-            }
-          />
-        </IconButton>
-        <Button color="twitter" simple>
-          <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-twitter"
-            }
+            className={"fab fa-twitter"}
           />
         </Button>
         <Button color="twitter" simple>
           <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-twitter"
-            }
+            className={" fab fa-twitter"}
+          />
+        </Button>
+        <Button color="twitter" simple>
+          <i
+            className={" fab fa-twitter"}
           />{" "}
           Connect with Twitter
         </Button>
         <br />
         <Button color="facebook">
           <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-facebook-square"
-            }
+            className={" fab fa-facebook-square"}
           />{" "}
           Share · 2.2k
         </Button>
         <Button color="facebook" justIcon>
-          <i className={classes.socialButtonsIcons + " fab fa-facebook"} />
+          <i className={ " fab fa-facebook"} />
         </Button>
-        <IconButton color="facebook">
+        <Button justIcon round color="facebook">
           <i
-            className={
-              classes.socialButtonsIcons + " fab fa-facebook"
-            }
-          />
-        </IconButton>
-        <Button color="facebook" simple>
-          <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-facebook-square"
-            }
+            className={" fab fa-facebook"}
           />
         </Button>
         <Button color="facebook" simple>
           <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-facebook-square"
-            }
+            className={" fab fa-facebook-square"}
+          />
+        </Button>
+        <Button color="facebook" simple>
+          <i
+            className={" fab fa-facebook-square"}
           />{" "}
           Share · 2.2k
         </Button>
         <br />
         <Button color="google">
           <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-google-plus-square"
-            }
+            className={" fab fa-google-plus-square"}
           />{" "}
           Share on Google+
         </Button>
         <Button color="google" justIcon>
-          <i className={classes.socialButtonsIcons + " fab fa-google"} />
+          <i className={ " fab fa-google"} />
         </Button>
-        <IconButton color="google">
+        <Button justIcon round color="google">
           <i
-            className={
-              classes.socialButtonsIcons + " fab fa-google"
-            }
-          />
-        </IconButton>
-        <Button color="google" simple>
-          <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-google"
-            }
+            className={" fab fa-google"}
           />
         </Button>
         <Button color="google" simple>
           <i
-            className={
-              classes.socialButtonsIcons +
-              " " +
-              classes.marginRight +
-              " fab fa-google-square"
-            }
+            className={" fab fa-google"}
+          />
+        </Button>
+        <Button color="google" simple>
+          <i
+            className={" fab fa-google-square"}
           />{" "}
           Share on Google+
         </Button>
         <br />
           <Button color="github">
             <i
-              className={
-                classes.socialButtonsIcons +
-                " " +
-                classes.marginRight +
-                " fab fa-github"
-              }
+              className={" fab fa-github"}
             />{" "}
             Connect with Github
           </Button>
           <Button color="github" justIcon>
-            <i className={classes.socialButtonsIcons + " fab fa-github"} />
+            <i className={ " fab fa-github"} />
           </Button>
-          <IconButton color="github">
+          <Button justIcon round color="github">
             <i
-              className={
-                classes.socialButtonsIcons + " fab fa-github"
-              }
-            />
-          </IconButton>
-          <Button color="github" simple>
-            <i
-              className={
-                classes.socialButtonsIcons +
-                " " +
-                classes.marginRight +
-                " fab fa-github"
-              }
+              className={" fab fa-github"}
             />
           </Button>
           <Button color="github" simple>
             <i
-              className={
-                classes.socialButtonsIcons +
-                " " +
-                classes.marginRight +
-                " fab fa-github"
-              }
+              className={" fab fa-github"}
+            />
+          </Button>
+          <Button color="github" simple>
+            <i
+              className={" fab fa-github"}
             />{" "}
             Connect with Github
           </Button>
@@ -242,7 +171,7 @@ class Socials extends React.Component{
   }
 }`;
 
-const buttonProp = `Button.propTypes = {
+const buttonProp = `RegularButton.propTypes = {
   classes: PropTypes.object.isRequired,
   color: PropTypes.oneOf([
     "primary",
@@ -265,27 +194,7 @@ const buttonProp = `Button.propTypes = {
   disabled: PropTypes.bool,
   block: PropTypes.bool,
   link: PropTypes.bool,
-  // makes the button smaller
-  justIcon: PropTypes.bool,
-};`;
-
-const iconButtonPorps = `IconButton.propTypes = {
-  color: PropTypes.oneOf([
-    "primary",
-    "info",
-    "success",
-    "warning",
-    "danger",
-    "rose",
-    "white",
-    "transparent",
-    "facebook",
-    "twitter",
-    "google",
-    "github"
-  ]),
-  simple: PropTypes.bool,
-  disabled: PropTypes.bool
+  justIcon: PropTypes.bool
 };`;
 
 class Buttons extends React.Component {
@@ -355,9 +264,9 @@ class Buttons extends React.Component {
           <Button color="primary" round>
             <Favorite /> With Icon
           </Button>
-          <IconButton color="primary">
+          <Button justIcon round  color="primary">
             <Favorite style={{ color: "#FFFFFF" }} />
-          </IconButton>
+          </Button>
           <Button color="primary" simple>
             Simple
           </Button>
@@ -389,26 +298,26 @@ class Buttons extends React.Component {
           <Button color="twitter">
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-twitter"
               }
             />{" "}
             Connect with Twitter
           </Button>
           <Button color="twitter" justIcon>
-            <i className={classes.socialButtonsIcons + " fab fa-twitter"} />
+            <i className={ " fab fa-twitter"} />
           </Button>
-          <IconButton color="twitter">
-            <i className={classes.socialButtonsIcons + " fab fa-twitter"} />
-          </IconButton>
+          <Button justIcon round  color="twitter">
+            <i className={ " fab fa-twitter"} />
+          </Button>
           <Button color="twitter" simple justIcon>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-twitter"
               }
             />
@@ -416,9 +325,9 @@ class Buttons extends React.Component {
           <Button color="twitter" simple>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-twitter"
               }
             />{" "}
@@ -428,26 +337,26 @@ class Buttons extends React.Component {
           <Button color="facebook">
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-facebook-square"
               }
             />{" "}
             Share · 2.2k
           </Button>
           <Button color="facebook" justIcon>
-            <i className={classes.socialButtonsIcons + " fab fa-facebook"} />
+            <i className={ " fab fa-facebook"} />
           </Button>
-          <IconButton color="facebook">
-            <i className={classes.socialButtonsIcons + " fab fa-facebook"} />
-          </IconButton>
+          <Button justIcon round  color="facebook">
+            <i className={ " fab fa-facebook"} />
+          </Button>
           <Button color="facebook" simple justIcon>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-facebook-square"
               }
             />
@@ -455,9 +364,9 @@ class Buttons extends React.Component {
           <Button color="facebook" simple>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-facebook-square"
               }
             />{" "}
@@ -467,26 +376,26 @@ class Buttons extends React.Component {
           <Button color="google">
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-google-plus-square"
               }
             />{" "}
             Share on Google+
           </Button>
           <Button color="google" justIcon>
-            <i className={classes.socialButtonsIcons + " fab fa-google"} />
+            <i className={ " fab fa-google"} />
           </Button>
-          <IconButton color="google">
-            <i className={classes.socialButtonsIcons + " fab fa-google"} />
-          </IconButton>
+          <Button justIcon round  color="google">
+            <i className={ " fab fa-google"} />
+          </Button>
           <Button color="google" simple justIcon>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-google"
               }
             />
@@ -494,9 +403,9 @@ class Buttons extends React.Component {
           <Button color="google" simple>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-google-square"
               }
             />{" "}
@@ -506,26 +415,26 @@ class Buttons extends React.Component {
           <Button color="github">
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-github"
               }
             />{" "}
             Connect with Github
           </Button>
           <Button color="github" justIcon>
-            <i className={classes.socialButtonsIcons + " fab fa-github"} />
+            <i className={ " fab fa-github"} />
           </Button>
-          <IconButton color="github">
-            <i className={classes.socialButtonsIcons + " fab fa-github"} />
-          </IconButton>
+          <Button justIcon round  color="github">
+            <i className={ " fab fa-github"} />
+          </Button>
           <Button color="github" simple justIcon>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-github"
               }
             />
@@ -533,9 +442,9 @@ class Buttons extends React.Component {
           <Button color="github" simple>
             <i
               className={
-                classes.socialButtonsIcons +
+
                 " " +
-                classes.marginRight +
+
                 " fab fa-github"
               }
             />{" "}
@@ -546,17 +455,8 @@ class Buttons extends React.Component {
           {socials}
         </SyntaxHighlighter>
         <h2>Properties</h2>
-        <h3>
-          <code>Button</code>
-        </h3>
         <SyntaxHighlighter language="jsx" style={prism}>
           {buttonProp}
-        </SyntaxHighlighter>
-        <h3>
-          <code>IconButton</code>
-        </h3>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {iconButtonPorps}
         </SyntaxHighlighter>
         <h2>Material UI Buttons</h2>
         <p>

@@ -1,7 +1,3 @@
-// ##############################
-// // // NavPills component style
-// #############################
-
 import {
   roseColor,
   primaryColor,

@@ -1,7 +1,3 @@
-// ##############################
-// // // Pagination component styles
-// #############################
-
 import {
   grayColor,
   primaryColor,

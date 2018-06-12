@@ -2,13 +2,13 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Slide from "material-ui/transitions/Slide";
-import Dialog from "material-ui/Dialog";
-import DialogTitle from "material-ui/Dialog/DialogTitle";
-import DialogContent from "material-ui/Dialog/DialogContent";
-import DialogActions from "material-ui/Dialog/DialogActions";
-import IconButton from "material-ui/IconButton";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Slide from "@material-ui/core/Slide";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+import IconButton from "@material-ui/core/IconButton";
 // @material-ui/icons
 import Close from "@material-ui/icons/Close";
 // core components
@@ -32,13 +32,13 @@ const styles = {
 
 const codeExample = `import React from 'react';
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Slide from "material-ui/transitions/Slide";
-import Dialog from "material-ui/Dialog";
-import DialogTitle from "material-ui/Dialog/DialogTitle";
-import DialogContent from "material-ui/Dialog/DialogContent";
-import DialogActions from "material-ui/Dialog/DialogActions";
-import IconButton from "material-ui/IconButton";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Slide from "@material-ui/core/Slide";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+import IconButton from "@material-ui/core/IconButton";
 // @material-ui/icons
 import Close from "@material-ui/icons/Close";
 // core components

@@ -1,7 +1,3 @@
-// ##############################
-// // // Footer styles
-// #############################
-
 import { container, primaryColor } from "assets/jss/material-kit-react.jsx";
 
 const footerStyle = {

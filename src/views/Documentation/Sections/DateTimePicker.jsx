@@ -4,9 +4,9 @@ import { prism } from "react-syntax-highlighter/styles/prism";
 // react component plugin for creating a beautiful datetime dropdown picker
 import Datetime from "react-datetime";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import InputLabel from "material-ui/Input/InputLabel";
-import FormControl from "material-ui/Form/FormControl";
+import withStyles from "@material-ui/core/styles/withStyles";
+import InputLabel from "@material-ui/core/InputLabel";
+import FormControl from "@material-ui/core/FormControl";
 // @material-ui/icons
 // core components
 
@@ -36,9 +36,9 @@ const codeExample = `import React from 'react';
 // react component plugin for creating a beautiful datetime dropdown picker
 import Datetime from "react-datetime";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import InputLabel from "material-ui/Input/InputLabel";
-import FormControl from "material-ui/Form/FormControl";
+import withStyles from "@material-ui/core/styles/withStyles";
+import InputLabel from "@material-ui/core/InputLabel";
+import FormControl from "@material-ui/core/FormControl";
 // @material-ui/icons
 // core components
 

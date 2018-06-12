@@ -4,11 +4,11 @@ import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 import classNames from "classnames";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Checkbox from "material-ui/Checkbox";
-import Radio from "material-ui/Radio";
-import Switch from "material-ui/Switch";
-import FormControlLabel from "material-ui/Form/FormControlLabel";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Checkbox from "@material-ui/core/Checkbox";
+import Radio from "@material-ui/core/Radio";
+import Switch from "@material-ui/core/Switch";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import Check from "@material-ui/icons/Check";
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
@@ -32,9 +32,9 @@ const styles = {
 const codeCheckbox = `import React from "react";
 import classNames from "classnames";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Checkbox from "material-ui/Checkbox";
-import FormControlLabel from "material-ui/Form/FormControlLabel";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import Check from "@material-ui/icons/Check";
 
@@ -152,9 +152,9 @@ export default withStyles(styles)(CheckboxRadioSwitch);`;
 const codeRadio = `import React from "react";
 import classNames from "classnames";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Radio from "material-ui/Radio";
-import FormControlLabel from "material-ui/Form/FormControlLabel";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Radio from "@material-ui/core/Radio";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 
@@ -303,9 +303,9 @@ export default withStyles(styles)(CheckboxRadioSwitch);
 
 const codeSwicth = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Switch from "material-ui/Switch";
-import FormControlLabel from "material-ui/Form/FormControlLabel";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Switch from "@material-ui/core/Switch";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx";
 

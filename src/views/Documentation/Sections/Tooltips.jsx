@@ -3,8 +3,8 @@ import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Tooltip from "material-ui/Tooltip";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Tooltip from "@material-ui/core/Tooltip";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 
@@ -26,8 +26,8 @@ const styles = {
 
 const tooltip = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Tooltip from "material-ui/Tooltip";
+import withStyles from "@material-ui/core/styles/withStyles";
+import Tooltip from "@material-ui/core/Tooltip";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 

@@ -2,7 +2,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
@@ -47,7 +47,7 @@ const style = {
 
 const codeExample = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
@@ -93,7 +93,7 @@ const codeExampleBody = `<Card>
 
 const codeExampleTTL = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
@@ -141,7 +141,7 @@ export default withStyles(style)(Cards);`;
 
 const codeExampleHeader = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
@@ -202,7 +202,7 @@ export default Cards;`;
 
 const codeExampleCentered = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
@@ -248,7 +248,7 @@ export default withStyles(style)(Cards);`;
 
 const codeExampleText = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
@@ -310,7 +310,7 @@ export default withStyles(style)(Cards);`;
 
 const codeExampleCaps = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
@@ -357,7 +357,7 @@ export default withStyles(style)(Cards);`;
 
 const codeExampleOverlay = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
 
@@ -390,7 +390,8 @@ export default withStyles(style)(Cards);`;
 
 const codeProps = `Card.propTypes = {
   className: PropTypes.string,
-  plain: PropTypes.bool
+  plain: PropTypes.bool,
+  carousel: PropTypes.bool
 };
 
 CardBody.propTypes = {
@@ -404,7 +405,7 @@ CardFooter.propTypes = {
 CardHeader.propTypes = {
   className: PropTypes.string,
   color: PropTypes.oneOf(["warning", "success", "danger", "info", "primary"]),
-  plainCard: PropTypes.bool,
+  plain: PropTypes.bool
 };`;
 
 class Cards extends React.Component {

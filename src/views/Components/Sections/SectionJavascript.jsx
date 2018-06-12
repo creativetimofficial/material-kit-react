@@ -1,18 +1,18 @@
 import React from "react";
 // react plugin for creating date-time-picker
 import Datetime from "react-datetime";
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
-import Slide from "material-ui/transitions/Slide";
-import IconButton from "material-ui/IconButton";
-import Dialog from "material-ui/Dialog";
-import DialogTitle from "material-ui/Dialog/DialogTitle";
-import DialogContent from "material-ui/Dialog/DialogContent";
-import DialogActions from "material-ui/Dialog/DialogActions";
-import InputLabel from "material-ui/Input/InputLabel";
-import FormControl from "material-ui/Form/FormControl";
-import Tooltip from "material-ui/Tooltip";
-import Popover from "material-ui/Popover";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
+import Slide from "@material-ui/core/Slide";
+import IconButton from "@material-ui/core/IconButton";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+import InputLabel from "@material-ui/core/InputLabel";
+import FormControl from "@material-ui/core/FormControl";
+import Tooltip from "@material-ui/core/Tooltip";
+import Popover from "@material-ui/core/Popover";
 // @material-ui/icons
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import Close from "@material-ui/icons/Close";

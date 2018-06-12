@@ -3,19 +3,19 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
-// material-ui components
-import withStyles from "material-ui/styles/withStyles";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // core components
 import cardHeaderStyle from "assets/jss/material-kit-react/components/cardHeaderStyle.jsx";
 
 function CardHeader({ ...props }) {
-  const { classes, className, children, color, plainCard, ...rest } = props;
+  const { classes, className, children, color, plain, ...rest } = props;
   const cardHeaderClasses = classNames({
     [classes.cardHeader]: true,
     [classes[color + "CardHeader"]]: color,
-    [classes.cardHeaderPlain]: plainCard,
+    [classes.cardHeaderPlain]: plain,
     [className]: className !== undefined
   });
   return (
@@ -29,7 +29,7 @@ CardHeader.propTypes = {
   classes: PropTypes.object.isRequired,
   className: PropTypes.string,
   color: PropTypes.oneOf(["warning", "success", "danger", "info", "primary"]),
-  plainCard: PropTypes.bool
+  plain: PropTypes.bool
 };
 
 export default withStyles(cardHeaderStyle)(CardHeader);

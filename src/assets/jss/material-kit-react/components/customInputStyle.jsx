@@ -1,7 +1,3 @@
-// ##############################
-// // // CustomInput styles
-// #############################
-
 import {
   primaryColor,
   dangerColor,
@@ -12,26 +8,26 @@ import {
 const customInputStyle = {
   disabled: {
     "&:before": {
-      backgroundColor: "transparent !important"
+      borderColor: "transparent !important"
     }
   },
   underline: {
     "&:hover:not($disabled):before,&:before": {
-      backgroundColor: "#D2D2D2",
-      height: "1px !important"
+      borderColor: "#D2D2D2 !important",
+      borderWidth: "1px !important"
     },
     "&:after": {
-      backgroundColor: primaryColor
+      borderColor: primaryColor
     }
   },
   underlineError: {
     "&:after": {
-      backgroundColor: dangerColor
+      borderColor: dangerColor
     }
   },
   underlineSuccess: {
     "&:after": {
-      backgroundColor: successColor
+      borderColor: successColor
     }
   },
   labelRoot: {
@@ -39,7 +35,11 @@ const customInputStyle = {
     color: "#AAAAAA !important",
     fontWeight: "400",
     fontSize: "14px",
-    lineHeight: "1.42857"
+    lineHeight: "1.42857",
+    top: "10px",
+    "& + $underline": {
+      marginTop: "0px"
+    }
   },
   labelRootError: {
     color: dangerColor + " !important"
@@ -49,42 +49,45 @@ const customInputStyle = {
   },
   feedback: {
     position: "absolute",
-    top: "18px",
+    bottom: "3px",
     right: "0",
     zIndex: "2",
     display: "block",
-    width: "24px",
-    height: "24px",
+    width: "1em",
+    height: "1em",
     textAlign: "center",
     pointerEvents: "none"
   },
-  marginTop: {
-    marginTop: "16px"
+  feedbackRight: {
+    marginRight: "22px"
   },
   formControl: {
-    paddingBottom: "7px",
-    margin: "27px 0 0 0",
-    position: "relative"
-  },
-  formControlLabel: {
-    margin: "11px 0 0 0",
+    margin: "0 0 17px 0",
+    paddingTop: "27px",
+    position: "relative",
+    "& svg,& .fab,& .far,& .fal,& .fas": {
+      color: "#495057"
+    }
   },
   whiteUnderline: {
     "&:hover:not($disabled):before,&:before": {
-      backgroundColor: "#FFFFFF"
+      borderColor: "#FFFFFF"
     },
     "&:after": {
-      backgroundColor: "#FFFFFF"
+      borderColor: "#FFFFFF"
     }
   },
   input: {
+    color: "#495057",
     "&,&::placeholder": {
-      color: "#AAAAAA",
       fontSize: "14px",
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: "400",
       lineHeight: "1.42857",
       opacity: "1"
+    },
+    "&::placeholder": {
+      color: "#AAAAAA"
     }
   },
   whiteInput: {

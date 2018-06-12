@@ -3,7 +3,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
@@ -29,7 +29,7 @@ const styles = {
 
 const codeExample = `import React from "react";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
@@ -109,11 +109,7 @@ class Tabs extends React.Component{
 export default withStyles(styles)(Tabs);
 `;
 
-const codeProps = `CustomTabs.defaultProps = {
-  headerColor: "purple"
-};
-
-CustomTabs.propTypes = {
+const codeProps = `CustomTabs.propTypes = {
   headerColor: PropTypes.oneOf([
     "warning",
     "success",
@@ -130,6 +126,7 @@ CustomTabs.propTypes = {
       tabContent: PropTypes.node.isRequired
     })
   ),
+  rtlActive: PropTypes.bool,
   plainTabs: PropTypes.bool
 };`;
 

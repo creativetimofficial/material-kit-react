@@ -2,7 +2,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
 // material-ui components
-import withStyles from "material-ui/styles/withStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 import Badge from "components/Badge/Badge.jsx";
@@ -25,12 +25,31 @@ const importExamples = `import Badge from 'components/Badge/Badge.jsx';`;
 const importStylesExamples = `import badgeStyle from "assets/jss/material-kit-react/components/badgeStyle.jsx"`;
 
 const exampleCode = `<Button color="primary">Notifications{" "}<Badge>4</Badge></Button>`;
+
 const exampleCodeContextual = `<Badge color="primary">primary</Badge>
 <Badge color="info">info</Badge>
 <Badge color="success">success</Badge>
 <Badge color="danger">danger</Badge>
 <Badge color="warning">warning</Badge>
 <Badge color="rose">rose</Badge>`;
+
+const codeProps = `Badge.defaultProps = {
+  color: "gray"
+};
+
+Badge.propTypes = {
+  classes: PropTypes.object.isRequired,
+  color: PropTypes.oneOf([
+    "primary",
+    "warning",
+    "danger",
+    "success",
+    "info",
+    "rose",
+    "gray"
+  ])
+};`;
+
 class Badges extends React.Component {
   render() {
     const { classes } = this.props;
@@ -76,6 +95,10 @@ class Badges extends React.Component {
         </div>
         <SyntaxHighlighter language="jsx" style={prism}>
           {exampleCodeContextual}
+        </SyntaxHighlighter>
+        <h2>Props</h2>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeProps}
         </SyntaxHighlighter>
       </div>
     );
