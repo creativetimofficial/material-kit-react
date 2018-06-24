@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-react-jsx",
+    ["module-resolver", {
+      "root": ["./src"],
+    }],
+    ["import-rename", {"^(.*)\\.jsx$": "$1"}]
+  ]
+}
