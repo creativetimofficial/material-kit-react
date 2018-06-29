@@ -1,9 +1,9 @@
 {
+  "presets": ["es2015"],
   "plugins": [
-    "transform-es2015-modules-commonjs",
     "transform-class-properties",
-    "transform-object-rest-spread",
     "transform-react-jsx",
+    "transform-object-rest-spread",
     ["module-resolver", {
       "root": ["./src"],
     }],
