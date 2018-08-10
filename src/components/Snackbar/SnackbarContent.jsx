@@ -32,7 +32,7 @@ class SnackbarContent extends React.Component {
     }
 
     let snackIcon = null;
-    switch (typeof buttonIcon) {
+    switch (typeof icon) {
       case "function":
         snackIcon = <props.icon className={classes.icon} />;
         break;

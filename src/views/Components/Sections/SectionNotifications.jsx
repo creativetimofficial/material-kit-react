@@ -2,7 +2,6 @@ import React from "react";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Check from "@material-ui/icons/Check";
 import Warning from "@material-ui/icons/Warning";
