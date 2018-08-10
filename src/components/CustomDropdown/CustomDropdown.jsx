@@ -13,6 +13,7 @@ import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Paper from "@material-ui/core/Paper";
 import Grow from "@material-ui/core/Grow";
 import Divider from "@material-ui/core/Divider";
+import Icon from "@material-ui/core/Icon";
 
 // core components
 import Button from "components/CustomButtons/Button.jsx";
@@ -61,6 +62,18 @@ class CustomDropdown extends React.Component {
       [classes.noLiPadding]: noLiPadding,
       [classes.dropdownItemRTL]: rtlActive
     });
+    let icon = null;
+    switch (typeof buttonIcon) {
+      case "function":
+        icon = <this.props.buttonIcon className={classes.buttonIcon} />;
+        break;
+      case "string":
+        icon = <Icon className={classes.buttonIcon}>{this.props.buttonIcon}</Icon>
+        break;
+      default:
+        icon = null;
+        break;
+    }
     return (
       <Manager>
         <Target>
@@ -71,9 +84,7 @@ class CustomDropdown extends React.Component {
             {...buttonProps}
             onClick={this.handleClick}
           >
-            {buttonIcon !== undefined ? (
-              <this.props.buttonIcon className={classes.buttonIcon} />
-            ) : null}
+            {icon}
             {buttonText !== undefined ? buttonText : null}
             {caret ? <b className={caretClasses} /> : null}
           </Button>
@@ -149,7 +160,7 @@ CustomDropdown.propTypes = {
   classes: PropTypes.object.isRequired,
   hoverColor: PropTypes.oneOf(["black", "primary", "info", "success", "warning", "danger", "rose"]),
   buttonText: PropTypes.node,
-  buttonIcon: PropTypes.func,
+  buttonIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   dropdownList: PropTypes.array,
   buttonProps: PropTypes.object,
   dropup: PropTypes.bool,

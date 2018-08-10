@@ -2,9 +2,9 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
+import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import People from "@material-ui/icons/People";
-import LockOutline from "@material-ui/icons/LockOutline";
 import Email from "@material-ui/icons/Email";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -110,7 +110,7 @@ class SectionLogin extends React.Component {
                         type: "password",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <LockOutline className={classes.inputIconsColor} />
+                            <Icon className={classes.inputIconsColor}>lock_outline</Icon>
                           </InputAdornment>
                         )
                       }}

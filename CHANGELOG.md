@@ -1,4 +1,28 @@
 ## [1.1.0] 2018-06-13
+### Bug fixing
+- Added new script command for clean install of node_modules (just run in terminal `npm run install:clean`, this will also start your server)
+- Minor changes in components due to the upgrade of `@material-ui/icons`
+-
+### Major styling changes
+- Added styles for `svg`'s, **font-awesome** classes and `.material-icons` class inside
+  - `src/assets/jss/material-kit-react/components/buttonStyle.jsx`
+  - `src/assets/jss/material-kit-react/components/customInputStyle.jsx`
+- Others
+### Dropped components
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+- `@material-ui/core v1.2.1` to `@material-ui/core v1.4.3`
+- `@material-ui/icons v1.1.0` to `@material-ui/icons v2.0.1`
+- `ajv v6.0.0` to `ajv v6.5.2`
+- `node-sass-chokidar v1.3.0` to `node-sass-chokidar v1.3.3`
+- `react v16.4.0` to `react v16.4.2`
+- `react-datetime v2.14.0` to `react-datetime v2.15.0`
+- `react-dom v16.4.0` to `react-dom v16.4.2`
+- `react-swipeable-views v0.12.13` to `react-swipeable-views v0.12.16`
+
+
+## [1.1.0] 2018-06-13
 ### Major styling changes
 - `src/assets/jss/material-kit-react/components/buttonStyle.jsx`, due to the fact that we've droped `src/components/CustomButtons/IconButton.jsx`
 - `src/assets/jss/material-kit-react/components/customInputStyle.jsx`
