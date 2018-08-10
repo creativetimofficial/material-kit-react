@@ -47,20 +47,6 @@ const customInputStyle = {
   labelRootSuccess: {
     color: successColor + " !important"
   },
-  feedback: {
-    position: "absolute",
-    bottom: "3px",
-    right: "0",
-    zIndex: "2",
-    display: "block",
-    width: "1em",
-    height: "1em",
-    textAlign: "center",
-    pointerEvents: "none"
-  },
-  feedbackRight: {
-    marginRight: "22px"
-  },
   formControl: {
     margin: "0 0 17px 0",
     paddingTop: "27px",
@@ -71,10 +57,10 @@ const customInputStyle = {
   },
   whiteUnderline: {
     "&:hover:not($disabled):before,&:before": {
-      borderColor: "#FFFFFF"
+      backgroundColor: "#FFFFFF"
     },
     "&:after": {
-      borderColor: "#FFFFFF"
+      backgroundColor: "#FFFFFF"
     }
   },
   input: {
