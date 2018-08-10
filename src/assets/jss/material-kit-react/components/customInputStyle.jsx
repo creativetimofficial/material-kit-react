@@ -30,6 +30,14 @@ const customInputStyle = {
       borderColor: successColor
     }
   },
+  whiteUnderline: {
+    "&:hover:not($disabled):before,&:before": {
+      borderColor: "#FFFFFF"
+    },
+    "&:after": {
+      borderColor: "#FFFFFF"
+    }
+  },
   labelRoot: {
     ...defaultFont,
     color: "#AAAAAA !important",
@@ -53,14 +61,6 @@ const customInputStyle = {
     position: "relative",
     "& svg,& .fab,& .far,& .fal,& .fas,& .material-icons": {
       color: "#495057"
-    }
-  },
-  whiteUnderline: {
-    "&:hover:not($disabled):before,&:before": {
-      backgroundColor: "#FFFFFF"
-    },
-    "&:after": {
-      backgroundColor: "#FFFFFF"
     }
   },
   input: {
