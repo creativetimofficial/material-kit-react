@@ -1,19 +1,29 @@
 ## [1.1.0] 2018-06-13
 ### Bug fixing
 - Added new script command for clean install of node_modules (just run in terminal `npm run install:clean`, this will also start your server)
+- Added lint commands
 - Minor changes in components due to the upgrade of `@material-ui/icons`
--
+- Github
+  - [https://github.com/creativetimofficial/material-kit-react/issues/16](https://github.com/creativetimofficial/material-kit-react/issues/16)
+  - [https://github.com/creativetimofficial/material-kit-react/issues/25](https://github.com/creativetimofficial/material-kit-react/issues/25)
+  - [https://github.com/creativetimofficial/material-kit-react/issues/26](https://github.com/creativetimofficial/material-kit-react/issues/26)
+  - [https://github.com/creativetimofficial/material-kit-react/issues/28](https://github.com/creativetimofficial/material-kit-react/issues/28)
 ### Major styling changes
 - Added styles for `svg`'s, **font-awesome** classes and `.material-icons` class inside
   - `src/assets/jss/material-kit-react/components/buttonStyle.jsx`
   - `src/assets/jss/material-kit-react/components/customInputStyle.jsx`
+  - `src/assets/jss/material-kit-react/components/customDropdownStyle.jsx`
+  - `src/assets/jss/material-kit-react/components/headerLinksStyle.jsx`
 - Others
 ### Dropped components
+- No more use of `react-popper`, no it's beeing used `@material-ui/core/Popper` instead (see `CustomDropdown`)
 ### Deleted dependencies
 ### Added dependencies
+- `prop-types v15.6.2`
+- `classnames v2.2.6`
 ### Updated dependencies
-- `@material-ui/core v1.2.1` to `@material-ui/core v1.4.3`
-- `@material-ui/icons v1.1.0` to `@material-ui/icons v2.0.1`
+- `@material-ui/core v1.2.1` to `@material-ui/core v1.5.0`
+- `@material-ui/icons v1.1.0` to `@material-ui/icons v2.0.2`
 - `ajv v6.0.0` to `ajv v6.5.2`
 - `node-sass-chokidar v1.3.0` to `node-sass-chokidar v1.3.3`
 - `react v16.4.0` to `react v16.4.2`

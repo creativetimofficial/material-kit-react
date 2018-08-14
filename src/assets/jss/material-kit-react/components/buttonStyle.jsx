@@ -243,7 +243,7 @@ const buttonStyle = {
       "&,&:focus,&:hover,&:visited": {
         color: "#333333"
       }
-    },
+    }
   },
   transparent: {
     "&,&:focus,&:hover,&:visited": {

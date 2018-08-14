@@ -110,7 +110,9 @@ class SectionLogin extends React.Component {
                         type: "password",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <Icon className={classes.inputIconsColor}>lock_outline</Icon>
+                            <Icon className={classes.inputIconsColor}>
+                              lock_outline
+                            </Icon>
                           </InputAdornment>
                         )
                       }}

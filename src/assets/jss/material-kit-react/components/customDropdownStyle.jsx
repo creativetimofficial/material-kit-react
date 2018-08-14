@@ -11,7 +11,7 @@ import {
   dangerColor,
   dangerBoxShadow,
   roseColor,
-  roseBoxShadow,
+  roseBoxShadow
 } from "assets/jss/material-kit-react.jsx";
 
 const customDropdownStyle = theme => ({

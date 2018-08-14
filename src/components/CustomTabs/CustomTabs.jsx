@@ -56,7 +56,12 @@ class CustomTabs extends React.Component {
               var icon = {};
               if (prop.tabIcon) {
                 icon = {
-                  icon: typeof prop.tabIcon === "string" ? <Icon>{prop.tabIcon}</Icon>:<prop.tabIcon />
+                  icon:
+                    typeof prop.tabIcon === "string" ? (
+                      <Icon>{prop.tabIcon}</Icon>
+                    ) : (
+                      <prop.tabIcon />
+                    )
                 };
               }
               return (

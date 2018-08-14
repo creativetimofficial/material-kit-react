@@ -37,7 +37,7 @@ class SnackbarContent extends React.Component {
         snackIcon = <props.icon className={classes.icon} />;
         break;
       case "string":
-        snackIcon = <Icon className={classes.icon}>{props.icon}</Icon>
+        snackIcon = <Icon className={classes.icon}>{props.icon}</Icon>;
         break;
       default:
         snackIcon = null;
@@ -75,7 +75,7 @@ SnackbarContent.propTypes = {
   message: PropTypes.node.isRequired,
   color: PropTypes.oneOf(["info", "success", "warning", "danger", "primary"]),
   close: PropTypes.bool,
-  icon: PropTypes.oneOfType([PropTypes.func,PropTypes.string])
+  icon: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
 };
 
 export default withStyles(snackbarContentStyle)(SnackbarContent);
