@@ -1,39 +1,60 @@
-# [Material Kit React - Free Material-UI Kit](https://creativetimofficial.github.io/material-kit-react/#/)
-[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Material Kit React](https://demos.creative-tim.com/material-kit-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
-![alt text](https://s3.amazonaws.com/creativetim_bucket/products/83/original/opt_mk_react_thumbnail.jpg "Material Kit Free")
 
-Material Kit React is a Free Material-UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Material-UI elements, you will find three fully-coded example pages, to help you design your next project.
+ ![version](https://img.shields.io/badge/version-1.2.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-Material Kit React makes use of light, surface and movement. It uses a deliberate color choice, edge-to-edge imagery and large scale typography. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left and the actions on the right.
+![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/83/original/opt_mk_react_thumbnail.jpg)
+
+**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** is a Free Material-UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Material-UI elements, you will find three fully-coded example pages, to help you design your next project.
+
+**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** makes use of light, surface and movement. It uses a deliberate color choice, edge-to-edge imagery and large scale typography. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left and the actions on the right.
 
 This new design has elements that have been the result of research regarding ink and paper and the way objects and materials interact in real life. The result is a beautiful and consistent set of elements that can get you started with your next project. Material Kit React is a great tool if you are looking to create a web presence for your Android application and need to be consistent, leaving the impression of visually similar elements. It is also a great resource in its own right, looking gorgeous and helping you build your web pages.
 
-Material Kit React uses a framework built by our friends from [mui-org](https://github.com/mui-org/material-ui), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
+**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** uses a framework built by our friends from **[mui-org](https://github.com/mui-org/material-ui)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
 
-## Links:
+## Table of Contents
 
-+ [Live Preview](https://creativetimofficial.github.io/material-kit-react/#/)
-+ [Material Dashboard Free React](https://creativetimofficial.github.io/material-dashboard-react/#/dashboard)
-+ [Material Dashboard PRO React](https://timcreative.github.io/material-dashboard-pro-react/#/dashboard) (from $59)
-+ [Material Kit Free HTML](https://demos.creative-tim.com/material-kit/index.html)
-+ [Material Kit PRO HTML](https://demos.creative-tim.com/material-kit-pro/presentation.html) (from $79)
+
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+* [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
+
+
+
+
+## Demo
+
+- [Index Page](https://demos.creative-tim.com/material-kit-react/#/)
+- [User profile page](https://demos.creative-tim.com/material-kit-react/#/profile-page)
+- [Landing page](https://demos.creative-tim.com/material-kit-react/#/landing-page)
+- [Login page](https://demos.creative-tim.com/material-kit-react/#/login-page)
+
+[View More](https://demos.creative-tim.com/material-kit-react/#/).
 
 
 ## Quick start
 
-Quick start options:
-
-- [Download from Github](https://github.com/creativetimofficial/material-kit-react.git).
-- [Download from Creative Tim](https://www.creative-tim.com/product/material-kit-react).
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-kit-react.git`.
+- Buy from [Creative Tim](https://www.creative-tim.com/product/material-kit-react)
 
 
-### What's included
+## Documentation
+The documentation for the Material Kit PRO React is hosted at our [website](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial).
 
+
+## File Structure
 Within the download you'll find the following directories and files:
 
 ```
+material-kit-react
+.
 ├── CHANGELOG.md
 ├── LICENSE.md
 ├── README.md
@@ -146,30 +167,63 @@ Within the download you'll find the following directories and files:
             └── SignupPage.jsx
 ```
 
-### Version logs
 
-## [1.0.0] 2018-05-08
-### Original Release
-- Added Material-UI as base framework
-- Added design from Material Kit by Creative Tim
+## Browser Support
 
-### License
+At present, we officially aim to support the last two versions of the following browsers:
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com)
-- Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+
+
+## Resources
+- Demo: <https://demos.creative-tim.com/material-kit-react/#/>
+- Download Page: <https://www.creative-tim.com/product/material-kit-react>
+- Documentation: <https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial>
+- License Agreement: <https://www.creative-tim.com/license>
+- Support: <https://www.creative-tim.com/contact-us>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-kit-react/issues)
++ [Material Kit Free](https://demos.creative-tim.com/material-kit/index.html)
++ [Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/)
++ [Material Kit PRO](https://demos.creative-tim.com/material-kit-pro/index.html)
++ [Material Dashboard Free React](https://demos.creative-tim.com/material-dashboard-react/#/dashboard)
++ [Material Dashboard Pro React](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
++ [Material Dashboard Free HTML](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
++ [Material Dashboard Pro HTML](https://demos.creative-tim.com/material-dashboard-pro/examples/dashboard.html)
++ [Material Dashboard Free Angular](https://demos.creative-tim.com/material-dashboard-angular2/dashboard)
++ [Material Dashboard Pro Angular](https://demos.creative-tim.com/material-dashboard-pro-angular2/dashboard)
+
+
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for the Material Kit PRO React. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the Material Kit PRO React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
+
+
+## Technical Support or Questions
+
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
+
+
+
+## Licensing
+
+- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
+
+- Creative Tim [license](https://www.creative-tim.com/license)
+
 
 
 ## Useful Links
 
-More products from Creative Tim: <https://www.creative-tim.com/products>
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <https://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
-
-Social Media:
+##### Social Media
 
 Twitter: <https://twitter.com/CreativeTim>
 
@@ -179,9 +233,4 @@ Dribbble: <https://dribbble.com/creativetim>
 
 Google+: <https://plus.google.com/+CreativetimPage>
 
-Instagram: <https://instagram.com/creativetimofficial>
-
-[LICENSE]: ./LICENSE.md
-[CHANGELOG]: ./CHANGELOG.md
-[version-badge]: https://img.shields.io/badge/version-1.1.0-blue.svg
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
+Instagram: <https://www.instagram.com/CreativeTimOfficial>
