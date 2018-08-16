@@ -7,7 +7,7 @@ import ReactPixel from "react-facebook-pixel";
 
 import indexRoutes from "routes/index.jsx";
 
-import "assets/scss/material-kit-react.css?v=1.1.0";
+import "assets/scss/material-kit-react.css?v=1.2.0";
 
 import "react-github-button/assets/style.css";
 
