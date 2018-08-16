@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Material Kit React - v1.1.0 based on Material Kit - v2.0.2
+ * Material Kit React - v1.2.0 based on Material Kit - v2.0.2
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/material-kit-react
