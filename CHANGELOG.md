@@ -1,4 +1,4 @@
-## [1.1.0] 2018-06-13
+## [1.2.0] 2018-08-16
 ### Bug fixing
 - Added new script command for clean install of node_modules (just run in terminal `npm run install:clean`, this will also start your server)
 - Added lint commands
@@ -14,7 +14,8 @@
   - `src/assets/jss/material-kit-react/components/customInputStyle.jsx`
   - `src/assets/jss/material-kit-react/components/customDropdownStyle.jsx`
   - `src/assets/jss/material-kit-react/components/headerLinksStyle.jsx`
-- Others
+  - `src/assets/jss/material-kit-react/components/headerStyle.jsx`
+  - `src/assets/jss/material-kit-react/views/loginPage.jsx`
 ### Dropped components
 - No more use of `react-popper`, no it's beeing used `@material-ui/core/Popper` instead (see `CustomDropdown`)
 ### Deleted dependencies
