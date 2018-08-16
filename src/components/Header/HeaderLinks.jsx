@@ -35,13 +35,9 @@ function HeaderLinks({ ...props }) {
             <Link to="/" className={classes.dropdownLink}>
               All components
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
+            <Link to="/documentation" className={classes.dropdownLink}>
               Documentation
-            </a>
+            </Link>
           ]}
         />
       </ListItem>

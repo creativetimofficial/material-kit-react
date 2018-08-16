@@ -3,18 +3,20 @@ import React from "react";
 import classNames from "classnames";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
-// @material-ui/core components
+// react library for nice github buttons
+import GitHubButton from "react-github-button";
+// material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 // core components
 import Header from "components/Header/Header.jsx";
+import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import SectionBasics from "./Sections/SectionBasics.jsx";
 import SectionNavbars from "./Sections/SectionNavbars.jsx";
 import SectionTabs from "./Sections/SectionTabs.jsx";
@@ -32,7 +34,7 @@ import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
 class Components extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
     return (
       <div>
         <Header
@@ -44,7 +46,6 @@ class Components extends React.Component {
             height: 400,
             color: "white"
           }}
-          {...rest}
         />
         <Parallax image={require("assets/img/bg4.jpg")}>
           <div className={classes.container}>
@@ -55,6 +56,33 @@ class Components extends React.Component {
                   <h3 className={classes.subtitle}>
                     A Badass Material-UI Kit based on Material Design.
                   </h3>
+                  <iframe
+                    src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2FCreativeTim&width=74&layout=button_count&action=like&size=small&show_faces=true&share=false&height=21&appId"
+                    width="74"
+                    height="21"
+                    style={{
+                      border: "none",
+                      overflow: "hidden",
+                      height: "20px"
+                    }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allow-transparency="true"
+                    title="Follow us on Facebook"
+                  />{" "}
+                  <a
+                    href="https://twitter.com/creativetim?ref_src=twsrc%5Etfw"
+                    className="twitter-follow-button"
+                    data-show-screen-name="false"
+                    data-show-count="true"
+                  >
+                    Follow @creativetim
+                  </a>{" "}
+                  <GitHubButton
+                    type="stargazers"
+                    namespace="creativetimofficial"
+                    repo="material-kit"
+                  />
                 </div>
               </GridItem>
             </GridContainer>

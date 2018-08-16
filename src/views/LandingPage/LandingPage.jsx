@@ -22,16 +22,13 @@ import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
-const dashboardRoutes = [];
-
 class LandingPage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes } = this.props;
     return (
       <div>
         <Header
           color="transparent"
-          routes={dashboardRoutes}
           brand="Material Kit React"
           rightLinks={<HeaderLinks />}
           fixed
@@ -39,7 +36,6 @@ class LandingPage extends React.Component {
             height: 400,
             color: "white"
           }}
-          {...rest}
         />
         <Parallax filter image={require("assets/img/landing-bg.jpg")}>
           <div className={classes.container}>

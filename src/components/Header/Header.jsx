@@ -121,7 +121,7 @@ class Header extends React.Component {
   }
 }
 
-Header.defaultProp = {
+Header.defaultProps = {
   color: "white"
 };
 
