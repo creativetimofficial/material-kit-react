@@ -37,6 +37,11 @@ const signupPageStyle = {
     },
     "& footer li a,& footer li a:hover,& footer li a:active": {
       color: "#FFFFFF"
+    },
+    "& footer": {
+      position: "absolute",
+      bottom: "0",
+      width: "100%",
     }
   },
   form: {

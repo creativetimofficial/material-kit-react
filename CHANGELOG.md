@@ -14,6 +14,8 @@
   - `src/assets/jss/material-kit-react/components/customInputStyle.jsx`
   - `src/assets/jss/material-kit-react/components/customDropdownStyle.jsx`
   - `src/assets/jss/material-kit-react/components/headerLinksStyle.jsx`
+  - `src/assets/jss/material-kit-react/components/headerStyle.jsx`
+  - `src/assets/jss/material-kit-react/views/loginPage.jsx`
 ### Dropped components
 - No more use of `react-popper`, no it's beeing used `@material-ui/core/Popper` instead (see `CustomDropdown`)
 ### Deleted dependencies

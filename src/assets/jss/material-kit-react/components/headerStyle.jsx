@@ -32,7 +32,8 @@ const headerStyle = {
     zIndex: "unset"
   },
   absolute: {
-    position: "absolute"
+    position: "absolute",
+    zIndex: "1100"
   },
   fixed: {
     position: "fixed",
