@@ -328,9 +328,6 @@ class SectionJavascript extends React.Component {
               </Tooltip>
             </GridItem>
           </GridContainer>
-          <div className={classes.title}>
-            <h3>Carousel</h3>
-          </div>
         </div>
       </div>
     );
