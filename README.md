@@ -11,7 +11,7 @@
 
 This new design has elements that have been the result of research regarding ink and paper and the way objects and materials interact in real life. The result is a beautiful and consistent set of elements that can get you started with your next project. Material Kit React is a great tool if you are looking to create a web presence for your Android application and need to be consistent, leaving the impression of visually similar elements. It is also a great resource in its own right, looking gorgeous and helping you build your web pages.
 
-**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** uses a framework built by our friends from **[mui-org](https://github.com/mui-org/material-ui)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
+**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** was built with the help of [create-react-app](https://github.com/facebook/create-react-app) and it uses a framework built by our friends from **[Material-UI](https://material-ui.com/)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
 
 ## Table of Contents
 

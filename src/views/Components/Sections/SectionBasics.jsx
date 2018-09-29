@@ -1,6 +1,6 @@
 import React from "react";
-// react plugin that creates slider
-import Nouislider from "react-nouislider";
+// plugin that creates slider
+import nouislider from "nouislider";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -34,6 +34,20 @@ class SectionBasics extends React.Component {
       checkedB: false
     };
     this.handleChangeEnabled = this.handleChangeEnabled.bind(this);
+  }
+  componentDidMount(){
+    nouislider.create(this.refs.slider1,{
+      start: [40],
+      connect: [true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
+    nouislider.create(this.refs.slider2,{
+      start: [20, 60],
+      connect: [false, true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
   }
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked });
@@ -572,21 +586,9 @@ class SectionBasics extends React.Component {
                 <div className={classes.title}>
                   <h3>Sliders</h3>
                 </div>
-                <Nouislider
-                  start={[40]}
-                  connect={[true, false]}
-                  step={1}
-                  range={{ min: 0, max: 100 }}
-                />
-                <br />
-                <div className="slider slider-info">
-                  <Nouislider
-                    start={[20, 60]}
-                    connect={[false, true, false]}
-                    step={1}
-                    range={{ min: 0, max: 100 }}
-                  />
-                </div>
+                <div ref="slider1" className="slider-primary"></div>
+                <br/>
+                <div ref="slider2" className="slider-info"></div>
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.title}>
