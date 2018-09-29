@@ -1,4 +1,4 @@
-## [1.3.0] 2018-08-16
+## [1.3.0] 2018-09-29
 ### Bug fixing
 - Github own repo
   - [https://github.com/creativetimofficial/material-kit-react/issues/36](https://github.com/creativetimofficial/material-kit-react/issues/36)
