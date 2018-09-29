@@ -30,9 +30,18 @@ class CustomDropdown extends React.Component {
     this.handleClose = this.handleClose.bind(this);
   }
   handleClick() {
-    this.setState({ open: true });
+    this.setState(state => ({ open: !state.open }));
   }
-  handleClose() {
+  handleClose(param) {
+    this.setState({ open: false });
+    if(this.props && this.props.onClick){
+      this.props.onClick(param);
+    }
+  }
+  handleCloseAway = event => {
+    if (this.anchorEl.contains(event.target)) {
+      return;
+    }
     this.setState({ open: false });
   }
   render() {
@@ -120,7 +129,7 @@ class CustomDropdown extends React.Component {
               }
             >
               <Paper className={classes.dropdown}>
-                <ClickAwayListener onClickAway={this.handleClose}>
+                <ClickAwayListener onClickAway={this.handleCloseAway}>
                   <MenuList role="menu" className={classes.menuList}>
                     {dropdownHeader !== undefined ? (
                       <MenuItem
@@ -186,7 +195,9 @@ CustomDropdown.propTypes = {
   rtlActive: PropTypes.bool,
   caret: PropTypes.bool,
   left: PropTypes.bool,
-  noLiPadding: PropTypes.bool
+  noLiPadding: PropTypes.bool,
+  // function that retuns the selected item
+  onClick: PropTypes.func
 };
 
 export default withStyles(customDropdownStyle)(CustomDropdown);
