@@ -2,10 +2,14 @@
 ### Bug fixing
 - Github own repo
   - [https://github.com/creativetimofficial/material-kit-react/issues/36](https://github.com/creativetimofficial/material-kit-react/issues/36)
-  -
 - Github othe repos
   - [https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/79](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/79)
 ### Major styling changes
+- `src/assets/jss/material-kit-react/components/headerStyle.jsx`
+- `src/assets/jss/material-kit-react/components/snackbarContentStyle.jsx`
+- `src/assets/jss/material-kit-react/views/loginPage.jsx`
+- `src/assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx`
+- `src/assets/scss/plugins/_plugin-nouislider.scss`
 ### Deleted dependencies
 - `react-nouislider`
 ### Added dependencies

@@ -67,7 +67,8 @@ const snackbarContentStyle = {
     lineHeight: "1",
     position: "absolute",
     right: "-4px",
-    top: "0"
+    top: "0",
+    padding: "0"
   },
   icon: {
     display: "block",

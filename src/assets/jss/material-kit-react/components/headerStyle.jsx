@@ -135,7 +135,6 @@ const headerStyle = {
     display: "block",
     top: "0",
     height: "100vh",
-    maxHeight: "1200px",
     right: "0",
     left: "auto",
     visibility: "visible",

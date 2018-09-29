@@ -6,6 +6,12 @@ import {
 } from "assets/jss/material-kit-react.jsx";
 
 const customCheckboxRadioSwitch = {
+  checkRoot: {
+    padding: "14px"
+  },
+  radioRoot: {
+    padding: "16px"
+  },
   checkboxAndRadio: {
     position: "relative",
     display: "block",
