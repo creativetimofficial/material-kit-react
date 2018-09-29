@@ -1,7 +1,6 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import { prism } from "react-syntax-highlighter/styles/prism";
-import { atomOneDark } from "react-syntax-highlighter/styles/hljs";
 /* eslint-disable */
 const files = `material-kit-react
 ├── CHANGELOG.md
@@ -155,14 +154,16 @@ class Tutorial extends React.Component {
           SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         </p>
         <h2>Getting started</h2>
-        {
-          // eslint-disable-next-line
-        }
         <p>
           <b>Material Kit React</b> is built on top of{" "}
           <a href="https://material-ui-next.com/" target="_blank">
             Material UI
-          </a>.
+          </a> using <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">
+            create-react-app
+          </a> (at the moment we do not offer support for TypeScript in our React themes).
+        </p>
+        <p>
+          You can convert our theme to TypeScript support by <a href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/14" target="_blank" rel="noopener noreferrer">reading this thread</a>.
         </p>
         <ul>
           <li>
@@ -215,33 +216,68 @@ class Tutorial extends React.Component {
               language="jsx"
               style={prism}
             >{`npm start`}</SyntaxHighlighter>
+          </li>
+          <li>
+            Alternatively you can run{" "}
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`npm run install:clean`}</SyntaxHighlighter>{" "}
+            which will delete <code>node_modules</code>,{" "}
+            <code>package-lock.json</code>, automatically run <code>install</code>{" "}
+            script and <code>start</code> script
+          </li>
+          <li>
             <div>
               If you have an error something containing
               <SyntaxHighlighter
                 language="jsx"
-                style={atomOneDark}
+                style={prism}
               >{`Module not found`}</SyntaxHighlighter>
-            </div>
-            <div>
-              Try
+              You should check if in your root project folder you have a file
+              named <code>.env</code>.
+              <br />
+              If you do not have it, then create it and add this line in it:{" "}
+              <code>NODE_PATH=./src</code>
+              <br />
+              If that does not work, you need to do the following
               <SyntaxHighlighter
                 language="jsx"
                 style={prism}
               >{`npm install --g cross-env`}</SyntaxHighlighter>
-              and then try again starting the app.
-            </div>
-            <div>
-              If this doesn't do the trick, than also change the{" "}
-              <code>start script</code> inside <code>package.json</code> from
+              then change the <code>script</code> inside <code>package.json</code>{" "}
+              by adding <code>NODE_PATH=./src</code> inside it. For example, the
+              start script would be changed from
               <SyntaxHighlighter
                 language="jsx"
                 style={prism}
-              >{`"start": "npm-run-all -p watch-css start-js",`}</SyntaxHighlighter>
+              >{`"start": "react-scripts start",`}</SyntaxHighlighter>
               to
               <SyntaxHighlighter
                 language="jsx"
                 style={prism}
-              >{`"start": "NODE_PATH=./src npm-run-all -p watch-css start-js",`}</SyntaxHighlighter>
+              >{`"start": "NODE_PATH=./src react-scripts start",`}</SyntaxHighlighter>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p>
+                If you have an error about <code>props.history is undefined</code>,
+                than you're probably not sending inside the <code>Header</code>{" "}
+                component the props that come from the routes (everywhere{" "}
+                <code>Header</code> is rendered - we pass the{" "}
+                <code>{`{...rest}`}</code> to it).
+              </p>
+              <p>
+                You can also read more about{" "}
+                <a
+                  href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  this issue here
+                </a>.
+              </p>
             </div>
           </li>
           <li>
