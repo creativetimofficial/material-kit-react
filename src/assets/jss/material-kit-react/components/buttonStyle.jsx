@@ -1,4 +1,11 @@
-import { grayColor, roseColor } from "assets/jss/material-kit-react.jsx";
+import {
+  grayColor,
+  roseColor,
+  infoColor,
+  successColor,
+  warningColor,
+  dangerColor
+} from "assets/jss/material-kit-react.jsx";
 
 const buttonStyle = theme => ({
   button: {
@@ -69,49 +76,59 @@ const buttonStyle = theme => ({
   primary: {
     backgroundColor: theme.palette.primary.main,
     boxShadow:
-      "0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12)",
+      "0 2px 2px 0 " +
+      theme.palette.primary.shadow +
+      ", 0 3px 1px -2px " +
+      theme.palette.primary.shadow +
+      ", 0 1px 5px 0 " +
+      theme.palette.primary.shadow +
+      "",
     "&:hover,&:focus": {
       backgroundColor: theme.palette.primary.main,
       boxShadow:
-        "0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2)"
+        "0 14px 26px -12px " +
+        theme.palette.primary.darkShadow +
+        ", 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px " +
+        theme.palette.primary.shadow +
+        ""
     }
   },
   info: {
-    backgroundColor: theme.palette.info.main,
+    backgroundColor: infoColor,
     boxShadow:
       "0 2px 2px 0 rgba(0, 188, 212, 0.14), 0 3px 1px -2px rgba(0, 188, 212, 0.2), 0 1px 5px 0 rgba(0, 188, 212, 0.12)",
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.info.main,
+      backgroundColor: infoColor,
       boxShadow:
         "0 14px 26px -12px rgba(0, 188, 212, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2)"
     }
   },
   success: {
-    backgroundColor: theme.palette.success.main,
+    backgroundColor: successColor,
     boxShadow:
       "0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12)",
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.success.main,
+      backgroundColor: successColor,
       boxShadow:
         "0 14px 26px -12px rgba(76, 175, 80, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2)"
     }
   },
   warning: {
-    backgroundColor: theme.palette.warning.main,
+    backgroundColor: warningColor,
     boxShadow:
       "0 2px 2px 0 rgba(255, 152, 0, 0.14), 0 3px 1px -2px rgba(255, 152, 0, 0.2), 0 1px 5px 0 rgba(255, 152, 0, 0.12)",
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.warning.main,
+      backgroundColor: warningColor,
       boxShadow:
         "0 14px 26px -12px rgba(255, 152, 0, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2)"
     }
   },
   danger: {
-    backgroundColor: theme.palette.danger.main,
+    backgroundColor: dangerColor,
     boxShadow:
       "0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12)",
     "&:hover,&:focus": {
-      backgroundColor: theme.palette.danger.main,
+      backgroundColor: dangerColor,
       boxShadow:
         "0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2)"
     }
@@ -193,17 +210,17 @@ const buttonStyle = theme => ({
     },
     "&$info": {
       "&,&:focus,&:hover,&:visited": {
-        color: theme.palette.info.main
+        color: infoColor
       }
     },
     "&$success": {
       "&,&:focus,&:hover,&:visited": {
-        color: theme.palette.success.main
+        color: successColor
       }
     },
     "&$warning": {
       "&,&:focus,&:hover,&:visited": {
-        color: theme.palette.warning.main
+        color: warningColor
       }
     },
     "&$rose": {
@@ -213,7 +230,7 @@ const buttonStyle = theme => ({
     },
     "&$danger": {
       "&,&:focus,&:hover,&:visited": {
-        color: theme.palette.danger.main
+        color: dangerColor
       }
     },
     "&$twitter": {

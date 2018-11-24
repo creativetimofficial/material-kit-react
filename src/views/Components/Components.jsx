@@ -32,35 +32,42 @@ import SectionDownload from "./Sections/SectionDownload.jsx";
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
-import {
-  primaryColor,
-  infoColor,
-  warningColor,
-  dangerColor,
-  successColor
-} from "assets/jss/material-kit-react.jsx";
+import { primaryColor } from "assets/jss/material-kit-react.jsx";
+
+const hexToRgb = hex =>
+  hex
+    .replace(
+      /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
+      (m, r, g, b) => "#" + r + r + g + g + b + b
+    )
+    .substring(1)
+    .match(/.{2}/g)
+    .map(x => parseInt(x, 16));
+
+const getColors = color => {
+  const rgb = hexToRgb(color).join(", ");
+  return {
+    main: color,
+    shadow: `rgba(${rgb}, 0.2)`,
+    darkShadow: `rgba(${rgb}, 0.45)`
+  };
+};
+const defaultTheme = createMuiTheme();
 
 const theme0 = createMuiTheme({
   palette: {
-    primary: { main: primaryColor },
-    info: { main: infoColor },
-    warning: { main: warningColor },
-    danger: { main: dangerColor },
-    success: { main: successColor }
+    primary: getColors(primaryColor)
   }
 });
 
 const theme1 = createMuiTheme({
   palette: {
-    info: { main: infoColor },
-    warning: { main: warningColor },
-    danger: { main: dangerColor },
-    success: { main: successColor }
+    primary: getColors(defaultTheme.palette.primary.main)
   }
 });
 
-
 const themes = [theme0, theme1];
+console.log(themes);
 
 class Components extends React.Component {
   state = { theme: 0 };

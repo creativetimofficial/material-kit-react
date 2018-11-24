@@ -1,11 +1,10 @@
 import {
-  primaryColor,
   dangerColor,
   roseColor,
   grayColor
 } from "assets/jss/material-kit-react.jsx";
 
-const customCheckboxRadioSwitch = {
+const customCheckboxRadioSwitch = theme => ({
   checkRoot: {
     padding: "14px"
   },
@@ -31,7 +30,7 @@ const customCheckboxRadioSwitch = {
     marginBottom: "0"
   },
   checked: {
-    color: primaryColor + "!important"
+    color: theme.palette.primary.main + "!important"
   },
   checkedIcon: {
     width: "20px",
@@ -89,12 +88,12 @@ const customCheckboxRadioSwitch = {
     color: dangerColor
   },
   radio: {
-    color: primaryColor + "!important"
+    color: theme.palette.primary.main + "!important"
   },
   radioChecked: {
     width: "16px",
     height: "16px",
-    border: "1px solid " + primaryColor,
+    border: "1px solid " + theme.palette.primary.main,
     borderRadius: "50%"
   },
   radioUnchecked: {
@@ -140,7 +139,7 @@ const customCheckboxRadioSwitch = {
     lineHeight: "111px"
   },
   switchBase: {
-    color: primaryColor + "!important"
+    color: theme.palette.primary.main + "!important"
   },
   switchIcon: {
     boxShadow: "0 1px 3px 1px rgba(0, 0, 0, 0.4)",
@@ -149,7 +148,7 @@ const customCheckboxRadioSwitch = {
     transform: "translateX(-4px)!important"
   },
   switchIconChecked: {
-    borderColor: "#9c27b0",
+    borderColor: theme.palette.primary.main,
     transform: "translateX(0px)!important"
   },
   switchBar: {
@@ -161,9 +160,9 @@ const customCheckboxRadioSwitch = {
   },
   switchChecked: {
     "& + $switchBar": {
-      backgroundColor: "rgba(156, 39, 176, 1) !important"
+      backgroundColor: theme.palette.primary.main + "!important"
     }
   }
-};
+});
 
 export default customCheckboxRadioSwitch;
