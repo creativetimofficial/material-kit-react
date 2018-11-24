@@ -2,8 +2,7 @@ import {
   warningCardHeader,
   successCardHeader,
   dangerCardHeader,
-  infoCardHeader,
-  primaryCardHeader
+  infoCardHeader
 } from "assets/jss/material-kit-react.jsx";
 const cardHeaderStyle = theme => ({
   cardHeader: {
