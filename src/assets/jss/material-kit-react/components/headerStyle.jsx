@@ -1,7 +1,6 @@
 import {
   container,
   defaultFont,
-  primaryColor,
   infoColor,
   successColor,
   warningColor,
@@ -12,7 +11,7 @@ import {
   drawerWidth
 } from "assets/jss/material-kit-react.jsx";
 
-const headerStyle = {
+const headerStyle = theme => ({
   appBar: {
     display: "flex",
     border: "0",
@@ -67,10 +66,10 @@ const headerStyle = {
     margin: "20px 10px"
   },
   primary: {
-    backgroundColor: primaryColor,
+    backgroundColor: theme.palette.primary.main,
     color: "#FFFFFF",
     boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(156, 39, 176, 0.46)"
+      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px " + theme.palette.primary.darkShadow
   },
   info: {
     backgroundColor: infoColor,
@@ -145,6 +144,6 @@ const headerStyle = {
     paddingLeft: "0",
     ...transition
   }
-};
+});
 
 export default headerStyle;

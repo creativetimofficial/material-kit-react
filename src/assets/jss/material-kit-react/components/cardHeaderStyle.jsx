@@ -5,7 +5,7 @@ import {
   infoCardHeader,
   primaryCardHeader
 } from "assets/jss/material-kit-react.jsx";
-const cardHeaderStyle = {
+const cardHeaderStyle = theme => ({
   cardHeader: {
     borderRadius: "3px",
     padding: "1rem 15px",
@@ -23,7 +23,20 @@ const cardHeaderStyle = {
   successCardHeader,
   dangerCardHeader,
   infoCardHeader,
-  primaryCardHeader
-};
+  primaryCardHeader: {
+    color: "#fff",
+    background:
+      "linear-gradient(60deg, " +
+      theme.palette.primary.light +
+      ", " +
+      theme.palette.primary.main +
+      ")",
+    boxShadow:
+      "0 12px 20px -10px " +
+      theme.palette.primary.shadow +
+      ", 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px " +
+      theme.palette.primary.shadow
+  }
+});
 
 export default cardHeaderStyle;
