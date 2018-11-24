@@ -4,11 +4,11 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Search from "@material-ui/icons/Search";
 import Email from "@material-ui/icons/Email";
 import Face from "@material-ui/icons/Face";
-import Settings from "@material-ui/icons/Settings";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import Explore from "@material-ui/icons/Explore";
 // core components
@@ -107,7 +107,7 @@ class SectionNavbars extends React.Component {
                         left
                         hoverColor="info"
                         dropdownHeader="Dropdown Header"
-                        buttonIcon={Settings}
+                        buttonIcon="settings"
                         buttonProps={{
                           className: classes.navLink,
                           color: "transparent"
@@ -256,7 +256,7 @@ class SectionNavbars extends React.Component {
                       onClick={e => e.preventDefault()}
                       color="transparent"
                     >
-                      <Settings className={classes.icons} /> Settings
+                      <Icon className={classes.icons}>settings</Icon> Settings
                     </Button>
                   </ListItem>
                 </List>

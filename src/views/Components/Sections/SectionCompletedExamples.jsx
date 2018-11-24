@@ -22,7 +22,7 @@ class SectionCompletedExamples extends React.Component {
                 The kit comes with three pre-built pages to help you get started
                 faster. You can change the text and images and you're good to
                 go. More importantly, looking at them will give you a picture of
-                what you can built with this powerful kit.
+                what you can build with this powerful kit.
               </h4>
             </GridItem>
           </GridContainer>

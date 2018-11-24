@@ -53,20 +53,19 @@ class SectionDownload extends React.Component {
               <h4>
                 We've launched{" "}
                 <a
-                  href="https://www.creative-tim.com/product/material-dashboard-pro-react"
+                  href="https://www.creative-tim.com/product/material-kit-pro-react"
                   target="_blank"
                 >
-                  Material Dashboard PRO React{" "}
+                  Material Kit PRO React{" "}
                 </a>.It has a huge number of components, sections and example
                 pages. Start Your Development With A Badass Material-UI
-                Dashboard inspired by Material Design.
+                nspired by Material Design.
               </h4>
             </GridItem>
             <GridItem xs={12} sm={8} md={6}>
               <Button
                 color="rose"
                 size="lg"
-                disabled
                 href="https://www.creative-tim.com/product/material-kit-pro-react"
                 target="_blank"
               >

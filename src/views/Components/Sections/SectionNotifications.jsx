@@ -3,7 +3,6 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import InfoOutline from "@material-ui/icons/InfoOutline";
 import Check from "@material-ui/icons/Check";
 import Warning from "@material-ui/icons/Warning";
 // core components
@@ -30,7 +29,7 @@ class SectionNotifications extends React.Component {
           }
           close
           color="info"
-          icon={InfoOutline}
+          icon="info_outline"
         />
         <SnackbarContent
           message={
@@ -63,7 +62,7 @@ class SectionNotifications extends React.Component {
           }
           close
           color="danger"
-          icon={InfoOutline}
+          icon="info_outline"
         />
         <Clearfix />
       </div>

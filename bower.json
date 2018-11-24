@@ -1,0 +1,25 @@
+{
+  "name": "material-kit-react",
+  "homepage": "https://github.com/creativetimofficial/material-kit-react",
+  "authors": [
+    "creative-tim"
+  ],
+  "description": "A Badass Material-UI Kit based on Material Design",
+  "main": "dist/index.js",
+  "keywords": [
+    "material",
+    "design",
+    "material-ui",
+    "google",
+    "twitter"
+  ],
+  "license": "Creative TIM License",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
