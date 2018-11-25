@@ -1,13 +1,12 @@
 import {
   grayColor,
-  primaryColor,
   infoColor,
   successColor,
   warningColor,
   dangerColor
 } from "assets/jss/material-kit-react.jsx";
 
-const paginationStyle = {
+const paginationStyle = theme => ({
   pagination: {
     display: "inline-block",
     paddingLeft: "0",
@@ -52,11 +51,16 @@ const paginationStyle = {
   },
   primary: {
     "&,&:hover,&:focus": {
-      backgroundColor: primaryColor,
-      borderColor: primaryColor,
+      backgroundColor: theme.palette.primary.main,
+      borderColor: theme.palette.primary.main,
       color: "#FFFFFF",
       boxShadow:
-        "0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2)"
+        "0 4px 5px 0 " +
+        theme.palette.primary.shadow +
+        ", 0 1px 10px 0 " +
+        theme.palette.primary.shadow +
+        ", 0 2px 4px -1px " +
+        theme.palette.primary.shadow
     },
     "&:hover,&:focus": {
       zIndex: "2",
@@ -123,6 +127,6 @@ const paginationStyle = {
       borderColor: "#ddd"
     }
   }
-};
+});
 
 export default paginationStyle;

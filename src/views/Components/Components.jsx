@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -32,37 +30,15 @@ import SectionDownload from "./Sections/SectionDownload.jsx";
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
-import { primaryColor } from "assets/jss/material-kit-react.jsx";
+import { theme, getThemeColors } from "assets/jss/material-kit-react.jsx";
 
-const hexToRgb = hex =>
-  hex
-    .replace(
-      /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
-      (m, r, g, b) => "#" + r + r + g + g + b + b
-    )
-    .substring(1)
-    .match(/.{2}/g)
-    .map(x => parseInt(x, 16));
-
-const getColors = color => {
-  const rgb = hexToRgb(color).join(", ");
-  return {
-    main: color,
-    shadow: `rgba(${rgb}, 0.2)`,
-    darkShadow: `rgba(${rgb}, 0.45)`
-  };
-};
 const defaultTheme = createMuiTheme();
 
-const theme0 = createMuiTheme({
-  palette: {
-    primary: getColors(primaryColor)
-  }
-});
+const theme0 = createMuiTheme(theme);
 
 const theme1 = createMuiTheme({
   palette: {
-    primary: getColors(defaultTheme.palette.primary.main)
+    primary: getThemeColors(defaultTheme.palette.primary.main)
   }
 });
 
@@ -103,26 +79,42 @@ class Components extends React.Component {
           </Parallax>
 
           <div className={classNames(classes.main, classes.mainRaised)}>
-            <div className={classes.container}>
+            <div className={classes.container} style={{ paddingTop: 70 }}>
               <GridContainer>
                 <GridItem>
-                  <h2>Theme color</h2>
-                  <Button
-                    round
-                    justIcon
-                    style={{ background: "#9c27b0" }}
-                    onClick={() => this.setState({ theme: 0})}
-                  >
-                    <Favorite />
-                  </Button>
-                  <Button
-                    round
-                    justIcon
-                    style={{ background: "#3f51b5" }}
-                    onClick={() => this.setState({ theme: 1 })}
-                  >
-                    <Favorite />
-                  </Button>
+                  <h2>Theme primary color</h2>
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <div
+                      style={{
+                        padding: 5,
+                        border: this.state.theme === 0 ? "1px solid black" : 0
+                      }}
+                    >
+                      <Button
+                        round
+                        justIcon
+                        style={{ background: "#9c27b0" }}
+                        onClick={() => this.setState({ theme: 0 })}
+                      >
+                        <span>&nbsp;</span>
+                      </Button>
+                    </div>
+                    <div
+                      style={{
+                        padding: 5,
+                        border: this.state.theme === 1 ? "1px solid black" : 0
+                      }}
+                    >
+                      <Button
+                        round
+                        justIcon
+                        style={{ background: "#3f51b5" }}
+                        onClick={() => this.setState({ theme: 1 })}
+                      >
+                        <span>&nbsp;</span>
+                      </Button>
+                    </div>
+                  </div>
                 </GridItem>
               </GridContainer>
             </div>

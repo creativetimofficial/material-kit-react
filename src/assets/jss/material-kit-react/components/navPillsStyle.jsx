@@ -1,6 +1,5 @@
 import {
   roseColor,
-  primaryColor,
   infoColor,
   successColor,
   warningColor,
@@ -79,9 +78,10 @@ const navPillsStyle = theme => ({
   primary: {
     "&,&:hover": {
       color: "#FFFFFF",
-      backgroundColor: primaryColor,
+      backgroundColor: theme.palette.primary.main,
       boxShadow:
-        "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4)"
+        "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px " +
+        theme.palette.primary.darkShadow
     }
   },
   info: {

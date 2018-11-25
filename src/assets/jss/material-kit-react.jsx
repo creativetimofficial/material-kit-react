@@ -179,6 +179,31 @@ const cardSubtitle = {
   marginTop: "-.375rem"
 };
 
+const hexToRgb = hex =>
+  hex
+    .replace(
+      /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
+      (m, r, g, b) => "#" + r + r + g + g + b + b
+    )
+    .substring(1)
+    .match(/.{2}/g)
+    .map(x => parseInt(x, 16));
+
+const getThemeColors = color => {
+  const rgb = hexToRgb(color).join(", ");
+  return {
+    main: color,
+    shadow: `rgba(${rgb}, 0.2)`,
+    darkShadow: `rgba(${rgb}, 0.45)`
+  };
+};
+
+const theme = {
+  palette: {
+    primary: getThemeColors(primaryColor)
+  }
+};
+
 export {
   //variables
   drawerWidth,
@@ -213,5 +238,7 @@ export {
   title,
   cardTitle,
   cardLink,
-  cardSubtitle
+  cardSubtitle,
+  getThemeColors,
+  theme
 };

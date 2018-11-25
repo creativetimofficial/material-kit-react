@@ -1,5 +1,4 @@
 import {
-  primaryColor,
   warningColor,
   dangerColor,
   successColor,
@@ -8,7 +7,7 @@ import {
   grayColor
 } from "assets/jss/material-kit-react.jsx";
 
-const customLinearProgressStyle = {
+const customLinearProgressStyle = theme => ({
   root: {
     height: "4px",
     marginBottom: "20px",
@@ -18,7 +17,7 @@ const customLinearProgressStyle = {
     height: "4px"
   },
   primary: {
-    backgroundColor: primaryColor
+    backgroundColor: theme.palette.primary.main
   },
   warning: {
     backgroundColor: warningColor
@@ -39,7 +38,7 @@ const customLinearProgressStyle = {
     backgroundColor: grayColor
   },
   primaryBackground: {
-    background: "rgba(156, 39, 176, 0.2)"
+    background: theme.palette.primary.shadow
   },
   warningBackground: {
     background: "rgba(255, 152, 0, 0.2)"
@@ -59,6 +58,6 @@ const customLinearProgressStyle = {
   grayBackground: {
     background: "rgba(221, 221, 221, 0.2)"
   }
-};
+});
 
 export default customLinearProgressStyle;

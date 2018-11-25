@@ -1,5 +1,4 @@
 import {
-  primaryColor,
   warningColor,
   dangerColor,
   successColor,
@@ -7,7 +6,7 @@ import {
   roseColor
 } from "assets/jss/material-kit-react.jsx";
 
-const badgeStyle = {
+const badgeStyle = theme => ({
   badge: {
     marginRight: "3px",
     borderRadius: "12px",
@@ -23,7 +22,7 @@ const badgeStyle = {
     display: "inline-block"
   },
   primary: {
-    backgroundColor: primaryColor
+    backgroundColor: theme.palette.primary.main
   },
   warning: {
     backgroundColor: warningColor
@@ -43,6 +42,6 @@ const badgeStyle = {
   gray: {
     backgroundColor: "#6c757d"
   }
-};
+});
 
 export default badgeStyle;
