@@ -1,6 +1,6 @@
 import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter/prism";
-import { prism } from "react-syntax-highlighter/styles/prism";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // react component plugin for creating a beautiful datetime dropdown picker
 import Datetime from "react-datetime";
 // material-ui components
