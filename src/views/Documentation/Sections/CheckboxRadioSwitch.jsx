@@ -428,7 +428,8 @@ class CheckboxRadioSwitch extends React.Component {
             target="_blank"
           >
             these components from Material-UI
-          </a>. We've just added our style over their components.
+          </a>
+          . We've just added our style over their components.
         </p>
         <h2>Styles</h2>
         <p>
@@ -436,7 +437,8 @@ class CheckboxRadioSwitch extends React.Component {
           <br />
           <code>
             src/assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx
-          </code>.
+          </code>
+          .
         </p>
         <p>Let's take a look at each one of them, and how to use our styles.</p>
         <h2>Checkboxes</h2>

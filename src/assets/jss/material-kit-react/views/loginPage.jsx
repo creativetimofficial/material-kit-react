@@ -40,7 +40,7 @@ const signupPageStyle = {
     "& footer": {
       position: "absolute",
       bottom: "0",
-      width: "100%",
+      width: "100%"
     }
   },
   form: {

@@ -21,10 +21,9 @@ class RoutingSystem extends React.Component {
           be found in <code>src/views/PageName/PageName.jsx</code>).
         </p>
         <p>
-          Feel free to create any new page component, import it here (<code>
-            src/routes/index.jsx
-          </code>), and then add a new route like it is shown in our legend (see
-          bellow).
+          Feel free to create any new page component, import it here (
+          <code>src/routes/index.jsx</code>), and then add a new route like it
+          is shown in our legend (see bellow).
         </p>
         <h2>Legend</h2>
         <ul>

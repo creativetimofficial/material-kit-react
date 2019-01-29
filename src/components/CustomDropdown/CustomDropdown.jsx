@@ -26,24 +26,22 @@ class CustomDropdown extends React.Component {
     this.state = {
       open: false
     };
-    this.handleClick = this.handleClick.bind(this);
-    this.handleClose = this.handleClose.bind(this);
   }
-  handleClick() {
+  handleClick = () => {
     this.setState(state => ({ open: !state.open }));
-  }
-  handleClose(param) {
+  };
+  handleClose = param => {
     this.setState({ open: false });
-    if(this.props && this.props.onClick){
+    if (this.props && this.props.onClick) {
       this.props.onClick(param);
     }
-  }
+  };
   handleCloseAway = event => {
     if (this.anchorEl.contains(event.target)) {
       return;
     }
     this.setState({ open: false });
-  }
+  };
   render() {
     const { open } = this.state;
     const {
@@ -110,12 +108,16 @@ class CustomDropdown extends React.Component {
           disablePortal
           placement={
             dropup
-              ? left ? "top-start" : "top"
-              : left ? "bottom-start" : "bottom"
+              ? left
+                ? "top-start"
+                : "top"
+              : left
+              ? "bottom-start"
+              : "bottom"
           }
           className={classNames({
             [classes.popperClose]: !open,
-            [classes.pooperResponsive]: true
+            [classes.popperResponsive]: true
           })}
         >
           {({ TransitionProps, placement }) => (
@@ -133,7 +135,7 @@ class CustomDropdown extends React.Component {
                   <MenuList role="menu" className={classes.menuList}>
                     {dropdownHeader !== undefined ? (
                       <MenuItem
-                        onClick={this.handleClose}
+                        onClick={() => this.handleClose(dropdownHeader)}
                         className={classes.dropdownHeader}
                       >
                         {dropdownHeader}
@@ -144,7 +146,7 @@ class CustomDropdown extends React.Component {
                         return (
                           <Divider
                             key={key}
-                            onClick={this.handleClose}
+                            onClick={() => this.handleClose("divider")}
                             className={classes.dropdownDividerItem}
                           />
                         );
@@ -152,7 +154,7 @@ class CustomDropdown extends React.Component {
                       return (
                         <MenuItem
                           key={key}
-                          onClick={this.handleClose}
+                          onClick={() => this.handleClose(prop)}
                           className={dropdownItem}
                         >
                           {prop}

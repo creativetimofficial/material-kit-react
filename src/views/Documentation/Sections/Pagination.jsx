@@ -72,10 +72,12 @@ function Pagination({ ...props }) {
       </p>
       <h2>Styles</h2>
       <p>
-        You will find the styles for this component in<br />{" "}
+        You will find the styles for this component in
+        <br />{" "}
         <code>
           src/assets/jss/material-kit-react/components/paginationStyle.jsx
-        </code>.
+        </code>
+        .
       </p>
       <h2>Example</h2>
       <div className={classes.bdExample}>

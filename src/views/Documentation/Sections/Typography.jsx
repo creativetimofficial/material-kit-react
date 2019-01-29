@@ -102,15 +102,17 @@ function Typography({ ...props }) {
     <div>
       <h1>Typography</h1>
       <p>
-        Documentation and examples for Material Kit React typography,
-        including global settings, headings, body text, lists, and more.
+        Documentation and examples for Material Kit React typography, including
+        global settings, headings, body text, lists, and more.
       </p>
       <h2>Styles</h2>
       <p>
-        You will find the styles for these components in<br />{" "}
+        You will find the styles for these components in
+        <br />{" "}
         <code>
           src/assets/jss/material-kit-react/components/typographyStyle.jsx
-        </code>.
+        </code>
+        .
       </p>
       <h2>
         <b>Headings</b>
@@ -123,7 +125,8 @@ function Typography({ ...props }) {
         <h5>h5. Material Kit React heading</h5>
         <h6>h6. Material Kit React heading</h6>
         <h2>
-          Header with small subtitle<br />
+          Header with small subtitle
+          <br />
           <small>Use &lt;small&gt; tag for the headers</small>
         </h2>
       </div>

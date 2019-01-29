@@ -106,7 +106,8 @@ class DateTimePicker extends React.Component {
         </p>
         <h2>Styles</h2>
         <p>
-          You will find the styles for this component in<br />{" "}
+          You will find the styles for this component in
+          <br />{" "}
           <code>src/assets/scss/plugins/_plugin-react-datetime.scss</code>.
         </p>
         <h2>Example</h2>

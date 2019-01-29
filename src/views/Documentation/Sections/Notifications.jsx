@@ -106,7 +106,8 @@ class Notifications extends React.Component {
           <br />
           <code>
             src/assets/jss/material-kit-react/components/snackbarContentStyle.jsx
-          </code>.
+          </code>
+          .
         </p>
         <p>
           We restyled the classic Material UI SnackbarContent and gave it a more
@@ -174,7 +175,8 @@ class Notifications extends React.Component {
             rel="noopener noreferrer"
           >
             official material-ui documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

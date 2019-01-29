@@ -27,7 +27,11 @@ function Footer({ ...props }) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="https://www.creative-tim.com/" className={classes.block} target="_blank">
+              <a
+                href="https://www.creative-tim.com/"
+                className={classes.block}
+                target="_blank"
+              >
                 Creative Tim
               </a>
             </ListItem>
@@ -41,7 +45,11 @@ function Footer({ ...props }) {
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="https://blog.creative-tim.com/" className={classes.block} target="_blank">
+              <a
+                href="https://blog.creative-tim.com/"
+                className={classes.block}
+                target="_blank"
+              >
                 Blog
               </a>
             </ListItem>
@@ -59,7 +67,11 @@ function Footer({ ...props }) {
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
-          <a href="https://www.creative-tim.com" className={aClasses} target="_blank">
+          <a
+            href="https://www.creative-tim.com"
+            className={aClasses}
+            target="_blank"
+          >
             Creative Tim
           </a>{" "}
           for a better web.

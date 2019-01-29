@@ -21,7 +21,10 @@ class Parallax extends React.Component {
         <p>
           You will find all the styles for these components in
           <br />
-          <code>src/assets/jss/material-kit-react/components/parallaxStyle.jsx</code>.
+          <code>
+            src/assets/jss/material-kit-react/components/parallaxStyle.jsx
+          </code>
+          .
         </p>
         <h2>Example Code</h2>
         <p>

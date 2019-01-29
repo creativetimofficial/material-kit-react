@@ -1,7 +1,11 @@
 .github-btn {
   display: inline-block;
-  .gh-btn, .gh-count{
-    &, &:hover, &:focus, &:hover:focus{
+  .gh-btn,
+  .gh-count {
+    &,
+    &:hover,
+    &:focus,
+    &:hover:focus {
       color: #333;
     }
   }

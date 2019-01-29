@@ -59,20 +59,20 @@ class SectionDownload extends React.Component {
               <h4>
                 We've launched{" "}
                 <a
-                  href="https://www.creative-tim.com/product/material-dashboard-pro-react"
+                  href="https://www.creative-tim.com/product/material-kit-pro-react"
                   target="_blank"
                 >
-                  Material Dashboard PRO React{" "}
-                </a>.It has a huge number of components, sections and example
-                pages. Start Your Development With A Badass Material-UI
-                Dashboard inspired by Material Design.
+                  Material Kit PRO React{" "}
+                </a>
+                .It has a huge number of components, sections and example pages.
+                Start Your Development With A Badass Material-UI nspired by
+                Material Design.
               </h4>
             </GridItem>
             <GridItem xs={12} sm={8} md={6}>
               <Button
                 color="rose"
                 size="lg"
-                disabled
                 href="https://www.creative-tim.com/product/material-kit-pro-react"
                 target="_blank"
               >
@@ -116,7 +116,8 @@ class SectionDownload extends React.Component {
             </FacebookShareButton>
             <GooglePlusShareButton url="https://www.creative-tim.com/live/material-kit-react">
               <Button color="google">
-                <i className={classes.socials + " fab fa-google-plus-g"} />Share
+                <i className={classes.socials + " fab fa-google-plus-g"} />
+                Share
               </Button>
             </GooglePlusShareButton>
             <Button

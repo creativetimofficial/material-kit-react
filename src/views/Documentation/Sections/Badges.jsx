@@ -58,10 +58,12 @@ class Badges extends React.Component {
         <h1>Badges</h1>
         <h2>Styles</h2>
         <p>
-          You will find the styles for this component in<br />{" "}
+          You will find the styles for this component in
+          <br />{" "}
           <code>
             src/assets/jss/material-kit-react/components/badgeStyle.jsx
-          </code>.
+          </code>
+          .
         </p>
         <h2>Imports</h2>
         <p>If you want to use our predefined components:</p>

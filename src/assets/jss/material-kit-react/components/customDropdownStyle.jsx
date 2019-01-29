@@ -36,7 +36,7 @@ const customDropdownStyle = theme => ({
   menuList: {
     padding: "0"
   },
-  pooperResponsive: {
+  popperResponsive: {
     zIndex: "1200",
     [theme.breakpoints.down("sm")]: {
       zIndex: "1640",

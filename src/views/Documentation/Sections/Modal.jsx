@@ -161,8 +161,8 @@ class Modal extends React.Component {
         </p>
         <h2>Styles</h2>
         <p>
-          You will find the styles for this component in<br />{" "}
-          <code>src/assets/jss/material-kit-react/modalStyle.jsx</code>.
+          You will find the styles for this component in
+          <br /> <code>src/assets/jss/material-kit-react/modalStyle.jsx</code>.
         </p>
         <h2>Example</h2>
         <div className={classes.bdExample}>

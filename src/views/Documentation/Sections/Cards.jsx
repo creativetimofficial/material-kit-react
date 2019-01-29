@@ -432,7 +432,8 @@ class Cards extends React.Component {
           <br />
           <code>
             src/assets/jss/material-kit-react/components/cardFooterStyle.jsx
-          </code>.
+          </code>
+          .
         </p>
         <h2>Example</h2>
         <p>

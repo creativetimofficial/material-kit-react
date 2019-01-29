@@ -60,7 +60,8 @@ class Navigation extends React.Component {
           <br />
           <code>
             src/assets/jss/material-kit-react/components/headerLinksStyle.jsx
-          </code>.
+          </code>
+          .
         </p>
         <p>The classic Material UI Appbar was restyled.</p>
         <p>
@@ -90,7 +91,8 @@ class Navigation extends React.Component {
             rel="noopener noreferrer"
           >
             official material-ui documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

@@ -131,7 +131,8 @@ class Inputs extends React.Component {
           <br />
           <code>
             src/assets/jss/material-kit-react/components/customInputStyle.jsx
-          </code>.
+          </code>
+          .
         </p>
         <h2>Examples</h2>
         <div className={classes.bdExample}>
@@ -223,7 +224,8 @@ class Inputs extends React.Component {
             rel="noopener noreferrer"
           >
             material-ui input documentation
-          </a>,{" "}
+          </a>
+          ,{" "}
           <a
             href="https://material-ui-next.com/api/input-label/"
             target="_blank"
@@ -238,7 +240,8 @@ class Inputs extends React.Component {
             rel="noopener noreferrer"
           >
             material-ui form control documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

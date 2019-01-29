@@ -91,10 +91,12 @@ class Sliders extends React.Component {
         </p>
         <h2>Styles</h2>
         <p>
-          You will find the styles for this component in<br />{" "}
+          You will find the styles for this component in
+          <br />{" "}
           <code>
             src/assets/scss/material-dashboard-pro-react/plugins/_plugin-nouislider.scss
-          </code>.
+          </code>
+          .
         </p>
         <h2>Example</h2>
         <div className="slider-primary" ref="slider1" />

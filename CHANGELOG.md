@@ -1,3 +1,49 @@
+## [1.3.0] 2019-02-10
+### Bug fixing
+- https://github.com/creativetimofficial/material-kit-react/issues/46
+- https://github.com/creativetimofficial/material-kit-react/issues/44
+- Updated available scripts
+- Changed the *.babelrc* file
+### Major style changes
+- **src/assets/jss/material-kit-react/components/headerStyle.jsx**
+- **src/assets/jss/material-kit-react/components/customDropdownStyle.jsx**
+### Major components changes
+- - Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
+- **src/components/CustomDropdown/CustomDropdown.jsx**
+### Deleted dependencies
+- `babel-eslint`
+- `eslint`
+- `eslint-plugin-react`
+- `prettier`
+- `npm-run-all`
+- `babel-cli`
+- `babel-plugin-module-resolver`
+- `babel-plugin-import-rename`
+- `babel-plugin-transform-object-rest-spread`
+- `babel-plugin-transform-react-jsx`
+- `babel-preset-es2015`
+- `node-sass-chokidar`
+### Added dependencies
+- `@babel/cli` version: **7.2.3**
+- `@babel/plugin-proposal-class-properties` version: **7.3.0**
+- `@babel/preset-env` version: **7.3.1**
+- `@babel/preset-react` version: **7.0.0**
+### Updated dependencies
+-  `@material-ui/core`               *3.1.1*   →    **3.9.1**
+-  `@material-ui/icons`              *3.0.1*   →    **3.0.2**
+-  `moment`                         *2.22.2*   →   **2.24.0**
+-  `node-sass-chokidar`              *1.3.3*   →    **1.3.4**
+-  `nouislider`                     *12.0.0*   →   **12.1.0**
+-  `npm-run-all`                     *4.1.3*   →    **4.1.5**
+-  `react`                          *16.5.2*   →   **16.7.0**
+-  `react-datetime`                 *2.15.0*   →   **2.16.3**
+-  `react-dom`                      *16.5.2*   →   **16.7.0**
+-  `react-slick`                    *0.23.1*   →   **0.23.2**
+-  `react-swipeable-views`          *0.13.0*   →   **0.13.1**
+-  `babel-plugin-module-resolver`    *3.1.1*   →    **3.1.3**
+-  `eslint-config-prettier`          *3.1.0*   →    **4.0.0**
+-  `eslint-plugin-prettier`          *2.6.2*   →    **3.0.1**
+
 ## [1.3.0] 2018-08-16
 ### Bug fixing
 - Github own repo

@@ -127,9 +127,11 @@ class Tutorial extends React.Component {
           // eslint-disable-next-line
         }
         <p>
-          Copyright (c) 2018<a href="https://creative-tim.com/" target="_blank">
+          Copyright (c) 2018
+          <a href="https://creative-tim.com/" target="_blank">
             Creative Tim
-          </a>.
+          </a>
+          .
         </p>
         <p>
           Permission is hereby granted, free of charge, to any person obtaining
@@ -158,12 +160,28 @@ class Tutorial extends React.Component {
           <b>Material Kit React</b> is built on top of{" "}
           <a href="https://material-ui-next.com/" target="_blank">
             Material UI
-          </a> using <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">
+          </a>{" "}
+          using{" "}
+          <a
+            href="https://github.com/facebook/create-react-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             create-react-app
-          </a> (at the moment we do not offer support for TypeScript in our React themes).
+          </a>{" "}
+          (at the moment we do not offer support for TypeScript in our React
+          themes).
         </p>
         <p>
-          You can convert our theme to TypeScript support by <a href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/14" target="_blank" rel="noopener noreferrer">reading this thread</a>.
+          You can convert our theme to TypeScript support by{" "}
+          <a
+            href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/14"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reading this thread
+          </a>
+          .
         </p>
         <ul>
           <li>
@@ -224,8 +242,8 @@ class Tutorial extends React.Component {
               style={prism}
             >{`npm run install:clean`}</SyntaxHighlighter>{" "}
             which will delete <code>node_modules</code>,{" "}
-            <code>package-lock.json</code>, automatically run <code>install</code>{" "}
-            script and <code>start</code> script
+            <code>package-lock.json</code>, automatically run{" "}
+            <code>install</code> script and <code>start</code> script
           </li>
           <li>
             <div>
@@ -245,9 +263,9 @@ class Tutorial extends React.Component {
                 language="jsx"
                 style={prism}
               >{`npm install --g cross-env`}</SyntaxHighlighter>
-              then change the <code>script</code> inside <code>package.json</code>{" "}
-              by adding <code>NODE_PATH=./src</code> inside it. For example, the
-              start script would be changed from
+              then change the <code>script</code> inside{" "}
+              <code>package.json</code> by adding <code>NODE_PATH=./src</code>{" "}
+              inside it. For example, the start script would be changed from
               <SyntaxHighlighter
                 language="jsx"
                 style={prism}
@@ -262,11 +280,11 @@ class Tutorial extends React.Component {
           <li>
             <div>
               <p>
-                If you have an error about <code>props.history is undefined</code>,
-                than you're probably not sending inside the <code>Header</code>{" "}
-                component the props that come from the routes (everywhere{" "}
-                <code>Header</code> is rendered - we pass the{" "}
-                <code>{`{...rest}`}</code> to it).
+                If you have an error about{" "}
+                <code>props.history is undefined</code>, than you're probably
+                not sending inside the <code>Header</code> component the props
+                that come from the routes (everywhere <code>Header</code> is
+                rendered - we pass the <code>{`{...rest}`}</code> to it).
               </p>
               <p>
                 You can also read more about{" "}
@@ -276,7 +294,8 @@ class Tutorial extends React.Component {
                   rel="noopener noreferrer"
                 >
                   this issue here
-                </a>.
+                </a>
+                .
               </p>
             </div>
           </li>
@@ -321,8 +340,7 @@ class Tutorial extends React.Component {
             </ul>
           </li>
           <li>
-            Navigate to{" "}
-            <code>http://localhost:3000</code>
+            Navigate to <code>http://localhost:3000</code>
           </li>
           <li>
             More information →{" "}

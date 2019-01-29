@@ -213,14 +213,17 @@ class Buttons extends React.Component {
         </p>
         <h2>Styles</h2>
         <p>
-          You will find the styles for this component in<br />{" "}
+          You will find the styles for this component in
+          <br />{" "}
           <code>
             src/assets/jss/material-kit-react/components/buttonStyle.jsx
           </code>
-          <br /> and<br />
+          <br /> and
+          <br />
           <code>
             src/assets/jss/material-kit-react/components/iconButtonStyle.jsx
-          </code>.
+          </code>
+          .
         </p>
         <h2>Examples</h2>
         <p>
@@ -264,7 +267,7 @@ class Buttons extends React.Component {
           <Button color="primary" round>
             <Favorite /> With Icon
           </Button>
-          <Button justIcon round  color="primary">
+          <Button justIcon round color="primary">
             <Favorite style={{ color: "#FFFFFF" }} />
           </Button>
           <Button color="primary" simple>
@@ -296,159 +299,68 @@ class Buttons extends React.Component {
         <h2>Social buttons</h2>
         <div className={classes.bdExample}>
           <Button color="twitter">
-            <i
-              className={
-
-                " " +
-
-                " fab fa-twitter"
-              }
-            />{" "}
-            Connect with Twitter
+            <i className={" " + " fab fa-twitter"} /> Connect with Twitter
           </Button>
           <Button color="twitter" justIcon>
-            <i className={ " fab fa-twitter"} />
+            <i className={" fab fa-twitter"} />
           </Button>
-          <Button justIcon round  color="twitter">
-            <i className={ " fab fa-twitter"} />
+          <Button justIcon round color="twitter">
+            <i className={" fab fa-twitter"} />
           </Button>
           <Button color="twitter" simple justIcon>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-twitter"
-              }
-            />
+            <i className={" " + " fab fa-twitter"} />
           </Button>
           <Button color="twitter" simple>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-twitter"
-              }
-            />{" "}
-            Connect with Twitter
+            <i className={" " + " fab fa-twitter"} /> Connect with Twitter
           </Button>
           <br />
           <Button color="facebook">
-            <i
-              className={
-
-                " " +
-
-                " fab fa-facebook-square"
-              }
-            />{" "}
-            Share · 2.2k
+            <i className={" " + " fab fa-facebook-square"} /> Share · 2.2k
           </Button>
           <Button color="facebook" justIcon>
-            <i className={ " fab fa-facebook"} />
+            <i className={" fab fa-facebook"} />
           </Button>
-          <Button justIcon round  color="facebook">
-            <i className={ " fab fa-facebook"} />
+          <Button justIcon round color="facebook">
+            <i className={" fab fa-facebook"} />
           </Button>
           <Button color="facebook" simple justIcon>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-facebook-square"
-              }
-            />
+            <i className={" " + " fab fa-facebook-square"} />
           </Button>
           <Button color="facebook" simple>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-facebook-square"
-              }
-            />{" "}
-            Share · 2.2k
+            <i className={" " + " fab fa-facebook-square"} /> Share · 2.2k
           </Button>
           <br />
           <Button color="google">
-            <i
-              className={
-
-                " " +
-
-                " fab fa-google-plus-square"
-              }
-            />{" "}
-            Share on Google+
+            <i className={" " + " fab fa-google-plus-square"} /> Share on
+            Google+
           </Button>
           <Button color="google" justIcon>
-            <i className={ " fab fa-google"} />
+            <i className={" fab fa-google"} />
           </Button>
-          <Button justIcon round  color="google">
-            <i className={ " fab fa-google"} />
+          <Button justIcon round color="google">
+            <i className={" fab fa-google"} />
           </Button>
           <Button color="google" simple justIcon>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-google"
-              }
-            />
+            <i className={" " + " fab fa-google"} />
           </Button>
           <Button color="google" simple>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-google-square"
-              }
-            />{" "}
-            Share on Google+
+            <i className={" " + " fab fa-google-square"} /> Share on Google+
           </Button>
           <br />
           <Button color="github">
-            <i
-              className={
-
-                " " +
-
-                " fab fa-github"
-              }
-            />{" "}
-            Connect with Github
+            <i className={" " + " fab fa-github"} /> Connect with Github
           </Button>
           <Button color="github" justIcon>
-            <i className={ " fab fa-github"} />
+            <i className={" fab fa-github"} />
           </Button>
-          <Button justIcon round  color="github">
-            <i className={ " fab fa-github"} />
+          <Button justIcon round color="github">
+            <i className={" fab fa-github"} />
           </Button>
           <Button color="github" simple justIcon>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-github"
-              }
-            />
+            <i className={" " + " fab fa-github"} />
           </Button>
           <Button color="github" simple>
-            <i
-              className={
-
-                " " +
-
-                " fab fa-github"
-              }
-            />{" "}
-            Connect with Github
+            <i className={" " + " fab fa-github"} /> Connect with Github
           </Button>
         </div>
         <SyntaxHighlighter language="jsx" style={prism}>
@@ -467,7 +379,8 @@ class Buttons extends React.Component {
             rel="noopener noreferrer"
           >
             material-ui buttons section
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

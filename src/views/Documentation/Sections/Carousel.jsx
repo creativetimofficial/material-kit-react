@@ -142,8 +142,8 @@ class SectionCarousel extends React.Component {
                     />
                     <div className="slick-caption">
                       <h4>
-                        <LocationOn className="slick-icons" />Yellowstone
-                        National Park, United States
+                        <LocationOn className="slick-icons" />
+                        Yellowstone National Park, United States
                       </h4>
                     </div>
                   </div>
@@ -155,8 +155,8 @@ class SectionCarousel extends React.Component {
                     />
                     <div className="slick-caption">
                       <h4>
-                        <LocationOn className="slick-icons" />Somewhere Beyond,
-                        United States
+                        <LocationOn className="slick-icons" />
+                        Somewhere Beyond, United States
                       </h4>
                     </div>
                   </div>
@@ -168,8 +168,8 @@ class SectionCarousel extends React.Component {
                     />
                     <div className="slick-caption">
                       <h4>
-                        <LocationOn className="slick-icons" />Yellowstone
-                        National Park, United States
+                        <LocationOn className="slick-icons" />
+                        Yellowstone National Park, United States
                       </h4>
                     </div>
                   </div>
@@ -190,7 +190,8 @@ class SectionCarousel extends React.Component {
             rel="noopener noreferrer"
           >
             react-slick
-          </a>.
+          </a>
+          .
         </p>
         <p>
           These are <code>.slick-image</code> for the image of the slide,{" "}
@@ -206,7 +207,8 @@ class SectionCarousel extends React.Component {
             rel="noopener noreferrer"
           >
             react-slick's official docs
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

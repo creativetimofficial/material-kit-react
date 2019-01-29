@@ -49,7 +49,11 @@ const docRoutes = [
         component: RoutingSystem
       },
       { path: "/documentation/styles", name: "Styles", component: Styles },
-      { path: "/documentation/lint-commands", name: "Lint Commands", component: LintCommands }
+      {
+        path: "/documentation/lint-commands",
+        name: "Lint Commands",
+        component: LintCommands
+      }
     ]
   },
   {

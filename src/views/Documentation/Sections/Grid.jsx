@@ -46,7 +46,8 @@ function Grid({ ...props }) {
         }
         <a href="https://material-ui-next.com/layout/grid/" target="_blank">
           Material-UI
-        </a>.
+        </a>
+        .
       </p>
       <p>We've done this so we could add some personal styles to them.</p>
       <h2>GridContainer</h2>

@@ -106,10 +106,12 @@ function Dropdown({ ...props }) {
       </p>
       <h2>Styles</h2>
       <p>
-        You will find the styles for this component in<br />{" "}
+        You will find the styles for this component in
+        <br />{" "}
         <code>
           src/assets/jss/material-kit-react/components/customDropdownStyle.jsx
-        </code>.
+        </code>
+        .
       </p>
       <h2>Example Code - Dropdown</h2>
       <div className={classes.bdExample}>

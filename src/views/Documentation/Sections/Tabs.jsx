@@ -152,7 +152,8 @@ class Tabs extends React.Component {
           <br />
           <code>
             src/assets/jss/material-kit-react/components/customTabsStyle.jsx
-          </code>.
+          </code>
+          .
         </p>
         <h2>Example</h2>
         <div className={classes.bdExample}>
