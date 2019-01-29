@@ -1,5 +1,7 @@
 ## [1.3.0] 2019-02-10
 ### Bug fixing
+- https://github.com/creativetimofficial/material-kit-react/issues/46
+- 
 ### Major style changes
 - **src/assets/jss/material-kit-react/components/headerStyle.jsx**
 - **src/assets/jss/material-kit-react/components/customDropdownStyle.jsx**
