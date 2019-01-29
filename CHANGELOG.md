@@ -28,6 +28,7 @@
 - `@babel/plugin-proposal-class-properties` version: **7.3.0**
 - `@babel/preset-env` version: **7.3.1**
 - `@babel/preset-react` version: **7.0.0**
+- `node-sass` version: **4.11.0**
 ### Updated dependencies
 -  `@material-ui/core`               *3.1.1*   →    **3.9.1**
 -  `@material-ui/icons`              *3.0.1*   →    **3.0.2**
