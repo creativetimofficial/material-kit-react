@@ -57,9 +57,10 @@ class SectionDownload extends React.Component {
                   target="_blank"
                 >
                   Material Kit PRO React{" "}
-                </a>.It has a huge number of components, sections and example
-                pages. Start Your Development With A Badass Material-UI
-                nspired by Material Design.
+                </a>
+                .It has a huge number of components, sections and example pages.
+                Start Your Development With A Badass Material-UI nspired by
+                Material Design.
               </h4>
             </GridItem>
             <GridItem xs={12} sm={8} md={6}>
@@ -93,7 +94,8 @@ class SectionDownload extends React.Component {
               Share
             </Button>
             <Button color="google">
-              <i className={classes.socials + " fab fa-google-plus-g"} />Share
+              <i className={classes.socials + " fab fa-google-plus-g"} />
+              Share
             </Button>
             <Button color="github">
               <i className={classes.socials + " fab fa-github"} /> Star

@@ -8,6 +8,7 @@
 - **src/assets/jss/material-kit-react/components/headerStyle.jsx**
 - **src/assets/jss/material-kit-react/components/customDropdownStyle.jsx**
 ### Major components changes
+- - Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
 - **src/components/CustomDropdown/CustomDropdown.jsx**
 ### Deleted dependencies
 - `babel-eslint`

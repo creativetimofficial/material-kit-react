@@ -81,7 +81,8 @@ class SectionJavascript extends React.Component {
                     block
                     onClick={() => this.handleClickOpen("classicModal")}
                   >
-                    <LibraryBooks className={classes.icon} />Classic
+                    <LibraryBooks className={classes.icon} />
+                    Classic
                   </Button>
                   <Dialog
                     classes={{
