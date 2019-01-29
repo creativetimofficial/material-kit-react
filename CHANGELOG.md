@@ -3,6 +3,7 @@
 - https://github.com/creativetimofficial/material-kit-react/issues/46
 - https://github.com/creativetimofficial/material-kit-react/issues/44
 - Updated available scripts
+- Changed the *.babelrc* file
 ### Major style changes
 - **src/assets/jss/material-kit-react/components/headerStyle.jsx**
 - **src/assets/jss/material-kit-react/components/customDropdownStyle.jsx**
@@ -14,8 +15,17 @@
 - `eslint-plugin-react`
 - `prettier`
 - `npm-run-all`
+- `babel-cli`
+- `babel-plugin-module-resolver`
+- `babel-plugin-import-rename`
+- `babel-plugin-transform-object-rest-spread`
+- `babel-plugin-transform-react-jsx`
+- `babel-preset-es2015`
 ### Added dependencies
--
+- `@babel/cli` version: **7.2.3**
+- `@babel/plugin-proposal-class-properties` version: **7.3.0**
+- `@babel/preset-env` version: **7.3.1**
+- `@babel/preset-react` version: **7.0.0**
 ### Updated dependencies
 -  `@material-ui/core`               *3.1.1*   →    **3.9.1**
 -  `@material-ui/icons`              *3.0.1*   →    **3.0.2**
