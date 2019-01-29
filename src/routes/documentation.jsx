@@ -3,6 +3,7 @@ import Tutorial from "views/Documentation/Sections/Tutorial.jsx";
 import RoutingSystem from "views/Documentation/Sections/RoutingSystem.jsx";
 import Styles from "views/Documentation/Sections/Styles.jsx";
 import LintCommands from "views/Documentation/Sections/LintCommands.jsx";
+import BuildTools from "views/Documentation/Sections/BuildTools.jsx";
 
 // Components
 import Badges from "views/Documentation/Sections/Badges.jsx";
@@ -53,6 +54,11 @@ const docRoutes = [
         path: "/documentation/lint-commands",
         name: "Lint Commands",
         component: LintCommands
+      },
+      {
+        path: "/documentation/build-tools",
+        name: "Build Tools",
+        component: BuildTools
       }
     ]
   },
