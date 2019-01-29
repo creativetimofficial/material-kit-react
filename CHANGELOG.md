@@ -2,6 +2,7 @@
 ### Bug fixing
 - https://github.com/creativetimofficial/material-kit-react/issues/46
 - https://github.com/creativetimofficial/material-kit-react/issues/44
+- Updated available scripts
 ### Major style changes
 - **src/assets/jss/material-kit-react/components/headerStyle.jsx**
 - **src/assets/jss/material-kit-react/components/customDropdownStyle.jsx**
@@ -12,6 +13,7 @@
 - `eslint`
 - `eslint-plugin-react`
 - `prettier`
+- `npm-run-all`
 ### Added dependencies
 -
 ### Updated dependencies
