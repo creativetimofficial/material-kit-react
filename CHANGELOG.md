@@ -22,6 +22,7 @@
 - `babel-plugin-transform-object-rest-spread`
 - `babel-plugin-transform-react-jsx`
 - `babel-preset-es2015`
+- `node-sass-chokidar`
 ### Added dependencies
 - `@babel/cli` version: **7.2.3**
 - `@babel/plugin-proposal-class-properties` version: **7.3.0**
