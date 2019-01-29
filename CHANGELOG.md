@@ -1,5 +1,9 @@
 ## [1.3.0] 2019-02-10
 ### Bug fixing
+### Major style changes
+- **src/assets/jss/material-kit-react/components/headerStyle.jsx**
+### Major components changes
+
 ### Deleted dependencies
 - `babel-eslint`
 - `eslint`
