@@ -2,8 +2,9 @@
 ### Bug fixing
 ### Major style changes
 - **src/assets/jss/material-kit-react/components/headerStyle.jsx**
+- **src/assets/jss/material-kit-react/components/customDropdownStyle.jsx**
 ### Major components changes
-
+- **src/components/CustomDropdown/CustomDropdown.jsx**
 ### Deleted dependencies
 - `babel-eslint`
 - `eslint`

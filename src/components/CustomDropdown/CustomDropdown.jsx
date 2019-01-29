@@ -115,7 +115,7 @@ class CustomDropdown extends React.Component {
           }
           className={classNames({
             [classes.popperClose]: !open,
-            [classes.pooperResponsive]: true
+            [classes.popperResponsive]: true
           })}
         >
           {({ TransitionProps, placement }) => (
