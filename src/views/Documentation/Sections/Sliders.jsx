@@ -54,7 +54,7 @@ class Sliders extends React.Component {
   render() {
     return (
       <div>
-        <h1>noUiSlider v12.0.0</h1>
+        <h1>noUiSlider v12.1.0</h1>
         <h2>
           <code>Notice</code>
         </h2>
@@ -74,7 +74,7 @@ class Sliders extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <code>noUiSlider v12.0.0</code>
+            <code>noUiSlider v12.1.0</code>
           </a>{" "}
           component.
         </p>

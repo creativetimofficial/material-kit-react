@@ -81,7 +81,7 @@ class DateTimePicker extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <h1>React Datetime v2.15.0</h1>
+        <h1>React Datetime v2.16.3</h1>
         <p>
           We've used{" "}
           <a
