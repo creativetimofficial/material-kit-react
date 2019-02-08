@@ -30,7 +30,7 @@
 - `@babel/preset-react` version: **7.0.0**
 - `node-sass` version: **4.11.0**
 ### Updated dependencies
--  `@material-ui/core`               *3.1.1*   →    **3.9.1**
+-  `@material-ui/core`               *3.1.1*   →    **3.9.2**
 -  `@material-ui/icons`              *3.0.1*   →    **3.0.2**
 -  `moment`                         *2.22.2*   →   **2.24.0**
 -  `node-sass-chokidar`              *1.3.3*   →    **1.3.4**
