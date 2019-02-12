@@ -39,6 +39,7 @@
 -  `react`                          *16.5.2*   →   **16.7.0**
 -  `react-datetime`                 *2.15.0*   →   **2.16.3**
 -  `react-dom`                      *16.5.2*   →   **16.7.0**
+-  `react-scripts`                   *1.1.4*   →    **2.1.4**
 -  `react-slick`                    *0.23.1*   →   **0.23.2**
 -  `react-swipeable-views`          *0.13.0*   →   **0.13.1**
 -  `babel-plugin-module-resolver`    *3.1.1*   →    **3.1.3**
