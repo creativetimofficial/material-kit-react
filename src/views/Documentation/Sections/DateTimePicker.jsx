@@ -110,6 +110,16 @@ class DateTimePicker extends React.Component {
           <br />{" "}
           <code>src/assets/scss/plugins/_plugin-react-datetime.scss</code>.
         </p>
+        <p>
+          If you want to match the input of this plugin with the inputs from
+          Material-UI, please take a look at this issue here:{" "}
+          <a
+            href="https://github.com/creativetimofficial/material-kit-react/issues/20"
+            target="_blank"
+          >
+            https://github.com/creativetimofficial/material-kit-react/issues/20
+          </a>
+        </p>
         <h2>Example</h2>
         <div className={classes.bdExample}>
           <InputLabel className={classes.label}>Datetime Picker</InputLabel>
