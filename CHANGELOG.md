@@ -34,12 +34,13 @@
 -  `@material-ui/icons`              *3.0.1*   →    **3.0.2**
 -  `moment`                         *2.22.2*   →   **2.24.0**
 -  `node-sass-chokidar`              *1.3.3*   →    **1.3.4**
--  `nouislider`                     *12.0.0*   →   **12.1.0**
+-  `nouislider`                     *12.0.0*   →   **13.1.0**
 -  `npm-run-all`                     *4.1.3*   →    **4.1.5**
--  `react`                          *16.5.2*   →   **16.7.0**
+-  `prop-types`                     *15.6.2*   →   **15.7.1**
+-  `react`                          *16.5.2*   →   **16.8.1**
 -  `react-datetime`                 *2.15.0*   →   **2.16.3**
--  `react-dom`                      *16.5.2*   →   **16.7.0**
--  `react-scripts`                   *1.1.4*   →    **2.1.4**
+-  `react-dom`                      *16.5.2*   →   **16.8.1**
+-  `react-scripts`                   *1.1.4*   →    **2.1.5**
 -  `react-slick`                    *0.23.1*   →   **0.23.2**
 -  `react-swipeable-views`          *0.13.0*   →   **0.13.1**
 -  `babel-plugin-module-resolver`    *3.1.1*   →    **3.1.3**
