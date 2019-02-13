@@ -56,36 +56,166 @@ Within the download you'll find the following directories and files:
 material-kit-react
 .
 ├── CHANGELOG.md
-├── LICENSE.md
-├── README.md
-├── package.json
 ├── Documentation
 │   ├── assets
 │   │   ├── css
 │   │   ├── img
 │   │   │   └── faces
 │   │   └── js
+│   │       ├── bootstrap.min.js
+│   │       └── jquery-3.2.1.min.js
 │   └── tutorial-components.html
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── bower.json
+├── dist
+│   ├── assets
+│   │   └── jss
+│   │       ├── material-kit-react
+│   │       │   ├── components
+│   │       │   │   ├── badgeStyle.js
+│   │       │   │   ├── buttonStyle.js
+│   │       │   │   ├── cardBodyStyle.js
+│   │       │   │   ├── cardFooterStyle.js
+│   │       │   │   ├── cardHeaderStyle.js
+│   │       │   │   ├── cardStyle.js
+│   │       │   │   ├── customDropdownStyle.js
+│   │       │   │   ├── customInputStyle.js
+│   │       │   │   ├── customLinearProgressStyle.js
+│   │       │   │   ├── customTabsStyle.js
+│   │       │   │   ├── footerStyle.js
+│   │       │   │   ├── headerLinksStyle.js
+│   │       │   │   ├── headerStyle.js
+│   │       │   │   ├── infoStyle.js
+│   │       │   │   ├── navPillsStyle.js
+│   │       │   │   ├── paginationStyle.js
+│   │       │   │   ├── parallaxStyle.js
+│   │       │   │   ├── snackbarContentStyle.js
+│   │       │   │   └── typographyStyle.js
+│   │       │   ├── customCheckboxRadioSwitch.js
+│   │       │   ├── imagesStyles.js
+│   │       │   ├── modalStyle.js
+│   │       │   ├── popoverStyles.js
+│   │       │   ├── tooltipsStyle.js
+│   │       │   └── views
+│   │       │       ├── components.js
+│   │       │       ├── componentsSections
+│   │       │       │   ├── basicsStyle.js
+│   │       │       │   ├── carouselStyle.js
+│   │       │       │   ├── completedStyle.js
+│   │       │       │   ├── downloadStyle.js
+│   │       │       │   ├── exampleStyle.js
+│   │       │       │   ├── javascriptStyles.js
+│   │       │       │   ├── loginStyle.js
+│   │       │       │   ├── navbarsStyle.js
+│   │       │       │   ├── notificationsStyles.js
+│   │       │       │   ├── pillsStyle.js
+│   │       │       │   ├── tabsStyle.js
+│   │       │       │   └── typographyStyle.js
+│   │       │       ├── landingPage.js
+│   │       │       ├── landingPageSections
+│   │       │       │   ├── productStyle.js
+│   │       │       │   ├── teamStyle.js
+│   │       │       │   └── workStyle.js
+│   │       │       ├── loginPage.js
+│   │       │       └── profilePage.js
+│   │       └── material-kit-react.js
+│   ├── components
+│   │   ├── Badge
+│   │   │   └── Badge.js
+│   │   ├── Card
+│   │   │   ├── Card.js
+│   │   │   ├── CardBody.js
+│   │   │   ├── CardFooter.js
+│   │   │   └── CardHeader.js
+│   │   ├── Clearfix
+│   │   │   └── Clearfix.js
+│   │   ├── CustomButtons
+│   │   │   └── Button.js
+│   │   ├── CustomDropdown
+│   │   │   └── CustomDropdown.js
+│   │   ├── CustomInput
+│   │   │   └── CustomInput.js
+│   │   ├── CustomLinearProgress
+│   │   │   └── CustomLinearProgress.js
+│   │   ├── CustomTabs
+│   │   │   └── CustomTabs.js
+│   │   ├── Footer
+│   │   │   └── Footer.js
+│   │   ├── Grid
+│   │   │   ├── GridContainer.js
+│   │   │   └── GridItem.js
+│   │   ├── Header
+│   │   │   ├── Header.js
+│   │   │   └── HeaderLinks.js
+│   │   ├── InfoArea
+│   │   │   └── InfoArea.js
+│   │   ├── NavPills
+│   │   │   └── NavPills.js
+│   │   ├── Pagination
+│   │   │   └── Pagination.js
+│   │   ├── Parallax
+│   │   │   └── Parallax.js
+│   │   ├── Snackbar
+│   │   │   └── SnackbarContent.js
+│   │   └── Typography
+│   │       ├── Danger.js
+│   │       ├── Info.js
+│   │       ├── Muted.js
+│   │       ├── Primary.js
+│   │       ├── Quote.js
+│   │       ├── Small.js
+│   │       ├── Success.js
+│   │       └── Warning.js
+│   ├── index.js
+│   ├── routes
+│   │   └── index.js
+│   └── views
+│       ├── Components
+│       │   ├── Components.js
+│       │   └── Sections
+│       │       ├── SectionBasics.js
+│       │       ├── SectionCarousel.js
+│       │       ├── SectionCompletedExamples.js
+│       │       ├── SectionDownload.js
+│       │       ├── SectionExamples.js
+│       │       ├── SectionJavascript.js
+│       │       ├── SectionLogin.js
+│       │       ├── SectionNavbars.js
+│       │       ├── SectionNotifications.js
+│       │       ├── SectionPills.js
+│       │       ├── SectionTabs.js
+│       │       └── SectionTypography.js
+│       ├── LandingPage
+│       │   ├── LandingPage.js
+│       │   └── Sections
+│       │       ├── ProductSection.js
+│       │       ├── TeamSection.js
+│       │       └── WorkSection.js
+│       ├── LoginPage
+│       │   └── LoginPage.js
+│       └── ProfilePage
+│           └── ProfilePage.js
+├── package.json
 ├── public
+│   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
     ├── index.js
     ├── logo.svg
-    ├── routes
-    │   └── index.jsx
     ├── assets
+    │   ├── css
     │   ├── img
-    │   │   └── kit
-    │   │       ├── faces
-    │   │       └── free
-    │   │           └── examples
+    │   │   ├── examples
+    │   │   └── faces
     │   ├── jss
     │   │   ├── material-kit-react
     │   │   │   ├── components
     │   │   │   └── views
     │   │   │       ├── componentsSections
-    │   │   │       └── landingPageSections
+    │   │   │       ├── landingPageSections
     │   │   └── material-kit-react.jsx
     │   └── scss
     │       ├── core
@@ -104,8 +234,7 @@ material-kit-react
     │   ├── Clearfix
     │   │   └── Clearfix.jsx
     │   ├── CustomButtons
-    │   │   ├── Button.jsx
-    │   │   └── IconButton.jsx
+    │   │   └── Button.jsx
     │   ├── CustomDropdown
     │   │   └── CustomDropdown.jsx
     │   ├── CustomInput
@@ -118,7 +247,7 @@ material-kit-react
     │   │   └── Footer.jsx
     │   ├── Grid
     │   │   ├── GridContainer.jsx
-    │   │   └── ItemGrid.jsx
+    │   │   └── GridItem.jsx
     │   ├── Header
     │   │   ├── Header.jsx
     │   │   └── HeaderLinks.jsx
@@ -128,17 +257,19 @@ material-kit-react
     │   │   └── NavPills.jsx
     │   ├── Pagination
     │   │   └── Pagination.jsx
+    │   ├── Parallax
+    │   │   └── Parallax.jsx
     │   ├── Snackbar
     │   │   └── SnackbarContent.jsx
     │   └── Typography
-    │       ├── Danger.jsx
-    │       ├── Info.jsx
-    │       ├── Muted.jsx
-    │       ├── Primary.jsx
-    │       ├── Quote.jsx
-    │       ├── Small.jsx
-    │       ├── Success.jsx
-    │       └── Warning.jsx
+    │       ├── Danger.jsx
+    │       ├── Info.jsx
+    │       ├── Muted.jsx
+    │       ├── Primary.jsx
+    │       ├── Quote.jsx
+    │       ├── Small.jsx
+    │       ├── Success.jsx
+    │       └── Warning.jsx
     └── views
         ├── Components
         │   ├── Components.jsx
@@ -149,10 +280,10 @@ material-kit-react
         │       ├── SectionDownload.jsx
         │       ├── SectionExamples.jsx
         │       ├── SectionJavascript.jsx
+        │       ├── SectionLogin.jsx
         │       ├── SectionNavbars.jsx
         │       ├── SectionNotifications.jsx
         │       ├── SectionPills.jsx
-        │       ├── SectionSignup.jsx
         │       ├── SectionTabs.jsx
         │       └── SectionTypography.jsx
         ├── LandingPage
@@ -161,10 +292,10 @@ material-kit-react
         │       ├── ProductSection.jsx
         │       ├── TeamSection.jsx
         │       └── WorkSection.jsx
-        ├── ProfilePage
-        │   └── ProfilePage.jsx
-        └── SignupPage
-            └── SignupPage.jsx
+        ├── LoginPage
+        │   └── LoginPage.jsx
+        └── ProfilePage
+            └── ProfilePage.jsx
 ```
 
 
