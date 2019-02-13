@@ -40,7 +40,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build-css && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build",
