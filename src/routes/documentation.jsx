@@ -1,6 +1,5 @@
 // Getting started
 import Tutorial from "views/Documentation/Sections/Tutorial.jsx";
-import RoutingSystem from "views/Documentation/Sections/RoutingSystem.jsx";
 import Styles from "views/Documentation/Sections/Styles.jsx";
 import LintCommands from "views/Documentation/Sections/LintCommands.jsx";
 import BuildTools from "views/Documentation/Sections/BuildTools.jsx";
@@ -43,11 +42,6 @@ const docRoutes = [
         path: "/documentation/tutorial",
         name: "Tutorial",
         component: Tutorial
-      },
-      {
-        path: "/documentation/routing-system",
-        name: "Routing System",
-        component: RoutingSystem
       },
       { path: "/documentation/styles", name: "Styles", component: Styles },
       {
