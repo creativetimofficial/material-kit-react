@@ -1,6 +1,7 @@
 {
   "name": "material-kit-react",
   "version": "1.4.0",
+  "description": "Material Kit React. Coded by Creative Tim",
   "private": true,
   "homepage": "https://creativetimofficial.github.io/material-kit-react",
   "main": "dist/index.js",
