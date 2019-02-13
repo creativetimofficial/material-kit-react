@@ -13,6 +13,7 @@ import Components from "views/Components/Components.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx";
+import Documentation from "views/Documentation/Documentation.jsx";
 
 var hist = createHashHistory();
 
@@ -31,6 +32,7 @@ ReactDOM.render(
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/login-page" component={LoginPage} />
+    <Route path="/documentation" component={Documentation} />
       <Route path="/" component={Components} />
     </Switch>
   </Router>,
