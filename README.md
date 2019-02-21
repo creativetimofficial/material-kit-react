@@ -1,21 +1,23 @@
 # [Material Kit React](https://demos.creative-tim.com/material-kit-react) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Material%20Kit%20PRO%20is%20a%20Bootstrap%20UI%20Kit%20with%20a%20fresh,%20new%20design%20inspired%20by%20Google's%20Material%20Design%20%E2%9D%A4%EF%B8%8Fhttps%3A//demos.creative-tim.com/material-kit-pro/presentation.html%20%23bootstrap%20%23material%20%23design%20%23uikit%20%23premium%20%20via%20%40CreativeTim)
 
 
- ![version](https://img.shields.io/badge/version-1.4.0-blue.svg)  [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+ ![version](https://img.shields.io/badge/version-1.4.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
+
 
 ![Product Presentation Image](https://s3.amazonaws.com/creativetim_bucket/products/83/original/opt_mk_react_thumbnail.jpg)
 
-**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** is a Free Material-UI Kit with a fresh, new design inspired by Google's material design and is was developed using [create-react-app](https://www.npmjs.com/package/create-react-app). You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Material-UI elements, you will find three fully-coded example pages, to help you design your next project.
+**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/?ref=mkr-readme)** is a Free Material-UI Kit with a fresh, new design inspired by Google's material design and is was developed using [create-react-app](https://www.npmjs.com/package/create-react-app). You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Material-UI elements, you will find three fully-coded example pages, to help you design your next project.
 
-**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** makes use of light, surface and movement. It uses a deliberate color choice, edge-to-edge imagery and large scale typography. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left and the actions on the right.
+**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/?ref=mkr-readme)** makes use of light, surface and movement. It uses a deliberate color choice, edge-to-edge imagery and large scale typography. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left and the actions on the right.
 
 This new design has elements that have been the result of research regarding ink and paper and the way objects and materials interact in real life. The result is a beautiful and consistent set of elements that can get you started with your next project. Material Kit React is a great tool if you are looking to create a web presence for your Android application and need to be consistent, leaving the impression of visually similar elements. It is also a great resource in its own right, looking gorgeous and helping you build your web pages.
 
-**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/)** was built with the help of [create-react-app](https://github.com/facebook/create-react-app) and it uses a framework built by our friends from **[Material-UI](https://material-ui.com/)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
+**[Material Kit React](https://demos.creative-tim.com/material-kit-react/#/?ref=mkr-readme)** was built with the help of [create-react-app](https://github.com/facebook/create-react-app) and it uses a framework built by our friends from **[Material-UI](https://material-ui.com/)**, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to this team for the effort and forward thinking they put into it.
+
 
 ## Table of Contents
 
-
+* [Versions](#versions)
 * [Demo](#demo)
 * [Quick Start](#quick-start)
 * [Documentation](#documentation)
@@ -23,30 +25,51 @@ This new design has elements that have been the result of research regarding ink
 * [Browser Support](#browser-support)
 * [Resources](#resources)
 * [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
 * [Licensing](#licensing)
 * [Useful Links](#useful-links)
 
 
+## Versions
 
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit?ref=mkr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit?ref=mkr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react?ref=mkr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-native-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react-native?ref=mkr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/figma-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-kit-figma/presentation.html?ref=mkr-readme)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/wordpress-logo.jpg?raw=true" width="60" height="60" />](https://themeisle.com/themes/hestia/?ref=creativetim)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/photoshop-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/photoshop)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/sketch)
+
+
+
+
+
+
+| HTML | React | Vue  |
+| --- | --- | ---  |
+| [![Material Kit  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit)  | [![Material Kit  React](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/material-kit-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit-react)  | [![Vue Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-kit/vue-material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-kit)
+
+| React Native | Figma | WordPress |
+| ---  | --- | --- |
+| [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react-native/opt_mkrn_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native) | [![Material Kit Figma](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-figma/material-kit-figma.jpg?raw=true)](https://demos.creative-tim.com/material-kit-figma/presentation.html) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia/?ref=creativetim)
 
 ## Demo
 
-- [Index Page](https://demos.creative-tim.com/material-kit-react/#/)
-- [User profile page](https://demos.creative-tim.com/material-kit-react/#/profile-page)
-- [Landing page](https://demos.creative-tim.com/material-kit-react/#/landing-page)
-- [Login page](https://demos.creative-tim.com/material-kit-react/#/login-page)
+| Buttons | Inputs | Navbars  |
+| --- | --- | ---  |
+| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/buttons.png?raw=true)](https://demos.creative-tim.com/material-kit/#/)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/inputs.png?raw=true)](https://demos.creative-tim.com/material-kit-react/#/)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/navbars.png?raw=true)](https://demos.creative-tim.com/material-kit-react/#/)  
 
-[View More](https://demos.creative-tim.com/material-kit-react/#/).
+| Login Page | Landing Page | Profile Page  |
+| --- | --- | ---  |
+| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-react/login-page.png)](https://demos.creative-tim.com/material-kit/#/login-page)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/landing-page.png?raw=true)](https://demos.creative-tim.com/material-kit-react/#/landing-page)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/profile-page.png?raw=true)](https://demos.creative-tim.com/material-kit/#/profile-page)  
+
+[View More](https://demos.creative-tim.com/material-kit/index.html)
 
 
 ## Quick start
 
-- Buy from [Creative Tim](https://www.creative-tim.com/product/material-kit-react)
+- `npm i material-kit-react`
+- [Download from Github](https://github.com/creativetimofficial/material-kit-react/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/material-kit-react).
+- Install with [Bower](https://bower.io/): ```bower install material-kit-react```.
+- Clone the repo: `git clone https://github.com/creativetimofficial/material-kit-react.git`.
 
 
 ## Documentation
-The documentation for the Material Kit PRO React is hosted at our [website](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial).
+The documentation for the Material Kit React is hosted at our [website](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial).
 
 
 ## File Structure
@@ -69,134 +92,6 @@ material-kit-react
 ├── LICENSE.md
 ├── README.md
 ├── bower.json
-├── dist
-│   ├── assets
-│   │   └── jss
-│   │       ├── material-kit-react
-│   │       │   ├── components
-│   │       │   │   ├── badgeStyle.js
-│   │       │   │   ├── buttonStyle.js
-│   │       │   │   ├── cardBodyStyle.js
-│   │       │   │   ├── cardFooterStyle.js
-│   │       │   │   ├── cardHeaderStyle.js
-│   │       │   │   ├── cardStyle.js
-│   │       │   │   ├── customDropdownStyle.js
-│   │       │   │   ├── customInputStyle.js
-│   │       │   │   ├── customLinearProgressStyle.js
-│   │       │   │   ├── customTabsStyle.js
-│   │       │   │   ├── footerStyle.js
-│   │       │   │   ├── headerLinksStyle.js
-│   │       │   │   ├── headerStyle.js
-│   │       │   │   ├── infoStyle.js
-│   │       │   │   ├── navPillsStyle.js
-│   │       │   │   ├── paginationStyle.js
-│   │       │   │   ├── parallaxStyle.js
-│   │       │   │   ├── snackbarContentStyle.js
-│   │       │   │   └── typographyStyle.js
-│   │       │   ├── customCheckboxRadioSwitch.js
-│   │       │   ├── imagesStyles.js
-│   │       │   ├── modalStyle.js
-│   │       │   ├── popoverStyles.js
-│   │       │   ├── tooltipsStyle.js
-│   │       │   └── views
-│   │       │       ├── components.js
-│   │       │       ├── componentsSections
-│   │       │       │   ├── basicsStyle.js
-│   │       │       │   ├── carouselStyle.js
-│   │       │       │   ├── completedStyle.js
-│   │       │       │   ├── downloadStyle.js
-│   │       │       │   ├── exampleStyle.js
-│   │       │       │   ├── javascriptStyles.js
-│   │       │       │   ├── loginStyle.js
-│   │       │       │   ├── navbarsStyle.js
-│   │       │       │   ├── notificationsStyles.js
-│   │       │       │   ├── pillsStyle.js
-│   │       │       │   ├── tabsStyle.js
-│   │       │       │   └── typographyStyle.js
-│   │       │       ├── landingPage.js
-│   │       │       ├── landingPageSections
-│   │       │       │   ├── productStyle.js
-│   │       │       │   ├── teamStyle.js
-│   │       │       │   └── workStyle.js
-│   │       │       ├── loginPage.js
-│   │       │       └── profilePage.js
-│   │       └── material-kit-react.js
-│   ├── components
-│   │   ├── Badge
-│   │   │   └── Badge.js
-│   │   ├── Card
-│   │   │   ├── Card.js
-│   │   │   ├── CardBody.js
-│   │   │   ├── CardFooter.js
-│   │   │   └── CardHeader.js
-│   │   ├── Clearfix
-│   │   │   └── Clearfix.js
-│   │   ├── CustomButtons
-│   │   │   └── Button.js
-│   │   ├── CustomDropdown
-│   │   │   └── CustomDropdown.js
-│   │   ├── CustomInput
-│   │   │   └── CustomInput.js
-│   │   ├── CustomLinearProgress
-│   │   │   └── CustomLinearProgress.js
-│   │   ├── CustomTabs
-│   │   │   └── CustomTabs.js
-│   │   ├── Footer
-│   │   │   └── Footer.js
-│   │   ├── Grid
-│   │   │   ├── GridContainer.js
-│   │   │   └── GridItem.js
-│   │   ├── Header
-│   │   │   ├── Header.js
-│   │   │   └── HeaderLinks.js
-│   │   ├── InfoArea
-│   │   │   └── InfoArea.js
-│   │   ├── NavPills
-│   │   │   └── NavPills.js
-│   │   ├── Pagination
-│   │   │   └── Pagination.js
-│   │   ├── Parallax
-│   │   │   └── Parallax.js
-│   │   ├── Snackbar
-│   │   │   └── SnackbarContent.js
-│   │   └── Typography
-│   │       ├── Danger.js
-│   │       ├── Info.js
-│   │       ├── Muted.js
-│   │       ├── Primary.js
-│   │       ├── Quote.js
-│   │       ├── Small.js
-│   │       ├── Success.js
-│   │       └── Warning.js
-│   ├── index.js
-│   ├── routes
-│   │   └── index.js
-│   └── views
-│       ├── Components
-│       │   ├── Components.js
-│       │   └── Sections
-│       │       ├── SectionBasics.js
-│       │       ├── SectionCarousel.js
-│       │       ├── SectionCompletedExamples.js
-│       │       ├── SectionDownload.js
-│       │       ├── SectionExamples.js
-│       │       ├── SectionJavascript.js
-│       │       ├── SectionLogin.js
-│       │       ├── SectionNavbars.js
-│       │       ├── SectionNotifications.js
-│       │       ├── SectionPills.js
-│       │       ├── SectionTabs.js
-│       │       └── SectionTypography.js
-│       ├── LandingPage
-│       │   ├── LandingPage.js
-│       │   └── Sections
-│       │       ├── ProductSection.js
-│       │       ├── TeamSection.js
-│       │       └── WorkSection.js
-│       ├── LoginPage
-│       │   └── LoginPage.js
-│       └── ProfilePage
-│           └── ProfilePage.js
 ├── package.json
 ├── public
 │   ├── favicon.ico
@@ -303,7 +198,8 @@ material-kit-react
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
+
 
 
 ## Resources
@@ -313,55 +209,49 @@ At present, we officially aim to support the last two versions of the following 
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/material-kit-react/issues)
-+ [Material Kit Free](https://demos.creative-tim.com/material-kit/index.html)
-+ [Material Kit PRO React](https://demos.creative-tim.com/material-kit-pro-react/#/)
-+ [Material Kit PRO](https://demos.creative-tim.com/material-kit-pro/index.html)
-+ [Material Dashboard Free React](https://demos.creative-tim.com/material-dashboard-react/#/dashboard)
-+ [Material Dashboard Pro React](https://demos.creative-tim.com/material-dashboard-pro-react/#/dashboard)
-+ [Material Dashboard Free HTML](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
-+ [Material Dashboard Pro HTML](https://demos.creative-tim.com/material-dashboard-pro/examples/dashboard.html)
-+ [Material Dashboard Free Angular](https://demos.creative-tim.com/material-dashboard-angular2/dashboard)
-+ [Material Dashboard Pro Angular](https://demos.creative-tim.com/material-dashboard-pro-angular2/dashboard)
+- **Dashboards:**
 
+| HTML | React | Vue  | Angular |
+| --- | --- | ---  | ---  |
+| [![Material Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-html/material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-react/material-dashboard-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-dashboard/vue-material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard)  | [![ Material Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-angular/material-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-angular2)
+
+| HTML Dark | Vuetify  |
+| --- | --- |
+| [![Material Dashboard Dark](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-dark/material-dashboard-dark.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-dark) | [![Material Dashboard Vuetify](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg?raw=true)](https://www.creative-tim.com/product/vuetify-material-dashboard)
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Material Kit PRO React. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the Material Kit. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Kit PRO React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+1. Make sure that you are using the latest version of the Material Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
-
-
 
 ## Licensing
 
 - Copyright 2018 Creative Tim (https://www.creative-tim.com/)
 
-- Creative Tim [license](https://www.creative-tim.com/license)
-
-
+- Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
 
 ## Useful Links
 
-- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref="mk-github-readme")
 
-##### Social Media
+### Social Media
 
 Twitter: <https://twitter.com/CreativeTim>
 
 Facebook: <https://www.facebook.com/CreativeTim>
 
 Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://www.instagram.com/CreativeTimOfficial>
