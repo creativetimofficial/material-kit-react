@@ -19,7 +19,23 @@
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.5",
     "react-slick": "0.23.2",
-    "react-swipeable-views": "0.13.1"
+    "react-swipeable-views": "0.13.1",
+    "reg-keygen-git-hash-plugin": "^0.7.16",
+    "reg-notify-github-plugin": "^0.7.19",
+    "reg-publish-s3-plugin": "^0.7.18",
+    "reg-notify-slack-plugin": "^0.7.16",
+    "reg-suit": "^0.7.17",
+    "chai": "^4.0.2",
+    "chai-webdriverio": "^0.4.1",
+    "wdio-chromedriver-service": "^0.1.3",
+    "wdio-concise-reporter": "^0.1.2",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-selenium-standalone-service": "0.0.11",
+    "wdio-slack-reporter": "^1.0.0",
+    "wdio-spec-reporter": "^0.1.5",
+    "wdio-static-server-service": "^1.0.1",
+    "wdio-visual-regression-service": "^0.8.0",
+    "webdriverio": "^4.14.1"
   },
   "devDependencies": {
     "@babel/cli": "7.2.3",
@@ -34,7 +50,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "npm run build-css && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
     "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
@@ -43,7 +58,10 @@
     "build-package": "npm run build-package-css && babel src --out-dir dist",
     "compile-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.css",
     "minify-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.css --source-map true"
+    "map-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.css --source-map true",
+    "test":"wdio",
+    "e2e": "npm test -- wdio.conf.dev.js",
+    "generateReportDashboard": "reg-cli ./screenshots/latest/ ./screenshots/baseline/ ./screenshots/diff/ -R ./reportKitPro.html && open ./reportKitPro.html"
   },
   "browserslist": [
     ">0.2%",
