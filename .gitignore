@@ -26,3 +26,4 @@ yarn-error.log*
 /dist
 # compiled css
 *.css
+.reg

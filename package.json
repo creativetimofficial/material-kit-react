@@ -41,7 +41,10 @@
     "@babel/cli": "7.2.3",
     "@babel/plugin-proposal-class-properties": "7.3.0",
     "@babel/preset-env": "7.3.1",
-    "@babel/preset-react": "7.0.0"
+    "@babel/preset-react": "7.0.0",
+    "reg-keygen-git-hash-plugin": "^0.7.16",
+    "reg-notify-github-plugin": "^0.7.21",
+    "reg-publish-s3-plugin": "^0.7.18"
   },
   "optionalDependencies": {
     "eslint-config-prettier": "4.0.0",
