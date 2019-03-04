@@ -28,7 +28,7 @@ before_install:
 
 
 before_script:
-  - "npm install"
+  - "npm install --no-package-lock"
   - "npm install -g reg-suit"
   - npm start &
 
