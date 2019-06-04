@@ -74,6 +74,11 @@ class CustomDropdown extends React.Component {
       case "function":
         icon = <this.props.buttonIcon className={classes.buttonIcon} />;
         break;
+      case "object":
+        if (buttonIcon.type.muiName === "Icon") {
+          icon = this.props.buttonIcon;
+        }
+        break;
       case "string":
         icon = (
           <Icon className={classes.buttonIcon}>{this.props.buttonIcon}</Icon>
@@ -189,7 +194,7 @@ CustomDropdown.propTypes = {
     "rose"
   ]),
   buttonText: PropTypes.node,
-  buttonIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  buttonIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.string]),
   dropdownList: PropTypes.array,
   buttonProps: PropTypes.object,
   dropup: PropTypes.bool,
