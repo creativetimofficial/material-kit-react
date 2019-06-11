@@ -9,6 +9,8 @@
 ### Added components
 ### Deleted dependencies
 ### Added dependencies
++ prettier@1.18.2 (To stop console warnings on install)
++ typescript@3.5.1 (To stop console warnings on install)
 ### Updated dependencies
 ```
 @material-ui/core                          3.9.2   →    4.1.0
