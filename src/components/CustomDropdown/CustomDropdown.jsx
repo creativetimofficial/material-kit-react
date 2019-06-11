@@ -120,7 +120,7 @@ class CustomDropdown extends React.Component {
             [classes.popperResponsive]: true
           })}
         >
-          {({ TransitionProps, placement }) => (
+          {() => (
             <Grow
               in={open}
               id="menu-list"
