@@ -475,9 +475,8 @@ class SectionBasics extends React.Component {
                         classes={{
                           switchBase: classes.switchBase,
                           checked: classes.switchChecked,
-                          icon: classes.switchIcon,
-                          iconChecked: classes.switchIconChecked,
-                          bar: classes.switchBar
+                          thumb: classes.switchIcon,
+                          track: classes.switchBar
                         }}
                       />
                     }
@@ -497,9 +496,8 @@ class SectionBasics extends React.Component {
                         classes={{
                           switchBase: classes.switchBase,
                           checked: classes.switchChecked,
-                          icon: classes.switchIcon,
-                          iconChecked: classes.switchIconChecked,
-                          bar: classes.switchBar
+                          thumb: classes.switchIcon,
+                          track: classes.switchBar
                         }}
                       />
                     }
