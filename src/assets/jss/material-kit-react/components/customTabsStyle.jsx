@@ -27,16 +27,11 @@ const customTabsStyle = {
     border: "0 !important",
     color: "#fff !important",
     marginLeft: "4px",
+    fontWeight: "500",
+    fontSize: "12px",
     "&:last-child": {
       marginLeft: "0px"
     }
-  },
-  tabLabelContainer: {
-    padding: "0px"
-  },
-  tabLabel: {
-    fontWeight: "500",
-    fontSize: "12px"
   },
   tabSelected: {
     backgroundColor: "rgba(255, 255, 255, 0.2)",
