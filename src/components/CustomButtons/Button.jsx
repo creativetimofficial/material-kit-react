@@ -71,7 +71,9 @@ RegularButton.propTypes = {
   disabled: PropTypes.bool,
   block: PropTypes.bool,
   link: PropTypes.bool,
-  justIcon: PropTypes.bool
+  justIcon: PropTypes.bool,
+  children: PropTypes.node,
+  className: PropTypes.string
 };
 
 export default withStyles(buttonStyle)(RegularButton);
