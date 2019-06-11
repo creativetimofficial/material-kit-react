@@ -4,6 +4,7 @@
 ### Warning
 **We've skipped versions 1.5.0, 1.6.0 so that all React Material products would be on the same version.**
 ### Bug fixing
+- Removed `.env` file, and replaced it with the `jsconfig.json` file
 ### Major style changes
 ### Deleted components
 ### Added components
