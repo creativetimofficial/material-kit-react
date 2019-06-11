@@ -1,3 +1,35 @@
+# Change Log
+
+## [1.7.0] 2019-06-xx
+### Warning
+**We've skipped versions 1.5.0, 1.6.0 so that all React Material products would be on the same version.**
+### Bug fixing
+### Major style changes
+### Deleted components
+### Added components
+### Deleted dependencies
+### Added dependencies
+### Updated dependencies
+```
+@material-ui/core                          3.9.2   →    4.1.0
+@material-ui/icons                         3.0.2   →    4.1.0
+history                                    4.7.2   →    4.9.0
+node-sass                                 4.11.0   →   4.12.0
+nouislider                                13.1.0   →   13.1.5
+prop-types                                15.7.1   →   15.7.2
+react                                     16.8.1   →   16.8.6
+react-dom                                 16.8.1   →   16.8.6
+react-router-dom                           4.3.1   →    5.0.1
+react-scripts                              2.1.5   →    3.0.1
+react-slick                               0.23.2   →   0.24.0
+react-swipeable-views                     0.13.1   →   0.13.3
+@babel/cli                                 7.2.3   →    7.4.4
+@babel/plugin-proposal-class-properties    7.3.0   →    7.4.4
+@babel/preset-env                          7.3.1   →    7.4.5
+eslint-config-prettier                     4.0.0   →    4.3.0
+eslint-plugin-prettier                     3.0.1   →    3.1.0
+```
+
 ## [1.4.0] 2019-02-13
 ### Bug fixing
 - https://github.com/creativetimofficial/material-kit-react/issues/46
