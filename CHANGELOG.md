@@ -4,14 +4,18 @@
 ### Warning
 **We've skipped versions 1.5.0, 1.6.0 so that all React Material products would be on the same version.**
 ### Bug fixing
+- Bugs from updated dependencies
 - Removed `.env` file, and replaced it with the `jsconfig.json` file
+- Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
+- Changed all string refs to `React.createRef()`
+- Solved https://github.com/creativetimofficial/material-kit-react/issues/52
 ### Major style changes
 ### Deleted components
 ### Added components
 ### Deleted dependencies
 ### Added dependencies
-+ prettier@1.18.2 (To stop console warnings on install)
-+ typescript@3.5.1 (To stop console warnings on install)
+- prettier@1.18.2 (To stop console warnings on install)
+- typescript@3.5.1 (To stop console warnings on install)
 ### Updated dependencies
 ```
 @material-ui/core                          3.9.2   →    4.1.0

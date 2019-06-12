@@ -16,7 +16,6 @@ class Parallax extends React.Component {
     this.state = {
       transform: "translate3d(0," + windowScrollTop + "px,0)"
     };
-    this.resetTransform = this.resetTransform.bind(this);
   }
   componentDidMount() {
     var windowScrollTop = window.pageYOffset / 3;
@@ -28,12 +27,12 @@ class Parallax extends React.Component {
   componentWillUnmount() {
     window.removeEventListener("scroll", this.resetTransform);
   }
-  resetTransform() {
+  resetTransform = () => {
     var windowScrollTop = window.pageYOffset / 3;
     this.setState({
       transform: "translate3d(0," + windowScrollTop + "px,0)"
     });
-  }
+  };
   render() {
     const {
       classes,
@@ -58,7 +57,6 @@ class Parallax extends React.Component {
           backgroundImage: "url(" + image + ")",
           ...this.state
         }}
-        ref="parallax"
       >
         {children}
       </div>
@@ -72,7 +70,8 @@ Parallax.propTypes = {
   filter: PropTypes.bool,
   children: PropTypes.node,
   style: PropTypes.string,
-  image: PropTypes.string
+  image: PropTypes.string,
+  small: PropTypes.bool
 };
 
 export default withStyles(parallaxStyle)(Parallax);

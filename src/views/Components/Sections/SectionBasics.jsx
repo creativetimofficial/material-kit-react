@@ -25,24 +25,22 @@ import Badge from "components/Badge/Badge.jsx";
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx";
 
 class SectionBasics extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      checked: [24, 22],
-      selectedEnabled: "b",
-      checkedA: true,
-      checkedB: false
-    };
-    this.handleChangeEnabled = this.handleChangeEnabled.bind(this);
-  }
+  state = {
+    checked: [24, 22],
+    selectedEnabled: "b",
+    checkedA: true,
+    checkedB: false
+  };
+  slider1 = React.createRef();
+  slider2 = React.createRef();
   componentDidMount() {
-    nouislider.create(this.refs.slider1, {
+    nouislider.create(this.slider1.current, {
       start: [40],
       connect: [true, false],
       step: 1,
       range: { min: 0, max: 100 }
     });
-    nouislider.create(this.refs.slider2, {
+    nouislider.create(this.slider2.current, {
       start: [20, 60],
       connect: [false, true, false],
       step: 1,
@@ -52,9 +50,9 @@ class SectionBasics extends React.Component {
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked });
   };
-  handleChangeEnabled(event) {
+  handleChangeEnabled = event => {
     this.setState({ selectedEnabled: event.target.value });
-  }
+  };
   handleToggle(value) {
     const { checked } = this.state;
     const currentIndex = checked.indexOf(value);
@@ -584,9 +582,9 @@ class SectionBasics extends React.Component {
                 <div className={classes.title}>
                   <h3>Sliders</h3>
                 </div>
-                <div ref="slider1" className="slider-primary" />
+                <div ref={this.slider1} className="slider-primary" />
                 <br />
-                <div ref="slider2" className="slider-info" />
+                <div ref={this.slider2} className="slider-info" />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.title}>
