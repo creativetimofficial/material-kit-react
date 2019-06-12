@@ -28,7 +28,8 @@ Badge.propTypes = {
     "info",
     "rose",
     "gray"
-  ])
+  ]),
+  children: PropTypes.node
 };
 
 export default withStyles(badgeStyle)(Badge);
