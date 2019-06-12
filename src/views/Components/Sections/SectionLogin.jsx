@@ -114,7 +114,8 @@ class SectionLogin extends React.Component {
                               lock_outline
                             </Icon>
                           </InputAdornment>
-                        )
+                        ),
+                        autoComplete: "off"
                       }}
                     />
                   </CardBody>

@@ -9,6 +9,7 @@
 - Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
 - Changed all string refs to `React.createRef()`
 - Solved https://github.com/creativetimofficial/material-kit-react/issues/52
+- Solved https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/149
 ### Major style changes
 ### Deleted components
 ### Added components
