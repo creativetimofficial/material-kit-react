@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 // @material-ui/core components
@@ -63,5 +65,9 @@ class SectionExamples extends React.Component {
     );
   }
 }
+
+SectionExamples.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(exampleStyle)(SectionExamples);

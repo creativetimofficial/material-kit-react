@@ -1,5 +1,6 @@
 import React from "react";
-
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
@@ -23,8 +24,8 @@ class SectionNotifications extends React.Component {
         <SnackbarContent
           message={
             <span>
-              <b>INFO ALERT:</b> You've got some friends nearby, stop looking at
-              your phone and find them...
+              <b>INFO ALERT:</b> You{"'"}ve got some friends nearby, stop
+              looking at your phone and find them...
             </span>
           }
           close
@@ -34,8 +35,8 @@ class SectionNotifications extends React.Component {
         <SnackbarContent
           message={
             <span>
-              <b>SUCCESS ALERT:</b> You've got some friends nearby, stop looking
-              at your phone and find them...
+              <b>SUCCESS ALERT:</b> You{"'"}ve got some friends nearby, stop
+              looking at your phone and find them...
             </span>
           }
           close
@@ -45,8 +46,8 @@ class SectionNotifications extends React.Component {
         <SnackbarContent
           message={
             <span>
-              <b>WARNING ALERT:</b> You've got some friends nearby, stop looking
-              at your phone and find them...
+              <b>WARNING ALERT:</b> You{"'"}ve got some friends nearby, stop
+              looking at your phone and find them...
             </span>
           }
           close
@@ -56,8 +57,8 @@ class SectionNotifications extends React.Component {
         <SnackbarContent
           message={
             <span>
-              <b>DANGER ALERT:</b> You've got some friends nearby, stop looking
-              at your phone and find them...
+              <b>DANGER ALERT:</b> You{"'"}ve got some friends nearby, stop
+              looking at your phone and find them...
             </span>
           }
           close
@@ -69,5 +70,9 @@ class SectionNotifications extends React.Component {
     );
   }
 }
+
+SectionNotifications.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(notificationsStyles)(SectionNotifications);

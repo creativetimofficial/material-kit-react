@@ -1,6 +1,6 @@
-/*eslint-disable*/
 import React from "react";
-
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
@@ -51,7 +51,7 @@ class SectionDownload extends React.Component {
             <GridItem xs={12} sm={12} md={8}>
               <h2>Want more?</h2>
               <h4>
-                We've launched{" "}
+                We{"'"}ve launched{" "}
                 <a
                   href="https://www.creative-tim.com/product/material-kit-pro-react"
                   target="_blank"
@@ -106,5 +106,9 @@ class SectionDownload extends React.Component {
     );
   }
 }
+
+SectionDownload.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(downloadStyle)(SectionDownload);

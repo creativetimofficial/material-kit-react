@@ -25,7 +25,8 @@ function CardBody({ ...props }) {
 
 CardBody.propTypes = {
   classes: PropTypes.object.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  children: PropTypes.node
 };
 
 export default withStyles(cardBodyStyle)(CardBody);

@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
@@ -20,9 +22,9 @@ class SectionCompletedExamples extends React.Component {
               <h2>Completed with examples</h2>
               <h4>
                 The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. More importantly, looking at them will give you a picture of
-                what you can build with this powerful kit.
+                faster. You can change the text and images and you{"'"}re good
+                to go. More importantly, looking at them will give you a picture
+                of what you can build with this powerful kit.
               </h4>
             </GridItem>
           </GridContainer>
@@ -31,5 +33,9 @@ class SectionCompletedExamples extends React.Component {
     );
   }
 }
+
+SectionCompletedExamples.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(completedStyle)(SectionCompletedExamples);

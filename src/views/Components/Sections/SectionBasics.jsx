@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // plugin that creates slider
 import nouislider from "nouislider";
 // @material-ui/core components
@@ -605,5 +607,9 @@ class SectionBasics extends React.Component {
     );
   }
 }
+
+SectionBasics.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(basicsStyle)(SectionBasics);
