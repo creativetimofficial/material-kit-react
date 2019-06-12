@@ -3,12 +3,19 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import makeStyles from "@material-ui/core/styles/makeStyles";
 
 import badgeStyle from "assets/jss/material-kit-react/components/badgeStyle.jsx";
 
+const makeComponentStyles = makeStyles(() => ({
+  ...badgeStyle
+}));
+
 function Badge({ ...props }) {
-  const { classes, color, children } = props;
+  const { color, children } = props;
+
+  const classes = makeComponentStyles();
+
   return (
     <span className={classes.badge + " " + classes[color]}>{children}</span>
   );
@@ -19,7 +26,6 @@ Badge.defaultProps = {
 };
 
 Badge.propTypes = {
-  classes: PropTypes.object.isRequired,
   color: PropTypes.oneOf([
     "primary",
     "warning",
@@ -28,7 +34,8 @@ Badge.propTypes = {
     "info",
     "rose",
     "gray"
-  ])
+  ]),
+  children: PropTypes.node
 };
 
-export default withStyles(badgeStyle)(Badge);
+export default Badge;
