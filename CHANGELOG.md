@@ -9,6 +9,7 @@
 - Changes caused by running [the prettier command](https://prettier.io/docs/en/install.html) for *.jsx*, *.js*, *.html* and *.css* files
 - Changed all string refs to `React.createRef()`
 - Added types validation in each component
+- Solved linting issues
 - Solved https://github.com/creativetimofficial/material-kit-react/issues/52
 - Solved https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/149
 ### Major style changes
@@ -16,6 +17,7 @@
 ### Added components
 ### Deleted dependencies
 ### Added dependencies
+- eslint-plugin-react@7.13.0
 - prettier@1.18.2 (To stop console warnings on install)
 - typescript@3.5.1 (To stop console warnings on install)
 ### Updated dependencies

@@ -28,6 +28,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
 
+Transition.displayName = "Transition";
+
 class SectionJavascript extends React.Component {
   anchorElLeft = null;
   anchorElTop = null;
