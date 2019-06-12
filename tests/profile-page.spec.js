@@ -4,7 +4,7 @@ describe("Profile Page", function() {
     browser.url("./profile-page");
 
   });
-  it("renders landing page", function() {
+  it("renders Profile page", function() {
     var results = browser.checkDocument();
 
     results.forEach(function(result) {

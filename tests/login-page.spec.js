@@ -1,10 +1,10 @@
 const fetch = require("node-fetch");
-describe("landing Page", function() {
+describe("login Page", function() {
   beforeEach(function() {
-    browser.url("./landing-page");
+    browser.url("./login-page");
 
   });
-  it("renders landing page", function() {
+  it("renders login page", function() {
     var results = browser.checkDocument();
 
     results.forEach(function(result) {
