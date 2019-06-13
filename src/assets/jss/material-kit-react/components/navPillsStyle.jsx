@@ -12,7 +12,14 @@ const navPillsStyle = theme => ({
     marginTop: "20px",
     paddingLeft: "0",
     marginBottom: "0",
-    overflow: "visible !important"
+    overflow: "visible !important",
+    lineHeight: "24px",
+    textTransform: "uppercase",
+    fontSize: "12px",
+    fontWeight: "500",
+    position: "relative",
+    display: "block",
+    color: "inherit"
   },
   flexContainer: {
     [theme.breakpoints.down("xs")]: {
@@ -59,19 +66,6 @@ const navPillsStyle = theme => ({
     "& + button": {
       margin: "10px 0"
     }
-  },
-  labelContainer: {
-    padding: "0!important",
-    color: "inherit"
-  },
-  label: {
-    lineHeight: "24px",
-    textTransform: "uppercase",
-    fontSize: "12px",
-    fontWeight: "500",
-    position: "relative",
-    display: "block",
-    color: "inherit"
   },
   contentWrapper: {
     marginTop: "20px"

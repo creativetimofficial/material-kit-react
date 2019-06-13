@@ -29,7 +29,8 @@ Card.propTypes = {
   classes: PropTypes.object.isRequired,
   className: PropTypes.string,
   plain: PropTypes.bool,
-  carousel: PropTypes.bool
+  carousel: PropTypes.bool,
+  children: PropTypes.node
 };
 
 export default withStyles(cardStyle)(Card);

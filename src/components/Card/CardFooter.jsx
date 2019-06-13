@@ -25,7 +25,8 @@ function CardFooter({ ...props }) {
 
 CardFooter.propTypes = {
   classes: PropTypes.object.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  children: PropTypes.node
 };
 
 export default withStyles(cardFooterStyle)(CardFooter);

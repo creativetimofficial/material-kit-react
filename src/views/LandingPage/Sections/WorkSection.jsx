@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
@@ -76,5 +78,9 @@ class WorkSection extends React.Component {
     );
   }
 }
+
+WorkSection.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(workStyle)(WorkSection);

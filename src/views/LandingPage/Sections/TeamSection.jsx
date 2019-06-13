@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -161,5 +163,9 @@ class TeamSection extends React.Component {
     );
   }
 }
+
+TeamSection.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(teamStyle)(TeamSection);
