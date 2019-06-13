@@ -63,7 +63,8 @@ const customDropdownStyle = theme => ({
     fontWeight: "400",
     height: "fit-content",
     color: "#333",
-    whiteSpace: "nowrap"
+    whiteSpace: "nowrap",
+    minHeight: "unset"
   },
   blackHover: {
     "&:hover": {
@@ -154,6 +155,7 @@ const customDropdownStyle = theme => ({
     whiteSpace: "nowrap",
     fontWeight: "inherit",
     marginTop: "10px",
+    minHeight: "unset",
     "&:hover,&:focus": {
       backgroundColor: "transparent",
       cursor: "auto"
