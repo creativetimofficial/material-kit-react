@@ -47,7 +47,10 @@ const customTabsStyle = {
     maxHeight: "unset !important",
     "& > svg": {
       verticalAlign: "middle",
-      margin: "-1px 5px 0 0"
+      margin: "-1.55px 5px 0 0 !important"
+    },
+    "&,& *": {
+      letterSpacing: "normal !important"
     }
   }
 };
