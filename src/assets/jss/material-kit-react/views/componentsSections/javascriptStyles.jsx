@@ -29,7 +29,8 @@ const javascriptStyles = {
     transition: "0.3s ease all",
     lineHeight: "1.428571429",
     fontWeight: "400",
-    paddingLeft: "0"
+    paddingLeft: "0",
+    letterSpacing: "normal"
   },
   ...tooltipsStyle,
   ...popoverStyles
