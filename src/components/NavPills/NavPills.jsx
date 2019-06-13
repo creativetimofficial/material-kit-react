@@ -71,7 +71,8 @@ class NavPills extends React.Component {
               {...icon}
               classes={{
                 root: pillsClasses,
-                selected: classes[color]
+                selected: classes[color],
+                wrapper: classes.tabWrapper
               }}
             />
           );

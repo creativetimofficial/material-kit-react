@@ -31,7 +31,7 @@ const navPillsStyle = theme => ({
     display: "none !important"
   },
   fixed: {
-    overflowX: "visible"
+    overflow: "visible !important"
   },
   horizontalDisplay: {
     display: "block"
@@ -58,7 +58,10 @@ const navPillsStyle = theme => ({
     width: "30px",
     height: "30px",
     display: "block",
-    margin: "15px 0"
+    margin: "15px 0 !important",
+    "&, & *": {
+      letterSpacing: "normal !important"
+    }
   },
   horizontalPills: {
     width: "100%",
@@ -121,6 +124,17 @@ const navPillsStyle = theme => ({
   alignCenter: {
     alignItems: "center",
     justifyContent: "center"
+  },
+  tabWrapper: {
+    color: "inherit",
+    position: "relative",
+    fontSize: "12px",
+    lineHeight: "24px",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    "&,& *": {
+      letterSpacing: "normal"
+    }
   }
 });
 
