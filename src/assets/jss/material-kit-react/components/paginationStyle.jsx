@@ -21,6 +21,7 @@ const paginationStyle = {
     ":first-of-type": {
       marginleft: "0"
     },
+    letterSpacing: "unset",
     border: "0",
     borderRadius: "30px !important",
     transition: "all .3s",
