@@ -52,7 +52,10 @@ const snackbarContentStyle = {
   message: {
     padding: "0",
     display: "block",
-    maxWidth: "89%"
+    maxWidth: "89%",
+    "&,& *": {
+      letterSpacing: "normal"
+    }
   },
   close: {
     width: "14px",

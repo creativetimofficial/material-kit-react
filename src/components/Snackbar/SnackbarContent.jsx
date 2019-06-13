@@ -33,7 +33,7 @@ class SnackbarContent extends React.Component {
 
     let snackIcon = null;
     switch (typeof icon) {
-      case "function":
+      case "object":
         snackIcon = <props.icon className={classes.icon} />;
         break;
       case "string":
