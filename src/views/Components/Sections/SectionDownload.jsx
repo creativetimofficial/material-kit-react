@@ -31,7 +31,7 @@ class SectionDownload extends React.Component {
               <Button
                 color="primary"
                 size="lg"
-                href="https://www.creative-tim.com/product/material-kit-react"
+                href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-download-section"
                 target="_blank"
               >
                 Free React Download
@@ -39,7 +39,7 @@ class SectionDownload extends React.Component {
               <Button
                 color="primary"
                 size="lg"
-                href="https://www.creative-tim.com/product/material-kit"
+                href="https://www.creative-tim.com/product/material-kit?ref=mkr-download-section"
                 target="_blank"
               >
                 Free HTML Downoad
@@ -54,7 +54,7 @@ class SectionDownload extends React.Component {
               <h4>
                 We{"'"}ve launched{" "}
                 <a
-                  href="https://www.creative-tim.com/product/material-kit-pro-react"
+                  href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-download-section"
                   target="_blank"
                 >
                   Material Kit PRO React{" "}
@@ -68,7 +68,7 @@ class SectionDownload extends React.Component {
               <Button
                 color="rose"
                 size="lg"
-                href="https://www.creative-tim.com/product/material-kit-pro-react"
+                href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-download-section"
                 target="_blank"
               >
                 Material Kit PRO
@@ -76,7 +76,7 @@ class SectionDownload extends React.Component {
               <Button
                 color="rose"
                 size="lg"
-                href="https://www.creative-tim.com/product/material-dashboard-pro-react"
+                href="https://www.creative-tim.com/product/material-dashboard-pro-react?ref=mkr-download-section"
                 target="_blank"
               >
                 Material Dashboard PRO
