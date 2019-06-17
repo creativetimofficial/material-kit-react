@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -115,5 +117,9 @@ class Components extends React.Component {
     );
   }
 }
+
+Components.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(componentsStyle)(Components);

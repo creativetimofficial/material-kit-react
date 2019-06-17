@@ -1,5 +1,6 @@
 import React from "react";
-
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
@@ -433,5 +434,9 @@ class SectionNavbars extends React.Component {
     );
   }
 }
+
+SectionNavbars.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(navbarsStyle)(SectionNavbars);

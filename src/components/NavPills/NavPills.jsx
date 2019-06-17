@@ -71,9 +71,8 @@ class NavPills extends React.Component {
               {...icon}
               classes={{
                 root: pillsClasses,
-                labelContainer: classes.labelContainer,
-                label: classes.label,
-                selected: classes[color]
+                selected: classes[color],
+                wrapper: classes.tabWrapper
               }}
             />
           );
@@ -123,7 +122,7 @@ NavPills.propTypes = {
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
       tabButton: PropTypes.string,
-      tabIcon: PropTypes.func,
+      tabIcon: PropTypes.object,
       tabContent: PropTypes.node
     })
   ).isRequired,

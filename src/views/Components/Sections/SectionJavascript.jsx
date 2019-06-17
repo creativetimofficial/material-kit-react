@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // react plugin for creating date-time-picker
 import Datetime from "react-datetime";
 // @material-ui/core components
@@ -22,9 +24,11 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import javascriptStyles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.jsx";
 
-function Transition(props) {
-  return <Slide direction="down" {...props} />;
-}
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
+
+Transition.displayName = "Transition";
 
 class SectionJavascript extends React.Component {
   anchorElLeft = null;
@@ -337,5 +341,9 @@ class SectionJavascript extends React.Component {
     );
   }
 }
+
+SectionJavascript.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(javascriptStyles)(SectionJavascript);

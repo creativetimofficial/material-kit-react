@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -142,7 +144,8 @@ class LoginPage extends React.Component {
                                 lock_outline
                               </Icon>
                             </InputAdornment>
-                          )
+                          ),
+                          autoComplete: "off"
                         }}
                       />
                     </CardBody>
@@ -162,5 +165,9 @@ class LoginPage extends React.Component {
     );
   }
 }
+
+LoginPage.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(loginPageStyle)(LoginPage);

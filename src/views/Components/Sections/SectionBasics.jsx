@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library to set properties for components
+import PropTypes from "prop-types";
 // plugin that creates slider
 import nouislider from "nouislider";
 // @material-ui/core components
@@ -25,24 +27,22 @@ import Badge from "components/Badge/Badge.jsx";
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx";
 
 class SectionBasics extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      checked: [24, 22],
-      selectedEnabled: "b",
-      checkedA: true,
-      checkedB: false
-    };
-    this.handleChangeEnabled = this.handleChangeEnabled.bind(this);
-  }
+  state = {
+    checked: [24, 22],
+    selectedEnabled: "b",
+    checkedA: true,
+    checkedB: false
+  };
+  slider1 = React.createRef();
+  slider2 = React.createRef();
   componentDidMount() {
-    nouislider.create(this.refs.slider1, {
+    nouislider.create(this.slider1.current, {
       start: [40],
       connect: [true, false],
       step: 1,
       range: { min: 0, max: 100 }
     });
-    nouislider.create(this.refs.slider2, {
+    nouislider.create(this.slider2.current, {
       start: [20, 60],
       connect: [false, true, false],
       step: 1,
@@ -52,9 +52,9 @@ class SectionBasics extends React.Component {
   handleChange = name => event => {
     this.setState({ [name]: event.target.checked });
   };
-  handleChangeEnabled(event) {
+  handleChangeEnabled = event => {
     this.setState({ selectedEnabled: event.target.value });
-  }
+  };
   handleToggle(value) {
     const { checked } = this.state;
     const currentIndex = checked.indexOf(value);
@@ -237,10 +237,11 @@ class SectionBasics extends React.Component {
                         onClick={() => this.handleToggle(21)}
                         checkedIcon={<Check className={classes.checkedIcon} />}
                         icon={<Check className={classes.uncheckedIcon} />}
-                        classes={{ checked: classes.checked }}
+                        classes={{ checked: classes.checked, root: classes.checkRoot }}
                       />
                     }
-                    classes={{ label: classes.label }}
+                    classes={{ label: classes.label,
+                    root: classes.labelRoot }}
                     label="Unchecked"
                   />
                 </div>
@@ -261,10 +262,11 @@ class SectionBasics extends React.Component {
                         }
                         checkedIcon={<Check className={classes.checkedIcon} />}
                         icon={<Check className={classes.uncheckedIcon} />}
-                        classes={{ checked: classes.checked }}
+                        classes={{ checked: classes.checked, root: classes.checkRoot }}
                       />
                     }
-                    classes={{ label: classes.label }}
+                    classes={{ label: classes.label,
+                    root: classes.labelRoot }}
                     label="Checked"
                   />
                 </div>
@@ -282,12 +284,13 @@ class SectionBasics extends React.Component {
                         tabIndex={-1}
                         checkedIcon={<Check className={classes.checkedIcon} />}
                         icon={<Check className={classes.uncheckedIcon} />}
-                        classes={{ checked: classes.checked }}
+                        classes={{ checked: classes.checked, root: classes.checkRoot }}
                       />
                     }
                     classes={{
                       label: classes.label,
-                      disabled: classes.disabledCheckboxAndRadio
+                      disabled: classes.disabledCheckboxAndRadio,
+                      root: classes.labelRoot
                     }}
                     label="Disabled Unchecked"
                   />
@@ -309,12 +312,13 @@ class SectionBasics extends React.Component {
                         }
                         checkedIcon={<Check className={classes.checkedIcon} />}
                         icon={<Check className={classes.uncheckedIcon} />}
-                        classes={{ checked: classes.checked }}
+                        classes={{ checked: classes.checked, root: classes.checkRoot }}
                       />
                     }
                     classes={{
                       label: classes.label,
-                      disabled: classes.disabledCheckboxAndRadio
+                      disabled: classes.disabledCheckboxAndRadio,
+                      root: classes.labelRoot
                     }}
                     label="Disabled Checked"
                   />
@@ -348,12 +352,14 @@ class SectionBasics extends React.Component {
                           <FiberManualRecord className={classes.radioChecked} />
                         }
                         classes={{
-                          checked: classes.radio
+                          checked: classes.radio,
+                          root: classes.radioRoot
                         }}
                       />
                     }
                     classes={{
-                      label: classes.label
+                      label: classes.label,
+                      root: classes.labelRoot
                     }}
                     label="First Radio"
                   />
@@ -382,12 +388,14 @@ class SectionBasics extends React.Component {
                           <FiberManualRecord className={classes.radioChecked} />
                         }
                         classes={{
-                          checked: classes.radio
+                          checked: classes.radio,
+                          root: classes.radioRoot
                         }}
                       />
                     }
                     classes={{
-                      label: classes.label
+                      label: classes.label,
+                      root: classes.labelRoot
                     }}
                     label="Second Radio"
                   />
@@ -417,12 +425,14 @@ class SectionBasics extends React.Component {
                         }
                         classes={{
                           checked: classes.radio,
-                          disabled: classes.disabledCheckboxAndRadio
+                          disabled: classes.disabledCheckboxAndRadio,
+                          root: classes.radioRoot
                         }}
                       />
                     }
                     classes={{
-                      label: classes.label
+                      label: classes.label,
+                      root: classes.labelRoot
                     }}
                     label="Disabled Unchecked Radio"
                   />
@@ -452,11 +462,13 @@ class SectionBasics extends React.Component {
                         }
                         classes={{
                           checked: classes.radio,
-                          disabled: classes.disabledCheckboxAndRadio
+                          disabled: classes.disabledCheckboxAndRadio,
+                          root: classes.radioRoot
                         }}
                       />
                     }
-                    classes={{ label: classes.label }}
+                    classes={{ label: classes.label,
+                    root: classes.labelRoot }}
                     label="Disabled Checked Radio"
                   />
                 </div>
@@ -475,9 +487,8 @@ class SectionBasics extends React.Component {
                         classes={{
                           switchBase: classes.switchBase,
                           checked: classes.switchChecked,
-                          icon: classes.switchIcon,
-                          iconChecked: classes.switchIconChecked,
-                          bar: classes.switchBar
+                          thumb: classes.switchIcon,
+                          track: classes.switchBar
                         }}
                       />
                     }
@@ -497,9 +508,8 @@ class SectionBasics extends React.Component {
                         classes={{
                           switchBase: classes.switchBase,
                           checked: classes.switchChecked,
-                          icon: classes.switchIcon,
-                          iconChecked: classes.switchIconChecked,
-                          bar: classes.switchBar
+                          thumb: classes.switchIcon,
+                          track: classes.switchBar
                         }}
                       />
                     }
@@ -586,9 +596,9 @@ class SectionBasics extends React.Component {
                 <div className={classes.title}>
                   <h3>Sliders</h3>
                 </div>
-                <div ref="slider1" className="slider-primary" />
+                <div ref={this.slider1} className="slider-primary" />
                 <br />
-                <div ref="slider2" className="slider-info" />
+                <div ref={this.slider2} className="slider-info" />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.title}>
@@ -609,5 +619,9 @@ class SectionBasics extends React.Component {
     );
   }
 }
+
+SectionBasics.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(basicsStyle)(SectionBasics);
