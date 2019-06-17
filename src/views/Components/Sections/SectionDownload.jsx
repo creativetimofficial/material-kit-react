@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import {
   FacebookShareButton,
   TwitterShareButton,
-  GooglePlusShareButton
+  GoogleShareButton
 } from "react-share";
 
 // material-ui components
@@ -116,12 +116,10 @@ class SectionDownload extends React.Component {
                 Share
               </Button>
             </FacebookShareButton>
-            <GooglePlusShareButton url="https://www.creative-tim.com/live/material-kit-react">
-              <Button color="google">
-                <i className={classes.socials + " fab fa-google-plus-g"} />
-                Share
-              </Button>
-            </GooglePlusShareButton>
+            <Button color="google">
+              <i className={classes.socials + " fab fa-google-plus-g"} />
+              Share
+            </Button>
             <Button
               color="github"
               href="https://github.com/creativetimofficial/material-kit-react"
