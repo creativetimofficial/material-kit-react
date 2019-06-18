@@ -334,9 +334,9 @@ class CheckboxRadioSwitch extends React.Component {
                 classes={{
                   switchBase: classes.switchBase,
                   checked: classes.switchChecked,
-                  icon: classes.switchIcon,
+                  thumb: classes.switchIcon,
                   iconChecked: classes.switchIconChecked,
-                  bar: classes.switchBar
+                  track: classes.switchBar
                 }}
               />
             }
@@ -356,9 +356,9 @@ class CheckboxRadioSwitch extends React.Component {
                 classes={{
                   switchBase: classes.switchBase,
                   checked: classes.switchChecked,
-                  icon: classes.switchIcon,
+                  thumb: classes.switchIcon,
                   iconChecked: classes.switchIconChecked,
-                  bar: classes.switchBar
+                  track: classes.switchBar
                 }}
               />
             }
@@ -639,9 +639,9 @@ class CheckboxRadioSwitch extends React.Component {
                   classes={{
                     switchBase: classes.switchBase,
                     checked: classes.switchChecked,
-                    icon: classes.switchIcon,
+                    thumb: classes.switchIcon,
                     iconChecked: classes.switchIconChecked,
-                    bar: classes.switchBar
+                    track: classes.switchBar
                   }}
                 />
               }
@@ -661,9 +661,9 @@ class CheckboxRadioSwitch extends React.Component {
                   classes={{
                     switchBase: classes.switchBase,
                     checked: classes.switchChecked,
-                    icon: classes.switchIcon,
+                    thumb: classes.switchIcon,
                     iconChecked: classes.switchIconChecked,
-                    bar: classes.switchBar
+                    track: classes.switchBar
                   }}
                 />
               }

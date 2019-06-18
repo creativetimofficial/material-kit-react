@@ -235,10 +235,14 @@ class BuildTools extends React.Component {
                   <code className="highlighter-rouge">build-package-css</code>
                 </td>
                 <td>
-                  <code className="highlighter-rouge">npm run build-package-css</code>
+                  <code className="highlighter-rouge">
+                    npm run build-package-css
+                  </code>
                 </td>
                 <td className="text-left">
-                  This will copy the compiled version of the scss file from the assets folder in the dist folder in order for you to publish the dist folder to npm
+                  This will copy the compiled version of the scss file from the
+                  assets folder in the dist folder in order for you to publish
+                  the dist folder to npm
                 </td>
                 <td className="text-right" />
               </tr>
@@ -248,10 +252,13 @@ class BuildTools extends React.Component {
                   <code className="highlighter-rouge">build-package</code>
                 </td>
                 <td>
-                  <code className="highlighter-rouge">npm run build-package</code>
+                  <code className="highlighter-rouge">
+                    npm run build-package
+                  </code>
                 </td>
                 <td className="text-left">
-                  This will prepare the product for npm distribution (Caution - the product was not thought as a npm distribution)
+                  This will prepare the product for npm distribution (Caution -
+                  the product was not thought as a npm distribution)
                 </td>
                 <td className="text-right" />
               </tr>

@@ -54,7 +54,7 @@ class Sliders extends React.Component {
   render() {
     return (
       <div>
-        <h1>noUiSlider v13.1.0</h1>
+        <h1>noUiSlider v13.1.5</h1>
         <h2>
           <code>Notice</code>
         </h2>

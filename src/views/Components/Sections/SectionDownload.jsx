@@ -95,7 +95,7 @@ class SectionDownload extends React.Component {
               <h3>Thank you for supporting us!</h3>
             </GridContainer>
             <TwitterShareButton
-              url="https://www.creative-tim.com/live/material-kit-react"
+              url="https://demos.creative-tim.com/material-kit-react/#/"
               title="Material Kit React - Free Material-UI Kit Template"
               hashtags={[
                 "react",
@@ -110,13 +110,17 @@ class SectionDownload extends React.Component {
                 <i className={classes.socials + " fab fa-twitter"} /> Tweet
               </Button>
             </TwitterShareButton>
-            <FacebookShareButton url="https://www.creative-tim.com/live/material-kit-react">
+            <FacebookShareButton url="https://demos.creative-tim.com/material-kit-react/#/">
               <Button color="facebook">
                 <i className={classes.socials + " fab fa-facebook-square"} />{" "}
                 Share
               </Button>
             </FacebookShareButton>
-            <Button color="google">
+            <Button
+              color="google"
+              href="https://plus.google.com/up/?continue=https://plus.google.com/share?url%3Dhttps://demos.creative-tim.com/material-kit-react/#/"
+              target="_blank"
+            >
               <i className={classes.socials + " fab fa-google-plus-g"} />
               Share
             </Button>

@@ -121,7 +121,7 @@ class SectionCarousel extends React.Component {
     };
     return (
       <div>
-        <h1>React Slick 0.23.2</h1>
+        <h1>React Slick 0.24.0</h1>
         <h2>Styles</h2>
         <p>
           You will find the styles for this component in

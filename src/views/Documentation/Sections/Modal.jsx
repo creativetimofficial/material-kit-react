@@ -46,9 +46,9 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import modalStyle from "assets/jss/material-dashboard-pro-react/modalStyle.jsx";
 
-function Transition(props) {
-  return <Slide direction="down" {...props} />;
-}
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
 
 class Modal extends React.Component{
   constructor(props) {
@@ -129,9 +129,9 @@ class Modal extends React.Component{
 export default withStyles(modalStyle)(Modal);
 `;
 
-function Transition(props) {
-  return <Slide direction="down" {...props} />;
-}
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
 
 class Modal extends React.Component {
   constructor(props) {

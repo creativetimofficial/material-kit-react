@@ -127,7 +127,7 @@ class Tutorial extends React.Component {
           // eslint-disable-next-line
         }
         <p>
-          Copyright (c) 2018
+          Copyright (c) {new Date().getFullYear()}{" "}
           <a href="https://creative-tim.com/" target="_blank">
             Creative Tim
           </a>
@@ -171,6 +171,17 @@ class Tutorial extends React.Component {
           </a>{" "}
           (at the moment we do not offer support for TypeScript in our React
           themes).
+        </p>
+        <p>
+          Check the{" "}
+          <a
+            href="https://github.com/creativetimofficial/material-kit-react/blob/master/CHANGELOG.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CHANGELOG
+          </a>{" "}
+          to see what version we have used inside this product.
         </p>
         <p>
           You can convert our theme to TypeScript support by{" "}
