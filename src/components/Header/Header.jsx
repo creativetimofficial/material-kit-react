@@ -25,7 +25,7 @@ class Header extends React.Component {
   }
   handleDrawerToggle = () => {
     this.setState({ mobileOpen: !this.state.mobileOpen });
-  }
+  };
   headerColorChange = () => {
     const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
@@ -44,7 +44,7 @@ class Header extends React.Component {
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
     }
-  }
+  };
   componentDidMount() {
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange);
