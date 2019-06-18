@@ -353,9 +353,8 @@ class Popovers extends React.Component {
         <p>
           Please check out the{" "}
           <a
-            href="https://material-ui-next.com/utils/popovers/#popovers"
+            href="https://material-ui-next.com/utils/popovers/#popovers?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             official material-ui documentation
           </a>

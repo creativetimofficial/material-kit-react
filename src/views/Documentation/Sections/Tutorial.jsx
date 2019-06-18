@@ -128,7 +128,10 @@ class Tutorial extends React.Component {
         }
         <p>
           Copyright (c) {new Date().getFullYear()}{" "}
-          <a href="https://creative-tim.com/" target="_blank">
+          <a
+            href="https://creative-tim.com/?ref=mkr-tutorial-section-docs"
+            target="_blank"
+          >
             Creative Tim
           </a>
           .
@@ -158,14 +161,16 @@ class Tutorial extends React.Component {
         <h2>Getting started</h2>
         <p>
           <b>Material Kit React</b> is built on top of{" "}
-          <a href="https://material-ui-next.com/" target="_blank">
+          <a
+            href="https://material-ui-next.com/?ref=creativetim"
+            target="_blank"
+          >
             Material UI
           </a>{" "}
           using{" "}
           <a
-            href="https://github.com/facebook/create-react-app"
+            href="https://github.com/facebook/create-react-app?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             create-react-app
           </a>{" "}
@@ -175,9 +180,8 @@ class Tutorial extends React.Component {
         <p>
           Check the{" "}
           <a
-            href="https://github.com/creativetimofficial/material-kit-react/blob/master/CHANGELOG.md"
+            href="https://github.com/creativetimofficial/material-kit-react/blob/master/CHANGELOG.md?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             CHANGELOG
           </a>{" "}
@@ -186,9 +190,8 @@ class Tutorial extends React.Component {
         <p>
           You can convert our theme to TypeScript support by{" "}
           <a
-            href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/14"
+            href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/14?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             reading this thread
           </a>
@@ -197,11 +200,7 @@ class Tutorial extends React.Component {
         <ul>
           <li>
             Install NodeJs from{" "}
-            <a
-              href="https://nodejs.org/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://nodejs.org/en/?ref=creativetim" target="_blank">
               NodeJs Official Page
             </a>
           </li>
@@ -210,7 +209,10 @@ class Tutorial extends React.Component {
           }
           <li>
             Go to{" "}
-            <a href="https://www.creative-tim.com/" target="_blank">
+            <a
+              href="https://www.creative-tim.com/?ref=mkr-tutorial-section-docs"
+              target="_blank"
+            >
               creative tim website
             </a>{" "}
             and login into your account
@@ -221,7 +223,7 @@ class Tutorial extends React.Component {
           <li>
             Go to{" "}
             <a
-              href="https://www.creative-tim.com/product/material-kit-react"
+              href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-tutorial-section-docs"
               target="_blank"
             >
               material kit react
@@ -300,9 +302,8 @@ class Tutorial extends React.Component {
               <p>
                 You can also read more about{" "}
                 <a
-                  href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70"
+                  href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70?ref=creativetim"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   this issue here
                 </a>
@@ -341,9 +342,8 @@ class Tutorial extends React.Component {
               <li>
                 More information →{" "}
                 <a
-                  href="https://github.com/facebookincubator/create-react-app"
+                  href="https://github.com/facebookincubator/create-react-app?ref=creativetim"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   create-react-app
                 </a>
@@ -356,9 +356,8 @@ class Tutorial extends React.Component {
           <li>
             More information →{" "}
             <a
-              href="https://reactjs.org/docs/installation.html"
+              href="https://reactjs.org/docs/installation.html?ref=creativetim"
               target="_blank"
-              rel="noopener noreferrer"
             >
               react
             </a>

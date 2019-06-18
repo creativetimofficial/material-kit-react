@@ -141,7 +141,10 @@ class Tabs extends React.Component {
         }
         <p>
           We've extended the default{" "}
-          <a href="https://material-ui-next.com/demos/tabs/" target="_blank">
+          <a
+            href="https://material-ui-next.com/demos/tabs/?ref=creativetim"
+            target="_blank"
+          >
             material-ui tabs
           </a>{" "}
           to make it look better with our styles.

@@ -424,7 +424,7 @@ class CheckboxRadioSwitch extends React.Component {
             // eslint-disable-next-line
           }
           <a
-            href="https://material-ui-next.com/demos/selection-controls/"
+            href="https://material-ui-next.com/demos/selection-controls/?ref=creativetim"
             target="_blank"
           >
             these components from Material-UI

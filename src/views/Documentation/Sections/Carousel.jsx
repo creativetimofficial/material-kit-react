@@ -185,9 +185,8 @@ class SectionCarousel extends React.Component {
         <p>
           We've added some extra classes to the default ones from{" "}
           <a
-            href="https://react-slick.neostack.com/"
+            href="https://react-slick.neostack.com/?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             react-slick
           </a>
@@ -202,9 +201,8 @@ class SectionCarousel extends React.Component {
         <p>
           For more details please refer to{" "}
           <a
-            href="https://react-slick.neostack.com/docs/get-started"
+            href="https://react-slick.neostack.com/docs/get-started?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             react-slick's official docs
           </a>

@@ -57,9 +57,8 @@ class Styles extends React.Component {
         <p>
           Like our friends from{" "}
           <a
-            href="https://material-ui-next.com/"
+            href="https://material-ui-next.com/?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Material UI
           </a>
@@ -67,11 +66,7 @@ class Styles extends React.Component {
         </p>
         <p>
           A useful link about JSS is{" "}
-          <a
-            href="https://github.com/cssinjs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/cssinjs?ref=creativetim" target="_blank">
             this one here
           </a>
           .
@@ -80,9 +75,8 @@ class Styles extends React.Component {
           Material UI offers you 7 ways to override their styles, and as said
           above, we've decided to go with the third option (
           <a
-            href="https://material-ui-next.com/guides/interoperability/#react-jss"
+            href="https://material-ui-next.com/guides/interoperability/#react-jss?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             this one here
           </a>

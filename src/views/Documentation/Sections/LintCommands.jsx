@@ -16,9 +16,8 @@ class Styles extends React.Component {
         <p>
           As per this request{" "}
           <a
-            href="https://github.com/creativetimofficial/material-dashboard-react/issues/47"
+            href="https://github.com/creativetimofficial/material-dashboard-react/issues/47?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             issues/47
           </a>{" "}
@@ -27,11 +26,7 @@ class Styles extends React.Component {
         </p>
         <p>
           Manny thanks go to{" "}
-          <a
-            href="https://github.com/kdclaw3"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/kdclaw3?ref=creativetim" target="_blank">
             Dee Clawson
           </a>{" "}
           for providing the necessary commands.

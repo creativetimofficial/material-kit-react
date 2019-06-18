@@ -52,9 +52,8 @@ class BuildTools extends React.Component {
                 </td>
                 <td className="text-right">
                   <a
-                    href="https://docs.npmjs.com/cli/install"
+                    href="https://docs.npmjs.com/cli/install?ref=creativetim"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Read more
                   </a>
@@ -73,9 +72,8 @@ class BuildTools extends React.Component {
                 </td>
                 <td className="text-right">
                   <a
-                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-start"
+                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-start?ref=creativetim"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Read more
                   </a>
@@ -95,9 +93,8 @@ class BuildTools extends React.Component {
                 </td>
                 <td className="text-right">
                   <a
-                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-build"
+                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-build?ref=creativetim"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Read more
                   </a>
@@ -118,9 +115,8 @@ class BuildTools extends React.Component {
                 </td>
                 <td className="text-right">
                   <a
-                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-test"
+                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-test?ref=creativetim"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Read more
                   </a>
@@ -141,9 +137,8 @@ class BuildTools extends React.Component {
                 </td>
                 <td className="text-right">
                   <a
-                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject"
+                    href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject?ref=creativetim"
                     target="_blank"
-                    rel="noopener noreferrer"
                   >
                     Read more
                   </a>

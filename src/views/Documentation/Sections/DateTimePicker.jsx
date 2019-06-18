@@ -85,9 +85,8 @@ class DateTimePicker extends React.Component {
         <p>
           We've used{" "}
           <a
-            href="https://github.com/YouCanBookMe/react-datetime"
+            href="https://github.com/YouCanBookMe/react-datetime?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             react-datetime
           </a>{" "}
@@ -96,9 +95,8 @@ class DateTimePicker extends React.Component {
         <p>
           Please refer to{" "}
           <a
-            href="https://github.com/YouCanBookMe/react-datetime"
+            href="https://github.com/YouCanBookMe/react-datetime?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             react-datetime documentation
           </a>{" "}
@@ -114,7 +112,7 @@ class DateTimePicker extends React.Component {
           If you want to match the input of this plugin with the inputs from
           Material-UI, please take a look at this issue here:{" "}
           <a
-            href="https://github.com/creativetimofficial/material-kit-react/issues/20"
+            href="https://github.com/creativetimofficial/material-kit-react/issues/20?ref=creativetim"
             target="_blank"
           >
             https://github.com/creativetimofficial/material-kit-react/issues/20

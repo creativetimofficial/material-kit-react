@@ -133,7 +133,10 @@ function NavPills({ ...props }) {
         {
           // eslint-disable-next-line
         }
-        <a href="https://material-ui-next.com/demos/tabs/" target="_blank">
+        <a
+          href="https://material-ui-next.com/demos/tabs/?ref=creativetim"
+          target="_blank"
+        >
           material-ui tabs component
         </a>
         , we've done this to make it more easier for you to use our styles.

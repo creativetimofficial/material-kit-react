@@ -135,9 +135,8 @@ class Tooltips extends React.Component {
         <p>
           Please check out the{" "}
           <a
-            href="https://material-ui-next.com/demos/tooltips/"
+            href="https://material-ui-next.com/demos/tooltips/?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             official material-ui documentation
           </a>

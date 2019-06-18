@@ -61,18 +61,16 @@ class Sliders extends React.Component {
         <p>
           Due to the fact that{" "}
           <a
-            href="https://github.com/algolia/react-nouislider"
+            href="https://github.com/algolia/react-nouislider?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             <code>React noUiSlider v2.0.1</code>
           </a>{" "}
           was not well maintained, we've dropped the usage of this component,
           and replaced it with the{" "}
           <a
-            href="https://refreshless.com/nouislider/"
+            href="https://refreshless.com/nouislider/?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             <code>noUiSlider v12.1.0</code>
           </a>{" "}
@@ -81,9 +79,8 @@ class Sliders extends React.Component {
         <p>
           Please refer to{" "}
           <a
-            href="https://refreshless.com/nouislider/"
+            href="https://refreshless.com/nouislider/?ref=creativetim"
             target="_blank"
-            rel="noopener noreferrer"
           >
             noUiSlider documentation
           </a>{" "}

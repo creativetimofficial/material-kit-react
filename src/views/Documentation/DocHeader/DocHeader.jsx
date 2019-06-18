@@ -91,18 +91,16 @@ class DocHeader extends React.Component {
                 v1.7.0
               </Button>
               <a
-                href="https://github.com/creativetimofficial/material-kit-react"
+                href="https://github.com/creativetimofficial/material-kit-react?ref=mkr-navbar-docs"
                 className={classes.iconLink}
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <i className="fab fa-github" />
               </a>
               <a
-                href="https://twitter.com/CreativeTim"
+                href="https://twitter.com/CreativeTim?ref=creativetim"
                 className={classes.iconLink}
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <i className="fab fa-twitter" />
               </a>
@@ -110,10 +108,9 @@ class DocHeader extends React.Component {
           </div>
           <div>
             <a
-              href="https://www.creative-tim.com/product/material-kit-pro-react"
+              href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-navbar-docs"
               className={classes.rightLinks}
               target="_blank"
-              rel="noopener noreferrer"
             >
               <CardMembership />{" "}
               <span className={classes.rightLinksText}>Upgrade to PRO</span>
@@ -127,10 +124,9 @@ class DocHeader extends React.Component {
               <span className={classes.rightLinksText}>Live Preview</span>
             </NavLink>
             <a
-              href="https://github.com/creativetimofficial/material-kit-react"
+              href="https://github.com/creativetimofficial/material-kit-react?ref=creativetim"
               className={classes.rightLinks}
               target="_blank"
-              rel="noopener noreferrer"
             >
               <Star />{" "}
               <span className={classes.rightLinksText}>Help with a star</span>
@@ -139,25 +135,22 @@ class DocHeader extends React.Component {
               href="#pablo"
               className={classes.rightLinks}
               target="_blank"
-              rel="noopener noreferrer"
               onClick={e => e.preventDefault()}
             />
             <a
               href="#pablo"
               className={classes.rightLinks}
               target="_blank"
-              rel="noopener noreferrer"
               onClick={e => e.preventDefault()}
             />
             <a
               href="#pablo"
               className={classes.rightLinks}
               target="_blank"
-              rel="noopener noreferrer"
               onClick={e => e.preventDefault()}
             />
             <a
-              href="https://github.com/creativetimofficial/material-kit-react"
+              href="https://github.com/creativetimofficial/material-kit-react?ref=creativetim"
               className="github-corner"
               aria-label="View source on Github"
             >

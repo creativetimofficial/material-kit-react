@@ -88,7 +88,7 @@ function LinearProgress({ ...props }) {
           // eslint-disable-next-line
         }
         <a
-          href="https://material-ui-next.com/demos/progress/#linear"
+          href="https://material-ui-next.com/demos/progress/#linear?ref=creativetim"
           target="_blank"
         >
           default material-ui linear progress
@@ -142,7 +142,7 @@ function LinearProgress({ ...props }) {
           // eslint-disable-next-line
         }
         <a
-          href="https://material-ui-next.com/api/linear-progress/"
+          href="https://material-ui-next.com/api/linear-progress/?ref=creativetim"
           target="_blank"
         >
           default material-ui linear progress
