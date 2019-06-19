@@ -65,10 +65,12 @@
     "e2e": "npm test -- wdio.conf.dev.js",
     "generateReportDashboard": "reg-cli ./screenshots/latest/ ./screenshots/baseline/ ./screenshots/diff/ -R ./reportKitPro.html && open ./reportKitPro.html"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": []
+  }
 }
