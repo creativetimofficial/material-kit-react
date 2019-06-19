@@ -22,18 +22,11 @@ class Header extends React.Component {
     this.state = {
       mobileOpen: false
     };
-    this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
-    this.headerColorChange = this.headerColorChange.bind(this);
   }
-  handleDrawerToggle() {
+  handleDrawerToggle = () => {
     this.setState({ mobileOpen: !this.state.mobileOpen });
-  }
-  componentDidMount() {
-    if (this.props.changeColorOnScroll) {
-      window.addEventListener("scroll", this.headerColorChange);
-    }
-  }
-  headerColorChange() {
+  };
+  headerColorChange = () => {
     const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
     if (windowsScrollTop > changeColorOnScroll.height) {
@@ -50,6 +43,11 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+    }
+  };
+  componentDidMount() {
+    if (this.props.changeColorOnScroll) {
+      window.addEventListener("scroll", this.headerColorChange);
     }
   }
   componentWillUnmount() {
@@ -100,7 +98,7 @@ class Header extends React.Component {
             </IconButton>
           </Hidden>
         </Toolbar>
-        <Hidden mdUp implementation="css">
+        <Hidden mdUp implementation="js">
           <Drawer
             variant="temporary"
             anchor={"right"}
