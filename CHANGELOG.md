@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.7.0] 2019-06-xx
+## [1.7.0] 2019-06-19
 ### Warning
 **We've skipped versions 1.5.0, 1.6.0 so that all React Material products would be on the same version.**
 ### Bug fixing
