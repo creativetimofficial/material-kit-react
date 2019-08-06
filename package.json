@@ -1,52 +1,37 @@
 {
-  "name": "material-kit-react",
-  "version": "1.7.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "name": "material-component",
+  "version": "0.1.0",
   "private": true,
-  "main": "dist/index.js",
   "dependencies": {
-    "@material-ui/core": "4.1.0",
-    "@material-ui/icons": "4.1.0",
-    "classnames": "2.2.6",
-    "history": "4.9.0",
-    "moment": "2.24.0",
-    "node-sass": "4.12.0",
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "@types/history": "^4.7.2",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.6.8",
+    "@types/react-dom": "16.8.4",
+    "@types/react-router-dom": "^4.3.4",
+    "classnames": "^2.2.6",
+    "history": "^4.9.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
     "nouislider": "13.1.5",
-    "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "react-datetime": "2.16.3",
-    "react-dom": "16.8.6",
-    "react-router-dom": "5.0.1",
+    "react": "^16.8.6",
+    "react-datetime": "^2.16.3",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "react-slick": "0.24.0",
-    "react-swipeable-views": "0.13.3"
-  },
-  "devDependencies": {
-    "@babel/cli": "7.4.4",
-    "@babel/plugin-proposal-class-properties": "7.4.4",
-    "@babel/preset-env": "7.4.5",
-    "@babel/preset-react": "7.0.0",
-    "eslint-config-prettier": "4.3.0",
-    "eslint-plugin-prettier": "3.1.0",
-    "prettier": "1.18.2",
-    "eslint-plugin-react": "7.13.0"
-  },
-  "optionalDependencies": {
-    "typescript": "3.5.1"
+    "react-slick": "^0.24.0",
+    "react-swipeable-views": "^0.13.3",
+    "typescript": "3.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint:check": "eslint . --ext=js,jsx;  exit 0",
-    "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "build-package-css": "node-sass src/assets/scss/material-kit-react.scss dist/material-kit-react.css",
-    "build-package": "npm run build-package-css && babel src --out-dir dist",
-    "compile-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.css",
-    "minify-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.css --source-map true"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -54,6 +39,16 @@
       "not dead",
       "not op_mini all"
     ],
-    "development": []
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/nouislider": "^9.0.5",
+    "@types/react": "^16.8.23",
+    "@types/react-slick": "^0.23.4"
   }
 }
