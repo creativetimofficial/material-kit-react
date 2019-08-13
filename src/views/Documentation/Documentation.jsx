@@ -18,13 +18,13 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
 
 import DocHeader from "./DocHeader/DocHeader";
 import DocSidebar from "./DocSidebar/DocSidebar";
 
-import docRoutes from "routes/documentation.jsx";
+import docRoutes from "routes/documentation.js";
 
 class Documentation extends React.Component {
   render() {

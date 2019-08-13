@@ -29,9 +29,9 @@ import IconButton from "@material-ui/core/IconButton";
 // @material-ui/icons
 import Close from "@material-ui/icons/Close";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.js";
 
-import modalStyle from "assets/jss/material-kit-react/modalStyle.jsx";
+import modalStyle from "assets/jss/material-kit-react/modalStyle.js";
 
 const styles = {
   ...modalStyle,
@@ -59,9 +59,9 @@ import IconButton from "@material-ui/core/IconButton";
 // @material-ui/icons
 import Close from "@material-ui/icons/Close";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.js";
 
-import modalStyle from "assets/jss/material-dashboard-pro-react/modalStyle.jsx";
+import modalStyle from "assets/jss/material-dashboard-pro-react/modalStyle.js";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
@@ -179,7 +179,7 @@ class Modal extends React.Component {
         <h2>Styles</h2>
         <p>
           You will find the styles for this component in
-          <br /> <code>src/assets/jss/material-kit-react/modalStyle.jsx</code>.
+          <br /> <code>src/assets/jss/material-kit-react/modalStyle.js</code>.
         </p>
         <h2>Example</h2>
         <div className={classes.bdExample}>

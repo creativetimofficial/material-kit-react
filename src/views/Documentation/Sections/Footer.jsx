@@ -35,7 +35,7 @@ function Footer({ ...props }) {
         You will find the styles for this component in
         <br />{" "}
         <code>
-          src/assets/jss/material-kit-react/components/footerStyle.jsx
+          src/assets/jss/material-kit-react/components/footerStyle.js
         </code>
         .
       </p>

@@ -72,11 +72,11 @@ class Navigation extends React.Component {
           You will find all the styles for these components in
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/headerStyle.jsx
+            src/assets/jss/material-kit-react/components/headerStyle.js
           </code>
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/headerLinksStyle.jsx
+            src/assets/jss/material-kit-react/components/headerLinksStyle.js
           </code>
           .
         </p>

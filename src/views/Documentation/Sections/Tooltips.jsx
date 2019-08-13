@@ -23,9 +23,9 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.js";
 
-import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.jsx";
+import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.js";
 
 const styles = {
   ...tooltipsStyle,
@@ -46,10 +46,10 @@ const tooltip = `import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.js";
 
 
-import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.jsx";
+import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.js";
 
 class Tooltips extends React.Component {
   render() {
@@ -108,7 +108,7 @@ class Tooltips extends React.Component {
         <p>
           You will find all the styles for these components in
           <br />
-          <code>src/assets/jss/material-kit-react/tooltipsStyle.jsx</code>.
+          <code>src/assets/jss/material-kit-react/tooltipsStyle.js</code>.
         </p>
         <h2>Example</h2>
         <div className={classes.bdExample}>

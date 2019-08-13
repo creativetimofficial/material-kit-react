@@ -23,7 +23,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Timeline from "@material-ui/icons/Timeline";
 // core components
-import InfoAreas from "components/InfoArea/InfoArea.jsx";
+import InfoAreas from "components/InfoArea/InfoArea.js";
 
 const styles = {
   bdExample: {
@@ -44,7 +44,7 @@ const codeExample = `import React from "react";
 import Timeline from "@material-ui/icons/Timeline";
 
 // core components
-import InfoArea from "components/InfoArea/InfoArea.jsx";
+import InfoArea from "components/InfoArea/InfoArea.js";
 
 function Example({...prop}){
   return (
@@ -91,7 +91,7 @@ function InfoArea({ ...props }) {
       <p>
         You will find the styles for this component in
         <br />{" "}
-        <code>src/assets/jss/material-kit-react/components/infoStyle.jsx</code>.
+        <code>src/assets/jss/material-kit-react/components/infoStyle.js</code>.
       </p>
       <h2>Example</h2>
       <div className={classes.bdExample}>

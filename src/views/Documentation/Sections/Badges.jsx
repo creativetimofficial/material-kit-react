@@ -21,8 +21,8 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
-import Badge from "components/Badge/Badge.jsx";
+import Button from "components/CustomButtons/Button.js";
+import Badge from "components/Badge/Badge.js";
 
 const styles = {
   bdExample: {
@@ -37,9 +37,9 @@ const styles = {
   }
 };
 
-const importExamples = `import Badge from 'components/Badge/Badge.jsx';`;
+const importExamples = `import Badge from 'components/Badge/Badge.js';`;
 
-const importStylesExamples = `import badgeStyle from "assets/jss/material-kit-react/components/badgeStyle.jsx"`;
+const importStylesExamples = `import badgeStyle from "assets/jss/material-kit-react/components/badgeStyle.js"`;
 
 const exampleCode = `<Button color="primary">Notifications{" "}<Badge>4</Badge></Button>`;
 
@@ -78,7 +78,7 @@ class Badges extends React.Component {
           You will find the styles for this component in
           <br />{" "}
           <code>
-            src/assets/jss/material-kit-react/components/badgeStyle.jsx
+            src/assets/jss/material-kit-react/components/badgeStyle.js
           </code>
           .
         </p>

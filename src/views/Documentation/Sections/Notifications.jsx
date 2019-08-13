@@ -24,8 +24,8 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Check from "@material-ui/icons/Check";
 import Warning from "@material-ui/icons/Warning";
 // core components
-import SnackbarContent from "components/Snackbar/SnackbarContent.jsx";
-import Clearfix from "components/Clearfix/Clearfix.jsx";
+import SnackbarContent from "components/Snackbar/SnackbarContent.js";
+import Clearfix from "components/Clearfix/Clearfix.js";
 
 const styles = {
   bdExample: {
@@ -45,8 +45,8 @@ const codeExample = `import React from "react";
 import Check from "@material-ui/icons/Check";
 import Warning from "@material-ui/icons/Warning";
 // core components
-import SnackbarContent from "components/Snackbar/SnackbarContent.jsx";
-import Clearfix from "components/Clearfix/Clearfix.jsx";
+import SnackbarContent from "components/Snackbar/SnackbarContent.js";
+import Clearfix from "components/Clearfix/Clearfix.js";
 
 class Notifications extends React.Component {
   render() {
@@ -122,7 +122,7 @@ class Notifications extends React.Component {
           You will find all the styles for these components in
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/snackbarContentStyle.jsx
+            src/assets/jss/material-kit-react/components/snackbarContentStyle.js
           </code>
           .
         </p>

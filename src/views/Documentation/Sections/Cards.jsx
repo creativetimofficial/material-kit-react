@@ -21,20 +21,20 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Quote from "components/Typography/Quote.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardHeader from "components/Card/CardHeader.js";
+import CardFooter from "components/Card/CardFooter.js";
+import Button from "components/CustomButtons/Button.js";
+import Quote from "components/Typography/Quote.js";
 
-import imagesStyles from "assets/jss/material-kit-react/imagesStyles.jsx";
+import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
 import {
   cardTitle,
   cardLink,
   cardSubtitle
-} from "assets/jss/material-kit-react.jsx";
+} from "assets/jss/material-kit-react.js";
 
 const style = {
   ...imagesStyles,
@@ -66,13 +66,13 @@ const codeExample = `import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import Button from "components/CustomButtons/Button.js";
 
-import imagesStyles from "assets/jss/material-kit-react/imagesStyles.jsx";
+import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
-import { cardTitle } from "assets/jss/material-kit-react.jsx";
+import { cardTitle } from "assets/jss/material-kit-react.js";
 
 const style = {
   ...imagesStyles,
@@ -112,10 +112,10 @@ const codeExampleTTL = `import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
 
-import { cardTitle, cardLink, cardSubtitle } from "assets/jss/material-kit-react.jsx";
+import { cardTitle, cardLink, cardSubtitle } from "assets/jss/material-kit-react.js";
 
 const style = {
   ...imagesStyles,
@@ -160,12 +160,12 @@ const codeExampleHeader = `import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardHeader from "components/Card/CardHeader.js";
+import Button from "components/CustomButtons/Button.js";
 
-import { cardTitle } from "assets/jss/material-kit-react.jsx";
+import { cardTitle } from "assets/jss/material-kit-react.js";
 
 const style = {
   cardTitle,
@@ -194,10 +194,10 @@ export default withStyles(style)(Cards);`;
 
 const codeExampleQuote = `import React from "react";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import Quote from "components/Typography/Quote.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardHeader from "components/Card/CardHeader.js";
+import Quote from "components/Typography/Quote.js";
 
 class Cards extends React.Component {
   render() {
@@ -221,13 +221,13 @@ const codeExampleCentered = `import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardHeader from "components/Card/CardHeader.js";
+import CardFooter from "components/Card/CardFooter.js";
+import Button from "components/CustomButtons/Button.js";
 
-import { cardTitle } from "assets/jss/material-kit-react.jsx";
+import { cardTitle } from "assets/jss/material-kit-react.js";
 
 const style = {
   cardTitle,
@@ -267,11 +267,11 @@ const codeExampleText = `import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import Button from "components/CustomButtons/Button.js";
 
-import { cardTitle } from "assets/jss/material-kit-react.jsx";
+import { cardTitle } from "assets/jss/material-kit-react.js";
 
 const style = {
   cardTitle,
@@ -329,12 +329,12 @@ const codeExampleCaps = `import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
 
-import imagesStyles from "assets/jss/material-kit-react/imagesStyles.jsx";
+import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
-import { cardTitle } from "assets/jss/material-kit-react.jsx";
+import { cardTitle } from "assets/jss/material-kit-react.js";
 
 const style = {
   ...imagesStyles,
@@ -376,11 +376,11 @@ const codeExampleOverlay = `import React from "react";
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import Card from "components/Card/Card.jsx";
+import Card from "components/Card/Card.js";
 
-import imagesStyles from "assets/jss/material-kit-react/imagesStyles.jsx";
+import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
-import { cardTitle } from "assets/jss/material-kit-react.jsx";
+import { cardTitle } from "assets/jss/material-kit-react.js";
 
 const style = {
   ...imagesStyles,
@@ -436,19 +436,19 @@ class Cards extends React.Component {
           You will find the styles for these components in
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/cardStyle.jsx
+            src/assets/jss/material-kit-react/components/cardStyle.js
           </code>
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/cardHeaderStyle.jsx
+            src/assets/jss/material-kit-react/components/cardHeaderStyle.js
           </code>
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/cardBodyStyle.jsx
+            src/assets/jss/material-kit-react/components/cardBodyStyle.js
           </code>
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/cardFooterStyle.jsx
+            src/assets/jss/material-kit-react/components/cardFooterStyle.js
           </code>
           .
         </p>

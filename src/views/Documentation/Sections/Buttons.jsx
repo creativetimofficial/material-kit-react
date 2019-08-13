@@ -23,7 +23,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.js";
 
 const styles = {
   socialButtonsIcons: {
@@ -233,12 +233,12 @@ class Buttons extends React.Component {
           You will find the styles for this component in
           <br />{" "}
           <code>
-            src/assets/jss/material-kit-react/components/buttonStyle.jsx
+            src/assets/jss/material-kit-react/components/buttonStyle.js
           </code>
           <br /> and
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/iconButtonStyle.jsx
+            src/assets/jss/material-kit-react/components/iconButtonStyle.js
           </code>
           .
         </p>

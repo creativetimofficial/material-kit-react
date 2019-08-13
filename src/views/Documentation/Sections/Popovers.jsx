@@ -22,8 +22,8 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Popover from "@material-ui/core/Popover";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
-import popoverStyles from "assets/jss/material-kit-react/popoverStyles.jsx";
+import Button from "components/CustomButtons/Button.js";
+import popoverStyles from "assets/jss/material-kit-react/popoverStyles.js";
 
 const styles = {
   ...popoverStyles,
@@ -44,9 +44,9 @@ const codeExample = `import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Popover from "@material-ui/core/Popover";
 // core components
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.js";
 
-import popoverStyles from "assets/jss/material-kit-react/popoverStyles.jsx";
+import popoverStyles from "assets/jss/material-kit-react/popoverStyles.js";
 
 class Popovers extends React.Component {
   anchorElLeft = null;
@@ -237,7 +237,7 @@ class Popovers extends React.Component {
         <p>
           You will find all the styles for these components in
           <br />
-          <code>src/assets/jss/material-kit-react/popoverStyles.jsx</code>.
+          <code>src/assets/jss/material-kit-react/popoverStyles.js</code>.
         </p>
         <h2>Example</h2>
         <div className={classes.bdExample}>

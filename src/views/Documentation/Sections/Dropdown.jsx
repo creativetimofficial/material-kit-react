@@ -21,7 +21,7 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import withStyles from "@material-ui/core/styles/withStyles";
 // import { * } from '@material-ui/icons';
 
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 
 const styles = {
   bdExample: {
@@ -39,7 +39,7 @@ const styles = {
 const codeDropdown = `import React from 'react';
 
 import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
-import Badge from 'components/Badge/Badge.jsx';
+import Badge from 'components/Badge/Badge.js';
 
 function Dropdown({...props}){
   return (
@@ -126,7 +126,7 @@ function Dropdown({ ...props }) {
         You will find the styles for this component in
         <br />{" "}
         <code>
-          src/assets/jss/material-kit-react/components/customDropdownStyle.jsx
+          src/assets/jss/material-kit-react/components/customDropdownStyle.js
         </code>
         .
       </p>

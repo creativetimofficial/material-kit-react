@@ -19,7 +19,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
-const codeImport = `import Clearfix from "components/Clearfix/Clearfix.jsx";`;
+const codeImport = `import Clearfix from "components/Clearfix/Clearfix.js";`;
 const codeExample = `<Clearfix />`;
 
 class ClearExample extends React.Component {

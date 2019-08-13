@@ -20,7 +20,7 @@ import { withStyles, AppBar, Toolbar, Hidden } from "@material-ui/core";
 import { List, Star, CardMembership } from "@material-ui/icons";
 import { NavLink } from "react-router-dom";
 
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.js";
 
 const style = theme => ({
   appBar: {

@@ -30,7 +30,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Check from "@material-ui/icons/Check";
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 
-import style from "assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx";
+import style from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 const styles = {
   ...style,
@@ -55,7 +55,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import Check from "@material-ui/icons/Check";
 
-import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx";
+import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 class CheckboxRadioSwitch extends React.Component {
   constructor(props) {
@@ -175,7 +175,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 // @material-ui/icons
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 
-import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx";
+import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 class CheckboxRadioSwitch extends React.Component {
   constructor(props) {
@@ -324,7 +324,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Switch from "@material-ui/core/Switch";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
-import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx";
+import styles from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 class CheckboxRadioSwitch extends React.Component {
   constructor(props) {
@@ -453,7 +453,7 @@ class CheckboxRadioSwitch extends React.Component {
           You will find the styles for this component in
           <br />
           <code>
-            src/assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx
+            src/assets/jss/material-kit-react/customCheckboxRadioSwitch.js
           </code>
           .
         </p>

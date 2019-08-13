@@ -26,7 +26,7 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
+import CustomTabs from "components/CustomTabs/CustomTabs.js";
 
 const styles = {
   textCenter: {
@@ -52,7 +52,7 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
+import CustomTabs from "components/CustomTabs/CustomTabs.js";
 
 const styles = {
   textCenter: {
@@ -171,7 +171,7 @@ class Tabs extends React.Component {
           You will find all the styles for these components in
           <br />
           <code>
-            src/assets/jss/material-kit-react/components/customTabsStyle.jsx
+            src/assets/jss/material-kit-react/components/customTabsStyle.js
           </code>
           .
         </p>
