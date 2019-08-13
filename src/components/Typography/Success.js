@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import typographyStyle from "assets/jss/material-kit-react/components/typographyStyle.jsx";
+import typographyStyle from "assets/jss/material-kit-react/components/typographyStyle.js";
 
 function Success({ ...props }) {
   const { classes, children } = props;

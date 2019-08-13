@@ -9,28 +9,28 @@ import { Link } from "react-router-dom";
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 // core components
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
+import Header from "components/Header/Header.js";
+import Footer from "components/Footer/Footer.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import Button from "components/CustomButtons/Button.js";
+import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import SectionBasics from "./Sections/SectionBasics.jsx";
-import SectionNavbars from "./Sections/SectionNavbars.jsx";
-import SectionTabs from "./Sections/SectionTabs.jsx";
-import SectionPills from "./Sections/SectionPills.jsx";
-import SectionNotifications from "./Sections/SectionNotifications.jsx";
-import SectionTypography from "./Sections/SectionTypography.jsx";
-import SectionJavascript from "./Sections/SectionJavascript.jsx";
-import SectionCarousel from "./Sections/SectionCarousel.jsx";
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx";
-import SectionLogin from "./Sections/SectionLogin.jsx";
-import SectionExamples from "./Sections/SectionExamples.jsx";
-import SectionDownload from "./Sections/SectionDownload.jsx";
+import HeaderLinks from "components/Header/HeaderLinks.js";
+import SectionBasics from "./Sections/SectionBasics.js";
+import SectionNavbars from "./Sections/SectionNavbars.js";
+import SectionTabs from "./Sections/SectionTabs.js";
+import SectionPills from "./Sections/SectionPills.js";
+import SectionNotifications from "./Sections/SectionNotifications.js";
+import SectionTypography from "./Sections/SectionTypography.js";
+import SectionJavascript from "./Sections/SectionJavascript.js";
+import SectionCarousel from "./Sections/SectionCarousel.js";
+import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
+import SectionLogin from "./Sections/SectionLogin.js";
+import SectionExamples from "./Sections/SectionExamples.js";
+import SectionDownload from "./Sections/SectionDownload.js";
 
-import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
+import componentsStyle from "assets/jss/material-kit-react/views/components.js";
 
 class Components extends React.Component {
   render() {

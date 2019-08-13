@@ -10,11 +10,11 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Icon from "@material-ui/core/Icon";
 // core components
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
+import Card from "components/Card/Card.js";
+import CardBody from "components/Card/CardBody.js";
+import CardHeader from "components/Card/CardHeader.js";
 
-import customTabsStyle from "assets/jss/material-kit-react/components/customTabsStyle.jsx";
+import customTabsStyle from "assets/jss/material-kit-react/components/customTabsStyle.js";
 
 class CustomTabs extends React.Component {
   state = {

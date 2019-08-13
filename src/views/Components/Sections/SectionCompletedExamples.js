@@ -6,10 +6,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
 
-import completedStyle from "assets/jss/material-kit-react/views/componentsSections/completedStyle.jsx";
+import completedStyle from "assets/jss/material-kit-react/views/componentsSections/completedStyle.js";
 
 class SectionCompletedExamples extends React.Component {
   render() {

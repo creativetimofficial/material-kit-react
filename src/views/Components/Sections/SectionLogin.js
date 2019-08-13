@@ -9,16 +9,16 @@ import Icon from "@material-ui/core/Icon";
 import People from "@material-ui/icons/People";
 import Email from "@material-ui/icons/Email";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import Card from "components/Card/Card.js";
+import CardHeader from "components/Card/CardHeader.js";
+import CardBody from "components/Card/CardBody.js";
+import CardFooter from "components/Card/CardFooter.js";
+import Button from "components/CustomButtons/Button.js";
+import CustomInput from "components/CustomInput/CustomInput.js";
 
-import loginStyle from "assets/jss/material-kit-react/views/componentsSections/loginStyle.jsx";
+import loginStyle from "assets/jss/material-kit-react/views/componentsSections/loginStyle.js";
 
 class SectionLogin extends React.Component {
   render() {

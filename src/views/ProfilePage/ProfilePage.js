@@ -10,14 +10,14 @@ import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
-import Header from "components/Header/Header.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
-import Parallax from "components/Parallax/Parallax.jsx";
+import Header from "components/Header/Header.js";
+import Footer from "components/Footer/Footer.js";
+import Button from "components/CustomButtons/Button.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import HeaderLinks from "components/Header/HeaderLinks.js";
+import NavPills from "components/NavPills/NavPills.js";
+import Parallax from "components/Parallax/Parallax.js";
 
 import profile from "assets/img/faces/christian.jpg";
 
@@ -32,7 +32,7 @@ import work3 from "assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
-import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
+import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.js";
 
 class ProfilePage extends React.Component {
   render() {

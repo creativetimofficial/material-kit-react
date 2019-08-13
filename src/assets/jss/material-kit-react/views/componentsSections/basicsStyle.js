@@ -1,5 +1,5 @@
-import { container, title } from "assets/jss/material-kit-react.jsx";
-import customCheckboxRadioSwitch from "assets/jss/material-kit-react/customCheckboxRadioSwitch.jsx";
+import { container, title } from "assets/jss/material-kit-react.js";
+import customCheckboxRadioSwitch from "assets/jss/material-kit-react/customCheckboxRadioSwitch.js";
 
 const basicsStyle = {
   sections: {

@@ -9,10 +9,10 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
-import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.jsx";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import CustomTabs from "components/CustomTabs/CustomTabs.js";
+import tabsStyle from "assets/jss/material-kit-react/views/componentsSections/tabsStyle.js";
 
 class SectionTabs extends React.Component {
   render() {

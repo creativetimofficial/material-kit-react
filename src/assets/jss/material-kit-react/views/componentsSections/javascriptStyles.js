@@ -1,8 +1,8 @@
-import { container, title } from "assets/jss/material-kit-react.jsx";
+import { container, title } from "assets/jss/material-kit-react.js";
 
-import modalStyle from "assets/jss/material-kit-react/modalStyle.jsx";
-import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.jsx";
-import popoverStyles from "assets/jss/material-kit-react/popoverStyles.jsx";
+import modalStyle from "assets/jss/material-kit-react/modalStyle.js";
+import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.js";
+import popoverStyles from "assets/jss/material-kit-react/popoverStyles.js";
 
 const javascriptStyles = {
   section: {
