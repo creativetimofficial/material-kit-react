@@ -435,9 +435,7 @@ class Cards extends React.Component {
         <p>
           You will find the styles for these components in
           <br />
-          <code>
-            src/assets/jss/material-kit-react/components/cardStyle.js
-          </code>
+          <code>src/assets/jss/material-kit-react/components/cardStyle.js</code>
           <br />
           <code>
             src/assets/jss/material-kit-react/components/cardHeaderStyle.js
