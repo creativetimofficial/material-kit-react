@@ -5,13 +5,16 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 
-import paginationStyle from "assets/jss/material-kit-react/components/paginationStyle.js";
+import styles from "assets/jss/material-kit-react/components/paginationStyle.js";
 
-function Pagination({ ...props }) {
-  const { classes, pages, color } = props;
+const useStyles = makeStyles(styles);
+
+export default function Pagination(props) {
+  const classes = useStyles();
+  const { pages, color } = props;
   return (
     <ul className={classes.pagination}>
       {pages.map((prop, key) => {
@@ -46,7 +49,7 @@ Pagination.defaultProps = {
 };
 
 Pagination.propTypes = {
-  classes: PropTypes.object.isRequired,
+  
   pages: PropTypes.arrayOf(
     PropTypes.shape({
       active: PropTypes.bool,
@@ -60,5 +63,3 @@ Pagination.propTypes = {
   ).isRequired,
   color: PropTypes.oneOf(["primary", "info", "success", "warning", "danger"])
 };
-
-export default withStyles(paginationStyle)(Pagination);

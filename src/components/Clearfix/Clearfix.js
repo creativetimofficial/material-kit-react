@@ -25,5 +25,5 @@ export default function Clearfix() {
 }
 
 Clearfix.propTypes = {
-  classes: PropTypes.object.isRequired
+  
 };

@@ -4,16 +4,18 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
 
-import customInputStyle from "assets/jss/material-kit-react/components/customInputStyle.js";
+import styles from "assets/jss/material-kit-react/components/customInputStyle.js";
 
-function CustomInput({ ...props }) {
+const useStyles = makeStyles(styles);
+
+export default function CustomInput(props) {
+  const classes = useStyles();
   const {
-    classes,
     formControlProps,
     labelText,
     id,
@@ -77,7 +79,7 @@ function CustomInput({ ...props }) {
 }
 
 CustomInput.propTypes = {
-  classes: PropTypes.object.isRequired,
+  
   labelText: PropTypes.node,
   labelProps: PropTypes.object,
   id: PropTypes.string,
@@ -88,5 +90,3 @@ CustomInput.propTypes = {
   success: PropTypes.bool,
   white: PropTypes.bool
 };
-
-export default withStyles(customInputStyle)(CustomInput);

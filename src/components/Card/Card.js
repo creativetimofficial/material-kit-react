@@ -29,7 +29,7 @@ export default function Card(props) {
 }
 
 Card.propTypes = {
-  classes: PropTypes.object.isRequired,
+  
   className: PropTypes.string,
   plain: PropTypes.bool,
   carousel: PropTypes.bool,

@@ -4,12 +4,15 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 
-import infoStyle from "assets/jss/material-kit-react/components/infoStyle.js";
+import styles from "assets/jss/material-kit-react/components/infoStyle.js";
 
-function InfoArea({ ...props }) {
-  const { classes, title, description, iconColor, vertical } = props;
+const useStyles = makeStyles(styles);
+
+export default function InfoArea(props) {
+  const classes = useStyles();
+  const { title, description, iconColor, vertical } = props;
   const iconWrapper = classNames({
     [classes.iconWrapper]: true,
     [classes[iconColor]]: true,
@@ -37,7 +40,7 @@ InfoArea.defaultProps = {
 };
 
 InfoArea.propTypes = {
-  classes: PropTypes.object.isRequired,
+  
   icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -52,5 +55,3 @@ InfoArea.propTypes = {
   ]),
   vertical: PropTypes.bool
 };
-
-export default withStyles(infoStyle)(InfoArea);

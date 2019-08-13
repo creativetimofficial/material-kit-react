@@ -22,7 +22,7 @@ Badge.defaultProps = {
 };
 
 Badge.propTypes = {
-  classes: PropTypes.object.isRequired,
+
   color: PropTypes.oneOf([
     "primary",
     "warning",

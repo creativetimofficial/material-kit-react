@@ -3,13 +3,16 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import LinearProgress from "@material-ui/core/LinearProgress";
 // core components
-import customLinearProgressStyle from "assets/jss/material-kit-react/components/customLinearProgressStyle.js";
+import styles from "assets/jss/material-kit-react/components/customLinearProgressStyle.js";
 
-function CustomLinearProgress({ ...props }) {
-  const { classes, color, ...rest } = props;
+const useStyles = makeStyles(styles);
+
+export default function CustomLinearProgress(props) {
+  const classes = useStyles();
+  const { color, ...rest } = props;
   return (
     <LinearProgress
       {...rest}
@@ -26,7 +29,7 @@ CustomLinearProgress.defaultProps = {
 };
 
 CustomLinearProgress.propTypes = {
-  classes: PropTypes.object.isRequired,
+  
   color: PropTypes.oneOf([
     "primary",
     "warning",
@@ -37,5 +40,3 @@ CustomLinearProgress.propTypes = {
     "gray"
   ])
 };
-
-export default withStyles(customLinearProgressStyle)(CustomLinearProgress);

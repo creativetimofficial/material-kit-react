@@ -27,7 +27,7 @@ export default function CardFooter(props) {
 }
 
 CardFooter.propTypes = {
-  classes: PropTypes.object.isRequired,
+  
   className: PropTypes.string,
   children: PropTypes.node
 };
