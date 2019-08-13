@@ -87,6 +87,5 @@ export default function Footer(props) {
 }
 
 Footer.propTypes = {
-
   whiteFont: PropTypes.bool
 };

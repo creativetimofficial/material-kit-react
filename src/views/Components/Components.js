@@ -1,12 +1,10 @@
 import React from "react";
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 // core components
 import Header from "components/Header/Header.js";
@@ -30,68 +28,63 @@ import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
-import componentsStyle from "assets/jss/material-kit-react/views/components.js";
+import styles from "assets/jss/material-kit-react/views/components.js";
 
-class Components extends React.Component {
-  render() {
-    const { classes, ...rest } = this.props;
-    return (
-      <div>
-        <Header
-          brand="Material Kit React"
-          rightLinks={<HeaderLinks />}
-          fixed
-          color="transparent"
-          changeColorOnScroll={{
-            height: 400,
-            color: "white"
-          }}
-          {...rest}
-        />
-        <Parallax image={require("assets/img/bg4.jpg")}>
-          <div className={classes.container}>
-            <GridContainer>
-              <GridItem>
-                <div className={classes.brand}>
-                  <h1 className={classes.title}>Material Kit React.</h1>
-                  <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
-                  </h3>
-                </div>
-              </GridItem>
-            </GridContainer>
-          </div>
-        </Parallax>
+const useStyles = makeStyles(styles);
 
-        <div className={classNames(classes.main, classes.mainRaised)}>
-          <SectionBasics />
-          <SectionNavbars />
-          <SectionTabs />
-          <SectionPills />
-          <SectionNotifications />
-          <SectionTypography />
-          <SectionJavascript />
-          <SectionCarousel />
-          <SectionCompletedExamples />
-          <SectionLogin />
-          <GridItem md={12} className={classes.textCenter}>
-            <Link to={"/login-page"} className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                View Login Page
-              </Button>
-            </Link>
-          </GridItem>
-          <SectionExamples />
-          <SectionDownload />
+export default function Components(props) {
+  const classes = useStyles();
+  const { ...rest } = props;
+  return (
+    <div>
+      <Header
+        brand="Material Kit React"
+        rightLinks={<HeaderLinks />}
+        fixed
+        color="transparent"
+        changeColorOnScroll={{
+          height: 400,
+          color: "white"
+        }}
+        {...rest}
+      />
+      <Parallax image={require("assets/img/bg4.jpg")}>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem>
+              <div className={classes.brand}>
+                <h1 className={classes.title}>Material Kit React.</h1>
+                <h3 className={classes.subtitle}>
+                  A Badass Material-UI Kit based on Material Design.
+                </h3>
+              </div>
+            </GridItem>
+          </GridContainer>
         </div>
-        <Footer />
+      </Parallax>
+
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <SectionBasics />
+        <SectionNavbars />
+        <SectionTabs />
+        <SectionPills />
+        <SectionNotifications />
+        <SectionTypography />
+        <SectionJavascript />
+        <SectionCarousel />
+        <SectionCompletedExamples />
+        <SectionLogin />
+        <GridItem md={12} className={classes.textCenter}>
+          <Link to={"/login-page"} className={classes.link}>
+            <Button color="primary" size="lg" simple>
+              View Login Page
+            </Button>
+          </Link>
+        </GridItem>
+        <SectionExamples />
+        <SectionDownload />
       </div>
-    );
-  }
+      <Footer />
+    </div>
+  );
 }
-
-Components.propTypes = {
-  classes: PropTypes.object
-};
-
-export default withStyles(componentsStyle)(Components);

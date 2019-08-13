@@ -49,7 +49,6 @@ Pagination.defaultProps = {
 };
 
 Pagination.propTypes = {
-  
   pages: PropTypes.arrayOf(
     PropTypes.shape({
       active: PropTypes.bool,

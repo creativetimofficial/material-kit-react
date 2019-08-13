@@ -1,6 +1,4 @@
 import React from "react";
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
 
 // mterial-ui components
 import { makeStyles } from "@material-ui/core/styles";
@@ -24,6 +22,4 @@ export default function Clearfix() {
   return <div className={classes.clearfix} />;
 }
 
-Clearfix.propTypes = {
-  
-};
+Clearfix.propTypes = {};

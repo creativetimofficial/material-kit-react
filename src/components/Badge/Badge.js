@@ -22,7 +22,6 @@ Badge.defaultProps = {
 };
 
 Badge.propTypes = {
-
   color: PropTypes.oneOf([
     "primary",
     "warning",

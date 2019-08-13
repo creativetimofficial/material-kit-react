@@ -29,7 +29,6 @@ CustomLinearProgress.defaultProps = {
 };
 
 CustomLinearProgress.propTypes = {
-  
   color: PropTypes.oneOf([
     "primary",
     "warning",

@@ -105,7 +105,6 @@ NavPills.defaultProps = {
 };
 
 NavPills.propTypes = {
-
   // index of the default active pill
   active: PropTypes.number,
   tabs: PropTypes.arrayOf(

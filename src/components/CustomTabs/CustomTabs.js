@@ -83,7 +83,6 @@ export default function CustomTabs(props) {
 }
 
 CustomTabs.propTypes = {
-
   headerColor: PropTypes.oneOf([
     "warning",
     "success",

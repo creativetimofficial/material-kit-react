@@ -31,7 +31,6 @@ GridContainer.defaultProps = {
 };
 
 GridContainer.propTypes = {
-  
   children: PropTypes.node,
   className: PropTypes.string
 };

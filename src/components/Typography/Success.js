@@ -19,6 +19,5 @@ export default function Success(props) {
 }
 
 Success.propTypes = {
-  
   children: PropTypes.node
 };

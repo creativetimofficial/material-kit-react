@@ -112,7 +112,6 @@ Header.defaultProp = {
 };
 
 Header.propTypes = {
-
   color: PropTypes.oneOf([
     "primary",
     "info",
