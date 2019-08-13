@@ -1,20 +1,19 @@
 # Change Log
 
 ## [1.8.0] date
-### Warning
-** If needed **
 ### Bug fixing
-
+- Rewrote the ISSUE_TEMPLATE
+- Deleted the copyright comments from all files, we only need to keep them inside our index.js and index.html
+- Added script that adds copyrights to the built app
+- Renamed all the files from `.jsx` to `.js`
+- Changed the `withStyles` function from Material-UI with the `makeStyles` function (integration with other frameworks should now be easy)
+- React Hooks is now supported
 ### Major style changes
-
+- `src/assets/scss/plugins/_plugin-nouislider.scss`
 ### Deleted components
-
 ### Added components
-
 ### Deleted dependencies
-
 ### Added dependencies
-
 ### Updated dependencies
 ```
 @material-ui/core                          4.1.0   →    4.3.2

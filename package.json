@@ -28,15 +28,17 @@
     "@babel/preset-react": "7.0.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
-    "prettier": "1.18.2",
-    "eslint-plugin-react": "7.14.3"
+    "eslint-plugin-react": "7.14.3",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "prettier": "1.18.2"
   },
   "optionalDependencies": {
     "typescript": "3.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
