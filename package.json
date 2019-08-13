@@ -5,22 +5,22 @@
   "private": true,
   "main": "dist/index.js",
   "dependencies": {
-    "@material-ui/core": "4.1.0",
-    "@material-ui/icons": "4.1.0",
+    "@material-ui/core": "4.3.2",
+    "@material-ui/icons": "4.2.1",
     "chai": "^4.0.2",
     "chai-webdriverio": "^0.4.1",
     "classnames": "2.2.6",
     "history": "4.9.0",
     "moment": "2.24.0",
     "node-sass": "4.12.0",
-    "nouislider": "13.1.5",
+    "nouislider": "14.0.2",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-datetime": "2.16.3",
-    "react-dom": "16.8.6",
+    "react-dom": "16.9.0",
     "react-router-dom": "5.0.1",
-    "react-scripts": "3.0.1",
-    "react-slick": "0.24.0",
+    "react-scripts": "3.1.0",
+    "react-slick": "0.25.2",
     "react-swipeable-views": "0.13.3",
     "reg-keygen-git-hash-plugin": "^0.7.16",
     "reg-notify-github-plugin": "^0.7.19",
@@ -38,16 +38,20 @@
     "webdriverio": "^4.14.1"
   },
   "devDependencies": {
-    "@babel/cli": "7.4.4",
-    "@babel/plugin-proposal-class-properties": "7.4.4",
-    "@babel/preset-env": "7.4.5",
+    "@babel/cli": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.5.5",
     "@babel/preset-react": "7.0.0",
     "reg-keygen-git-hash-plugin": "^0.7.16",
     "reg-notify-github-plugin": "^0.7.21",
-    "reg-publish-s3-plugin": "^0.7.18"
+    "reg-publish-s3-plugin": "^0.7.18",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "prettier": "1.18.2",
+    "eslint-plugin-react": "7.14.3"
   },
   "optionalDependencies": {
-    "typescript": "3.5.1"
+    "typescript": "3.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
