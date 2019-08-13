@@ -18,7 +18,7 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 // import { * } from '@material-ui/icons';
 
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -36,12 +36,14 @@ const styles = {
   }
 };
 
+const useStyles = makeStyles(styles);
+
 const codeDropdown = `import React from 'react';
 
 import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
 import Badge from 'components/Badge/Badge.js';
 
-function Dropdown({...props}){
+export default function Dropdown(){
   return (
     <div>
       <CustomDropdown
@@ -58,16 +60,13 @@ function Dropdown({...props}){
       />
     </div>
   );
-}
-
-export default Dropdown;
-`;
+}`;
 
 const codeDropup = `import React from 'react';
 
 import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
 
-function Dropdup({...props}){
+export default function Dropdup(){
   return (
     <CustomDropdown
       dropup
@@ -88,10 +87,7 @@ function Dropdup({...props}){
       ]}
     />
   );
-}
-
-export default Dropdup;
-`;
+}`;
 
 const codeProps = `CustomDropdown.defaultProps = {
   caret: true,
@@ -112,8 +108,8 @@ CustomDropdown.propTypes = {
   noLiPadding: PropTypes.bool,
 };`;
 
-function Dropdown({ ...props }) {
-  const { classes } = props;
+export default function Dropdown() {
+  const classes = useStyles();
   return (
     <div>
       <h1>Dropdown and Dropup</h1>
@@ -179,5 +175,3 @@ function Dropdown({ ...props }) {
     </div>
   );
 }
-
-export default withStyles(styles)(Dropdown);
