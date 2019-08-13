@@ -4,14 +4,17 @@ import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import cardStyle from "assets/jss/material-kit-react/components/cardStyle.js";
+import styles from "assets/jss/material-kit-react/components/cardStyle.js";
 
-function Card({ ...props }) {
-  const { classes, className, children, plain, carousel, ...rest } = props;
+const useStyles = makeStyles(styles);
+
+export default function Card(props) {
+  const classes = useStyles();
+  const { className, children, plain, carousel, ...rest } = props;
   const cardClasses = classNames({
     [classes.card]: true,
     [classes.cardPlain]: plain,
@@ -32,5 +35,3 @@ Card.propTypes = {
   carousel: PropTypes.bool,
   children: PropTypes.node
 };
-
-export default withStyles(cardStyle)(Card);
