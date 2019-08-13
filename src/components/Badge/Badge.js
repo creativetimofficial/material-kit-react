@@ -3,12 +3,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 
-import badgeStyle from "assets/jss/material-kit-react/components/badgeStyle.js";
+import styles from "assets/jss/material-kit-react/components/badgeStyle.js";
 
-function Badge({ ...props }) {
-  const { classes, color, children } = props;
+const useStyles = makeStyles(styles);
+
+export default function Badge(props) {
+  const classes = useStyles();
+  const { color, children } = props;
   return (
     <span className={classes.badge + " " + classes[color]}>{children}</span>
   );
@@ -31,5 +34,3 @@ Badge.propTypes = {
   ]),
   children: PropTypes.node
 };
-
-export default withStyles(badgeStyle)(Badge);
