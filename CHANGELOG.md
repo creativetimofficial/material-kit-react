@@ -1,5 +1,37 @@
 # Change Log
 
+## [1.8.0] date
+### Warning
+** If needed **
+### Bug fixing
+
+### Major style changes
+
+### Deleted components
+
+### Added components
+
+### Deleted dependencies
+
+### Added dependencies
+
+### Updated dependencies
+```
+@material-ui/core                          4.1.0   →    4.3.2
+@material-ui/icons                         4.1.0   →    4.2.1
+nouislider                                13.1.5   →   14.0.2
+react                                     16.8.6   →   16.9.0
+react-dom                                 16.8.6   →   16.9.0
+react-scripts                              3.0.1   →    3.1.0
+react-slick                               0.24.0   →   0.25.2
+@babel/cli                                 7.4.4   →    7.5.5
+@babel/plugin-proposal-class-properties    7.4.4   →    7.5.5
+@babel/preset-env                          7.4.5   →    7.5.5
+eslint-config-prettier                     4.3.0   →    6.0.0
+eslint-plugin-react                       7.13.0   →   7.14.3
+typescript                                 3.5.1   →    3.5.3
+```
+
 ## [1.7.0] 2019-06-19
 ### Warning
 **We've skipped versions 1.5.0, 1.6.0 so that all React Material products would be on the same version.**
