@@ -3,9 +3,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // mterial-ui components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const style = {
+const styles = {
   clearfix: {
     "&:after,&:before": {
       display: "table",
@@ -17,13 +17,13 @@ const style = {
   }
 };
 
-function Clearfix({ ...props }) {
-  const { classes } = props;
+const useStyles = makeStyles(styles);
+
+export default function Clearfix() {
+  const classes = useStyles();
   return <div className={classes.clearfix} />;
 }
 
 Clearfix.propTypes = {
   classes: PropTypes.object.isRequired
 };
-
-export default withStyles(style)(Clearfix);
