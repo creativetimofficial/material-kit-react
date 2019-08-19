@@ -21,7 +21,7 @@ import { createHashHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 import ReactPixel from "react-facebook-pixel";
 
-import "assets/scss/material-kit-react.scss?v=1.7.0";
+import "assets/scss/material-kit-react.scss?v=1.8.0";
 
 import "react-github-button/assets/style.css";
 
