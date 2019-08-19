@@ -20,7 +20,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
 // material-ui components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -41,23 +41,75 @@ const styles = {
   }
 };
 
+const useStyles = makeStyles(styles);
+
 const tooltip = `import React from "react";
 // material-ui components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 // core components
 import Button from "components/CustomButtons/Button.js";
 
 
-import tooltipsStyle from "assets/jss/material-kit-react/tooltipsStyle.js";
+import styles from "assets/jss/material-kit-react/tooltipsStyle.js";
 
-class Tooltips extends React.Component {
-  render() {
-    const { classes } = this.props;
-    return (
-      <div>
-        <h1>Tooltips</h1>
-        <h2>Example</h2>
+const useStyles = makeStyles(styles);
+
+export default function Tooltips(){
+  const classes = useStyles();
+  return (
+    <div>
+      <h1>Tooltips</h1>
+      <h2>Example</h2>
+      <Tooltip
+        id="tooltip-left"
+        title="Tooltip on left"
+        placement="left"
+        classes={{ tooltip: classes.tooltip }}
+      >
+        <Button>On left</Button>
+      </Tooltip>
+      <Tooltip
+        id="tooltip-top"
+        title="Tooltip on top"
+        placement="top"
+        classes={{ tooltip: classes.tooltip }}
+      >
+        <Button>On top</Button>
+      </Tooltip>
+      <Tooltip
+        id="tooltip-bottom"
+        title="Tooltip on bottom"
+        placement="bottom"
+        classes={{ tooltip: classes.tooltip }}
+      >
+        <Button>On bottom</Button>
+      </Tooltip>
+      <Tooltip
+        id="tooltip-right"
+        title="Tooltip on right"
+        placement="right"
+        classes={{ tooltip: classes.tooltip }}
+      >
+        <Button>On right</Button>
+      </Tooltip>
+    </div>
+  );
+}`;
+
+export default function Tooltips() {
+  const classes = useStyles();
+  return (
+    <div>
+      <h1>Tooltips</h1>
+      <h2>Styles</h2>
+      <p>
+        You will find all the styles for these components in
+        <br />
+        <code>src/assets/jss/material-kit-react/tooltipsStyle.js</code>.
+      </p>
+      <h2>Example</h2>
+      <div className={classes.bdExample}>
         <Tooltip
           id="tooltip-left"
           title="Tooltip on left"
@@ -91,77 +143,20 @@ class Tooltips extends React.Component {
           <Button>On right</Button>
         </Tooltip>
       </div>
-    );
-  }
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {tooltip}
+      </SyntaxHighlighter>
+      <h2>Props</h2>
+      <p>
+        Please check out the{" "}
+        <a
+          href="https://material-ui-next.com/demos/tooltips/?ref=creativetim"
+          target="_blank"
+        >
+          official material-ui documentation
+        </a>
+        .
+      </p>
+    </div>
+  );
 }
-
-export default withStyles(tooltipsStyle)(Tooltips);
-`;
-
-class Tooltips extends React.Component {
-  render() {
-    const { classes } = this.props;
-    return (
-      <div>
-        <h1>Tooltips</h1>
-        <h2>Styles</h2>
-        <p>
-          You will find all the styles for these components in
-          <br />
-          <code>src/assets/jss/material-kit-react/tooltipsStyle.js</code>.
-        </p>
-        <h2>Example</h2>
-        <div className={classes.bdExample}>
-          <Tooltip
-            id="tooltip-left"
-            title="Tooltip on left"
-            placement="left"
-            classes={{ tooltip: classes.tooltip }}
-          >
-            <Button>On left</Button>
-          </Tooltip>
-          <Tooltip
-            id="tooltip-top"
-            title="Tooltip on top"
-            placement="top"
-            classes={{ tooltip: classes.tooltip }}
-          >
-            <Button>On top</Button>
-          </Tooltip>
-          <Tooltip
-            id="tooltip-bottom"
-            title="Tooltip on bottom"
-            placement="bottom"
-            classes={{ tooltip: classes.tooltip }}
-          >
-            <Button>On bottom</Button>
-          </Tooltip>
-          <Tooltip
-            id="tooltip-right"
-            title="Tooltip on right"
-            placement="right"
-            classes={{ tooltip: classes.tooltip }}
-          >
-            <Button>On right</Button>
-          </Tooltip>
-        </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {tooltip}
-        </SyntaxHighlighter>
-        <h2>Props</h2>
-        <p>
-          Please check out the{" "}
-          <a
-            href="https://material-ui-next.com/demos/tooltips/?ref=creativetim"
-            target="_blank"
-          >
-            official material-ui documentation
-          </a>
-          .
-        </p>
-      </div>
-    );
-  }
-}
-
-export default withStyles(styles)(Tooltips);

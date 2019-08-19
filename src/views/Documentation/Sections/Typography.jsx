@@ -59,17 +59,14 @@ const codeExampleQ = `import React from 'react';
 // core components
 import Quote from "components/Typography/Quote.js";
 
-function Typography({...props}){
+export default function Typography(){
   return (
     <Quote
       text="I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
       author=" Kanye West, Musician"
     />
   );
-}
-
-export default Typography;
-`;
+}`;
 const codeExampleC = `import React from 'react';
 // core components
 import Muted from "components/Typography/Muted.js";
@@ -79,7 +76,7 @@ import Success from "components/Typography/Success.js";
 import Warning from "components/Typography/Warning.js";
 import Danger from "components/Typography/Danger.js";
 
-function Typography({...props}){
+export default function Typography(){
   return (
     <div>
       <Muted>
@@ -108,10 +105,7 @@ function Typography({...props}){
       </Danger>
     </div>
   );
-}
-
-export default Typography;
-`;
+}`;
 
 function Typography({ ...props }) {
   const { classes } = props;
