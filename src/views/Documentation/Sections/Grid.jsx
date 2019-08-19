@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/* eslint-disable */
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -56,11 +38,7 @@ function Grid({ ...props }) {
     <div>
       <h1>Grid</h1>
       <p>
-        We've decided to extend the default <code>Grid</code> component from
-        {
-          " "
-          // eslint-disable-next-line
-        }
+        We've decided to extend the default <code>Grid</code> component from{" "}
         <a
           href="https://material-ui-next.com/layout/grid/?ref=creativetim"
           target="_blank"

@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/* eslint-disable */
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -97,10 +79,6 @@ function LinearProgress({ ...props }) {
       <h1>CustomLinearProgress</h1>
       <p>
         We've decided to extend the{" "}
-        {
-          " "
-          // eslint-disable-next-line
-        }
         <a
           href="https://material-ui-next.com/demos/progress/#linear?ref=creativetim"
           target="_blank"
@@ -151,10 +129,6 @@ function LinearProgress({ ...props }) {
       <h2>Props</h2>
       <p>
         You can pass additional props from the{" "}
-        {
-          " "
-          // eslint-disable-next-line
-        }
         <a
           href="https://material-ui-next.com/api/linear-progress/?ref=creativetim"
           target="_blank"

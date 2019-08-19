@@ -1,24 +1,6 @@
-/*!
-
-=========================================================
-* Material Kit React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
-/* eslint-disable */
 const files = `material-kit-react
 ├── CHANGELOG.md
 ├── LICENSE.md
@@ -140,9 +122,6 @@ class Tutorial extends React.Component {
         <p>
           <b>MIT LICENSE</b>
         </p>
-        {
-          // eslint-disable-next-line
-        }
         <p>
           Copyright (c) {new Date().getFullYear()}{" "}
           <a
@@ -221,9 +200,6 @@ class Tutorial extends React.Component {
               NodeJs Official Page
             </a>
           </li>
-          {
-            // eslint-disable-next-line
-          }
           <li>
             Go to{" "}
             <a
@@ -234,9 +210,6 @@ class Tutorial extends React.Component {
             </a>{" "}
             and login into your account
           </li>
-          {
-            // eslint-disable-next-line
-          }
           <li>
             Go to{" "}
             <a
