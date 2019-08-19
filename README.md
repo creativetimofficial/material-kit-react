@@ -229,7 +229,7 @@ We use GitHub Issues as the official bug tracker for the Material Kit. Here are 
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/)
+- Copyright 2019 Creative Tim (https://www.creative-tim.com/)
 
 - Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
 
