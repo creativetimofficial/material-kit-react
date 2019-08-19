@@ -41,7 +41,7 @@ const codeExample = `import React from 'react';
 
 import NavPills from "components/NavPills/NavPills.js";
 
-function Example({...props}){
+export default function Example(){
   return (
     <NavPills
       color="warning"
@@ -105,10 +105,8 @@ function Example({...props}){
       ]}
     />
   );
-}
+}`;
 
-export default Example;
-`;
 const codeProps = `NavPills.defaultProps = {
   active: 0,
   color: "primary"

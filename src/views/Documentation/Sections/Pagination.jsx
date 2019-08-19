@@ -40,7 +40,7 @@ const codeExample = `import React from 'react';
 
 import Paginations from "components/Pagination/Pagination.js";
 
-function Example({...props}){
+export default function Example(){
   return (
     <Paginations
       pages={[
@@ -55,9 +55,7 @@ function Example({...props}){
       color="info"
     />
   );
-}
-
-export default Example;`;
+}`;
 const codeProps = `Pagination.defaultProps = {
   color: "primary"
 };
