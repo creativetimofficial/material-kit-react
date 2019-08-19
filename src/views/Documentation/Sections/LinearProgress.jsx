@@ -40,7 +40,7 @@ const codeExample = `import React from 'react';
 // core components
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
 
-function LinearProgress({...props}){
+export default function LinearProgress(){
   return (
     <div>
       <CustomLinearProgress
@@ -73,10 +73,7 @@ function LinearProgress({...props}){
       />
     </div>
   );
-}
-
-export default LinearProgress;
-`;
+}`;
 const codeProps = `CustomLinearProgress.defaultProps = {
   color: "gray"
 };

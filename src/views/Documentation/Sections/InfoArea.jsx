@@ -46,7 +46,7 @@ import Timeline from "@material-ui/icons/Timeline";
 // core components
 import InfoArea from "components/InfoArea/InfoArea.js";
 
-function Example({...prop}){
+export default function Example(){
   return (
     <InfoArea
       title="Marketing"
@@ -55,9 +55,7 @@ function Example({...prop}){
       iconColor="rose"
     />
   );
-}
-export default Example;
-`;
+}`;
 const codeProps = `InfoArea.defaultProps = {
   iconColor: "gray"
 };

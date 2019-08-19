@@ -19,7 +19,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // material-ui components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { makeStyles } from "@material-ui/core/styles";
 import Slide from "@material-ui/core/Slide";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
@@ -47,6 +47,8 @@ const styles = {
   }
 };
 
+const useStyles = makeStyles(styles);
+
 const codeExample = `import React from 'react';
 // material-ui components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -67,181 +69,133 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
 
-class Modal extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
-  }
-  handleClickOpen(modal) {
-    var x = [];
-    x[modal] = true;
-    this.setState(x);
-  }
-  handleClose(modal) {
-    var x = [];
-    x[modal] = false;
-    this.setState(x);
-  }
-  render(){
-    const { classes } = this.props;
-    return (
-      <div>
-        <Button
-          color="rose"
-          round
-          onClick={() => this.handleClickOpen("modal")}>
+export default function Modal() {
+  const [modal, setModal] = React.useState(false);
+  const classes = useStyles();
+  return (
+    <div>
+        <Button color="rose" round onClick={() => setModal(true)}>
           Modal
         </Button>
-        <Dialog
-          classes={{
-            root: classes.center,
-            paper: classes.modal
-          }}
-          open={this.state.modal}
-          TransitionComponent={Transition}
-          keepMounted
-          onClose={() => this.handleClose("modal")}
-          aria-labelledby="modal-slide-title"
-          aria-describedby="modal-slide-description">
-          <DialogTitle
-            id="classic-modal-slide-title"
-            disableTypography
-            className={classes.modalHeader}>
-            <IconButton
-              className={classes.modalCloseButton}
-              key="close"
-              aria-label="Close"
-              color="inherit"
-              onClick={() => this.handleClose("modal")}>
-              <Close className={classes.modalClose} />
-            </IconButton>
-            <h4 className={classes.modalTitle}>Modal title</h4>
-          </DialogTitle>
-          <DialogContent
-            id="modal-slide-description"
-            className={classes.modalBody}>
-            <h5>Are you sure you want to do this?</h5>
-          </DialogContent>
-          <DialogActions
-            className={classes.modalFooter +" " +classes.modalFooterCenter}>
-            <Button
-              onClick={() => this.handleClose("modal")}
-            >
-              Never Mind
-            </Button>
-            <Button
-              onClick={() => this.handleClose("modal")}
-              color="successNoBackground">
-              Yes
-            </Button>
-          </DialogActions>
-        </Dialog>
       </div>
-    );
-  }
-}
-
-export default withStyles(modalStyle)(Modal);
-`;
+      <Dialog
+        classes={{
+          root: classes.center,
+          paper: classes.modal
+        }}
+        open={modal}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={() => setModal(false)}
+        aria-labelledby="modal-slide-title"
+        aria-describedby="modal-slide-description"
+      >
+        <DialogTitle
+          id="classic-modal-slide-title"
+          disableTypography
+          className={classes.modalHeader}
+        >
+          <IconButton
+            className={classes.modalCloseButton}
+            key="close"
+            aria-label="Close"
+            color="inherit"
+            onClick={() => setModal(false)}
+          >
+            <Close className={classes.modalClose} />
+          </IconButton>
+          <h4 className={classes.modalTitle}>Modal title</h4>
+        </DialogTitle>
+        <DialogContent
+          id="modal-slide-description"
+          className={classes.modalBody}
+        >
+          <h5>Are you sure you want to do this?</h5>
+        </DialogContent>
+        <DialogActions
+          className={classes.modalFooter + " " + classes.modalFooterCenter}
+        >
+          <Button onClick={() => setModal(false)}>Never Mind</Button>
+          <Button onClick={() => setModal(false)} color="success">
+            Yes
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+  );
+}`;
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
 
-class Modal extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false
-    };
-  }
-  handleClickOpen(modal) {
-    var x = [];
-    x[modal] = true;
-    this.setState(x);
-  }
-  handleClose(modal) {
-    var x = [];
-    x[modal] = false;
-    this.setState(x);
-  }
-  render() {
-    const { classes } = this.props;
-    return (
-      <div>
-        <h1>Modal</h1>
-        <p>
-          Use material-ui's dialog component to add dialogs to your site for
-          lightboxes, user notifications, or completely custom content.
-        </p>
-        <h2>Styles</h2>
-        <p>
-          You will find the styles for this component in
-          <br /> <code>src/assets/jss/material-kit-react/modalStyle.js</code>.
-        </p>
-        <h2>Example</h2>
-        <div className={classes.bdExample}>
-          <Button
-            color="rose"
-            round
-            onClick={() => this.handleClickOpen("modal")}
-          >
-            Modal
-          </Button>
-        </div>
-        <Dialog
-          classes={{
-            root: classes.center,
-            paper: classes.modal
-          }}
-          open={this.state.modal}
-          TransitionComponent={Transition}
-          keepMounted
-          onClose={() => this.handleClose("modal")}
-          aria-labelledby="modal-slide-title"
-          aria-describedby="modal-slide-description"
-        >
-          <DialogTitle
-            id="classic-modal-slide-title"
-            disableTypography
-            className={classes.modalHeader}
-          >
-            <IconButton
-              className={classes.modalCloseButton}
-              key="close"
-              aria-label="Close"
-              color="inherit"
-              onClick={() => this.handleClose("modal")}
-            >
-              <Close className={classes.modalClose} />
-            </IconButton>
-            <h4 className={classes.modalTitle}>Modal title</h4>
-          </DialogTitle>
-          <DialogContent
-            id="modal-slide-description"
-            className={classes.modalBody}
-          >
-            <h5>Are you sure you want to do this?</h5>
-          </DialogContent>
-          <DialogActions
-            className={classes.modalFooter + " " + classes.modalFooterCenter}
-          >
-            <Button onClick={() => this.handleClose("modal")}>
-              Never Mind
-            </Button>
-            <Button onClick={() => this.handleClose("modal")} color="success">
-              Yes
-            </Button>
-          </DialogActions>
-        </Dialog>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExample}
-        </SyntaxHighlighter>
+export default function Modal() {
+  const [modal, setModal] = React.useState(false);
+  const classes = useStyles();
+  return (
+    <div>
+      <h1>Modal</h1>
+      <p>
+        Use material-ui's dialog component to add dialogs to your site for
+        lightboxes, user notifications, or completely custom content.
+      </p>
+      <h2>Styles</h2>
+      <p>
+        You will find the styles for this component in
+        <br /> <code>src/assets/jss/material-kit-react/modalStyle.js</code>.
+      </p>
+      <h2>Example</h2>
+      <div className={classes.bdExample}>
+        <Button color="rose" round onClick={() => setModal(true)}>
+          Modal
+        </Button>
       </div>
-    );
-  }
+      <Dialog
+        classes={{
+          root: classes.center,
+          paper: classes.modal
+        }}
+        open={modal}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={() => setModal(false)}
+        aria-labelledby="modal-slide-title"
+        aria-describedby="modal-slide-description"
+      >
+        <DialogTitle
+          id="classic-modal-slide-title"
+          disableTypography
+          className={classes.modalHeader}
+        >
+          <IconButton
+            className={classes.modalCloseButton}
+            key="close"
+            aria-label="Close"
+            color="inherit"
+            onClick={() => setModal(false)}
+          >
+            <Close className={classes.modalClose} />
+          </IconButton>
+          <h4 className={classes.modalTitle}>Modal title</h4>
+        </DialogTitle>
+        <DialogContent
+          id="modal-slide-description"
+          className={classes.modalBody}
+        >
+          <h5>Are you sure you want to do this?</h5>
+        </DialogContent>
+        <DialogActions
+          className={classes.modalFooter + " " + classes.modalFooterCenter}
+        >
+          <Button onClick={() => setModal(false)}>Never Mind</Button>
+          <Button onClick={() => setModal(false)} color="success">
+            Yes
+          </Button>
+        </DialogActions>
+      </Dialog>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeExample}
+      </SyntaxHighlighter>
+    </div>
+  );
 }
-
-export default withStyles(styles)(Modal);
