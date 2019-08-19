@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -294,7 +295,7 @@ export default function Buttons() {
       <h2>Social buttons</h2>
       <div className={classes.bdExample}>
         <Button color="twitter">
-          <i className={" " + " fab fa-twitter"} /> Connect with Twitter
+          <i className={"fab fa-twitter"} /> Connect with Twitter
         </Button>
         <Button color="twitter" justIcon>
           <i className={" fab fa-twitter"} />
@@ -303,14 +304,14 @@ export default function Buttons() {
           <i className={" fab fa-twitter"} />
         </Button>
         <Button color="twitter" simple justIcon>
-          <i className={" " + " fab fa-twitter"} />
+          <i className={"fab fa-twitter"} />
         </Button>
         <Button color="twitter" simple>
-          <i className={" " + " fab fa-twitter"} /> Connect with Twitter
+          <i className={"fab fa-twitter"} /> Connect with Twitter
         </Button>
         <br />
         <Button color="facebook">
-          <i className={" " + " fab fa-facebook-square"} /> Share · 2.2k
+          <i className={"fab fa-facebook-square"} /> Share · 2.2k
         </Button>
         <Button color="facebook" justIcon>
           <i className={" fab fa-facebook"} />
@@ -319,14 +320,14 @@ export default function Buttons() {
           <i className={" fab fa-facebook"} />
         </Button>
         <Button color="facebook" simple justIcon>
-          <i className={" " + " fab fa-facebook-square"} />
+          <i className={"fab fa-facebook-square"} />
         </Button>
         <Button color="facebook" simple>
-          <i className={" " + " fab fa-facebook-square"} /> Share · 2.2k
+          <i className={"fab fa-facebook-square"} /> Share · 2.2k
         </Button>
         <br />
         <Button color="google">
-          <i className={" " + " fab fa-google-plus-square"} /> Share on Google+
+          <i className={"fab fa-google-plus-square"} /> Share on Google+
         </Button>
         <Button color="google" justIcon>
           <i className={" fab fa-google"} />
@@ -335,14 +336,14 @@ export default function Buttons() {
           <i className={" fab fa-google"} />
         </Button>
         <Button color="google" simple justIcon>
-          <i className={" " + " fab fa-google"} />
+          <i className={"fab fa-google"} />
         </Button>
         <Button color="google" simple>
-          <i className={" " + " fab fa-google-square"} /> Share on Google+
+          <i className={"fab fa-google-square"} /> Share on Google+
         </Button>
         <br />
         <Button color="github">
-          <i className={" " + " fab fa-github"} /> Connect with Github
+          <i className={"fab fa-github"} /> Connect with Github
         </Button>
         <Button color="github" justIcon>
           <i className={" fab fa-github"} />
@@ -351,10 +352,10 @@ export default function Buttons() {
           <i className={" fab fa-github"} />
         </Button>
         <Button color="github" simple justIcon>
-          <i className={" " + " fab fa-github"} />
+          <i className={"fab fa-github"} />
         </Button>
         <Button color="github" simple>
-          <i className={" " + " fab fa-github"} /> Connect with Github
+          <i className={"fab fa-github"} /> Connect with Github
         </Button>
       </div>
       <SyntaxHighlighter language="jsx" style={prism}>
