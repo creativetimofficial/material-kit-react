@@ -14,6 +14,8 @@
 ### Added components
 ### Deleted dependencies
 ### Added dependencies
++ gulp@4.0.2
++ gulp-append-prepend@1.0.8
 ### Updated dependencies
 ```
 @material-ui/core                          4.1.0   →    4.3.2
