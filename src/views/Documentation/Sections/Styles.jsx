@@ -3,52 +3,53 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
-const restyledComponents = `components
-├── Badge
-│   └── Badge.jsx
-├── Card
-│   ├── Card.jsx
-│   ├── CardBody.jsx
-│   ├── CardFooter.jsx
-│   └── CardHeader.jsx
-├── Clearfix
-│   └── Clearfix.jsx
-├── CustomButtons
-│   ├── Button.jsx
-│   └── IconButton.jsx
-├── CustomDropdown
-│   └── CustomDropdown.jsx
-├── CustomInput
-│   └── CustomInput.jsx
-├── CustomLinearProgress
-│   └── CustomLinearProgress.jsx
-├── CustomTabs
-│   └── CustomTabs.jsx
-├── Footer
-│   └── Footer.jsx
-├── Grid
-│   ├── GridContainer.jsx
-│   └── GridItem.jsx
-├── Header
-│   ├── Header.jsx
-│   └── HeaderLinks.jsx
-├── InfoArea
-│   └── InfoArea.jsx
-├── NavPills
-│   └── NavPills.jsx
-├── Pagination
-│   └── Pagination.jsx
-├── Snackbar
-│   └── SnackbarContent.jsx
-└── Typography
-    ├── Danger.jsx
-    ├── Info.jsx
-    ├── Muted.jsx
-    ├── Primary.jsx
-    ├── Quote.jsx
-    ├── Small.jsx
-    ├── Success.jsx
-    └── Warning.jsx`;
+const restyledComponents = `├── components
+   ├── Badge
+   │   └── Badge.js
+   ├── Card
+   │   ├── Card.js
+   │   ├── CardBody.js
+   │   ├── CardFooter.js
+   │   └── CardHeader.js
+   ├── Clearfix
+   │   └── Clearfix.js
+   ├── CustomButtons
+   │   └── Button.js
+   ├── CustomDropdown
+   │   └── CustomDropdown.js
+   ├── CustomInput
+   │   └── CustomInput.js
+   ├── CustomLinearProgress
+   │   └── CustomLinearProgress.js
+   ├── CustomTabs
+   │   └── CustomTabs.js
+   ├── Footer
+   │   └── Footer.js
+   ├── Grid
+   │   ├── GridContainer.js
+   │   └── GridItem.js
+   ├── Header
+   │   ├── Header.js
+   │   └── HeaderLinks.js
+   ├── InfoArea
+   │   └── InfoArea.js
+   ├── NavPills
+   │   └── NavPills.js
+   ├── Pagination
+   │   └── Pagination.js
+   ├── Parallax
+   │   └── Parallax.js
+   ├── Snackbar
+   │   └── SnackbarContent.js
+   └── Typography
+       ├── Danger.js
+       ├── Info.js
+       ├── Muted.js
+       ├── Primary.js
+       ├── Quote.js
+       ├── Small.js
+       ├── Success.js
+       └── Warning.js`;
 
 class Styles extends React.Component {
   render() {

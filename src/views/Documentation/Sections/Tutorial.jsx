@@ -5,18 +5,6 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 const files = `material-kit-react
 .
 ├── CHANGELOG.md
-├── Documentation
-│   ├── assets
-│   │   ├── css
-│   │   │   ├── bootstrap.min.css
-│   │   │   ├── demo-documentation.css
-│   │   │   └── material-dashboard.css
-│   │   ├── img
-│   │   │   └── faces
-│   │   └── js
-│   │       ├── bootstrap.min.js
-│   │       └── jquery-3.2.1.min.js
-│   └── tutorial-components.html
 ├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
 ├── README.md
@@ -24,11 +12,20 @@ const files = `material-kit-react
 ├── gulpfile.js
 ├── jsconfig.json
 ├── package.json
+├── Documentation
+│   ├── assets
+│   │   ├── css
+│   │   ├── img
+│   │   │   └── faces
+│   │   └── js
+│   └── tutorial-components.html
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
+    ├── index.js
+    ├── logo.svg
     ├── assets
     │   ├── css
     │   │   └── material-kit-react.css.map
@@ -38,74 +35,16 @@ const files = `material-kit-react
     │   ├── jss
     │   │   ├── material-kit-react
     │   │   │   ├── components
-    │   │   │   │   ├── badgeStyle.js
-    │   │   │   │   ├── buttonStyle.js
-    │   │   │   │   ├── cardBodyStyle.js
-    │   │   │   │   ├── cardFooterStyle.js
-    │   │   │   │   ├── cardHeaderStyle.js
-    │   │   │   │   ├── cardStyle.js
-    │   │   │   │   ├── customDropdownStyle.js
-    │   │   │   │   ├── customInputStyle.js
-    │   │   │   │   ├── customLinearProgressStyle.js
-    │   │   │   │   ├── customTabsStyle.js
-    │   │   │   │   ├── footerStyle.js
-    │   │   │   │   ├── headerLinksStyle.js
-    │   │   │   │   ├── headerStyle.js
-    │   │   │   │   ├── infoStyle.js
-    │   │   │   │   ├── navPillsStyle.js
-    │   │   │   │   ├── paginationStyle.js
-    │   │   │   │   ├── parallaxStyle.js
-    │   │   │   │   ├── snackbarContentStyle.js
-    │   │   │   │   └── typographyStyle.js
-    │   │   │   ├── customCheckboxRadioSwitch.js
-    │   │   │   ├── imagesStyles.js
-    │   │   │   ├── modalStyle.js
-    │   │   │   ├── popoverStyles.js
-    │   │   │   ├── tooltipsStyle.js
     │   │   │   └── views
-    │   │   │       ├── components.js
     │   │   │       ├── componentsSections
-    │   │   │       │   ├── basicsStyle.js
-    │   │   │       │   ├── carouselStyle.js
-    │   │   │       │   ├── completedStyle.js
-    │   │   │       │   ├── downloadStyle.js
-    │   │   │       │   ├── exampleStyle.js
-    │   │   │       │   ├── javascriptStyles.js
-    │   │   │       │   ├── loginStyle.js
-    │   │   │       │   ├── navbarsStyle.js
-    │   │   │       │   ├── notificationsStyles.js
-    │   │   │       │   ├── pillsStyle.js
-    │   │   │       │   ├── tabsStyle.js
-    │   │   │       │   └── typographyStyle.js
-    │   │   │       ├── landingPage.js
     │   │   │       ├── landingPageSections
-    │   │   │       │   ├── productStyle.js
-    │   │   │       │   ├── teamStyle.js
-    │   │   │       │   └── workStyle.js
-    │   │   │       ├── loginPage.js
-    │   │   │       └── profilePage.js
     │   │   └── material-kit-react.js
     │   └── scss
     │       ├── core
-    │       │   ├── _misc.scss
-    │       │   ├── _mixins.scss
-    │       │   ├── _variables.scss
     │       │   ├── mixins
-    │       │   │   └── _colored-shadows.scss
     │       │   └── variables
-    │       │       ├── _bootstrap-material-design-base.scss
-    │       │       ├── _bootstrap-material-design.scss
-    │       │       ├── _brand.scss
-    │       │       ├── _colors-map.scss
-    │       │       ├── _colors.scss
-    │       │       ├── _functions.scss
-    │       │       ├── _shadow.scss
-    │       │       └── _variables.scss
-    │       ├── material-kit-react.scss
-    │       └── plugins
-    │           ├── _plugin-nouislider.scss
-    │           ├── _plugin-react-datetime.scss
-    │           └── _plugin-react-slick.scss
+    │       ├── plugins
+    │       └── material-kit-react.scss
     ├── components
     │   ├── Badge
     │   │   └── Badge.js
@@ -153,8 +92,6 @@ const files = `material-kit-react
     │       ├── Small.js
     │       ├── Success.js
     │       └── Warning.js
-    ├── index.js
-    ├── logo.svg
     └── views
         ├── Components
         │   ├── Components.js
