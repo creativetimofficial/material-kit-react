@@ -39,7 +39,7 @@ export default function Parallax(props) {
   const classes = useStyles();
   const parallaxClasses = classNames({
     [classes.parallax]: true,
-    [classes[filter + "Color"]]: filter !== undefined,
+    [classes.filter]: filter,
     [classes.small]: small,
     [className]: className !== undefined
   });
