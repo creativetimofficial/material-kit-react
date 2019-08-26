@@ -79,20 +79,20 @@ Within the download you'll find the following directories and files:
 material-kit-react
 .
 ├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── bower.json
+├── gulpfile.js
+├── jsconfig.json
+├── package.json
 ├── Documentation
 │   ├── assets
 │   │   ├── css
 │   │   ├── img
 │   │   │   └── faces
 │   │   └── js
-│   │       ├── bootstrap.min.js
-│   │       └── jquery-3.2.1.min.js
 │   └── tutorial-components.html
-├── ISSUE_TEMPLATE.md
-├── LICENSE.md
-├── README.md
-├── bower.json
-├── package.json
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
@@ -102,6 +102,7 @@ material-kit-react
     ├── logo.svg
     ├── assets
     │   ├── css
+    │   │   └── material-kit-react.css.map
     │   ├── img
     │   │   ├── examples
     │   │   └── faces
@@ -111,7 +112,7 @@ material-kit-react
     │   │   │   └── views
     │   │   │       ├── componentsSections
     │   │   │       ├── landingPageSections
-    │   │   └── material-kit-react.jsx
+    │   │   └── material-kit-react.js
     │   └── scss
     │       ├── core
     │       │   ├── mixins
@@ -120,77 +121,77 @@ material-kit-react
     │       └── material-kit-react.scss
     ├── components
     │   ├── Badge
-    │   │   └── Badge.jsx
+    │   │   └── Badge.js
     │   ├── Card
-    │   │   ├── Card.jsx
-    │   │   ├── CardBody.jsx
-    │   │   ├── CardFooter.jsx
-    │   │   └── CardHeader.jsx
+    │   │   ├── Card.js
+    │   │   ├── CardBody.js
+    │   │   ├── CardFooter.js
+    │   │   └── CardHeader.js
     │   ├── Clearfix
-    │   │   └── Clearfix.jsx
+    │   │   └── Clearfix.js
     │   ├── CustomButtons
-    │   │   └── Button.jsx
+    │   │   └── Button.js
     │   ├── CustomDropdown
-    │   │   └── CustomDropdown.jsx
+    │   │   └── CustomDropdown.js
     │   ├── CustomInput
-    │   │   └── CustomInput.jsx
+    │   │   └── CustomInput.js
     │   ├── CustomLinearProgress
-    │   │   └── CustomLinearProgress.jsx
+    │   │   └── CustomLinearProgress.js
     │   ├── CustomTabs
-    │   │   └── CustomTabs.jsx
+    │   │   └── CustomTabs.js
     │   ├── Footer
-    │   │   └── Footer.jsx
+    │   │   └── Footer.js
     │   ├── Grid
-    │   │   ├── GridContainer.jsx
-    │   │   └── GridItem.jsx
+    │   │   ├── GridContainer.js
+    │   │   └── GridItem.js
     │   ├── Header
-    │   │   ├── Header.jsx
-    │   │   └── HeaderLinks.jsx
+    │   │   ├── Header.js
+    │   │   └── HeaderLinks.js
     │   ├── InfoArea
-    │   │   └── InfoArea.jsx
+    │   │   └── InfoArea.js
     │   ├── NavPills
-    │   │   └── NavPills.jsx
+    │   │   └── NavPills.js
     │   ├── Pagination
-    │   │   └── Pagination.jsx
+    │   │   └── Pagination.js
     │   ├── Parallax
-    │   │   └── Parallax.jsx
+    │   │   └── Parallax.js
     │   ├── Snackbar
-    │   │   └── SnackbarContent.jsx
+    │   │   └── SnackbarContent.js
     │   └── Typography
-    │       ├── Danger.jsx
-    │       ├── Info.jsx
-    │       ├── Muted.jsx
-    │       ├── Primary.jsx
-    │       ├── Quote.jsx
-    │       ├── Small.jsx
-    │       ├── Success.jsx
-    │       └── Warning.jsx
+    │       ├── Danger.js
+    │       ├── Info.js
+    │       ├── Muted.js
+    │       ├── Primary.js
+    │       ├── Quote.js
+    │       ├── Small.js
+    │       ├── Success.js
+    │       └── Warning.js
     └── views
         ├── Components
-        │   ├── Components.jsx
+        │   ├── Components.js
         │   └── Sections
-        │       ├── SectionBasics.jsx
-        │       ├── SectionCarousel.jsx
-        │       ├── SectionCompletedExamples.jsx
-        │       ├── SectionDownload.jsx
-        │       ├── SectionExamples.jsx
-        │       ├── SectionJavascript.jsx
-        │       ├── SectionLogin.jsx
-        │       ├── SectionNavbars.jsx
-        │       ├── SectionNotifications.jsx
-        │       ├── SectionPills.jsx
-        │       ├── SectionTabs.jsx
-        │       └── SectionTypography.jsx
+        │       ├── SectionBasics.js
+        │       ├── SectionCarousel.js
+        │       ├── SectionCompletedExamples.js
+        │       ├── SectionDownload.js
+        │       ├── SectionExamples.js
+        │       ├── SectionJavascript.js
+        │       ├── SectionLogin.js
+        │       ├── SectionNavbars.js
+        │       ├── SectionNotifications.js
+        │       ├── SectionPills.js
+        │       ├── SectionTabs.js
+        │       └── SectionTypography.js
         ├── LandingPage
-        │   ├── LandingPage.jsx
+        │   ├── LandingPage.js
         │   └── Sections
-        │       ├── ProductSection.jsx
-        │       ├── TeamSection.jsx
-        │       └── WorkSection.jsx
+        │       ├── ProductSection.js
+        │       ├── TeamSection.js
+        │       └── WorkSection.js
         ├── LoginPage
-        │   └── LoginPage.jsx
+        │   └── LoginPage.js
         └── ProfilePage
-            └── ProfilePage.jsx
+            └── ProfilePage.js
 ```
 
 
