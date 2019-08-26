@@ -3,116 +3,184 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 const files = `material-kit-react
+.
 ├── CHANGELOG.md
-├── LICENSE.md
-├── README.md
-├── package.json
 ├── Documentation
 │   ├── assets
 │   │   ├── css
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── demo-documentation.css
+│   │   │   └── material-dashboard.css
 │   │   ├── img
 │   │   │   └── faces
 │   │   └── js
+│   │       ├── bootstrap.min.js
+│   │       └── jquery-3.2.1.min.js
 │   └── tutorial-components.html
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── bower.json
+├── gulpfile.js
+├── jsconfig.json
+├── package.json
 ├── public
+│   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
-    ├── index.js
-    ├── logo.svg
-    ├── routes
-    │   └── index.jsx
     ├── assets
+    │   ├── css
+    │   │   └── material-kit-react.css.map
     │   ├── img
-    │   │   └── kit
-    │   │       ├── faces
-    │   │       └── free
-    │   │           └── examples
+    │   │   ├── examples
+    │   │   └── faces
     │   ├── jss
     │   │   ├── material-kit-react
     │   │   │   ├── components
+    │   │   │   │   ├── badgeStyle.js
+    │   │   │   │   ├── buttonStyle.js
+    │   │   │   │   ├── cardBodyStyle.js
+    │   │   │   │   ├── cardFooterStyle.js
+    │   │   │   │   ├── cardHeaderStyle.js
+    │   │   │   │   ├── cardStyle.js
+    │   │   │   │   ├── customDropdownStyle.js
+    │   │   │   │   ├── customInputStyle.js
+    │   │   │   │   ├── customLinearProgressStyle.js
+    │   │   │   │   ├── customTabsStyle.js
+    │   │   │   │   ├── footerStyle.js
+    │   │   │   │   ├── headerLinksStyle.js
+    │   │   │   │   ├── headerStyle.js
+    │   │   │   │   ├── infoStyle.js
+    │   │   │   │   ├── navPillsStyle.js
+    │   │   │   │   ├── paginationStyle.js
+    │   │   │   │   ├── parallaxStyle.js
+    │   │   │   │   ├── snackbarContentStyle.js
+    │   │   │   │   └── typographyStyle.js
+    │   │   │   ├── customCheckboxRadioSwitch.js
+    │   │   │   ├── imagesStyles.js
+    │   │   │   ├── modalStyle.js
+    │   │   │   ├── popoverStyles.js
+    │   │   │   ├── tooltipsStyle.js
     │   │   │   └── views
+    │   │   │       ├── components.js
     │   │   │       ├── componentsSections
-    │   │   │       └── landingPageSections
-    │   │   └── material-kit-react.jsx
+    │   │   │       │   ├── basicsStyle.js
+    │   │   │       │   ├── carouselStyle.js
+    │   │   │       │   ├── completedStyle.js
+    │   │   │       │   ├── downloadStyle.js
+    │   │   │       │   ├── exampleStyle.js
+    │   │   │       │   ├── javascriptStyles.js
+    │   │   │       │   ├── loginStyle.js
+    │   │   │       │   ├── navbarsStyle.js
+    │   │   │       │   ├── notificationsStyles.js
+    │   │   │       │   ├── pillsStyle.js
+    │   │   │       │   ├── tabsStyle.js
+    │   │   │       │   └── typographyStyle.js
+    │   │   │       ├── landingPage.js
+    │   │   │       ├── landingPageSections
+    │   │   │       │   ├── productStyle.js
+    │   │   │       │   ├── teamStyle.js
+    │   │   │       │   └── workStyle.js
+    │   │   │       ├── loginPage.js
+    │   │   │       └── profilePage.js
+    │   │   └── material-kit-react.js
     │   └── scss
     │       ├── core
+    │       │   ├── _misc.scss
+    │       │   ├── _mixins.scss
+    │       │   ├── _variables.scss
     │       │   ├── mixins
+    │       │   │   └── _colored-shadows.scss
     │       │   └── variables
-    │       ├── plugins
-    │       └── material-kit-react.scss
+    │       │       ├── _bootstrap-material-design-base.scss
+    │       │       ├── _bootstrap-material-design.scss
+    │       │       ├── _brand.scss
+    │       │       ├── _colors-map.scss
+    │       │       ├── _colors.scss
+    │       │       ├── _functions.scss
+    │       │       ├── _shadow.scss
+    │       │       └── _variables.scss
+    │       ├── material-kit-react.scss
+    │       └── plugins
+    │           ├── _plugin-nouislider.scss
+    │           ├── _plugin-react-datetime.scss
+    │           └── _plugin-react-slick.scss
     ├── components
     │   ├── Badge
-    │   │   └── Badge.jsx
+    │   │   └── Badge.js
     │   ├── Card
-    │   │   ├── Card.jsx
-    │   │   ├── CardBody.jsx
-    │   │   ├── CardFooter.jsx
-    │   │   └── CardHeader.jsx
+    │   │   ├── Card.js
+    │   │   ├── CardBody.js
+    │   │   ├── CardFooter.js
+    │   │   └── CardHeader.js
     │   ├── Clearfix
-    │   │   └── Clearfix.jsx
+    │   │   └── Clearfix.js
     │   ├── CustomButtons
-    │   │   ├── Button.jsx
-    │   │   └── IconButton.jsx
+    │   │   └── Button.js
     │   ├── CustomDropdown
-    │   │   └── CustomDropdown.jsx
+    │   │   └── CustomDropdown.js
     │   ├── CustomInput
-    │   │   └── CustomInput.jsx
+    │   │   └── CustomInput.js
     │   ├── CustomLinearProgress
-    │   │   └── CustomLinearProgress.jsx
+    │   │   └── CustomLinearProgress.js
     │   ├── CustomTabs
-    │   │   └── CustomTabs.jsx
+    │   │   └── CustomTabs.js
     │   ├── Footer
-    │   │   └── Footer.jsx
+    │   │   └── Footer.js
     │   ├── Grid
-    │   │   ├── GridContainer.jsx
-    │   │   └── GridItem.jsx
+    │   │   ├── GridContainer.js
+    │   │   └── GridItem.js
     │   ├── Header
-    │   │   ├── Header.jsx
-    │   │   └── HeaderLinks.jsx
+    │   │   ├── Header.js
+    │   │   └── HeaderLinks.js
     │   ├── InfoArea
-    │   │   └── InfoArea.jsx
+    │   │   └── InfoArea.js
     │   ├── NavPills
-    │   │   └── NavPills.jsx
+    │   │   └── NavPills.js
     │   ├── Pagination
-    │   │   └── Pagination.jsx
+    │   │   └── Pagination.js
+    │   ├── Parallax
+    │   │   └── Parallax.js
     │   ├── Snackbar
-    │   │   └── SnackbarContent.jsx
+    │   │   └── SnackbarContent.js
     │   └── Typography
-    │       ├── Danger.jsx
-    │       ├── Info.jsx
-    │       ├── Muted.jsx
-    │       ├── Primary.jsx
-    │       ├── Quote.jsx
-    │       ├── Small.jsx
-    │       ├── Success.jsx
-    │       └── Warning.jsx
+    │       ├── Danger.js
+    │       ├── Info.js
+    │       ├── Muted.js
+    │       ├── Primary.js
+    │       ├── Quote.js
+    │       ├── Small.js
+    │       ├── Success.js
+    │       └── Warning.js
+    ├── index.js
+    ├── logo.svg
     └── views
         ├── Components
-        │   ├── Components.jsx
+        │   ├── Components.js
         │   └── Sections
-        │       ├── SectionBasics.jsx
-        │       ├── SectionCarousel.jsx
-        │       ├── SectionCompletedExamples.jsx
-        │       ├── SectionDownload.jsx
-        │       ├── SectionExamples.jsx
-        │       ├── SectionJavascript.jsx
-        │       ├── SectionNavbars.jsx
-        │       ├── SectionNotifications.jsx
-        │       ├── SectionPills.jsx
-        │       ├── SectionSignup.jsx
-        │       ├── SectionTabs.jsx
-        │       └── SectionTypography.jsx
+        │       ├── SectionBasics.js
+        │       ├── SectionCarousel.js
+        │       ├── SectionCompletedExamples.js
+        │       ├── SectionDownload.js
+        │       ├── SectionExamples.js
+        │       ├── SectionJavascript.js
+        │       ├── SectionLogin.js
+        │       ├── SectionNavbars.js
+        │       ├── SectionNotifications.js
+        │       ├── SectionPills.js
+        │       ├── SectionTabs.js
+        │       └── SectionTypography.js
         ├── LandingPage
-        │   ├── LandingPage.jsx
+        │   ├── LandingPage.js
         │   └── Sections
-        │       ├── ProductSection.jsx
-        │       ├── TeamSection.jsx
-        │       └── WorkSection.jsx
-        ├── ProfilePage
-        │   └── ProfilePage.jsx
-        └── SignupPage
-            └── SignupPage.jsx`;
+        │       ├── ProductSection.js
+        │       ├── TeamSection.js
+        │       └── WorkSection.js
+        ├── LoginPage
+        │   └── LoginPage.js
+        └── ProfilePage
+            └── ProfilePage.js`;
 
 class Tutorial extends React.Component {
   render() {
