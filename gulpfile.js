@@ -9,10 +9,10 @@ gulp.task("licenses", async function() {
       gap.prependText(`/*!
 
 =========================================================
-* Now UI Kit PRO React - v1.0.0
+* Material Kit PRO React - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/now-ui-kit-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
 * Coded by Creative Tim
@@ -32,10 +32,10 @@ gulp.task("licenses", async function() {
       gap.prependText(`<!--
 
 =========================================================
-* Now UI Kit PRO React - v1.0.0
+* Material Kit PRO React - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/now-ui-kit-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
 * Coded by Creative Tim
@@ -55,10 +55,10 @@ gulp.task("licenses", async function() {
       gap.prependText(`/*!
 
 =========================================================
-* Now UI Kit PRO React - v1.0.0
+* Material Kit PRO React - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/now-ui-kit-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
 * Coded by Creative Tim
