@@ -38,6 +38,8 @@
     "typescript": "3.5.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
@@ -58,5 +60,6 @@
       "not op_mini all"
     ],
     "development": []
-  }
+  },
+  "homepage": "http://ks6088ts.github.io/sandbox-typescript"
 }
