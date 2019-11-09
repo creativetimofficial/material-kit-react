@@ -29,6 +29,7 @@
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.14.3",
+    "gh-pages": "^2.1.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
     "prettier": "1.18.2"
