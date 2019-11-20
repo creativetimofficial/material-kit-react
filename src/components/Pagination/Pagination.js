@@ -25,8 +25,8 @@ export default function Pagination(props) {
         });
         return (
           <li className={classes.paginationItem} key={key}>
-            {prop.onClick !== undefined ? (
-              <Button onClick={prop.onClick} className={paginationLink}>
+            {props.onClick !== undefined ? (
+              <Button onClick={props.onClick} className={paginationLink}>
                 {prop.text}
               </Button>
             ) : (
