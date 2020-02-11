@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
+import CardMembership from "@material-ui/icons/CardMembership";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
 import { Link } from "react-router-dom";
@@ -47,6 +48,16 @@ export default function HeaderLinks(props) {
             </Link>
           ]}
         />
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="https://www.creative-tim.com/product/material-kit-pro-react?ref=mkr-navbar-upgrade-pro"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          <CardMembership className={classes.icons} /> Upgrade to PRO
+        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
