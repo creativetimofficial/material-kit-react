@@ -23,7 +23,7 @@ const useStyles = makeStyles(styles);
 
 const codeDropdown = `import React from 'react';
 
-import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
+import CustomDropdown from 'components/CustomDropdown/CustomDropdown.js';
 import Badge from 'components/Badge/Badge.js';
 
 export default function Dropdown(){
@@ -47,7 +47,7 @@ export default function Dropdown(){
 
 const codeDropup = `import React from 'react';
 
-import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
+import CustomDropdown from 'components/CustomDropdown/CustomDropdown.js';
 
 export default function Dropdup(){
   return (

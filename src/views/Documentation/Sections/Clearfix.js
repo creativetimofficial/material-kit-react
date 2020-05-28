@@ -17,7 +17,7 @@ export default function ClearExample() {
       </p>
       <p>
         You can see it being used in{" "}
-        <code>src/views/Components/Sections/SectionNotifications.jsx</code>.
+        <code>src/views/Components/Sections/SectionNotifications.js</code>.
       </p>
       <SyntaxHighlighter language="jsx" style={prism}>
         {codeImport}

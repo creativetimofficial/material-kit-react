@@ -16,39 +16,39 @@
 
 */
 // Getting started
-import Tutorial from "views/Documentation/Sections/Tutorial.jsx";
-import Styles from "views/Documentation/Sections/Styles.jsx";
-import LintCommands from "views/Documentation/Sections/LintCommands.jsx";
-import BuildTools from "views/Documentation/Sections/BuildTools.jsx";
+import Tutorial from "views/Documentation/Sections/Tutorial.js";
+import Styles from "views/Documentation/Sections/Styles.js";
+import LintCommands from "views/Documentation/Sections/LintCommands.js";
+import BuildTools from "views/Documentation/Sections/BuildTools.js";
 
 // Components
-import Badges from "views/Documentation/Sections/Badges.jsx";
-import Buttons from "views/Documentation/Sections/Buttons.jsx";
-import Cards from "views/Documentation/Sections/Cards.jsx";
-import CheckboxRadioSwitch from "views/Documentation/Sections/CheckboxRadioSwitch.jsx";
-import Clearfix from "views/Documentation/Sections/Clearfix.jsx";
-import Dropdown from "views/Documentation/Sections/Dropdown.jsx";
-import Footer from "views/Documentation/Sections/Footer.jsx";
-import Grid from "views/Documentation/Sections/Grid.jsx";
-import Icons from "views/Documentation/Sections/Icons.jsx";
-import InfoAreas from "views/Documentation/Sections/InfoArea.jsx";
-import Inputs from "views/Documentation/Sections/Inputs.jsx";
-import LinearProgress from "views/Documentation/Sections/LinearProgress.jsx";
-import Modal from "views/Documentation/Sections/Modal.jsx";
-import Navigation from "views/Documentation/Sections/Navigation.jsx";
-import NavPill from "views/Documentation/Sections/NavPills.jsx";
-import Notifications from "views/Documentation/Sections/Notifications.jsx";
-import Pagination from "views/Documentation/Sections/Pagination.jsx";
-import Parallax from "views/Documentation/Sections/Parallax.jsx";
-import Popovers from "views/Documentation/Sections/Popovers.jsx";
-import Tabs from "views/Documentation/Sections/Tabs.jsx";
-import Tooltips from "views/Documentation/Sections/Tooltips.jsx";
-import Typography from "views/Documentation/Sections/Typography.jsx";
+import Badges from "views/Documentation/Sections/Badges.js";
+import Buttons from "views/Documentation/Sections/Buttons.js";
+import Cards from "views/Documentation/Sections/Cards.js";
+import CheckboxRadioSwitch from "views/Documentation/Sections/CheckboxRadioSwitch.js";
+import Clearfix from "views/Documentation/Sections/Clearfix.js";
+import Dropdown from "views/Documentation/Sections/Dropdown.js";
+import Footer from "views/Documentation/Sections/Footer.js";
+import Grid from "views/Documentation/Sections/Grid.js";
+import Icons from "views/Documentation/Sections/Icons.js";
+import InfoAreas from "views/Documentation/Sections/InfoArea.js";
+import Inputs from "views/Documentation/Sections/Inputs.js";
+import LinearProgress from "views/Documentation/Sections/LinearProgress.js";
+import Modal from "views/Documentation/Sections/Modal.js";
+import Navigation from "views/Documentation/Sections/Navigation.js";
+import NavPill from "views/Documentation/Sections/NavPills.js";
+import Notifications from "views/Documentation/Sections/Notifications.js";
+import Pagination from "views/Documentation/Sections/Pagination.js";
+import Parallax from "views/Documentation/Sections/Parallax.js";
+import Popovers from "views/Documentation/Sections/Popovers.js";
+import Tabs from "views/Documentation/Sections/Tabs.js";
+import Tooltips from "views/Documentation/Sections/Tooltips.js";
+import Typography from "views/Documentation/Sections/Typography.js";
 
 // Plugins
-import Carousel from "views/Documentation/Sections/Carousel.jsx";
-import DateTimePicker from "views/Documentation/Sections/DateTimePicker.jsx";
-import Sliders from "views/Documentation/Sections/Sliders.jsx";
+import Carousel from "views/Documentation/Sections/Carousel.js";
+import DateTimePicker from "views/Documentation/Sections/DateTimePicker.js";
+import Sliders from "views/Documentation/Sections/Sliders.js";
 
 const docRoutes = [
   {
