@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78f616e75da2b61b64ac8e59e5bd49fe",
+    "revision": "f57be2111bda994489423fd5babfa2ce",
     "url": "/material-kit-react/index.html"
   },
   {
-    "revision": "643f99123b386e0df9d7",
-    "url": "/material-kit-react/static/css/2.0afb8a8b.chunk.css"
+    "revision": "e2f3a3730a81113c2838",
+    "url": "/material-kit-react/static/css/2.9538c45e.chunk.css"
   },
   {
-    "revision": "ea813f2d624fdf83d4bf",
-    "url": "/material-kit-react/static/css/main.d5418917.chunk.css"
+    "revision": "efa9fa7616d3b7536ef8",
+    "url": "/material-kit-react/static/css/main.1664ff06.chunk.css"
   },
   {
-    "revision": "643f99123b386e0df9d7",
-    "url": "/material-kit-react/static/js/2.8fd0a2d2.chunk.js"
+    "revision": "e2f3a3730a81113c2838",
+    "url": "/material-kit-react/static/js/2.9897bc4b.chunk.js"
   },
   {
-    "revision": "ea813f2d624fdf83d4bf",
-    "url": "/material-kit-react/static/js/main.10e64364.chunk.js"
+    "revision": "8dbc9bd92b344a5deca62eeacc09fc2d",
+    "url": "/material-kit-react/static/js/2.9897bc4b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "19be84d9d701a2f7c23a",
-    "url": "/material-kit-react/static/js/runtime~main.33b5e752.js"
+    "revision": "efa9fa7616d3b7536ef8",
+    "url": "/material-kit-react/static/js/main.8c24e371.chunk.js"
+  },
+  {
+    "revision": "0b7375d1665bb51de8b5a55275e7e4f3",
+    "url": "/material-kit-react/static/js/main.8c24e371.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "18f9e035c3f3ec1b02a5",
+    "url": "/material-kit-react/static/js/runtime-main.ba1da1ea.js"
   },
   {
     "revision": "f1d71f777331fd7e3de116edf4ee3b67",
