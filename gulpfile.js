@@ -13,7 +13,7 @@ gulp.task("licenses", async function() {
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+* Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
 * Coded by Creative Tim
 
@@ -36,7 +36,7 @@ gulp.task("licenses", async function() {
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+* Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
 * Coded by Creative Tim
 
@@ -59,7 +59,7 @@ gulp.task("licenses", async function() {
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2019 Creative Tim (http://www.creative-tim.com)
+* Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
 * Coded by Creative Tim
 
