@@ -58,6 +58,9 @@ const loginStyle = {
   },
   inputIconsColor: {
     color: "#495057"
+  },
+  card: {
+    filter: 'drop-shadow(5px 5px 10px #000)'
   }
 };
 

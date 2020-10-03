@@ -24,6 +24,12 @@ export default function CustomTabs(props) {
   const handleChange = (event, value) => {
     setValue(value);
   };
+  const handleSwipe = (idGet) => {
+    document.getElementById(idGet).style.color="rgba(0, 0, 0, 0.3)";
+    setTimeout(()=>{
+      document.getElementById(idGet).style.color="rgba(0, 0, 0, 1)";
+    },150);
+  };
   const classes = useStyles();
   const { headerColor, plainTabs, tabs, title, rtlActive } = props;
   const cardTitle = classNames({
@@ -31,12 +37,13 @@ export default function CustomTabs(props) {
     [classes.cardTitleRTL]: rtlActive
   });
   return (
-    <Card plain={plainTabs}>
+    <Card id={props.id} style={{transition: '150ms ease-in-out'}} plain={plainTabs}>
       <CardHeader color={headerColor} plain={plainTabs}>
         {title !== undefined ? <div className={cardTitle}>{title}</div> : null}
         <Tabs
           value={value}
           onChange={handleChange}
+          onClick={handleSwipe.bind(this, props.id)}
           classes={{
             root: classes.tabsRoot,
             indicator: classes.displayNone
