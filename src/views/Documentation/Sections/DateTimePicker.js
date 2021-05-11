@@ -19,7 +19,7 @@ const styles = {
     fontSize: "14px",
     lineHeight: "1.428571429",
     fontWeight: "400",
-    display: "inline-flex"
+    display: "inline-flex",
   },
   bdExample: {
     padding: "1.5rem",
@@ -29,8 +29,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const useStyles = makeStyles(styles);
