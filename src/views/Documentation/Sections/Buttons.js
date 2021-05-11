@@ -13,10 +13,10 @@ const styles = {
   socialButtonsIcons: {
     position: "relative",
     fontSize: "18px",
-    marginTop: "-2px"
+    marginTop: "-2px",
   },
   marginRight: {
-    marginRight: "5px"
+    marginRight: "5px",
   },
   bdExample: {
     padding: "1.5rem",
@@ -26,8 +26,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const useStyles = makeStyles(styles);
