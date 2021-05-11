@@ -4,6 +4,11 @@
 ### Bug fixing
 - https://github.com/creativetimofficial/material-kit-react/issues/86
   - This issue cannot be solved, it comes from the `react-swipeable-views` plugin, this plugins is no longer maintained, even `Material-UI` has dropped its usage and stopped animating the `Nav Pills`, so, we’ve dropped their usage as well
+- https://github.com/creativetimofficial/material-kit-react/issues/85
+  - Tested this inside a Linux environment, and evrything worked as expected, maybe the issue was solved by the new Material-UI version
+- https://github.com/creativetimofficial/material-kit-react/issues/75
+  - This issue will be closed, as people might want to change the brand component from `Button` to something else, for example a `Link` from `react-router-dom`
+
 ### Major style changes
 ### Deleted components
 ### Added components
