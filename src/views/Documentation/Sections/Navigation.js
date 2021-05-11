@@ -64,8 +64,8 @@ export default function Navigation() {
       <p>The classic Material UI Appbar was restyled.</p>
       <p>
         You will find this component in{" "}
-        <code>src/components/Header/Header.js</code>. In this component there
-        is just the structure of the navbar. The links can be found in{" "}
+        <code>src/components/Header/Header.js</code>. In this component there is
+        just the structure of the navbar. The links can be found in{" "}
         <code>src/components/Header/HeaderLinks.js</code>. We've done this
         because we want our users to be able to add their own links easily.
       </p>
