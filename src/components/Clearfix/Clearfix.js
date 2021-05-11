@@ -7,12 +7,12 @@ const styles = {
   clearfix: {
     "&:after,&:before": {
       display: "table",
-      content: '" "'
+      content: '" "',
     },
     "&:after": {
-      clear: "both"
-    }
-  }
+      clear: "both",
+    },
+  },
 };
 
 const useStyles = makeStyles(styles);
