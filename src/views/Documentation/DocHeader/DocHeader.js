@@ -89,7 +89,7 @@ class DocHeader extends React.Component {
             </NavLink>
             <Hidden mdDown>
               <Button color="transparent" className={classes.buttonClasses}>
-                v1.9.0
+                v1.10.0
               </Button>
               <a
                 href="https://github.com/creativetimofficial/material-kit-react?ref=mkr-navbar-docs"
