@@ -3,7 +3,6 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
-import SwipeableViews from "react-swipeable-views";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -23,11 +22,8 @@ export default function NavPills(props) {
   const handleChange = (event, active) => {
     setActive(active);
   };
-  const handleChangeIndex = (index) => {
-    setActive(index);
-  };
   const classes = useStyles();
-  const { tabs, direction, color, horizontal, alignCenter } = props;
+  const { tabs, color, horizontal, alignCenter } = props;
   const flexContainerClasses = classNames({
     [classes.flexContainer]: true,
     [classes.horizontalDisplay]: horizontal !== undefined,
@@ -71,19 +67,16 @@ export default function NavPills(props) {
   );
   const tabContent = (
     <div className={classes.contentWrapper}>
-      <SwipeableViews
-        axis={direction === "rtl" ? "x-reverse" : "x"}
-        index={active}
-        onChangeIndex={handleChangeIndex}
-      >
-        {tabs.map((prop, key) => {
+      {tabs.map((prop, key) => {
+        if (key === active) {
           return (
             <div className={classes.tabContent} key={key}>
               {prop.tabContent}
             </div>
           );
-        })}
-      </SwipeableViews>
+        }
+        return null;
+      })}
     </div>
   );
   return horizontal !== undefined ? (
@@ -122,7 +115,6 @@ NavPills.propTypes = {
     "info",
     "rose",
   ]),
-  direction: PropTypes.string,
   horizontal: PropTypes.shape({
     tabsGrid: PropTypes.object,
     contentGrid: PropTypes.object,
