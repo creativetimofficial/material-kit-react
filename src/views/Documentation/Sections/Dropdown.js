@@ -15,8 +15,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const useStyles = makeStyles(styles);
@@ -120,7 +120,7 @@ export default function Dropdown() {
             { divider: true },
             "Separated link",
             { divider: true },
-            "One more separated link"
+            "One more separated link",
           ]}
         />
       </div>
@@ -135,7 +135,7 @@ export default function Dropdown() {
           buttonText="Dropup"
           buttonProps={{
             round: true,
-            color: "info"
+            color: "info",
           }}
           dropdownList={[
             "Action",
@@ -144,7 +144,7 @@ export default function Dropdown() {
             { divider: true },
             "Separated link",
             { divider: true },
-            "One more separated link"
+            "One more separated link",
           ]}
         />
       </div>
