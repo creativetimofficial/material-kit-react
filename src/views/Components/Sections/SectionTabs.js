@@ -44,7 +44,7 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    )
+                    ),
                   },
                   {
                     tabName: "Messages",
@@ -60,7 +60,7 @@ export default function SectionTabs() {
                         possibilities, to show people, this is the level that
                         things could be at.
                       </p>
-                    )
+                    ),
                   },
                   {
                     tabName: "Settings",
@@ -76,8 +76,8 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    )
-                  }
+                    ),
+                  },
                 ]}
               />
             </GridItem>
@@ -102,7 +102,7 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    )
+                    ),
                   },
                   {
                     tabName: "Updates",
@@ -117,7 +117,7 @@ export default function SectionTabs() {
                         possibilities, to show people, this is the level that
                         things could be at.
                       </p>
-                    )
+                    ),
                   },
                   {
                     tabName: "History",
@@ -132,8 +132,8 @@ export default function SectionTabs() {
                         because I got the answers. I understand culture. I am
                         the nucleus.
                       </p>
-                    )
-                  }
+                    ),
+                  },
                 ]}
               />
             </GridItem>
