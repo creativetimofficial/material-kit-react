@@ -2,12 +2,15 @@
 
 ## [1.10.0] 2021-05-11
 ### Bug fixing
+- https://github.com/creativetimofficial/material-kit-react/issues/86
+  - This issue cannot be solved, it comes from the `react-swipeable-views` plugin, this plugins is no longer maintained, even `Material-UI` has dropped its usage and stopped animating the `Nav Pills`, so, we’ve dropped their usage as well
 ### Major style changes
 ### Deleted components
 ### Added components
-+ @babel/core@7.14.0 (to stop warnings)
++ `@babel/core@7.14.0` (to stop warnings)
 ### Deleted dependencies
 - `history` (no more need for this one, we'll use `BrowserRouter` instead of `Router` with `history`)
+- `react-swipeable-views` (no longer maintained)
 ### Added dependencies
 ### Updated dependencies
 ```
@@ -37,8 +40,6 @@ typescript                                  3.9.3   →     4.2.4
 _Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
 ```
 npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
-npm WARN react-swipeable-views@0.13.9 requires a peer of react@^15.3.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
-npm WARN react-event-listener@0.6.6 requires a peer of react@^16.3.0 but none is installed. You must install peer dependencies yourself.
 ```
 _You will also have the following message: found 80 vulnerabilities (1 low, 79 moderate). This comes from react-scripts, and will be fixed in the next version. NOTE: the product works as expected with these vulnerabilities._
 
