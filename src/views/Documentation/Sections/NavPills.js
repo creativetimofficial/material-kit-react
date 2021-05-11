@@ -16,8 +16,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const codeExample = `import React from 'react';
@@ -169,7 +169,7 @@ function NavPills({ ...props }) {
                   <br />
                   <p>This is very nice.</p>
                 </span>
-              )
+              ),
             },
             {
               tabButton: "Settings",
@@ -186,7 +186,7 @@ function NavPills({ ...props }) {
                     functional solutions.
                   </p>
                 </span>
-              )
+              ),
             },
             {
               tabButton: "Options",
@@ -203,8 +203,8 @@ function NavPills({ ...props }) {
                     state of the art customer service.
                   </p>
                 </span>
-              )
-            }
+              ),
+            },
           ]}
         />
       </div>
