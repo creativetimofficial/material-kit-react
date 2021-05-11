@@ -4,7 +4,7 @@ import {
   infoColor,
   successColor,
   warningColor,
-  dangerColor
+  dangerColor,
 } from "assets/jss/material-kit-react.js";
 
 const paginationStyle = {
@@ -12,14 +12,14 @@ const paginationStyle = {
     display: "inline-block",
     paddingLeft: "0",
     margin: "0 0 20px 0",
-    borderRadius: "4px"
+    borderRadius: "4px",
   },
   paginationItem: {
-    display: "inline"
+    display: "inline",
   },
   paginationLink: {
     ":first-of-type": {
-      marginleft: "0"
+      marginleft: "0",
     },
     letterSpacing: "unset",
     border: "0",
@@ -40,16 +40,16 @@ const paginationStyle = {
     textDecoration: "none",
     boxSizing: "border-box",
     "&,&:hover,&:focus": {
-      color: grayColor
+      color: grayColor,
     },
     "&:hover,&:focus": {
       zIndex: "3",
       backgroundColor: "#eee",
-      borderColor: "#ddd"
+      borderColor: "#ddd",
     },
     "&:hover": {
-      cursor: "pointer"
-    }
+      cursor: "pointer",
+    },
   },
   primary: {
     "&,&:hover,&:focus": {
@@ -57,12 +57,12 @@ const paginationStyle = {
       borderColor: primaryColor,
       color: "#FFFFFF",
       boxShadow:
-        "0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2)"
+        "0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2)",
     },
     "&:hover,&:focus": {
       zIndex: "2",
-      cursor: "default"
-    }
+      cursor: "default",
+    },
   },
   info: {
     "&,&:hover,&:focus": {
@@ -70,12 +70,12 @@ const paginationStyle = {
       borderColor: infoColor,
       color: "#FFFFFF",
       boxShadow:
-        "0 4px 5px 0 rgba(0, 188, 212, 0.14), 0 1px 10px 0 rgba(0, 188, 212, 0.12), 0 2px 4px -1px rgba(0, 188, 212, 0.2)"
+        "0 4px 5px 0 rgba(0, 188, 212, 0.14), 0 1px 10px 0 rgba(0, 188, 212, 0.12), 0 2px 4px -1px rgba(0, 188, 212, 0.2)",
     },
     "&:hover,&:focus": {
       zIndex: "2",
-      cursor: "default"
-    }
+      cursor: "default",
+    },
   },
   success: {
     "&,&:hover,&:focus": {
@@ -83,12 +83,12 @@ const paginationStyle = {
       borderColor: successColor,
       color: "#FFFFFF",
       boxShadow:
-        "0 4px 5px 0 rgba(76, 175, 80, 0.14), 0 1px 10px 0 rgba(76, 175, 80, 0.12), 0 2px 4px -1px rgba(76, 175, 80, 0.2)"
+        "0 4px 5px 0 rgba(76, 175, 80, 0.14), 0 1px 10px 0 rgba(76, 175, 80, 0.12), 0 2px 4px -1px rgba(76, 175, 80, 0.2)",
     },
     "&:hover,&:focus": {
       zIndex: "2",
-      cursor: "default"
-    }
+      cursor: "default",
+    },
   },
   warning: {
     "&,&:hover,&:focus": {
@@ -96,12 +96,12 @@ const paginationStyle = {
       borderColor: warningColor,
       color: "#FFFFFF",
       boxShadow:
-        "0 4px 5px 0 rgba(255, 152, 0, 0.14), 0 1px 10px 0 rgba(255, 152, 0, 0.12), 0 2px 4px -1px rgba(255, 152, 0, 0.2)"
+        "0 4px 5px 0 rgba(255, 152, 0, 0.14), 0 1px 10px 0 rgba(255, 152, 0, 0.12), 0 2px 4px -1px rgba(255, 152, 0, 0.2)",
     },
     "&:hover,&:focus": {
       zIndex: "2",
-      cursor: "default"
-    }
+      cursor: "default",
+    },
   },
   danger: {
     "&,&:hover,&:focus": {
@@ -109,21 +109,21 @@ const paginationStyle = {
       borderColor: dangerColor,
       color: "#FFFFFF",
       boxShadow:
-        "0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2)"
+        "0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2)",
     },
     "&:hover,&:focus": {
       zIndex: "2",
-      cursor: "default"
-    }
+      cursor: "default",
+    },
   },
   disabled: {
     "&,&:hover,&:focus": {
       color: "#777",
       cursor: "not-allowed",
       backgroundColor: "#fff",
-      borderColor: "#ddd"
-    }
-  }
+      borderColor: "#ddd",
+    },
+  },
 };
 
 export default paginationStyle;
