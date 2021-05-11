@@ -2,7 +2,7 @@ const customTabsStyle = {
   cardTitle: {
     float: "left",
     padding: "10px 10px 10px 0px",
-    lineHeight: "24px"
+    lineHeight: "24px",
   },
   cardTitleRTL: {
     float: "right",
@@ -12,7 +12,7 @@ const customTabsStyle = {
     display: "none !important"
   },
   tabsRoot: {
-    minHeight: "unset !important"
+    minHeight: "unset !important",
   },
   tabRootButton: {
     minHeight: "unset !important",
@@ -29,13 +29,17 @@ const customTabsStyle = {
     marginLeft: "4px",
     fontWeight: "500",
     fontSize: "12px",
+    transition: '100ms ease-in-out',
     "&:last-child": {
       marginLeft: "0px"
+    },
+    '&:hover': {
+      transform: 'scale(1.2)'
     }
   },
   tabSelected: {
     backgroundColor: "rgba(255, 255, 255, 0.2)",
-    transition: "0.2s background-color 0.1s"
+    transition: "0.2s background-color 0.1s",
   },
   tabWrapper: {
     display: "inline-block",

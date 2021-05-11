@@ -59,11 +59,9 @@ export default function WorkSection() {
                   rows: 5
                 }}
               />
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-                  <Button color="primary">Send Message</Button>
-                </GridItem>
-              </GridContainer>
+              <GridItem xs={12} sm={12} md={4}>
+                <Button color="primary">Send Message</Button>
+              </GridItem>
             </GridContainer>
           </form>
         </GridItem>

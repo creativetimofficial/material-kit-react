@@ -8,6 +8,9 @@ const carouselStyle = {
   marginAuto: {
     marginLeft: "auto !important",
     marginRight: "auto !important"
+  },
+  card: {
+    filter: 'drop-shadow(5px 5px 10px #000)'
   }
 };
 

@@ -29,6 +29,7 @@ export default function SectionTabs() {
               </h3>
               <CustomTabs
                 headerColor="primary"
+                id="tabone"
                 tabs={[
                   {
                     tabName: "Profile",
@@ -86,6 +87,7 @@ export default function SectionTabs() {
                 <small>Tabs on Plain Card</small>
               </h3>
               <CustomTabs
+                id="tabtwo"
                 plainTabs
                 headerColor="danger"
                 tabs={[
