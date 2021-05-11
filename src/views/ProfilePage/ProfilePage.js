@@ -52,11 +52,15 @@ export default function ProfilePage(props) {
         fixed
         changeColorOnScroll={{
           height: 200,
-          color: "white"
+          color: "white",
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+      <Parallax
+        small
+        filter
+        image={require("assets/img/profile-bg.jpg").default}
+      />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>
@@ -126,7 +130,7 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      )
+                      ),
                     },
                     {
                       tabButton: "Work",
@@ -163,7 +167,7 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      )
+                      ),
                     },
                     {
                       tabButton: "Favorite",
@@ -200,8 +204,8 @@ export default function ProfilePage(props) {
                             />
                           </GridItem>
                         </GridContainer>
-                      )
-                    }
+                      ),
+                    },
                   ]}
                 />
               </GridItem>

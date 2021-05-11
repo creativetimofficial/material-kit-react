@@ -19,5 +19,5 @@ export default function Small(props) {
 }
 
 Small.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
