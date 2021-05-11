@@ -17,7 +17,7 @@ export default function CardFooter(props) {
   const { className, children, ...rest } = props;
   const cardFooterClasses = classNames({
     [classes.cardFooter]: true,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div className={cardFooterClasses} {...rest}>
@@ -28,5 +28,5 @@ export default function CardFooter(props) {
 
 CardFooter.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
