@@ -33,19 +33,16 @@ export default function HeaderLinks(props) {
           buttonText="Components"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
               All components
             </Link>,
-            <Link
-              to="/documentation"
-              className={classes.dropdownLink}
-            >
+            <Link to="/documentation" className={classes.dropdownLink}>
               Documentation
-            </Link>
+            </Link>,
           ]}
         />
       </ListItem>
