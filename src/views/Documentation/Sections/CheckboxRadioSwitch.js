@@ -25,8 +25,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const useStyles = makeStyles(styles);
@@ -354,7 +354,7 @@ export default function CheckboxRadioSwitch() {
     classes.checkboxAndRadio,
     classes.checkboxAndRadioHorizontal
   );
-  const handleToggle = value => {
+  const handleToggle = (value) => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -434,7 +434,7 @@ export default function CheckboxRadioSwitch() {
             }
             classes={{
               label: classes.label,
-              disabled: classes.disabledCheckboxAndRadio
+              disabled: classes.disabledCheckboxAndRadio,
             }}
             label="Disabled Unchecked"
           />
@@ -453,7 +453,7 @@ export default function CheckboxRadioSwitch() {
             }
             classes={{
               label: classes.label,
-              disabled: classes.disabledCheckboxAndRadio
+              disabled: classes.disabledCheckboxAndRadio,
             }}
             label="Disabled Checked"
           />
@@ -478,12 +478,12 @@ export default function CheckboxRadioSwitch() {
                   <FiberManualRecord className={classes.radioChecked} />
                 }
                 classes={{
-                  checked: classes.radio
+                  checked: classes.radio,
                 }}
               />
             }
             classes={{
-              label: classes.label
+              label: classes.label,
             }}
             label="First Radio"
           />
@@ -502,12 +502,12 @@ export default function CheckboxRadioSwitch() {
                   <FiberManualRecord className={classes.radioChecked} />
                 }
                 classes={{
-                  checked: classes.radio
+                  checked: classes.radio,
                 }}
               />
             }
             classes={{
-              label: classes.label
+              label: classes.label,
             }}
             label="Second Radio"
           />
@@ -526,13 +526,13 @@ export default function CheckboxRadioSwitch() {
                   <FiberManualRecord className={classes.radioChecked} />
                 }
                 classes={{
-                  checked: classes.radio
+                  checked: classes.radio,
                 }}
               />
             }
             classes={{
               label: classes.label,
-              disabled: classes.disabledCheckboxAndRadio
+              disabled: classes.disabledCheckboxAndRadio,
             }}
             label="Disabled Unchecked Radio"
           />
@@ -551,13 +551,13 @@ export default function CheckboxRadioSwitch() {
                   <FiberManualRecord className={classes.radioChecked} />
                 }
                 classes={{
-                  checked: classes.radio
+                  checked: classes.radio,
                 }}
               />
             }
             classes={{
               label: classes.label,
-              disabled: classes.disabledCheckboxAndRadio
+              disabled: classes.disabledCheckboxAndRadio,
             }}
             label="Disabled Checked Radio"
           />
@@ -573,19 +573,19 @@ export default function CheckboxRadioSwitch() {
             control={
               <Switch
                 checked={checkedA}
-                onChange={event => setCheckedA(event.target.checked)}
+                onChange={(event) => setCheckedA(event.target.checked)}
                 value="checkedA"
                 classes={{
                   switchBase: classes.switchBase,
                   checked: classes.switchChecked,
                   thumb: classes.switchIcon,
                   iconChecked: classes.switchIconChecked,
-                  track: classes.switchBar
+                  track: classes.switchBar,
                 }}
               />
             }
             classes={{
-              label: classes.label
+              label: classes.label,
             }}
             label="Toggle is on"
           />
@@ -595,19 +595,19 @@ export default function CheckboxRadioSwitch() {
             control={
               <Switch
                 checked={checkedB}
-                onChange={event => setCheckedB(event.target.checked)}
+                onChange={(event) => setCheckedB(event.target.checked)}
                 value="checkedB"
                 classes={{
                   switchBase: classes.switchBase,
                   checked: classes.switchChecked,
                   thumb: classes.switchIcon,
                   iconChecked: classes.switchIconChecked,
-                  track: classes.switchBar
+                  track: classes.switchBar,
                 }}
               />
             }
             classes={{
-              label: classes.label
+              label: classes.label,
             }}
             label="Toggle is off"
           />
