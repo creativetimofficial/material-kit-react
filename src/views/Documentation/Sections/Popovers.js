@@ -19,8 +19,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const useStyles = makeStyles(styles);
@@ -162,23 +162,23 @@ export default function Popovers() {
       </p>
       <h2>Example</h2>
       <div className={classes.bdExample}>
-        <Button onClick={event => setAnchorElLeft(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElLeft(event.currentTarget)}>
           On left
         </Button>
         <Popover
           classes={{
-            paper: classes.popover
+            paper: classes.popover,
           }}
           open={Boolean(anchorElLeft)}
           anchorEl={anchorElLeft}
           onClose={() => setAnchorElLeft(null)}
           anchorOrigin={{
             vertical: "center",
-            horizontal: "left"
+            horizontal: "left",
           }}
           transformOrigin={{
             vertical: "center",
-            horizontal: "right"
+            horizontal: "right",
           }}
         >
           <h3 className={classes.popoverHeader}>Popover on left</h3>
@@ -187,23 +187,23 @@ export default function Popovers() {
             will be some very useful information about his popover.
           </div>
         </Popover>
-        <Button onClick={event => setAnchorElTop(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElTop(event.currentTarget)}>
           On top
         </Button>
         <Popover
           classes={{
-            paper: classes.popover
+            paper: classes.popover,
           }}
           open={Boolean(anchorElTop)}
           anchorEl={anchorElTop}
           onClose={() => setAnchorElTop(null)}
           anchorOrigin={{
             vertical: "top",
-            horizontal: "center"
+            horizontal: "center",
           }}
           transformOrigin={{
             vertical: "bottom",
-            horizontal: "center"
+            horizontal: "center",
           }}
         >
           <h3 className={classes.popoverHeader}>Popover on top</h3>
@@ -211,23 +211,23 @@ export default function Popovers() {
             Here will be some very useful information about his popover.
           </div>
         </Popover>
-        <Button onClick={event => setAnchorElBottom(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElBottom(event.currentTarget)}>
           On bottom
         </Button>
         <Popover
           classes={{
-            paper: classes.popover
+            paper: classes.popover,
           }}
           open={Boolean(anchorElBottom)}
           anchorEl={anchorElBottom}
           onClose={() => setAnchorElBottom(null)}
           anchorOrigin={{
             vertical: "bottom",
-            horizontal: "center"
+            horizontal: "center",
           }}
           transformOrigin={{
             vertical: "top",
-            horizontal: "center"
+            horizontal: "center",
           }}
         >
           <h3 className={classes.popoverHeader}>Popover on bottom</h3>
@@ -235,23 +235,23 @@ export default function Popovers() {
             Here will be some very useful information about his popover.
           </div>
         </Popover>
-        <Button onClick={event => setAnchorElRight(event.currentTarget)}>
+        <Button onClick={(event) => setAnchorElRight(event.currentTarget)}>
           On right
         </Button>
         <Popover
           classes={{
-            paper: classes.popover
+            paper: classes.popover,
           }}
           open={Boolean(anchorElRight)}
           anchorEl={anchorElRight}
           onClose={() => setAnchorElRight(null)}
           anchorOrigin={{
             vertical: "center",
-            horizontal: "right"
+            horizontal: "right",
           }}
           transformOrigin={{
             vertical: "center",
-            horizontal: "left"
+            horizontal: "left",
           }}
         >
           <h3 className={classes.popoverHeader}>Popover on right</h3>
