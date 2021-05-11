@@ -201,10 +201,10 @@ class Tutorial extends React.Component {
         </p>
         <ul>
           <li>
-            Install NodeJs from{" "}
+            Install NodeJS <b>LTS</b> from{" "}
             <a href="https://nodejs.org/en/?ref=creativetim" target="_blank">
-              NodeJs Official Page
-            </a>
+              NodeJS Official Page
+            </a> (NOTE: Our products only work with NodeJS LTS version, and the version of npm that NodeJS LTS comes with)
           </li>
           <li>
             Go to{" "}
@@ -262,29 +262,9 @@ class Tutorial extends React.Component {
                 style={prism}
               >{`Module not found`}</SyntaxHighlighter>
               You should check if in your root project folder you have a file
-              named <code>.env</code>.
+              named <code>jsconfig.json</code>.
               <br />
-              If you do not have it, then create it and add this line in it:{" "}
-              <code>NODE_PATH=./src</code>
-              <br />
-              If that does not work, you need to do the following
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`npm install --g cross-env`}</SyntaxHighlighter>
-              then change the <code>script</code> inside{" "}
-              <code>package.json</code> by adding <code>NODE_PATH=./src</code>{" "}
-              inside it. For example, the start script would be changed from
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`"start": "react-scripts start",`}</SyntaxHighlighter>
-              to
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`"start": "NODE_PATH=./src react-scripts start",`}</SyntaxHighlighter>
-            </div>
+              If you do not have it, please copy it from the downloaded folder.
           </li>
           <li>
             <div>
@@ -308,45 +288,6 @@ class Tutorial extends React.Component {
             </div>
           </li>
           <li>
-            (Optional) You can create a new react application like this
-            <ul>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`npm install -g create-react-app`}</SyntaxHighlighter>
-              </li>
-              <li>Go to the folder where you want to create your app</li>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`create-react-app your-app-name`}</SyntaxHighlighter>
-              </li>
-              <li>
-                Navigate to <code>your-app-name</code>
-              </li>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`npm start`}</SyntaxHighlighter>
-              </li>
-              <li>
-                More information →{" "}
-                <a
-                  href="https://github.com/facebookincubator/create-react-app?ref=creativetim"
-                  target="_blank"
-                >
-                  create-react-app
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
             Navigate to <code>http://localhost:3000</code>
           </li>
           <li>
@@ -356,6 +297,15 @@ class Tutorial extends React.Component {
               target="_blank"
             >
               react
+            </a>
+          </li>
+          <li>
+            More information →{" "}
+            <a
+              href="https://github.com/facebookincubator/create-react-app?ref=creativetim"
+              target="_blank"
+            >
+              create-react-app
             </a>
           </li>
         </ul>
