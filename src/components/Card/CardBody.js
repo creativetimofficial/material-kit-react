@@ -17,7 +17,7 @@ export default function CardBody(props) {
   const { className, children, ...rest } = props;
   const cardBodyClasses = classNames({
     [classes.cardBody]: true,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div className={cardBodyClasses} {...rest}>
@@ -28,5 +28,5 @@ export default function CardBody(props) {
 
 CardBody.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
