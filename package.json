@@ -18,8 +18,7 @@
     "react-dom": "17.0.2",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
-    "react-slick": "0.28.1",
-    "react-swipeable-views": "0.13.9"
+    "react-slick": "0.28.1"
   },
   "devDependencies": {
     "@babel/cli": "7.13.16",
