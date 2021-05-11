@@ -232,7 +232,7 @@ We use GitHub Issues as the official bug tracker for the Material Kit. Here are 
 
 - Copyright 2021 Creative Tim (https://www.creative-tim.com/)
 
-- Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/main/LICENSE.md)
 
 ## Useful Links
 

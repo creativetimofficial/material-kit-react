@@ -1,6 +1,54 @@
 # Change Log
 
-## [1.9.0] date
+## [1.10.0] 2021-05-11
+### Bug fixing
+- https://github.com/creativetimofficial/material-kit-react/issues/86
+  - This issue cannot be solved, it comes from the `react-swipeable-views` plugin, this plugins is no longer maintained, even `Material-UI` has dropped its usage and stopped animating the `Nav Pills`, so, we’ve dropped their usage as well
+- https://github.com/creativetimofficial/material-kit-react/issues/85
+  - Tested this inside a Linux environment, and evrything worked as expected, maybe the issue was solved by the new Material-UI version
+- https://github.com/creativetimofficial/material-kit-react/issues/75
+  - This issue will be closed, as people might want to change the brand component from `Button` to something else, for example a `Link` from `react-router-dom`
+
+### Major style changes
+### Deleted components
+### Added components
++ `@babel/core@7.14.0` (to stop warnings)
+### Deleted dependencies
+- `history` (no more need for this one, we'll use `BrowserRouter` instead of `Router` with `history`)
+- `react-swipeable-views` (no longer maintained)
+### Added dependencies
+### Updated dependencies
+```
+@material-ui/core                          4.10.0   →    4.11.4
+@material-ui/icons                          4.9.1   →    4.11.2
+classnames                                  2.2.6   →     2.3.1
+moment                                     2.26.0   →    2.29.1
+node-sass                                  4.14.1   →     6.0.0
+nouislider                                 14.5.0   →    15.1.0
+react                                     16.13.1   →    17.0.2
+react-datetime                             2.16.3   →     3.0.4
+react-dom                                 16.13.1   →    17.0.2
+react-scripts                               3.4.1   →     4.0.3
+react-slick                                0.26.1   →    0.28.1
+@babel/cli                                 7.10.1   →   7.13.16
+@babel/plugin-proposal-class-properties    7.10.1   →    7.13.0
+@babel/preset-env                          7.10.1   →    7.14.1
+@babel/preset-react                        7.10.1   →   7.13.13
+eslint-config-prettier                     6.11.0   →     8.3.0
+eslint-plugin-prettier                      3.1.3   →     3.4.0
+eslint-plugin-react                        7.20.0   →    7.23.2
+gulp-append-prepend                         1.0.8   →     1.0.9
+prettier                                    2.0.5   →     2.3.0
+typescript                                  3.9.3   →     4.2.4
+```
+### Warning
+_Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
+```
+npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
+```
+_You will also have the following message: found 80 vulnerabilities (1 low, 79 moderate). This comes from react-scripts, and will be fixed in the next version. NOTE: the product works as expected with these vulnerabilities._
+
+## [1.9.0] 2020-05-28
 ### Bug fixing
 - https://github.com/creativetimofficial/material-kit-react/issues/67
 ### Major style changes

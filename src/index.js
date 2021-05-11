@@ -18,7 +18,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createHashHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import ReactPixel from "react-facebook-pixel";
 
 import "assets/scss/material-kit-react.scss?v=1.10.0";
@@ -44,7 +44,7 @@ hist.listen(() => {
 });
 
 ReactDOM.render(
-  <Router history={hist}>
+  <HashRouter>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
       <Route path="/profile-page" component={ProfilePage} />
@@ -52,6 +52,6 @@ ReactDOM.render(
       <Route path="/documentation" component={Documentation} />
       <Route path="/" component={Components} />
     </Switch>
-  </Router>,
+  </HashRouter>,
   document.getElementById("root")
 );
