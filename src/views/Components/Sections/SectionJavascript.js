@@ -62,7 +62,7 @@ export default function SectionJavascript() {
                 <Dialog
                   classes={{
                     root: classes.center,
-                    paper: classes.modal
+                    paper: classes.modal,
                   }}
                   open={classicModal}
                   TransitionComponent={Transition}
@@ -143,23 +143,23 @@ export default function SectionJavascript() {
             <div className={classes.title}>
               <h3>Popovers</h3>
             </div>
-            <Button onClick={event => setAnchorElLeft(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElLeft(event.currentTarget)}>
               On left
             </Button>
             <Popover
               classes={{
-                paper: classes.popover
+                paper: classes.popover,
               }}
               open={Boolean(anchorElLeft)}
               anchorEl={anchorElLeft}
               onClose={() => setAnchorElLeft(null)}
               anchorOrigin={{
                 vertical: "center",
-                horizontal: "left"
+                horizontal: "left",
               }}
               transformOrigin={{
                 vertical: "center",
-                horizontal: "right"
+                horizontal: "right",
               }}
             >
               <h3 className={classes.popoverHeader}>Popover on left</h3>
@@ -168,23 +168,23 @@ export default function SectionJavascript() {
                 Here will be some very useful information about his popover.
               </div>
             </Popover>
-            <Button onClick={event => setAnchorElTop(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElTop(event.currentTarget)}>
               On top
             </Button>
             <Popover
               classes={{
-                paper: classes.popover
+                paper: classes.popover,
               }}
               open={Boolean(anchorElTop)}
               anchorEl={anchorElTop}
               onClose={() => setAnchorElTop(null)}
               anchorOrigin={{
                 vertical: "top",
-                horizontal: "center"
+                horizontal: "center",
               }}
               transformOrigin={{
                 vertical: "bottom",
-                horizontal: "center"
+                horizontal: "center",
               }}
             >
               <h3 className={classes.popoverHeader}>Popover on top</h3>
@@ -192,23 +192,23 @@ export default function SectionJavascript() {
                 Here will be some very useful information about his popover.
               </div>
             </Popover>
-            <Button onClick={event => setAnchorElBottom(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElBottom(event.currentTarget)}>
               On bottom
             </Button>
             <Popover
               classes={{
-                paper: classes.popover
+                paper: classes.popover,
               }}
               open={Boolean(anchorElBottom)}
               anchorEl={anchorElBottom}
               onClose={() => setAnchorElBottom(null)}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "center"
+                horizontal: "center",
               }}
               transformOrigin={{
                 vertical: "top",
-                horizontal: "center"
+                horizontal: "center",
               }}
             >
               <h3 className={classes.popoverHeader}>Popover on bottom</h3>
@@ -216,23 +216,23 @@ export default function SectionJavascript() {
                 Here will be some very useful information about his popover.
               </div>
             </Popover>
-            <Button onClick={event => setAnchorElRight(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElRight(event.currentTarget)}>
               On right
             </Button>
             <Popover
               classes={{
-                paper: classes.popover
+                paper: classes.popover,
               }}
               open={Boolean(anchorElRight)}
               anchorEl={anchorElRight}
               onClose={() => setAnchorElRight(null)}
               anchorOrigin={{
                 vertical: "center",
-                horizontal: "right"
+                horizontal: "right",
               }}
               transformOrigin={{
                 vertical: "center",
-                horizontal: "left"
+                horizontal: "left",
               }}
             >
               <h3 className={classes.popoverHeader}>Popover on right</h3>
