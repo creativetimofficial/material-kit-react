@@ -41,7 +41,7 @@ export default function Parallax(props) {
     [classes.parallax]: true,
     [classes.filter]: filter,
     [classes.small]: small,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div
@@ -49,7 +49,7 @@ export default function Parallax(props) {
       style={{
         ...style,
         backgroundImage: "url(" + image + ")",
-        transform: transform
+        transform: transform,
       }}
     >
       {children}
@@ -63,5 +63,5 @@ Parallax.propTypes = {
   children: PropTypes.node,
   style: PropTypes.string,
   image: PropTypes.string,
-  small: PropTypes.bool
+  small: PropTypes.bool,
 };

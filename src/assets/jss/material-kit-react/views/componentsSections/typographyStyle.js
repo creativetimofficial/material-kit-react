@@ -4,24 +4,24 @@ import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
 const typographyStyle = {
   section: {
-    padding: "70px 0"
+    padding: "70px 0",
   },
   container,
   space50: {
     height: "50px",
-    display: "block"
+    display: "block",
   },
   title: {
     ...title,
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   typo: {
     paddingLeft: "25%",
     marginBottom: "40px",
     position: "relative",
-    width: "100%"
+    width: "100%",
   },
   note: {
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
@@ -34,12 +34,12 @@ const typographyStyle = {
     left: "0",
     marginLeft: "20px",
     position: "absolute",
-    width: "260px"
+    width: "260px",
   },
   marginLeft: {
-    marginLeft: "auto !important"
+    marginLeft: "auto !important",
   },
-  ...imagesStyles
+  ...imagesStyles,
 };
 
 export default typographyStyle;

@@ -37,7 +37,7 @@ export default function SectionLogin() {
                       href="#pablo"
                       target="_blank"
                       color="transparent"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className={classes.socialIcons + " fab fa-twitter"} />
                     </Button>
@@ -46,7 +46,7 @@ export default function SectionLogin() {
                       href="#pablo"
                       target="_blank"
                       color="transparent"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className={classes.socialIcons + " fab fa-facebook"} />
                     </Button>
@@ -55,7 +55,7 @@ export default function SectionLogin() {
                       href="#pablo"
                       target="_blank"
                       color="transparent"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i
                         className={
@@ -71,7 +71,7 @@ export default function SectionLogin() {
                     labelText="First Name..."
                     id="first"
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
                     }}
                     inputProps={{
                       type: "text",
@@ -79,14 +79,14 @@ export default function SectionLogin() {
                         <InputAdornment position="end">
                           <People className={classes.inputIconsColor} />
                         </InputAdornment>
-                      )
+                      ),
                     }}
                   />
                   <CustomInput
                     labelText="Email..."
                     id="email"
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
                     }}
                     inputProps={{
                       type: "email",
@@ -94,14 +94,14 @@ export default function SectionLogin() {
                         <InputAdornment position="end">
                           <Email className={classes.inputIconsColor} />
                         </InputAdornment>
-                      )
+                      ),
                     }}
                   />
                   <CustomInput
                     labelText="Password"
                     id="pass"
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
                     }}
                     inputProps={{
                       type: "password",
@@ -112,7 +112,7 @@ export default function SectionLogin() {
                           </Icon>
                         </InputAdornment>
                       ),
-                      autoComplete: "off"
+                      autoComplete: "off",
                     }}
                   />
                 </CardBody>
