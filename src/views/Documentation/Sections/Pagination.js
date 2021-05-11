@@ -15,8 +15,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const codeExample = `import React from 'react';
@@ -87,7 +87,7 @@ function Pagination({ ...props }) {
             { active: true, text: 3 },
             { text: 4 },
             { text: 5 },
-            { text: "NEXT" }
+            { text: "NEXT" },
           ]}
           color="info"
         />
