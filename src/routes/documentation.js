@@ -58,20 +58,20 @@ const docRoutes = [
       {
         path: "/documentation/tutorial",
         name: "Tutorial",
-        component: Tutorial
+        component: Tutorial,
       },
       { path: "/documentation/styles", name: "Styles", component: Styles },
       {
         path: "/documentation/lint-commands",
         name: "Lint Commands",
-        component: LintCommands
+        component: LintCommands,
       },
       {
         path: "/documentation/build-tools",
         name: "Build Tools",
-        component: BuildTools
-      }
-    ]
+        component: BuildTools,
+      },
+    ],
   },
   {
     name: "Components",
@@ -83,17 +83,17 @@ const docRoutes = [
       {
         path: "/documentation/checkbox-radio",
         name: "CheckboxRadioSwitch",
-        component: CheckboxRadioSwitch
+        component: CheckboxRadioSwitch,
       },
       {
         path: "/documentation/clear-fix",
         name: "Clearfix",
-        component: Clearfix
+        component: Clearfix,
       },
       {
         path: "/documentation/dropdown",
         name: "Dropdown",
-        component: Dropdown
+        component: Dropdown,
       },
       { path: "/documentation/footer", name: "Footer", component: Footer },
       { path: "/documentation/grid", name: "Grid", component: Grid },
@@ -101,57 +101,57 @@ const docRoutes = [
       {
         path: "/documentation/info-areas",
         name: "InfoAreas",
-        component: InfoAreas
+        component: InfoAreas,
       },
       { path: "/documentation/inputs", name: "Inputs", component: Inputs },
       {
         path: "/documentation/linear-progress",
         name: "Linear Progress",
-        component: LinearProgress
+        component: LinearProgress,
       },
       { path: "/documentation/modals", name: "Modals", component: Modal },
       {
         path: "/documentation/navigation",
         name: "Navigation",
-        component: Navigation
+        component: Navigation,
       },
       {
         path: "/documentation/nav-pills",
         name: "NavPills",
-        component: NavPill
+        component: NavPill,
       },
       {
         path: "/documentation/notifications",
         name: "Notifications",
-        component: Notifications
+        component: Notifications,
       },
       {
         path: "/documentation/pagination",
         name: "Pagination",
-        component: Pagination
+        component: Pagination,
       },
       {
         path: "/documentation/parallax",
         name: "Parallax",
-        component: Parallax
+        component: Parallax,
       },
       {
         path: "/documentation/popovers",
         name: "Popovers",
-        component: Popovers
+        component: Popovers,
       },
       { path: "/documentation/tabs", name: "Tabs", component: Tabs },
       {
         path: "/documentation/tooltips",
         name: "Tooltips",
-        component: Tooltips
+        component: Tooltips,
       },
       {
         path: "/documentation/typography",
         name: "Typography",
-        component: Typography
-      }
-    ]
+        component: Typography,
+      },
+    ],
   },
   {
     name: "Plugins",
@@ -160,17 +160,17 @@ const docRoutes = [
       {
         path: "/documentation/carousel",
         name: "Carousel",
-        component: Carousel
+        component: Carousel,
       },
       {
         path: "/documentation/date-time-picker",
         name: "DateTimePicker",
-        component: DateTimePicker
+        component: DateTimePicker,
       },
-      { path: "/documentation/sliders", name: "Sliders", component: Sliders }
-    ]
+      { path: "/documentation/sliders", name: "Sliders", component: Sliders },
+    ],
   },
-  { redirect: true, path: "/documentation", to: "/documentation/tutorial" }
+  { redirect: true, path: "/documentation", to: "/documentation/tutorial" },
 ];
 
 export default docRoutes;
