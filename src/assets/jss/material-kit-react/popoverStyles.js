@@ -22,10 +22,10 @@ const popoverStyles = {
     whiteSpace: "normal",
     lineBreak: "auto",
     fontSize: "0.875rem",
-    wordWrap: "break-word"
+    wordWrap: "break-word",
   },
   popoverBottom: {
-    marginTop: "5px"
+    marginTop: "5px",
   },
   popoverHeader: {
     backgroundColor: "#fff",
@@ -35,13 +35,13 @@ const popoverStyles = {
     margin: "0",
     color: "#555",
     borderTopLeftRadius: "calc(0.3rem - 1px)",
-    borderTopRightRadius: "calc(0.3rem - 1px)"
+    borderTopRightRadius: "calc(0.3rem - 1px)",
   },
   popoverBody: {
     padding: "10px 15px 15px",
     lineHeight: "1.4",
-    color: "#555"
-  }
+    color: "#555",
+  },
 };
 
 export default popoverStyles;
