@@ -26,8 +26,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const useStyles = makeStyles(styles);
@@ -136,7 +136,7 @@ export default function Modal() {
       <Dialog
         classes={{
           root: classes.center,
-          paper: classes.modal
+          paper: classes.modal,
         }}
         open={modal}
         TransitionComponent={Transition}
