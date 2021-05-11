@@ -4,29 +4,29 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 const teamStyle = {
   section: {
     padding: "70px 0",
-    textAlign: "center"
+    textAlign: "center",
   },
   title: {
     ...title,
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   ...imagesStyle,
   itemGrid: {
     marginLeft: "auto",
-    marginRight: "auto"
+    marginRight: "auto",
   },
   cardTitle,
   smallTitle: {
-    color: "#6c757d"
+    color: "#6c757d",
   },
   description: {
-    color: "#999"
+    color: "#999",
   },
   justifyCenter: {
-    justifyContent: "center !important"
+    justifyContent: "center !important",
   },
   socials: {
     marginTop: "0",
@@ -37,11 +37,11 @@ const teamStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "#999"
+    color: "#999",
   },
   margin5: {
-    margin: "5px"
-  }
+    margin: "5px",
+  },
 };
 
 export default teamStyle;
