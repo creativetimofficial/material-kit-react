@@ -16,7 +16,7 @@ import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 import {
   cardTitle,
   cardLink,
-  cardSubtitle
+  cardSubtitle,
 } from "assets/jss/material-kit-react.js";
 
 const styles = {
@@ -25,10 +25,10 @@ const styles = {
   cardLink,
   cardSubtitle,
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   textMuted: {
-    color: "#6c757d"
+    color: "#6c757d",
   },
   bdExample: {
     padding: "1.5rem",
@@ -38,11 +38,11 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
+    border: "solid rgb(245, 242, 240)",
   },
   textRight: {
-    textAlign: "right"
-  }
+    textAlign: "right",
+  },
 };
 
 const codeExample = `import React from "react";
@@ -482,14 +482,14 @@ export default function Cards() {
             <a
               href="#pablo"
               className={classes.cardLink}
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Card link
             </a>
             <a
               href="#pablo"
               className={classes.cardLink}
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Another link
             </a>
