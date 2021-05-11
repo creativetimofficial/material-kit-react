@@ -18,7 +18,7 @@ export default function Badge(props) {
 }
 
 Badge.defaultProps = {
-  color: "gray"
+  color: "gray",
 };
 
 Badge.propTypes = {
@@ -29,7 +29,7 @@ Badge.propTypes = {
     "success",
     "info",
     "rose",
-    "gray"
+    "gray",
   ]),
-  children: PropTypes.node
+  children: PropTypes.node,
 };
