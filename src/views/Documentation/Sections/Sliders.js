@@ -54,7 +54,7 @@ export default function Sliders() {
         start: [40],
         connect: [true, false],
         step: 1,
-        range: { min: 0, max: 100 }
+        range: { min: 0, max: 100 },
       });
     }
     if (
@@ -64,7 +64,7 @@ export default function Sliders() {
         start: [20, 60],
         connect: [false, true, false],
         step: 1,
-        range: { min: 0, max: 100 }
+        range: { min: 0, max: 100 },
       });
     }
     return function cleanup() {};
