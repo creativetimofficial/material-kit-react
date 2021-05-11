@@ -13,7 +13,7 @@ import CustomTabs from "components/CustomTabs/CustomTabs.js";
 
 const styles = {
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   bdExample: {
     padding: "1.5rem",
@@ -23,8 +23,8 @@ const styles = {
     marginBottom: "-8px",
     marginLeft: "0",
     borderWidth: ".2rem",
-    border: "solid rgb(245, 242, 240)"
-  }
+    border: "solid rgb(245, 242, 240)",
+  },
 };
 
 const useStyles = makeStyles(styles);
@@ -171,7 +171,7 @@ export default function Tabs() {
                   being worth billions of dollars, because I got the answers. I
                   understand culture. I am the nucleus.
                 </p>
-              )
+              ),
             },
             {
               tabName: "Messages",
@@ -186,7 +186,7 @@ export default function Tabs() {
                   responsibility that I have, to push possibilities, to show
                   people, this is the level that things could be at.
                 </p>
-              )
+              ),
             },
             {
               tabName: "Settings",
@@ -201,8 +201,8 @@ export default function Tabs() {
                   being worth billions of dollars, because I got the answers. I
                   understand culture. I am the nucleus.
                 </p>
-              )
-            }
+              ),
+            },
           ]}
         />
       </div>
