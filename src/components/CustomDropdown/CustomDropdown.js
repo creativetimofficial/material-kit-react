@@ -24,19 +24,19 @@ class CustomDropdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      open: false,
     };
   }
   handleClick = () => {
-    this.setState(state => ({ open: !state.open }));
+    this.setState((state) => ({ open: !state.open }));
   };
-  handleClose = param => {
+  handleClose = (param) => {
     this.setState({ open: false });
     if (this.props && this.props.onClick) {
       this.props.onClick(param);
     }
   };
-  handleCloseAway = event => {
+  handleCloseAway = (event) => {
     if (this.anchorEl.contains(event.target)) {
       return;
     }
@@ -56,18 +56,18 @@ class CustomDropdown extends React.Component {
       hoverColor,
       left,
       rtlActive,
-      noLiPadding
+      noLiPadding,
     } = this.props;
     const caretClasses = classNames({
       [classes.caret]: true,
       [classes.caretActive]: open,
-      [classes.caretRTL]: rtlActive
+      [classes.caretRTL]: rtlActive,
     });
     const dropdownItem = classNames({
       [classes.dropdownItem]: true,
       [classes[hoverColor + "Hover"]]: true,
       [classes.noLiPadding]: noLiPadding,
-      [classes.dropdownItemRTL]: rtlActive
+      [classes.dropdownItemRTL]: rtlActive,
     });
     let icon = null;
     switch (typeof buttonIcon) {
@@ -96,7 +96,7 @@ class CustomDropdown extends React.Component {
             aria-owns={open ? "menu-list" : null}
             aria-haspopup="true"
             {...buttonProps}
-            buttonRef={node => {
+            buttonRef={(node) => {
               this.anchorEl = node;
             }}
             onClick={this.handleClick}
@@ -122,7 +122,7 @@ class CustomDropdown extends React.Component {
           }
           className={classNames({
             [classes.popperClose]: !open,
-            [classes.popperResponsive]: true
+            [classes.popperResponsive]: true,
           })}
         >
           {({ TransitionProps, placement }) => (
@@ -179,7 +179,7 @@ class CustomDropdown extends React.Component {
 
 CustomDropdown.defaultProps = {
   caret: true,
-  hoverColor: "primary"
+  hoverColor: "primary",
 };
 
 CustomDropdown.propTypes = {
@@ -191,10 +191,14 @@ CustomDropdown.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose"
+    "rose",
   ]),
   buttonText: PropTypes.node,
-  buttonIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.string]),
+  buttonIcon: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.object,
+    PropTypes.string,
+  ]),
   dropdownList: PropTypes.array,
   buttonProps: PropTypes.object,
   dropup: PropTypes.bool,
@@ -204,7 +208,7 @@ CustomDropdown.propTypes = {
   left: PropTypes.bool,
   noLiPadding: PropTypes.bool,
   // function that retuns the selected item
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 export default withStyles(customDropdownStyle)(CustomDropdown);
