@@ -204,7 +204,9 @@ class Tutorial extends React.Component {
             Install NodeJS <b>LTS</b> from{" "}
             <a href="https://nodejs.org/en/?ref=creativetim" target="_blank">
               NodeJS Official Page
-            </a> (NOTE: Our products only work with NodeJS LTS version, and the version of npm that NodeJS LTS comes with)
+            </a>{" "}
+            (NOTE: Our products only work with NodeJS LTS version, and the
+            version of npm that NodeJS LTS comes with)
           </li>
           <li>
             Go to{" "}
@@ -255,16 +257,15 @@ class Tutorial extends React.Component {
             <code>install</code> script and <code>start</code> script
           </li>
           <li>
-            <div>
-              If you have an error something containing
-              <SyntaxHighlighter
-                language="jsx"
-                style={prism}
-              >{`Module not found`}</SyntaxHighlighter>
-              You should check if in your root project folder you have a file
-              named <code>jsconfig.json</code>.
-              <br />
-              If you do not have it, please copy it from the downloaded folder.
+            If you have an error something containing
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`Module not found`}</SyntaxHighlighter>
+            You should check if in your root project folder you have a file
+            named <code>jsconfig.json</code>.
+            <br />
+            If you do not have it, please copy it from the downloaded folder.
           </li>
           <li>
             <div>
