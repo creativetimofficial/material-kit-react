@@ -5,7 +5,7 @@ import {
   successBoxShadow,
   warningBoxShadow,
   dangerBoxShadow,
-  container
+  container,
 } from "assets/jss/material-kit-react.js";
 
 const snackbarContentStyle = {
@@ -22,44 +22,44 @@ const snackbarContentStyle = {
     maxWidth: "100%",
     minWidth: "auto",
     boxShadow:
-      "0 12px 20px -10px rgba(255, 255, 255, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(255, 255, 255, 0.2)"
+      "0 12px 20px -10px rgba(255, 255, 255, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(255, 255, 255, 0.2)",
   },
   info: {
     backgroundColor: "#00d3ee",
     color: "#ffffff",
-    ...infoBoxShadow
+    ...infoBoxShadow,
   },
   success: {
     backgroundColor: "#5cb860",
     color: "#ffffff",
-    ...successBoxShadow
+    ...successBoxShadow,
   },
   warning: {
     backgroundColor: "#ffa21a",
     color: "#ffffff",
-    ...warningBoxShadow
+    ...warningBoxShadow,
   },
   danger: {
     backgroundColor: "#f55a4e",
     color: "#ffffff",
-    ...dangerBoxShadow
+    ...dangerBoxShadow,
   },
   primary: {
     backgroundColor: "#af2cc5",
     color: "#ffffff",
-    ...primaryBoxShadow
+    ...primaryBoxShadow,
   },
   message: {
     padding: "0",
     display: "block",
     maxWidth: "89%",
     "&,& *": {
-      letterSpacing: "normal"
-    }
+      letterSpacing: "normal",
+    },
   },
   close: {
     width: "14px",
-    height: "14px"
+    height: "14px",
   },
   iconButton: {
     width: "24px",
@@ -71,17 +71,17 @@ const snackbarContentStyle = {
     position: "absolute",
     right: "-4px",
     top: "0",
-    padding: "0"
+    padding: "0",
   },
   icon: {
     display: "block",
     float: "left",
-    marginRight: "1.071rem"
+    marginRight: "1.071rem",
   },
   container: {
     ...container,
-    position: "relative"
-  }
+    position: "relative",
+  },
 };
 
 export default snackbarContentStyle;
