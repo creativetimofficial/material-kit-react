@@ -68,7 +68,7 @@ function Download() {
               href="https://www.creative-tim.com/product/material-kit-react"
               sx={{ mb: 2 }}
             >
-              Download HTML
+              Download Now
             </MKButton>
           </Grid>
         </Container>
