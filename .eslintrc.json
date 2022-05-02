@@ -3,7 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "extends": ["ES7+ React/Redux/React-Native snippets"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
