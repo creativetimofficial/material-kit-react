@@ -28,6 +28,7 @@
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
     "chroma-js": "2.4.2",
+    "cjs-loader": "^0.1.0",
     "flatpickr": "4.6.13",
     "next": "^12.3.1",
     "prop-types": "15.8.1",
