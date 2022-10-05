@@ -25,3 +25,6 @@ package-lock.json
 yarn.lock
 
 commit.sh
+
+
+/.next
