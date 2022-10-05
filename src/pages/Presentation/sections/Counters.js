@@ -18,8 +18,8 @@ function Counters() {
             <DefaultCounterCard
               count={70}
               suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
+              title="Ships sent"
+              description="Over 70 ships already sent contaning spreads products orderd by our clients"
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
@@ -27,16 +27,16 @@ function Counters() {
             <DefaultCounterCard
               count={15}
               suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
+              title="Products delivered"
+              description="We offer different product that you can easily order with more client to be delivery in a spread container"
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
+              count={150}
+              title="Clients satisfied"
+              description="Spend less money using the spread container solution, pay lass fee and more."
             />
           </Grid>
         </Grid>

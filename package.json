@@ -28,7 +28,6 @@
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "14.4.3",
     "chroma-js": "2.4.2",
-    "cjs-loader": "^0.1.0",
     "flatpickr": "4.6.13",
     "next": "^12.3.1",
     "prop-types": "15.8.1",
@@ -44,7 +43,7 @@
   },
   "scripts": {
     "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
-    "build": "next build",
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
