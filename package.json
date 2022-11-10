@@ -45,7 +45,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\" --fix",
+    "lint-check": "eslint \"*/**/*.{js,ts,tsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -67,13 +69,9 @@
   },
   "devDependencies": {
     "eslint": "^8.27.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-notice": "^0.9.10",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.10",
-    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.7.1"
   }
 }

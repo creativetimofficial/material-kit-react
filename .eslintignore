@@ -1,0 +1,7 @@
+.cache/
+.github/
+.idea/
+/public/
+/config/
+node_modules/
+build/
