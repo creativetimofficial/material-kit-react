@@ -1,47 +1,41 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 // @mui material components
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import { Link } from 'gatsby';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import { Link } from "gatsby";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../../components/MKBox';
-import { MKBadge } from '../../../../components/MKBadge';
-import { MKTypography } from '../../../../components/MKTypography';
+import { MKBox } from "../../../../components/MKBox";
+import { MKBadge } from "../../../../components/MKBadge";
+import { MKTypography } from "../../../../components/MKTypography";
 
 // Presentation page components
-import ExampleCard from '../components/ExampleCard';
+import ExampleCard from "../components/ExampleCard";
 
 // Data
-import data from './data/pagesData';
+import data from "./data/pagesData";
 
-import React from 'react';
+import React from "react";
 
 function Pages(): JSX.Element {
   const renderData = data.map(({ image, name, route }) => (
     <Grid item xs={12} md={6} sx={{ mb: { xs: 3, lg: 0 } }} key={name}>
       <Link to={route}>
-        <ExampleCard
-          image={image}
-          name={name}
-          display="grid"
-          minHeight="auto"
-        />
+        <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
       </Link>
     </Grid>
   ));
@@ -56,7 +50,7 @@ function Pages(): JSX.Element {
           lg={6}
           flexDirection="column"
           alignItems="center"
-          sx={{ textAlign: 'center', my: 6, mx: 'auto', px: 0.75 }}
+          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
           <MKBadge
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -93,15 +87,9 @@ function Pages(): JSX.Element {
                 Presentation Pages for Company, Landing Pages, Blogs and Support
               </MKTypography>
 
-              <MKTypography
-                variant="body2"
-                fontWeight="regular"
-                color="secondary"
-                mb={1}
-                pr={2}
-              >
-                These is just a small selection of the multiple possibitilies
-                you have. Focus on the business, not on the design.
+              <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
+                These is just a small selection of the multiple possibitilies you have. Focus on the
+                business, not on the design.
               </MKTypography>
             </MKBox>
           </Grid>

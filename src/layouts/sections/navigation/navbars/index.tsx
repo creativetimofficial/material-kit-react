@@ -1,42 +1,41 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import Dashboard from '@mui/icons-material/Dashboard';
-import List from '@mui/icons-material/List';
-import Schedule from '@mui/icons-material/Schedule';
-import React from 'react';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+Coded by www.creative-tim.com
 
-import { theme } from '../../../assets/theme';
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import Dashboard from "@mui/icons-material/Dashboard";
+import List from "@mui/icons-material/List";
+import Schedule from "@mui/icons-material/Schedule";
+import React from "react";
+
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+import { theme } from "../../../assets/theme";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../components/MKBox';
+import { MKBox } from "../../../components/MKBox";
 
 // Sections components
-import BaseLayout from '../../components/BaseLayout';
-import View from '../../components/View';
+import BaseLayout from "../../components/BaseLayout";
+import View from "../../components/View";
 
 // Stats page components
-import NavbarDark from './components/NavbarDark';
-import NavPills from '../../../components/NavPills/NavPills';
+import NavbarDark from "./components/NavbarDark";
+import NavPills from "../../../components/NavPills/NavPills";
 
 // Stats page components code
-import navbarDarkCode from './components/NavbarDark/code';
+import navbarDarkCode from "./components/NavbarDark/code";
 
 function Navbars(): JSX.Element {
   return (
@@ -45,8 +44,8 @@ function Navbars(): JSX.Element {
       <BaseLayout
         title="Navbars"
         breadcrumb={[
-          { label: 'Page Sections', route: '/sections/navigation/navbars' },
-          { label: 'Navbars' },
+          { label: "Page Sections", route: "/sections/navigation/navbars" },
+          { label: "Navbars" },
         ]}
       >
         <View title="Navbar dark" code={navbarDarkCode}>
@@ -54,93 +53,81 @@ function Navbars(): JSX.Element {
             <NavbarDark />
           </MKBox>
         </View>
-        <View title="Navigation Pills from Material UI Kit V1" code={''}>
+        <View title="Navigation Pills from Material UI Kit V1" code={""}>
           <MKBox py={6}>
             <NavPills
               color="primary"
               tabs={[
                 {
-                  tabButton: 'Dashboard',
+                  tabButton: "Dashboard",
                   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                   // @ts-ignore
                   tabIcon: Dashboard,
                   tabContent: (
                     <span>
                       <p>
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
+                        Collaboratively administrate empowered markets via plug-and-play networks.
+                        Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                       <br />
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively administrate
-                        empowered markets via plug-and-play networks.
-                        Dynamically procrastinate B2C users after installed base
-                        benefits.
+                        Dramatically visualize customer directed convergence without revolutionary
+                        ROI. Collaboratively administrate empowered markets via plug-and-play
+                        networks. Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                       <br />
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively administrate
-                        empowered markets via plug-and-play networks.
-                        Dynamically procrastinate B2C users after installed base
-                        benefits.
+                        Dramatically visualize customer directed convergence without revolutionary
+                        ROI. Collaboratively administrate empowered markets via plug-and-play
+                        networks. Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                     </span>
                   ),
                 },
                 {
-                  tabButton: 'Schedule',
+                  tabButton: "Schedule",
                   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                   // @ts-ignore
                   tabIcon: Schedule,
                   tabContent: (
                     <span>
                       <p>
-                        Efficiently unleash cross-media information without
-                        cross-media value. Quickly maximize timely deliverables
-                        for real-time schemas.
+                        Efficiently unleash cross-media information without cross-media value.
+                        Quickly maximize timely deliverables for real-time schemas.
                       </p>
                       <br />
                       <p>
-                        Dramatically maintain clicks-and-mortar solutions
-                        without functional solutions. Dramatically visualize
-                        customer directed convergence without revolutionary ROI.
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
+                        Dramatically maintain clicks-and-mortar solutions without functional
+                        solutions. Dramatically visualize customer directed convergence without
+                        revolutionary ROI. Collaboratively administrate empowered markets via
+                        plug-and-play networks. Dynamically procrastinate B2C users after installed
+                        base benefits.
                       </p>
                     </span>
                   ),
                 },
                 {
-                  tabButton: 'Tasks',
+                  tabButton: "Tasks",
                   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                   // @ts-ignore
                   tabIcon: List,
                   tabContent: (
                     <span>
                       <p>
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
+                        Collaboratively administrate empowered markets via plug-and-play networks.
+                        Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                       <br />
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively administrate
-                        empowered markets via plug-and-play networks.
-                        Dynamically procrastinate B2C users after installed base
-                        benefits.
+                        Dramatically visualize customer directed convergence without revolutionary
+                        ROI. Collaboratively administrate empowered markets via plug-and-play
+                        networks. Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                       <br />
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively administrate
-                        empowered markets via plug-and-play networks.
-                        Dynamically procrastinate B2C users after installed base
-                        benefits.
+                        Dramatically visualize customer directed convergence without revolutionary
+                        ROI. Collaboratively administrate empowered markets via plug-and-play
+                        networks. Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                     </span>
                   ),
@@ -149,7 +136,7 @@ function Navbars(): JSX.Element {
             />
           </MKBox>
         </View>
-        <View title="Navigation Pills from Material UI Kit V1" code={''}>
+        <View title="Navigation Pills from Material UI Kit V1" code={""}>
           <MKBox py={6}>
             <NavPills
               color="rose"
@@ -159,56 +146,49 @@ function Navbars(): JSX.Element {
               }}
               tabs={[
                 {
-                  tabButton: 'Dashboard',
+                  tabButton: "Dashboard",
                   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                   // @ts-ignore
                   tabIcon: Dashboard,
                   tabContent: (
                     <span>
                       <p>
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
+                        Collaboratively administrate empowered markets via plug-and-play networks.
+                        Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                       <br />
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively administrate
-                        empowered markets via plug-and-play networks.
-                        Dynamically procrastinate B2C users after installed base
-                        benefits.
+                        Dramatically visualize customer directed convergence without revolutionary
+                        ROI. Collaboratively administrate empowered markets via plug-and-play
+                        networks. Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                       <br />
                       <p>
-                        Dramatically visualize customer directed convergence
-                        without revolutionary ROI. Collaboratively administrate
-                        empowered markets via plug-and-play networks.
-                        Dynamically procrastinate B2C users after installed base
-                        benefits.
+                        Dramatically visualize customer directed convergence without revolutionary
+                        ROI. Collaboratively administrate empowered markets via plug-and-play
+                        networks. Dynamically procrastinate B2C users after installed base benefits.
                       </p>
                     </span>
                   ),
                 },
                 {
-                  tabButton: 'Schedule',
+                  tabButton: "Schedule",
                   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                   // @ts-ignore
                   tabIcon: Schedule,
                   tabContent: (
                     <span>
                       <p>
-                        Efficiently unleash cross-media information without
-                        cross-media value. Quickly maximize timely deliverables
-                        for real-time schemas.
+                        Efficiently unleash cross-media information without cross-media value.
+                        Quickly maximize timely deliverables for real-time schemas.
                       </p>
                       <br />
                       <p>
-                        Dramatically maintain clicks-and-mortar solutions
-                        without functional solutions. Dramatically visualize
-                        customer directed convergence without revolutionary ROI.
-                        Collaboratively administrate empowered markets via
-                        plug-and-play networks. Dynamically procrastinate B2C
-                        users after installed base benefits.
+                        Dramatically maintain clicks-and-mortar solutions without functional
+                        solutions. Dramatically visualize customer directed convergence without
+                        revolutionary ROI. Collaboratively administrate empowered markets via
+                        plug-and-play networks. Dynamically procrastinate B2C users after installed
+                        base benefits.
                       </p>
                     </span>
                   ),

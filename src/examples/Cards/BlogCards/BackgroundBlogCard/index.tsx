@@ -13,22 +13,24 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// react-router components
-import { Link } from "react-router-dom";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 // @mui material components
 import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
-import Icon from "@mui/material/Icon";
+import { ArrowForward } from "@mui/icons-material";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox } from "../../../../components/MKBox";
+import { MKTypography } from "../../../../components/MKTypography";
 
-function BackgroundBlogCard({ image, title, description, action }) {
+import React from "react";
+import { Link } from "gatsby";
+
+function BackgroundBlogCard({
+  image,
+  title,
+  description,
+  action,
+}: BackgroundBlogCardProps): JSX.Element {
   const cardActionStyles = {
     display: "flex",
     alignItems: "center",
@@ -59,9 +61,9 @@ function BackgroundBlogCard({ image, title, description, action }) {
             variant="h2"
             color="white"
             mb={1}
-            sx={({ breakpoints, typography: { size } }) => ({
+            sx={({ breakpoints, typography }) => ({
               [breakpoints.down("md")]: {
-                fontSize: size["3xl"],
+                fontSize: typography.size["3xl"],
               },
             })}
           >
@@ -81,7 +83,7 @@ function BackgroundBlogCard({ image, title, description, action }) {
               sx={cardActionStyles}
             >
               {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              <ArrowForward sx={{ fontWeight: "bold" }} />
             </MKTypography>
           ) : (
             <MKTypography
@@ -96,7 +98,7 @@ function BackgroundBlogCard({ image, title, description, action }) {
               sx={cardActionStyles}
             >
               {action.label}
-              <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              <ArrowForward sx={{ fontWeight: "bold" }} />
             </MKTypography>
           )}
         </MKBox>
@@ -106,15 +108,15 @@ function BackgroundBlogCard({ image, title, description, action }) {
 }
 
 // Typechecking props for the BackgroundBlogCard
-BackgroundBlogCard.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  action: PropTypes.shape({
-    type: PropTypes.oneOf(["external", "internal"]).isRequired,
-    route: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-  }).isRequired,
-};
+interface BackgroundBlogCardProps {
+  image: string;
+  title: string;
+  description: string;
+  action: {
+    type: "external" | "internal";
+    route: string;
+    label: string;
+  };
+}
 
 export default BackgroundBlogCard;

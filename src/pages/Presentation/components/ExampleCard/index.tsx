@@ -1,34 +1,27 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 // @mui material components
-import Tooltip from '@mui/material/Tooltip';
-import React from 'react';
+import Tooltip from "@mui/material/Tooltip";
+import React from "react";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../../../components/MKBox';
-import { MKTypography } from '../../../../../components/MKTypography';
+import { MKBox } from "../../../../../components/MKBox";
+import { MKTypography } from "../../../../../components/MKTypography";
 
-function ExampleCard({
-  image,
-  name,
-  count,
-  pro,
-  ...rest
-}: ExampleCardProps): JSX.Element {
+function ExampleCard({ image, name, count, pro, ...rest }: ExampleCardProps): JSX.Element {
   const imageTemplate = (
     <MKBox
       bgColor="white"
@@ -36,16 +29,15 @@ function ExampleCard({
       shadow="lg"
       minHeight="10rem"
       sx={{
-        overflow: 'hidden',
-        transform: 'perspective(999px) rotateX(0deg) translate3d(0, 0, 0)',
-        transformOrigin: '50% 0',
-        backfaceVisibility: 'hidden',
-        willChange: 'transform, box-shadow',
-        transition: 'transform 200ms ease-out',
+        overflow: "hidden",
+        transform: "perspective(999px) rotateX(0deg) translate3d(0, 0, 0)",
+        transformOrigin: "50% 0",
+        backfaceVisibility: "hidden",
+        willChange: "transform, box-shadow",
+        transition: "transform 200ms ease-out",
 
-        '&:hover': {
-          transform:
-            'perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px)',
+        "&:hover": {
+          transform: "perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px)",
         },
       }}
       {...rest}
@@ -60,13 +52,7 @@ function ExampleCard({
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
           >
-            <g
-              id="lock-black"
-              stroke="none"
-              strokeWidth="1"
-              fill="none"
-              fillRule="evenodd"
-            >
+            <g id="lock-black" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
               <circle id="Oval" fill="#1F2937" cx="12" cy="12" r="12" />
 
               <g
@@ -111,12 +97,8 @@ function ExampleCard({
           )}
 
           {count && (
-            <MKTypography
-              variant="button"
-              fontWeight="regular"
-              color="secondary"
-            >
-              {count} {count === 1 ? 'Example' : 'Examples'}
+            <MKTypography variant="button" fontWeight="regular" color="secondary">
+              {count} {count === 1 ? "Example" : "Examples"}
             </MKTypography>
           )}
         </MKBox>
@@ -127,7 +109,7 @@ function ExampleCard({
 
 // Setting default props for the ExampleCard
 ExampleCard.defaultProps = {
-  name: '',
+  name: "",
   count: 0,
   pro: false,
 };

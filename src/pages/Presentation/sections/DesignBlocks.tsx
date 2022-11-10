@@ -1,37 +1,36 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 // @mui material components
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../../components/MKBox';
-import { MKBadge } from '../../../../components/MKBadge';
-import { MKTypography } from '../../../../components/MKTypography';
+import { MKBox } from "../../../../components/MKBox";
+import { MKBadge } from "../../../../components/MKBadge";
+import { MKTypography } from "../../../../components/MKTypography";
 
 // Presentation page components
-import ExampleCard from '../components/ExampleCard';
+import ExampleCard from "../components/ExampleCard";
 
 // Data
-import data from './data/designBlocksData';
+import data from "./data/designBlocksData";
 
-import React from 'react';
+import React from "react";
 
 function DesignBlocks(): JSX.Element {
   const renderData = data.map(({ title, description, items }) => (
@@ -42,13 +41,7 @@ function DesignBlocks(): JSX.Element {
             {title}
           </MKTypography>
 
-          <MKTypography
-            variant="body2"
-            fontWeight="regular"
-            color="secondary"
-            mb={1}
-            pr={2}
-          >
+          <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
             {description}
           </MKTypography>
         </MKBox>
@@ -58,13 +51,8 @@ function DesignBlocks(): JSX.Element {
         <Grid container spacing={3}>
           {items.map(({ image, name, count, route, pro }) => (
             <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
-              <Link to={pro ? '/' : route}>
-                <ExampleCard
-                  image={image}
-                  name={name}
-                  count={count}
-                  pro={pro}
-                />
+              <Link to={pro ? "/" : route}>
+                <ExampleCard image={image} name={name} count={count} pro={pro} />
               </Link>
             </Grid>
           ))}
@@ -83,7 +71,7 @@ function DesignBlocks(): JSX.Element {
           lg={6}
           flexDirection="column"
           alignItems="center"
-          sx={{ textAlign: 'center', my: 6, mx: 'auto', px: 0.75 }}
+          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
           <MKBadge
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -100,8 +88,8 @@ function DesignBlocks(): JSX.Element {
           </MKTypography>
 
           <MKTypography variant="body1" color="text">
-            We have created multiple options for you to put together and
-            customise into pixel perfect pages.
+            We have created multiple options for you to put together and customise into pixel
+            perfect pages.
           </MKTypography>
         </Grid>
       </Container>

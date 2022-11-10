@@ -1,32 +1,31 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import React from 'react';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import React from "react";
 
 // @mui material components
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import { Apps, ChatBubble, Payments, Public } from '@mui/icons-material';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import { Apps, ChatBubble, Payments, Public } from "@mui/icons-material";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../../../components/MKBox';
+import { MKBox } from "../../../../../components/MKBox";
 
 // Material Kit 2 React examples
-import DefaultInfoCard from '../../../../../examples/Cards/InfoCards/DefaultInfoCard';
-import CenteredBlogCard from '../../../../../examples/Cards/BlogCards/CenteredBlogCard';
+import DefaultInfoCard from "../../../../../examples/Cards/InfoCards/DefaultInfoCard";
+import CenteredBlogCard from "../../../../../examples/Cards/BlogCards/CenteredBlogCard";
 
 function Information(): JSX.Element {
   return (
@@ -77,16 +76,16 @@ function Information(): JSX.Element {
             </Grid>
           </Grid>
 
-          <Grid item xs={12} lg={4} sx={{ ml: 'auto', mt: { xs: 3, lg: 0 } }}>
+          <Grid item xs={12} lg={4} sx={{ ml: "auto", mt: { xs: 3, lg: 0 } }}>
             <CenteredBlogCard
               image="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
               title="Get insights on Search"
               description="Website visitors today demand a frictionless user experience — especially when using search. Because of the hight standards."
               action={{
-                type: 'internal',
-                route: 'LandingPages/AboutUs',
-                color: 'info',
-                label: 'find out more',
+                type: "internal",
+                route: "LandingPages/AboutUs",
+                color: "info",
+                label: "find out more",
               }}
             />
           </Grid>

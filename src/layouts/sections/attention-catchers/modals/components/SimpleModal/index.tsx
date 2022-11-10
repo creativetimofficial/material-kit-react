@@ -1,36 +1,35 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import { useState } from 'react';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import { useState } from "react";
 
 // @mui material components
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Modal from '@mui/material/Modal';
-import Divider from '@mui/material/Divider';
-import Slide from '@mui/material/Slide';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Modal from "@mui/material/Modal";
+import Divider from "@mui/material/Divider";
+import Slide from "@mui/material/Slide";
 
 // @mui icons
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../../../components/MKBox';
-import { MKButton } from '../../../../../components/MKButton';
-import { MKTypography } from '../../../../../components/MKTypography';
-import React from 'react';
+import { MKBox } from "../../../../../components/MKBox";
+import { MKButton } from "../../../../../components/MKButton";
+import { MKTypography } from "../../../../../components/MKTypography";
+import React from "react";
 
 function SimpleModal(): JSX.Element {
   const [show, setShow] = useState(false);
@@ -45,11 +44,7 @@ function SimpleModal(): JSX.Element {
           </MKButton>
         </Grid>
 
-        <Modal
-          open={show}
-          onClose={toggleModal}
-          sx={{ display: 'grid', placeItems: 'center' }}
-        >
+        <Modal open={show} onClose={toggleModal} sx={{ display: "grid", placeItems: "center" }}>
           <Slide direction="down" in={show} timeout={500}>
             <MKBox
               position="relative"
@@ -60,38 +55,23 @@ function SimpleModal(): JSX.Element {
               bgColor="white"
               shadow="xl"
             >
-              <MKBox
-                display="flex"
-                alignItems="center"
-                justifyContent="space-between"
-                p={2}
-              >
+              <MKBox display="flex" alignItems="center" justifyContent="space-between" p={2}>
                 <MKTypography variant="h5">Your modal title</MKTypography>
 
-                <CloseIcon
-                  fontSize="medium"
-                  sx={{ cursor: 'pointer' }}
-                  onClick={toggleModal}
-                />
+                <CloseIcon fontSize="medium" sx={{ cursor: "pointer" }} onClick={toggleModal} />
               </MKBox>
 
               <Divider sx={{ my: 0 }} />
 
               <MKBox p={2}>
-                <MKTypography
-                  variant="body2"
-                  color="secondary"
-                  fontWeight="regular"
-                >
-                  Society has put up so many boundaries, so many limitations on
-                  what's right and wrong that it's almost impossible to get a
-                  pure thought out.
+                <MKTypography variant="body2" color="secondary" fontWeight="regular">
+                  Society has put up so many boundaries, so many limitations on what's right and
+                  wrong that it's almost impossible to get a pure thought out.
                   <br />
                   <br />
-                  It's like a little kid, a little boy, looking at colors, and
-                  no one told him what colors are good, before somebody tells
-                  you you shouldn't like pink because that's for girls, or you'd
-                  instantly become a gay two-year-old.
+                  It's like a little kid, a little boy, looking at colors, and no one told him what
+                  colors are good, before somebody tells you you shouldn't like pink because that's
+                  for girls, or you'd instantly become a gay two-year-old.
                 </MKTypography>
               </MKBox>
 

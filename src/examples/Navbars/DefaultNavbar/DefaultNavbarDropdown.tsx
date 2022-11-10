@@ -13,19 +13,17 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
-// react-router-dom components
-import { Link } from "react-router-dom";
-
 // @mui material components
 import Collapse from "@mui/material/Collapse";
-import Icon from "@mui/material/Icon";
+import { KeyboardArrowDown } from "@mui/icons-material";
+
+import { Link } from "gatsby";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox } from "../../../components/MKBox";
+import { MKTypography } from "../../../components/MKTypography";
+
+import React from "react";
 
 function DefaultNavbarDropdown({
   name,
@@ -37,7 +35,7 @@ function DefaultNavbarDropdown({
   route,
   collapse,
   ...rest
-}) {
+}: DefaultNavbarDropdownProps): JSX.Element {
   const linkComponent = {
     component: "a",
     href,
@@ -81,12 +79,12 @@ function DefaultNavbarDropdown({
         >
           {name}
         </MKTypography>
+
         <MKTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
-          <Icon sx={{ fontWeight: "normal", verticalAlign: "middle" }}>
-            {collapse && "keyboard_arrow_down"}
-          </Icon>
+          {collapse && <KeyboardArrowDown sx={{ fontWeight: "normal", verticalAlign: "middle" }} />}
         </MKTypography>
       </MKBox>
+
       {children && (
         <Collapse in={Boolean(collapseStatus)} timeout={400} unmountOnExit>
           {children}
@@ -106,15 +104,18 @@ DefaultNavbarDropdown.defaultProps = {
 };
 
 // Typechecking props for the DefaultNavbarDropdown
-DefaultNavbarDropdown.propTypes = {
-  name: PropTypes.string.isRequired,
-  icon: PropTypes.node.isRequired,
-  children: PropTypes.node,
-  collapseStatus: PropTypes.bool,
-  light: PropTypes.bool,
-  href: PropTypes.string,
-  route: PropTypes.string,
-  collapse: PropTypes.bool.isRequired,
-};
+interface DefaultNavbarDropdownProps {
+  name: string;
+  icon: JSX.Element;
+  children?: JSX.Element;
+  collapseStatus?: boolean;
+  light?: boolean;
+  href?: string;
+  route?: string;
+  collapse: boolean;
+  onClick?: () => void;
+  onMouseEnter?: ({ currentTarget }) => void;
+  onMouseLeave?: () => void;
+}
 
 export default DefaultNavbarDropdown;

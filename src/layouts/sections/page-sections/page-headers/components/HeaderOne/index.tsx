@@ -1,35 +1,34 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import { Theme } from '@mui/material';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import { Theme } from "@mui/material";
 // @mui material components
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../../../components/MKBox';
-import { MKButton } from '../../../../../components/MKButton';
-import { MKTypography } from '../../../../../components/MKTypography';
+import { MKBox } from "../../../../../components/MKBox";
+import { MKButton } from "../../../../../components/MKButton";
+import { MKTypography } from "../../../../../components/MKTypography";
 
 // Images
-import bgImage from '../../../../../assets/images/bg-coworking.jpeg';
+import bgImage from "../../../../../assets/images/bg-coworking.jpeg";
 
-import React from 'react';
+import React from "react";
 
 function HeaderOne(): JSX.Element {
   return (
@@ -51,17 +50,17 @@ function HeaderOne(): JSX.Element {
             <MKButton
               variant="outlined"
               color="white"
-              sx={{ display: { xs: 'block', lg: 'none' }, ml: 'auto' }}
+              sx={{ display: { xs: "block", lg: "none" }, ml: "auto" }}
             >
               <MKBox component="i" color="white" className="fas fa-bars" />
             </MKButton>
             <MKBox
               component="ul"
-              display={{ xs: 'none', lg: 'flex' }}
+              display={{ xs: "none", lg: "flex" }}
               p={0}
               my={0}
               mx="auto"
-              sx={{ listStyle: 'none' }}
+              sx={{ listStyle: "none" }}
             >
               <MKBox component="li">
                 <MKTypography
@@ -71,7 +70,7 @@ function HeaderOne(): JSX.Element {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Home
                 </MKTypography>
@@ -85,7 +84,7 @@ function HeaderOne(): JSX.Element {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   About Us
                 </MKTypography>
@@ -99,7 +98,7 @@ function HeaderOne(): JSX.Element {
                   color="white"
                   fontWeight="regular"
                   p={1}
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Contact Us
                 </MKTypography>
@@ -107,10 +106,10 @@ function HeaderOne(): JSX.Element {
             </MKBox>
             <MKBox
               component="ul"
-              display={{ xs: 'none', lg: 'flex' }}
+              display={{ xs: "none", lg: "flex" }}
               p={0}
               m={0}
-              sx={{ listStyle: 'none' }}
+              sx={{ listStyle: "none" }}
             >
               <MKBox component="li">
                 <MKTypography
@@ -118,13 +117,9 @@ function HeaderOne(): JSX.Element {
                   href="#"
                   variant="button"
                   p={1}
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox
-                    component="i"
-                    color="white"
-                    className="fab fa-twitter"
-                  />
+                  <MKBox component="i" color="white" className="fab fa-twitter" />
                 </MKTypography>
               </MKBox>
 
@@ -134,13 +129,9 @@ function HeaderOne(): JSX.Element {
                   href="#"
                   variant="button"
                   p={1}
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox
-                    component="i"
-                    color="white"
-                    className="fab fa-facebook"
-                  />
+                  <MKBox component="i" color="white" className="fab fa-facebook" />
                 </MKTypography>
               </MKBox>
 
@@ -150,13 +141,9 @@ function HeaderOne(): JSX.Element {
                   href="#"
                   variant="button"
                   p={1}
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
-                  <MKBox
-                    component="i"
-                    color="white"
-                    className="fab fa-instagram"
-                  />
+                  <MKBox component="i" color="white" className="fab fa-instagram" />
                 </MKTypography>
               </MKBox>
             </MKBox>
@@ -172,46 +159,29 @@ function HeaderOne(): JSX.Element {
             palette: { dark, grey },
             functions: { linearGradient, rgba },
           }: Theme) =>
-            `${linearGradient(
-              rgba(grey?.A700, 0.5),
-              rgba(dark.dark, 0.5),
-            )}, url(${bgImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+            `${linearGradient(rgba(grey?.A700, 0.5), rgba(dark.dark, 0.5))}, url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <Container>
-          <Grid
-            container
-            item
-            xs={12}
-            md={7}
-            lg={6}
-            flexDirection="column"
-            justifyContent="center"
-          >
+          <Grid container item xs={12} md={7} lg={6} flexDirection="column" justifyContent="center">
             <MKTypography
               variant="h1"
               color="white"
               mb={3}
               sx={({ breakpoints, typography }) => ({
-                [breakpoints.down('md')]: {
-                  fontSize: typography.size['3xl'],
+                [breakpoints.down("md")]: {
+                  fontSize: typography.size["3xl"],
                 },
               })}
             >
               Material Kit
             </MKTypography>
 
-            <MKTypography
-              variant="body1"
-              color="white"
-              opacity={0.8}
-              pr={6}
-              mr={6}
-            >
-              The time is now for it be okay to be great. People in this world
-              shun people for being nice.
+            <MKTypography variant="body1" color="white" opacity={0.8} pr={6} mr={6}>
+              The time is now for it be okay to be great. People in this world shun people for being
+              nice.
             </MKTypography>
 
             <Stack direction="row" spacing={1} mt={3}>

@@ -1,39 +1,38 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 // @mui material components
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Divider from "@mui/material/Divider";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../../components/MKBox';
-import { MKTypography } from '../../../../components/MKTypography';
+import { MKBox } from "../../../../components/MKBox";
+import { MKTypography } from "../../../../components/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultReviewCard from '../../../../examples/Cards/ReviewCards/DefaultReviewCard';
+import DefaultReviewCard from "../../../../examples/Cards/ReviewCards/DefaultReviewCard";
 
 // Images
-import appleLogo from '../../../../assets/images/logos/gray-logos/logo-apple.svg';
-import facebookLogo from '../../../../assets/images/logos/gray-logos/logo-facebook.svg';
-import nasaLogo from '../../../../assets/images/logos/gray-logos/logo-nasa.svg';
-import vodafoneLogo from '../../../../assets/images/logos/gray-logos/logo-vodafone.svg';
-import digitalOceanLogo from '../../../../assets/images/logos/gray-logos/logo-digitalocean.svg';
+import appleLogo from "../../../../assets/images/logos/gray-logos/logo-apple.svg";
+import facebookLogo from "../../../../assets/images/logos/gray-logos/logo-facebook.svg";
+import nasaLogo from "../../../../assets/images/logos/gray-logos/logo-nasa.svg";
+import vodafoneLogo from "../../../../assets/images/logos/gray-logos/logo-vodafone.svg";
+import digitalOceanLogo from "../../../../assets/images/logos/gray-logos/logo-digitalocean.svg";
 
-import React from 'react';
+import React from "react";
 
 function Information(): JSX.Element {
   return (
@@ -45,7 +44,7 @@ function Information(): JSX.Element {
           xs={12}
           lg={6}
           justifyContent="center"
-          sx={{ mx: 'auto', textAlign: 'center' }}
+          sx={{ mx: "auto", textAlign: "center" }}
         >
           <MKTypography variant="h2">Trusted by over</MKTypography>
 
@@ -54,8 +53,8 @@ function Information(): JSX.Element {
           </MKTypography>
 
           <MKTypography variant="body1" color="text" mb={2}>
-            Many Fortune 500 companies, startups, universities and governmental
-            institutions love Creative Tim's products.
+            Many Fortune 500 companies, startups, universities and governmental institutions love
+            Creative Tim's products.
           </MKTypography>
         </Grid>
 
@@ -93,43 +92,19 @@ function Information(): JSX.Element {
 
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox
-              component="img"
-              src={appleLogo}
-              alt="Apple"
-              width="100%"
-              opacity={0.6}
-            />
+            <MKBox component="img" src={appleLogo} alt="Apple" width="100%" opacity={0.6} />
           </Grid>
 
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox
-              component="img"
-              src={facebookLogo}
-              alt="Facebook"
-              width="100%"
-              opacity={0.6}
-            />
+            <MKBox component="img" src={facebookLogo} alt="Facebook" width="100%" opacity={0.6} />
           </Grid>
 
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox
-              component="img"
-              src={nasaLogo}
-              alt="Nasa"
-              width="100%"
-              opacity={0.6}
-            />
+            <MKBox component="img" src={nasaLogo} alt="Nasa" width="100%" opacity={0.6} />
           </Grid>
 
           <Grid item xs={6} md={4} lg={2}>
-            <MKBox
-              component="img"
-              src={vodafoneLogo}
-              alt="Vodafone"
-              width="100%"
-              opacity={0.6}
-            />
+            <MKBox component="img" src={vodafoneLogo} alt="Vodafone" width="100%" opacity={0.6} />
           </Grid>
 
           <Grid item xs={6} md={4} lg={2}>

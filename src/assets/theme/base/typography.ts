@@ -1,18 +1,17 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 /**
  * The base typography styles for the Material Kit 2 React.
@@ -20,11 +19,11 @@
  * You can customized the typography styles for the entire Material Kit 2 React using thie file.
  */
 
-import { CustomTypography } from '@mui/material/styles';
-import { Typography } from '@mui/material/styles/createTypography';
+import { CustomTypography } from "@mui/material/styles";
+import { Typography } from "@mui/material/styles/createTypography";
 
 // Material Kit 2 React Helper Functions
-import { pxToRem } from '../functions/pxToRem';
+import { pxToRem } from "../functions/pxToRem";
 
 const baseProperties = {
   fontFamily: '"Open Sans", "Helvetica", "Arial", sans-serif',
@@ -45,13 +44,13 @@ const baseProperties = {
 };
 
 const baseHeadingProperties = {
-  color: 'Black',
+  color: "Black",
   fontWeight: baseProperties.fontWeightBold,
 };
 
 const baseDisplayProperties = {
   fontFamily: baseProperties.fontFamily,
-  color: 'Black',
+  color: "Black",
   fontWeight: baseProperties.fontWeightLight,
   lineHeight: 1.2,
 };
@@ -143,7 +142,7 @@ const typography: Typography & CustomTypography = {
     fontSize: baseProperties.fontSizeSM,
     fontWeight: baseProperties.fontWeightLight,
     lineHeight: 1.5,
-    textTransform: 'uppercase',
+    textTransform: "uppercase",
   },
 
   caption: {
@@ -194,8 +193,8 @@ const typography: Typography & CustomTypography = {
     md: baseProperties.fontSizeMD,
     lg: baseProperties.fontSizeLG,
     xl: baseProperties.fontSizeXL,
-    '2xl': baseProperties.fontSize2XL,
-    '3xl': baseProperties.fontSize3XL,
+    "2xl": baseProperties.fontSize2XL,
+    "3xl": baseProperties.fontSize3XL,
   },
 
   lineHeight: {

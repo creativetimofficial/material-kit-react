@@ -1,162 +1,157 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 const imagesPrefix =
-  'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections';
+  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
 
 export default [
   {
-    title: 'Design Blocks',
-    description:
-      'A selection of 45 page sections that fit perfectly in any combination',
+    title: "Design Blocks",
+    description: "A selection of 45 page sections that fit perfectly in any combination",
     items: [
       {
         image: `${imagesPrefix}/headers.jpg`,
-        name: 'Page Headers',
+        name: "Page Headers",
         count: 10,
-        route: '/sections/page-sections/page-headers',
+        route: "/sections/page-sections/page-headers",
       },
       {
         image: `${imagesPrefix}/features.jpg`,
-        name: 'Features',
+        name: "Features",
         count: 14,
-        route: '/sections/page-sections/features',
+        route: "/sections/page-sections/features",
       },
     ],
   },
   {
-    title: 'Navigation',
-    description: '30+ components that will help go through the pages',
+    title: "Navigation",
+    description: "30+ components that will help go through the pages",
     items: [
       {
         image: `${imagesPrefix}/navbars.jpg`,
-        name: 'Navbars',
+        name: "Navbars",
         count: 4,
-        route: '/sections/navigation/navbars',
+        route: "/sections/navigation/navbars",
       },
       {
         image: `${imagesPrefix}/nav-tabs.jpg`,
-        name: 'Nav Tabs',
+        name: "Nav Tabs",
         count: 2,
-        route: '/sections/navigation/nav-tabs',
+        route: "/sections/navigation/nav-tabs",
       },
       {
         image: `${imagesPrefix}/pagination.jpg`,
-        name: 'Pagination',
+        name: "Pagination",
         count: 3,
-        route: '/sections/navigation/pagination',
+        route: "/sections/navigation/pagination",
       },
     ],
   },
   {
-    title: 'Input Areas',
-    description:
-      '50+ elements that you need for text manipulation and insertion',
+    title: "Input Areas",
+    description: "50+ elements that you need for text manipulation and insertion",
     items: [
       {
         image: `${imagesPrefix}/forms.jpg`,
-        name: 'Forms',
+        name: "Forms",
         count: 3,
-        route: '/sections/input-areas/forms',
+        route: "/sections/input-areas/forms",
       },
       {
         image: `${imagesPrefix}/inputs.jpg`,
-        name: 'Inputs',
+        name: "Inputs",
         count: 6,
-        route: '/sections/input-areas/inputs',
+        route: "/sections/input-areas/inputs",
       },
     ],
   },
   {
-    title: 'Attention Catchers',
-    description:
-      '20+ Fully coded components that popup from different places of the screen',
+    title: "Attention Catchers",
+    description: "20+ Fully coded components that popup from different places of the screen",
     items: [
       {
         image: `${imagesPrefix}/alerts.jpg`,
-        name: 'Alerts',
+        name: "Alerts",
         count: 4,
-        route: '/sections/attention-catchers/alerts',
+        route: "/sections/attention-catchers/alerts",
       },
       {
         image: `${imagesPrefix}/popovers.jpg`,
-        name: 'Tooltips & Popovers',
+        name: "Tooltips & Popovers",
         count: 2,
-        route: '/sections/attention-catchers/tooltips-popovers',
+        route: "/sections/attention-catchers/tooltips-popovers",
       },
       {
         image: `${imagesPrefix}/modals.jpg`,
-        name: 'Modals',
+        name: "Modals",
         count: 5,
-        route: '/sections/attention-catchers/modals',
+        route: "/sections/attention-catchers/modals",
       },
     ],
   },
   {
-    title: 'Elements',
-    description:
-      '80+ carefully crafted small elements that come with multiple colors and shapes',
+    title: "Elements",
+    description: "80+ carefully crafted small elements that come with multiple colors and shapes",
     items: [
       {
         image: `${imagesPrefix}/buttons.jpg`,
-        name: 'Buttons',
+        name: "Buttons",
         count: 6,
-        route: '/sections/elements/buttons',
+        route: "/sections/elements/buttons",
       },
       {
         image: `${imagesPrefix}/avatars.jpg`,
-        name: 'Avatars',
+        name: "Avatars",
         count: 2,
-        route: '/sections/elements/avatars',
+        route: "/sections/elements/avatars",
       },
       {
         image: `${imagesPrefix}/dropdowns.jpg`,
-        name: 'Dropdowns',
+        name: "Dropdowns",
         count: 2,
-        route: '/sections/elements/dropdowns',
+        route: "/sections/elements/dropdowns",
       },
       {
         image: `${imagesPrefix}/switch.jpg`,
-        name: 'Toggles',
+        name: "Toggles",
         count: 2,
-        route: '/sections/elements/toggles',
+        route: "/sections/elements/toggles",
       },
       {
         image: `${imagesPrefix}/breadcrumbs.jpg`,
-        name: 'Breadcrumbs',
+        name: "Breadcrumbs",
         count: 1,
-        route: '/sections/elements/breadcrumbs',
+        route: "/sections/elements/breadcrumbs",
       },
       {
         image: `${imagesPrefix}/badges.jpg`,
-        name: 'Badges',
+        name: "Badges",
         count: 3,
-        route: '/sections/elements/badges',
+        route: "/sections/elements/badges",
       },
       {
         image: `${imagesPrefix}/progress.jpg`,
-        name: 'Progress Bars',
+        name: "Progress Bars",
         count: 4,
-        route: '/sections/elements/progress-bars',
+        route: "/sections/elements/progress-bars",
       },
       {
         image: `${imagesPrefix}/typography.jpg`,
-        name: 'Typography',
+        name: "Typography",
         count: 2,
-        route: '/sections/elements/typography',
+        route: "/sections/elements/typography",
       },
     ],
   },

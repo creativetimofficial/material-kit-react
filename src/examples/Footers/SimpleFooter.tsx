@@ -13,26 +13,27 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
+import { Favorite } from "@mui/icons-material";
 // @mui material components
 import Container from "@mui/material/Container";
-import Link from "@mui/material/Link";
-import Icon from "@mui/material/Icon";
+import MuiLink from "@mui/material/Link";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox } from "../../components/MKBox";
+import { MKTypography } from "../../components/MKTypography";
 
 // Material Kit 2 React base styles
-import typography from "assets/theme/base/typography";
+import typography from "../../assets/theme/base/typography";
 
-function SimpleFooter({ company, links, light }) {
-  const { href, name } = company;
+import React from "react";
+import { Link } from "../../types";
+
+function SimpleFooter({ company, links, light }: SimpleFooterProps): JSX.Element {
+  const { href, name } = company ?? { href: "#", name: "Creative Tim" };
   const { size } = typography;
 
-  const renderLinks = () =>
+  const renderLinks = (): undefined | JSX.Element[] =>
+    links &&
     links.map((link, key) => (
       <MKBox
         key={link.name}
@@ -41,11 +42,11 @@ function SimpleFooter({ company, links, light }) {
         pr={key === links.length - 1 ? 0 : 2}
         lineHeight={1}
       >
-        <Link href={link.href} target="_blank">
+        <MuiLink href={link.href} target="_blank">
           <MKTypography variant="button" fontWeight="regular" color={light ? "white" : "text"}>
             {link.name}
           </MKTypography>
-        </Link>
+        </MuiLink>
       </MKBox>
     ));
 
@@ -68,16 +69,14 @@ function SimpleFooter({ company, links, light }) {
         >
           &copy; {new Date().getFullYear()}, made with
           <MKBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
-            <Icon color="inherit" fontSize="inherit">
-              favorite
-            </Icon>
+            <Favorite color="inherit" fontSize="inherit" />
           </MKBox>
           by
-          <Link href={href} target="_blank">
+          <MuiLink href={href} target="_blank">
             <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
               &nbsp;{name}&nbsp;
             </MKTypography>
-          </Link>
+          </MuiLink>
           for a better web.
         </MKBox>
         <MKBox
@@ -117,10 +116,10 @@ SimpleFooter.defaultProps = {
 };
 
 // Typechecking props for the SimpleFooter
-SimpleFooter.propTypes = {
-  company: PropTypes.objectOf(PropTypes.string),
-  links: PropTypes.arrayOf(PropTypes.object),
-  light: PropTypes.bool,
-};
+interface SimpleFooterProps {
+  company?: { href: string; name: string };
+  links?: Omit<Link, "description" | "route">[];
+  light?: boolean;
+}
 
 export default SimpleFooter;

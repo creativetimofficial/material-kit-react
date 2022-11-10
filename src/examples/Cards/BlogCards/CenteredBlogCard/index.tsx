@@ -13,22 +13,24 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// react-router components
-import { Link } from "react-router-dom";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 // @mui material components
 import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
+import { Link } from "gatsby";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+import { MKBox } from "../../../../components/MKBox";
+import { MKTypography } from "../../../../components/MKTypography";
+import { MKButton } from "../../../../components/MKButton";
 
-function CenteredBlogCard({ image, title, description, action }) {
+import React from "react";
+
+function CenteredBlogCard({
+  image,
+  title,
+  description,
+  action,
+}: CenteredBlogCardProps): JSX.Element {
   return (
     <Card>
       <MKBox position="relative" borderRadius="lg" mx={2} mt={-3}>
@@ -57,15 +59,18 @@ function CenteredBlogCard({ image, title, description, action }) {
           }}
         />
       </MKBox>
+
       <MKBox p={3} mt={-1} textAlign="center">
         <MKTypography display="inline" variant="h5" textTransform="capitalize" fontWeight="regular">
           {title}
         </MKTypography>
+
         <MKBox mt={1} mb={3}>
           <MKTypography variant="body2" component="p" color="text">
             {description}
           </MKTypography>
         </MKBox>
+
         {action.type === "external" ? (
           <MKButton
             component={MuiLink}
@@ -95,25 +100,16 @@ function CenteredBlogCard({ image, title, description, action }) {
 }
 
 // Typechecking props for the CenteredBlogCard
-CenteredBlogCard.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  action: PropTypes.shape({
-    type: PropTypes.oneOf(["external", "internal"]).isRequired,
-    route: PropTypes.string.isRequired,
-    color: PropTypes.oneOf([
-      "primary",
-      "secondary",
-      "info",
-      "success",
-      "warning",
-      "error",
-      "dark",
-      "light",
-    ]),
-    label: PropTypes.string.isRequired,
-  }).isRequired,
-};
+interface CenteredBlogCardProps {
+  image: string;
+  title: string;
+  description: string;
+  action: {
+    type: "external" | "internal";
+    route: string;
+    color?: "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
+    label: string;
+  };
+}
 
 export default CenteredBlogCard;

@@ -1,31 +1,30 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import { BoxProps, PaletteColorKey } from '@mui/material';
-import React, { useState } from 'react';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import { BoxProps, PaletteColorKey } from "@mui/material";
+import React, { useState } from "react";
 
 // @mui material components
-import Fade from '@mui/material/Fade';
+import Fade from "@mui/material/Fade";
 
 // Material Kit 2 React components
-import { MKBox } from '../MKBox';
+import { MKBox } from "../MKBox";
 
 // Custom styles for the MKAlert
-import { MKAlertRoot } from './MKAlertRoot';
-import { MKAlertCloseIcon } from './MKAlertCloseIcon';
+import { MKAlertRoot } from "./MKAlertRoot";
+import { MKAlertCloseIcon } from "./MKAlertCloseIcon";
 
 export const MKAlert = ({
   color,
@@ -33,9 +32,9 @@ export const MKAlert = ({
   children,
   ...rest
 }: React.PropsWithChildren<MKAlertProps & BoxProps>): JSX.Element => {
-  const [alertStatus, setAlertStatus] = useState('mount');
+  const [alertStatus, setAlertStatus] = useState("mount");
 
-  const handleAlertStatus = (): void => setAlertStatus('fadeOut');
+  const handleAlertStatus = (): void => setAlertStatus("fadeOut");
 
   // The base template for the alert
   const alertTemplate = (mount = true): JSX.Element => (
@@ -46,26 +45,24 @@ export const MKAlert = ({
           alignItems="center"
           fontSize="1rem"
           fontWeight="regular"
-          color={color === 'light' ? 'dark' : 'white'}
+          color={color === "light" ? "dark" : "white"}
         >
           {children}
         </MKBox>
         {dismissible ? (
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
-          <MKAlertCloseIcon onClick={mount ? handleAlertStatus : null}>
-            &times;
-          </MKAlertCloseIcon>
+          <MKAlertCloseIcon onClick={mount ? handleAlertStatus : null}>&times;</MKAlertCloseIcon>
         ) : null}
       </MKAlertRoot>
     </Fade>
   );
 
   switch (alertStatus) {
-    case 'mount':
+    case "mount":
       return alertTemplate();
-    case 'fadeOut':
-      setTimeout(() => setAlertStatus('unmount'), 400);
+    case "fadeOut":
+      setTimeout(() => setAlertStatus("unmount"), 400);
       return alertTemplate(false);
     default:
       return alertTemplate();
@@ -74,7 +71,7 @@ export const MKAlert = ({
 
 // Setting default values for the props of MKAlert
 MKAlert.defaultProps = {
-  color: 'info',
+  color: "info",
   dismissible: false,
 };
 

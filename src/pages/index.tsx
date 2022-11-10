@@ -1,18 +1,17 @@
-/**
- * Copyright 2021 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 import {
   Apps,
@@ -22,66 +21,62 @@ import {
   Flag,
   FlipToFront,
   PriceChange,
-} from '@mui/icons-material';
-import { Theme } from '@mui/material';
-import Divider from '@mui/material/Divider';
-import Link from '@mui/material/Link';
-import Tooltip from '@mui/material/Tooltip';
-import React from 'react';
+} from "@mui/icons-material";
+import { Theme } from "@mui/material";
+import Divider from "@mui/material/Divider";
+import Link from "@mui/material/Link";
+import Tooltip from "@mui/material/Tooltip";
+import React from "react";
 
 // @mui material components
-import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import DefaultInfoCard from '../examples/Cards/InfoCards/DefaultInfoCard';
-import { MKBadge } from '../components/MKBadge';
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import DefaultInfoCard from "../examples/Cards/InfoCards/DefaultInfoCard";
+import { MKBadge } from "../components/MKBadge";
 
-import {
-  faPinterest,
-  faTwitter,
-  faFacebook,
-} from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPinterest, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Material Kit 2 React components
-import { MKBox } from '../components/MKBox';
-import { MKTypography } from '../components/MKTypography';
-import { MKSocialButton } from '../components/MKSocialButton';
+import { MKBox } from "../components/MKBox";
+import { MKTypography } from "../components/MKTypography";
+import { MKSocialButton } from "../components/MKSocialButton";
 
 // Material Kit 2 React examples
-import DefaultNavbar from '../examples/Navbars/DefaultNavbar';
-import DefaultFooter from '../examples/Footers/DefaultFooter';
-import FilledInfoCard from '../examples/Cards/InfoCards/FilledInfoCard';
+import DefaultNavbar from "../examples/Navbars/DefaultNavbar";
+import DefaultFooter from "../examples/Footers/DefaultFooter";
+import FilledInfoCard from "../examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 
 // Presentation page components
 
 // Material Kit 2 React themes
-import { theme } from '../assets/theme';
+import { theme } from "../assets/theme";
 
 // Routes
-import { paRooterRoutes } from '../PA-footer.routes';
-import { paRoutes } from '../PA-routes';
+import { paRooterRoutes } from "../PA-footer.routes";
+import { paRoutes } from "../PA-routes";
 
 // Images
-import BgImg from '../assets/PA-images/bg-presentation.png';
+import BgImg from "../assets/PA-images/bg-presentation.png";
 
 // https://www.freepik.com/free-vector/woman-daily-routine-set-with-isolated-icons-with-doodle-style-female-characters-during-various-everyday-activities-illustration_15481388.htm#query=daily%20activities&position=38&from_view=keyword
-import DayActivitiesImg from '../assets/PA-images/woman_daily_routine.jpg';
+import DayActivitiesImg from "../assets/PA-images/woman_daily_routine.jpg";
 
 const navbar = (
   <DefaultNavbar
     brand="Process Analytics"
     routes={paRoutes}
     action={{
-      type: 'external',
+      type: "external",
       route:
-        'https://cdn.statically.io/gh/process-analytics/bpmn-visualization-examples/master/examples/index.html',
-      label: 'Demo',
-      color: 'secondary',
+        "https://cdn.statically.io/gh/process-analytics/bpmn-visualization-examples/master/examples/index.html",
+      label: "Demo",
+      color: "secondary",
     }}
     sticky
   />
@@ -93,10 +88,10 @@ const header = (
     width="100%"
     sx={{
       backgroundImage: `url(${BgImg})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'top',
-      display: 'grid',
-      placeItems: 'center',
+      backgroundSize: "cover",
+      backgroundPosition: "top",
+      display: "grid",
+      placeItems: "center",
     }}
   >
     <Container>
@@ -107,8 +102,8 @@ const header = (
           mt={-6}
           mb={1}
           sx={({ breakpoints, typography }) => ({
-            [breakpoints.down('md')]: {
-              fontSize: typography.size['3xl'],
+            [breakpoints.down("md")]: {
+              fontSize: typography.size["3xl"],
             },
           })}
         >
@@ -138,7 +133,7 @@ const processSection = (
         lg={6}
         flexDirection="column"
         alignItems="center"
-        sx={{ textAlign: 'center', my: 6, mx: 'auto', px: 0.75 }}
+        sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
       >
         <MKBadge
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -155,8 +150,7 @@ const processSection = (
         </MKTypography>
 
         <MKTypography variant="body1" color="text">
-          We can find process everywhere: in the real life, in the industry, in
-          the software...
+          We can find process everywhere: in the real life, in the industry, in the software...
         </MKTypography>
       </Grid>
     </Container>
@@ -168,13 +162,7 @@ const processSection = (
               Example
             </MKTypography>
 
-            <MKTypography
-              variant="body2"
-              fontWeight="regular"
-              color="secondary"
-              mb={1}
-              pr={2}
-            >
+            <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
               Day Activity
             </MKTypography>
           </MKBox>
@@ -193,7 +181,7 @@ const processSection = (
       </Grid>
     </Container>
     <Container sx={{ mt: 6 }}>
-      <MKBox pb={{ xs: 2, lg: 6 }} sx={{ textAlign: 'center' }}>
+      <MKBox pb={{ xs: 2, lg: 6 }} sx={{ textAlign: "center" }}>
         <MKTypography
           variant="h3"
           // fontWeight="bold"
@@ -218,7 +206,7 @@ const dataSection = (
         lg={6}
         flexDirection="column"
         alignItems="center"
-        sx={{ textAlign: 'center', my: 6, mx: 'auto', px: 0.75 }}
+        sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
       >
         <MKBadge
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -235,8 +223,8 @@ const dataSection = (
         </MKTypography>
 
         <MKTypography variant="body1" color="text">
-          On observe ce qui se passe et on enregistre les données. On peut en
-          extraire des données communes à chaque activité/processus.
+          On observe ce qui se passe et on enregistre les données. On peut en extraire des données
+          communes à chaque activité/processus.
         </MKTypography>
       </Grid>
     </Container>
@@ -278,15 +266,8 @@ const dataSection = (
     </Container>*/}
 
     <Container>
-      <Grid
-        container
-        item
-        xs={11}
-        spacing={3}
-        alignItems="center"
-        sx={{ mx: 'auto' }}
-      >
-        <Grid item xs={12} lg={11} sx={{ ml: 'auto' }}>
+      <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <Grid item xs={12} lg={11} sx={{ ml: "auto" }}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={4}>
               <DefaultInfoCard
@@ -350,7 +331,7 @@ const paSection = (
         lg={6}
         flexDirection="column"
         alignItems="center"
-        sx={{ textAlign: 'center', my: 6, mx: 'auto', px: 0.75 }}
+        sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
       >
         <MKBadge
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -367,19 +348,18 @@ const paSection = (
         </MKTypography>
 
         <MKTypography variant="body1" color="text">
-          dans le monde du BPM: on est dans le cadre de processus structuré,
-          cadré
+          dans le monde du BPM: on est dans le cadre de processus structuré, cadré
         </MKTypography>
         <MKTypography variant="body1" color="text">
-          dans le cadre de l’exemple précédent, processus implicite, non
-          structuré, la donnée est brute
+          dans le cadre de l’exemple précédent, processus implicite, non structuré, la donnée est
+          brute
         </MKTypography>
         <MKTypography variant="body1" color="text">
           data mining: extraction et structuration de la donnée
         </MKTypography>
         <MKTypography variant="body1" color="text">
-          process mining: faire parler les données pour faire émergé des
-          processus et de nouvelles informations
+          process mining: faire parler les données pour faire émergé des processus et de nouvelles
+          informations
         </MKTypography>
       </Grid>
     </Container>
@@ -397,7 +377,7 @@ const componentsSection = (
           lg={6}
           flexDirection="column"
           alignItems="center"
-          sx={{ textAlign: 'center', my: 6, mx: 'auto', px: 0.75 }}
+          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
           <MKBadge
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -414,7 +394,7 @@ const componentsSection = (
           </MKTypography>
         </Grid>
 
-        <Grid container item xs={12} lg={9} sx={{ mx: 'auto' }}>
+        <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
             <MKBox p={2} textAlign="center" lineHeight={1} bgColor="primary">
               <MKTypography variant="h5" mt={2} mb={1} color="light">
@@ -423,26 +403,14 @@ const componentsSection = (
             </MKBox>
           </Grid>
 
-          <Grid
-            item
-            xs={12}
-            md={4}
-            display="flex"
-            justifyContent="space-between"
-          >
-            <Divider
-              orientation="vertical"
-              sx={{ display: { xs: 'none', md: 'block' }, mx: 0 }}
-            />
+          <Grid item xs={12} md={4} display="flex" justifyContent="space-between">
+            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <MKBox p={2} textAlign="center" lineHeight={1}>
               <MKTypography variant="h5" mt={2} mb={1} color="secondary">
                 Customizable
               </MKTypography>
             </MKBox>
-            <Divider
-              orientation="vertical"
-              sx={{ display: { xs: 'none', md: 'block' }, ml: 0 }}
-            />
+            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
 
           <Grid item xs={12} md={4}>
@@ -456,14 +424,14 @@ const componentsSection = (
       </Container>
     </MKBox>
     <MKBox py={{ xs: 0, sm: 12 }}>
-      Example monitoring fréquence Style par défaut neutre, pour ne pas
-      surcharger le rendu et facilite l’affichage des données spécifiques
+      Example monitoring fréquence Style par défaut neutre, pour ne pas surcharger le rendu et
+      facilite l’affichage des données spécifiques
       <MKBox
         variant="gradient"
         bgColor="dark"
         position="relative"
         borderRadius="xl"
-        sx={{ overflow: 'hidden' }}
+        sx={{ overflow: "hidden" }}
       >
         <MKBox
           borderRadius="xl"
@@ -574,10 +542,10 @@ const documentationSection = (
         }: Theme) =>
           `${linearGradient(
             rgba(grey?.A700, 0.8),
-            rgba(dark.dark, 0.8),
+            rgba(dark.dark, 0.8)
           )}, url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/desktop.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <Container>
@@ -591,10 +559,9 @@ const documentationSection = (
           </MKTypography>
 
           <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-            From BPMN support, theme customization, diagram navigation, custom
-            behavior, overlays, style, and more, you will find the full
-            documentation. Play with the style API and you will create unlimited
-            combinations for our components.
+            From BPMN support, theme customization, diagram navigation, custom behavior, overlays,
+            style, and more, you will find the full documentation. Play with the style API and you
+            will create unlimited combinations for our components.
           </MKTypography>
           <MKTypography
             component={Link}
@@ -605,19 +572,19 @@ const documentationSection = (
             color="white"
             fontWeight="regular"
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              '& .material-icons-round': {
-                fontSize: '1.125rem',
+              display: "flex",
+              alignItems: "center",
+              "& .material-icons-round": {
+                fontSize: "1.125rem",
                 transform: `translateX(3px)`,
-                transition: 'transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)',
+                transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
               },
-              '&:hover .material-icons-round, &:focus .material-icons-round': {
+              "&:hover .material-icons-round, &:focus .material-icons-round": {
                 transform: `translateX(6px)`,
               },
             }}
           >
-            Read docs <ArrowForward sx={{ fontWeight: 'bold' }} />
+            Read docs <ArrowForward sx={{ fontWeight: "bold" }} />
           </MKTypography>
         </Grid>
       </Container>
@@ -636,9 +603,8 @@ const moreSection = (
           title="Getting Started"
           description="Check the possible ways of working with our product and the necessary files for building your own project."
           action={{
-            type: 'external',
-            route:
-              'https://github.com/process-analytics/bpmn-visualization-js#%EF%B8%8F-usage',
+            type: "external",
+            route: "https://github.com/process-analytics/bpmn-visualization-js#%EF%B8%8F-usage",
             label: "Let's start",
           }}
         />
@@ -650,9 +616,9 @@ const moreSection = (
           title="Components"
           description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
           action={{
-            type: 'internal',
-            route: '/components',
-            label: 'Read more',
+            type: "internal",
+            route: "/components",
+            label: "Read more",
           }}
         />
       </Grid>
@@ -664,13 +630,7 @@ const conclusionSection = (
   <MKBox pt={18} pb={6}>
     <Container>
       <Grid container spacing={3}>
-        <Grid
-          item
-          xs={12}
-          lg={5}
-          ml="auto"
-          sx={{ textAlign: { xs: 'center', lg: 'left' } }}
-        >
+        <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
           <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
             Venez participer à notre communauté !
           </MKTypography>
@@ -683,9 +643,9 @@ const conclusionSection = (
           item
           xs={12}
           lg={5}
-          my={{ xs: 5, lg: 'auto' }}
-          mr={{ xs: 0, lg: 'auto' }}
-          sx={{ textAlign: { xs: 'center', lg: 'right' } }}
+          my={{ xs: 5, lg: "auto" }}
+          mr={{ xs: 0, lg: "auto" }}
+          sx={{ textAlign: { xs: "center", lg: "right" } }}
         >
           <MKSocialButton
             component={Link}
@@ -739,8 +699,8 @@ const HomePage = (): JSX.Element => (
         mx: { xs: 2, lg: 3 },
         mt: -8,
         mb: 4,
-        backgroundColor: ({ functions: { rgba } }: Theme) => rgba('white', 0.8),
-        backdropFilter: 'saturate(200%) blur(30px)',
+        backgroundColor: ({ functions: { rgba } }: Theme) => rgba("white", 0.8),
+        backdropFilter: "saturate(200%) blur(30px)",
         boxShadow: ({ boxShadows: { xxl } }: Theme) => xxl,
       }}
     >

@@ -13,18 +13,21 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 // @mui material components
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
+import React from "react";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox } from "../../../../components/MKBox";
+import { MKTypography } from "../../../../components/MKTypography";
 
-function HorizontalTeamCard({ image, name, position, description }) {
+function HorizontalTeamCard({
+  image,
+  name,
+  position,
+  description,
+}: HorizontalTeamCardProps): JSX.Element {
   return (
     <Card sx={{ mt: 3 }}>
       <Grid container>
@@ -40,6 +43,7 @@ function HorizontalTeamCard({ image, name, position, description }) {
             />
           </MKBox>
         </Grid>
+
         <Grid item xs={12} md={6} lg={8} sx={{ my: "auto" }}>
           <MKBox pt={{ xs: 1, lg: 2.5 }} pb={2.5} pr={4} pl={{ xs: 4, lg: 1 }} lineHeight={1}>
             <MKTypography variant="h5">{name}</MKTypography>
@@ -57,23 +61,14 @@ function HorizontalTeamCard({ image, name, position, description }) {
 }
 
 // Typechecking props for the HorizontalTeamCard
-HorizontalTeamCard.propTypes = {
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  position: PropTypes.shape({
-    color: PropTypes.oneOf([
-      "primary",
-      "secondary",
-      "info",
-      "success",
-      "warning",
-      "error",
-      "dark",
-      "light",
-    ]),
-    label: PropTypes.string.isRequired,
-  }).isRequired,
-  description: PropTypes.string.isRequired,
-};
+interface HorizontalTeamCardProps {
+  image: string;
+  name: string;
+  position: {
+    color?: "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
+    label: string;
+  };
+  description: string;
+}
 
 export default HorizontalTeamCard;

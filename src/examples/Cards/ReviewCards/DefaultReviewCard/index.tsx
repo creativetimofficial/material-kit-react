@@ -13,89 +13,87 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is library for typechecking of props
-import PropTypes from "prop-types";
-
 // @mui material components
-import Icon from "@mui/material/Icon";
+import { StarOutline, Star, StarHalf, Schedule } from "@mui/icons-material";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
-import MKTypography from "components/MKTypography";
+import { MKBox, MKAvatar, MKTypography } from "../../../../components";
 
-function DefaultReviewCard({ color, image, name, date, review, rating }) {
+import React from "react";
+
+function DefaultReviewCard({
+  color,
+  image,
+  name,
+  date,
+  review,
+  rating,
+}: DefaultReviewCardProps): JSX.Element {
   const ratings = {
     0.5: [
-      <Icon key={1}>star_outline</Icon>,
-      <Icon key={2}>star_outline</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <StarOutline key={1} />,
+      <StarOutline key={2} />,
+      <StarOutline key={3} />,
+      <StarOutline key={4} />,
+      <StarOutline key={5} />,
     ],
     1: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star_outline</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <Star key={1} />,
+      <StarOutline key={2} />,
+      <StarOutline key={3} />,
+      <StarOutline key={4} />,
+      <StarOutline key={5} />,
     ],
     1.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star_half</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <Star key={1} />,
+      <StarHalf key={2} />,
+      <StarOutline key={3} />,
+      <StarOutline key={4} />,
+      <StarOutline key={5} />,
     ],
     2: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star_outline</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <Star key={1} />,
+      <Star key={2} />,
+      <StarOutline key={3} />,
+      <StarOutline key={4} />,
+      <StarOutline key={5} />,
     ],
     2.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star_half</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <Star key={1} />,
+      <Star key={2} />,
+      <StarHalf key={3} />,
+      <StarOutline key={4} />,
+      <StarOutline key={5} />,
     ],
     3: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star_outline</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <Star key={1} />,
+      <Star key={2} />,
+      <Star key={3} />,
+      <StarOutline key={4} />,
+      <StarOutline key={5} />,
     ],
     3.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star_half</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <Star key={1} />,
+      <Star key={2} />,
+      <Star key={3} />,
+      <StarHalf key={4} />,
+      <StarOutline key={5} />,
     ],
     4: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star</Icon>,
-      <Icon key={5}>star_outline</Icon>,
+      <Star key={1} />,
+      <Star key={2} />,
+      <Star key={3} />,
+      <Star key={4} />,
+      <StarOutline key={5} />,
     ],
     4.5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star</Icon>,
-      <Icon key={5}>star_half</Icon>,
+      <Star key={1} />,
+      <Star key={2} />,
+      <Star key={3} />,
+      <Star key={4} />,
+      <StarHalf key={5} />,
     ],
-    5: [
-      <Icon key={1}>star</Icon>,
-      <Icon key={2}>star</Icon>,
-      <Icon key={3}>star</Icon>,
-      <Icon key={4}>star</Icon>,
-      <Icon key={5}>star</Icon>,
-    ],
+    5: [<Star key={1} />, <Star key={2} />, <Star key={3} />, <Star key={4} />, <Star key={5} />],
   };
 
   return (
@@ -103,7 +101,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
       variant={color === "transparent" ? "contained" : "gradient"}
       bgColor={color}
       borderRadius="xl"
-      shadow={color === "transparent" ? "none" : "md"}
+      shadow={color === "transparent" ? undefined : "md"}
       p={3}
     >
       {image && (
@@ -116,6 +114,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           sx={{ mt: -5, mb: 1 }}
         />
       )}
+
       <MKBox lineHeight={1}>
         <MKTypography
           display="block"
@@ -133,7 +132,8 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           color={color === "transparent" || color === "light" ? "text" : "white"}
           sx={{ display: "flex", alignItems: "center" }}
         >
-          <Icon>schedule</Icon>&nbsp;
+          <Schedule />
+          &nbsp;
           {date}
         </MKTypography>
       </MKBox>
@@ -151,7 +151,6 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           display: "flex",
           alignItems: "center",
           ml: 0.375,
-
           "& .material-icons-round": {
             ml: -0.375,
           },
@@ -170,23 +169,22 @@ DefaultReviewCard.defaultProps = {
 };
 
 // Typechecking props for the DefaultReviewCard
-DefaultReviewCard.propTypes = {
-  color: PropTypes.oneOf([
-    "transparent",
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "dark",
-    "light",
-  ]),
-  image: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  review: PropTypes.string.isRequired,
-  rating: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
-};
+interface DefaultReviewCardProps {
+  color?:
+    | "primary"
+    | "secondary"
+    | "info"
+    | "success"
+    | "warning"
+    | "error"
+    | "light"
+    | "dark"
+    | "transparent";
+  image?: string;
+  name: string;
+  date: string;
+  review: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+}
 
 export default DefaultReviewCard;

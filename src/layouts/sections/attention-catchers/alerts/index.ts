@@ -13,29 +13,42 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+import React from "react";
+
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+import { theme } from "../../../assets/theme";
+
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from "../../components/BaseLayout";
+import View from "../../components/View";
 
 // ALerts page components
-import SimpleAlerts from "layouts/sections/attention-catchers/alerts/components/SimpleAlerts";
+import SimpleAlerts from "./components/SimpleAlerts";
 
 // ALerts page components code
-import simpleAlertsCode from "layouts/sections/attention-catchers/alerts/components/SimpleAlerts/code";
+import simpleAlertsCode from "./components/SimpleAlerts/code";
 
-function Alerts() {
+function Alerts(): JSX.Element {
   return (
-    <BaseLayout
-      title="Alerts"
-      breadcrumb={[
-        { label: "Page Sections", route: "/sections/attention-catchers/alerts" },
-        { label: "Alerts" },
-      ]}
-    >
-      <View title="Simple alerts" code={simpleAlertsCode}>
-        <SimpleAlerts />
-      </View>
-    </BaseLayout>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <BaseLayout
+        title="Alerts"
+        breadcrumb={[
+          {
+            label: "Page Sections",
+            route: "/sections/attention-catchers/alerts",
+          },
+          { label: "Alerts" },
+        ]}
+      >
+        <View title="Simple alerts" code={simpleAlertsCode}>
+          <SimpleAlerts />
+        </View>
+      </BaseLayout>
+    </ThemeProvider>
   );
 }
 

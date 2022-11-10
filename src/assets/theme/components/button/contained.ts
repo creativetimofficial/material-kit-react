@@ -1,27 +1,26 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import { SimplePaletteColorOptions } from '@mui/material/styles/createPalette';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import { SimplePaletteColorOptions } from "@mui/material/styles/createPalette";
 
 // Material Kit 2 React Base Styles
-import { palette } from '../../base/colors';
-import typography from '../../base/typography';
+import { palette } from "../../base/colors";
+import typography from "../../base/typography";
 
 // Material Kit 2 React Helper Functions
-import { pxToRem } from '../../functions/pxToRem';
+import { pxToRem } from "../../functions/pxToRem";
 
 const { text, info, secondary } = palette;
 const { size } = typography;
@@ -30,25 +29,24 @@ const textMain = (text as SimplePaletteColorOptions)?.main;
 const infoMain = (info as SimplePaletteColorOptions)?.main;
 const infoContrastText = (info as SimplePaletteColorOptions)?.contrastText;
 const secondaryMain = (secondary as SimplePaletteColorOptions)?.main;
-const secondaryContrastText = (secondary as SimplePaletteColorOptions)
-  ?.contrastText;
+const secondaryContrastText = (secondary as SimplePaletteColorOptions)?.contrastText;
 
 export default {
   base: {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     minHeight: pxToRem(40),
     color: textMain,
     padding: `${pxToRem(10)} ${pxToRem(24)}`,
 
-    '&:hover': {
-      backgroundColor: 'white',
+    "&:hover": {
+      backgroundColor: "white",
     },
 
-    '&:active, &:active:focus, &:active:hover': {
+    "&:active, &:active:focus, &:active:hover": {
       opacity: 0.85,
     },
 
-    '& .material-icon, .material-icons-round, svg': {
+    "& .material-icon, .material-icons-round, svg": {
       fontSize: `${pxToRem(16)} !important`,
     },
   },
@@ -58,7 +56,7 @@ export default {
     padding: `${pxToRem(6)} ${pxToRem(16)}`,
     fontSize: size.xs,
 
-    '& .material-icon, .material-icons-round, svg': {
+    "& .material-icon, .material-icons-round, svg": {
       fontSize: `${pxToRem(12)} !important`,
     },
   },
@@ -68,7 +66,7 @@ export default {
     padding: `${pxToRem(12)} ${pxToRem(28)}`,
     fontSize: size.sm,
 
-    '& .material-icon, .material-icons-round, svg': {
+    "& .material-icon, .material-icons-round, svg": {
       fontSize: `${pxToRem(22)} !important`,
     },
   },
@@ -76,11 +74,11 @@ export default {
   primary: {
     backgroundColor: infoMain,
 
-    '&:hover': {
+    "&:hover": {
       backgroundColor: infoMain,
     },
 
-    '&:focus:not(:hover)': {
+    "&:focus:not(:hover)": {
       backgroundColor: infoContrastText,
     },
   },
@@ -88,11 +86,11 @@ export default {
   secondary: {
     backgroundColor: secondaryMain,
 
-    '&:hover': {
+    "&:hover": {
       backgroundColor: secondaryMain,
     },
 
-    '&:focus:not(:hover)': {
+    "&:focus:not(:hover)": {
       backgroundColor: secondaryContrastText,
     },
   },

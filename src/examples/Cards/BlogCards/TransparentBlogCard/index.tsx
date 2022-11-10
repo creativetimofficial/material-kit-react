@@ -13,22 +13,23 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// react-router components
-import { Link } from "react-router-dom";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
 // @mui material components
 import Card from "@mui/material/Card";
-import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
+import { ArrowForward } from "@mui/icons-material";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox } from "../../../../components/MKBox";
+import { MKTypography } from "../../../../components/MKTypography";
+import React from "react";
+import { Link } from "gatsby";
 
-function TransparentBlogCard({ image, title, description, action }) {
+function TransparentBlogCard({
+  image,
+  title,
+  description,
+  action,
+}: TransparentBlogCardProps): JSX.Element {
   const cardActionStyles = {
     display: "flex",
     alignItems: "center",
@@ -90,8 +91,11 @@ function TransparentBlogCard({ image, title, description, action }) {
           {imageTemplate}
         </MuiLink>
       )}
+
       <MKBox pt={2} pb={3}>
         {action.type === "internal" ? (
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           <Link to={action.route} sx={cardActionStyles}>
             <MKTypography variant="h5" gutterBottom>
               {title}
@@ -104,9 +108,11 @@ function TransparentBlogCard({ image, title, description, action }) {
             </MKTypography>
           </MuiLink>
         )}
+
         <MKTypography variant="body2" component="p" color="text" mb={3}>
           {description}
         </MKTypography>
+
         {action.type === "internal" ? (
           <MKTypography
             component={Link}
@@ -118,7 +124,8 @@ function TransparentBlogCard({ image, title, description, action }) {
             sx={cardActionStyles}
           >
             {action.label}
-            <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+
+            <ArrowForward sx={{ fontWeight: "bold" }} />
           </MKTypography>
         ) : (
           <MKTypography
@@ -133,7 +140,8 @@ function TransparentBlogCard({ image, title, description, action }) {
             sx={cardActionStyles}
           >
             {action.label}
-            <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+
+            <ArrowForward sx={{ fontWeight: "bold" }} />
           </MKTypography>
         )}
       </MKBox>
@@ -142,27 +150,26 @@ function TransparentBlogCard({ image, title, description, action }) {
 }
 
 // Typechecking props for the TransparentBlogCard
-TransparentBlogCard.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  action: PropTypes.shape({
-    type: PropTypes.oneOf(["external", "internal"]),
-    route: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    color: PropTypes.oneOf([
-      "inherit",
-      "primary",
-      "secondary",
-      "info",
-      "success",
-      "warning",
-      "error",
-      "light",
-      "dark",
-      "text",
-    ]).isRequired,
-  }).isRequired,
-};
+interface TransparentBlogCardProps {
+  image: string;
+  title: string;
+  description: string;
+  action: {
+    type?: "external" | "internal";
+    route: string;
+    label: string;
+    color:
+      | "primary"
+      | "secondary"
+      | "info"
+      | "success"
+      | "warning"
+      | "error"
+      | "light"
+      | "dark"
+      | "text"
+      | "inherit";
+  };
+}
 
 export default TransparentBlogCard;

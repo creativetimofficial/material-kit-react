@@ -13,21 +13,26 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
-// react-router-dom components
-import { Link } from "react-router-dom";
+import React from "react";
 
 // @mui material components
 import Icon from "@mui/material/Icon";
+import { ArrowForward } from "@mui/icons-material";
 import MuiLink from "@mui/material/Link";
+import { Link } from "gatsby";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox } from "../../../../components/MKBox";
+import { MKTypography } from "../../../../components/MKTypography";
 
-function FilledInfoCard({ variant, color, icon, title, description, action }) {
+function FilledInfoCard({
+  variant,
+  color,
+  icon,
+  title,
+  description,
+  action,
+}: FilledInfoCardProps): JSX.Element {
   const buttonStyles = {
     width: "max-content",
     display: "flex",
@@ -44,7 +49,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
     },
   };
 
-  let iconColor = color;
+  let iconColor: string | undefined = color;
 
   if (variant === "gradient" && color !== "light") {
     iconColor = "white";
@@ -62,19 +67,23 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
       pb={3}
       px={3}
     >
-      <MKTypography
-        display="block"
-        variant="h3"
-        color={iconColor}
-        textGradient={variant === "contained"}
-        mt={-0.625}
-      >
-        {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
-      </MKTypography>
+      {iconColor && (
+        <MKTypography
+          display="block"
+          variant="h3"
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          color={iconColor}
+          textGradient={variant === "contained"}
+          mt={-0.625}
+        >
+          {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
+        </MKTypography>
+      )}
       <MKBox pt={{ xs: 3, md: 0 }} pl={{ xs: 0, md: 2 }} lineHeight={1}>
         <MKTypography
           display="block"
-          variant="5"
+          variant="h5"
           color={variant === "contained" || color === "light" ? "dark" : "white"}
           fontWeight="bold"
           mb={1}
@@ -89,7 +98,8 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
         >
           {description}
         </MKTypography>
-        {action && action.type === "external" ? (
+
+        {action && typeof action !== "boolean" && action.type === "external" ? (
           <MKTypography
             component={MuiLink}
             href={action.route}
@@ -100,10 +110,11 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
             color={variant === "contained" ? color : "white"}
             sx={buttonStyles}
           >
-            {action.label} <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            {action.label} <ArrowForward sx={{ fontWeight: "bold" }} />
           </MKTypography>
         ) : null}
-        {action && action.type === "internal" ? (
+
+        {action && typeof action !== "boolean" && action.type === "internal" ? (
           <MKTypography
             component={Link}
             to={action.route}
@@ -112,7 +123,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
             color={variant === "contained" ? color : "white"}
             sx={buttonStyles}
           >
-            {action.label} <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+            {action.label} <ArrowForward sx={{ fontWeight: "bold" }} />
           </MKTypography>
         ) : null}
       </MKBox>
@@ -128,29 +139,19 @@ FilledInfoCard.defaultProps = {
 };
 
 // Typechecking props for the FilledInfoCard
-FilledInfoCard.propTypes = {
-  variant: PropTypes.oneOf(["contained", "gradient"]),
-  color: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "light",
-    "dark",
-  ]),
-  icon: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  action: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.shape({
-      type: PropTypes.oneOf(["external", "internal"]).isRequired,
-      route: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-    }),
-  ]),
-};
+interface FilledInfoCardProps {
+  variant?: "gradient" | "contained";
+  color?: "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
+  icon: JSX.Element | string;
+  title: string;
+  description: string;
+  action?:
+    | boolean
+    | {
+        type: "external" | "internal";
+        route: string;
+        label: string;
+      };
+}
 
 export default FilledInfoCard;

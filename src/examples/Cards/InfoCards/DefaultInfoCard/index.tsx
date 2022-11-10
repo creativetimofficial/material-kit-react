@@ -13,17 +13,25 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
+import React from "react";
 
 // @mui material components
 import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
 
-function DefaultInfoCard({ color, icon, title, description, direction, small }) {
+import { MKBox } from "../../../../components/MKBox";
+
+import { MKTypography } from "../../../../components/MKTypography";
+
+function DefaultInfoCard({
+  color,
+  icon,
+  title,
+  description,
+  direction,
+  small,
+}: DefaultInfoCardProps): JSX.Element {
   return (
     <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
       {typeof icon === "string" ? (
@@ -33,15 +41,14 @@ function DefaultInfoCard({ color, icon, title, description, direction, small }) 
           color={color}
           textGradient
         >
-          {" "}
-          <Icon>{icon}</Icon>{" "}
+          <Icon>{icon}</Icon>
         </MKTypography>
       ) : (
         icon
       )}
       <MKTypography
         display="block"
-        variant="5"
+        variant="h5"
         fontWeight="bold"
         mt={direction === "center" ? 1 : 2}
         mb={1.5}
@@ -69,22 +76,13 @@ DefaultInfoCard.defaultProps = {
 };
 
 // Typechecking props for the DefaultInfoCard
-DefaultInfoCard.propTypes = {
-  color: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "light",
-    "dark",
-  ]),
-  icon: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  direction: PropTypes.oneOf(["left", "right", "center"]),
-  small: PropTypes.bool,
-};
+interface DefaultInfoCardProps {
+  color?: "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
+  icon: JSX.Element;
+  title: string | JSX.Element;
+  description: string;
+  direction?: "left" | "right" | "center";
+  small?: boolean;
+}
 
 export default DefaultInfoCard;

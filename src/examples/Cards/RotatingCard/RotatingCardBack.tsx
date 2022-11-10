@@ -13,28 +13,33 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props.
-import PropTypes from "prop-types";
-
-// react-router-dom components
-import { Link } from "react-router-dom";
+import { Theme } from "@mui/material";
+import { Link } from "gatsby";
+import React from "react";
 
 // @mui material components
 import MuiLink from "@mui/material/Link";
+import { SimplePaletteColorOptions } from "@mui/material/styles/createPalette";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
+import { MKBox } from "../../../components/MKBox";
+import { MKTypography } from "../../../components/MKTypography";
+import { MKButton } from "../../../components/MKButton";
 
-function RotatingCard({ color, image, title, description, action }) {
+function RotatingCard({
+  color,
+  image,
+  title,
+  description,
+  action,
+}: RotatingCardProps): JSX.Element {
   return (
     <MKBox
       display="flex"
       justifyContent="center"
       alignItems="center"
       borderRadius="lg"
-      coloredShadow={color}
+      shadowColor={color}
       position="absolute"
       width="100%"
       height="100%"
@@ -42,11 +47,22 @@ function RotatingCard({ color, image, title, description, action }) {
       left={0}
       zIndex={5}
       sx={{
-        backgroundImage: ({ palette: { gradients }, functions: { linearGradient, rgba } }) =>
-          `${linearGradient(
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85),
-            rgba(gradients[color] ? gradients[color].main : gradients.info.main, 0.85)
-          )}, url(${image})`,
+        backgroundImage: ({ palette, functions: { linearGradient, rgba } }: Theme) => {
+          return `${linearGradient(
+            rgba(
+              color && palette[color]
+                ? palette[color].main
+                : (palette.info as SimplePaletteColorOptions)?.main,
+              0.85
+            ),
+            rgba(
+              color && palette[color]
+                ? palette[color].main
+                : (palette.info as SimplePaletteColorOptions)?.main,
+              0.85
+            )
+          )}, url(${image})`;
+        },
         backgroundSize: "cover",
         backfaceVisibility: "hidden",
         transform: "rotateY(180deg)",
@@ -56,9 +72,11 @@ function RotatingCard({ color, image, title, description, action }) {
         <MKTypography variant="h3" color="white" gutterBottom>
           {title}
         </MKTypography>
+
         <MKTypography variant="body2" color="white" opacity={0.8}>
           {description}
         </MKTypography>
+
         {action && (
           <MKBox width="50%" mt={4} mb={2} mx="auto">
             {action.type === "external" ? (
@@ -91,28 +109,16 @@ RotatingCard.defaultProps = {
 };
 
 // Typechecking props for the RotatingCard
-RotatingCard.propTypes = {
-  color: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "dark",
-    "light",
-  ]),
-  image: PropTypes.string.isRequired,
-  title: PropTypes.node.isRequired,
-  description: PropTypes.node.isRequired,
-  action: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.shape({
-      type: PropTypes.oneOf(["external", "internal"]).isRequired,
-      route: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-    }),
-  ]).isRequired,
-};
+interface RotatingCardProps {
+  color?: "primary" | "secondary" | "info" | "success" | "warning" | "error";
+  image: string;
+  title: string;
+  description: string;
+  action: {
+    type: "external" | "internal";
+    route: string;
+    label: string;
+  };
+}
 
 export default RotatingCard;

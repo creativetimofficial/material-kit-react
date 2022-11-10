@@ -1,40 +1,40 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-import React from 'react';
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import { theme } from '../../../assets/theme';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import React from "react";
+
+import { theme } from "../../../assets/theme";
 
 // @mui material components
-import Container from '@mui/material/Container';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
+import Container from "@mui/material/Container";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../components/MKBox';
+import { MKBox } from "../../../components/MKBox";
 
 // Material Kit 2 React examples
-import Breadcrumbs from '../../../examples/Breadcrumbs';
+import Breadcrumbs from "../../../examples/Breadcrumbs";
 
 // Sections components
-import BaseLayout from '../../components/BaseLayout';
-import View from '../../components/View';
+import BaseLayout from "../../components/BaseLayout";
+import View from "../../components/View";
 
 // Breadcrumbs page components code
-import breadcrumbsCode from '../../elements/breadcrumbs/code';
+import breadcrumbsCode from "../../elements/breadcrumbs/code";
 
 function BreadcrumbsEl(): JSX.Element {
   return (
@@ -43,8 +43,8 @@ function BreadcrumbsEl(): JSX.Element {
       <BaseLayout
         title="Breadcrumbs"
         breadcrumb={[
-          { label: 'Page Sections', route: '/sections/elements/breadcrumbs' },
-          { label: 'Breadcrumbs' },
+          { label: "Page Sections", route: "/sections/elements/breadcrumbs" },
+          { label: "Breadcrumbs" },
         ]}
       >
         <View title="Breadcrumbs" code={breadcrumbsCode}>
@@ -56,8 +56,8 @@ function BreadcrumbsEl(): JSX.Element {
                   <Breadcrumbs
                     routes={[
                       {
-                        label: 'Home',
-                        route: '/sections/elements/breadcrumbs',
+                        label: "Home",
+                        route: "/sections/elements/breadcrumbs",
                       },
                     ]}
                   />
@@ -67,10 +67,10 @@ function BreadcrumbsEl(): JSX.Element {
                   <Breadcrumbs
                     routes={[
                       {
-                        label: 'Home',
-                        route: '/sections/elements/breadcrumbs',
+                        label: "Home",
+                        route: "/sections/elements/breadcrumbs",
                       },
-                      { label: 'Library' },
+                      { label: "Library" },
                     ]}
                   />
                 </Grid>
@@ -79,14 +79,14 @@ function BreadcrumbsEl(): JSX.Element {
                   <Breadcrumbs
                     routes={[
                       {
-                        label: 'Home',
-                        route: '/sections/elements/breadcrumbs',
+                        label: "Home",
+                        route: "/sections/elements/breadcrumbs",
                       },
                       {
-                        label: 'Library',
-                        route: '/sections/elements/breadcrumbs',
+                        label: "Library",
+                        route: "/sections/elements/breadcrumbs",
                       },
-                      { label: 'Data' },
+                      { label: "Data" },
                     ]}
                   />
                 </Grid>

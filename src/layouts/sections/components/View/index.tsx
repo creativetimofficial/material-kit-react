@@ -1,47 +1,46 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
 
-import React, { useState, useEffect } from 'react';
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+import React, { useState, useEffect } from "react";
 
 // react-copy-to-clipboard components
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 // react-syntax-highlighter components
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 // @mui material components
-import Grid from '@mui/material/Grid';
-import AppBar from '@mui/material/AppBar';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Slide from '@mui/material/Slide';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import Grid from "@mui/material/Grid";
+import AppBar from "@mui/material/AppBar";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Slide from "@mui/material/Slide";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
-import { theme } from '../../../assets/theme';
+import { theme } from "../../../assets/theme";
 
 // Material Kit 2 React components
-import { MKBox } from '../../../components/MKBox';
-import { MKAlert } from '../../../components/MKAlert';
-import { MKButton } from '../../../components/MKButton';
-import { MKTypography } from '../../../components/MKTypography';
+import { MKBox } from "../../../components/MKBox";
+import { MKAlert } from "../../../components/MKAlert";
+import { MKButton } from "../../../components/MKButton";
+import { MKTypography } from "../../../components/MKTypography";
 
 // Material Kit 2 React base styles
-import { palette } from '../../../assets/theme/base/colors';
+import { palette } from "../../../assets/theme/base/colors";
 
 function View({
   children,
@@ -55,8 +54,7 @@ function View({
   const [activeTab, setActiveTab] = useState(0);
   const [success, setSuccess] = useState(false);
 
-  const handleTabType = (event: Event, newValue: number): void =>
-    setActiveTab(newValue);
+  const handleTabType = (event: Event, newValue: number): void => setActiveTab(newValue);
 
   useEffect(() => {
     setTimeout(() => setSuccess(false), 3000);
@@ -71,7 +69,7 @@ function View({
         borderRadius="xl"
         shadow="lg"
         mb={12}
-        sx={{ overflow: 'hidden' }}
+        sx={{ overflow: "hidden" }}
         {...rest}
       >
         <MKBox
@@ -126,7 +124,7 @@ function View({
           </Grid>
         </MKBox>
 
-        <MKBox display={activeTab === 0 ? 'block' : 'none'}>
+        <MKBox display={activeTab === 0 ? "block" : "none"}>
           <MKBox width="100%" p={3}>
             <MKBox
               bgColor="grey-100"
@@ -134,27 +132,27 @@ function View({
               height={height}
               maxHeight="40rem"
               borderRadius="xl"
-              sx={{ overflowX: 'hidden', overflowY: 'scroll' }}
+              sx={{ overflowX: "hidden", overflowY: "scroll" }}
             >
               {children}
             </MKBox>
           </MKBox>
         </MKBox>
 
-        <MKBox display={activeTab === 1 ? 'block' : 'none'} p={3}>
+        <MKBox display={activeTab === 1 ? "block" : "none"} p={3}>
           <MKBox
             bgColor="grey-100"
             position="relative"
             width="100%"
             borderRadius="xl"
-            sx={{ overflow: 'hidden' }}
+            sx={{ overflow: "hidden" }}
           >
             <CopyToClipboard text={code}>
               <MKButton
                 variant="gradient"
                 color="dark"
                 size="small"
-                sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
+                sx={{ position: "absolute", top: "0.5rem", right: "0.5rem" }}
                 onClick={() => setSuccess(true)}
               >
                 <MKBox color="white" mr={0.5} className="fas fa-copy" /> Copy
@@ -168,16 +166,12 @@ function View({
                   mx="auto"
                   color="success"
                   sx={{
-                    minHeight: '2.5rem !important',
+                    minHeight: "2.5rem !important",
                     py: 1,
-                    justifyContent: 'center',
+                    justifyContent: "center",
                   }}
                 >
-                  <MKTypography
-                    variant="body2"
-                    color="white"
-                    fontWeight="regular"
-                  >
+                  <MKTypography variant="body2" color="white" fontWeight="regular">
                     Code successfully copied!
                   </MKTypography>
                 </MKAlert>
@@ -190,11 +184,11 @@ function View({
               showLineNumbers
               customStyle={{
                 height,
-                maxHeight: '40rem',
-                fontSize: '1rem',
+                maxHeight: "40rem",
+                fontSize: "1rem",
                 backgroundColor: grey ? grey[100] : undefined,
-                padding: '1rem 1rem 1rem 0.25rem',
-                overflowY: 'scroll',
+                padding: "1rem 1rem 1rem 0.25rem",
+                overflowY: "scroll",
                 margin: 0,
               }}
             >
@@ -209,7 +203,7 @@ function View({
 
 // Setting default props for the View
 View.defaultProps = {
-  height: 'auto',
+  height: "auto",
 };
 
 // Typechecking props for the View

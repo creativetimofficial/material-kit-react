@@ -1,22 +1,21 @@
-/**
- * Copyright 2022 Bonitasoft S.A.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+/*
+=========================================================
+* Material Kit 2 React - v2.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-kit-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
 
 // @mui material components
-import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
 
 interface MKSocialButtonRootProps {
   ownerState: {
@@ -34,9 +33,7 @@ export const MKSocialButtonRoot = styled(Button)<MKSocialButtonRootProps>(
     const { pxToRem } = functions;
 
     // backgroundColor value
-    const backgroundColorValue = palette[color]
-      ? palette[color].main
-      : palette.facebook.main;
+    const backgroundColorValue = palette[color] ? palette[color].main : palette.facebook.main;
 
     const focusedBackgroundColorValue = palette[color]
       ? palette[color].dark
@@ -46,17 +43,17 @@ export const MKSocialButtonRoot = styled(Button)<MKSocialButtonRootProps>(
     const iconOnlyStyles = () => {
       // width, height, minWidth and minHeight values
       let sizeValue = pxToRem(38);
-      if (size === 'small') {
+      if (size === "small") {
         sizeValue = pxToRem(25.4);
-      } else if (size === 'large') {
+      } else if (size === "large") {
         sizeValue = pxToRem(52);
       }
 
       // padding value
       let paddingValue = `${pxToRem(11)} ${pxToRem(11)} ${pxToRem(10)}`;
-      if (size === 'small') {
+      if (size === "small") {
         paddingValue = pxToRem(4.5);
-      } else if (size === 'large') {
+      } else if (size === "large") {
         paddingValue = pxToRem(16);
       }
 
@@ -71,30 +68,28 @@ export const MKSocialButtonRoot = styled(Button)<MKSocialButtonRootProps>(
 
     return {
       backgroundColor: backgroundColorValue,
-      color: 'white',
-      boxShadow: 'none',
+      color: "white",
+      boxShadow: "none",
 
-      '&:hover': {
+      "&:hover": {
         backgroundColor: focusedBackgroundColorValue,
-        boxShadow: 'none',
+        boxShadow: "none",
       },
 
-      '&:focus:not(:hover)': {
-        backgroundColor: palette[color]
-          ? palette[color].dark
-          : palette.facebook.dark,
-        boxShadow: 'none',
+      "&:focus:not(:hover)": {
+        backgroundColor: palette[color] ? palette[color].dark : palette.facebook.dark,
+        boxShadow: "none",
       },
 
-      '&:disabled': {
+      "&:disabled": {
         backgroundColor: backgroundColorValue,
-        color: 'white',
+        color: "white",
       },
 
       ...(circular && {
-        borderRadius: '50%',
+        borderRadius: "50%",
       }),
       ...(iconOnly && iconOnlyStyles()),
     };
-  },
+  }
 );

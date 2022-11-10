@@ -13,58 +13,86 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
+import React from "react";
+
+import { Link as GatsbyLink } from "gatsby";
 
 // @mui material components
-import Link from "@mui/material/Link";
+import MaterialLink from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// @mui icons
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import GitHubIcon from "@mui/icons-material/GitHub";
-
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
+import { MKBox } from "../../components/MKBox";
+import { MKTypography } from "../../components/MKTypography";
 
-function CenteredFooter({ company, links, socials, light }) {
-  const { href, name } = company;
+import { FooterRoutes, Link, FooterMenu, SocialLink } from "../../types";
+
+function CenteredFooter({ content, light }: CenteredFooterProps): JSX.Element {
+  const { brand, socials, menus, copyright } = content;
 
   const year = new Date().getFullYear();
+  const color = light ? "tertiary" : "secondary";
 
-  const renderLinks = links.map((link) => (
-    <MKTypography
-      key={link.name}
-      component={Link}
-      href={link.href}
-      variant="body2"
-      color={light ? "white" : "secondary"}
-      fontWeight="regular"
-    >
-      {link.name}
-    </MKTypography>
-  ));
+  const renderLinks =
+    menus &&
+    menus.map((menu: FooterMenu) =>
+      menu.items.map((item: Link) => (
+        <MKTypography
+          key={item.name}
+          component={GatsbyLink}
+          to={item.route}
+          variant="body2"
+          fontWeight="regular"
+          textTransform="capitalize"
+        >
+          {item.name}
+        </MKTypography>
+      ))
+    );
 
-  const renderSocials = socials.map((social) => (
-    <MKTypography
-      key={social.link}
-      component={Link}
-      href={social.link}
-      variant="body2"
-      color={light ? "white" : "secondary"}
-      fontWeight="regular"
-    >
-      {social.icon}
+  const renderSocials =
+    socials &&
+    socials.map((social: Omit<SocialLink, "name">) => (
+      <MKTypography
+        key={social.url}
+        component={MaterialLink}
+        href={social.url}
+        variant="body2"
+        fontWeight="regular"
+      >
+        {social.icon}
+      </MKTypography>
+    ));
+
+  const renderCopyright = (
+    <MKTypography variant="caption">
+      Copyright &copy; {year}{" "}
+      <MKTypography
+        component={GatsbyLink}
+        to={brand.route}
+        rel="noreferrer"
+        variant="caption"
+        fontWeight="regular"
+        style={{ textDecoration: `underline dotted ${color}` }}
+      >
+        {brand.name}
+      </MKTypography>{" "}
+      by{" "}
+      <MKTypography
+        component={MaterialLink}
+        href={copyright.url}
+        target="_blank"
+        rel="noreferrer"
+        variant="caption"
+      >
+        {copyright.name}
+      </MKTypography>
     </MKTypography>
-  ));
+  );
 
   return (
-    <MKBox component="footer" py={6}>
+    <MKBox component="footer" py={6} color={color}>
       <Grid container justifyContent="center">
         <Grid item xs={10} lg={8}>
           <Stack
@@ -77,26 +105,15 @@ function CenteredFooter({ company, links, socials, light }) {
             {renderLinks}
           </Stack>
         </Grid>
+
         <Grid item xs={12} lg={8}>
           <Stack display="flex" direction="row" justifyContent="center" spacing={3} mt={1} mb={3}>
             {renderSocials}
           </Stack>
         </Grid>
+
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
-          <MKTypography variant="body2" color={light ? "white" : "secondary"}>
-            Copyright &copy; {year} Material by{" "}
-            <MKTypography
-              component={Link}
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color={light ? "white" : "secondary"}
-            >
-              {name}
-            </MKTypography>
-            .
-          </MKTypography>
+          {renderCopyright}
         </Grid>
       </Grid>
     </MKBox>
@@ -105,40 +122,13 @@ function CenteredFooter({ company, links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-  links: [
-    { href: "https://www.creative-tim.com/", name: "Company" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/presentation", name: "Team" },
-    { href: "https://www.creative-tim.com/templates/react", name: "Products" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
-  ],
-  socials: [
-    { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },
-    {
-      icon: <TwitterIcon fontSize="small" />,
-      link: "https://twitter.com/creativetim",
-    },
-    {
-      icon: <InstagramIcon fontSize="small" />,
-      link: "https://www.instagram.com/creativetimofficial/",
-    },
-    {
-      icon: <PinterestIcon fontSize="small" />,
-      link: "https://ro.pinterest.com/thecreativetim/",
-    },
-    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/creativetimofficial" },
-  ],
   light: false,
 };
 
 // Typechecking props for the CenteredFooter
-CenteredFooter.propTypes = {
-  company: PropTypes.objectOf(PropTypes.string),
-  links: PropTypes.arrayOf(PropTypes.object),
-  socials: PropTypes.arrayOf(PropTypes.object),
-  light: PropTypes.bool,
-};
+interface CenteredFooterProps {
+  content: FooterRoutes;
+  light?: boolean;
+}
 
 export default CenteredFooter;
