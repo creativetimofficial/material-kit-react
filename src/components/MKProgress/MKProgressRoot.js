@@ -1,47 +1,55 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 // @mui material components
-import { styled } from "@mui/material/styles";
-import LinearProgress from "@mui/material/LinearProgress";
+import { styled } from '@mui/material/styles';
+import LinearProgress from '@mui/material/LinearProgress';
+import { SimplePaletteColorOptions } from '@mui/material/styles/createPalette';
 
-export default styled(LinearProgress)(({ theme, ownerState }) => {
-  const { palette, functions } = theme;
-  const { color, value, variant } = ownerState;
+interface MKProgressRootProps {
+  ownerState: { color: string; value: string; variant: string };
+}
 
-  const { text, gradients } = palette;
-  const { linearGradient } = functions;
+export const MKProgressRoot = styled(LinearProgress)<MKProgressRootProps>(
+  ({ theme, ownerState }) => {
+    const { palette, functions } = theme;
+    const { color, value, variant } = ownerState;
 
-  // background value
-  let backgroundValue;
+    const { text, info } = palette;
+    const { linearGradient } = functions;
 
-  if (variant === "gradient") {
-    backgroundValue = gradients[color]
-      ? linearGradient(gradients[color].main, gradients[color].state)
-      : linearGradient(gradients.info.main, gradients.info.state);
-  } else {
-    backgroundValue = palette[color] ? palette[color].main : palette.info.main;
-  }
+    // background value
+    let backgroundValue;
 
-  return {
-    width: "100%",
+    if (variant === 'gradient') {
+      backgroundValue = color
+        ? linearGradient(palette[color].main, palette[color].dark)
+        : linearGradient(info?.main, info?.dark);
+    } else {
+      backgroundValue = palette[color]?.main ?? info?.main;
+    }
 
-    "& .MuiLinearProgress-bar": {
-      background: backgroundValue,
-      width: `${value}%`,
-      color: text.main,
-    },
-  };
-});
+    return {
+      width: '100%',
+
+      '& .MuiLinearProgress-bar': {
+        background: backgroundValue,
+        width: `${value}%`,
+        color: (text as SimplePaletteColorOptions)?.main,
+      },
+    };
+  },
+);

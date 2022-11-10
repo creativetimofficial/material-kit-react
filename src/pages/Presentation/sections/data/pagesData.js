@@ -1,41 +1,42 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages";
+  'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation';
+const imagesPagesPrefix = `${imagesPrefix}/pages`;
 
 export default [
   {
-    image: `${imagesPrefix}/about-us.jpg`,
-    name: "About Us Page",
-    route: "/pages/landing-pages/about-us",
+    image: `${imagesPagesPrefix}/about-us.jpg`,
+    name: 'About Us Page',
+    route: '/LandingPages/AboutUs',
   },
   {
-    image: `${imagesPrefix}/contact.jpg`,
-    name: "Contact Us Page",
-    route: "/pages/landing-pages/contact-us",
+    image: `${imagesPagesPrefix}/contact.jpg`,
+    name: 'Contact Us Page',
+    route: '/LandingPages/ContactUs',
   },
   {
-    image:
-      "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/account/signin-basic.jpg",
-    name: "Sign In Page",
-    route: "/pages/authentication/sign-in",
+    image: `${imagesPrefix}/account/signin-basic.jpg`,
+    name: 'Sign In Page',
+    route: '/LandingPages/SignIn',
   },
   {
-    image: `${imagesPrefix}/author.jpg`,
-    name: "Author Page",
-    route: "/pages/landing-pages/author",
+    image: `${imagesPagesPrefix}/author.jpg`,
+    name: 'Author Page',
+    route: '/LandingPages/Author',
   },
 ];

@@ -1,24 +1,26 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
+import { SimplePaletteColorOptions } from '@mui/material/styles/createPalette';
 // Material Kit 2 React Base Styles
-import colors from "assets/theme/base/colors";
-import typography from "assets/theme/base/typography";
-import borders from "assets/theme/base/borders";
+import { palette } from '../../base/colors';
+import typography from '../../base/typography';
+import { borders } from '../../base/borders';
 
-const { info, inputBorderColor, dark } = colors;
+const { info, grey } = palette;
 const { size } = typography;
 const { borderWidth } = borders;
 
@@ -26,18 +28,18 @@ export default {
   styleOverrides: {
     root: {
       fontSize: size.sm,
-      color: dark.main,
+      color: grey?.A700,
 
-      "&:hover:not(.Mui-disabled):before": {
-        borderBottom: `${borderWidth[1]} solid ${inputBorderColor}`,
+      '&:hover:not(.Mui-disabled):before': {
+        borderBottom: `${borderWidth[1]} solid ${'#d2d6da'}`,
       },
 
-      "&:before": {
-        borderColor: inputBorderColor,
+      '&:before': {
+        borderColor: '#d2d6da',
       },
 
-      "&:after": {
-        borderColor: info.main,
+      '&:after': {
+        borderColor: (info as SimplePaletteColorOptions)?.main,
       },
     },
   },

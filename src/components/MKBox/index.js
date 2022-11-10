@@ -1,66 +1,16 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import { forwardRef } from "react";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
-// Custom styles for MKBox
-import MKBoxRoot from "components/MKBox/MKBoxRoot";
-
-const MKBox = forwardRef(
-  ({ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow, ...rest }, ref) => (
-    <MKBoxRoot
-      {...rest}
-      ref={ref}
-      ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow }}
-    />
-  )
-);
-
-// Setting default values for the props of MKBox
-MKBox.defaultProps = {
-  variant: "contained",
-  bgColor: "transparent",
-  color: "dark",
-  opacity: 1,
-  borderRadius: "none",
-  shadow: "none",
-  coloredShadow: "none",
-};
-
-// Typechecking props for the MKBox
-MKBox.propTypes = {
-  variant: PropTypes.oneOf(["contained", "gradient"]),
-  bgColor: PropTypes.string,
-  color: PropTypes.string,
-  opacity: PropTypes.number,
-  borderRadius: PropTypes.string,
-  shadow: PropTypes.string,
-  coloredShadow: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "light",
-    "dark",
-    "none",
-  ]),
-};
-
-export default MKBox;
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+export { MKBox } from './MKBox';

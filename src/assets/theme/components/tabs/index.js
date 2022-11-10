@@ -1,63 +1,73 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
+import { ComponentsOverrides } from '@mui/material/styles/overrides';
+import { ComponentsProps } from '@mui/material/styles/props';
+import { ComponentsVariants } from '@mui/material/styles/variants';
 // Material Kit 2 React base styles
-import colors from "assets/theme/base/colors";
-import borders from "assets/theme/base/borders";
-import boxShadows from "assets/theme/base/boxShadows";
+import { palette } from '../../base/colors';
+import { borders } from '../../base/borders';
+import { boxShadows } from '../../base/boxShadows';
 
 // Material Kit 2 React helper functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import { pxToRem } from '../../functions/pxToRem';
 
-const { grey, white } = colors;
+const { grey } = palette;
 const { borderRadius } = borders;
 const { tabsBoxShadow } = boxShadows;
 
-export default {
+const tabs: {
+  defaultProps?: ComponentsProps['MuiTabs'];
+  styleOverrides?: ComponentsOverrides['MuiTabs'];
+  variants?: ComponentsVariants['MuiTabs'];
+} = {
   styleOverrides: {
     root: {
-      position: "relative",
-      backgroundColor: grey[100],
+      position: 'relative',
+      backgroundColor: grey ? grey[100] : undefined,
       borderRadius: borderRadius.xl,
-      minHeight: "unset",
+      minHeight: 'unset',
       padding: pxToRem(4),
     },
 
     flexContainer: {
-      height: "100%",
-      position: "relative",
+      height: '100%',
+      position: 'relative',
       zIndex: 10,
     },
-
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     fixed: {
-      overflow: "unset !important",
-      overflowX: "unset !important",
+      overflow: 'unset !important',
+      overflowX: 'unset !important',
     },
 
     vertical: {
-      "& .MuiTabs-indicator": {
-        width: "100%",
+      '& .MuiTabs-indicator': {
+        width: '100%',
       },
     },
 
     indicator: {
-      height: "100%",
+      height: '100%',
       borderRadius: borderRadius.lg,
-      backgroundColor: white.main,
+      backgroundColor: 'white',
       boxShadow: tabsBoxShadow.indicator,
-      transition: "all 500ms ease",
+      transition: 'all 500ms ease',
     },
   },
 };
+export default tabs;

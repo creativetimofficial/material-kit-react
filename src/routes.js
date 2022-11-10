@@ -1,17 +1,18 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /** 
   All of the routes for the Material Kit 2 React React are added here,
@@ -36,71 +37,75 @@ Coded by www.creative-tim.com
   10. The `rowsPerColumn` key is used to define that how many rows should be in a column.
 */
 
-// @mui material components
-import Icon from "@mui/material/Icon";
-
 // @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import ViewDayIcon from '@mui/icons-material/ViewDay';
+import ArticleIcon from '@mui/icons-material/Article';
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
+import AboutUs from './pages/about-us';
+import ContactUs from './pages/contact-us';
+import Author from './pages/author';
+import SignIn from './pages/sign-in';
 
 // Sections
-import PageHeaders from "layouts/sections/page-sections/page-headers";
-import Features from "layouts/sections/page-sections/featuers";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
-import Pagination from "layouts/sections/navigation/pagination";
-import Inputs from "layouts/sections/input-areas/inputs";
-import Forms from "layouts/sections/input-areas/forms";
-import Alerts from "layouts/sections/attention-catchers/alerts";
-import Modals from "layouts/sections/attention-catchers/modals";
-import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
-import Avatars from "layouts/sections/elements/avatars";
-import Badges from "layouts/sections/elements/badges";
-import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
-import Buttons from "layouts/sections/elements/buttons";
-import Dropdowns from "layouts/sections/elements/dropdowns";
-import ProgressBars from "layouts/sections/elements/progress-bars";
-import Toggles from "layouts/sections/elements/toggles";
-import Typography from "layouts/sections/elements/typography";
+import PageHeaders from './sections/page-sections/page-headers';
+import Features from './sections/page-sections/features';
+import Navbars from './sections/navigation/navbars';
+import NavTabs from './sections/navigation/nav-tabs';
+import Pagination from './sections/navigation/pagination';
+import Inputs from './sections/input-areas/inputs';
+import Forms from './sections/input-areas/forms';
+import Alerts from './sections/attention-catchers/alerts';
+import Modals from './sections/attention-catchers/modals';
+import TooltipsPopovers from './sections/attention-catchers/tooltips-popovers';
+import Avatars from './sections/elements/avatars';
+import Badges from './sections/elements/badges';
+import BreadcrumbsEl from './sections/elements/breadcrumbs';
+import Buttons from './sections/elements/buttons';
+import Dropdowns from './sections/elements/dropdowns';
+import ProgressBars from './sections/elements/progress-bars';
+import Toggles from './sections/elements/toggles';
+import Typography from './sections/elements/typography';
 
-const routes = [
+import React from 'react';
+
+import { HeaderRoute } from './types';
+
+export const routes: HeaderRoute[] = [
   {
-    name: "pages",
-    icon: <Icon>dashboard</Icon>,
+    name: 'pages',
+    icon: <DashboardIcon />,
     columns: 1,
     rowsPerColumn: 2,
-    collapse: [
+    menu: [
       {
-        name: "landing pages",
-        collapse: [
+        name: 'landing pages',
+        subItems: [
           {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
+            name: 'about us',
+            route: '/LandingPages/AboutUs',
             component: <AboutUs />,
           },
           {
-            name: "contact us",
-            route: "/pages/landing-pages/contact-us",
+            name: 'contact us',
+            route: '/LandingPages/ContactUs',
             component: <ContactUs />,
           },
           {
-            name: "author",
-            route: "/pages/landing-pages/author",
+            name: 'author',
+            route: '/LandingPages/Author',
             component: <Author />,
           },
         ],
       },
       {
-        name: "account",
-        collapse: [
+        name: 'account',
+        subItems: [
           {
-            name: "sign in",
-            route: "/pages/authentication/sign-in",
+            name: 'sign in',
+            route: '/LandingPages/SignIn',
             component: <SignIn />,
           },
         ],
@@ -108,130 +113,130 @@ const routes = [
     ],
   },
   {
-    name: "sections",
-    icon: <Icon>view_day</Icon>,
-    collapse: [
+    name: 'sections',
+    icon: <ViewDayIcon />,
+    menu: [
       {
-        name: "page sections",
-        description: "See all sections",
+        name: 'page sections',
+        description: 'See all sections',
         dropdown: true,
-        collapse: [
+        subItems: [
           {
-            name: "page headers",
-            route: "/sections/page-sections/page-headers",
+            name: 'page headers',
+            route: '/sections/page-sections/page-headers',
             component: <PageHeaders />,
           },
           {
-            name: "features",
-            route: "/sections/page-sections/features",
+            name: 'features',
+            route: '/sections/page-sections/features',
             component: <Features />,
           },
         ],
       },
       {
-        name: "navigation",
-        description: "See all navigations",
+        name: 'navigation',
+        description: 'See all navigations',
         dropdown: true,
-        collapse: [
+        subItems: [
           {
-            name: "navbars",
-            route: "/sections/navigation/navbars",
+            name: 'navbars',
+            route: '/sections/navigation/navbars',
             component: <Navbars />,
           },
           {
-            name: "nav tabs",
-            route: "/sections/navigation/nav-tabs",
+            name: 'nav tabs',
+            route: '/sections/navigation/nav-tabs',
             component: <NavTabs />,
           },
           {
-            name: "pagination",
-            route: "/sections/navigation/pagination",
+            name: 'pagination',
+            route: '/sections/navigation/pagination',
             component: <Pagination />,
           },
         ],
       },
       {
-        name: "input areas",
-        description: "See all input areas",
+        name: 'input areas',
+        description: 'See all input areas',
         dropdown: true,
-        collapse: [
+        subItems: [
           {
-            name: "inputs",
-            route: "/sections/input-areas/inputs",
+            name: 'inputs',
+            route: '/sections/input-areas/inputs',
             component: <Inputs />,
           },
           {
-            name: "forms",
-            route: "/sections/input-areas/forms",
+            name: 'forms',
+            route: '/sections/input-areas/forms',
             component: <Forms />,
           },
         ],
       },
       {
-        name: "attention catchers",
-        description: "See all examples",
+        name: 'attention catchers',
+        description: 'See all examples',
         dropdown: true,
-        collapse: [
+        subItems: [
           {
-            name: "alerts",
-            route: "/sections/attention-catchers/alerts",
+            name: 'alerts',
+            route: '/sections/attention-catchers/alerts',
             component: <Alerts />,
           },
           {
-            name: "modals",
-            route: "/sections/attention-catchers/modals",
+            name: 'modals',
+            route: '/sections/attention-catchers/modals',
             component: <Modals />,
           },
           {
-            name: "tooltips & popovers",
-            route: "/sections/attention-catchers/tooltips-popovers",
+            name: 'tooltips & popovers',
+            route: '/sections/attention-catchers/tooltips-popovers',
             component: <TooltipsPopovers />,
           },
         ],
       },
       {
-        name: "elements",
-        description: "See all 32 examples",
+        name: 'elements',
+        description: 'See all 32 examples',
         dropdown: true,
-        collapse: [
+        subItems: [
           {
-            name: "avatars",
-            route: "/sections/elements/avatars",
+            name: 'avatars',
+            route: '/sections/elements/avatars',
             component: <Avatars />,
           },
           {
-            name: "badges",
-            route: "/sections/elements/badges",
+            name: 'badges',
+            route: '/sections/elements/badges',
             component: <Badges />,
           },
           {
-            name: "breadcrumbs",
-            route: "/sections/elements/breadcrumbs",
+            name: 'breadcrumbs',
+            route: '/sections/elements/breadcrumbs',
             component: <BreadcrumbsEl />,
           },
           {
-            name: "buttons",
-            route: "/sections/elements/buttons",
+            name: 'buttons',
+            route: '/sections/elements/buttons',
             component: <Buttons />,
           },
           {
-            name: "dropdowns",
-            route: "/sections/elements/dropdowns",
+            name: 'dropdowns',
+            route: '/sections/elements/dropdowns',
             component: <Dropdowns />,
           },
           {
-            name: "progress bars",
-            route: "/sections/elements/progress-bars",
+            name: 'progress bars',
+            route: '/sections/elements/progress-bars',
             component: <ProgressBars />,
           },
           {
-            name: "toggles",
-            route: "/sections/elements/toggles",
+            name: 'toggles',
+            route: '/sections/elements/toggles',
             component: <Toggles />,
           },
           {
-            name: "typography",
-            route: "/sections/elements/typography",
+            name: 'typography',
+            route: '/sections/elements/typography',
             component: <Typography />,
           },
         ],
@@ -239,36 +244,34 @@ const routes = [
     ],
   },
   {
-    name: "docs",
-    icon: <Icon>article</Icon>,
-    collapse: [
+    name: 'docs',
+    icon: <ArticleIcon />,
+    menu: [
       {
-        name: "getting started",
-        description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        name: 'getting started',
+        description: 'All about overview, quick start, license and contents',
+        href: 'https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/',
       },
       {
-        name: "foundation",
-        description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+        name: 'foundation',
+        description: 'See our colors, icons and typography',
+        href: 'https://www.creative-tim.com/learning-lab/react/colors/material-kit/',
       },
       {
-        name: "components",
-        description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+        name: 'components',
+        description: 'Explore our collection of fully designed components',
+        href: 'https://www.creative-tim.com/learning-lab/react/alerts/material-kit/',
       },
       {
-        name: "plugins",
-        description: "Check how you can integrate our plugins",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+        name: 'plugins',
+        description: 'Check how you can integrate our plugins',
+        href: 'https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/',
       },
     ],
   },
   {
-    name: "github",
+    name: 'github',
     icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    href: 'https://www.github.com/creativetimofficial/material-kit-react',
   },
 ];
-
-export default routes;

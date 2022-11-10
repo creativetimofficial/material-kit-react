@@ -1,55 +1,62 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import { useState } from "react";
+import { ExpandMore } from '@mui/icons-material';
+import { useState } from 'react';
 
 // @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
+import { MKBox } from '../../../../../components/MKBox';
+import { MKButton } from '../../../../../components/MKButton';
 
-function DropdownAndDropup() {
-  const [dropdown, setDropdown] = useState(null);
-  const [dropup, setDropup] = useState(null);
+import React from 'react';
 
-  const openDropdown = ({ currentTarget }) => setDropdown(currentTarget);
-  const closeDropdown = () => setDropdown(null);
+function DropdownAndDropup(): JSX.Element {
+  const [dropdown, setDropdown] = useState<HTMLElement>();
+  const [dropup, setDropup] = useState<HTMLElement>();
 
-  const openDropup = ({ currentTarget }) => setDropup(currentTarget);
-  const closeDropup = () => setDropup(null);
+  const openDropdown: React.MouseEventHandler<HTMLButtonElement> = ({
+    currentTarget,
+  }): void => setDropdown(currentTarget);
+  const closeDropdown = (): void => setDropdown(undefined);
+
+  const openDropup: React.MouseEventHandler<HTMLButtonElement> = ({
+    currentTarget,
+  }): void => setDropup(currentTarget);
+  const closeDropup = (): void => setDropup(undefined);
 
   // Styles
   const iconStyles = {
     ml: 1,
-    fontWeight: "bold",
-    transition: "transform 200ms ease-in-out",
+    fontWeight: 'bold',
+    transition: 'transform 200ms ease-in-out',
   };
 
   const dropdownIconStyles = {
-    transform: dropdown ? "rotate(180deg)" : "rotate(0)",
+    transform: dropdown ? 'rotate(180deg)' : 'rotate(0)',
     ...iconStyles,
   };
 
   const dropupIconStyles = {
-    transform: dropup ? "rotate(180deg)" : "rotate(0)",
+    transform: dropup ? 'rotate(180deg)' : 'rotate(0)',
     ...iconStyles,
   };
 
@@ -59,28 +66,35 @@ function DropdownAndDropup() {
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6} textAlign="center">
             <MKButton variant="gradient" color="info" onClick={openDropdown}>
-              Dropdown <Icon sx={dropdownIconStyles}>expand_more</Icon>
+              Dropdown <ExpandMore sx={dropdownIconStyles} />
             </MKButton>
-            <Menu anchorEl={dropdown} open={Boolean(dropdown)} onClose={closeDropdown}>
+
+            <Menu
+              anchorEl={dropdown}
+              open={Boolean(dropdown)}
+              onClose={closeDropdown}
+            >
               <MenuItem onClick={closeDropdown}>Action</MenuItem>
               <MenuItem onClick={closeDropdown}>Another action</MenuItem>
               <MenuItem onClick={closeDropdown}>Something else here</MenuItem>
             </Menu>
           </Grid>
+
           <Grid item xs={12} lg={6} textAlign="center">
             <MKButton variant="gradient" color="info" onClick={openDropup}>
-              Dropup <Icon sx={dropupIconStyles}>expand_more</Icon>
+              Dropup <ExpandMore sx={dropupIconStyles} />
             </MKButton>
+
             <Menu
               anchorEl={dropup}
               open={Boolean(dropup)}
               anchorOrigin={{
-                vertical: "top",
-                horizontal: "left",
+                vertical: 'top',
+                horizontal: 'left',
               }}
               transformOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+                vertical: 'bottom',
+                horizontal: 'left',
               }}
               onClose={closeDropup}
             >

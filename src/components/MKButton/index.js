@@ -1,69 +1,16 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import { forwardRef } from "react";
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
-// Custom styles for MKButton
-import MKButtonRoot from "components/MKButton/MKButtonRoot";
-
-const MKButton = forwardRef(
-  ({ color, variant, size, circular, iconOnly, children, ...rest }, ref) => (
-    <MKButtonRoot
-      {...rest}
-      ref={ref}
-      color="primary"
-      variant={variant === "gradient" ? "contained" : variant}
-      size={size}
-      ownerState={{ color, variant, size, circular, iconOnly }}
-    >
-      {children}
-    </MKButtonRoot>
-  )
-);
-
-// Setting default values for the props of MKButton
-MKButton.defaultProps = {
-  size: "medium",
-  variant: "contained",
-  color: "white",
-  circular: false,
-  iconOnly: false,
-};
-
-// Typechecking props for the MKButton
-MKButton.propTypes = {
-  size: PropTypes.oneOf(["small", "medium", "large"]),
-  variant: PropTypes.oneOf(["text", "contained", "outlined", "gradient"]),
-  color: PropTypes.oneOf([
-    "default",
-    "white",
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "light",
-    "dark",
-  ]),
-  circular: PropTypes.bool,
-  iconOnly: PropTypes.bool,
-  children: PropTypes.node.isRequired,
-};
-
-export default MKButton;
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+export * from './MKButton';

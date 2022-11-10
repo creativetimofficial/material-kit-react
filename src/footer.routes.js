@@ -1,105 +1,122 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+import React from 'react';
 
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-
-// Material Kit 2 React components
-import MKTypography from "components/MKTypography";
+import { FooterRoutes } from './types';
 
 // Images
-import logoCT from "assets/images/logo-ct-dark.png";
+import logoCT from './assets/images/logo-ct-dark.png';
 
-const date = new Date().getFullYear();
-
-export default {
+export const footerRoutes: FooterRoutes = {
   brand: {
-    name: "Material Kit 2",
+    name: 'Material Kit 2',
     image: logoCT,
-    route: "/",
+    route: '/',
   },
+  copyright: { name: 'Material Kit', url: 'https://www.creative-tim.com' },
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "https://www.facebook.com/CreativeTim/",
+      url: 'https://www.facebook.com/CreativeTim/',
     },
     {
       icon: <TwitterIcon />,
-      link: "https://twitter.com/creativetim",
+      url: 'https://twitter.com/creativetim',
     },
     {
       icon: <GitHubIcon />,
-      link: "https://github.com/creativetimofficial",
+      url: 'https://github.com/creativetimofficial',
     },
     {
       icon: <YouTubeIcon />,
-      link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      url: 'https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w',
     },
   ],
   menus: [
     {
-      name: "company",
+      name: 'company',
       items: [
-        { name: "about us", href: "https://www.creative-tim.com/presentation" },
-        { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "premium tools", href: "https://www.creative-tim.com/templates/premium" },
-        { name: "blog", href: "https://www.creative-tim.com/blog" },
+        {
+          name: 'about us',
+          route: 'https://www.creative-tim.com/presentation',
+        },
+        {
+          name: 'freebies',
+          route: 'https://www.creative-tim.com/templates/free',
+        },
+        {
+          name: 'premium tools',
+          route: 'https://www.creative-tim.com/templates/premium',
+        },
+        { name: 'blog', route: 'https://www.creative-tim.com/blog' },
       ],
     },
     {
-      name: "resources",
+      name: 'resources',
       items: [
-        { name: "illustrations", href: "https://iradesign.io/" },
-        { name: "bits & snippets", href: "https://www.creative-tim.com/bits" },
-        { name: "affiliate program", href: "https://www.creative-tim.com/affiliates/new" },
+        { name: 'illustrations', route: 'https://iradesign.io/' },
+        { name: 'bits & snippets', route: 'https://www.creative-tim.com/bits' },
+        {
+          name: 'affiliate program',
+          route: 'https://www.creative-tim.com/affiliates/new',
+        },
       ],
     },
     {
-      name: "help & support",
+      name: 'help & support',
       items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
-        { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
+        {
+          name: 'contact us',
+          route: 'https://www.creative-tim.com/contact-us',
+        },
+        {
+          name: 'knowledge center',
+          route: 'https://www.creative-tim.com/knowledge-center',
+        },
+        {
+          name: 'custom development',
+          route: 'https://services.creative-tim.com/',
+        },
+        {
+          name: 'sponsorships',
+          route: 'https://www.creative-tim.com/sponsorships',
+        },
       ],
     },
     {
-      name: "legal",
+      name: 'legal',
       items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-        { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
-        { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
+        {
+          name: 'terms & conditions',
+          route: 'https://www.creative-tim.com/terms',
+        },
+        {
+          name: 'privacy policy',
+          route: 'https://www.creative-tim.com/privacy',
+        },
+        {
+          name: 'licenses (EULA)',
+          route: 'https://www.creative-tim.com/license',
+        },
       ],
     },
   ],
-  copyright: (
-    <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Material Kit by{" "}
-      <MKTypography
-        component="a"
-        href="https://www.creative-tim.com"
-        target="_blank"
-        rel="noreferrer"
-        variant="button"
-        fontWeight="regular"
-      >
-        Creative Tim
-      </MKTypography>
-      .
-    </MKTypography>
-  ),
 };

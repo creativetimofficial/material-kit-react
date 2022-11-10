@@ -1,71 +1,88 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.0.0
-=========================================================
+/**
+ * Copyright 2022 Bonitasoft S.A.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+import React from 'react';
 
-Coded by www.creative-tim.com
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
+import { theme } from '../../../assets/theme';
 
 // Sections components
-import BaseLayout from "layouts/sections/components/BaseLayout";
-import View from "layouts/sections/components/View";
+import BaseLayout from '../../components/BaseLayout';
+import View from '../../components/View';
 
 // Inputs page components
-import InputDynamic from "layouts/sections/input-areas/inputs/components/InputDynamic";
-import InputStatic from "layouts/sections/input-areas/inputs/components/InputStatic";
-import InputOutlined from "layouts/sections/input-areas/inputs/components/InputOutlined";
-import InputIcon from "layouts/sections/input-areas/inputs/components/InputIcon";
-import InputSuccess from "layouts/sections/input-areas/inputs/components/InputSuccess";
-import InputError from "layouts/sections/input-areas/inputs/components/InputError";
-import InputDisabled from "layouts/sections/input-areas/inputs/components/InputDisabled";
+import InputDynamic from './components/InputDynamic';
+import InputStatic from './components/InputStatic';
+import InputOutlined from './components/InputOutlined';
+import InputIcon from './components/InputIcon';
+import InputSuccess from './components/InputSuccess';
+import InputError from './components/InputError';
+import InputDisabled from './components/InputDisabled';
 
 // Inputs page components code
-import inputDynamicCode from "layouts/sections/input-areas/inputs/components/InputDynamic/code";
-import inputStaticCode from "layouts/sections/input-areas/inputs/components/InputStatic/code";
-import inputOutlinedCode from "layouts/sections/input-areas/inputs/components/InputOutlined/code";
-import inputIconCode from "layouts/sections/input-areas/inputs/components/InputIcon/code";
-import inputSuccessCode from "layouts/sections/input-areas/inputs/components/InputSuccess/code";
-import inputErrorCode from "layouts/sections/input-areas/inputs/components/InputError/code";
-import inputDisabledCode from "layouts/sections/input-areas/inputs/components/InputDisabled/code";
+import inputDynamicCode from './components/InputDynamic/code';
+import inputStaticCode from './components/InputStatic/code';
+import inputOutlinedCode from './components/InputOutlined/code';
+import inputIconCode from './components/InputIcon/code';
+import inputSuccessCode from './components/InputSuccess/code';
+import inputErrorCode from './components/InputError/code';
+import inputDisabledCode from './components/InputDisabled/code';
 
-function Inputs() {
+function Inputs(): JSX.Element {
   return (
-    <BaseLayout
-      title="Inputs"
-      breadcrumb={[
-        { label: "Page Sections", route: "/sections/input-areas/inputs" },
-        { label: "Inputs" },
-      ]}
-    >
-      <View title="Input dynamic" code={inputDynamicCode}>
-        <InputDynamic />
-      </View>
-      <View title="Input static" code={inputStaticCode}>
-        <InputStatic />
-      </View>
-      <View title="Input outlined" code={inputOutlinedCode}>
-        <InputOutlined />
-      </View>
-      <View title="Input icon" code={inputIconCode}>
-        <InputIcon />
-      </View>
-      <View title="Input success" code={inputSuccessCode}>
-        <InputSuccess />
-      </View>
-      <View title="Input error" code={inputErrorCode}>
-        <InputError />
-      </View>
-      <View title="Input disabled" code={inputDisabledCode}>
-        <InputDisabled />
-      </View>
-    </BaseLayout>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <BaseLayout
+        title="Inputs"
+        breadcrumb={[
+          { label: 'Page Sections', route: '/sections/input-areas/inputs' },
+          { label: 'Inputs' },
+        ]}
+      >
+        <View title="Input dynamic" code={inputDynamicCode}>
+          <InputDynamic />
+        </View>
+
+        <View title="Input static" code={inputStaticCode}>
+          <InputStatic />
+        </View>
+
+        <View title="Input outlined" code={inputOutlinedCode}>
+          <InputOutlined />
+        </View>
+
+        <View title="Input icon" code={inputIconCode}>
+          <InputIcon />
+        </View>
+
+        <View title="Input success" code={inputSuccessCode}>
+          <InputSuccess />
+        </View>
+
+        <View title="Input error" code={inputErrorCode}>
+          <InputError />
+        </View>
+
+        <View title="Input disabled" code={inputDisabledCode}>
+          <InputDisabled />
+        </View>
+      </BaseLayout>
+    </ThemeProvider>
   );
 }
 
