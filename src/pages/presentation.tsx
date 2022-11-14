@@ -13,42 +13,55 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+import { Theme } from "@mui/material";
+import Link from "@mui/material/Link";
+import React from "react";
+
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+
+import { faPinterest, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+import { MKBox } from "../components/MKBox";
+import { MKTypography } from "../components/MKTypography";
+import { MKSocialButton } from "../components/MKSocialButton";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import DefaultNavbar from "../examples/Navbars/DefaultNavbar";
+import DefaultFooter from "../examples/Footers/DefaultFooter";
+import FilledInfoCard from "../examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+import Counters from "../layouts/pages/presentation/sections/Counters";
+import Information from "../layouts/pages/presentation/sections/Information";
+import DesignBlocks from "../layouts/pages/presentation/sections/DesignBlocks";
+import Pages from "../layouts/pages/presentation/sections/Pages";
+import Testimonials from "../layouts/pages/presentation/sections/Testimonials";
+import Download from "../layouts/pages/presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+import BuiltByDevelopers from "../layouts/pages/presentation/components/BuiltByDevelopers";
+
+// Material Kit 2 React themes
+import { theme } from "../assets/theme";
 
 // Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
+import { footerRoutes } from "../footer.routes";
+import { routes } from "../routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "../assets/images/bg-presentation.jpg";
 
-function Presentation() {
+const Presentation = (): JSX.Element => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <DefaultNavbar
         routes={routes}
         action={{
@@ -77,13 +90,13 @@ function Presentation() {
               color="white"
               mt={-6}
               mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
+              sx={({ breakpoints, typography }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
+                  fontSize: typography.size["3xl"],
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Material Kit 2 React
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -104,15 +117,16 @@ function Presentation() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backgroundColor: ({ functions: { rgba } }: Theme) => rgba("white", 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
+          boxShadow: ({ boxShadows: { xxl } }: Theme) => xxl,
         }}
       >
         <Counters />
         <Information />
         <DesignBlocks />
         <Pages />
+
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
@@ -132,6 +146,7 @@ function Presentation() {
                 }}
               />
             </Grid>
+
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
@@ -145,6 +160,7 @@ function Presentation() {
                 }}
               />
             </Grid>
+
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
@@ -162,6 +178,7 @@ function Presentation() {
         </Container>
         <Testimonials />
         <Download />
+
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
@@ -169,6 +186,7 @@ function Presentation() {
                 <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
                   Thank you for your support!
                 </MKTypography>
+
                 <MKTypography variant="body1" color="text">
                   We deliver the best web products
                 </MKTypography>
@@ -182,32 +200,32 @@ function Presentation() {
                 sx={{ textAlign: { xs: "center", lg: "right" } }}
               >
                 <MKSocialButton
-                  component="a"
+                  component={Link}
                   href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
                   target="_blank"
                   color="twitter"
                   sx={{ mr: 1 }}
                 >
-                  <i className="fab fa-twitter" />
+                  <FontAwesomeIcon icon={faTwitter} />
                   &nbsp;Tweet
                 </MKSocialButton>
                 <MKSocialButton
-                  component="a"
+                  component={Link}
                   href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit-react"
                   target="_blank"
                   color="facebook"
                   sx={{ mr: 1 }}
                 >
-                  <i className="fab fa-facebook" />
+                  <FontAwesomeIcon icon={faFacebook} />
                   &nbsp;Share
                 </MKSocialButton>
                 <MKSocialButton
-                  component="a"
+                  component={Link}
                   href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit-react"
                   target="_blank"
                   color="pinterest"
                 >
-                  <i className="fab fa-pinterest" />
+                  <FontAwesomeIcon icon={faPinterest} />
                   &nbsp;Pin it
                 </MKSocialButton>
               </Grid>
@@ -215,11 +233,12 @@ function Presentation() {
           </Container>
         </MKBox>
       </Card>
+
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
-    </>
+    </ThemeProvider>
   );
-}
+};
 
 export default Presentation;
