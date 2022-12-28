@@ -13,6 +13,14 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+import {
+  Apps,
+  Facebook,
+  Flag,
+  Pinterest,
+  PrecisionManufacturing,
+  Twitter,
+} from "@mui/icons-material";
 import { Theme } from "@mui/material";
 import Link from "@mui/material/Link";
 import React from "react";
@@ -23,9 +31,6 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-
-import { faPinterest, faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Material Kit 2 React components
 import { MKBox } from "../components/MKBox";
@@ -136,11 +141,10 @@ const Presentation = (): JSX.Element => {
               <FilledInfoCard
                 variant="gradient"
                 color="info"
-                icon="flag"
+                icon={<Flag />}
                 title="Getting Started"
                 description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
-                  type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
                   label: "Let's start",
                 }}
@@ -150,11 +154,10 @@ const Presentation = (): JSX.Element => {
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
-                icon="precision_manufacturing"
+                icon={<PrecisionManufacturing />}
                 title="Plugins"
                 description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
                 action={{
-                  type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
                   label: "Read more",
                 }}
@@ -164,11 +167,10 @@ const Presentation = (): JSX.Element => {
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
-                icon="apps"
+                icon={<Apps />}
                 title="Components"
                 description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
                 action={{
-                  type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
                   label: "Read more",
                 }}
@@ -206,7 +208,7 @@ const Presentation = (): JSX.Element => {
                   color="twitter"
                   sx={{ mr: 1 }}
                 >
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <Twitter />
                   &nbsp;Tweet
                 </MKSocialButton>
                 <MKSocialButton
@@ -216,7 +218,7 @@ const Presentation = (): JSX.Element => {
                   color="facebook"
                   sx={{ mr: 1 }}
                 >
-                  <FontAwesomeIcon icon={faFacebook} />
+                  <Facebook />
                   &nbsp;Share
                 </MKSocialButton>
                 <MKSocialButton
@@ -225,7 +227,7 @@ const Presentation = (): JSX.Element => {
                   target="_blank"
                   color="pinterest"
                 >
-                  <FontAwesomeIcon icon={faPinterest} />
+                  <Pinterest />
                   &nbsp;Pin it
                 </MKSocialButton>
               </Grid>
