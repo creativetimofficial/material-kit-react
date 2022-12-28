@@ -106,7 +106,7 @@ DefaultNavbarDropdown.defaultProps = {
 // Typechecking props for the DefaultNavbarDropdown
 interface DefaultNavbarDropdownProps {
   name: string;
-  icon: JSX.Element;
+  icon: React.ReactElement<SvgIconProps>;
   children?: JSX.Element;
   collapseStatus?: boolean;
   light?: boolean;

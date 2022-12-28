@@ -74,7 +74,7 @@ export type FooterMenu = {
 };
 
 export type HeaderRoute = Omit<Link, "description"> & {
-  icon: JSX.Element;
+  icon: React.ReactElement<SvgIconProps>;
   columns?: number;
   rowsPerColumn?: number;
   menu?: HeaderMenu[];

@@ -16,14 +16,13 @@ Coded by www.creative-tim.com
 import React from "react";
 
 // @mui material components
-import Icon from "@mui/material/Icon";
-import { ArrowForward } from "@mui/icons-material";
+import { ArrowForward, SvgIconComponent } from "@mui/icons-material";
 import MuiLink from "@mui/material/Link";
-import { Link } from "gatsby";
 
 // Material Kit 2 React components
 import { MKBox } from "../../../../components/MKBox";
 import { MKTypography } from "../../../../components/MKTypography";
+import { SvgIconProps } from "@mui/material";
 
 function FilledInfoCard({
   variant,
@@ -77,7 +76,7 @@ function FilledInfoCard({
           textGradient={variant === "contained"}
           mt={-0.625}
         >
-          {typeof icon === "string" ? <Icon>{icon}</Icon> : icon}
+          {icon}
         </MKTypography>
       )}
       <MKBox pt={{ xs: 3, md: 0 }} pl={{ xs: 0, md: 2 }} lineHeight={1}>
@@ -99,25 +98,12 @@ function FilledInfoCard({
           {description}
         </MKTypography>
 
-        {action && typeof action !== "boolean" && action.type === "external" ? (
+        {action && typeof action !== "boolean" ? (
           <MKTypography
             component={MuiLink}
             href={action.route}
             target="_blank"
             rel="noreferrer"
-            variant="body2"
-            fontWeight="regular"
-            color={variant === "contained" ? color : "white"}
-            sx={buttonStyles}
-          >
-            {action.label} <ArrowForward sx={{ fontWeight: "bold" }} />
-          </MKTypography>
-        ) : null}
-
-        {action && typeof action !== "boolean" && action.type === "internal" ? (
-          <MKTypography
-            component={Link}
-            to={action.route}
             variant="body2"
             fontWeight="regular"
             color={variant === "contained" ? color : "white"}
@@ -140,18 +126,17 @@ FilledInfoCard.defaultProps = {
 
 // Typechecking props for the FilledInfoCard
 interface FilledInfoCardProps {
-  variant?: "gradient" | "contained";
-  color?: "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
-  icon: JSX.Element | string;
-  title: string;
-  description: string;
   action?:
     | boolean
     | {
-        type: "external" | "internal";
         route: string;
         label: string;
       };
+  color?: "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
+  description: string;
+  icon: React.ReactElement<SvgIconProps>;
+  title: string;
+  variant?: "gradient" | "contained";
 }
 
 export default FilledInfoCard;

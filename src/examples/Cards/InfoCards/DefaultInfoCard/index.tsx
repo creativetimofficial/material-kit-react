@@ -23,6 +23,7 @@ import Icon from "@mui/material/Icon";
 import { MKBox } from "../../../../components/MKBox";
 
 import { MKTypography } from "../../../../components/MKTypography";
+import { SvgIconProps } from "@mui/material";
 
 function DefaultInfoCard({
   color,
@@ -78,7 +79,7 @@ DefaultInfoCard.defaultProps = {
 // Typechecking props for the DefaultInfoCard
 interface DefaultInfoCardProps {
   color?: "primary" | "secondary" | "info" | "success" | "warning" | "error" | "light" | "dark";
-  icon: JSX.Element;
+  icon: React.ReactElement<SvgIconProps>;
   title: string | JSX.Element;
   description: string;
   direction?: "left" | "right" | "center";
