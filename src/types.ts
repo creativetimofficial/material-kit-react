@@ -14,7 +14,8 @@ Coded by www.creative-tim.com
 */
 
 import { IconName } from "@fortawesome/fontawesome-svg-core";
-import { GreyColorName, PaletteColorKey } from "@mui/material";
+
+import { GreyColorName, PaletteColorKey, SvgIconProps } from "@mui/material";
 
 export type ImagePosition = "left" | "right" | "top" | "bottom";
 export type Image = {

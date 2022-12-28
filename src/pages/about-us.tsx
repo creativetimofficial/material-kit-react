@@ -13,6 +13,14 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+import {
+  faFacebook,
+  faGooglePlus,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Facebook } from "@mui/icons-material";
 import { Theme } from "@mui/material";
 import React from "react";
 
@@ -23,14 +31,6 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import Link from "@mui/material/Link";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faTwitter,
-  faGooglePlus,
-} from "@fortawesome/free-brands-svg-icons";
 
 // Material Kit 2 React components
 import { MKBox } from "../components/MKBox";

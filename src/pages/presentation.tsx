@@ -13,17 +13,14 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import {
-  Apps,
-  Facebook,
-  Flag,
-  Pinterest,
-  PrecisionManufacturing,
-  Twitter,
-} from "@mui/icons-material";
+import React from "react";
+
+import { faFacebook, faPinterest, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGrip, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Theme } from "@mui/material";
 import Link from "@mui/material/Link";
-import React from "react";
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -62,6 +59,7 @@ import { routes } from "../routes";
 
 // Images
 import bgImage from "../assets/images/bg-presentation.jpg";
+import { faFlag } from "@fortawesome/free-solid-svg-icons";
 
 const Presentation = (): JSX.Element => {
   return (
@@ -141,7 +139,7 @@ const Presentation = (): JSX.Element => {
               <FilledInfoCard
                 variant="gradient"
                 color="info"
-                icon={<Flag />}
+                icon={<FontAwesomeIcon icon={faFlag} />}
                 title="Getting Started"
                 description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
@@ -154,7 +152,7 @@ const Presentation = (): JSX.Element => {
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
-                icon={<PrecisionManufacturing />}
+                icon={<FontAwesomeIcon icon={faMagnifyingGlass} />}
                 title="Plugins"
                 description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
                 action={{
@@ -167,7 +165,7 @@ const Presentation = (): JSX.Element => {
             <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
-                icon={<Apps />}
+                icon={<FontAwesomeIcon icon={faGrip} />}
                 title="Components"
                 description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
                 action={{
@@ -208,7 +206,7 @@ const Presentation = (): JSX.Element => {
                   color="twitter"
                   sx={{ mr: 1 }}
                 >
-                  <Twitter />
+                  <FontAwesomeIcon icon={faTwitter} />
                   &nbsp;Tweet
                 </MKSocialButton>
                 <MKSocialButton
@@ -218,7 +216,7 @@ const Presentation = (): JSX.Element => {
                   color="facebook"
                   sx={{ mr: 1 }}
                 >
-                  <Facebook />
+                  <FontAwesomeIcon icon={faFacebook} />
                   &nbsp;Share
                 </MKSocialButton>
                 <MKSocialButton
@@ -227,7 +225,7 @@ const Presentation = (): JSX.Element => {
                   target="_blank"
                   color="pinterest"
                 >
-                  <Pinterest />
+                  <FontAwesomeIcon icon={faPinterest} />
                   &nbsp;Pin it
                 </MKSocialButton>
               </Grid>
