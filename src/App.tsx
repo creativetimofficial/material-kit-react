@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 // react-router components
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
@@ -23,11 +23,13 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 // Material Kit 2 React themes
-import theme from "assets/theme";
-import Presentation from "layouts/pages/presentation";
+import { theme } from "./assets/theme";
+import Presentation from "./pages/presentation";
 
 // Material Kit 2 React routes
-import routes from "routes";
+import { routes } from "./routes";
+
+import { HeaderRoute } from "./types";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -38,8 +40,8 @@ export default function App() {
     document.scrollingElement.scrollTop = 0;
   }, [pathname]);
 
-  const getRoutes = (allRoutes) =>
-    allRoutes.map((route) => {
+  const getRoutes = (allRoutes: HeaderRoute[]): Array<typeof Route | undefined> =>
+    allRoutes.map((route: HeaderRoute) => {
       if (route.collapse) {
         return getRoutes(route.collapse);
       }
@@ -47,8 +49,6 @@ export default function App() {
       if (route.route) {
         return <Route exact path={route.route} element={route.component} key={route.key} />;
       }
-
-      return null;
     });
 
   return (
