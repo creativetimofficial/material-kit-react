@@ -38,7 +38,7 @@ function SimpleModal() {
               bgColor="white"
               shadow="xl"
             >
-              <MKBox display="flex" alginItems="center" justifyContent="space-between" p={2}>
+              <MKBox display="flex" alignItems="center" justifyContent="space-between" p={2}>
                 <MKTypography variant="h5">Your modal title</MKTypography>
                 <CloseIcon fontSize="medium" sx={{ cursor: "pointer" }} onClick={toggleModal} />
               </MKBox>
