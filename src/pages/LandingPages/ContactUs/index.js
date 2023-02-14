@@ -98,7 +98,7 @@ function ContactUs() {
                 For further questions, including partnership opportunities, please email
                 hello@creative-tim.com or contact using our contact form.
               </MKTypography>
-              <MKBox width="100%" component="form" method="post" autocomplete="off">
+              <MKBox width="100%" component="form" method="post" autoComplete="off">
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <MKInput
