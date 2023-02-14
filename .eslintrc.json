@@ -27,7 +27,8 @@
         "custom": "ignore"
       }
     ],
-    "react/jsx-curly-spacing": [2, "never"]
+    "react/jsx-curly-spacing": [2, "never"],
+    "default-param-last": 0
   },
   "settings": { "import/resolver": { "node": { "paths": ["src"] } } }
 }
