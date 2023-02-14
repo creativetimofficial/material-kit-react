@@ -14,31 +14,31 @@
     "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
   },
   "engines": {
-    "node": "14 || 15 || 16",
+    "node": "14 || 15 || 16 || 18",
     "npm": ">=6"
   },
   "dependencies": {
-    "@emotion/cache": "11.4.0",
-    "@emotion/react": "11.4.1",
-    "@emotion/styled": "11.3.0",
-    "@mui/icons-material": "5.2.0",
-    "@mui/material": "5.2.0",
-    "@mui/styled-engine": "5.2.0",
-    "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "11.1.0",
-    "@testing-library/user-event": "12.1.10",
-    "chroma-js": "2.1.2",
-    "flatpickr": "4.6.9",
-    "prop-types": "15.7.2",
-    "react": "17.0.2",
-    "react-copy-to-clipboard": "5.0.4",
-    "react-countup": "6.1.0",
-    "react-dom": "17.0.2",
-    "react-flatpickr": "3.10.7",
-    "react-router-dom": "6.0.2",
-    "react-scripts": "4.0.3",
-    "react-syntax-highlighter": "15.4.5",
-    "web-vitals": "1.0.1"
+    "@emotion/cache": "11.10.5",
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
+    "@mui/icons-material": "5.11.0",
+    "@mui/material": "5.11.8",
+    "@mui/styled-engine": "5.11.8",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "13.3.0",
+    "@testing-library/user-event": "13.5.0",
+    "chroma-js": "2.4.2",
+    "flatpickr": "4.6.13",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-copy-to-clipboard": "5.1.0",
+    "react-countup": "6.4.1",
+    "react-dom": "18.2.0",
+    "react-flatpickr": "3.10.13",
+    "react-router-dom": "6.8.1",
+    "react-scripts": "5.0.1",
+    "react-syntax-highlighter": "15.5.0",
+    "web-vitals": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -66,14 +66,14 @@
     ]
   },
   "devDependencies": {
-    "eslint": "7.30.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.23.4",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-react": "7.24.0",
-    "eslint-plugin-react-hooks": "4.2.0",
-    "prettier": "2.3.2"
+    "eslint": "8.34.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "2.8.4"
   }
 }
