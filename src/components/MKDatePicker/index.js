@@ -43,7 +43,7 @@ MKDatePicker.defaultProps = {
 
 // Typechecking props for the MKDatePicker
 MKDatePicker.propTypes = {
-  input: PropTypes.objectOf(PropTypes.any),
+  input: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.any])),
 };
 
 export default MKDatePicker;
