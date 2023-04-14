@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.0.0
+* Material Kit 2 React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -68,7 +68,7 @@ function BaseLayout({ breadcrumb, title, children }) {
 
 // Typechecking props for the BaseLayout
 BaseLayout.propTypes = {
-  breadcrumb: PropTypes.arrayOf(PropTypes.object).isRequired,
+  breadcrumb: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])).isRequired,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };
