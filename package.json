@@ -41,7 +41,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "lint": "eslint ./src",
+    "prettify": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -63,7 +64,6 @@
   },
   "devDependencies": {
     "eslint": "8.38.0",
-    "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
