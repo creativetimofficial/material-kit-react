@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import Blog_Banner_Ponwifi from "assets/images/Blog_Banner_Ponwifi.png";
+import Blog_Banner_Ponwifi from "assets/images/Blog_Banner_Ponwifi.webp";
 
 function Presentation() {
   return (

@@ -25,10 +25,9 @@ import MKTypography from "components/MKTypography";
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
+import compartida_1 from "assets/images/compartida_1.jpg";
+import compartida_2 from "assets/images/compartida_2.jpg";
+import compartida_4 from "assets/images/compartida_4.jpg";
 
 function Team() {
   return (
@@ -45,11 +44,11 @@ function Team() {
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              The Executive Team
+              Las familias compartidas
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
+              Las familias que comparten se llevan mejor. Hasta 3 líneas. ¡Cuidado! Las tarifas
+              compartidas son más económicas, pero los Gigas sin usar no se acumulan.
             </MKTypography>
           </Grid>
         </Grid>
@@ -57,43 +56,43 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={compartida_2}
+                name="La básica"
+                position={{ color: "info" }}
+                description="Llamadas ilimitadas con 50GB a compartir, por tan solo 23€ al mes."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={compartida_1}
+                name="La mediana"
+                position={{ color: "info" }}
+                description="Llamadas ilimitadas con 90GB a compartir, por tan solo 28€ al mes."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={compartida_4}
+                name="La cañera"
+                position={{ color: "info" }}
+                description="Llamadas ilimitadas con 200GB a compartir, pon tan solo 38€ al mes."
               />
             </MKBox>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          {/* <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team4}
+                image={compartida_3}
                 name="Marquez Garcia"
                 position={{ color: "info", label: "JS Developer" }}
                 description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
             </MKBox>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </MKBox>
