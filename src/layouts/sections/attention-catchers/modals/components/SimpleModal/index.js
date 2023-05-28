@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Charity Trust React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -25,7 +25,7 @@ import Slide from "@mui/material/Slide";
 // @mui icons
 import CloseIcon from "@mui/icons-material/Close";
 
-// Material Kit 2 React components
+// Charity Trust React components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";

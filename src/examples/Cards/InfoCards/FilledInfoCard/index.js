@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Charity Trust React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 React components
+// Charity Trust React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

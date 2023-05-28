@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Charity Trust React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -17,10 +17,10 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+// Charity Trust React components
 import MKBox from "components/MKBox";
 
-// Material Kit 2 React examples
+// Charity Trust React examples
 import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
@@ -44,7 +44,6 @@ function Information() {
                   <>
                     Feel the
                     <br />
-                    Material Kit
                   </>
                 }
                 description="All the MUI components that you need in a development have been re-design with the new look."

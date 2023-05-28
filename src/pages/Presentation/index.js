@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Charity Trust React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,63 +18,65 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
+// Charity Trust React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
 
-// Material Kit 2 React examples
+// Charity Trust React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+//import Information from "pages/Presentation/sections/Information";
+//import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
+//import Pages from "pages/Presentation/sections/Pages";
+//import Testimonials from "pages/Presentation/sections/Testimonials";
+//import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+//import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/bg-presentation.jpeg";
 
 function Presentation() {
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "info",
+        // }}
         sticky
       />
       <MKBox
-        minHeight="75vh"
+        minHeight="120vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
+
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
+          overflow: "hidden",
           placeItems: "center",
         }}
       >
-        <Container>
+        <Container styles={{ marginTop: "500px" }}>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
+            {/* <MKTypography
               variant="h1"
-              color="white"
+              color="black"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -83,9 +85,9 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
-            </MKTypography>
-            <MKTypography
+              Saeedunissa Charity Trust
+            </MKTypography> */}
+            {/* <MKTypography
               variant="body1"
               color="white"
               textAlign="center"
@@ -94,7 +96,7 @@ function Presentation() {
             >
               Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
               developers around the world.
-            </MKTypography>
+            </MKTypography> */}
           </Grid>
         </Container>
       </MKBox>
@@ -110,12 +112,12 @@ function Presentation() {
         }}
       >
         <Counters />
-        <Information />
+        {/* <Information />
         <DesignBlocks />
         <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
-        </Container>
+        </Container> */}
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -132,7 +134,7 @@ function Presentation() {
                 }}
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
+            {/* <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
                 icon="precision_manufacturing"
@@ -144,8 +146,8 @@ function Presentation() {
                   label: "Read more",
                 }}
               />
-            </Grid>
-            <Grid item xs={12} lg={4}>
+            </Grid> */}
+            {/* <Grid item xs={12} lg={4}>
               <FilledInfoCard
                 color="info"
                 icon="apps"
@@ -157,11 +159,11 @@ function Presentation() {
                   label: "Read more",
                 }}
               />
-            </Grid>
+            </Grid> */}
           </Grid>
         </Container>
-        <Testimonials />
-        <Download />
+        {/* <Testimonials />
+        <Download /> */}
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
@@ -169,9 +171,9 @@ function Presentation() {
                 <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
                   Thank you for your support!
                 </MKTypography>
-                <MKTypography variant="body1" color="text">
+                {/* <MKTypography variant="body1" color="text">
                   We deliver the best web products
-                </MKTypography>
+                </MKTypography> */}
               </Grid>
               <Grid
                 item
@@ -183,7 +185,7 @@ function Presentation() {
               >
                 <MKSocialButton
                   component="a"
-                  href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
+                  href="https://twitter.com/"
                   target="_blank"
                   color="twitter"
                   sx={{ mr: 1 }}
@@ -193,7 +195,7 @@ function Presentation() {
                 </MKSocialButton>
                 <MKSocialButton
                   component="a"
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit-react"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   color="facebook"
                   sx={{ mr: 1 }}
@@ -203,7 +205,7 @@ function Presentation() {
                 </MKSocialButton>
                 <MKSocialButton
                   component="a"
-                  href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit-react"
+                  href="https://www.pinterest.com/"
                   target="_blank"
                   color="pinterest"
                 >

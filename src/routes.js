@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Charity Trust React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 /** 
-  All of the routes for the Material Kit 2 React are added here,
+
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
@@ -43,21 +43,21 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
-import SignIn from "layouts/pages/authentication/sign-in";
+// import AboutUs from "layouts/pages/landing-pages/about-us";
+// import ContactUs from "layouts/pages/landing-pages/contact-us";
+// import Author from "layouts/pages/landing-pages/author";
+// import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
 import Features from "layouts/sections/page-sections/featuers";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
-import Pagination from "layouts/sections/navigation/pagination";
-import Inputs from "layouts/sections/input-areas/inputs";
-import Forms from "layouts/sections/input-areas/forms";
-import Alerts from "layouts/sections/attention-catchers/alerts";
-import Modals from "layouts/sections/attention-catchers/modals";
+// import Navbars from "layouts/sections/navigation/navbars";
+// import NavTabs from "layouts/sections/navigation/nav-tabs";
+// import Pagination from "layouts/sections/navigation/pagination";
+// import Inputs from "layouts/sections/input-areas/inputs";
+// import Forms from "layouts/sections/input-areas/forms";
+// import Alerts from "layouts/sections/attention-catchers/alerts";
+// import Modals from "layouts/sections/attention-catchers/modals";
 import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
 import Avatars from "layouts/sections/elements/avatars";
 import Badges from "layouts/sections/elements/badges";
@@ -81,17 +81,17 @@ const routes = [
           {
             name: "about us",
             route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            //component: <AboutUs />,
           },
           {
             name: "contact us",
             route: "/pages/landing-pages/contact-us",
-            component: <ContactUs />,
+            //component: <ContactUs />,
           },
           {
             name: "author",
             route: "/pages/landing-pages/author",
-            component: <Author />,
+            //component: <Author />,
           },
         ],
       },
@@ -101,7 +101,7 @@ const routes = [
           {
             name: "sign in",
             route: "/pages/authentication/sign-in",
-            component: <SignIn />,
+            //component: <SignIn />,
           },
         ],
       },
@@ -136,17 +136,17 @@ const routes = [
           {
             name: "navbars",
             route: "/sections/navigation/navbars",
-            component: <Navbars />,
+            //component: <Navbars />,
           },
           {
             name: "nav tabs",
             route: "/sections/navigation/nav-tabs",
-            component: <NavTabs />,
+            //component: <NavTabs />,
           },
           {
             name: "pagination",
             route: "/sections/navigation/pagination",
-            component: <Pagination />,
+            //component: <Pagination />,
           },
         ],
       },
@@ -158,12 +158,12 @@ const routes = [
           {
             name: "inputs",
             route: "/sections/input-areas/inputs",
-            component: <Inputs />,
+            //component: <Inputs />,
           },
           {
             name: "forms",
             route: "/sections/input-areas/forms",
-            component: <Forms />,
+            //component: <Forms />,
           },
         ],
       },
@@ -175,12 +175,12 @@ const routes = [
           {
             name: "alerts",
             route: "/sections/attention-catchers/alerts",
-            component: <Alerts />,
+            //component: <Alerts />,
           },
           {
             name: "modals",
             route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            //component: <Modals />,
           },
           {
             name: "tooltips & popovers",
@@ -245,29 +245,29 @@ const routes = [
       {
         name: "getting started",
         description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        //href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
       },
       {
         name: "foundation",
         description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+        //href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
       },
       {
         name: "components",
         description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+        //href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
       },
       {
         name: "plugins",
         description: "Check how you can integrate our plugins",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+        //href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
       },
     ],
   },
   {
     name: "github",
     icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
+    // href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
 

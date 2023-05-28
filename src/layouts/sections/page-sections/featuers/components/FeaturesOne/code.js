@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 React components
+// Charity Trust React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
