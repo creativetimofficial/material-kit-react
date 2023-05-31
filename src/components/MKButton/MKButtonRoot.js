@@ -67,7 +67,7 @@ export default styled(Button)(({ theme, ownerState }) => {
     // color value when button is focused
     let focusedColorValue = white.main;
 
-    if (color === "darfault") {
+    if (color === "default") {
       focusedColorValue = text.main;
     } else if (color === "white") {
       focusedColorValue = dark.main;
