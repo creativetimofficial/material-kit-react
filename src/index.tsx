@@ -5,11 +5,13 @@ import App from "App";
 
 const container = document.getElementById("root");
 
-// Create a root.
-const root = ReactDOMClient.createRoot(container);
+if (container) {
+  // Create a root.
+  const root = ReactDOMClient.createRoot(container);
 
-root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+  root.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}

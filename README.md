@@ -107,7 +107,7 @@ material-kit-2-react
     │   │   │   ├── base
     │   │   │   ├── components
     │   │   │   ├── functions
-    │   │   └── └── index.js
+    │   │   └── └── index.tsx
     │   ├── components
     │   │   ├── MKAlert
     │   │   ├── MKAvatar
@@ -141,7 +141,7 @@ material-kit-2-react
     │   │   ├── LandingPages
     │   │   └── Presentation
     │   ├── App.js
-    │   ├── index.js
+    │   ├── index.tsx
     │   ├── footer.routes.js
     │   └── routes.js
     ├── .eslintrc.json
