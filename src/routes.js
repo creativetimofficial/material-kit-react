@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 /** 
   All of the routes for the Material Kit 2 React are added here,
   You can add a new route, customize the routes and delete the routes here.
@@ -245,22 +230,22 @@ const routes = [
       {
         name: "getting started",
         description: "All about overview, quick start, license and contents",
-        href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+        href: "https://github.com/usrivastava92",
       },
       {
         name: "foundation",
         description: "See our colors, icons and typography",
-        href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+        href: "https://github.com/usrivastava92",
       },
       {
         name: "components",
         description: "Explore our collection of fully designed components",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+        href: "https://github.com/usrivastava92",
       },
       {
         name: "plugins",
         description: "Check how you can integrate our plugins",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+        href: "https://github.com/usrivastava92",
       },
     ],
   },

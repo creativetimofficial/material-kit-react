@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
@@ -105,14 +90,14 @@ function CenteredFooter({ company, links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://github.com/usrivastava92", name: "Utkarsh Srivastava" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Company" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/presentation", name: "Team" },
-    { href: "https://www.creative-tim.com/templates/react", name: "Products" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
-    { href: "https://www.creative-tim.com/license", name: "License" },
+    { href: "https://github.com/usrivastava92", name: "Company" },
+    { href: "https://github.com/usrivastava92", name: "About Us" },
+    { href: "https://github.com/usrivastava92", name: "Team" },
+    { href: "https://github.com/usrivastava92", name: "Products" },
+    { href: "https://github.com/usrivastava92", name: "Blog" },
+    { href: "https://github.com/usrivastava92", name: "License" },
   ],
   socials: [
     { icon: <FacebookIcon fontSize="small" />, link: "https://www.facebook.com/CreativeTim/" },

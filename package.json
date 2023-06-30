@@ -2,16 +2,16 @@
   "name": "material-kit-2-react",
   "version": "2.1.0",
   "private": true,
-  "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
+  "author": "usrivastava",
+  "license": "",
+  "description": "Some App",
+  "homepage": "",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
+    "url": ""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
+    "url": ""
   },
   "dependencies": {
     "@emotion/cache": "11.10.7",

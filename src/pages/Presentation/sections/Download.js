@@ -1,18 +1,3 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -56,16 +41,16 @@ function Download() {
               UI Kit for ReactJS &amp; MUI?
             </MKTypography>
             <MKTypography variant="body2" color="white" mb={6}>
-              Cause if you do, it can be yours for FREE. Hit the button below to navigate to
-              Creative Tim where you can find the Design System in HTML. Start a new project or give
-              an old Bootstrap project a new look!
+              Cause if you do, it can be yours for FREE. Hit the button below to navigate to Utkarsh
+              where you can find the Design System in HTML. Start a new project or give an old
+              Bootstrap project a new look!
             </MKTypography>
             <MKButton
               variant="gradient"
               color="info"
               size="large"
               component="a"
-              href="https://www.creative-tim.com/product/material-kit-react"
+              href="https://github.com/usrivastava92"
               sx={{ mb: 2 }}
             >
               Download Now
@@ -82,11 +67,7 @@ function Download() {
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={4} lg={2}>
                 <Tooltip title="Bootstrap 5 - Most popular front-end component library">
-                  <MKBox
-                    component="a"
-                    href="https://www.creative-tim.com/product/material-kit"
-                    target="_blank"
-                  >
+                  <MKBox component="a" href="https://github.com/usrivastava92" target="_blank">
                     <MKBox
                       component="img"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap5.jpg"
@@ -148,11 +129,7 @@ function Download() {
               </Grid>
               <Grid item xs={4} lg={2}>
                 <Tooltip title="Comming soon">
-                  <MKBox
-                    component="a"
-                    href="https://www.creative-tim.com/product/material-kit-react"
-                    target="_blank"
-                  >
+                  <MKBox component="a" href="https://github.com/usrivastava92" target="_blank">
                     <MKBox
                       component="img"
                       src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg"

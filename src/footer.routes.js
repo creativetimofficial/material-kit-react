@@ -40,35 +40,35 @@ export default {
     {
       name: "company",
       items: [
-        { name: "about us", href: "https://www.creative-tim.com/presentation" },
-        { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "premium tools", href: "https://www.creative-tim.com/templates/premium" },
-        { name: "blog", href: "https://www.creative-tim.com/blog" },
+        { name: "about us", href: "https://github.com/usrivastava92" },
+        { name: "freebies", href: "https://github.com/usrivastava92" },
+        { name: "premium tools", href: "https://github.com/usrivastava92" },
+        { name: "blog", href: "https://github.com/usrivastava92" },
       ],
     },
     {
       name: "resources",
       items: [
-        { name: "illustrations", href: "https://iradesign.io/" },
-        { name: "bits & snippets", href: "https://www.creative-tim.com/bits" },
-        { name: "affiliate program", href: "https://www.creative-tim.com/affiliates/new" },
+        { name: "illustrations", href: "https://github.com/usrivastava92" },
+        { name: "bits & snippets", href: "https://github.com/usrivastava92" },
+        { name: "affiliate program", href: "https://github.com/usrivastava92" },
       ],
     },
     {
       name: "help & support",
       items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
-        { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
+        { name: "contact us", href: "https://github.com/usrivastava92" },
+        { name: "knowledge center", href: "https://github.com/usrivastava92" },
+        { name: "custom development", href: "https://github.com/usrivastava92" },
+        { name: "sponsorships", href: "https://github.com/usrivastava92" },
       ],
     },
     {
       name: "legal",
       items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-        { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
-        { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
+        { name: "terms & conditions", href: "https://github.com/usrivastava92" },
+        { name: "privacy policy", href: "https://github.com/usrivastava92" },
+        { name: "licenses (EULA)", href: "https://github.com/usrivastava92" },
       ],
     },
   ],
@@ -77,13 +77,13 @@ export default {
       All rights reserved. Copyright &copy; {date} Material Kit by{" "}
       <MKTypography
         component="a"
-        href="https://www.creative-tim.com"
+        href="https://github.com/usrivastava92"
         target="_blank"
         rel="noreferrer"
         variant="button"
         fontWeight="regular"
       >
-        Creative Tim
+        Utkarsh
       </MKTypography>
       .
     </MKTypography>
