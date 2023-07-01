@@ -45,6 +45,7 @@ function SignInBasic() {
           label: "Sign In",
           color: "info",
         }}
+        center
         transparent
         light
       />

@@ -8,32 +8,32 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import MKTypography from "components/MKTypography";
 
 // Images
-import logoCT from "assets/images/logo-ct-dark.png";
+import logoCT from "assets/images/logo.png";
 
 const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Material Kit 2",
+    name: process.env.REACT_APP_TITLE,
     image: logoCT,
     route: "/",
   },
   socials: [
     {
       icon: <FacebookIcon />,
-      link: "https://www.facebook.com/CreativeTim/",
+      link: "https://github.com/usrivastava92",
     },
     {
       icon: <TwitterIcon />,
-      link: "https://twitter.com/creativetim",
+      link: "https://github.com/usrivastava92",
     },
     {
       icon: <GitHubIcon />,
-      link: "https://github.com/creativetimofficial",
+      link: "https://github.com/usrivastava92",
     },
     {
       icon: <YouTubeIcon />,
-      link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      link: "https://github.com/usrivastava92",
     },
   ],
   menus: [
@@ -74,7 +74,7 @@ export default {
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Material Kit by{" "}
+      All rights reserved. Copyright &copy; {date} {process.env.REACT_APP_TITLE} by{" "}
       <MKTypography
         component="a"
         href="https://github.com/usrivastava92"
@@ -83,7 +83,7 @@ export default {
         variant="button"
         fontWeight="regular"
       >
-        Utkarsh
+        Utkarsh Srivastava
       </MKTypography>
       .
     </MKTypography>

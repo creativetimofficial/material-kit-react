@@ -29,7 +29,7 @@ function Information() {
                   <>
                     Feel the
                     <br />
-                    Material Kit
+                    {process.env.REACT_APP_TITLE}
                   </>
                 }
                 description="All the MUI components that you need in a development have been re-design with the new look."

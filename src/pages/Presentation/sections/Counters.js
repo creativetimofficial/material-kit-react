@@ -18,8 +18,8 @@ function Counters() {
             <DefaultCounterCard
               count={70}
               suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
+              title="Vendor Partners"
+              description="From Wedding Planners, to Golden Jublie, Pre-Wedding Shoots, Business Shoots, you are covered"
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
@@ -27,16 +27,17 @@ function Counters() {
             <DefaultCounterCard
               count={15}
               suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
+              title="Locations"
+              description="Already serving in all major cities and expanding to even more"
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
+              count={100}
+              suffix="+"
+              title="Satisfied Customers"
+              description="Have a look at what our customers say about us"
             />
           </Grid>
         </Grid>

@@ -29,60 +29,75 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/bg-presentation-1.jpg";
 
 function Presentation() {
+  const navbar = (
+    <DefaultNavbar
+      routes={routes}
+      action={{
+        type: "external",
+        route: "/pages/authentication/sign-in",
+        label: "Sign In",
+        color: "info",
+      }}
+      center
+      sticky
+    />
+  );
+
+  const footer = (
+    <MKBox pt={6} px={1} mt={6}>
+      <DefaultFooter content={footerRoutes} />
+    </MKBox>
+  );
+
+  const banner = (
+    <MKBox
+      minHeight="75vh"
+      width="100%"
+      sx={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "grid",
+        placeItems: "center",
+      }}
+    >
+      <Container>
+        <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <MKTypography
+            variant="h1"
+            color="white"
+            mt={-6}
+            mb={1}
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["3xl"],
+              },
+            })}
+          >
+            {process.env.REACT_APP_TITLE}
+          </MKTypography>
+          <MKTypography
+            variant="body1"
+            color="white"
+            textAlign="center"
+            px={{ xs: 6, lg: 12 }}
+            mt={1}
+          >
+            Experience seamless execution, personalized service, and innovative event solutions that
+            create unforgettable memories for you.
+          </MKTypography>
+        </Grid>
+      </Container>
+    </MKBox>
+  );
+
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://github.com/usrivastava92",
-          label: "free download",
-          color: "info",
-        }}
-        sticky
-      />
-      <MKBox
-        minHeight="75vh"
-        width="100%"
-        sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
-        <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h1"
-              color="white"
-              mt={-6}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
-            >
-              Material Kit 2 React{" "}
-            </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
-            </MKTypography>
-          </Grid>
-        </Container>
-      </MKBox>
+      {navbar}
+      {banner}
       <Card
         sx={{
           p: 2,
@@ -200,9 +215,7 @@ function Presentation() {
           </Container>
         </MKBox>
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      {footer}
     </>
   );
 }
