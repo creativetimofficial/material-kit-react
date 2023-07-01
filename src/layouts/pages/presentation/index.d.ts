@@ -1,6 +1,6 @@
 import React from "react";
 
 declare module "layouts/pages/presentation" {
-  const presentation: React.FunctionComponent;
+  const Presentation: React.FunctionComponent;
 }
-export default presentation;
+export default Presentation;

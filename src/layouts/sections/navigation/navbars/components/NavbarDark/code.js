@@ -15,7 +15,7 @@ function NavbarDark() {
         action={{
           type: "external",
           route: "https://github.com/usrivastava92",
-          label: "free download",
+          label: "Sign In",
           color: "info",
         }}
         transparent

@@ -22,10 +22,9 @@
  */
 
 // @mui material components
-import Icon from "@mui/material/Icon";
-
+import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import MapIcon from "@mui/icons-material/Map";
 // @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
@@ -35,56 +34,44 @@ import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
-import Features from "layouts/sections/page-sections/featuers";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
-import Pagination from "layouts/sections/navigation/pagination";
-import Inputs from "layouts/sections/input-areas/inputs";
-import Forms from "layouts/sections/input-areas/forms";
-import Alerts from "layouts/sections/attention-catchers/alerts";
-import Modals from "layouts/sections/attention-catchers/modals";
-import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
-import Avatars from "layouts/sections/elements/avatars";
-import Badges from "layouts/sections/elements/badges";
-import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
-import Buttons from "layouts/sections/elements/buttons";
-import Dropdowns from "layouts/sections/elements/dropdowns";
-import ProgressBars from "layouts/sections/elements/progress-bars";
-import Toggles from "layouts/sections/elements/toggles";
-import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
-    icon: <Icon>dashboard</Icon>,
-    columns: 1,
-    rowsPerColumn: 2,
+    name: "vendors",
+    icon: <AddBusinessIcon />,
+    columns: 2,
+    rowsPerColumn: 1,
     collapse: [
       {
-        name: "landing pages",
+        name: "Photographers",
         collapse: [
           {
-            name: "about us",
+            name: "Pre-Wedding Shoot",
             route: "/pages/landing-pages/about-us",
             component: <AboutUs />,
           },
           {
-            name: "contact us",
+            name: "Cinema/Video",
             route: "/pages/landing-pages/contact-us",
             component: <ContactUs />,
           },
           {
-            name: "author",
+            name: "Maternity Shoot",
             route: "/pages/landing-pages/author",
             component: <Author />,
           },
         ],
       },
       {
-        name: "account",
+        name: "Planning & Decor",
         collapse: [
           {
-            name: "sign in",
+            name: "Wedding Planner",
+            route: "/pages/authentication/sign-in",
+            component: <SignIn />,
+          },
+          {
+            name: "Catering Service",
             route: "/pages/authentication/sign-in",
             component: <SignIn />,
           },
@@ -93,166 +80,101 @@ const routes = [
     ],
   },
   {
-    name: "sections",
-    icon: <Icon>view_day</Icon>,
+    name: "Venues",
+    icon: <MapIcon />,
+    columns: 2,
+    rowsPerColumn: 1,
     collapse: [
       {
-        name: "page sections",
-        description: "See all sections",
+        name: "By Type",
+        description: "See all types",
         dropdown: true,
         collapse: [
           {
-            name: "page headers",
+            name: "Banquet Halls",
             route: "/sections/page-sections/page-headers",
             component: <PageHeaders />,
           },
           {
-            name: "features",
-            route: "/sections/page-sections/features",
-            component: <Features />,
+            name: "Lawns / Farmhouses",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
+          },
+          {
+            name: "Resorts",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
+          },
+          {
+            name: "Small Function / Party Halls",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
+          },
+          {
+            name: "Destination Wedding",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
+          },
+          {
+            name: "Kalyana Mandapam",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
+          },
+          {
+            name: "4 Star & Above Hotels",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
+          },
+          {
+            name: "Venue Concierge Services",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
         ],
       },
       {
-        name: "navigation",
-        description: "See all navigations",
+        name: "By Location",
+        description: "See all locations",
         dropdown: true,
         collapse: [
           {
-            name: "navbars",
-            route: "/sections/navigation/navbars",
-            component: <Navbars />,
+            name: "Pallavaram",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
           {
-            name: "nav tabs",
-            route: "/sections/navigation/nav-tabs",
-            component: <NavTabs />,
+            name: "Velachery",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
           {
-            name: "pagination",
-            route: "/sections/navigation/pagination",
-            component: <Pagination />,
-          },
-        ],
-      },
-      {
-        name: "input areas",
-        description: "See all input areas",
-        dropdown: true,
-        collapse: [
-          {
-            name: "inputs",
-            route: "/sections/input-areas/inputs",
-            component: <Inputs />,
+            name: "Tambaram",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
           {
-            name: "forms",
-            route: "/sections/input-areas/forms",
-            component: <Forms />,
-          },
-        ],
-      },
-      {
-        name: "attention catchers",
-        description: "See all examples",
-        dropdown: true,
-        collapse: [
-          {
-            name: "alerts",
-            route: "/sections/attention-catchers/alerts",
-            component: <Alerts />,
+            name: "Ambattur",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
           {
-            name: "modals",
-            route: "/sections/attention-catchers/modals",
-            component: <Modals />,
+            name: "Sholinganallur",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
           {
-            name: "tooltips & popovers",
-            route: "/sections/attention-catchers/tooltips-popovers",
-            component: <TooltipsPopovers />,
-          },
-        ],
-      },
-      {
-        name: "elements",
-        description: "See all 32 examples",
-        dropdown: true,
-        collapse: [
-          {
-            name: "avatars",
-            route: "/sections/elements/avatars",
-            component: <Avatars />,
+            name: "Egmore",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
           {
-            name: "badges",
-            route: "/sections/elements/badges",
-            component: <Badges />,
-          },
-          {
-            name: "breadcrumbs",
-            route: "/sections/elements/breadcrumbs",
-            component: <BreadcrumbsEl />,
-          },
-          {
-            name: "buttons",
-            route: "/sections/elements/buttons",
-            component: <Buttons />,
-          },
-          {
-            name: "dropdowns",
-            route: "/sections/elements/dropdowns",
-            component: <Dropdowns />,
-          },
-          {
-            name: "progress bars",
-            route: "/sections/elements/progress-bars",
-            component: <ProgressBars />,
-          },
-          {
-            name: "toggles",
-            route: "/sections/elements/toggles",
-            component: <Toggles />,
-          },
-          {
-            name: "typography",
-            route: "/sections/elements/typography",
-            component: <Typography />,
+            name: "Indira Nagar",
+            route: "/sections/page-sections/page-headers",
+            component: <PageHeaders />,
           },
         ],
       },
     ],
-  },
-  {
-    name: "docs",
-    icon: <Icon>article</Icon>,
-    collapse: [
-      {
-        name: "getting started",
-        description: "All about overview, quick start, license and contents",
-        href: "https://github.com/usrivastava92",
-      },
-      {
-        name: "foundation",
-        description: "See our colors, icons and typography",
-        href: "https://github.com/usrivastava92",
-      },
-      {
-        name: "components",
-        description: "Explore our collection of fully designed components",
-        href: "https://github.com/usrivastava92",
-      },
-      {
-        name: "plugins",
-        description: "Check how you can integrate our plugins",
-        href: "https://github.com/usrivastava92",
-      },
-    ],
-  },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
 
