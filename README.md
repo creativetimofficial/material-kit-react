@@ -140,7 +140,7 @@ material-kit-2-react
     │   ├── pages
     │   │   ├── LandingPages
     │   │   └── Presentation
-    │   ├── App.js
+    │   ├── App.tsx
     │   ├── index.tsx
     │   ├── footer.routes.js
     │   └── routes.js

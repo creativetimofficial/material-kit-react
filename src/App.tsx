@@ -1,18 +1,18 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 // react-router components
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
 // Material Kit 2 React themes
-import theme from "./assets/theme";
-import Presentation from "./layouts/pages/presentation";
+import theme from "assets/theme";
+import Presentation from "layouts/pages/presentation";
 
 // Material Kit 2 React routes
-import routes from "./routes";
+import routes, { RouteConfig } from "routes";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -20,17 +20,19 @@ export default function App() {
   // Setting page scroll to 0 when changing the route
   useEffect(() => {
     document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
+    if (document.scrollingElement) {
+      document.scrollingElement.scrollTop = 0;
+    }
   }, [pathname]);
 
-  const getRoutes = (allRoutes) =>
-    allRoutes.map((route) => {
+  const getRoutes = (allRoutes: RouteConfig[], level = 0): React.ReactNode =>
+    allRoutes.map((route, index) => {
       if (route.collapse) {
-        return getRoutes(route.collapse);
+        return getRoutes(route.collapse, level + 1);
       }
 
       if (route.route) {
-        return <Route exact path={route.route} element={route.component} key={route.key} />;
+        return <Route path={route.route} element={route.component} key={`${level}-${index}`} />;
       }
 
       return null;
