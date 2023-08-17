@@ -2,7 +2,7 @@ const inputDisabledCode = `// @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+// Couch to 5k components
 import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 

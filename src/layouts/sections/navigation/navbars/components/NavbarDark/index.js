@@ -1,9 +1,9 @@
 /* eslint-disable no-param-reassign */
 
-// Material Kit 2 React components
+// Couch to 5k components
 import MKBox from "components/MKBox";
 
-// Material Kit 2 React examples
+// Couch to 5k examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Routes

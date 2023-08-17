@@ -1,4 +1,4 @@
-// Material Kit 2 React Base Styles
+// Couch to 5k Base Styles
 import colors from "assets/theme/base/colors";
 import typography from "assets/theme/base/typography";
 

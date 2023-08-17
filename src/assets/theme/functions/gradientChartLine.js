@@ -2,7 +2,7 @@
   The gradientChartLine() function helps you to create a gradient color for the chart line
  */
 
-// Material Kit 2 React helper functions
+// Couch to 5k helper functions
 import rgba from "assets/theme/functions/rgba";
 
 function gradientChartLine(chart, color, opacity = 0.2) {

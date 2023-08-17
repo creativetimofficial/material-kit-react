@@ -1,7 +1,7 @@
 /**
- * The base colors for the Material Kit 2 React.
+ * The base colors for the Couch to 5k.
  * You can add new color using this file.
- * You can customized the colors for the entire Material Kit 2 React using thie file.
+ * You can customized the colors for the entire Couch to 5k using thie file.
  */
 
 export default {

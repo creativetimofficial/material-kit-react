@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 React components
+// Couch to 5k components
 import MKTypography from "components/MKTypography";
 
 // Custom styles for MKProgress

@@ -1,4 +1,4 @@
-// Material Kit 2 React components
+// Couch to 5k components
 import MKBox from "components/MKBox";
 
 // Sections components

@@ -3,12 +3,12 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
+// Couch to 5k components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
 
-// Material Kit 2 React examples
+// Couch to 5k examples
 // import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
@@ -46,7 +46,7 @@ function MainPage() {
               },
             })}
           >
-            Material Kit 2 React{" "}
+            Couch to 5k{" "}
           </MKTypography>
           <MKTypography
             variant="body1"

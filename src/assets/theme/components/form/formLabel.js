@@ -1,4 +1,4 @@
-// Material Kit 2 React base styles
+// Couch to 5k base styles
 import colors from "assets/theme/base/colors";
 
 const { text } = colors;

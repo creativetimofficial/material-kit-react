@@ -1,9 +1,9 @@
-// Material Kit 2 React base styles
+// Couch to 5k base styles
 import colors from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
 import typography from "assets/theme/base/typography";
 
-// Material Kit 2 React helper functions
+// Couch to 5k helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { light, text, dark } = colors;

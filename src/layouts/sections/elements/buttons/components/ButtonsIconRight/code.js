@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+// Couch to 5k components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 

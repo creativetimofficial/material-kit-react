@@ -3,7 +3,7 @@
   to convert the hex code into rgb for using it inside the rgba color format.
  */
 
-// Material Kit 2 React helper functions
+// Couch to 5k helper functions
 import hexToRgb from "assets/theme/functions/hexToRgb";
 
 function rgba(color, opacity) {

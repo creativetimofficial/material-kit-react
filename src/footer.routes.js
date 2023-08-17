@@ -9,7 +9,7 @@ import logoCT from "assets/images/logo-ct-dark.png";
 
 export default {
   brand: {
-    name: "Material Kit 2",
+    name: "Couch to 5k",
     image: logoCT,
     route: "/",
   },

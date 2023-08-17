@@ -1,4 +1,4 @@
-// Material Kit 2 React Helper Functions
+// Couch to 5k Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 export default {

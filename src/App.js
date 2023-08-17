@@ -7,10 +7,10 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-// Material Kit 2 React themes
+// Couch to 5k themes
 import theme from "assets/theme";
 
-// Material Kit 2 React routes
+// Couch to 5k routes
 import routes from "routes";
 import MainPage from "pages/MainPage";
 

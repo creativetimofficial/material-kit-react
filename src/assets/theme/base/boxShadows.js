@@ -1,13 +1,13 @@
 /**
- * The base box-shadow styles for the Material Kit 2 React.
+ * The base box-shadow styles for the Couch to 5k.
  * You can add new box-shadow using this file.
- * You can customized the box-shadow for the entire Material Kit 2 React using thie file.
+ * You can customized the box-shadow for the entire Couch to 5k using thie file.
  */
 
-// Material Kit 2 React Base Styles
+// Couch to 5k Base Styles
 import colors from "assets/theme/base/colors";
 
-// Material Kit 2 React Helper Functions
+// Couch to 5k Helper Functions
 import boxShadow from "assets/theme/functions/boxShadow";
 
 const { black, white, tabs, coloredShadows } = colors;
