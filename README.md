@@ -34,11 +34,27 @@ You will need to use Chrome as your browser for this task.
 - To measure the emissions associated with a webpage, open Sustainability Calculator Chrome extension and click 'start recording'. You can click 'pause recording' as soon as the page has fully reloaded.
 - Please test out the settings within the chrome extension, but only use the generic settings for the purposes of the task. The emissions associated with an average user will be what we are using for this task.
 
-- The Chrome extension uses the Green Software Foundation's [Software Carbon Intensity Specifications](https://github.com/Green-Software-Foundation/sci/blob/dev/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md) to calculate your score. 
-
 ## How to improve the emissions score of your webpage
 
-Please check out our cheat sheet for improving the emissions of your webpage!
+There are obviously many different ways to make a piece of software more sustainable. The Sustainability Calculator Chrome extension calculates a score by looking at the size of the files that a user is having to download to see a webpage. So if you want to get a better score on your web page, the objective is to make your front end lighter!
+
+You can check out our cheat sheet to get some ideas about how to do that.
+
+You can also test the Chrome extension out on some real web pages:
+
+Low Carbon Websites:
+
+[Sustainable Web Design](https://sustainablewebdesign.org/ )
+
+[Google Homepage](https://www.google.co.uk/)
+
+Higher Carbon Websites:
+
+[Visit Provence](https://www.myprovence.fr/)
+
+[Dromoland Castle](https://www.dromoland.ie/)
+
+The Chrome extension uses the Green Software Foundation's [Software Carbon Intensity Specifications](https://github.com/Green-Software-Foundation/sci/blob/dev/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md) to calculate your score. It is a open source project, you can see the source code [here](https://github.com/Theodo-UK/sustainability-calculator).
 
 ### What's included
 
