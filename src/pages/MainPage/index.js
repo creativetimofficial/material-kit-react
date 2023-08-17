@@ -60,7 +60,9 @@ function MainPage() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
+        {/* The stats that sit at the top of the page */}
         <Counters />
+        {/* Information blocks below */}
         <Information />
         <DesignBlocks />
         <Pages />

@@ -27,21 +27,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Download
                     <br />
-                    Material Kit
+                    the App
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Get started on your running journey."
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="Available on the App store"
+                description="Free to download on the Android and Apple stores"
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "download",
                 }}
               />
             </RotatingCard>
@@ -50,33 +50,32 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="run_circle"
+                  title="Absolute Beginners"
+                  description="Couch to 5K is a running plan for absolute beginners."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="calendar_month"
+                  title="A comprehensive plan"
+                  description="The plan involves 3 runs a week, with a day of rest in between, and a different schedule for each of the 9 weeks."
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ "margin-top": { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  icon="schedule"
+                  title="Realistic expectations "
+                  description="Week 1 involves running for just a minute at a time, creating realistic expectations and making the challenge feel achievable right from the start."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  icon="favorite"
+                  title="Improve your physical health"
+                  description="Running regularly will improve the health of your heart and lungs."
                 />
               </Grid>
             </Grid>
