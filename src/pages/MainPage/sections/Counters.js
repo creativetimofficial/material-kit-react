@@ -30,7 +30,10 @@ function Counters() {
               title="Design Blocks"
               description="Mix the sections, change the colors and unleash your creativity"
             />
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
+            <Divider
+              orientation="vertical"
+              sx={{ display: { xs: "none", md: "block" }, "margin-left": 0 }}
+            />
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard

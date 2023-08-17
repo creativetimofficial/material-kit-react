@@ -45,7 +45,13 @@ function Download() {
               Creative Tim where you can find the Design System in HTML. Start a new project or give
               an old Bootstrap project a new look!
             </MKTypography>
-            <MKButton variant="gradient" color="info" size="large" component="a" sx={{ mb: 2 }}>
+            <MKButton
+              variant="gradient"
+              color="info"
+              size="large"
+              component="a"
+              sx={{ "margin-bottom": 2 }}
+            >
               Download Now
             </MKButton>
           </Grid>

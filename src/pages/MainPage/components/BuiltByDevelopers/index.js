@@ -29,7 +29,7 @@ function BuiltByDevelopers() {
       }}
     >
       <Container>
-        <Grid container item xs={12} lg={6} sx={{ ml: { xs: 0, lg: 6 } }}>
+        <Grid container item xs={12} lg={6} sx={{ "margin-left": { xs: 0, lg: 6 } }}>
           <MKTypography variant="h4" color="white" fontWeight="bold">
             Built by developers
           </MKTypography>

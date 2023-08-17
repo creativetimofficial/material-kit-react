@@ -73,12 +73,12 @@ function SimpleFooter({ company, links, light }) {
             alignItems: "center",
             justifyContent: "center",
             listStyle: "none",
-            mt: 3,
-            mb: 0,
-            p: 0,
+            "margin-top": 3,
+            "margin-bottom": 0,
+            padding: 0,
 
             [breakpoints.up("lg")]: {
-              mt: 0,
+              "margin-top": 0,
             },
           })}
         >

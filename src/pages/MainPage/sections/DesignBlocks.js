@@ -18,7 +18,7 @@ import data from "pages/MainPage/sections/data/designBlocksData";
 
 function DesignBlocks() {
   const renderData = data.map(({ title, description, items }) => (
-    <Grid container spacing={3} sx={{ mb: 10 }} key={title}>
+    <Grid container spacing={3} sx={{ "margin-bottom": 10 }} key={title}>
       <Grid item xs={12} lg={3}>
         <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
           <MKTypography variant="h3" fontWeight="bold" mb={1}>
@@ -32,7 +32,7 @@ function DesignBlocks() {
       <Grid item xs={12} lg={9}>
         <Grid container spacing={3}>
           {items.map(({ image, name, count, route, pro }) => (
-            <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
+            <Grid item xs={12} md={4} sx={{ "margin-bottom": 2 }} key={name}>
               <Link to={pro ? "/" : route}>
                 <ExampleCard image={image} name={name} count={count} pro={pro} />
               </Link>
@@ -60,7 +60,7 @@ function DesignBlocks() {
             color="info"
             badgeContent="Infinite combinations"
             container
-            sx={{ mb: 2 }}
+            sx={{ "margin-bottom": 2 }}
           />
           <MKTypography variant="h2" fontWeight="bold">
             Huge collection of sections
@@ -71,7 +71,7 @@ function DesignBlocks() {
           </MKTypography>
         </Grid>
       </Container>
-      <Container sx={{ mt: 6 }}>{renderData}</Container>
+      <Container sx={{ "margin-top": 6 }}>{renderData}</Container>
     </MKBox>
   );
 }

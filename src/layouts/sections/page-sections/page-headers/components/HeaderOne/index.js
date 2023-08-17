@@ -32,7 +32,7 @@ function HeaderOne() {
             <MKButton
               variant="outlined"
               color="white"
-              sx={{ display: { xs: "block", lg: "none" }, ml: "auto" }}
+              sx={{ display: { xs: "block", lg: "none" }, "margin-left": "auto" }}
             >
               <MKBox component="i" color="white" className="fas fa-bars" />
             </MKButton>

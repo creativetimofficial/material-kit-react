@@ -98,7 +98,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           variant="rounded"
           size="lg"
           shadow="md"
-          sx={{ mt: -5, mb: 1 }}
+          sx={{ "margin-top": -5, "margin-bottom": 1 }}
         />
       )}
       <MKBox lineHeight={1}>
@@ -135,10 +135,10 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
         sx={{
           display: "flex",
           alignItems: "center",
-          ml: 0.375,
+          "margin-left": 0.375,
 
           "& .material-icons-round": {
-            ml: -0.375,
+            "margin-left": -0.375,
           },
         }}
       >

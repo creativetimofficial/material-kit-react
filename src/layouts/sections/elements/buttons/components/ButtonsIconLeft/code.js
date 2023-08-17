@@ -15,15 +15,15 @@ function ButtonsIconLeft() {
         <Grid container justifyContent="center">
           <Stack direction="row" alignItems="center" spacing={1}>
             <MKButton color="info" size="small">
-              <Icon sx={{ mr: 1 }}>favorite</Icon>
+              <Icon sx={{ 'margin-right': 1 }}>favorite</Icon>
               small
             </MKButton>
             <MKButton color="info">
-              <Icon sx={{ mr: 1 }}>favorite</Icon>
+              <Icon sx={{ 'margin-right': 1 }}>favorite</Icon>
               default
             </MKButton>
             <MKButton color="info" size="large">
-              <Icon sx={{ mr: 1 }}>favorite</Icon>
+              <Icon sx={{ 'margin-right': 1 }}>favorite</Icon>
               large
             </MKButton>
           </Stack>

@@ -38,7 +38,7 @@ function Information() {
             Creative Tim&apos;s products.
           </MKTypography>
         </Grid>
-        <Grid container spacing={3} sx={{ mt: 8 }}>
+        <Grid container spacing={3} sx={{ "margin-top": 8 }}>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
               name="Nick Willever"
