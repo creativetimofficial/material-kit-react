@@ -22,6 +22,7 @@ function HorizontalTeamCard({ image, name, position, description }) {
               width="100%"
               borderRadius="md"
               shadow="lg"
+              style={{ height: "219px", objectFit: "cover" }}
             />
           </MKBox>
         </Grid>

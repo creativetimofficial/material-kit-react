@@ -24,10 +24,11 @@ import footerRoutes from "footer.routes";
 // Images
 import Counters from "pages/MainPage/sections/Counters";
 import Information from "pages/MainPage/sections/Information";
-import DesignBlocks from "pages/MainPage/sections/DesignBlocks";
+// import DesignBlocks from "pages/MainPage/sections/DesignBlocks";
 import Testimonials from "pages/MainPage/sections/Testimonials";
 import { Download, Pages } from "@mui/icons-material";
 import { RunningVideoHeader } from "components/RunningVideoHeader";
+import Team from "components/TeamFeature";
 
 function MainPage() {
   return (
@@ -62,9 +63,21 @@ function MainPage() {
       >
         {/* The stats that sit at the top of the page */}
         <Counters />
-        {/* Information blocks below */}
+        {/* Information blocks */}
         <Information />
-        <DesignBlocks />
+        {/* Coach bio section */}
+        <Card
+          sx={{
+            p: 2,
+            mx: { xs: 2, lg: 3 },
+            mt: -8,
+            mb: 4,
+            boxShadow: ({ boxShadows: { xxl } }) => xxl,
+          }}
+        >
+          <Team />
+        </Card>
+        {/* <DesignBlocks /> */}
         <Pages />
         <Container sx={{ marginTop: 6 }}>
           <BuiltByDevelopers />
