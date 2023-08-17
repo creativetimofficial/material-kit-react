@@ -9,7 +9,7 @@ import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
@@ -19,7 +19,6 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 import BuiltByDevelopers from "pages/MainPage/components/BuiltByDevelopers";
 
 // Routes
-import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
@@ -34,7 +33,6 @@ function MainPage() {
   return (
     <>
       <RunningVideoHeader />
-      <DefaultNavbar routes={routes} sticky />
       <Container>
         <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
           <MKTypography
