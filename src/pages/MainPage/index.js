@@ -23,64 +23,45 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-mainPage.jpg";
 import Counters from "pages/MainPage/sections/Counters";
 import Information from "pages/MainPage/sections/Information";
 import DesignBlocks from "pages/MainPage/sections/DesignBlocks";
 import Testimonials from "pages/MainPage/sections/Testimonials";
 import { Download, Pages } from "@mui/icons-material";
+import { RunningVideoHeader } from "components/RunningVideoHeader";
 
 function MainPage() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          label: "free download",
-          color: "info",
-        }}
-        sticky
-      />
-      <MKBox
-        minHeight="75vh"
-        width="100%"
-        sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
-        <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h1"
-              color="white"
-              mt={-6}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
-            >
-              Material Kit 2 React{" "}
-            </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
-            </MKTypography>
-          </Grid>
-        </Container>
-      </MKBox>
+      <RunningVideoHeader />
+      <DefaultNavbar routes={routes} sticky />
+      <Container>
+        <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <MKTypography
+            variant="h1"
+            color="white"
+            mt={-6}
+            mb={1}
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["3xl"],
+              },
+            })}
+          >
+            Material Kit 2 React{" "}
+          </MKTypography>
+          <MKTypography
+            variant="body1"
+            color="white"
+            textAlign="center"
+            px={{ xs: 6, lg: 12 }}
+            mt={1}
+          >
+            Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
+            developers around the world.
+          </MKTypography>
+        </Grid>
+      </Container>
       <Card
         sx={{
           p: 2,
