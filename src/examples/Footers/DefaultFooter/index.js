@@ -29,7 +29,7 @@ function DefaultFooter({ content }) {
             <MKBox display="flex" alignItems="center" mt={3}>
               {socials.map(({ icon, link }, key) => (
                 <MKTypography
-                  key={link}
+                  key={key}
                   component="a"
                   href={link}
                   target="_blank"
