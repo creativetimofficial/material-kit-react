@@ -48,7 +48,7 @@ function FeaturesOne() {
               <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
             </MKTypography>
           </Grid>
-          <Grid item xs={12} lg={6} sx={{ 'margin-left': { xs: -2, lg: "auto" }, 'margin-top': { xs: 6, lg: 0 } }}>
+          <Grid item xs={12} lg={6} sx={{ 'marginLeft': { xs: -2, lg: "auto" }, 'marginTop': { xs: 6, lg: 0 } }}>
             <Stack>
               <MKBox display="flex" alignItems="center" p={2}>
                 <MKBox

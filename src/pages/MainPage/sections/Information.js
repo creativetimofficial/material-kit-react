@@ -46,7 +46,7 @@ function Information() {
               />
             </RotatingCard>
           </Grid>
-          <Grid item xs={12} lg={7} sx={{ "margin-left": "auto" }}>
+          <Grid item xs={12} lg={7} sx={{ marginLeft: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
@@ -63,7 +63,7 @@ function Information() {
                 />
               </Grid>
             </Grid>
-            <Grid container spacing={3} sx={{ "margin-top": { xs: 0, md: 6 } }}>
+            <Grid container spacing={3} sx={{ marginTop: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="schedule"

@@ -252,7 +252,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             {item.collapse && (
               <Icon
                 fontSize="small"
-                sx={{ fontWeight: "normal", verticalAlign: "middle", "margin-right": -0.5 }}
+                sx={{ fontWeight: "normal", verticalAlign: "middle", marginRight: -0.5 }}
               >
                 keyboard_arrow_right
               </Icon>
@@ -301,7 +301,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
         >
           <MKBox borderRadius="lg">
             <MKTypography variant="h1" color="white">
-              <Icon ref={setArrowRef} sx={{ "margin-top": -3 }}>
+              <Icon ref={setArrowRef} sx={{ marginTop: -3 }}>
                 arrow_drop_up
               </Icon>
             </MKTypography>
@@ -384,7 +384,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
                     {item.collapse && (
                       <Icon
                         fontSize="small"
-                        sx={{ fontWeight: "normal", verticalAlign: "middle", "margin-right": -0.5 }}
+                        sx={{ fontWeight: "normal", verticalAlign: "middle", marginRight: -0.5 }}
                       >
                         keyboard_arrow_right
                       </Icon>

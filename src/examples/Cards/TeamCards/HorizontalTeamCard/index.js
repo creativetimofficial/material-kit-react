@@ -11,9 +11,9 @@ import MKTypography from "components/MKTypography";
 
 function HorizontalTeamCard({ image, name, position, description }) {
   return (
-    <Card sx={{ "margin-top": 3 }}>
+    <Card sx={{ marginTop: 3 }}>
       <Grid container>
-        <Grid item xs={12} md={6} lg={4} sx={{ "margin-top": -6 }}>
+        <Grid item xs={12} md={6} lg={4} sx={{ marginTop: -6 }}>
           <MKBox width="100%" pt={2} pb={1} px={2}>
             <MKBox
               component="img"

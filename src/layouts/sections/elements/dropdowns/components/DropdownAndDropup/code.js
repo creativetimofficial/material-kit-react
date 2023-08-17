@@ -23,7 +23,7 @@ function DropdownAndDropup() {
 
   // Styles
   const iconStyles = {
-    'margin-left': 1,
+    'marginLeft': 1,
     fontWeight: "bold",
     transition: "transform 200ms ease-in-out",
   };

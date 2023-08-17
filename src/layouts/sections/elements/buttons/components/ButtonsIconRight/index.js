@@ -16,15 +16,15 @@ function ButtonsIconRight() {
           <Stack direction="row" alignItems="center" spacing={1}>
             <MKButton color="info" size="small">
               small
-              <Icon sx={{ "margin-left": 1 }}>favorite</Icon>
+              <Icon sx={{ marginLeft: 1 }}>favorite</Icon>
             </MKButton>
             <MKButton color="info">
               default
-              <Icon sx={{ "margin-left": 1 }}>favorite</Icon>
+              <Icon sx={{ marginLeft: 1 }}>favorite</Icon>
             </MKButton>
             <MKButton color="info" size="large">
               large
-              <Icon sx={{ "margin-left": 1 }}>favorite</Icon>
+              <Icon sx={{ marginLeft: 1 }}>favorite</Icon>
             </MKButton>
           </Stack>
         </Grid>

@@ -18,7 +18,7 @@ import data from "pages/MainPage/sections/data/pagesData";
 
 function Pages() {
   const renderData = data.map(({ image, name, route }) => (
-    <Grid item xs={12} md={6} sx={{ "margin-bottom": { xs: 3, lg: 0 } }} key={name}>
+    <Grid item xs={12} md={6} sx={{ marginBottom: { xs: 3, lg: 0 } }} key={name}>
       <Link to={route}>
         <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
       </Link>
@@ -42,7 +42,7 @@ function Pages() {
             color="info"
             badgeContent="boost creativity"
             container
-            sx={{ "margin-bottom": 2 }}
+            sx={{ marginBottom: 2 }}
           />
           <MKTypography variant="h2" fontWeight="bold">
             With our coded pages
@@ -53,9 +53,9 @@ function Pages() {
           </MKTypography>
         </Grid>
       </Container>
-      <Container sx={{ "margin-top": { xs: 8, lg: 16 } }}>
+      <Container sx={{ marginTop: { xs: 8, lg: 16 } }}>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={9} sx={{ "margin-top": 3, px: { xs: 0, lg: 8 } }}>
+          <Grid item xs={12} lg={9} sx={{ marginTop: 3, px: { xs: 0, lg: 8 } }}>
             <Grid container spacing={3}>
               {renderData}
             </Grid>

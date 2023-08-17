@@ -52,7 +52,7 @@ function FeaturesOne() {
             item
             xs={12}
             lg={6}
-            sx={{ "margin-left": { xs: -2, lg: "auto" }, "margin-top": { xs: 6, lg: 0 } }}
+            sx={{ marginLeft: { xs: -2, lg: "auto" }, marginTop: { xs: 6, lg: 0 } }}
           >
             <Stack>
               <MKBox display="flex" alignItems="center" p={2}>

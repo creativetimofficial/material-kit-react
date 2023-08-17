@@ -50,7 +50,7 @@ function Download() {
               color="info"
               size="large"
               component="a"
-              sx={{ "margin-bottom": 2 }}
+              sx={{ marginBottom: 2 }}
             >
               Download Now
             </MKButton>

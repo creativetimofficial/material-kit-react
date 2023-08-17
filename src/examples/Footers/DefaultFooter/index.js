@@ -19,7 +19,7 @@ function DefaultFooter({ content }) {
     <MKBox component="footer">
       <Container>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={3} sx={{ "margin-left": "auto", "margin-bottom": 3 }}>
+          <Grid item xs={12} md={3} sx={{ marginLeft: "auto", marginBottom: 3 }}>
             <MKBox>
               <Link to={brand.route}>
                 <MKBox component="img" src={brand.image} alt={brand.name} maxWidth="2rem" mb={2} />
@@ -45,7 +45,7 @@ function DefaultFooter({ content }) {
             </MKBox>
           </Grid>
           {menus.map(({ name: title, items }) => (
-            <Grid key={title} item xs={6} md={2} sx={{ "margin-bottom": 3 }}>
+            <Grid key={title} item xs={6} md={2} sx={{ marginBottom: 3 }}>
               <MKTypography
                 display="block"
                 variant="button"

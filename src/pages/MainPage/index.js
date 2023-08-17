@@ -54,7 +54,7 @@ function MainPage() {
         sx={{
           padding: 2,
           mx: { xs: 2, lg: 3 },
-          "margin-bottom": 4,
+          marginBottom: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
@@ -66,7 +66,7 @@ function MainPage() {
         <Information />
         <DesignBlocks />
         <Pages />
-        <Container sx={{ "margin-top": 6 }}>
+        <Container sx={{ marginTop: 6 }}>
           <BuiltByDevelopers />
         </Container>
         <Container>
@@ -135,7 +135,7 @@ function MainPage() {
                   component="a"
                   target="_blank"
                   color="twitter"
-                  sx={{ "margin-right": 1 }}
+                  sx={{ marginRight: 1 }}
                 >
                   <i className="fab fa-twitter" />
                   &nbsp;Tweet
@@ -144,7 +144,7 @@ function MainPage() {
                   component="a"
                   target="_blank"
                   color="facebook"
-                  sx={{ "margin-right": 1 }}
+                  sx={{ marginRight: 1 }}
                 >
                   <i className="fab fa-facebook" />
                   &nbsp;Share

@@ -31,7 +31,7 @@ function Counters() {
             />
             <Divider
               orientation="vertical"
-              sx={{ display: { xs: "none", md: "block" }, "margin-left": 0 }}
+              sx={{ display: { xs: "none", md: "block" }, marginLeft: 0 }}
             />
           </Grid>
           <Grid item xs={12} md={4}>
