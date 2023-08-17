@@ -22,7 +22,6 @@ Quick start intructions:
 - Once you have cloned the repository to your machine, open it up in your preferred IDE (we recommend [VSCode](https://code.visualstudio.com/)).
 - Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
 - Navigate to the root ./ directory of the project, run `yarn install` or `npm install` to install the project dependencies.
-- Run `npm run build` or `yarn run build` to build the project.
 - Run `npm run start` or `yarn run start` to start the webpage and visit `http://localhost:3000/` in your browser to see it up and running.
 
 ## Measuring the emissions of the page
