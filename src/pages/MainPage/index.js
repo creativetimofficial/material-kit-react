@@ -50,7 +50,6 @@ function MainPage() {
           </MKTypography>
         </Grid>
       </Container>
-      <div></div>
       <Card
         sx={{
           padding: 2,
