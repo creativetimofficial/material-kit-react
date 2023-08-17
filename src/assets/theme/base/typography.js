@@ -53,7 +53,7 @@ const typography = {
 
   mainHeader: {
     fontFamily: baseProperties.fontFamily1,
-    fontSize: pxToRem(100),
+    fontSize: pxToRem(150),
     lineHeight: 1.25,
     ...baseHeadingProperties,
   },
