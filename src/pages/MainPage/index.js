@@ -35,37 +35,27 @@ function MainPage() {
       <RunningVideoHeader />
       <Container>
         <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          {/* Main title */}
           <MKTypography
-            variant="h1"
+            variant="mainHeader"
             color="white"
-            mt={-6}
-            mb={1}
             sx={({ breakpoints, typography: { size } }) => ({
               [breakpoints.down("md")]: {
-                fontSize: size["3xl"],
+                fontSize: size["5xl"],
               },
             })}
+            textAlign="center"
           >
             Couch to 5k{" "}
           </MKTypography>
-          <MKTypography
-            variant="body1"
-            color="white"
-            textAlign="center"
-            px={{ xs: 6, lg: 12 }}
-            mt={1}
-          >
-            Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-            developers around the world.
-          </MKTypography>
         </Grid>
       </Container>
+      <div></div>
       <Card
         sx={{
-          p: 2,
+          padding: 2,
           mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
+          "margin-bottom": 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
@@ -75,7 +65,7 @@ function MainPage() {
         <Information />
         <DesignBlocks />
         <Pages />
-        <Container sx={{ mt: 6 }}>
+        <Container sx={{ "margin-top": 6 }}>
           <BuiltByDevelopers />
         </Container>
         <Container>
@@ -140,11 +130,21 @@ function MainPage() {
                 mr={{ xs: 0, lg: "auto" }}
                 sx={{ textAlign: { xs: "center", lg: "right" } }}
               >
-                <MKSocialButton component="a" target="_blank" color="twitter" sx={{ mr: 1 }}>
+                <MKSocialButton
+                  component="a"
+                  target="_blank"
+                  color="twitter"
+                  sx={{ "margin-right": 1 }}
+                >
                   <i className="fab fa-twitter" />
                   &nbsp;Tweet
                 </MKSocialButton>
-                <MKSocialButton component="a" target="_blank" color="facebook" sx={{ mr: 1 }}>
+                <MKSocialButton
+                  component="a"
+                  target="_blank"
+                  color="facebook"
+                  sx={{ "margin-right": 1 }}
+                >
                   <i className="fab fa-facebook" />
                   &nbsp;Share
                 </MKSocialButton>
