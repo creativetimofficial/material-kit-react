@@ -86,7 +86,9 @@ material-kit-2-react
     │   │   ├── MKPagination
     │   │   ├── MKrogress
     │   │   ├── MKSocialButton
-    │   │   └── MKTypography
+    │   │   ├── MKTypography
+    │   │   └── RunningHeaderVideo
+    │   │
     │   ├── examples
     │   │   ├── Breadcrumbs
     │   │   ├── Cards
@@ -110,8 +112,6 @@ material-kit-2-react
     │   └── routes.js
     ├── .eslintrc.json
     ├── .prettierrc.json
-    ├── CHANGELOG.md
-    ├── ISSUE_TEMPLATE.md
     ├── jsconfig.json
     ├── package.json
     └── README.md
