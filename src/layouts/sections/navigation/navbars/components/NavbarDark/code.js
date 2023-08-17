@@ -14,7 +14,6 @@ function NavbarDark() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
           label: "free download",
           color: "info",
         }}
