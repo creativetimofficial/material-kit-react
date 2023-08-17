@@ -95,8 +95,6 @@ material-kit-2-react
     │   │   └── Navbars
     │   ├── layouts
     │   │   ├── pages
-    │   │   │    ├── authentication
-    │   │   │    ├── landing-pages
     │   │   │    └── presentation
     │   │   ├── sections
     │   │   │    ├── attention-catchers
@@ -106,7 +104,6 @@ material-kit-2-react
     │   │   │    ├── navigation
     │   │   └──  └── page-sections
     │   ├── pages
-    │   │   ├── LandingPages
     │   │   └── Presentation
     │   ├── App.js
     │   ├── index.js
