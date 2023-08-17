@@ -95,7 +95,7 @@ material-kit-2-react
     │   │   └── Navbars
     │   ├── layouts
     │   │   ├── pages
-    │   │   │    └── presentation
+    │   │   │    └── mainPage
     │   │   ├── sections
     │   │   │    ├── attention-catchers
     │   │   │    ├── components
@@ -104,7 +104,7 @@ material-kit-2-react
     │   │   │    ├── navigation
     │   │   └──  └── page-sections
     │   ├── pages
-    │   │   └── Presentation
+    │   │   └── MainPage
     │   ├── App.js
     │   ├── index.js
     │   ├── footer.routes.js

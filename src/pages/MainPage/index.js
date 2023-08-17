@@ -14,15 +14,9 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+import BuiltByDevelopers from "pages/MainPage/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
@@ -30,6 +24,11 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
+import Counters from "pages/MainPage/sections/Counters";
+import Information from "pages/MainPage/sections/Information";
+import DesignBlocks from "pages/MainPage/sections/DesignBlocks";
+import Testimonials from "pages/MainPage/sections/Testimonials";
+import { Download, Pages } from "@mui/icons-material";
 
 function Presentation() {
   return (
