@@ -1,19 +1,5 @@
 This project has been built using [MaterialUI](https://mui.com/) and [React](https://react.dev/).
 
-## Table of Contents
-
-- [Versions](#versions)
-- [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
-- [File Structure](#file-structure)
-- [Browser Support](#browser-support)
-- [Resources](#resources)
-- [Reporting Issues](#reporting-issues)
-- [Technical Support or Questions](#technical-support-or-questions)
-- [Licensing](#licensing)
-- [Useful Links](#useful-links)
-
 ## Quick start
 
 Quick start intructions:
@@ -41,17 +27,17 @@ You can check out our cheat sheet to get some ideas about how to do that.
 
 You can also test the Chrome extension out on some real web pages:
 
-Low Carbon Websites:
+**Low Carbon Website Examples**
 
-[Sustainable Web Design](https://sustainablewebdesign.org/ )
+- [Sustainable Web Design](https://sustainablewebdesign.org/ )
 
-[Google Homepage](https://www.google.co.uk/)
+- [Google Homepage](https://www.google.co.uk/)
 
-Higher Carbon Websites:
+**Higher Carbon Website Examples**
 
-[Visit Provence](https://www.myprovence.fr/)
+- [Visit Provence](https://www.myprovence.fr/)
 
-[Dromoland Castle](https://www.dromoland.ie/)
+- [Dromoland Castle](https://www.dromoland.ie/)
 
 The Chrome extension uses the Green Software Foundation's [Software Carbon Intensity Specifications](https://github.com/Green-Software-Foundation/sci/blob/dev/Software_Carbon_Intensity/Software_Carbon_Intensity_Specification.md) to calculate your score. It is a open source project, you can see the source code [here](https://github.com/Theodo-UK/sustainability-calculator).
 
