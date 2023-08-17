@@ -13,9 +13,9 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
-// Presentation page sections
+// MainPage page sections
 
-// Presentation page components
+// MainPage page components
 import BuiltByDevelopers from "pages/MainPage/components/BuiltByDevelopers";
 
 // Routes
@@ -23,14 +23,14 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/bg-mainPage.jpg";
 import Counters from "pages/MainPage/sections/Counters";
 import Information from "pages/MainPage/sections/Information";
 import DesignBlocks from "pages/MainPage/sections/DesignBlocks";
 import Testimonials from "pages/MainPage/sections/Testimonials";
 import { Download, Pages } from "@mui/icons-material";
 
-function Presentation() {
+function MainPage() {
   return (
     <>
       <DefaultNavbar
@@ -206,4 +206,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default MainPage;

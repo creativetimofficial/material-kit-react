@@ -10,11 +10,11 @@ import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
-// Presentation page components
-import ExampleCard from "pages/Presentation/components/ExampleCard";
+// MainPage page components
+import ExampleCard from "pages/MainPage/components/ExampleCard";
 
 // Data
-import data from "pages/Presentation/sections/data/pagesData";
+import data from "pages/MainPage/sections/data/pagesData";
 
 function Pages() {
   const renderData = data.map(({ image, name, route }) => (
@@ -63,7 +63,7 @@ function Pages() {
           <Grid item xs={12} lg={3}>
             <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
               <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                Presentation Pages for Company, Landing Pages, Blogs and Support
+                MainPage Pages for Company, Landing Pages, Blogs and Support
               </MKTypography>
               <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
                 These is just a small selection of the multiple possibitilies you have. Focus on the

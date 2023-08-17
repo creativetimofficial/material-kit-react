@@ -1,6 +1,6 @@
 // Material Kit 2 React pages
-import Presentation from "pages/Presentation";
+import MainPage from "pages/MainPage";
 
-export default function PresentationPage() {
-  return <Presentation />;
+export default function MainPagePage() {
+  return <MainPage />;
 }

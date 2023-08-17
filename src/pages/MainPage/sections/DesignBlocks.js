@@ -10,7 +10,7 @@ import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
-// Presentation page components
+// MainPage page components
 import ExampleCard from "pages/MainPage/components/ExampleCard";
 
 // Data
