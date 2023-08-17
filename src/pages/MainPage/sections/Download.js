@@ -45,14 +45,7 @@ function Download() {
               Creative Tim where you can find the Design System in HTML. Start a new project or give
               an old Bootstrap project a new look!
             </MKTypography>
-            <MKButton
-              variant="gradient"
-              color="info"
-              size="large"
-              component="a"
-              href="https://www.creative-tim.com/product/material-kit-react"
-              sx={{ mb: 2 }}
-            >
+            <MKButton variant="gradient" color="info" size="large" component="a" sx={{ mb: 2 }}>
               Download Now
             </MKButton>
           </Grid>
@@ -67,11 +60,7 @@ function Download() {
             <Grid container spacing={3} justifyContent="center">
               <Grid item xs={4} lg={2}>
                 <Tooltip title="Bootstrap 5 - Most popular front-end component library">
-                  <MKBox
-                    component="a"
-                    href="https://www.creative-tim.com/product/material-kit"
-                    target="_blank"
-                  >
+                  <MKBox component="a" target="_blank">
                     <MKBox
                       component="img"
                       src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/bootstrap5.jpg"
@@ -133,11 +122,7 @@ function Download() {
               </Grid>
               <Grid item xs={4} lg={2}>
                 <Tooltip title="Comming soon">
-                  <MKBox
-                    component="a"
-                    href="https://www.creative-tim.com/product/material-kit-react"
-                    target="_blank"
-                  >
+                  <MKBox component="a" target="_blank">
                     <MKBox
                       component="img"
                       src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg"
