@@ -59,7 +59,7 @@ function Information() {
                 <DefaultInfoCard
                   icon="calendar_month"
                   title="A comprehensive plan"
-                  description="The plan involves 3 runs a week, with a day of rest in between, and a different schedule for each of the 9 weeks."
+                  description="3 runs a week, with a day of rest in between, and a different schedule for each of the 9 weeks."
                 />
               </Grid>
             </Grid>
@@ -75,7 +75,7 @@ function Information() {
                 <DefaultInfoCard
                   icon="favorite"
                   title="Improve your physical health"
-                  description="Running regularly will improve the health of your heart and lungs."
+                  description="Running regularly will improve your health and help you manage stress."
                 />
               </Grid>
             </Grid>

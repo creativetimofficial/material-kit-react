@@ -19,7 +19,7 @@ function Counters() {
               count={700000}
               suffix="+"
               title="Downloads"
-              description="Thousands of you have used the Couch to 5k app to get fitter"
+              description="Thousands of people have used the Couch to 5k app to get fitter"
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
@@ -38,7 +38,7 @@ function Counters() {
             <DefaultCounterCard
               count={63}
               title="Days"
-              description="Only a few weeks needed to complete the course"
+              description="A short time needed to complete the course"
             />
           </Grid>
         </Grid>
