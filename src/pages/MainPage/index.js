@@ -7,12 +7,8 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
-
-// Couch to 5k examples
-// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+import { RunningVideoHeader } from "components/RunningVideoHeader";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-
-// MainPage page sections
 
 // MainPage page components
 import VisitNHSWebsite from "pages/MainPage/components/VisitNHSWebsite";
@@ -20,11 +16,10 @@ import VisitNHSWebsite from "pages/MainPage/components/VisitNHSWebsite";
 // Routes
 import footerRoutes from "footer.routes";
 
-// Images
+// Sections
 import Counters from "pages/MainPage/sections/Counters";
 import Information from "pages/MainPage/sections/Information";
 import Testimonials from "pages/MainPage/sections/Testimonials";
-import { RunningVideoHeader } from "components/RunningVideoHeader";
 import Team from "pages/MainPage/sections/TeamFeature";
 
 function MainPage() {

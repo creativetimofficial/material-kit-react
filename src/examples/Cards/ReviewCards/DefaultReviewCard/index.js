@@ -6,7 +6,6 @@ import Icon from "@mui/material/Icon";
 
 // Couch to 5k components
 import MKBox from "components/MKBox";
-import MKAvatar from "components/MKAvatar";
 import MKTypography from "components/MKTypography";
 
 function DefaultReviewCard({ color, image, name, date, review, rating }) {
@@ -91,16 +90,6 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
       shadow={color === "transparent" ? "none" : "md"}
       p={3}
     >
-      {image && (
-        <MKAvatar
-          src={image}
-          alt={name}
-          variant="rounded"
-          size="lg"
-          shadow="md"
-          sx={{ marginTop: -5, marginBottom: 1 }}
-        />
-      )}
       <MKBox lineHeight={1}>
         <MKTypography
           display="block"
