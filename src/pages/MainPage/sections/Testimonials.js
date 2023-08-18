@@ -7,7 +7,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Couch to 5k examples
-import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
+import DefaultReviewCard from "features/Cards/ReviewCards/DefaultReviewCard";
 
 function Information() {
   return (

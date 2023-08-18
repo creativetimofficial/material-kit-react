@@ -7,7 +7,7 @@ import Divider from "@mui/material/Divider";
 import MKBox from "components/MKBox";
 
 // Couch to 5k examples
-import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
+import DefaultCounterCard from "features/Cards/CounterCards/DefaultCounterCard";
 
 function Counters() {
   return (

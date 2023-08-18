@@ -8,7 +8,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
 import { RunningVideoHeader } from "components/RunningVideoHeader";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+import DefaultFooter from "features/Footers/DefaultFooter";
 
 // MainPage page components
 import VisitNHSWebsite from "pages/MainPage/components/VisitNHSWebsite";

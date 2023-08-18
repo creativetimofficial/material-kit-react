@@ -7,7 +7,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
+import HorizontalTeamCard from "features/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
 import team1 from "assets/images/coaches/1.jpg";
