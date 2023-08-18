@@ -29,7 +29,7 @@ You can also test the Chrome extension out on some real web pages:
 
 **Low Carbon Website Examples**
 
-- [Sustainable Web Design](https://sustainablewebdesign.org/ )
+- [Sustainable Web Design](https://sustainablewebdesign.org/)
 
 - [Google Homepage](https://www.google.co.uk/)
 
@@ -55,46 +55,39 @@ material-kit-2-react
     │   └── robots.txt
     ├── src
     │   ├── assets
+    │   │   ├── __archive
     │   │   ├── images
+    │   │   ├── video
     │   │   ├── theme
     │   │   │   ├── base
     │   │   │   ├── components
     │   │   │   ├── functions
     │   │   └── └── index.js
     │   ├── components
-    │   │   ├── MKAlert
-    │   │   ├── MKAvatar
-    │   │   ├── MKBadge
+    │   │   ├── __archive
     │   │   ├── MKBox
     │   │   ├── MKButton
-    │   │   ├── MKDatePicker
-    │   │   ├── MKInput
-    │   │   ├── MKPagination
-    │   │   ├── MKrogress
     │   │   ├── MKSocialButton
-    │   │   ├── MKTypography
-    │   │   └── RunningHeaderVideo
+    │   │   └── MKTypography
     │   │
-    │   ├── examples
-    │   │   ├── Breadcrumbs
+    │   ├── features
     │   │   ├── Cards
-    │   │   ├── Footer
-    │   │   └── Navbars
+    │   │   └── Footer
     │   ├── layouts
-    │   │   ├── pages
-    │   │   │    └── mainPage
-    │   │   ├── sections
-    │   │   │    ├── attention-catchers
-    │   │   │    ├── components
-    │   │   │    ├── elements
-    │   │   │    ├── input-areas
-    │   │   │    ├── navigation
-    │   │   └──  └── page-sections
+    │   │   └── pages
+    │   │        └── mainPage
     │   ├── pages
     │   │   └── MainPage
-    │   ├── App.js
-    │   ├── index.js
-    │   ├── footer.routes.js
+    │   │        ├── sections
+    │   │        │   ├── Counters
+    │   │        │   ├── Information
+    │   │        │   ├── RunningVideHeader
+    │   │        │   ├── TeamFeature
+    │   │        │   └── Testimonials
+    │   │        └──index.js
+    │   ├── App.js
+    │   ├── index.js
+    │   ├── footer.routes.js
     │   └── routes.js
     ├── .eslintrc.json
     ├── .prettierrc.json
