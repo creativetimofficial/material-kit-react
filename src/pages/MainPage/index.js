@@ -24,11 +24,10 @@ import footerRoutes from "footer.routes";
 // Images
 import Counters from "pages/MainPage/sections/Counters";
 import Information from "pages/MainPage/sections/Information";
-// import DesignBlocks from "pages/MainPage/sections/DesignBlocks";
 import Testimonials from "pages/MainPage/sections/Testimonials";
 import { Download, Pages } from "@mui/icons-material";
 import { RunningVideoHeader } from "components/RunningVideoHeader";
-import Team from "components/TeamFeature";
+import Team from "pages/MainPage/sections/TeamFeature";
 
 function MainPage() {
   return (

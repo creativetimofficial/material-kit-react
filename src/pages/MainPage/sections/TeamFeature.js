@@ -30,11 +30,11 @@ function Team() {
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              The Executive Team
+              The Coaches
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
+              The app developed by Public Health England and BBC Get Inspired has 5 great trainers
+              to support and motivate you.
             </MKTypography>
           </Grid>
         </Grid>
@@ -43,9 +43,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Jo Whiley"
+                position={{ color: "info", label: "BBC presenter" }}
+                description="Jo Whiley, is an English radio DJ and television presenter."
               />
             </MKBox>
           </Grid>
@@ -53,9 +53,9 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Michael Johnson"
+                position={{ color: "info", label: "Olympic gold medal athlete" }}
+                description="Michael has won four Olympic gold medals and eight World Championships gold medals in the span of his career."
               />
             </MKBox>
           </Grid>
@@ -63,9 +63,9 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Sanjeev Kohli"
+                position={{ color: "info", label: "Comedian" }}
+                description="Sanjeev Singh Kohli is a British actor, comedian, and writer."
               />
             </MKBox>
           </Grid>
@@ -73,9 +73,9 @@ function Team() {
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
                 image={team4}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                name="Sarah Millican"
+                position={{ color: "info", label: "Comedian" }}
+                description="Millican won the comedy award for Best Newcomer at the 2008 Edinburgh Festival Fringe. She is a comedian and writer."
               />
             </MKBox>
           </Grid>
