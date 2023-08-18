@@ -37,7 +37,7 @@ function VisitNHSWebsite() {
             Go to the NHS website to find out more about the benefits of running
           </MKTypography>
           <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-            And what other tools you can use on your fitness journey.
+            And what other tools you can use on your fitness journey now.
           </MKTypography>
           <MKTypography
             component="a"
