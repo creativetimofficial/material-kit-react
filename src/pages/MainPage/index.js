@@ -16,7 +16,7 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 // MainPage page sections
 
 // MainPage page components
-import BuiltByDevelopers from "pages/MainPage/components/BuiltByDevelopers";
+import VisitNHSWebsite from "pages/MainPage/components/VisitNHSWebsite";
 
 // Routes
 import footerRoutes from "footer.routes";
@@ -76,9 +76,9 @@ function MainPage() {
         >
           <Team />
         </Card>
-        {/* <DesignBlocks /> */}
+
         <Container sx={{ marginTop: 6 }}>
-          <BuiltByDevelopers />
+          <VisitNHSWebsite />
         </Container>
         <Container>
           <Grid container spacing={3}>
