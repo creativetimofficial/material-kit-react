@@ -15,26 +15,6 @@ const routes = [
         description: "See all sections",
         dropdown: true,
       },
-      {
-        name: "navigation",
-        description: "See all navigations",
-        dropdown: true,
-      },
-      {
-        name: "input areas",
-        description: "See all input areas",
-        dropdown: true,
-      },
-      {
-        name: "attention catchers",
-        description: "See all examples",
-        dropdown: true,
-      },
-      {
-        name: "elements",
-        description: "See all 32 examples",
-        dropdown: true,
-      },
     ],
   },
 ];
