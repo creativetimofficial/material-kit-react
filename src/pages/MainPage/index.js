@@ -24,7 +24,6 @@ import footerRoutes from "footer.routes";
 import Counters from "pages/MainPage/sections/Counters";
 import Information from "pages/MainPage/sections/Information";
 import Testimonials from "pages/MainPage/sections/Testimonials";
-import { Download } from "@mui/icons-material";
 import { RunningVideoHeader } from "components/RunningVideoHeader";
 import Team from "pages/MainPage/sections/TeamFeature";
 
@@ -81,7 +80,6 @@ function MainPage() {
         </Container>
         {/* Testimonials and reviews section */}
         <Testimonials />
-        <Download />
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
