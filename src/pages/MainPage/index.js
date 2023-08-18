@@ -25,7 +25,7 @@ import footerRoutes from "footer.routes";
 import Counters from "pages/MainPage/sections/Counters";
 import Information from "pages/MainPage/sections/Information";
 import Testimonials from "pages/MainPage/sections/Testimonials";
-import { Download, Pages } from "@mui/icons-material";
+import { Download } from "@mui/icons-material";
 import { RunningVideoHeader } from "components/RunningVideoHeader";
 import Team from "pages/MainPage/sections/TeamFeature";
 
@@ -77,7 +77,6 @@ function MainPage() {
           <Team />
         </Card>
         {/* <DesignBlocks /> */}
-        <Pages />
         <Container sx={{ marginTop: 6 }}>
           <BuiltByDevelopers />
         </Container>
