@@ -7,7 +7,7 @@ import Card from "@mui/material/Card";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
-import { RunningVideoHeader } from "components/RunningVideoHeader";
+import { RunningVideoHeader } from "pages/MainPage/sections/RunningVideoHeader";
 import DefaultFooter from "features/Footers/DefaultFooter";
 
 // MainPage page components
