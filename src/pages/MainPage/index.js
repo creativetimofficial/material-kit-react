@@ -11,7 +11,7 @@ import { RunningVideoHeader } from "components/RunningVideoHeader";
 import DefaultFooter from "features/Footers/DefaultFooter";
 
 // MainPage page components
-import VisitNHSWebsite from "pages/MainPage/components/VisitNHSWebsite";
+import VisitNHSWebsite from "features/Cards/VisitNHSWebsiteCard";
 
 // Routes
 import footerRoutes from "footer.routes";
