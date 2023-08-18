@@ -30,6 +30,7 @@ import Team from "pages/MainPage/sections/TeamFeature";
 function MainPage() {
   return (
     <>
+      {/* Video header */}
       <RunningVideoHeader />
       <Container>
         <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
@@ -58,11 +59,11 @@ function MainPage() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        {/* The stats that sit at the top of the page */}
+        {/* Statistics */}
         <Counters />
-        {/* Information blocks */}
+        {/* Facts and app download link */}
         <Information />
-        {/* Coach bio section */}
+        {/* Coach bios */}
         <Card
           sx={{
             p: 2,
@@ -74,13 +75,14 @@ function MainPage() {
         >
           <Team />
         </Card>
-        {/* Visit NHS Website card */}
+        {/* Visit NHS Website */}
         <Container sx={{ marginTop: 6 }}>
           <VisitNHSWebsite />
         </Container>
-        {/* Testimonials and reviews section */}
+        {/* Testimonials and reviews */}
         <Testimonials />
-        <MKBox pt={18} pb={6}>
+        {/* Social media links */}
+        <MKBox pb={6}>
           <Container>
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
@@ -88,7 +90,7 @@ function MainPage() {
                   Thank you for your support!
                 </MKTypography>
                 <MKTypography variant="body1" color="text">
-                  We deliver the best web products
+                  Connect with us
                 </MKTypography>
               </Grid>
               <Grid
@@ -126,6 +128,7 @@ function MainPage() {
           </Container>
         </MKBox>
       </Card>
+      {/* Page footer */}
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>
