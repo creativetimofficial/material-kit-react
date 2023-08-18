@@ -29,38 +29,37 @@ function Information() {
           justifyContent="center"
           sx={{ mx: "auto", textAlign: "center" }}
         >
-          <MKTypography variant="h2">Trusted by over</MKTypography>
+          <MKTypography variant="h2">Valued by over </MKTypography>
           <MKTypography variant="h2" color="info" textGradient mb={2}>
-            1,679,477+ web developers
+            336,200+ apple store users
           </MKTypography>
           <MKTypography variant="body1" color="text" mb={2}>
-            Many Fortune 500 companies, startups, universities and governmental institutions love
-            Creative Tim&apos;s products.
+            Couch to 5K has a 4.8 star rating on the App Store, after thousands of downloads
           </MKTypography>
         </Grid>
         <Grid container spacing={3} sx={{ marginTop: 8 }}>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Nick Willever"
+              name="K_irstin"
               date="1 day ago"
-              review="This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
+              review="This mama can! Great for mind and body... After having 2 kids and juggling everything life has to throw at me - I was firmly at the back of the line for time. Feeling bad about my lifestyle I needed a change. Enter c25k... I can't express how much this app will change your life."
               rating={5}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
               color="info"
-              name="Shailesh Kushwaha"
+              name="Betak178"
               date="1 week ago"
-              review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+              review="Seriously! I am about to start week 9 and this app has been AMAZING."
               rating={5}
             />
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <DefaultReviewCard
-              name="Samuel Kamuli"
+              name="Gingerella247"
               date="3 weeks ago"
-              review="Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."
+              review="I was the epitome of couch' now I'm a runner. I'll never be a natural runner, but I LOVE what couch to 5k has done for me. "
               rating={5}
             />
           </Grid>
