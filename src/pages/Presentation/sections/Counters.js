@@ -20,11 +20,25 @@ import Divider from "@mui/material/Divider";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import React from "react";
 
 // Material Kit 2 React examples
+import axios from "axios";
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 
 function Counters() {
+
+  const [ethPrice, setethPrice] = React.useState(50);
+
+  const baseURL="https://api.owlracle.info/v4/eth/gas?apikey=d75facf55eb54ea4825e69645f6d5e64"
+  const test = async() => {
+    axios.get(`${baseURL}`).then((response) => {
+      setethPrice(response.data.avgTx)
+    });
+  };
+
+
+
   return (
     <MKBox component="section" py={3}>
       <Container>
@@ -36,6 +50,8 @@ function Counters() {
               title="Coded Elements"
               description="From buttons, to inputs, navbars, alerts or cards, you are covered"
             />
+            <button onClick={test}>Press me</button>
+            <p>{ethPrice}</p>
           </Grid>
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
