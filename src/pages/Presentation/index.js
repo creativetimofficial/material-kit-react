@@ -83,7 +83,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              VENTA DE EMPANADAS{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -92,8 +92,11 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              <div class="row">
+                <div class="col-6">
+                  <h5 class="text-center">Precios: $2000</h5>
+                </div>
+              </div>
             </MKTypography>
           </Grid>
         </Container>
