@@ -48,7 +48,7 @@ function Counters() {
               count={70}
               suffix="+"
               title="Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
+              description="Nevermind"
             />
             <button onClick={test}>Press me</button>
             <p>{ethPrice}</p>
