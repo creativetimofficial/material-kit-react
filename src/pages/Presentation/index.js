@@ -94,7 +94,7 @@ function Presentation() {
             >
               <div class="row">
                 <div class="col-6">
-                  <h5 class="text-center">Precios: $2000</h5>
+                  <h5 class="text-center">Ricas y deliciosas empanadas</h5>
                 </div>
               </div>
             </MKTypography>

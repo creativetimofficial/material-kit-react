@@ -47,7 +47,7 @@ function Counters() {
             <DefaultCounterCard
               count={70}
               suffix="+"
-              title="Coded Elements"
+              title="Elements"
               description="From buttons, to inputs, navbars, alerts or cards, you are covered"
             />
             <button onClick={test}>Press me</button>
