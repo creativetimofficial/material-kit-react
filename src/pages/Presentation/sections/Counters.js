@@ -50,11 +50,11 @@ function Counters() {
               title="Elements"
               description="Nevermind"
             />
-            <button onClick={test}>Press me</button>
+            <button onClick={test}>r</button>
             <p>{ethPrice}</p>
           </Grid>
           <Grid item xs={12} md={4} display="flex">
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
+            <Divider orientation="horizontal" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
               count={5}
               suffix="+"
