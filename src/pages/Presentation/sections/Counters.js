@@ -66,7 +66,7 @@ function Counters() {
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
               count={4}
-              title="Pages"
+              title="Paes"
               description="Save 3-4 weeks of work when you use our pre-made pages for your website"
             />
           </Grid>
