@@ -74,7 +74,7 @@ function Presentation() {
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
               variant="h1"
-              color="white"
+              color="Red"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -83,17 +83,20 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              VENTA DE EMPANADAS{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
-              color="white"
-              textAlign="center"
+              color="Cyan"
+              textAlign="left"
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              <div class="row">
+                <div class="col-6">
+                  <h5 class="text-right">Ricas y deliciosas empanadas</h5>
+                </div>
+              </div>
             </MKTypography>
           </Grid>
         </Container>

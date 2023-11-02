@@ -23,8 +23,10 @@
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
+    "axios": "^1.5.0",
     "chroma-js": "2.4.2",
     "flatpickr": "4.6.13",
+    "node-fetch": "^3.3.2",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
@@ -44,12 +46,7 @@
     "lint": "eslint ./src",
     "prettify": "prettier --write ."
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+  "eslintConfig": {},
   "browserslist": {
     "production": [
       ">0.2%",
