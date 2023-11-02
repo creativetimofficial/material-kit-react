@@ -59,7 +59,7 @@ function Counters() {
               count={5}
               suffix="+"
               title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
+              description="mportancia ecológica: A pesar de su mala reputación, las arañas son esenciales para el equilibrio ecológico. Son depredadores naturales que controlan las poblaciones de insectos, lo que ayuda a regular los ecosistemas.M"
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
