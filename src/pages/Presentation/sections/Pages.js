@@ -22,7 +22,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
+// import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -52,7 +52,7 @@ function Pages() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKBadge
+          {/* <MKBadge
             variant="contained"
             color="info"
             badgeContent="boost creativity"
@@ -65,7 +65,7 @@ function Pages() {
           <MKTypography variant="body1" color="text">
             The easiest way to get started is to use one of our
             <br /> pre-built example pages.
-          </MKTypography>
+          </MKTypography> */}
         </Grid>
       </Container>
       <Container sx={{ mt: { xs: 8, lg: 16 } }}>

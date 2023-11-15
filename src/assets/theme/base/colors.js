@@ -21,9 +21,10 @@ Coded by www.creative-tim.com
 
 export default {
   background: {
-    default: "#f0f2f5",
+    default: "#072E73",
   },
 
+  // texto ao lado de doações
   text: {
     main: "#7b809a",
     focus: "#7b809a",
@@ -33,6 +34,7 @@ export default {
     main: "transparent",
   },
 
+  //todas as cores principais
   white: {
     main: "#ffffff",
     focus: "#ffffff",
@@ -49,6 +51,7 @@ export default {
     focus: "#e91e63",
   },
 
+  // texto da campanha
   secondary: {
     main: "#7b809a",
     focus: "#8f93a9",
@@ -79,6 +82,7 @@ export default {
     focus: "#f0f2f5",
   },
 
+  // todos os títulos
   dark: {
     main: "#344767",
     focus: "#2c3c58",
@@ -107,6 +111,7 @@ export default {
       state: "#495361",
     },
 
+    // background de doações e ícones acima dos textos ao lado de doações
     info: {
       main: "#49a3f1",
       state: "#1A73E8",
@@ -212,7 +217,7 @@ export default {
     },
 
     info: {
-      background: "#aecef7",
+      background: "#E537DA",
       text: "#095bc6",
     },
 

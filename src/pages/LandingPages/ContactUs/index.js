@@ -42,7 +42,7 @@ function ContactUs() {
           action={{
             type: "external",
             route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
+            label: "free test4",
             color: "info",
           }}
         />

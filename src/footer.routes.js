@@ -14,7 +14,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Material Kit 2",
+    name: "asdasas Kit 2",
     image: logoCT,
     route: "/",
   },
