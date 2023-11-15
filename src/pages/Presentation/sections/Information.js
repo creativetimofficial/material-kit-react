@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
-                    <br />
-                    Material Kit
+                    Doações
+                    {/* <br />
+                    Material Kit */}
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Lancem sobre ele toda a sua ansiedade, porque ele tem cuidado de vocês. 1 Pedro 5:7"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="Ajude-nos"
+                description=""
                 action={{
                   type: "internal",
                   route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  label: "Clique para doar",
                 }}
               />
             </RotatingCard>

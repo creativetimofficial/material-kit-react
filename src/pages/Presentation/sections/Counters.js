@@ -31,7 +31,7 @@ function Counters() {
         <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={70}
+              count={99}
               suffix="+"
               title="Coded Elements"
               description="From buttons, to inputs, navbars, alerts or cards, you are covered"
