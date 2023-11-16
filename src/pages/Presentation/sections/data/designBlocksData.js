@@ -18,92 +18,35 @@ const imagesPrefix =
 
 export default [
   {
-    title: "Design Blocks",
-    description: "A selection of 45 page sections that fit perfectly in any combination",
+    title: "Our Partners",
+    description: "These restaurants are partnering with us to bring you great food",
     items: [
       {
-        image: `${imagesPrefix}/headers.jpg`,
-        name: "Page Headers",
+        image: `https://tse2.mm.bing.net/th?id=OIP.DZi9gzPl3IFb1gFPJ7twTwHaE7&pid=Api`,
+        name: "Aladdin's Eatery",
         count: 10,
         route: "/sections/page-sections/page-headers",
       },
       {
-        image: `${imagesPrefix}/features.jpg`,
-        name: "Features",
+        image: `https://images.squarespace-cdn.com/content/v1/64528ad4028d741ee50322ea/5d266a6a-5f37-4044-a24a-38245aeb8104/IMG_2651.JPG?format=1500w`,
+        name: "India Garden",
+        count: 18,
+      },
+      {
+        image: `https://d2ugbn5gb88fyp.cloudfront.net/449043/0_0.webp`,
+        name: "Franky's Tacos",
+        count: 8,
+      },
+      {
+        image: `https://s3-media0.fl.yelpcdn.com/bphoto/GJ5FWpR6Ea_C5KTLwgDyhA/348s.jpg`,
+        name: "Cambodian Thai",
+        count: 6,
+      },
+      {
+        image: `https://s3-media0.fl.yelpcdn.com/bphoto/ee8BYMK90Fhb2zTer7FEmg/348s.jpg`,
+        name: "Seoul Garden",
         count: 14,
         route: "/sections/page-sections/features",
-      },
-      {
-        image: `${imagesPrefix}/pricing.jpg`,
-        name: "Pricing",
-        count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/faq.jpg`,
-        name: "FAQ",
-        count: 1,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/blogs.jpg`,
-        name: "Blog Posts",
-        count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/testimonials.jpg`,
-        name: "Testimonials",
-        count: 11,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/teams.jpg`,
-        name: "Teams",
-        count: 6,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/stats.jpg`,
-        name: "Stats",
-        count: 3,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/call-to-action.jpg`,
-        name: "Call to Actions",
-        count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/projects.jpg`,
-        name: "Applications",
-        count: 6,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/logo-area.jpg`,
-        name: "Logo Areas",
-        count: 4,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/footers.jpg`,
-        name: "Footers",
-        count: 10,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/general-cards.jpg`,
-        name: "General Cards",
-        count: 9,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/content-sections.jpg`,
-        name: "Content Sections",
-        count: 8,
-        pro: true,
       },
     ],
   },

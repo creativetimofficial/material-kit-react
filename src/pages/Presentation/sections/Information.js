@@ -39,15 +39,15 @@ function Information() {
             <RotatingCard>
               <RotatingCardFront
                 image={bgFront}
-                icon="touch_app"
+                icon="dining"
                 title={
                   <>
-                    Feel the
+                    International Taste
                     <br />
-                    Material Kit
+                    of South Bend
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="These restaurants are partnering with us to bring you awesome food"
               />
               <RotatingCardBack
                 image={bgBack}
@@ -66,7 +66,7 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Full Documentation"
+                  title="Aladdin's Eatery"
                   description="Built by developers for developers. Check the foundation and you will find
                     everything inside our documentation."
                 />
@@ -74,7 +74,7 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
-                  title="MUI Ready"
+                  title="Seoul Garden"
                   description="The world's most popular react components library for building user interfaces."
                 />
               </Grid>
@@ -83,14 +83,14 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="price_change"
-                  title="Save Time & Money"
+                  title="Frankie's Tacos"
                   description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="devices"
-                  title="Fully Responsive"
+                  title="Cambodian Thai"
                   description="Regardless of the screen size, the website content will naturally fit the given resolution."
                 />
               </Grid>
