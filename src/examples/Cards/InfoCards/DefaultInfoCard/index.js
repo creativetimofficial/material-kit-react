@@ -80,7 +80,7 @@ DefaultInfoCard.propTypes = {
     "light",
     "dark",
   ]),
-  icon: PropTypes.node.isRequired,
+  icon: PropTypes.node,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   direction: PropTypes.oneOf(["left", "right", "center"]),

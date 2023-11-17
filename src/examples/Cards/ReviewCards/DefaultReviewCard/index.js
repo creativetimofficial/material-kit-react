@@ -133,7 +133,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           color={color === "transparent" || color === "light" ? "text" : "white"}
           sx={{ display: "flex", alignItems: "center" }}
         >
-          {/* <Icon>schedule</Icon>&nbsp; */}
+          <Icon>person</Icon>&nbsp;
           {date}
         </MKTypography>
       </MKBox>
@@ -186,7 +186,7 @@ DefaultReviewCard.propTypes = {
   name: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   review: PropTypes.string.isRequired,
-  rating: PropTypes.oneOf([1, 2, 3, 4, 5]).isRequired,
+  rating: PropTypes.oneOf([1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5]).isRequired,
 };
 
 export default DefaultReviewCard;
