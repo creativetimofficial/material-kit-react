@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Embark on a journey
                     <br />
-                    Material Kit
+                    of self-improvement with GetFitter
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="🚀 #HealthyLiving #FitnessJourney #GetFitter"
               />
               <RotatingCardBack
                 image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                title="Get started"
+                description="Download now and experience the future of health, diet, and fitness at your fingertips. Your body, your rules – let us be your guide!"
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/app-store-url",
+                  label: "Download now",
                 }}
               />
             </RotatingCard>
@@ -65,32 +65,27 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  title="📊 Macro & Calorie Tracking"
+                  description="Take control of your nutrition like never before. Our intuitive charts provide a visual representation of your macros and calorie consumption, allowing you to make informed choices and optimize your diet for peak performance."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  title="🌟 AI Personal Assistant"
+                  description=" Your dedicated AI companion is here to customize your health and fitness experience. Receive personalized recommendations, set achievable goals, and stay motivated with real-time insights tailored just for you."
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  title="🥑 Keto Calculator"
+                  description="Unleash the power of keto with our built-in calculator. Effortlessly track your macronutrient intake and maintain the perfect balance for your ketogenic lifestyle. Achieve your fitness goals with precision and efficiency."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
+                  title="📈 Progress Tracking"
                   description="Regardless of the screen size, the website content will naturally fit the given resolution."
                 />
               </Grid>

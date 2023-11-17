@@ -133,7 +133,7 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           color={color === "transparent" || color === "light" ? "text" : "white"}
           sx={{ display: "flex", alignItems: "center" }}
         >
-          <Icon>schedule</Icon>&nbsp;
+          {/* <Icon>schedule</Icon>&nbsp; */}
           {date}
         </MKTypography>
       </MKBox>
