@@ -1,0 +1,11 @@
+{
+    "Pages": [
+        { "/" : "Landing" },
+        { "/view/profiles" : "ViewProfiles" },
+        { "/view/profile/{userid}" : "ViewProfile" },
+        { "/view/activities" : "ViewActivities" },
+        { "/view/activity/{activityid}" : "ViewActivity" },
+        { "/login" : "Login" },
+        { "/register" : "Register" }
+    ]
+}
