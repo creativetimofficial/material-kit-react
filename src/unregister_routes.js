@@ -35,8 +35,27 @@ Coded by www.creative-tim.com
           you can set the columns amount based on this key.
   10. The `rowsPerColumn` key is used to define that how many rows should be in a column.
 */
-import register_routes from "register_routes"
-import unregister_routes from "unregister_routes"
+// @mui icons
+import LoginIcon from '@mui/icons-material/Login';
+import CreateIcon from '@mui/icons-material/Create';
+import AppShortcutIcon from '@mui/icons-material/AppShortcut';
 
-const routes = register_routes.concat(unregister_routes)
+const routes = [
+  {
+    name: "Registrate",
+    icon: <CreateIcon />,
+    route: "/register/"
+  },
+  {
+    name: "Inicia sesión",
+    icon: <LoginIcon />,
+    route: "/login/"
+  },
+  {
+    name: "Instala la app",
+    icon: <AppShortcutIcon />,
+    href: "https://www.github.com/creativetimofficial/material-kit-react",
+  },
+];
+
 export default routes;

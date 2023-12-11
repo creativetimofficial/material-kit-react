@@ -26,14 +26,15 @@ import Navbar from "components/Custom/Navbar"
 import Footer from "components/Custom/Footer"
 
 // Routes
-import routes from "routes";
+import unregister_routes from "unregister_routes";
 import footerRoutes from "footer.routes";
+
 
 function Index() {
   return (
     <>
       <Navbar
-        routes={routes}
+        routes={unregister_routes}
         sticky
       />
       <MKBox
