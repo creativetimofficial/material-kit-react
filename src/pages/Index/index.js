@@ -26,7 +26,7 @@ import Navbar from "components/Custom/Navbar"
 import Footer from "components/Custom/Footer"
 
 // Routes
-import unregister_routes from "unregister_routes";
+import unregister_routes from "routes/unregister_routes";
 import footerRoutes from "footer.routes";
 
 

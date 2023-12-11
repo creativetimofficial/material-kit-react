@@ -35,8 +35,8 @@ Coded by www.creative-tim.com
           you can set the columns amount based on this key.
   10. The `rowsPerColumn` key is used to define that how many rows should be in a column.
 */
-import register_routes from "register_routes"
-import unregister_routes from "unregister_routes"
+import register_routes from "routes/register_routes"
+import unregister_routes from "routes/unregister_routes"
 
 const routes = register_routes.concat(unregister_routes)
 export default routes;
