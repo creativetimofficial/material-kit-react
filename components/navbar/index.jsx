@@ -16,7 +16,10 @@ export default function Navbar(){
                 </Link>
             </div>
             <div className="flex space-x-4">
-              {userLogged ? <UserLogin /> : <Visitant />}
+              {/*userLogged ? <UserLogin /> : <Visitant />*/}
+              <UserLogin />
+              <div />
+              <Visitant />
             </div>
           </div>
         </nav>
