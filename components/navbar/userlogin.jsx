@@ -3,6 +3,7 @@ import Link from "next/link";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import LogoutIcon from '@mui/icons-material/Logout';
+import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 
 export default function UserLogin(params) {
     return (
@@ -10,6 +11,10 @@ export default function UserLogin(params) {
         <Link href="/view/users">
           <PortraitIcon />
           Ver perfiles
+        </Link>
+        <Link href="/view/activities">
+          <FavoriteRoundedIcon />
+          Parejas
         </Link>
         <Link href="/view/profile/{id}">
           <AccountCircleIcon />
