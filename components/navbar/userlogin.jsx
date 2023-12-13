@@ -7,15 +7,15 @@ import LogoutIcon from '@mui/icons-material/Logout';
 export default function UserLogin(params) {
     return (
       <>
-        <Link href="/login">
+        <Link href="/view/users">
           <PortraitIcon />
           Ver perfiles
         </Link>
-        <Link href="/about">
+        <Link href="/view/profile/{id}">
           <AccountCircleIcon />
           Mi perfil
         </Link>
-        <Link href="/contact">
+        <Link href="/">
           <LogoutIcon />
           Cerrar sesión
         </Link>
