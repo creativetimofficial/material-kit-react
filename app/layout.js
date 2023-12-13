@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar"
 
-import "./global.css"
+import "./globals.css"
 
 export const metadata = {
   title: 'CodeMate',

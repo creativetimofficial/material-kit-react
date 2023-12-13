@@ -5,6 +5,9 @@
     justify-content: space-between;
     padding: 0 4rem;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .navbar ul{
