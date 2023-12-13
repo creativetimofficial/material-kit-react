@@ -1,5 +1,5 @@
-import Link from "next/link";
 import "./styles.css"
+import Link from "next/link";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import InstallMobileIcon from '@mui/icons-material/InstallMobile';
 import InfoIcon from '@mui/icons-material/Info';
@@ -15,7 +15,7 @@ export default function Navbar(){
                 </Link>
             </div>
             <div className="flex space-x-4">
-              <Link href="/">
+              <Link href="/login">
                 <AccountCircleIcon />
                 Inicia sesión
               </Link>
