@@ -1,0 +1,25 @@
+.navbar{
+    background: #000;
+    color:rgb(190, 225, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 1rem
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar a:visited{
+    color:rgb(190, 225, 255);
+}
