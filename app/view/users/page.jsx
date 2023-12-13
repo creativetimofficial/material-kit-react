@@ -1,58 +1,56 @@
 "use client"
 
-import Video from "@/components/video";
+import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
+import CancelRoundedIcon from '@mui/icons-material/CancelRounded';
 
 export default function name(params) {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Acceder a los valores de los campos de entrada
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-
-        // Realizar acciones con los valores (puedes enviarlos a un servidor, por ejemplo)
-        console.log('Correo Electrónico:', email);
-        console.log('Contraseña:', password);
-
-        // Aquí iría la lógica de autenticación
-        // Aquí iría la lógica de autenticación (por ejemplo, verificar credenciales)
-      };
+    const name ='Guillermo Reyes';
+    const description ='HOLA QUE HACE? YO AQUI ESCRIBIENDO UNA DESCRIPCIÓN';
+    const url ='/profile.jpg';
+    const alt ='Imagen de '+name;
     return (
-      <Video>
-          <div className="max-w-md w-full p-8 bg-black/50 backdrop-blur-md rounded-md shadow-md">
-            <h2 className="text-2xl font-semibold text-gray-100 mb-6">
-              Iniciar Sesión
-            </h2>
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label className="block text-gray-200 text-sm font-medium mb-2">
-                  Correo Electrónico
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 text-gray-800"
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-gray-200 text-sm font-medium mb-2">
-                  Contraseña
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500 text-gray-800"
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:outline-none"
-              >
-                Iniciar Sesión
-              </button>
-            </form>
+      <div>
+        <div className="relative bg-white rounded-lg shadow-md p-4 max-w-md mx-auto">
+          <div className="relative aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
+            <img
+              src={url}
+              alt={alt}
+              className="object-cover w-full h-full rounded-lg"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+              <h3 className="text-white text-lg font-bold">{name}</h3>
+              <p className="text-white text-sm">{description}</p>
+            </div>
           </div>
-      </Video>
+          <div className="absolute inset-0 flex items-center justify-between mt-4">
+            <button
+              className="text-4xl text-white"
+              onClick={() => handleSwipe("left")}
+            >
+              {"<"}
+            </button>
+            <button
+              className="text-4xl text-white"
+              onClick={() => handleSwipe("right")}
+            >
+              {">"}
+            </button>
+          </div>
+          <div className="flex justify-between mt-4">
+            <button
+              className="text-3xl text-red-500"
+              onClick={() => handleReject()}
+            >
+              <CancelRoundedIcon />
+            </button>
+            <button
+              className="text-3xl text-green-500"
+              onClick={() => handleApprove()}
+            >
+              <CheckCircleRoundedIcon />
+            </button>
+          </div>
+        </div>
+      </div>
     );
 }
