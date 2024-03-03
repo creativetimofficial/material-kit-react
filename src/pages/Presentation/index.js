@@ -14,6 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import React, { useState } from "react";
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -25,16 +27,35 @@ import Typography from "@mui/material/Typography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-//import DefaultFooter from "examples/Footers/DefaultFooter";
+// import DefaultFooter from "examples/Footers/DefaultFooter";
+// import footerRoutes from "footer.routes";
 
 // Routes
 import routes from "routes";
-//import footerRoutes from "footer.routes";
+
+import InputAdornment from "@mui/material/InputAdornment";
 
 // Images
 import bgImage from "assets/images/Z.png";
 
+// import TwitterIcon from "@mui/icons-material/Twitter";
+import MKButton from "components/MKButton";
+import TextField from "@mui/material/TextField";
+// import Button from "assets/theme/components/button";
+// import { CurrencyBitcoin } from "@mui/icons-material";
+
 function Presentation() {
+  const [inputValue, setInputValue] = useState("");
+  const handleInputChange = (e) => {
+    const rawValue = e.target.value.replace(/,/g, "");
+
+    if (isNaN(rawValue)) {
+      return;
+    }
+    const formattedValue = Number(rawValue).toLocaleString();
+    setInputValue(formattedValue);
+  };
+
   return (
     <>
       <DefaultNavbar
@@ -102,17 +123,58 @@ function Presentation() {
       >
         <Grid container item xs={6} lg={12} justifyContent="center" mx="auto">
           <Grid item lg={6}>
-            <Card sx={{ padding: 5 }}>
-              <Typography>Testing</Typography>
-              <Typography>
-                To participate in the the event, you must first become a member of the Pursuit.Bet
-                discord server in order to place bets and recieve winnings.
-              </Typography>
+            <Card sx={{ padding: 5, maxHeight: "400px" }}>
+              <Grid container spacing={3} direction="column" justifyContent="center">
+                <Grid item>
+                  <Typography sx={{ textAlign: "center", fontSize: "20px" }}>
+                    To begin betting, you need to deposit point into your account. You can do this
+                    by joining our discord server
+                  </Typography>
+                </Grid>
+                <Grid item></Grid>
+              </Grid>
             </Card>
           </Grid>
           <Grid item lg={6}>
-            <Card sx={{ padding: 5 }}>
-              <Typography>Testing</Typography>
+            <Card sx={{ padding: 5, maxHeight: "400px" }}>
+              <Grid container spacing={3} direction="column" justifyContent="center">
+                <Grid item lg={12}>
+                  <Typography sx={{ textAlign: "center", fontSize: "18px" }}>
+                    Place your bet using metamask below.
+                  </Typography>
+                </Grid>
+                <Grid item spacing={4} lg={12}>
+                  <Grid container direction="row" columnGap={5}>
+                    <TextField
+                      id="filled-basic"
+                      sx={{ flexGrow: 1, maxWidth: "300px" }}
+                      label="Type here..."
+                      value={inputValue}
+                      onChange={handleInputChange}
+                      InputProps={{
+                        startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                        endAdornment: <InputAdornment position="end">.00</InputAdornment>,
+                      }}
+                      inputProps={{ sx: { textAlign: "right", fontSize: 20 } }}
+                    ></TextField>
+                    <MKButton color="primary">Deposit points</MKButton>
+                  </Grid>
+                </Grid>
+                <Grid item>
+                  <Typography sx={{ fontSize: "15px" }}>
+                    This is how many points will be deposited into your account
+                  </Typography>
+                  <TextField
+                    disabled
+                    value={inputValue}
+                    sx={{ maxWidth: "200px" }}
+                    InputProps={{
+                      endAdornment: <InputAdornment position="start">Points</InputAdornment>,
+                    }}
+                    inputProps={{ style: { textAlign: "right", fontSize: "15px" } }}
+                  ></TextField>
+                </Grid>
+              </Grid>
             </Card>
           </Grid>
         </Grid>
