@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.0.0
+* Material Kit 2 React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -136,8 +136,8 @@ CenteredFooter.defaultProps = {
 // Typechecking props for the CenteredFooter
 CenteredFooter.propTypes = {
   company: PropTypes.objectOf(PropTypes.string),
-  links: PropTypes.arrayOf(PropTypes.object),
-  socials: PropTypes.arrayOf(PropTypes.object),
+  links: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
+  socials: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
   light: PropTypes.bool,
 };
 

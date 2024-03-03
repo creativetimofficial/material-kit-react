@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.0.0
+* Material Kit 2 React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -159,7 +159,7 @@ function DefaultNavbarMobile({ routes, open }) {
 
 // Typechecking props for the DefaultNavbarMobile
 DefaultNavbarMobile.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  routes: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])).isRequired,
   open: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]).isRequired,
 };
 

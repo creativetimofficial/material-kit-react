@@ -1,6 +1,6 @@
 # [Material Kit 2 React](http://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-kit-react&text=Check%20Material%20kit%20React%20made%20by%20@CreativeTim%20#webdesign%20#kit%20#materialdesign%20#react%20https://www.creative-tim.com/product/material-kit-react)
 
-![version](https://img.shields.io/badge/version-2.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-2.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aissue+is%3Aclosed)
 
 ![Image](https://s3.amazonaws.com/creativetim_bucket/products/83/original/material-kit-2-react.jpg)
 
@@ -37,6 +37,7 @@ During the development of this dashboard, we have used many existing resources f
 - [React Countup](https://github.com/glennreyes/react-countup) - A lightweight React component that can be used to quickly create animations that display numerical data in a more interesting way.
 - [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) - Syntax highlighting component for react with prismjs or highlightjs ast using inline styles.
 - [ChromaJS](https://gka.github.io/chroma.js/) - A small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.
+- [Nepcha Analytics](https://nepcha.com?ref=readme) for the analytics tool. Nepcha is already integrated with Material Kit 2 React. You can use it to gain insights into your sources of traffic.
 
 Let us know your thoughts below. And good luck with development!
 
@@ -166,6 +167,7 @@ At present, we officially aim to support the last two versions of the following 
 - [License Agreement](https://www.creative-tim.com/license?ref=readme-mkr)
 - [Support](https://www.creative-tim.com/contact-us?ref=readme-mkr)
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-react/issues)
+- [Nepcha Analytics](https://nepcha.com?ref=readme) - Analytics tool for your website
 
 ## Reporting Issues
 
@@ -181,7 +183,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-mkr)
+- Copyright 2023 [Creative Tim](https://www.creative-tim.com?ref=readme-mkr)
 - Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mkr)
 
 ## Useful Links

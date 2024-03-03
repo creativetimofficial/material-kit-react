@@ -1,10 +1,10 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.0.0
+* Material Kit 2 React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -98,7 +98,7 @@ function ContactUs() {
                 For further questions, including partnership opportunities, please email
                 hello@creative-tim.com or contact using our contact form.
               </MKTypography>
-              <MKBox width="100%" component="form" method="post" autocomplete="off">
+              <MKBox width="100%" component="form" method="post" autoComplete="off">
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={6}>
                     <MKInput

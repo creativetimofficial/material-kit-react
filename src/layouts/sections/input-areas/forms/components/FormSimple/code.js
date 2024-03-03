@@ -25,7 +25,7 @@ function FormSimple() {
           </MKTypography>
         </Grid>
         <Grid container item xs={12} lg={7} sx={{ mx: "auto" }}>
-          <MKBox width="100%" component="form" method="post" autocomplete="off">
+          <MKBox width="100%" component="form" method="post" autoComplete="off">
             <MKBox p={3}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
