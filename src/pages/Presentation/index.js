@@ -14,6 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import React, { useState } from "react";
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -25,26 +27,45 @@ import Typography from "@mui/material/Typography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-//import DefaultFooter from "examples/Footers/DefaultFooter";
+// import DefaultFooter from "examples/Footers/DefaultFooter";
+// import footerRoutes from "footer.routes";
 
 // Routes
 import routes from "routes";
-//import footerRoutes from "footer.routes";
+
+import InputAdornment from "@mui/material/InputAdornment";
 
 // Images
 import bgImage from "assets/images/Z.png";
 
+// import TwitterIcon from "@mui/icons-material/Twitter";
+import MKButton from "components/MKButton";
+import TextField from "@mui/material/TextField";
+// import Button from "assets/theme/components/button";
+// import { CurrencyBitcoin } from "@mui/icons-material";
+
 function Presentation() {
+  const [inputValue, setInputValue] = useState("");
+  const handleInputChange = (e) => {
+    const rawValue = e.target.value.replace(/,/g, "");
+
+    if (isNaN(rawValue)) {
+      return;
+    }
+    const formattedValue = Number(rawValue).toLocaleString();
+    setInputValue(formattedValue);
+  };
+
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "info",
+        // }}
         sticky
       />
       {/*The background Image and hero texts*/}
@@ -100,19 +121,87 @@ function Presentation() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Grid container item xs={6} lg={12} justifyContent="center" mx="auto">
-          <Grid item lg={6}>
-            <Card sx={{ padding: 5 }}>
-              <Typography>Testing</Typography>
-              <Typography>
-                To participate in the the event, you must first become a member of the Pursuit.Bet
-                discord server in order to place bets and recieve winnings.
-              </Typography>
+        <Grid container spacing={2} xs={6} lg={12} alignItems="center" mx="auto">
+          {/*Left Card*/}
+          <Grid item lg={6} sx={{ height: "100%" }}>
+            <Card sx={{ padding: 5, maxHeight: "400px", height: "80%" }}>
+              <Grid
+                container
+                spacing={3}
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Grid item>
+                  <Typography sx={{ textAlign: "center", fontSize: "20px" }}>
+                    To begin betting, you need to deposit point into your account. You can do this
+                    by joining our discord server
+                  </Typography>
+                </Grid>
+                {/*this is where the discord invite link will be placed*/}
+                <Grid item>
+                  <MKButton
+                    color="primary"
+                    onClick={() => {
+                      window.open("https://discord.gg/h9cGqHp5Fw");
+                    }}
+                  >
+                    Join our discord
+                  </MKButton>
+                </Grid>
+              </Grid>
             </Card>
           </Grid>
+          {/*Right Card*/}
           <Grid item lg={6}>
-            <Card sx={{ padding: 5 }}>
-              <Typography>Testing</Typography>
+            <Card sx={{ padding: 5, maxHeight: "400px" }}>
+              <Grid
+                container
+                spacing={3}
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Grid item lg={12}>
+                  <Typography sx={{ textAlign: "center", fontSize: "18px" }}>
+                    Place your bet using metamask below.
+                  </Typography>
+                </Grid>
+                <Grid item lg={12}>
+                  <Grid container direction="row" columnGap={4}>
+                    <TextField
+                      id="filled-basic"
+                      sx={{ flexGrow: 1, maxWidth: "300px" }}
+                      label="Type here..."
+                      value={inputValue}
+                      onChange={handleInputChange}
+                      InputProps={{
+                        startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                        endAdornment: <InputAdornment position="end">.00</InputAdornment>,
+                      }}
+                      inputProps={{
+                        maxLength: 10,
+                        sx: { textAlign: "right", fontSize: 20 },
+                      }}
+                    ></TextField>
+                    <MKButton color="primary">Deposit points</MKButton>
+                  </Grid>
+                </Grid>
+                <Grid item lg={12}>
+                  <Typography sx={{ fontSize: "15px" }}>
+                    This is how many points will be deposited into your account
+                  </Typography>
+                  <TextField
+                    disabled
+                    value={inputValue}
+                    sx={{ maxWidth: "200px" }}
+                    InputProps={{
+                      endAdornment: <InputAdornment position="start">Points</InputAdornment>,
+                    }}
+                    inputProps={{ style: { textAlign: "right", fontSize: "15px" } }}
+                  ></TextField>
+                </Grid>
+              </Grid>
             </Card>
           </Grid>
         </Grid>
