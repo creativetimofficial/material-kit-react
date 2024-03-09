@@ -41,6 +41,7 @@ import bgImage from "assets/images/Z.png";
 // import TwitterIcon from "@mui/icons-material/Twitter";
 import MKButton from "components/MKButton";
 import TextField from "@mui/material/TextField";
+import BetButton from "components/BetButton/BetButton";
 // import Button from "assets/theme/components/button";
 // import { CurrencyBitcoin } from "@mui/icons-material";
 
@@ -60,12 +61,12 @@ function Presentation() {
     <>
       <DefaultNavbar
         routes={routes}
-        // action={{
-        //   type: "external",
-        //   route: "https://www.creative-tim.com/product/material-kit-react",
-        //   label: "free download",
-        //   color: "info",
-        // }}
+        action={{
+          type: "external",
+          route: "https://discord.gg/h9cGqHp5Fw",
+          label: "Join our discord",
+          color: "info",
+        }}
         sticky
       />
       {/*The background Image and hero texts*/}
@@ -184,7 +185,7 @@ function Presentation() {
                         sx: { textAlign: "right", fontSize: 20 },
                       }}
                     ></TextField>
-                    <MKButton color="primary">Deposit points</MKButton>
+                    <BetButton amount={inputValue}></BetButton>
                   </Grid>
                 </Grid>
                 <Grid item lg={12}>
