@@ -26,6 +26,10 @@ function BetButton({ amount }) {
         console.log("Connected to MetaMask:", userAccount);
         // Request payment
 
+        // Web3.eth.estimateGas({ to: toAddress, value: wei }).then((gasAmount) => {
+        //   console.log("gasAmount: ", gasAmount);
+        // });
+
         const paymentDetails = {
           to: toAddress,
           from: userAccount,
