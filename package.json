@@ -34,7 +34,8 @@
     "react-router-dom": "6.10.0",
     "react-scripts": "5.0.1",
     "react-syntax-highlighter": "15.5.0",
-    "web-vitals": "3.3.1"
+    "web-vitals": "3.3.1",
+    "web3": "^4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

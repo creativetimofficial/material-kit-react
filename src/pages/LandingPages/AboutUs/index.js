@@ -25,32 +25,28 @@ import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+// import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
+import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
-
+// import footerRoutes from "footer.routes";
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/pursuit1.jpg";
 
 function AboutUs() {
   return (
     <>
       <DefaultNavbar
         routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "default",
-        }}
+        // action={{
+        //   type: "external",
+        //   route: "https://www.creative-tim.com/product/material-kit-react",
+        //   label: "free download",
+        //   color: "default",
+        // }}
         transparent
         light
       />
@@ -89,11 +85,15 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              Mission Statement
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              At Pursuit, we strive to revolutionize the betting experience by merging the thrill of
+              live events with the power of blockchain technology. Our mission is to provide a
+              secure and transparent platform where users can engage in para-mutuel betting on live
+              events, leveraging cryptocurrencies for seamless transactions. We aim to create an
+              immersive betting environment that offers unique and entertaining experiences while
+              prioritizing user privacy and security.
             </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
@@ -127,14 +127,9 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
-        <Team />
         <Featuring />
-        <Newsletter />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
+      <MKBox pt={6} px={1} mt={6}></MKBox>
     </>
   );
 }
