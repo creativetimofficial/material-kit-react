@@ -41,12 +41,12 @@ function AboutUs() {
     <>
       <DefaultNavbar
         routes={routes}
-        // action={{
-        //   type: "external",
-        //   route: "https://www.creative-tim.com/product/material-kit-react",
-        //   label: "free download",
-        //   color: "default",
-        // }}
+        action={{
+          type: "external",
+          route: "https://discord.gg/h9cGqHp5Fw",
+          label: "Join our discord",
+          color: "info",
+        }}
         transparent
         light
       />
