@@ -44,9 +44,14 @@ import TextField from "@mui/material/TextField";
 import BetButton from "components/BetButton/BetButton";
 // import Button from "assets/theme/components/button";
 // import { CurrencyBitcoin } from "@mui/icons-material";
+import PaymentProviders from "components/PaymentProviders/PaymentProviders";
+
+// Crypto Stuff
+import Web3 from "web3";
 
 function Presentation() {
   const [inputValue, setInputValue] = useState("");
+
   const handleInputChange = (e) => {
     const rawValue = e.target.value.replace(/,/g, "");
 
@@ -165,7 +170,7 @@ function Presentation() {
               >
                 <Grid item lg={12}>
                   <Typography sx={{ textAlign: "center", fontSize: "18px" }}>
-                    Place your bet using metamask below.
+                    Deposit points into your account using the methods below.
                   </Typography>
                 </Grid>
                 <Grid item lg={12}>
@@ -185,7 +190,8 @@ function Presentation() {
                         sx: { textAlign: "right", fontSize: 20 },
                       }}
                     ></TextField>
-                    <BetButton amount={inputValue}></BetButton>
+                    {/* <BetButton amount={inputValue} PaymentProviders={choice}></BetButton> */}
+                    <PaymentProviders amount={inputValue} />
                   </Grid>
                 </Grid>
                 <Grid item lg={12}>
