@@ -11,9 +11,16 @@ import MenuList from "@mui/material/MenuList";
 import MKButton from "components/MKButton";
 
 import Web3 from "web3";
+import colors from "assets/theme/base/colors";
+import select from "assets/theme/components/form/select";
 
+import metamaskIcon from "assets/images/logos/metamask-logo.svg";
+import phantomIcon from "assets/images/logos/phantom-icon.svg";
+import solflareIcon from "assets/images/logos/solflare-logo.svg";
 
 const options = ["Metamask", "Phantom", "Solflare"];
+const walletColors = ["metamask", "phantom", "solflare"];
+const walletIcons = [metamaskIcon, phantomIcon, solflareIcon];
 
 export default function PaymentProviders({ amount }) {
   const [open, setOpen] = React.useState(false);
@@ -97,12 +104,25 @@ export default function PaymentProviders({ amount }) {
         color="inherit"
         aria-label="Payment Providers"
         size="small"
+        sx={{ flexGrow: 1 }}
       >
-        <MKButton onClick={handleClick} color="primary" sx={{}}>
+        <MKButton
+          onClick={handleClick}
+          color={walletColors[selectedIndex]}
+          startIcon={
+            <img
+              src={walletIcons[selectedIndex]}
+              alt="wallet icon"
+              style={{ width: "30px", height: "30px" }}
+            />
+          }
+          size="small"
+          sx={{ flexGrow: 1 }}
+        >
           Deposit with {options[selectedIndex]}
         </MKButton>
         <MKButton
-          color="primary"
+          color={walletColors[selectedIndex]}
           size="small"
           aria-controls={open ? "split-button-menu" : undefined}
           aria-expanded={open ? "true" : undefined}

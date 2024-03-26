@@ -75,13 +75,26 @@ function Presentation() {
         sticky
       />
       {/*The background Image and hero texts*/}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: "cover",
+          filter: "blur(4px)",
+          zIndex: -1,
+        }}
+      />
       <MKBox
         minHeight="75vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
+          // backgroundImage: `url(${bgImage})`,
+          // backgroundSize: "cover",
+          // backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
         }}
@@ -120,23 +133,22 @@ function Presentation() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Grid container spacing={2} xs={6} lg={12} alignItems="center" mx="auto">
+        <Grid container xs={12} lg={12} spacing={1} alignItems="center" mx="auto">
           {/*Left Card*/}
-          <Grid item lg={6} sx={{ height: "100%" }}>
-            <Card sx={{ padding: 5, maxHeight: "400px", height: "80%" }}>
+          <Grid item lg={6} sx={{ flex: 1 }}>
+            <Card sx={{ padding: 2, flex: 1, width: "100%", height: "100%" }}>
               <Grid
                 container
                 spacing={3}
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
+                sx={{ height: "100%" }}
               >
                 <Grid item>
                   <Typography sx={{ textAlign: "center", fontSize: "20px" }}>
@@ -144,7 +156,6 @@ function Presentation() {
                     by joining our discord server
                   </Typography>
                 </Grid>
-                {/*this is where the discord invite link will be placed*/}
                 <Grid item>
                   <MKButton
                     color="primary"
@@ -160,7 +171,7 @@ function Presentation() {
           </Grid>
           {/*Right Card*/}
           <Grid item lg={6}>
-            <Card sx={{ padding: 5, maxHeight: "400px" }}>
+            <Card sx={{ padding: 2, maxHeight: "400px" }}>
               <Grid
                 container
                 spacing={3}
@@ -174,7 +185,7 @@ function Presentation() {
                   </Typography>
                 </Grid>
                 <Grid item lg={12}>
-                  <Grid container direction="row" columnGap={4}>
+                  <Grid container columnGap={4} rowGap={1}>
                     <TextField
                       id="filled-basic"
                       sx={{ flexGrow: 1, maxWidth: "300px" }}
