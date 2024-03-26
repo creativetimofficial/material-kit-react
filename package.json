@@ -1,17 +1,17 @@
 {
-  "name": "material-kit-2-react",
+  "name": "pursuit-bet",
   "version": "2.1.0",
   "private": true,
-  "author": "Creative Tim",
+  "author": "Shake State Studios",
   "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
+  "description": "React app for Pursuit Bet",
+  "homepage": "https://harlyponari.github.io",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
+    "url": "https://github.com/HarlyPonari/pursuit/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
+    "url": "git+https://github.com/HarlyPonari/pursuit.git"
   },
   "dependencies": {
     "@emotion/cache": "11.10.7",
@@ -30,6 +30,7 @@
     "@testing-library/user-event": "14.4.3",
     "chroma-js": "2.4.2",
     "flatpickr": "4.6.13",
+    "gh-pages": "^6.1.1",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
@@ -43,6 +44,8 @@
     "web3": "^4.5.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
