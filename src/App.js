@@ -18,6 +18,8 @@ import { useEffect } from "react";
 // react-router components
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
+import { BrowserRouter as Router } from 'react-router-dom';
+
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";

@@ -31,7 +31,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import bgImage from "assets/images/illustrations/pursuit.jpg";
 
 function ContactUs() {
   return (
@@ -41,8 +41,8 @@ function ContactUs() {
           routes={routes}
           action={{
             type: "external",
-            route: "https://www.creative-tim.com/product/material-kit-react",
-            label: "free download",
+            route: "https://discord.gg/h9cGqHp5Fw",
+            label: "Join our discord",
             color: "info",
           }}
         />

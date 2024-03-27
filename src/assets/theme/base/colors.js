@@ -84,6 +84,21 @@ export default {
     focus: "#2c3c58",
   },
 
+  metamask: {
+    main: "#F5841F",
+    focus: "#F5841F",
+  },
+
+  phantom: {
+    main: "#9886E5",
+    focus: "#9886E5",
+  },
+
+  solflare: {
+    main: "#FE9816",
+    focus: "#FE9816",
+  },
+
   grey: {
     100: "#f8f9fa",
     200: "#f0f2f5",
