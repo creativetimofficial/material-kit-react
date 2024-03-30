@@ -16,7 +16,8 @@ Coded by www.creative-tim.com
 import React from "react";
 import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import App from "App";
+import App from "./App";
+import AppWithProvider from "./components/AppWithProvider/AppWithProvider";
 
 const container = document.getElementById("root");
 
@@ -25,6 +26,8 @@ const root = ReactDOMClient.createRoot(container);
 
 root.render(
   <BrowserRouter>
-    <App />
+    <AppWithProvider>
+      <App />
+    </AppWithProvider>
   </BrowserRouter>
 );

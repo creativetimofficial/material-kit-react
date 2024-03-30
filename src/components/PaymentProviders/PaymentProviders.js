@@ -1,5 +1,4 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
@@ -11,12 +10,16 @@ import MenuList from "@mui/material/MenuList";
 import MKButton from "components/MKButton";
 
 import Web3 from "web3";
-import colors from "assets/theme/base/colors";
-import select from "assets/theme/components/form/select";
 
 import metamaskIcon from "assets/images/logos/metamask-logo.svg";
 import phantomIcon from "assets/images/logos/phantom-icon.svg";
 import solflareIcon from "assets/images/logos/solflare-logo.svg";
+import { useConnection } from "@solana/wallet-adapter-react";
+
+import { useWallet } from '@solana/wallet-adapter-react';
+import { useCallback } from 'react';
+import { WalletNotConnectedError } from '@solana/wallet-adapter-base';
+import { Transaction, SystemProgram, Keypair } from '@solana/web3.js';
 
 const options = ["Metamask", "Phantom", "Solflare"];
 const walletColors = ["metamask", "phantom", "solflare"];
@@ -27,9 +30,26 @@ export default function PaymentProviders({ amount }) {
   const anchorRef = React.useRef(null);
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
+  const { connection } = useConnection();
+  const { publicKey, sendTransaction } = useWallet();
+
   const toAddress = "0x73c6fd23Ae4B6054228D1b206920C263133C5ec7";
 
-  const handleClick = () => {
+  const handleClick = useCallback(async () => {
+    if (!publicKey) throw new WalletNotConnectedError();
+
+    const transaction = new Transaction().add(
+      SystemProgram.transfer({
+        fromPubkey: publicKey,
+        toPubkey: Keypair.generate().publicKey, // Transfer lamports to a new random account, this would be your token account
+        lamports: 1,
+      })
+    );
+
+    const signature = await sendTransaction(transaction, connection);
+
+    await connection.confirmTransaction(signature, "processed");
+
     // Metamask
     if (selectedIndex == 0) {
       const wei = Web3.utils.toWei(amount, "ether");
@@ -77,7 +97,7 @@ export default function PaymentProviders({ amount }) {
     // Solflare
     else if (selectedIndex == 2) {
     }
-  };
+  }, [publicKey, sendTransaction, connection, selectedIndex, amount]);
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);

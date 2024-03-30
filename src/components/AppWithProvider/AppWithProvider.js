@@ -1,16 +1,19 @@
+import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   ConnectionProvider,
+  useAnchorWallet,
+  useWallet,
   WalletProvider,
-  WalletModalProvider,
 } from "@solana/wallet-adapter-react";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import {
   PhantomWalletAdapter,
   TrustWalletAdapter,
   SolflareWalletAdapter,
-  SolanaMobileWalletAdapter,
 } from "@solana/wallet-adapter-wallets";
-import { clusterApiUrl } from "@solana/web3.js";
+import { Program, getProvider, web3, BN } from "@project-serum/anchor";
+import { clusterApiUrl, Connection } from "@solana/web3.js";
+import React, { useMemo, ReactNode } from "react";
 
 const AppWithProvider = ({ children }) => {
   // The clusterApiUrl function returns the RPC endpoint for the specified network.
@@ -18,9 +21,7 @@ const AppWithProvider = ({ children }) => {
   const network = WalletAdapterNetwork.Testnet;
 
   // The endpoint variable is set to the RPC endpoint for the specified network.
-  const endpoint = useMemo(() => {
-    clusterApiUrl(network), [network];
-  });
+  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   //@Solana/wallet-adapter-wallets is a package that provides wallet adapters for various Solana wallets.
   const wallets = useMemo(
@@ -28,7 +29,6 @@ const AppWithProvider = ({ children }) => {
       new PhantomWalletAdapter(),
       new TrustWalletAdapter(),
       new SolflareWalletAdapter({ network }),
-      new SolanaMobileWalletAdapter(),
     ],
     [network]
   );
@@ -39,6 +39,27 @@ const AppWithProvider = ({ children }) => {
         <WalletModalProvider>{children}</WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
+  );
+};
+
+const Content = () => {
+  const wallet = useAnchorWallet();
+
+  function myProvider() {
+    if (!wallet) {
+      return null;
+    }
+    const network = "http://localhost:3000";
+    const connection = new Connection(network, "processed");
+
+    const provider = new getProvider(connection, wallet, { preflightCommitment: "processed" });
+    return provider;
+  }
+  return (
+    <div>
+      <h1>Anchor Wallet</h1>
+      <button onClick={myProvider}>Get Provider</button>
+    </div>
   );
 };
 
