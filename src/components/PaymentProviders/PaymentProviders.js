@@ -16,26 +16,30 @@ import phantomIcon from "assets/images/logos/phantom-icon.svg";
 import solflareIcon from "assets/images/logos/solflare-logo.svg";
 import { useConnection } from "@solana/wallet-adapter-react";
 
-import { useWallet } from '@solana/wallet-adapter-react';
-import { useCallback } from 'react';
-import { WalletNotConnectedError } from '@solana/wallet-adapter-base';
-import { Transaction, SystemProgram, Keypair } from '@solana/web3.js';
+import { useWallet } from "@solana/wallet-adapter-react";
+import { useCallback } from "react";
+import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
+import { Transaction, SystemProgram, Keypair } from "@solana/web3.js";
 
 const options = ["Metamask", "Phantom", "Solflare"];
 const walletColors = ["metamask", "phantom", "solflare"];
 const walletIcons = [metamaskIcon, phantomIcon, solflareIcon];
 
 export default function PaymentProviders({ amount }) {
+  //States
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
+  //Hooks for Solana
   const { connection } = useConnection();
   const { publicKey, sendTransaction } = useWallet();
 
   const toAddress = "0x73c6fd23Ae4B6054228D1b206920C263133C5ec7";
 
   const handleClick = useCallback(async () => {
+    console.log("Public Key: ", publicKey);
+
     if (!publicKey) throw new WalletNotConnectedError();
 
     const transaction = new Transaction().add(

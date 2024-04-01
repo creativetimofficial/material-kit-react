@@ -1,69 +1,83 @@
 import React from "react";
 import MKButton from "components/MKButton";
-import Web3 from "web3";
+import { useAnchorWallet } from "@solana/wallet-adapter-react";
+import { Program, AnchorProvider, web3, BN } from "@project-serum/anchor";
+import { Connection } from "@solana/web3.js";
+import idl from "../../idl.json";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
-function BetButton({ amount, paymentProvider }) {
-  // const handleButtonClick = async () => {
-  //   if (window.ethereum) {
-  //     window.web3 = new Web3(window.ethereum);
-  //     try {
-  //       await window.ethereum.enable();
-  //     } catch (error) {
-  //       console.error("User denied account access");
-  //     }
-  //   }
-  // };
+const BetButton = ({ amount }) => {
+  const wallet = useAnchorWallet();
+  const baseAccount = web3.Keypair.generate();
 
-  async function placeBet() {
-    console.log(paymentProvider);
+  function getProvider() {
+    if (!wallet) {
+      return null;
+    }
+    const network = "http://192.168.1.197:8899";
+    const connection = new Connection(network, "processed");
 
-    const toAddress = "0x73c6fd23Ae4B6054228D1b206920C263133C5ec7";
+    const provider = new AnchorProvider(connection, wallet, { preflightCommitment: "processed" });
+    return provider;
+  }
 
-    const wei = Web3.utils.toWei(amount, "ether");
+  async function createCounter() {
+    const provider = getProvider();
+    if (!provider) {
+      throw "Provider is null";
+    }
+    const a = JSON.stringify(idl);
+    const b = JSON.parse(a);
+    const program = new Program(b, idl.metadata.address, provider);
+    try {
+      await program.methods
+        .initialize()
+        .accounts({
+          myAccount: baseAccount.publicKey,
+          user: provider.wallet.publicKey,
+          systemProgram: web3.SystemProgram.programId,
+        })
+        .signers([baseAccount])
+        .rpc();
 
-    window.ethereum
-      .request({ method: "eth_requestAccounts" })
-      .then((accounts) => {
-        const userAccount = accounts[0];
-        console.log("Connected to MetaMask:", userAccount);
-        // Request payment
+      const account = await program.account.myAccount.fetch(baseAccount.publicKey);
+      console.log("Account: ", account);
+    } catch (err) {
+      console.log("transaction error", err);
+    }
+  }
 
-        // Web3.eth.estimateGas({ to: toAddress, value: wei }).then((gasAmount) => {
-        //   console.log("gasAmount: ", gasAmount);
-        // });
+  async function increment() {
+    const provider = getProvider();
+    if (!provider) {
+      throw "Provider is null";
+    }
 
-        const paymentDetails = {
-          to: toAddress,
-          from: userAccount,
-          value: wei, // 1 ETH in wei
-          gas: "100000", // Gas limit
-        };
+    const a = JSON.stringify(idl);
+    const b = JSON.parse(a);
+    const program = new Program(b, idl.metadata.address, provider);
+    try {
+      await program.methods
+        .increment()
+        .accounts({
+          myAccount: baseAccount.publicKey,
+        })
+        .rpc();
 
-        window.ethereum
-          .request({
-            method: "eth_sendTransaction",
-            params: [paymentDetails],
-          })
-          .then((txHash) => {
-            console.log("Transaction sent:", txHash);
-
-            // Handle payment confirmation
-            // Listen for transaction confirmation events or poll the blockchain for the transaction status
-          })
-          .catch((error) => {
-            console.error("Payment request failed:", error);
-          });
-      })
-      .catch((error) => {
-        console.error("Failed to connect to MetaMask:", error);
-      });
+      const account = await program.account.myAccount.fetch(baseAccount.publicKey);
+      console.log("Account: ", account.data.toString());
+    } catch (err) {
+      console.log("transaction error", err);
+    }
   }
 
   return (
-    <MKButton color="primary" onClick={placeBet}>
-      Deposit Points
-    </MKButton>
-  );
-}
+    <React.Fragment>
+      <button onClick={createCounter}>Create Counter</button>
+      <button onClick={increment}>Increment</button>
+      <WalletMultiButton />
+    </React.Fragment>
+   );
+};
 
 export default BetButton;

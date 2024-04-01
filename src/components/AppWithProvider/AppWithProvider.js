@@ -1,24 +1,22 @@
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import {
-  ConnectionProvider,
-  useAnchorWallet,
-  useWallet,
-  WalletProvider,
-} from "@solana/wallet-adapter-react";
+import { ConnectionProvider, useAnchorWallet, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import {
   PhantomWalletAdapter,
   TrustWalletAdapter,
   SolflareWalletAdapter,
 } from "@solana/wallet-adapter-wallets";
-import { Program, getProvider, web3, BN } from "@project-serum/anchor";
+import { Program, AnchorProvider, web3, BN } from "@project-serum/anchor";
 import { clusterApiUrl, Connection } from "@solana/web3.js";
-import React, { useMemo, ReactNode } from "react";
+import React, { useMemo } from "react";
+import idl from "../../idl.json";
+
+require("@solana/wallet-adapter-react-ui/styles.css");
 
 const AppWithProvider = ({ children }) => {
   // The clusterApiUrl function returns the RPC endpoint for the specified network.
   // the network can be set to 'devnet', 'testnet', or 'mainnet-beta'
-  const network = WalletAdapterNetwork.Testnet;
+  const network = WalletAdapterNetwork.Devnet;
 
   // The endpoint variable is set to the RPC endpoint for the specified network.
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
@@ -42,25 +40,5 @@ const AppWithProvider = ({ children }) => {
   );
 };
 
-const Content = () => {
-  const wallet = useAnchorWallet();
-
-  function myProvider() {
-    if (!wallet) {
-      return null;
-    }
-    const network = "http://localhost:3000";
-    const connection = new Connection(network, "processed");
-
-    const provider = new getProvider(connection, wallet, { preflightCommitment: "processed" });
-    return provider;
-  }
-  return (
-    <div>
-      <h1>Anchor Wallet</h1>
-      <button onClick={myProvider}>Get Provider</button>
-    </div>
-  );
-};
 
 export default AppWithProvider;

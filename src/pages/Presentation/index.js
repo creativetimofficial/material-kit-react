@@ -202,7 +202,8 @@ function Presentation() {
                       }}
                     ></TextField>
                     {/* <BetButton amount={inputValue} PaymentProviders={choice}></BetButton> */}
-                    <PaymentProviders amount={inputValue} />
+                    {/* <PaymentProviders amount={inputValue} /> */}
+                    <BetButton amount={inputValue} />
                   </Grid>
                 </Grid>
                 <Grid item lg={12}>
