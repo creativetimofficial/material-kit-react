@@ -1,14 +1,10 @@
 import React from "react";
 import MKButton from "components/MKButton";
-import { useAnchorWallet, useWallet } from "@solana/wallet-adapter-react";
-import { Program, AnchorProvider, web3, BN } from "@project-serum/anchor";
-import { clusterApiUrl, Connection, Keypair, LAMPORTS_PER_SOL, PublicKey, sendAndConfirmTransaction, SystemProgram, Transaction } from "@solana/web3.js";
-import idl from "../../idl.json";
+import { useWallet } from "@solana/wallet-adapter-react";
+import { clusterApiUrl, Connection, Keypair, LAMPORTS_PER_SOL, sendAndConfirmTransaction, SystemProgram, Transaction } from "@solana/web3.js";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { decode } from "@project-serum/anchor/dist/cjs/utils/bytes/hex";
 import * as buffer from "buffer";
-import { bs58 } from "@project-serum/anchor/dist/cjs/utils/bytes";
-import { Key } from "@mui/icons-material";
+
 
 
 window.Buffer = buffer.Buffer;
@@ -16,37 +12,38 @@ window.Buffer = buffer.Buffer;
 const BetButton = ({ amount }) => {
 
   const wallet = useWallet();
-  const baseAccount = web3.Keypair.generate();
+  const reciever = Keypair.generate();
+
 
   async function createTransaction() {
     if (!wallet.publicKey) {
       console.log("Could not get the public key")
-      return
+      return 
     }
 
-    const privateKey = new Uint8Array(bs58.decode(process.env['PRIVATE_KEY']))
+    if(!reciever.publicKey){
+      console.log("could not get reciever public key")
+    }
 
-    const sender = Keypair.fromSecretKey(privateKey)
+    const connection = new Connection(clusterApiUrl('testnet'), "processed")
 
-    const reciever = Keypair.generate()
+    const tx = new Transaction().add(
+      SystemProgram.transfer({
+        fromPubkey: wallet.publicKey,
+        toPubkey: reciever.publicKey,
+        //This needs to actually account for dollar to sol conversion
+        lamports: LAMPORTS_PER_SOL * 0.1,
+      })
+    );
+    
+    const signature = await wallet.sendTransaction(tx, connection);
 
-    const connection = new Connection(clusterApiUrl('devnet'), "processed")
-
-      (async () => {
-        const tx = new Transaction().add(
-          SystemProgram.transfer({
-            fromPubkey: sender.publicKey,
-            toPubkey: reciever.publicKey,
-            lamports: LAMPORTS_PER_SOL * 0.001,
-          })
-        )
-        const signature = await sendAndConfirmTransaction(connection, tx, [sender])
-
-      } 
+    return signature
+  }
 
   return (
       <React.Fragment>
-        <MKButton onClick={createTransaction}>Send Money!!!</MKButton>
+        <MKButton onClick={createTransaction} color="primary">Send Money!!!</MKButton>
         <WalletMultiButton />
       </React.Fragment>
     );
