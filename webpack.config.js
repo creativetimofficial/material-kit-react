@@ -9,7 +9,8 @@ module.exports = {
 
   resolve: {
     fallback: {
-      stream: false,
+      fs: false,
+      // stream: false,
     },
   },
 };

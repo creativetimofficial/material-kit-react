@@ -16,7 +16,7 @@ require("@solana/wallet-adapter-react-ui/styles.css");
 const AppWithProvider = ({ children }) => {
   // The clusterApiUrl function returns the RPC endpoint for the specified network.
   // the network can be set to 'devnet', 'testnet', or 'mainnet-beta'
-  const network = WalletAdapterNetwork.Devnet;
+  const network = WalletAdapterNetwork.Testnet;
 
   // The endpoint variable is set to the RPC endpoint for the specified network.
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);

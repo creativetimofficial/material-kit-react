@@ -44,23 +44,27 @@ import TextField from "@mui/material/TextField";
 import BetButton from "components/BetButton/BetButton";
 // import Button from "assets/theme/components/button";
 // import { CurrencyBitcoin } from "@mui/icons-material";
-import PaymentProviders from "components/PaymentProviders/PaymentProviders";
 
-// Crypto Stuff
-import Web3 from "web3";
 
 function Presentation() {
   const [inputValue, setInputValue] = useState("");
+  const [intValue, setIntValue] = useState(0);
 
   const handleInputChange = (e) => {
     const rawValue = e.target.value.replace(/,/g, "");
-
+    // let rawValue = e.target.value;
+    // rawValue = rawValue.replace(/,/g, "");
     if (isNaN(rawValue)) {
+      console.log("Input was not a number");
       return;
     }
+
+    const _intValue = parseInt(rawValue, 10);
+    setIntValue(_intValue);
     const formattedValue = Number(rawValue).toLocaleString();
     setInputValue(formattedValue);
   };
+  
 
   return (
     <>
@@ -203,7 +207,7 @@ function Presentation() {
                     ></TextField>
                     {/* <BetButton amount={inputValue} PaymentProviders={choice}></BetButton> */}
                     {/* <PaymentProviders amount={inputValue} /> */}
-                    <BetButton amount={inputValue} />
+                    <BetButton amount={intValue} />
                   </Grid>
                 </Grid>
                 <Grid item lg={12}>

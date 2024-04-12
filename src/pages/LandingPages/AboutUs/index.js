@@ -34,7 +34,7 @@ import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import routes from "routes";
 // import footerRoutes from "footer.routes";
 // Images
-import bgImage from "assets/images/pursuit1.jpg";
+import bgImage from "assets/images/about-us.jpg";
 
 function AboutUs() {
   return (
@@ -51,7 +51,7 @@ function AboutUs() {
         light
       />
       <MKBox
-        minHeight="75vh"
+        height="100vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -95,41 +95,23 @@ function AboutUs() {
               immersive betting environment that offers unique and entertaining experiences while
               prioritizing user privacy and security.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://twitter.com/Pursuit_Bet"
+                mr={3}
+              >
                 <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
               </MKTypography>
             </MKBox>
           </Grid>
         </Container>
       </MKBox>
-      <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
-      >
-        <Featuring />
-      </Card>
-      <MKBox pt={6} px={1} mt={6}></MKBox>
     </>
   );
 }

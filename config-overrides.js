@@ -1,3 +1,4 @@
+const { query } = require("express");
 const { ProvidePlugin } = require("webpack");
 
 module.exports = function (config, env) {
@@ -38,6 +39,10 @@ module.exports = function (config, env) {
         url: require.resolve("url/"),
         zlib: require.resolve("browserify-zlib"),
         vm: require.resolve("vm-browserify"),
+        querystring: require.resolve("querystring-es3"),
+        path: require.resolve("path-browserify"),
+        fs: require.resolve("browserify-fs"),
+        net: require.resolve("net"),
       },
     },
     ignoreWarnings: [/Failed to parse source map/],
