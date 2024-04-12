@@ -14,6 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import React, { useState } from "react";
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
@@ -21,57 +23,89 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKSocialButton from "components/MKSocialButton";
+import Typography from "@mui/material/Typography";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
-import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
-
-// Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
-
-// Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// import DefaultFooter from "examples/Footers/DefaultFooter";
+// import footerRoutes from "footer.routes";
 
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
+
+import InputAdornment from "@mui/material/InputAdornment";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/Z.png";
+
+// import TwitterIcon from "@mui/icons-material/Twitter";
+import MKButton from "components/MKButton";
+import TextField from "@mui/material/TextField";
+import BetButton from "components/BetButton/BetButton";
+// import Button from "assets/theme/components/button";
+// import { CurrencyBitcoin } from "@mui/icons-material";
+
 
 function Presentation() {
+  const [inputValue, setInputValue] = useState("");
+  const [intValue, setIntValue] = useState(0);
+
+  const handleInputChange = (e) => {
+    const rawValue = e.target.value.replace(/,/g, "");
+    // let rawValue = e.target.value;
+    // rawValue = rawValue.replace(/,/g, "");
+    if (isNaN(rawValue)) {
+      console.log("Input was not a number");
+      return;
+    }
+
+    const _intValue = parseInt(rawValue, 10);
+    setIntValue(_intValue);
+    const formattedValue = Number(rawValue).toLocaleString();
+    setInputValue(formattedValue);
+  };
+  
+
   return (
     <>
       <DefaultNavbar
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          route: "https://discord.gg/h9cGqHp5Fw",
+          label: "Join our discord",
           color: "info",
         }}
         sticky
+      />
+      {/*The background Image and hero texts*/}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: "cover",
+          filter: "blur(4px)",
+          zIndex: -1,
+        }}
       />
       <MKBox
         minHeight="75vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "top",
+          // backgroundImage: `url(${bgImage})`,
+          // backgroundSize: "cover",
+          // backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
         }}
       >
         <Container>
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+            {/*The title of the page*/}
             <MKTypography
               variant="h1"
               color="white"
@@ -83,8 +117,9 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Pursuit.Bet{" "}
             </MKTypography>
+            {/*The blurb of the page*/}
             <MKTypography
               variant="body1"
               color="white"
@@ -92,8 +127,8 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Your only one stop page for all your betting needs. We provide the best odds and the
+              best betting experience.
             </MKTypography>
           </Grid>
         </Container>
@@ -102,122 +137,98 @@ function Presentation() {
         sx={{
           p: 2,
           mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Counters />
-        <Information />
-        <DesignBlocks />
-        <Pages />
-        <Container sx={{ mt: 6 }}>
-          <BuiltByDevelopers />
-        </Container>
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                variant="gradient"
-                color="info"
-                icon="flag"
-                title="Getting Started"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
-                icon="precision_manufacturing"
-                title="Plugins"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
-                  label: "Read more",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
-                icon="apps"
-                title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-                  label: "Read more",
-                }}
-              />
-            </Grid>
-          </Grid>
-        </Container>
-        <Testimonials />
-        <Download />
-        <MKBox pt={18} pb={6}>
-          <Container>
-            <Grid container spacing={3}>
-              <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
-                <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
-                  Thank you for your support!
-                </MKTypography>
-                <MKTypography variant="body1" color="text">
-                  We deliver the best web products
-                </MKTypography>
-              </Grid>
+        <Grid container xs={12} lg={12} spacing={1} alignItems="center" mx="auto">
+          {/*Left Card*/}
+          <Grid item lg={6} sx={{ flex: 1 }}>
+            <Card sx={{ padding: 2, flex: 1, width: "100%", height: "100%" }}>
               <Grid
-                item
-                xs={12}
-                lg={5}
-                my={{ xs: 5, lg: "auto" }}
-                mr={{ xs: 0, lg: "auto" }}
-                sx={{ textAlign: { xs: "center", lg: "right" } }}
+                container
+                spacing={3}
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+                sx={{ height: "100%" }}
               >
-                <MKSocialButton
-                  component="a"
-                  href="https://twitter.com/intent/tweet?text=Check%20Material%20Design%20System%20made%20by%20%40CreativeTim%20%23webdesign%20%23designsystem%20%23mui5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-react"
-                  target="_blank"
-                  color="twitter"
-                  sx={{ mr: 1 }}
-                >
-                  <i className="fab fa-twitter" />
-                  &nbsp;Tweet
-                </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/material-kit-react"
-                  target="_blank"
-                  color="facebook"
-                  sx={{ mr: 1 }}
-                >
-                  <i className="fab fa-facebook" />
-                  &nbsp;Share
-                </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit-react"
-                  target="_blank"
-                  color="pinterest"
-                >
-                  <i className="fab fa-pinterest" />
-                  &nbsp;Pin it
-                </MKSocialButton>
+                <Grid item>
+                  <Typography sx={{ textAlign: "center", fontSize: "20px" }}>
+                    To begin betting, you need to deposit point into your account. You can do this
+                    by joining our discord server
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <MKButton
+                    color="primary"
+                    onClick={() => {
+                      window.open("https://discord.gg/h9cGqHp5Fw");
+                    }}
+                  >
+                    Join our discord
+                  </MKButton>
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
-        </MKBox>
+            </Card>
+          </Grid>
+          {/*Right Card*/}
+          <Grid item lg={6}>
+            <Card sx={{ padding: 2, maxHeight: "400px" }}>
+              <Grid
+                container
+                spacing={3}
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Grid item lg={12}>
+                  <Typography sx={{ textAlign: "center", fontSize: "18px" }}>
+                    Deposit points into your account using the methods below.
+                  </Typography>
+                </Grid>
+                <Grid item lg={12}>
+                  <Grid container columnGap={4} rowGap={1}>
+                    <TextField
+                      id="filled-basic"
+                      sx={{ flexGrow: 1, maxWidth: "300px" }}
+                      label="Type here..."
+                      value={inputValue}
+                      onChange={handleInputChange}
+                      InputProps={{
+                        startAdornment: <InputAdornment position="start">$</InputAdornment>,
+                        endAdornment: <InputAdornment position="end">.00</InputAdornment>,
+                      }}
+                      inputProps={{
+                        maxLength: 10,
+                        sx: { textAlign: "right", fontSize: 20 },
+                      }}
+                    ></TextField>
+                    {/* <BetButton amount={inputValue} PaymentProviders={choice}></BetButton> */}
+                    {/* <PaymentProviders amount={inputValue} /> */}
+                    <BetButton amount={intValue} />
+                  </Grid>
+                </Grid>
+                <Grid item lg={12}>
+                  <Typography sx={{ fontSize: "15px" }}>
+                    This is how many points will be deposited into your account
+                  </Typography>
+                  <TextField
+                    disabled
+                    value={inputValue}
+                    sx={{ maxWidth: "200px" }}
+                    InputProps={{
+                      endAdornment: <InputAdornment position="start">Points</InputAdornment>,
+                    }}
+                    inputProps={{ style: { textAlign: "right", fontSize: "15px" } }}
+                  ></TextField>
+                </Grid>
+              </Grid>
+            </Card>
+          </Grid>
+        </Grid>
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
     </>
   );
 }

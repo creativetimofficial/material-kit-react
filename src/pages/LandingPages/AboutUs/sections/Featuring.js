@@ -66,7 +66,7 @@ function Featuring() {
           </Grid>
           <Grid item xs={12} md={3}>
             <DefaultCounterCard
-              count={3400}
+              count={2000}
               separator=","
               suffix="+"
               title="Hours"

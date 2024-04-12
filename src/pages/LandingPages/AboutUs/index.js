@@ -25,20 +25,16 @@ import MKButton from "components/MKButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import DefaultFooter from "examples/Footers/DefaultFooter";
+// import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
+import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // Routes
 import routes from "routes";
-import footerRoutes from "footer.routes";
-
+// import footerRoutes from "footer.routes";
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/about-us.jpg";
 
 function AboutUs() {
   return (
@@ -47,15 +43,15 @@ function AboutUs() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "default",
+          route: "https://discord.gg/h9cGqHp5Fw",
+          label: "Join our discord",
+          color: "info",
         }}
         transparent
         light
       />
       <MKBox
-        minHeight="75vh"
+        height="100vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -89,51 +85,32 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              Mission Statement
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              At Pursuit, we strive to revolutionize the betting experience by merging the thrill of
+              live events with the power of blockchain technology. Our mission is to provide a
+              secure and transparent platform where users can engage in para-mutuel betting on live
+              events, leveraging cryptocurrencies for seamless transactions. We aim to create an
+              immersive betting environment that offers unique and entertaining experiences while
+              prioritizing user privacy and security.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                href="https://twitter.com/Pursuit_Bet"
+                mr={3}
+              >
                 <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
               </MKTypography>
             </MKBox>
           </Grid>
         </Container>
-      </MKBox>
-      <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
-      >
-        <Information />
-        <Team />
-        <Featuring />
-        <Newsletter />
-      </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
       </MKBox>
     </>
   );
