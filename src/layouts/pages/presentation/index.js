@@ -14,14 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React pages
-import Home from "pages/Home";
-import DrivenResults from "../../../pages/Home/sections/DrivenResults";
+import Presentation from "pages/Presentation";
 
-export default function HomePage() {
-  return (
-    <>
-      <Home />
-      <DrivenResults />
-    </>
-  );
+export default function PresentationPage() {
+  return <Presentation />;
 }
