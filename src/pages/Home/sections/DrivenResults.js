@@ -1,8 +1,12 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
+// import Icon from "@mui/material/Icon";
 import Stack from "@mui/material/Stack";
+import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import SpeedIcon from "@mui/icons-material/Speed";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -15,14 +19,29 @@ function FeaturesOne() {
         <Grid container alignItems="center">
           <Grid item xs={12} lg={5}>
             <MKTypography variant="h3" my={1}>
-              Read More About Us
+              Customer Focused Driven Results
             </MKTypography>
             <MKTypography variant="body2" color="text" mb={2}>
-              Pain is what we go through as we become older. We get insulted by others, lose trust
-              for those others. We get back stabbed by friends. It becomes harder for us to give
-              others a hand.
+              We ensure everyone is working towards the same goal and your digital initiatives are
+              generating business value in measurable ways. We enable employees to work without the
+              challenges of disruption and keep up with dynamically changing demands. We streamline
+              the employee experience to increase collaboration, raise performance output, improve
+              accuracy, and ensure compliance.
+              <span
+                style={{
+                  display: "block",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                }}
+              >
+                G&L Federal enables you to stay on top of customer demands and expectations which
+                are evolving at a faster pace than technology. Our employee engagement model and
+                ecosystem of intelligent automation technologies enable system improvements in both
+                organizational efficiency and effectiveness while simultaneously providing a
+                superior customer experience.
+              </span>
             </MKTypography>
-            <MKTypography
+            {/* <MKTypography
               component="a"
               href="#"
               variant="body2"
@@ -46,10 +65,13 @@ function FeaturesOne() {
             >
               More about us
               <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
-            </MKTypography>
+            </MKTypography> */}
           </Grid>
           <Grid item xs={12} lg={6} sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}>
             <Stack>
+              <MKTypography variant="p" my={1}>
+                The IHS Automation Value Proposition
+              </MKTypography>
               <MKBox display="flex" alignItems="center" p={2}>
                 <MKBox
                   width="3rem"
@@ -63,12 +85,10 @@ function FeaturesOne() {
                   justifyContent="center"
                   borderRadius="xl"
                 >
-                  <Icon fontSize="small">mediation</Icon>
+                  <VerifiedUserIcon fontSize="small">output</VerifiedUserIcon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  It becomes harder for us to give others a hand.
-                  <br />
-                  We get our heart broken by people we love.
+                  100% Error Free Output
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -84,12 +104,10 @@ function FeaturesOne() {
                   justifyContent="center"
                   borderRadius="xl"
                 >
-                  <Icon fontSize="small">settings_overscan</Icon>
+                  <TrendingUpIcon fontSize="small">efficiency</TrendingUpIcon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  As we live, our hearts turn colder.
-                  <br />
-                  Cause pain is what we go through as we become older.
+                  40% Increase in Efficiency
                 </MKTypography>
               </MKBox>
               <MKBox display="flex" alignItems="center" p={2}>
@@ -105,12 +123,29 @@ function FeaturesOne() {
                   justifyContent="center"
                   borderRadius="xl"
                 >
-                  <Icon fontSize="small">token</Icon>
+                  <SpeedIcon fontSize="small">token</SpeedIcon>
                 </MKBox>
                 <MKTypography variant="body2" color="text" pl={2}>
-                  When we lose family over time.
-                  <br />
-                  What else could rust the heart more over time? Blackgold.
+                  85% Faster Completion
+                </MKTypography>
+              </MKBox>
+              <MKBox display="flex" alignItems="center" p={2}>
+                <MKBox
+                  width="3rem"
+                  height="3rem"
+                  variant="gradient"
+                  bgColor="info"
+                  color="white"
+                  coloredShadow="info"
+                  display="flex"
+                  alignItems="center"
+                  justifyContent="center"
+                  borderRadius="xl"
+                >
+                  <AttachMoneyIcon fontSize="small">cost</AttachMoneyIcon>
+                </MKBox>
+                <MKTypography variant="body2" color="text" pl={2}>
+                  65% Reduction in Costs
                 </MKTypography>
               </MKBox>
             </Stack>
