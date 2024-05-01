@@ -21,7 +21,7 @@ function WhatWeOffer() {
       style={{
         marginTop: "20px",
         marginBottom: "40px",
-        backgroundColor: "#49a3f1",
+        // backgroundColor: "#49a3f1",
       }}
     >
       <Typography variant="h3" component="h2" gutterBottom>
