@@ -14,20 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React pages
-import Home from "pages/Home";
-import DrivenResults from "../../../pages/Home/sections/DrivenResults";
-import WhatWeOffer from "../../../pages/Home/sections/WhatWeOffer";
-import ContactUs from "../../../pages/Home/sections/ContactUs";
 import Footer from "pages/Home/sections/Footer";
 
-export default function HomePage() {
-  return (
-    <>
-      <Home />
-      <DrivenResults />
-      <WhatWeOffer />
-      <ContactUs />
-      <Footer />
-    </>
-  );
+export default function FooterSection() {
+  return <Footer />;
 }

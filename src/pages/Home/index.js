@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -13,9 +15,36 @@ import MKTypography from "components/MKTypography";
 import bgImage from "assets/images/bg-federal-building.jpg";
 
 function Home() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setIsScrolled(position > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <MKBox component="header" position="relative">
-      <MKBox component="nav" position="fixed" top="1.5em" width="100%">
+      <MKBox
+        component="nav"
+        position="fixed"
+        pt="1.2em"
+        pb="1em"
+        width="100%"
+        sx={{
+          transition: "all 0.3s ease-in-out",
+          backgroundColor: isScrolled ? "#344767" : "transparent",
+          boxShadow: isScrolled ? "0 2px 4px rgba(0,0,0,0.1)" : "none",
+          zIndex: "100",
+        }}
+      >
         <Container>
           <Grid container flexDirection="row" alignItems="center" justifyContent="space-between">
             <Grid item>
