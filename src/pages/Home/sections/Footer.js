@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Grid, Box, Typography, Link } from "@mui/material";
+import { Container, Grid, Box, Typography, Link, Stack } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import HomeIcon from "@mui/icons-material/Home";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import { Facebook, LinkedIn, GitHub, YouTube } from "@mui/icons-material";
 
 function Footer() {
   return (
@@ -29,15 +29,23 @@ function Footer() {
             <Typography variant="h6" gutterBottom>
               Follow Us
             </Typography>
-            <Link href="https://facebook.com" target="_blank">
-              <FacebookIcon sx={{ mr: 1 }} /> Facebook
-            </Link>
-            {/* More social links can be added here */}
+            <Stack direction="column" spacing={1}>
+              <Link href="https://facebook.com" target="_blank">
+                <Facebook sx={{ mr: 1 }} /> Facebook
+              </Link>
+              <Link href="https://facebook.com" target="_blank">
+                <LinkedIn sx={{ mr: 1 }} /> LinkedIn
+              </Link>
+              <Link href="https://facebook.com" target="_blank">
+                <GitHub sx={{ mr: 1 }} /> GitHub
+              </Link>
+              <Link href="https://facebook.com" target="_blank">
+                <YouTube sx={{ mr: 1 }} /> YouTube
+              </Link>
+              {/* More social links can be added here */}
+            </Stack>
           </Grid>
           <Grid item xs={12} md={4}>
-            {/* <Typography variant="h6" gutterBottom>
-              Quick Links
-            </Typography> */}
             <Link href="#home" sx={linkStyle}>
               Home
             </Link>
