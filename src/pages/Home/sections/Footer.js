@@ -1,12 +1,9 @@
 import React from "react";
-import { Container, Grid, Box, Typography, TextField, Button, Link } from "@mui/material";
+import { Container, Grid, Box, Typography, Link } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import HomeIcon from "@mui/icons-material/Home";
 import FacebookIcon from "@mui/icons-material/Facebook";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import YouTubeIcon from "@mui/icons-material/YouTube";
-// import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Footer() {
   return (
@@ -33,35 +30,49 @@ function Footer() {
               Follow Us
             </Typography>
             <Link href="https://facebook.com" target="_blank">
-              <FacebookIcon sx={{ mr: 1 }} /> facebook
+              <FacebookIcon sx={{ mr: 1 }} /> Facebook
             </Link>
-            <br />
-            {/* <Link href="https://linkedin.com" target="_blank"><LinkedInIcon sx={{ mr: 1 }} /> LinkedIn</Link><br />
-            <Link href="https://youtube.com" target="_blank"><YouTubeIcon sx={{ mr: 1 }} /> YouTube</Link><br />
-            <Link href="https://github.com" target="_blank"><GitHubIcon sx={{ mr: 1 }} /> GitHub</Link> */}
+            {/* More social links can be added here */}
           </Grid>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom>
-              Send us a message
-            </Typography>
-            <TextField label="Your Name" variant="outlined" fullWidth margin="normal" />
-            <TextField label="Email Address" variant="outlined" fullWidth margin="normal" />
-            <TextField
-              label="Message"
-              variant="outlined"
-              multiline
-              rows={4}
-              fullWidth
-              margin="normal"
-            />
-            <Button variant="contained" color="primary" sx={{ mt: 2 }} fullWidth>
-              Send
-            </Button>
+            {/* <Typography variant="h6" gutterBottom>
+              Quick Links
+            </Typography> */}
+            <Link href="#home" sx={linkStyle}>
+              Home
+            </Link>
+            <Link href="#about" sx={linkStyle}>
+              About
+            </Link>
+            <Link href="#services" sx={linkStyle}>
+              Services
+            </Link>
           </Grid>
         </Grid>
       </Container>
     </Box>
   );
 }
+
+const linkStyle = {
+  position: "relative",
+  display: "block",
+  marginBottom: "8px",
+  textDecoration: "none",
+  color: "inherit",
+  "&::after": {
+    content: "''",
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    width: "0%",
+    height: "2px",
+    backgroundColor: "#1A73E8", // Use your theme color here
+    transition: "width 0.3s ease-in-out",
+  },
+  "&:hover::after": {
+    width: "100%",
+  },
+};
 
 export default Footer;
