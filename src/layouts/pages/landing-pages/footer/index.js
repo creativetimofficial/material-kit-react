@@ -14,8 +14,8 @@ Coded by www.creative-tim.com
 */
 
 // Material Kit 2 React pages
-import AboutUs from "pages/LandingPages/AboutUs";
+import Footer from "pages/Home/sections/Footer";
 
-export default function AboutUsPage() {
-  return <AboutUs />;
+export default function FooterSection() {
+  return <Footer />;
 }
