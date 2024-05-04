@@ -3,7 +3,7 @@ import { Container, Grid, Box, Typography, Link, Stack } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import HomeIcon from "@mui/icons-material/Home";
-import { Facebook, LinkedIn, GitHub, YouTube } from "@mui/icons-material";
+import { Facebook, GitHub, YouTube } from "@mui/icons-material";
 
 function Footer() {
   return (
