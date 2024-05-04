@@ -70,7 +70,7 @@ function FeaturesOne() {
           <Grid item xs={12} lg={6} sx={{ ml: { xs: -2, lg: "auto" }, mt: { xs: 6, lg: 0 } }}>
             <Stack>
               <MKTypography variant="p" my={1}>
-                The IHS Automation Value Proposition
+                The G&L Federal Value Proposition
               </MKTypography>
               <MKBox display="flex" alignItems="center" p={2}>
                 <MKBox
