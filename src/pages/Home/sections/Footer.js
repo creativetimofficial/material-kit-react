@@ -4,7 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import HomeIcon from "@mui/icons-material/Home";
 import { Facebook, GitHub, YouTube } from "@mui/icons-material";
-
+// prettier-ignore
 function Footer() {
   return (
     <Box component="footer" sx={{ width: "100%", py: 4, px: 2, bgcolor: "background.paper" }}>
