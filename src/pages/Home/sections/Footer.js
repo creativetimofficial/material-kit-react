@@ -30,16 +30,13 @@ function Footer() {
               Follow Us
             </Typography>
             <Stack direction="column" spacing={1}>
-              <Link href="https://facebook.com" target="_blank">
+              <Link href="https://www.facebook.com/people/GL-Federal/61558714801982/" target="_blank">
                 <Facebook sx={{ mr: 1 }} /> Facebook
               </Link>
-              <Link href="https://facebook.com" target="_blank">
-                <LinkedIn sx={{ mr: 1 }} /> LinkedIn
-              </Link>
-              <Link href="https://facebook.com" target="_blank">
+              <Link href="https://github.com/G-L-Federal" target="_blank">
                 <GitHub sx={{ mr: 1 }} /> GitHub
               </Link>
-              <Link href="https://facebook.com" target="_blank">
+              <Link href="https://www.youtube.com/@ihsautomation9536" target="_blank">
                 <YouTube sx={{ mr: 1 }} /> YouTube
               </Link>
               {/* More social links can be added here */}
