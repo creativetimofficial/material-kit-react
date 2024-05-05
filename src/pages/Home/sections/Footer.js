@@ -42,17 +42,6 @@ function Footer() {
               {/* More social links can be added here */}
             </Stack>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <Link href="#home" sx={linkStyle}>
-              Home
-            </Link>
-            <Link href="#about" sx={linkStyle}>
-              About
-            </Link>
-            <Link href="#services" sx={linkStyle}>
-              Services
-            </Link>
-          </Grid>
         </Grid>
       </Container>
     </Box>
