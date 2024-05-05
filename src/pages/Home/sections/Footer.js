@@ -48,25 +48,4 @@ function Footer() {
   );
 }
 
-const linkStyle = {
-  position: "relative",
-  display: "block",
-  marginBottom: "8px",
-  textDecoration: "none",
-  color: "inherit",
-  "&::after": {
-    content: "''",
-    position: "absolute",
-    bottom: 0,
-    left: 0,
-    width: "0%",
-    height: "2px",
-    backgroundColor: "#1A73E8", // Use your theme color here
-    transition: "width 0.3s ease-in-out",
-  },
-  "&:hover::after": {
-    width: "100%",
-  },
-};
-
 export default Footer;
