@@ -74,26 +74,6 @@ function Home() {
                 >
                   Home
                 </MKTypography>
-                <MKTypography
-                  component={Link}
-                  href="#"
-                  variant="button"
-                  color="white"
-                  fontWeight="regular"
-                  fontSize="1.2rem"
-                >
-                  About
-                </MKTypography>
-                <MKTypography
-                  component={Link}
-                  href="#"
-                  variant="button"
-                  color="white"
-                  fontWeight="regular"
-                  fontSize="1.2rem"
-                >
-                  Services
-                </MKTypography>
               </Stack>
             </Grid>
           </Grid>
