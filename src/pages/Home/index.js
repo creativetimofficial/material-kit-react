@@ -111,10 +111,14 @@ function Home() {
               Government
             </MKTypography>
             <Stack direction="row" spacing={1} mt={3}>
-              <MKButton color="white">Get Started</MKButton>
-              <MKButton variant="text" color="white">
-                Contact Us
-              </MKButton>
+              <a href="#customer-focused" style={{ textDecoration: "none" }}>
+                <MKButton color="white">Get Started</MKButton>
+              </a>
+              <a href="#contact" style={{ textDecoration: "none" }}>
+                <MKButton variant="text" color="white">
+                  Contact Us
+                </MKButton>
+              </a>
             </Stack>
           </Grid>
         </Container>

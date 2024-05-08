@@ -14,7 +14,7 @@ import MKTypography from "components/MKTypography";
 
 function FeaturesOne() {
   return (
-    <MKBox component="section" py={{ xs: 3, md: 12 }}>
+    <MKBox component="section" py={{ xs: 3, md: 12 }} id="customer-focused">
       <Container>
         <Grid container alignItems="center">
           <Grid item xs={12} lg={5}>
