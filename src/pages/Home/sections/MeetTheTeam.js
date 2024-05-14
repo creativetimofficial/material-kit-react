@@ -50,21 +50,15 @@ function MeetTheTeam() {
   const teamMembers = [
     {
       name: "Richard Gordon",
-      position: "Chairman",
+      position: "President",
       bio: "Richard Gordon utilizes a comprehensive array of resources to enhance customer agility, speed, and evidence-based decision-making, allowing for preemptive problem solving. His varied experience which ranges from Capital Hill to Executive Leadership consulting equips him uniquely to contribute significantly to your success.",
       imageUrl: RichardImg,
     },
     {
       name: "Chris Leiter",
       position: "SVP of Operations",
-      bio: "Chris Leiter is a seasoned professional in RPA, cybersecurity, and IT solutions. He has experience in both the government and private sectors. Prior to cofounding Poe Security, Chris held a pivotal role at Blue Prism as a Senior Solutions Engineer/Architect, leading the integration of RPA in government operations. His responsibilities included introducing innovative RPA solutions, providing training, and crafting Proof of Concept solutions. Chris has over 11 years of experience in IT and cybersecurity in government contracting, starting in the Army Infantry and transitioning to armed security at the Department of State. He holds CISSP, Security+, and DoD 8570.1 M IAM level III certifications, with expertise across networks including the Department of State, Department of Defense, and Department of Justice. Chris's diverse exposure has honed his technical skills and solidified his passion for security and information assurance.",
+      bio: "Chris Leiter leverages a distinguished career in technology and federal government contracting to deliver sophisticated solutions in cybersecurity, network management, and systems automation. His expertise, honed through strategic roles with the US State Department, the Department of Defense, DISA, and the FBI, informs his approach to technology development and implementation. A disabled US Army veteran, Chris Leiter is recognized for his deep industry knowledge and commitment to innovation in communication and analysis.",
       imageUrl: ChrisImg,
-    },
-    {
-      name: "Alicia Auman",
-      position: "Federal Sales Lead",
-      bio: "Alicia Auman joins G&L Federal bringing experience selling software to state and local government entites. Alicia has over a decade of experience in the education space, spending years working as a resource inside and out of the classroom.",
-      imageUrl: AliciaImg,
     },
     {
       name: "Brady Cusack",
@@ -72,15 +66,21 @@ function MeetTheTeam() {
       bio: "Brady Cusack is an experienced technology leader with expertise in enterprise architecture, robotics process automation, and cybersecurity operations. Brady graduated from Towson University with a B.S. in Computer Science focused on Cybersecurity. He then worked as an automation consultant for numerous small businesses where he helped lead implementations at Fortune 500 companies. Brady later founded a small managed service provider, growing it to support two federal agencies and five government contractors.",
       imageUrl: BradyImg,
     },
+    {
+      name: "Alicia Auman",
+      position: "Federal Sales Lead",
+      bio: "Alicia Auman joins G&L Federal bringing experience selling software to state and local government entites. Alicia has over a decade of experience in the education space, spending years working as a resource inside and out of the classroom.",
+      imageUrl: AliciaImg,
+    }
   ];
 
   return (
     <Box sx={{ flexGrow: 1, padding: 8, backgroundColor: "#f5f5f5" }}>
       <Container>
-        <Typography variant="h3" component="h2" gutterBottom>
+        <Typography variant="h3" component="h2" justifyContent="center" gutterBottom>
           Meet the Team
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" paragraph justifyContent="center">
           Our leadership team brings together years of expertise and dedication to drive our vision
           forward.
         </Typography>
