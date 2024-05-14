@@ -71,7 +71,7 @@ function MeetTheTeam() {
       position: "Federal Sales Lead",
       bio: "Alicia Auman joins G&L Federal bringing experience selling software to state and local government entites. Alicia has over a decade of experience in the education space, spending years working as a resource inside and out of the classroom.",
       imageUrl: AliciaImg,
-    }
+    },
   ];
 
   return (
