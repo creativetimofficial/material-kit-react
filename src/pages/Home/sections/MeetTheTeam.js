@@ -20,7 +20,6 @@ import ChrisImg from "../../../assets/images/Chris.jpeg";
 import RichardImg from "../../../assets/images/Richard.jpg";
 import AliciaImg from "../../../assets/images/aliciaauman.jpeg";
 
-
 const MemberCard = styled(Paper)(({ theme, layout }) => ({
   display: "flex",
   flexDirection: layout === "reverse" ? "row-reverse" : "row",
