@@ -5,7 +5,6 @@
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
   "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
@@ -63,6 +62,7 @@
     ]
   },
   "devDependencies": {
+    "ajv": "^7.2.4",
     "eslint": "8.38.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
