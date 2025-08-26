@@ -70,8 +70,8 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
-    icon: <Icon>dashboard</Icon>,
+    name: "실종자",
+    icon: <Icon>person_search</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
@@ -108,8 +108,8 @@ const routes = [
     ],
   },
   {
-    name: "sections",
-    icon: <Icon>view_day</Icon>,
+    name: "보호자",
+    icon: <Icon>family_restroom</Icon>,
     collapse: [
       {
         name: "page sections",

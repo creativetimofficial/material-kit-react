@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/bg-home.jpg";
 
 function Presentation() {
   return (
@@ -54,10 +54,11 @@ function Presentation() {
         action={{
           type: "external",
           route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          label: "로그인",
           color: "info",
         }}
-        sticky
+        transparent
+        light
       />
       <MKBox
         minHeight="75vh"
@@ -65,7 +66,7 @@ function Presentation() {
         sx={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
+          backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
         }}
